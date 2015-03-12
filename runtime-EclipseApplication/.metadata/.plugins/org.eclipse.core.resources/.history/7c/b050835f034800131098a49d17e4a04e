@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oo_method:StructuralModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oo_method="oo_method">
+  <classes name="Product" idFunction="">
+    <rCompound component="//@classes.1"/>
+    <rCompound component="//@classes.6"/>
+    <attributes dataType="int" name="Type"/>
+    <attributes dataType="real" name="Weight"/>
+    <attributes dataType="real" name="Long"/>
+    <attributes dataType="real" name="Height"/>
+    <attributes dataType="real" name="Thick"/>
+    <attributes dataType="real" name="Value"/>
+    <attributes dataType="int" name="Status" permissions="both"/>
+    <attributes dataType="dateTime" name="LastStatusTimestamp" permissions="both"/>
+    <attributes xsi:type="oo_method:Derived" dataType="real" name="LinearWeight" derivationComments="Long + Height + Thick"/>
+    <attributes dataType="string" name="AddresseeAddress" permissions="both"/>
+    <attributes name="ID"/>
+    <services name="AddProduct" kind="creation">
+      <arguments name="Type" defaultValue=""/>
+      <arguments name="Weight"/>
+      <arguments name="Long"/>
+      <arguments name="Height"/>
+      <arguments name="Thick"/>
+      <arguments name="Value"/>
+      <arguments name="AddresseAddress"/>
+    </services>
+    <services name="ChangeStatus"/>
+    <services name="DeleteProduct" kind="destruction"/>
+  </classes>
+  <classes rComponents="//@classes.2/@rCompound.0 //@classes.0/@rCompound.0" name="Client" idFunction="">
+    <attributes dataType="string" name="ID"/>
+    <attributes dataType="string" name="Name" permissions="both"/>
+    <attributes dataType="string" name="Address" permissions="both"/>
+    <attributes dataType="string" name="AddressCity" permissions="both"/>
+    <attributes name="Phone" permissions="both"/>
+    <attributes dataType="string" name="Email" permissions="both"/>
+  </classes>
+  <classes name="SIGECO">
+    <rCompound component="//@classes.1"/>
+    <rCompound component="//@classes.3"/>
+    <services name="CheckProductStatus">
+      <arguments name="ProductId"/>
+    </services>
+  </classes>
+  <classes rComponents="//@classes.2/@rCompound.1" name="Branch" idFunction="">
+    <rCompound component="//@classes.4"/>
+    <rCompound component="//@classes.5"/>
+    <attributes dataType="string" name="Name"/>
+  </classes>
+  <classes rComponents="//@classes.3/@rCompound.0 //@classes.5/@rCompound.0" name="Employee">
+    <attributes dataType="string" name="ID"/>
+    <attributes dataType="string" name="Name" permissions="both"/>
+    <attributes dataType="string" name="Address" permissions="both"/>
+    <attributes dataType="string" name="Email" permissions="both"/>
+    <attributes dataType="dateTime" name="DateOfBirth" permissions="both"/>
+    <attributes dataType="string" name="MaritalStatus" permissions="both"/>
+    <attributes dataType="string" name="Occupation" permissions="both"/>
+    <attributes dataType="string" name="Position" permissions="both"/>
+    <attributes dataType="int" name="isCurrentlyEmployed" permissions="both"/>
+    <services name="AddEmployee" kind="creation">
+      <arguments name="Name"/>
+      <arguments name="Address"/>
+      <arguments name="Email"/>
+      <arguments name="DateOfBirth"/>
+      <arguments name="MaritalStatus"/>
+      <arguments name="Occupation"/>
+      <arguments name="Position"/>
+    </services>
+    <services name="UpdateEmployee">
+      <arguments name="Name"/>
+      <arguments name="Address"/>
+      <arguments name="Email"/>
+      <arguments name="DateOfBirth"/>
+      <arguments name="MaritalStatus"/>
+      <arguments name="Occupation"/>
+      <arguments name="Position"/>
+    </services>
+  </classes>
+  <classes rComponents="//@classes.3/@rCompound.1" name="Vehicle" idFunction="">
+    <rCompound component="//@classes.4"/>
+    <attributes dataType="string" name="Type"/>
+  </classes>
+  <classes rComponents="//@classes.0/@rCompound.1" name="Warehouse">
+    <attributes dataType="string" name="Name"/>
+  </classes>
+</oo_method:StructuralModel>

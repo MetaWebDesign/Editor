@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oo_method:StructuralModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:oo_method="oo_method">
+  <classes name="Emisor">
+    <rCompound component="//@classes.2"/>
+  </classes>
+  <classes rComponents="//@classes.1/@rCompound.0" name="Receptor">
+    <rCompound component="//@classes.1"/>
+  </classes>
+  <classes rComponents="//@classes.0/@rCompound.0 //@classes.2/@rCompound.0" name="Envio">
+    <rCompound component="//@classes.2"/>
+  </classes>
+  <classes name="Escala" idFunction=""/>
+  <classes name="Producto"/>
+  <classes name="Administrador"/>
+  <classes name="Funcionario"/>
+  <classes name="Sucursal"/>
+</oo_method:StructuralModel>

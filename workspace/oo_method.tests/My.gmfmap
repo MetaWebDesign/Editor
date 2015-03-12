@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfmap:Mapping
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:gmfmap="http://www.eclipse.org/gmf/2008/mappings">
+  <diagram>
+    <diagramCanvas
+        href="My.gmfgraph#/"/>
+    <domainModel
+        href="../oo_method/model/oo_method.ecore#/"/>
+    <domainMetaElement
+        href="../oo_method/model/oo_method.ecore#//Argument"/>
+  </diagram>
+</gmfmap:Mapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oo_method:StructuralModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:oo_method="oo_method">
+  <classes name="Emisor">
+    <rCompound component="//@classes.2"/>
+    <attributes name="Identificador"/>
+    <attributes name="Nombre"/>
+    <attributes/>
+    <attributes/>
+    <attributes/>
+  </classes>
+  <classes rComponents="//@classes.1/@rCompound.0" name="Receptor">
+    <rCompound component="//@classes.1"/>
+  </classes>
+  <classes rComponents="//@classes.0/@rCompound.0 //@classes.2/@rCompound.0 //@classes.4/@rCompound.0 //@classes.3/@rCompound.1" name="Envio">
+    <rCompound component="//@classes.2"/>
+    <rCompound component="//@classes.3"/>
+    <rCompound component="//@classes.4"/>
+  </classes>
+  <classes rComponents="//@classes.2/@rCompound.1 //@classes.7/@rCompound.1" name="Escala" idFunction="">
+    <rCompound component="//@classes.7"/>
+    <rCompound component="//@classes.2"/>
+  </classes>
+  <classes rComponents="//@classes.2/@rCompound.2" name="Producto">
+    <rCompound component="//@classes.2"/>
+  </classes>
+  <classes name="Administrador"/>
+  <classes rComponents="//@classes.7/@rCompound.0" name="Funcionario">
+    <rCompound component="//@classes.7"/>
+  </classes>
+  <classes rComponents="//@classes.3/@rCompound.0 //@classes.6/@rCompound.0" name="Sucursal">
+    <rCompound component="//@classes.6"/>
+    <rCompound component="//@classes.3"/>
+  </classes>
+</oo_method:StructuralModel>
