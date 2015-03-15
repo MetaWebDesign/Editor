@@ -1,7 +1,0 @@
-# Tracing options for the oo_method.diagram plug-in
-
-# Common issues
-oo_method.diagram/debug=false
-
-# Visual IDs
-oo_method.diagram/debug/visualID=false
