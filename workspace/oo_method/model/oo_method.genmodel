@@ -4,8 +4,7 @@
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>oo_method.ecore</foreignModel>
-  <genPackages prefix="Oo_method" basePackage="Oo_method" disposableProviderFactory="true"
-      ecorePackage="oo_method.ecore#/">
+  <genPackages prefix="Oo_method" disposableProviderFactory="true" ecorePackage="oo_method.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="oo_method.ecore#//dataTypes">
       <genEnumLiterals ecoreEnumLiteral="oo_method.ecore#//dataTypes/autonumeric"/>
       <genEnumLiterals ecoreEnumLiteral="oo_method.ecore#//dataTypes/blob"/>

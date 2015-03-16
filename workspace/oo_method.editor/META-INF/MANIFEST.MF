@@ -4,11 +4,12 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: oo_method.editor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: oo_method.presentation.Oo_methodEditorPlugin$Implementation
+Bundle-Activator: Oo_method.oo_method.presentation.Oo_methodEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: oo_method.presentation
+Export-Package: oo_method.presentation,
+ Oo_method.oo_method.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  oo_method.edit;visibility:=reexport,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_Jo2UAMv7EeSKIOkNOfa3LA" type="Ecore" measurementUnit="Pixel">
-  <styles xmi:type="notation:DiagramStyle" xmi:id="_Jo2UAcv7EeSKIOkNOfa3LA"/>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_639LYMwiEeS9mY1dwDZk5w" type="Ecore" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_639LYcwiEeS9mY1dwDZk5w"/>
   <element xmi:type="ecore:EPackage" href="oo_method.ecore#/"/>
 </notation:Diagram>
