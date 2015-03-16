@@ -9,8 +9,8 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated oo_method -->
       <factory
-            uri="oo_method"
-            class="Oo_method.oo_method.provider.Oo_methodItemProviderAdapterFactory"
+            uri="http://oo_method/1.0"
+            class="oo_method.provider.Oo_methodItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

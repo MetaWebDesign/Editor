@@ -21,27 +21,11 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="oo_method1.gmftool#//@palette/@tools.2/@tools.0"/>
+          href="oo_method.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
           href="oo_method.gmfgraph#Class"/>
     </ownedChild>
   </nodes>
-  <links>
-    <domainMetaElement
-        href="oo_method.ecore#//Constraints"/>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <features
-          href="oo_method.ecore#//Constraints/constraintComments"/>
-    </labelMappings>
-    <containmentFeature
-        href="oo_method.ecore#//Class/constraints"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="oo_method1.gmftool#//@palette/@tools.3/@tools.0"/>
-    <diagramLink
-        href="oo_method.gmfgraph#ClassRComponents"/>
-  </links>
   <links>
     <domainMetaElement
         href="oo_method.ecore#//NotDerived"/>
@@ -54,39 +38,9 @@
         href="oo_method.ecore#//Class/attributes"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="oo_method1.gmftool#//@palette/@tools.3/@tools.1"/>
+        href="oo_method.gmftool#//@palette/@tools.0/@tools.1"/>
     <diagramLink
-        href="oo_method.gmfgraph#ClassRComponents"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="oo_method.ecore#//Service"/>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <features
-          href="oo_method.ecore#//Service/name"/>
-    </labelMappings>
-    <containmentFeature
-        href="oo_method.ecore#//Class/services"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="oo_method1.gmftool#//@palette/@tools.3/@tools.2"/>
-    <diagramLink
-        href="oo_method.gmfgraph#ClassRComponents"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="oo_method.ecore#//Relation"/>
-    <containmentFeature
-        href="oo_method.ecore#//Class/rCompound"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="oo_method1.gmftool#//@palette/@tools.3/@tools.3"/>
-    <diagramLink
-        href="oo_method.gmfgraph#Relation"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="oo_method.ecore#//Relation/composed"/>
+        href="oo_method.gmfgraph#ClassRCompound"/>
   </links>
   <links>
     <domainMetaElement
@@ -100,16 +54,62 @@
         href="oo_method.ecore#//Class/attributes"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="oo_method1.gmftool#//@palette/@tools.3/@tools.4"/>
+        href="oo_method.gmftool#//@palette/@tools.0/@tools.2"/>
     <diagramLink
-        href="oo_method.gmfgraph#ClassRComponents"/>
+        href="oo_method.gmfgraph#ClassRCompound"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="oo_method.ecore#//Relation"/>
+    <containmentFeature
+        href="oo_method.ecore#//Class/rCompound"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="oo_method.gmftool#//@palette/@tools.0/@tools.3"/>
+    <diagramLink
+        href="oo_method.gmfgraph#RelationComposed"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="oo_method.ecore#//Relation/composed"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="oo_method.ecore#//Constraints"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <features
+          href="oo_method.ecore#//Constraints/constraintComments"/>
+    </labelMappings>
+    <containmentFeature
+        href="oo_method.ecore#//Class/constraints"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="oo_method.gmftool#//@palette/@tools.0/@tools.4"/>
+    <diagramLink
+        href="oo_method.gmfgraph#ClassConstraints"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="oo_method.ecore#//Service"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <features
+          href="oo_method.ecore#//Service/name"/>
+    </labelMappings>
+    <containmentFeature
+        href="oo_method.ecore#//Class/services"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="oo_method.gmftool#//@palette/@tools.0/@tools.5"/>
+    <diagramLink
+        href="oo_method.gmfgraph#ClassServices"/>
   </links>
   <links>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="oo_method1.gmftool#//@palette/@tools.3/@tools.5"/>
+        href="oo_method.gmftool#//@palette/@tools.0/@tools.6"/>
     <diagramLink
-        href="oo_method.gmfgraph#ClassRComponents"/>
+        href="oo_method.gmfgraph#ClassRCompound"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="oo_method.ecore#//Class/rComponents"/>
@@ -122,6 +122,6 @@
     <domainMetaElement
         href="oo_method.ecore#//StructuralModel"/>
     <palette
-        href="oo_method1.gmftool#//@palette"/>
+        href="oo_method.gmftool#//@palette"/>
   </diagram>
 </gmfmap:Mapping>

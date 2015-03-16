@@ -9,7 +9,37 @@
       name="Default">
     <figures
         xsi:type="gmfgraph:PolylineDecoration"
+        name="ClassRCompoundTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
         name="ClassRComponentsTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="ClassAttributesTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="ClassServicesTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="ClassConstraintsTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="RelationComposedTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="RelationComponentTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="ServiceArgumentsTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="ServicePreconditionsTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="PreconditionPreFormulasTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="ConstraintsConstFormulasTargetDecoration"/>
     <descriptors
         name="ClassFigure">
       <actualFigure
@@ -32,17 +62,59 @@
           figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors
+        name="ClassRCompoundFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ClassRCompoundFigure"
+          targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors
         name="ClassRComponentsFigure">
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
           name="ClassRComponentsFigure"
-          targetDecoration="//@figures.0/@figures.0"/>
+          targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors
+        name="ClassAttributesFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ClassAttributesFigure"
+          targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors
+        name="ClassServicesFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ClassServicesFigure"
+          targetDecoration="//@figures.0/@figures.3"/>
+    </descriptors>
+    <descriptors
+        name="ClassConstraintsFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ClassConstraintsFigure"
+          targetDecoration="//@figures.0/@figures.4"/>
     </descriptors>
     <descriptors
         name="RelationFigure">
       <actualFigure
-          xsi:type="gmfgraph:PolylineConnection"
+          xsi:type="gmfgraph:Rectangle"
           name="RelationFigure"/>
+    </descriptors>
+    <descriptors
+        name="RelationComposedFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="RelationComposedFigure"
+          targetDecoration="//@figures.0/@figures.5"/>
+    </descriptors>
+    <descriptors
+        name="RelationComponentFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="RelationComponentFigure"
+          targetDecoration="//@figures.0/@figures.6"/>
     </descriptors>
     <descriptors
         name="AttributeFigure">
@@ -65,11 +137,11 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.1"/>
       <accessors
-          figure="//@figures.0/@descriptors.3/@actualFigure/@children.2"/>
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.2"/>
     </descriptors>
     <descriptors
         name="DerivedFigure">
@@ -96,13 +168,13 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1"/>
       <accessors
-          figure="//@figures.0/@descriptors.4/@actualFigure/@children.2"/>
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.2"/>
       <accessors
-          figure="//@figures.0/@descriptors.4/@actualFigure/@children.3"/>
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.3"/>
     </descriptors>
     <descriptors
         name="NotDerivedFigure">
@@ -129,13 +201,13 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.5/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.1"/>
       <accessors
-          figure="//@figures.0/@descriptors.5/@actualFigure/@children.2"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.2"/>
       <accessors
-          figure="//@figures.0/@descriptors.5/@actualFigure/@children.3"/>
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.3"/>
     </descriptors>
     <descriptors
         name="DerivationFormulaFigure">
@@ -154,9 +226,9 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.12/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors
         name="ServiceFigure">
@@ -175,9 +247,23 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.7/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.13/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors
+        name="ServiceArgumentsFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ServiceArgumentsFigure"
+          targetDecoration="//@figures.0/@figures.7"/>
+    </descriptors>
+    <descriptors
+        name="ServicePreconditionsFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ServicePreconditionsFigure"
+          targetDecoration="//@figures.0/@figures.8"/>
     </descriptors>
     <descriptors
         name="ArgumentFigure">
@@ -196,9 +282,9 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.16/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.16/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors
         name="PreconditionFigure">
@@ -213,7 +299,14 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.17/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
+        name="PreconditionPreFormulasFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="PreconditionPreFormulasFigure"
+          targetDecoration="//@figures.0/@figures.9"/>
     </descriptors>
     <descriptors
         name="PreconditionFormulaFigure">
@@ -232,9 +325,30 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.19/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.10/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.19/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors
+        name="ValuationFormulaFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="ValuationFormulaFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ValuationFormulaConditionFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ValuationFormulaEffectFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.20/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.20/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors
         name="ConstraintsFigure">
@@ -249,7 +363,14 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.21/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
+        name="ConstraintsConstFormulasFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="ConstraintsConstFormulasFigure"
+          targetDecoration="//@figures.0/@figures.10"/>
     </descriptors>
     <descriptors
         name="ConstraintFormulaFigure">
@@ -268,14 +389,17 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.23/@actualFigure/@children.0"/>
       <accessors
-          figure="//@figures.0/@descriptors.12/@actualFigure/@children.1"/>
+          figure="//@figures.0/@descriptors.23/@actualFigure/@children.1"/>
     </descriptors>
   </figures>
   <nodes
       name="Class"
       figure="ClassFigure"/>
+  <nodes
+      name="Relation"
+      figure="RelationFigure"/>
   <nodes
       name="Attribute"
       figure="AttributeFigure"/>
@@ -301,17 +425,47 @@
       name="PreconditionFormula"
       figure="PreconditionFormulaFigure"/>
   <nodes
+      name="ValuationFormula"
+      figure="ValuationFormulaFigure"/>
+  <nodes
       name="Constraints"
       figure="ConstraintsFigure"/>
   <nodes
       name="ConstraintFormula"
       figure="ConstraintFormulaFigure"/>
   <connections
+      name="ClassRCompound"
+      figure="ClassRCompoundFigure"/>
+  <connections
       name="ClassRComponents"
       figure="ClassRComponentsFigure"/>
   <connections
-      name="Relation"
-      figure="RelationFigure"/>
+      name="ClassAttributes"
+      figure="ClassAttributesFigure"/>
+  <connections
+      name="ClassServices"
+      figure="ClassServicesFigure"/>
+  <connections
+      name="ClassConstraints"
+      figure="ClassConstraintsFigure"/>
+  <connections
+      name="RelationComposed"
+      figure="RelationComposedFigure"/>
+  <connections
+      name="RelationComponent"
+      figure="RelationComponentFigure"/>
+  <connections
+      name="ServiceArguments"
+      figure="ServiceArgumentsFigure"/>
+  <connections
+      name="ServicePreconditions"
+      figure="ServicePreconditionsFigure"/>
+  <connections
+      name="PreconditionPreFormulas"
+      figure="PreconditionPreFormulasFigure"/>
+  <connections
+      name="ConstraintsConstFormulas"
+      figure="ConstraintsConstFormulasFigure"/>
   <labels
       name="ClassName"
       figure="ClassFigure"
@@ -323,93 +477,101 @@
   <labels
       name="AttributeDataType"
       figure="AttributeFigure"
-      accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.9/@accessors.0"/>
   <labels
       name="AttributeName"
       figure="AttributeFigure"
-      accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.9/@accessors.1"/>
   <labels
       name="AttributePermissions"
       figure="AttributeFigure"
-      accessor="//@figures.0/@descriptors.3/@accessors.2"/>
+      accessor="//@figures.0/@descriptors.9/@accessors.2"/>
   <labels
       name="DerivedDataType"
       figure="DerivedFigure"
-      accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.10/@accessors.0"/>
   <labels
       name="DerivedName"
       figure="DerivedFigure"
-      accessor="//@figures.0/@descriptors.4/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.10/@accessors.1"/>
   <labels
       name="DerivedPermissions"
       figure="DerivedFigure"
-      accessor="//@figures.0/@descriptors.4/@accessors.2"/>
+      accessor="//@figures.0/@descriptors.10/@accessors.2"/>
   <labels
       name="DerivedDerivationComments"
       figure="DerivedFigure"
-      accessor="//@figures.0/@descriptors.4/@accessors.3"/>
+      accessor="//@figures.0/@descriptors.10/@accessors.3"/>
   <labels
       name="NotDerivedDataType"
       figure="NotDerivedFigure"
-      accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.0"/>
   <labels
       name="NotDerivedName"
       figure="NotDerivedFigure"
-      accessor="//@figures.0/@descriptors.5/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.1"/>
   <labels
       name="NotDerivedPermissions"
       figure="NotDerivedFigure"
-      accessor="//@figures.0/@descriptors.5/@accessors.2"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.2"/>
   <labels
       name="NotDerivedDefaultValue"
       figure="NotDerivedFigure"
-      accessor="//@figures.0/@descriptors.5/@accessors.3"/>
+      accessor="//@figures.0/@descriptors.11/@accessors.3"/>
   <labels
       name="DerivationFormulaCondition"
       figure="DerivationFormulaFigure"
-      accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.12/@accessors.0"/>
   <labels
       name="DerivationFormulaEffect"
       figure="DerivationFormulaFigure"
-      accessor="//@figures.0/@descriptors.6/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.12/@accessors.1"/>
   <labels
       name="ServiceName"
       figure="ServiceFigure"
-      accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.13/@accessors.0"/>
   <labels
       name="ServiceKind"
       figure="ServiceFigure"
-      accessor="//@figures.0/@descriptors.7/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.13/@accessors.1"/>
   <labels
       name="ArgumentName"
       figure="ArgumentFigure"
-      accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.16/@accessors.0"/>
   <labels
       name="ArgumentDefaultValue"
       figure="ArgumentFigure"
-      accessor="//@figures.0/@descriptors.8/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.16/@accessors.1"/>
   <labels
       name="PreconditionPreconditionComments"
       figure="PreconditionFigure"
-      accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.17/@accessors.0"/>
   <labels
       name="PreconditionFormulaCondition"
       figure="PreconditionFormulaFigure"
-      accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.19/@accessors.0"/>
   <labels
       name="PreconditionFormulaError"
       figure="PreconditionFormulaFigure"
-      accessor="//@figures.0/@descriptors.10/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.19/@accessors.1"/>
+  <labels
+      name="ValuationFormulaCondition"
+      figure="ValuationFormulaFigure"
+      accessor="//@figures.0/@descriptors.20/@accessors.0"/>
+  <labels
+      name="ValuationFormulaEffect"
+      figure="ValuationFormulaFigure"
+      accessor="//@figures.0/@descriptors.20/@accessors.1"/>
   <labels
       name="ConstraintsConstraintComments"
       figure="ConstraintsFigure"
-      accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.21/@accessors.0"/>
   <labels
       name="ConstraintFormulaCondition"
       figure="ConstraintFormulaFigure"
-      accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.23/@accessors.0"/>
   <labels
       name="ConstraintFormulaError"
       figure="ConstraintFormulaFigure"
-      accessor="//@figures.0/@descriptors.12/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.23/@accessors.1"/>
 </gmfgraph:Canvas>

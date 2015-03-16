@@ -20,6 +20,15 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ClassRCompound"
+          description="Create new ClassRCompound">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="ClassRComponents"
           description="Create new ClassRComponents">
         <smallIcon
@@ -29,8 +38,53 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ClassAttributes"
+          description="Create new ClassAttributes">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ClassServices"
+          description="Create new ClassServices">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ClassConstraints"
+          description="Create new ClassConstraints">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Relation"
           description="Create new Relation">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="RelationComposed"
+          description="Create new RelationComposed">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="RelationComponent"
+          description="Create new RelationComponent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -49,6 +103,15 @@
           xsi:type="gmftool:CreationTool"
           title="Derived"
           description="Create new Derived">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DerivedDerFormulas"
+          description="Create new DerivedDerFormulas">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -83,6 +146,24 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ServiceArguments"
+          description="Create new ServiceArguments">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ServicePreconditions"
+          description="Create new ServicePreconditions">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Argument"
           description="Create new Argument">
         <smallIcon
@@ -101,6 +182,15 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="PreconditionPreFormulas"
+          description="Create new PreconditionPreFormulas">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="PreconditionFormula"
           description="Create new PreconditionFormula">
         <smallIcon
@@ -110,8 +200,26 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ValuationFormula"
+          description="Create new ValuationFormula">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Constraints"
           description="Create new Constraints">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConstraintsConstFormulas"
+          description="Create new ConstraintsConstFormulas">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

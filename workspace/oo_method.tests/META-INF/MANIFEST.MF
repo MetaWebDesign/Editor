@@ -6,8 +6,8 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: Oo_method.oo_method.tests
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: oo_method.tests
 Require-Bundle: org.eclipse.core.runtime,
  oo_method;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
