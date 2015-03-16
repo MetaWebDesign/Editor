@@ -49,7 +49,7 @@ import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.ISetSelectionTarget;
 import oo_method.Oo_methodFactory;
 import oo_method.Oo_methodPackage;
-import oo_method.provider.Oo__methodEditPlugin;
+import oo_method.provider.Oo_methodEditPlugin;
 
 
 import org.eclipse.core.runtime.Path;
@@ -75,7 +75,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final List<String> FILE_EXTENSIONS =
-		Collections.unmodifiableList(Arrays.asList(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameExtensions").split("\\s*,\\s*")));
+		Collections.unmodifiableList(Arrays.asList(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -84,7 +84,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS =
-		Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+		Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -151,8 +151,8 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 	public void init(IWorkbench workbench, IStructuredSelection selection) {
 		this.workbench = workbench;
 		this.selection = selection;
-		setWindowTitle(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
-		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(Oo__methodEditorPlugin.INSTANCE.getImage("full/wizban/NewOo_method")));
+		setWindowTitle(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
+		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE.getImageDescriptor(Oo_methodEditorPlugin.INSTANCE.getImage("full/wizban/NewOo_method")));
 	}
 
 	/**
@@ -235,7 +235,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 							resource.save(options);
 						}
 						catch (Exception exception) {
-							Oo__methodEditorPlugin.INSTANCE.log(exception);
+							Oo_methodEditorPlugin.INSTANCE.log(exception);
 						}
 						finally {
 							progressMonitor.done();
@@ -268,14 +268,14 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 					 workbench.getEditorRegistry().getDefaultEditor(modelFile.getFullPath().toString()).getId());					 	 
 			}
 			catch (PartInitException exception) {
-				MessageDialog.openError(workbenchWindow.getShell(), Oo__methodEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
+				MessageDialog.openError(workbenchWindow.getShell(), Oo_methodEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
 				return false;
 			}
 
 			return true;
 		}
 		catch (Exception exception) {
-			Oo__methodEditorPlugin.INSTANCE.log(exception);
+			Oo_methodEditorPlugin.INSTANCE.log(exception);
 			return false;
 		}
 	}
@@ -309,7 +309,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 				String extension = new Path(getFileName()).getFileExtension();
 				if (extension == null || !FILE_EXTENSIONS.contains(extension)) {
 					String key = FILE_EXTENSIONS.size() > 1 ? "_WARN_FilenameExtensions" : "_WARN_FilenameExtension";
-					setErrorMessage(Oo__methodEditorPlugin.INSTANCE.getString(key, new Object [] { FORMATTED_FILE_EXTENSIONS }));
+					setErrorMessage(Oo_methodEditorPlugin.INSTANCE.getString(key, new Object [] { FORMATTED_FILE_EXTENSIONS }));
 					return false;
 				}
 				return true;
@@ -386,7 +386,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 
 			Label containerLabel = new Label(composite, SWT.LEFT);
 			{
-				containerLabel.setText(Oo__methodEditorPlugin.INSTANCE.getString("_UI_ModelObject"));
+				containerLabel.setText(Oo_methodEditorPlugin.INSTANCE.getString("_UI_ModelObject"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -412,7 +412,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 
 			Label encodingLabel = new Label(composite, SWT.LEFT);
 			{
-				encodingLabel.setText(Oo__methodEditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
+				encodingLabel.setText(Oo_methodEditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -511,10 +511,10 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 		 */
 		protected String getLabel(String typeName) {
 			try {
-				return Oo__methodEditPlugin.INSTANCE.getString("_UI_" + typeName + "_type");
+				return Oo_methodEditPlugin.INSTANCE.getString("_UI_" + typeName + "_type");
 			}
 			catch(MissingResourceException mre) {
-				Oo__methodEditorPlugin.INSTANCE.log(mre);
+				Oo_methodEditorPlugin.INSTANCE.log(mre);
 			}
 			return typeName;
 		}
@@ -527,7 +527,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 		protected Collection<String> getEncodings() {
 			if (encodings == null) {
 				encodings = new ArrayList<String>();
-				for (StringTokenizer stringTokenizer = new StringTokenizer(Oo__methodEditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer.hasMoreTokens(); ) {
+				for (StringTokenizer stringTokenizer = new StringTokenizer(Oo_methodEditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer.hasMoreTokens(); ) {
 					encodings.add(stringTokenizer.nextToken());
 				}
 			}
@@ -546,9 +546,9 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 		// Create a page, set the title, and the initial model file name.
 		//
 		newFileCreationPage = new Oo_methodModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodModelWizard_label"));
-		newFileCreationPage.setDescription(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodModelWizard_description"));
-		newFileCreationPage.setFileName(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage.setTitle(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodModelWizard_label"));
+		newFileCreationPage.setDescription(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodModelWizard_description"));
+		newFileCreationPage.setFileName(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -574,7 +574,7 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 
 					// Make up a unique new name here.
 					//
-					String defaultModelBaseFilename = Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameDefaultBase");
+					String defaultModelBaseFilename = Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodEditorFilenameDefaultBase");
 					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
 					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
 					for (int i = 1; ((IContainer)selectedResource).findMember(modelFilename) != null; ++i) {
@@ -585,8 +585,8 @@ public class Oo_methodModelWizard extends Wizard implements INewWizard {
 			}
 		}
 		initialObjectCreationPage = new Oo_methodModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodModelWizard_label"));
-		initialObjectCreationPage.setDescription(Oo__methodEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
+		initialObjectCreationPage.setTitle(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Oo_methodModelWizard_label"));
+		initialObjectCreationPage.setDescription(Oo_methodEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}
 

@@ -31,6 +31,7 @@ public class Oo_methodAllTests extends TestSuite {
 	 */
 	public static Test suite() {
 		TestSuite suite = new Oo_methodAllTests("Oo_method Tests");
+		suite.addTest(Oo_methodTests.suite());
 		return suite;
 	}
 

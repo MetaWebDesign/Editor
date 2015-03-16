@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel">
+  <diagram
+      visualID="1000"
+      editPartClassName="StructuralModelEditPart"
+      itemSemanticEditPolicyClassName="StructuralModelItemSemanticEditPolicy"
+      canonicalEditPolicyClassName="StructuralModelCanonicalEditPolicy"
+      iconProviderPriority="Low"
+      validationProviderPriority="Low">
+    <diagramRunTimeClass
+        href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType
+        xsi:type="gmfgen:MetamodelType"
+        editHelperClassName="StructuralModelEditHelper"/>
+    <viewmap
+        xsi:type="gmfgen:FigureViewmap"
+        figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <domainDiagramElement
+        href="oo_method.genmodel#//oo_method/StructuralModel"/>
+    <palette>
+      <groups
+          title="oo_method">
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Class"
+            description="Create new Class"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="ClassRComponents"
+            description="Create new ClassRComponents"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Relation"
+            description="Create new Relation"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Attribute"
+            description="Create new Attribute"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Derived"
+            description="Create new Derived"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="NotDerived"
+            description="Create new NotDerived"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DerivationFormula"
+            description="Create new DerivationFormula"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Service"
+            description="Create new Service"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Argument"
+            description="Create new Argument"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Precondition"
+            description="Create new Precondition"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="PreconditionFormula"
+            description="Create new PreconditionFormula"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Constraints"
+            description="Create new Constraints"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="ConstraintFormula"
+            description="Create new ConstraintFormula"/>
+      </groups>
+    </palette>
+    <preferencePages
+        xsi:type="gmfgen:GenStandardPreferencePage"
+        iD="oo_method.diagram.general"
+        name="Oo_method Diagram">
+      <children
+          xsi:type="gmfgen:GenStandardPreferencePage"
+          iD="oo_method.diagram.appearance"
+          name="Appearance"
+          kind="Appearance"/>
+      <children
+          xsi:type="gmfgen:GenStandardPreferencePage"
+          iD="oo_method.diagram.connections"
+          name="Connections"
+          kind="Connections"/>
+      <children
+          xsi:type="gmfgen:GenStandardPreferencePage"
+          iD="oo_method.diagram.printing"
+          name="Printing"
+          kind="Printing"/>
+      <children
+          xsi:type="gmfgen:GenStandardPreferencePage"
+          iD="oo_method.diagram.rulersAndGrid"
+          name="Rulers And Grid"
+          kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin>
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences
+        child="//@diagram"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs
+        xsi:type="gmfgen:GenStandardPropertyTab"
+        iD="appearance"/>
+    <tabs
+        xsi:type="gmfgen:GenStandardPropertyTab"
+        iD="diagram"/>
+    <tabs
+        xsi:type="gmfgen:GenCustomPropertyTab"
+        iD="domain"
+        label="Core">
+      <filter
+          xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel
+      href="oo_method.genmodel#/"/>
+  <contextMenus
+      context="//@diagram">
+    <items
+        xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

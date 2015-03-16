@@ -10,7 +10,7 @@
       <!-- @generated oo_method -->
       <factory
             uri="oo_method"
-            class="Oo_method.oo_method.provider.Oo_methodItemProviderAdapterFactory"
+            class="oo_method.provider.Oo_methodItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

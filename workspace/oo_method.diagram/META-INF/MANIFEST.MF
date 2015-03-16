@@ -4,12 +4,12 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: oo_method.diagram; singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorPlugin
+Bundle-Activator: oo_method.diagram.part.Oo_methodDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: Oo_method.oo_method.diagram.edit.parts,
- Oo_method.oo_method.diagram.part,
- Oo_method.oo_method.diagram.providers
+Export-Package: oo_method.diagram.edit.parts,
+ oo_method.diagram.part,
+ oo_method.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources,
  org.eclipse.core.expressions,

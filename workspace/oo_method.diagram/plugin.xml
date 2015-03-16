@@ -18,14 +18,14 @@
    <extension point="org.eclipse.ui.editors" id="gmf-editor">
       <?gmfgen generated="true"?>
       <editor
-         id="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID"
+         id="oo_method.diagram.part.Oo_methodDiagramEditorID"
          name="%editorName"
          icon="icons/obj16/Oo_methodDiagramFile.gif"
          extensions="oo_method_diagram"
          default="true"
-         class="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditor"
-         matchingStrategy="Oo_method.oo_method.diagram.part.Oo_methodMatchingStrategy"
-         contributorClass="Oo_method.oo_method.diagram.part.Oo_methodDiagramActionBarContributor">
+         class="oo_method.diagram.part.Oo_methodDiagramEditor"
+         matchingStrategy="oo_method.diagram.part.Oo_methodMatchingStrategy"
+         contributorClass="oo_method.diagram.part.Oo_methodDiagramActionBarContributor">
       </editor>
    </extension>
    
@@ -33,7 +33,7 @@
       <?gmfgen generated="true"?>
       <context
          description="%context.description"
-         id="Oo_method.oo_method.diagram.ui.diagramContext"
+         id="oo_method.diagram.ui.diagramContext"
          name="%context.name"
          parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
       </context>
@@ -45,8 +45,8 @@
   	     name="%newWizardName"
   	     icon="icons/obj16/Oo_methodDiagramFile.gif"
   	     category="org.eclipse.ui.Examples"
-  	     class="Oo_method.oo_method.diagram.part.Oo_methodCreationWizard"
-  	     id="Oo_method.oo_method.diagram.part.Oo_methodCreationWizardID">
+  	     class="oo_method.diagram.part.Oo_methodCreationWizard"
+  	     id="oo_method.diagram.part.Oo_methodCreationWizardID">
   	  	 <description>%newWizardDesc</description>  
       </wizard>
    </extension>
@@ -59,7 +59,7 @@
             objectClass="org.eclipse.core.resources.IFile">
          <action
                label="%initDiagramActionLabel"
-               class="Oo_method.oo_method.diagram.part.Oo_methodInitDiagramFileAction"
+               class="oo_method.diagram.part.Oo_methodInitDiagramFileAction"
                menubarPath="additions"
                enablesFor="1"
                id="oo_method.diagram.InitDiagramAction">
@@ -73,7 +73,7 @@
          class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
          id="Oo_methodPresentation">
          <Priority name="Lowest"/>
-         <ViewId id="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID">
+         <ViewId id="oo_method.diagram.part.Oo_methodDiagramEditorID">
             <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
                <GlobalActionId actionId="delete"/>
             </ElementType>
@@ -90,7 +90,7 @@
          class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
          id="Oo_methodPresentationIDE">
          <Priority name="Lowest"/>
-         <ViewId id="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID">
+         <ViewId id="oo_method.diagram.part.Oo_methodDiagramEditorID">
             <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
                <GlobalActionId actionId="bookmark"/>
             </ElementType>
@@ -100,7 +100,7 @@
             class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
             id="Oo_methodRender">
          <Priority name="Lowest"/>
-         <ViewId id="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID">
+         <ViewId id="oo_method.diagram.part.Oo_methodDiagramEditorID">
             <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
                <GlobalActionId actionId="cut"/>
                <GlobalActionId actionId="copy"/>
@@ -113,7 +113,7 @@
 
    <extension point="org.eclipse.core.runtime.preferences" id="prefs">
       <?gmfgen generated="true"?>
-      <initializer class="Oo_method.oo_method.diagram.preferences.DiagramPreferenceInitializer"/>
+      <initializer class="oo_method.diagram.preferences.DiagramPreferenceInitializer"/>
    </extension>
 
    <extension point="org.eclipse.ui.preferencePages" id="prefpages">
@@ -121,31 +121,31 @@
       <page
             id="oo_method.diagram.general"
             name="%prefpage.oo_method.diagram.general"
-            class="Oo_method.oo_method.diagram.preferences.DiagramGeneralPreferencePage">
+            class="oo_method.diagram.preferences.DiagramGeneralPreferencePage">
       </page>
       <page
             id="oo_method.diagram.appearance"
             name="%prefpage.oo_method.diagram.appearance"
             category="oo_method.diagram.general"
-            class="Oo_method.oo_method.diagram.preferences.DiagramAppearancePreferencePage">
+            class="oo_method.diagram.preferences.DiagramAppearancePreferencePage">
       </page>
       <page
             id="oo_method.diagram.connections"
             name="%prefpage.oo_method.diagram.connections"
             category="oo_method.diagram.general"
-            class="Oo_method.oo_method.diagram.preferences.DiagramConnectionsPreferencePage">
+            class="oo_method.diagram.preferences.DiagramConnectionsPreferencePage">
       </page>
       <page
             id="oo_method.diagram.printing"
             name="%prefpage.oo_method.diagram.printing"
             category="oo_method.diagram.general"
-            class="Oo_method.oo_method.diagram.preferences.DiagramPrintingPreferencePage">
+            class="oo_method.diagram.preferences.DiagramPrintingPreferencePage">
       </page>
       <page
             id="oo_method.diagram.rulersAndGrid"
             name="%prefpage.oo_method.diagram.rulersAndGrid"
             category="oo_method.diagram.general"
-            class="Oo_method.oo_method.diagram.preferences.DiagramRulersAndGridPreferencePage">
+            class="oo_method.diagram.preferences.DiagramRulersAndGridPreferencePage">
       </page>
    </extension>
 
@@ -153,7 +153,7 @@
       <?gmfgen generated="true"?>
       <propertyContributor
             contributorId="oo_method.diagram"
-            labelProvider="Oo_method.oo_method.diagram.sheet.Oo_methodSheetLabelProvider">
+            labelProvider="oo_method.diagram.sheet.Oo_methodSheetLabelProvider">
          <propertyCategory category="domain"/>
          <propertyCategory category="visual"/>
          <propertyCategory category="extra"/>
@@ -204,17 +204,17 @@
          <propertySection
             id="property.section.domain" 
             tab="property.tab.domain"
-            class="Oo_method.oo_method.diagram.sheet.Oo_methodPropertySection">
+            class="oo_method.diagram.sheet.Oo_methodPropertySection">
             <input type="org.eclipse.gmf.runtime.notation.View"/>
             <input type="org.eclipse.gef.EditPart"/>
-            <input type="Oo_method.oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
+            <input type="oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
          </propertySection>
       </propertySections>
    </extension>
 
    <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
       <?gmfgen generated="true"?>
-      <viewProvider class="Oo_method.oo_method.diagram.providers.Oo_methodViewProvider">
+      <viewProvider class="oo_method.diagram.providers.Oo_methodViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Oo_method"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints=""/>
@@ -223,7 +223,7 @@
 
    <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
       <?gmfgen generated="true"?>
-      <editpartProvider class="Oo_method.oo_method.diagram.providers.Oo_methodEditPartProvider">
+      <editpartProvider class="oo_method.diagram.providers.Oo_methodEditPartProvider">
          <Priority name="Lowest"/>
          <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
             <method name="getType()" value="Oo_method"/>
@@ -247,9 +247,9 @@
    
    <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
       <?gmfgen generated="true"?>
-      <modelingAssistantProvider class="Oo_method.oo_method.diagram.providers.assistants.Oo_methodModelingAssistantProviderOfStructuralModelEditPart">
+      <modelingAssistantProvider class="oo_method.diagram.providers.assistants.Oo_methodModelingAssistantProviderOfStructuralModelEditPart">
          <Priority name="Lowest"/>
-         <object class="Oo_method.oo_method.diagram.edit.parts.StructuralModelEditPart" id="StructuralModel_1000"/>
+         <object class="oo_method.diagram.edit.parts.StructuralModelEditPart" id="StructuralModel_1000"/>
          <context elements="StructuralModel_1000"/>
       </modelingAssistantProvider>
       
@@ -258,7 +258,7 @@
 
    <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
       <?gmfgen generated="true"?>
-      <IconProvider class="Oo_method.oo_method.diagram.providers.Oo_methodIconProvider">
+      <IconProvider class="oo_method.diagram.providers.Oo_methodIconProvider">
          <Priority name="Low"/>
       </IconProvider>
    </extension>
@@ -271,7 +271,7 @@
                name="%metatype.name.StructuralModel_1000"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="StructuralModel"
-               edithelper="Oo_method.oo_method.diagram.edit.helpers.StructuralModelEditHelper">
+               edithelper="oo_method.diagram.edit.helpers.StructuralModelEditHelper">
             <param name="semanticHint" value="1000"/>
          </metamodelType>
       </metamodel>
@@ -298,7 +298,7 @@
            type="org.eclipse.emf.common.ui.URIEditorInput"
            namespace="oo_method.diagram"
            properties="isURIEditorInput"
-           class="Oo_method.oo_method.diagram.part.Oo_methodUriEditorInputTester">
+           class="oo_method.diagram.part.Oo_methodUriEditorInputTester">
        </propertyTester>
    </extension>
 
@@ -324,8 +324,8 @@
             id="oo_method.diagram.resourceContent" 
             name="%navigatorContentName" 
             priority="normal" 
-            contentProvider="Oo_method.oo_method.diagram.navigator.Oo_methodNavigatorContentProvider" 
-            labelProvider="Oo_method.oo_method.diagram.navigator.Oo_methodNavigatorLabelProvider"
+            contentProvider="oo_method.diagram.navigator.Oo_methodNavigatorContentProvider" 
+            labelProvider="oo_method.diagram.navigator.Oo_methodNavigatorLabelProvider"
             icon="icons/obj16/Oo_methodDiagramFile.gif"
             activeByDefault="true">
          <triggerPoints>
@@ -334,24 +334,24 @@
     	          <instanceof value="org.eclipse.core.resources.IFile"/>
         	      <test property="org.eclipse.core.resources.extension" value="oo_method_diagram"/>
                </and>
-               <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
+               <instanceof value="oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
             </or>
          </triggerPoints>
          <possibleChildren>
             <or>
-         	   <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
+         	   <instanceof value="oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
             </or>
          </possibleChildren>
          <commonSorter 
                id="oo_method.diagram.navigatorSorter" 
-               class="Oo_method.oo_method.diagram.navigator.Oo_methodNavigatorSorter">
+               class="oo_method.diagram.navigator.Oo_methodNavigatorSorter">
             <parentExpression>
                <or>
 	              <and>
     	             <instanceof value="org.eclipse.core.resources.IFile"/>
         	         <test property="org.eclipse.core.resources.extension" value="oo_method_diagram"/>
                   </and>
-                  <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
+                  <instanceof value="oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
                </or>
             </parentExpression>
          </commonSorter>
@@ -360,8 +360,8 @@
             id="oo_method.diagram.domainResourceContent" 
             name="%domainNavigatorContentName" 
             priority="normal" 
-            contentProvider="Oo_method.oo_method.diagram.navigator.Oo_methodDomainNavigatorContentProvider" 
-            labelProvider="Oo_method.oo_method.diagram.navigator.Oo_methodDomainNavigatorLabelProvider"
+            contentProvider="oo_method.diagram.navigator.Oo_methodDomainNavigatorContentProvider" 
+            labelProvider="oo_method.diagram.navigator.Oo_methodDomainNavigatorLabelProvider"
             icon="icons/obj16/Oo_methodDiagramFile.gif"
             activeByDefault="true">
          <triggerPoints>
@@ -370,19 +370,19 @@
     	          <instanceof value="org.eclipse.core.resources.IFile"/>
         	      <test property="org.eclipse.core.resources.extension" value="oo_method"/>
                </and>
-               <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodDomainNavigatorItem"/>
+               <instanceof value="oo_method.diagram.navigator.Oo_methodDomainNavigatorItem"/>
             </or>
          </triggerPoints>
          <possibleChildren>
-            <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodDomainNavigatorItem"/>
+            <instanceof value="oo_method.diagram.navigator.Oo_methodDomainNavigatorItem"/>
          </possibleChildren>
       </navigatorContent>
       <actionProvider
             id="oo_method.diagram.navigatorActionProvider"
-            class="Oo_method.oo_method.diagram.navigator.Oo_methodNavigatorActionProvider">
+            class="oo_method.diagram.navigator.Oo_methodNavigatorActionProvider">
          <enablement>
             <or>
-               <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
+               <instanceof value="oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
             </or>
          </enablement>
       </actionProvider>
@@ -392,7 +392,7 @@
       <?gmfgen generated="true"?>
       <linkHelper
             id="oo_method.diagram.navigatorLinkHelper"
-            class="Oo_method.oo_method.diagram.navigator.Oo_methodNavigatorLinkHelper">
+            class="oo_method.diagram.navigator.Oo_methodNavigatorLinkHelper">
          <editorInputEnablement>
             <and>
                <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
@@ -400,7 +400,7 @@
             </and>
          </editorInputEnablement>
          <selectionEnablement>
-            <instanceof value="Oo_method.oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
+            <instanceof value="oo_method.diagram.navigator.Oo_methodAbstractNavigatorItem"/>
          </selectionEnablement>
       </linkHelper>
    </extension>
@@ -408,17 +408,17 @@
       <?gmfgen generated="true"?>
       <command
          categoryId="org.eclipse.ui.category.edit"
-         defaultHandler="Oo_method.oo_method.diagram.part.Oo_methodDiagramUpdateCommand"
+         defaultHandler="oo_method.diagram.part.Oo_methodDiagramUpdateCommand"
          description="%update.diagram.description"
-         id="Oo_method.oo_method.diagram.updateDiagram"
+         id="oo_method.diagram.updateDiagram"
          name="%update.diagram.name"/>
    </extension>
    
    <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
       <?gmfgen generated="true"?>
       <key 
-         commandId="Oo_method.oo_method.diagram.updateDiagram"
-         contextId="Oo_method.oo_method.diagram.ui.diagramContext"
+         commandId="oo_method.diagram.updateDiagram"
+         contextId="oo_method.diagram.ui.diagramContext"
          schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
          sequence="F5"/>
    </extension>
@@ -433,9 +433,9 @@
          <command commandId="oo_method.diagram.LoadResourceAction">
             <visibleWhen>
                <and>
-                  <with variable="activePartId"><equals value="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID"/></with>
+                  <with variable="activePartId"><equals value="oo_method.diagram.part.Oo_methodDiagramEditorID"/></with>
                   <with variable="selection"><iterate ifEmpty="false"> 
-                     <instanceof value="Oo_method.oo_method.diagram.edit.parts.StructuralModelEditPart"/>
+                     <instanceof value="oo_method.diagram.edit.parts.StructuralModelEditPart"/>
                   </iterate></with>
                </and>
             </visibleWhen>
@@ -445,11 +445,11 @@
 
    <extension point="org.eclipse.ui.commands" id="menu-commands">
       <?gmfgen generated="true"?>
-      <category id="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <category id="oo_method.diagram.part.Oo_methodDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
       <command id="oo_method.diagram.LoadResourceAction"
          name="Load Resource"
-         categoryId="Oo_method.oo_method.diagram.part.Oo_methodDiagramEditorID"
-         defaultHandler="Oo_method.oo_method.diagram.part.LoadResourceAction"/>
+         categoryId="oo_method.diagram.part.Oo_methodDiagramEditorID"
+         defaultHandler="oo_method.diagram.part.LoadResourceAction"/>
    </extension>
 
    <extension point="org.eclipse.ui.handlers" id="menu-handlers">

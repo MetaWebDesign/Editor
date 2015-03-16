@@ -3,5 +3,5 @@ gmf_dashboard/domainGenerationModel=platform\:/resource/oo_method/model/oo_metho
 gmf_dashboard/domainModel=platform\:/resource/oo_method/model/oo_method.ecore
 gmf_dashboard/generationModel=platform\:/resource/oo_method/model/oo_method.gmfgen
 gmf_dashboard/graphicalDefinitionModel=platform\:/resource/oo_method/model/oo_method.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/oo_method/model/My.gmfmap
+gmf_dashboard/mappingModel=platform\:/resource/oo_method/model/MyCreate.gmfmap
 gmf_dashboard/toolingDefinitionModel=platform\:/resource/oo_method/model/oo_method.gmftool

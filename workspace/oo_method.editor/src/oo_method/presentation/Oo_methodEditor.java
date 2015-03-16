@@ -530,7 +530,7 @@ public class Oo_methodEditor
 					}
 				}
 				catch (CoreException exception) {
-					Oo__methodEditorPlugin.INSTANCE.log(exception);
+					Oo_methodEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 		};
@@ -646,7 +646,7 @@ public class Oo_methodEditor
 					showTabs();
 				}
 				catch (PartInitException exception) {
-					Oo__methodEditorPlugin.INSTANCE.log(exception);
+					Oo_methodEditorPlugin.INSTANCE.log(exception);
 				}
 			}
 
@@ -657,7 +657,7 @@ public class Oo_methodEditor
 						markerHelper.createMarkers(diagnostic);
 					}
 					catch (CoreException exception) {
-						Oo__methodEditorPlugin.INSTANCE.log(exception);
+						Oo_methodEditorPlugin.INSTANCE.log(exception);
 					}
 				}
 			}
@@ -1522,7 +1522,7 @@ public class Oo_methodEditor
 		catch (Exception exception) {
 			// Something went wrong that shouldn't.
 			//
-			Oo__methodEditorPlugin.INSTANCE.log(exception);
+			Oo_methodEditorPlugin.INSTANCE.log(exception);
 		}
 		updateProblemIndication = true;
 		updateProblemIndication();
@@ -1726,7 +1726,7 @@ public class Oo_methodEditor
 	 * @generated
 	 */
 	private static String getString(String key) {
-		return Oo__methodEditorPlugin.INSTANCE.getString(key);
+		return Oo_methodEditorPlugin.INSTANCE.getString(key);
 	}
 
 	/**
@@ -1736,7 +1736,7 @@ public class Oo_methodEditor
 	 * @generated
 	 */
 	private static String getString(String key, Object s1) {
-		return Oo__methodEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
+		return Oo_methodEditorPlugin.INSTANCE.getString(key, new Object [] { s1 });
 	}
 
 	/**

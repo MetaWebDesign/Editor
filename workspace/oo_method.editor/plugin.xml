@@ -12,9 +12,9 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="Oo_method.oo_method.presentation.Oo_methodModelWizardID"
+            id="oo_method.presentation.Oo_methodModelWizardID"
             name="%_UI_Oo_methodModelWizard_label"
-            class="Oo_method.oo_method.presentation.Oo_methodModelWizard"
+            class="oo_method.presentation.Oo_methodModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
             icon="icons/full/obj16/Oo_methodModelFile.gif">
          <description>%_UI_Oo_methodModelWizard_description</description>
@@ -25,12 +25,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated oo_method -->
       <editor
-            id="Oo_method.oo_method.presentation.Oo_methodEditorID"
+            id="oo_method.presentation.Oo_methodEditorID"
             name="%_UI_Oo_methodEditor_label"
             icon="icons/full/obj16/Oo_methodModelFile.gif"
             extensions="oo_method"
-            class="Oo_method.oo_method.presentation.Oo_methodEditor"
-            contributorClass="Oo_method.oo_method.presentation.Oo_methodActionBarContributor">
+            class="oo_method.presentation.Oo_methodEditor"
+            contributorClass="oo_method.presentation.Oo_methodActionBarContributor">
       </editor>
    </extension>
 </plugin>
