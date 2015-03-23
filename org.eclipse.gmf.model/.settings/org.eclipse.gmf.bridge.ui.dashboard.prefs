@@ -1,7 +1,0 @@
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/org.eclipse.gmf.model/model/construc.genmodel
-gmf_dashboard/domainModel=platform\:/resource/org.eclipse.gmf.model/model/construc.ecore
-gmf_dashboard/generationModel=platform\:/resource/org.eclipse.gmf.model/model/construc.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/org.eclipse.gmf.model/model/construc.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/org.eclipse.gmf.model/model/construc.gmfmap
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/org.eclipse.gmf.model/model/construc.gmftool
