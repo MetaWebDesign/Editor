@@ -10,7 +10,7 @@
       <!-- @generated modelo -->
       <package
             uri="http://modelo/1.0"
-            class="modelo.ModeloPackage"
+            class="Modelo.modelo.ModeloPackage"
             genModel="model/modelo.genmodel"/>
    </extension>
 

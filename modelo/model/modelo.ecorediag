@@ -19,6 +19,10 @@
   <children xmi:type="notation:Node" xmi:id="_UWUp4NEKEeSNJd54azbHaA" type="1001">
     <children xmi:type="notation:Node" xmi:id="_UWVQ8NEKEeSNJd54azbHaA" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_UWV4ANEKEeSNJd54azbHaA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_DoWfANF-EeS8CtKOkGzjkQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="modelo.ecore#//Class/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DoXGENF-EeS8CtKOkGzjkQ"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_UWV4AdEKEeSNJd54azbHaA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_UWV4AtEKEeSNJd54azbHaA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_UWV4A9EKEeSNJd54azbHaA"/>

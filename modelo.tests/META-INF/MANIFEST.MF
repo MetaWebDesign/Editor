@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: modelo.tests
+Export-Package: Modelo.modelo.tests
 Require-Bundle: org.eclipse.core.runtime,
  modelo;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,

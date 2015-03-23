@@ -18,14 +18,14 @@
    <extension point="org.eclipse.ui.editors" id="gmf-editor">
       <?gmfgen generated="true"?>
       <editor
-         id="modelo.diagram.part.ModeloDiagramEditorID"
+         id="Modelo.modelo.diagram.part.ModeloDiagramEditorID"
          name="%editorName"
          icon="icons/obj16/ModeloDiagramFile.gif"
          extensions="modelo_diagram"
          default="true"
-         class="modelo.diagram.part.ModeloDiagramEditor"
-         matchingStrategy="modelo.diagram.part.ModeloMatchingStrategy"
-         contributorClass="modelo.diagram.part.ModeloDiagramActionBarContributor">
+         class="Modelo.modelo.diagram.part.ModeloDiagramEditor"
+         matchingStrategy="Modelo.modelo.diagram.part.ModeloMatchingStrategy"
+         contributorClass="Modelo.modelo.diagram.part.ModeloDiagramActionBarContributor">
       </editor>
    </extension>
    
@@ -33,7 +33,7 @@
       <?gmfgen generated="true"?>
       <context
          description="%context.description"
-         id="modelo.diagram.ui.diagramContext"
+         id="Modelo.modelo.diagram.ui.diagramContext"
          name="%context.name"
          parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
       </context>
@@ -45,8 +45,8 @@
   	     name="%newWizardName"
   	     icon="icons/obj16/ModeloDiagramFile.gif"
   	     category="org.eclipse.ui.Examples"
-  	     class="modelo.diagram.part.ModeloCreationWizard"
-  	     id="modelo.diagram.part.ModeloCreationWizardID">
+  	     class="Modelo.modelo.diagram.part.ModeloCreationWizard"
+  	     id="Modelo.modelo.diagram.part.ModeloCreationWizardID">
   	  	 <description>%newWizardDesc</description>  
       </wizard>
    </extension>
@@ -59,7 +59,7 @@
             objectClass="org.eclipse.core.resources.IFile">
          <action
                label="%initDiagramActionLabel"
-               class="modelo.diagram.part.ModeloInitDiagramFileAction"
+               class="Modelo.modelo.diagram.part.ModeloInitDiagramFileAction"
                menubarPath="additions"
                enablesFor="1"
                id="modelo.diagram.InitDiagramAction">
@@ -73,7 +73,7 @@
          class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
          id="ModeloPresentation">
          <Priority name="Lowest"/>
-         <ViewId id="modelo.diagram.part.ModeloDiagramEditorID">
+         <ViewId id="Modelo.modelo.diagram.part.ModeloDiagramEditorID">
             <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
                <GlobalActionId actionId="delete"/>
             </ElementType>
@@ -90,7 +90,7 @@
          class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
          id="ModeloPresentationIDE">
          <Priority name="Lowest"/>
-         <ViewId id="modelo.diagram.part.ModeloDiagramEditorID">
+         <ViewId id="Modelo.modelo.diagram.part.ModeloDiagramEditorID">
             <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
                <GlobalActionId actionId="bookmark"/>
             </ElementType>
@@ -100,7 +100,7 @@
             class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
             id="ModeloRender">
          <Priority name="Lowest"/>
-         <ViewId id="modelo.diagram.part.ModeloDiagramEditorID">
+         <ViewId id="Modelo.modelo.diagram.part.ModeloDiagramEditorID">
             <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
                <GlobalActionId actionId="cut"/>
                <GlobalActionId actionId="copy"/>
@@ -113,7 +113,7 @@
 
    <extension point="org.eclipse.core.runtime.preferences" id="prefs">
       <?gmfgen generated="true"?>
-      <initializer class="modelo.diagram.preferences.DiagramPreferenceInitializer"/>
+      <initializer class="Modelo.modelo.diagram.preferences.DiagramPreferenceInitializer"/>
    </extension>
 
    <extension point="org.eclipse.ui.preferencePages" id="prefpages">
@@ -121,31 +121,31 @@
       <page
             id="modelo.diagram.general"
             name="%prefpage.modelo.diagram.general"
-            class="modelo.diagram.preferences.DiagramGeneralPreferencePage">
+            class="Modelo.modelo.diagram.preferences.DiagramGeneralPreferencePage">
       </page>
       <page
             id="modelo.diagram.appearance"
             name="%prefpage.modelo.diagram.appearance"
             category="modelo.diagram.general"
-            class="modelo.diagram.preferences.DiagramAppearancePreferencePage">
+            class="Modelo.modelo.diagram.preferences.DiagramAppearancePreferencePage">
       </page>
       <page
             id="modelo.diagram.connections"
             name="%prefpage.modelo.diagram.connections"
             category="modelo.diagram.general"
-            class="modelo.diagram.preferences.DiagramConnectionsPreferencePage">
+            class="Modelo.modelo.diagram.preferences.DiagramConnectionsPreferencePage">
       </page>
       <page
             id="modelo.diagram.printing"
             name="%prefpage.modelo.diagram.printing"
             category="modelo.diagram.general"
-            class="modelo.diagram.preferences.DiagramPrintingPreferencePage">
+            class="Modelo.modelo.diagram.preferences.DiagramPrintingPreferencePage">
       </page>
       <page
             id="modelo.diagram.rulersAndGrid"
             name="%prefpage.modelo.diagram.rulersAndGrid"
             category="modelo.diagram.general"
-            class="modelo.diagram.preferences.DiagramRulersAndGridPreferencePage">
+            class="Modelo.modelo.diagram.preferences.DiagramRulersAndGridPreferencePage">
       </page>
    </extension>
 
@@ -153,7 +153,7 @@
       <?gmfgen generated="true"?>
       <propertyContributor
             contributorId="modelo.diagram"
-            labelProvider="modelo.diagram.sheet.ModeloSheetLabelProvider">
+            labelProvider="Modelo.modelo.diagram.sheet.ModeloSheetLabelProvider">
          <propertyCategory category="domain"/>
          <propertyCategory category="visual"/>
          <propertyCategory category="extra"/>
@@ -204,17 +204,17 @@
          <propertySection
             id="property.section.domain" 
             tab="property.tab.domain"
-            class="modelo.diagram.sheet.ModeloPropertySection">
+            class="Modelo.modelo.diagram.sheet.ModeloPropertySection">
             <input type="org.eclipse.gmf.runtime.notation.View"/>
             <input type="org.eclipse.gef.EditPart"/>
-            <input type="modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
+            <input type="Modelo.modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
          </propertySection>
       </propertySections>
    </extension>
 
    <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
       <?gmfgen generated="true"?>
-      <viewProvider class="modelo.diagram.providers.ModeloViewProvider">
+      <viewProvider class="Modelo.modelo.diagram.providers.ModeloViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Modelo"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001"/>
@@ -224,7 +224,7 @@
 
    <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
       <?gmfgen generated="true"?>
-      <editpartProvider class="modelo.diagram.providers.ModeloEditPartProvider">
+      <editpartProvider class="Modelo.modelo.diagram.providers.ModeloEditPartProvider">
          <Priority name="Lowest"/>
          <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
             <method name="getType()" value="Modelo"/>
@@ -236,7 +236,7 @@
             <method name="getType()" value="4001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value=""/>
+            <method name="getType()" value="5001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value=""/>
@@ -248,14 +248,14 @@
    
    <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
       <?gmfgen generated="true"?>
-      <modelingAssistantProvider class="modelo.diagram.providers.assistants.ModeloModelingAssistantProviderOfModelEditPart">
+      <modelingAssistantProvider class="Modelo.modelo.diagram.providers.assistants.ModeloModelingAssistantProviderOfModelEditPart">
          <Priority name="Lowest"/>
-         <object class="modelo.diagram.edit.parts.ModelEditPart" id="Model_1000"/>
+         <object class="Modelo.modelo.diagram.edit.parts.ModelEditPart" id="Model_1000"/>
          <context elements="Model_1000"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="modelo.diagram.providers.assistants.ModeloModelingAssistantProviderOfClassEditPart">
+            <modelingAssistantProvider class="Modelo.modelo.diagram.providers.assistants.ModeloModelingAssistantProviderOfClassEditPart">
          <Priority name="Lowest"/>
-         <object class="modelo.diagram.edit.parts.ClassEditPart" id="Class_2001"/>
+         <object class="Modelo.modelo.diagram.edit.parts.ClassEditPart" id="Class_2001"/>
          <context elements="Class_2001"/>
       </modelingAssistantProvider>
       
@@ -264,9 +264,16 @@
 
    <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
       <?gmfgen generated="true"?>
-      <IconProvider class="modelo.diagram.providers.ModeloIconProvider">
+      <IconProvider class="Modelo.modelo.diagram.providers.ModeloIconProvider">
          <Priority name="Low"/>
       </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="Modelo.modelo.diagram.providers.ModeloParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
    </extension>
 
    <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
@@ -277,7 +284,7 @@
                name="%metatype.name.Model_1000"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Model"
-               edithelper="modelo.diagram.edit.helpers.ModelEditHelper">
+               edithelper="Modelo.modelo.diagram.edit.helpers.ModelEditHelper">
             <param name="semanticHint" value="1000"/>
          </metamodelType>
       </metamodel>
@@ -287,7 +294,7 @@
                name="%metatype.name.Class_2001"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Class"
-               edithelper="modelo.diagram.edit.helpers.ClassEditHelper">
+               edithelper="Modelo.modelo.diagram.edit.helpers.ClassEditHelper">
             <param name="semanticHint" value="2001"/>
          </metamodelType>
       </metamodel>
@@ -297,7 +304,7 @@
                name="%metatype.name.Relation_4001"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Relation"
-               edithelper="modelo.diagram.edit.helpers.RelationEditHelper">
+               edithelper="Modelo.modelo.diagram.edit.helpers.RelationEditHelper">
             <param name="semanticHint" value="4001"/>
          </metamodelType>
       </metamodel>
@@ -326,7 +333,7 @@
            type="org.eclipse.emf.common.ui.URIEditorInput"
            namespace="modelo.diagram"
            properties="isURIEditorInput"
-           class="modelo.diagram.part.ModeloUriEditorInputTester">
+           class="Modelo.modelo.diagram.part.ModeloUriEditorInputTester">
        </propertyTester>
    </extension>
 
@@ -352,8 +359,8 @@
             id="modelo.diagram.resourceContent" 
             name="%navigatorContentName" 
             priority="normal" 
-            contentProvider="modelo.diagram.navigator.ModeloNavigatorContentProvider" 
-            labelProvider="modelo.diagram.navigator.ModeloNavigatorLabelProvider"
+            contentProvider="Modelo.modelo.diagram.navigator.ModeloNavigatorContentProvider" 
+            labelProvider="Modelo.modelo.diagram.navigator.ModeloNavigatorLabelProvider"
             icon="icons/obj16/ModeloDiagramFile.gif"
             activeByDefault="true">
          <triggerPoints>
@@ -362,24 +369,24 @@
     	          <instanceof value="org.eclipse.core.resources.IFile"/>
         	      <test property="org.eclipse.core.resources.extension" value="modelo_diagram"/>
                </and>
-               <instanceof value="modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
+               <instanceof value="Modelo.modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
             </or>
          </triggerPoints>
          <possibleChildren>
             <or>
-         	   <instanceof value="modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
+         	   <instanceof value="Modelo.modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
             </or>
          </possibleChildren>
          <commonSorter 
                id="modelo.diagram.navigatorSorter" 
-               class="modelo.diagram.navigator.ModeloNavigatorSorter">
+               class="Modelo.modelo.diagram.navigator.ModeloNavigatorSorter">
             <parentExpression>
                <or>
 	              <and>
     	             <instanceof value="org.eclipse.core.resources.IFile"/>
         	         <test property="org.eclipse.core.resources.extension" value="modelo_diagram"/>
                   </and>
-                  <instanceof value="modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
+                  <instanceof value="Modelo.modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
                </or>
             </parentExpression>
          </commonSorter>
@@ -388,8 +395,8 @@
             id="modelo.diagram.domainResourceContent" 
             name="%domainNavigatorContentName" 
             priority="normal" 
-            contentProvider="modelo.diagram.navigator.ModeloDomainNavigatorContentProvider" 
-            labelProvider="modelo.diagram.navigator.ModeloDomainNavigatorLabelProvider"
+            contentProvider="Modelo.modelo.diagram.navigator.ModeloDomainNavigatorContentProvider" 
+            labelProvider="Modelo.modelo.diagram.navigator.ModeloDomainNavigatorLabelProvider"
             icon="icons/obj16/ModeloDiagramFile.gif"
             activeByDefault="true">
          <triggerPoints>
@@ -398,19 +405,19 @@
     	          <instanceof value="org.eclipse.core.resources.IFile"/>
         	      <test property="org.eclipse.core.resources.extension" value="modelo"/>
                </and>
-               <instanceof value="modelo.diagram.navigator.ModeloDomainNavigatorItem"/>
+               <instanceof value="Modelo.modelo.diagram.navigator.ModeloDomainNavigatorItem"/>
             </or>
          </triggerPoints>
          <possibleChildren>
-            <instanceof value="modelo.diagram.navigator.ModeloDomainNavigatorItem"/>
+            <instanceof value="Modelo.modelo.diagram.navigator.ModeloDomainNavigatorItem"/>
          </possibleChildren>
       </navigatorContent>
       <actionProvider
             id="modelo.diagram.navigatorActionProvider"
-            class="modelo.diagram.navigator.ModeloNavigatorActionProvider">
+            class="Modelo.modelo.diagram.navigator.ModeloNavigatorActionProvider">
          <enablement>
             <or>
-               <instanceof value="modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
+               <instanceof value="Modelo.modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
             </or>
          </enablement>
       </actionProvider>
@@ -420,7 +427,7 @@
       <?gmfgen generated="true"?>
       <linkHelper
             id="modelo.diagram.navigatorLinkHelper"
-            class="modelo.diagram.navigator.ModeloNavigatorLinkHelper">
+            class="Modelo.modelo.diagram.navigator.ModeloNavigatorLinkHelper">
          <editorInputEnablement>
             <and>
                <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
@@ -428,7 +435,7 @@
             </and>
          </editorInputEnablement>
          <selectionEnablement>
-            <instanceof value="modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
+            <instanceof value="Modelo.modelo.diagram.navigator.ModeloAbstractNavigatorItem"/>
          </selectionEnablement>
       </linkHelper>
    </extension>
@@ -436,17 +443,17 @@
       <?gmfgen generated="true"?>
       <command
          categoryId="org.eclipse.ui.category.edit"
-         defaultHandler="modelo.diagram.part.ModeloDiagramUpdateCommand"
+         defaultHandler="Modelo.modelo.diagram.part.ModeloDiagramUpdateCommand"
          description="%update.diagram.description"
-         id="modelo.diagram.updateDiagram"
+         id="Modelo.modelo.diagram.updateDiagram"
          name="%update.diagram.name"/>
    </extension>
    
    <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
       <?gmfgen generated="true"?>
       <key 
-         commandId="modelo.diagram.updateDiagram"
-         contextId="modelo.diagram.ui.diagramContext"
+         commandId="Modelo.modelo.diagram.updateDiagram"
+         contextId="Modelo.modelo.diagram.ui.diagramContext"
          schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
          sequence="F5"/>
    </extension>
@@ -461,9 +468,9 @@
          <command commandId="modelo.diagram.LoadResourceAction">
             <visibleWhen>
                <and>
-                  <with variable="activePartId"><equals value="modelo.diagram.part.ModeloDiagramEditorID"/></with>
+                  <with variable="activePartId"><equals value="Modelo.modelo.diagram.part.ModeloDiagramEditorID"/></with>
                   <with variable="selection"><iterate ifEmpty="false"> 
-                     <instanceof value="modelo.diagram.edit.parts.ModelEditPart"/>
+                     <instanceof value="Modelo.modelo.diagram.edit.parts.ModelEditPart"/>
                   </iterate></with>
                </and>
             </visibleWhen>
@@ -473,11 +480,11 @@
 
    <extension point="org.eclipse.ui.commands" id="menu-commands">
       <?gmfgen generated="true"?>
-      <category id="modelo.diagram.part.ModeloDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <category id="Modelo.modelo.diagram.part.ModeloDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
       <command id="modelo.diagram.LoadResourceAction"
          name="Load Resource"
-         categoryId="modelo.diagram.part.ModeloDiagramEditorID"
-         defaultHandler="modelo.diagram.part.LoadResourceAction"/>
+         categoryId="Modelo.modelo.diagram.part.ModeloDiagramEditorID"
+         defaultHandler="Modelo.modelo.diagram.part.LoadResourceAction"/>
    </extension>
 
    <extension point="org.eclipse.ui.handlers" id="menu-handlers">

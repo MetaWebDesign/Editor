@@ -10,7 +10,7 @@
       <!-- @generated modelo -->
       <factory
             uri="http://modelo/1.0"
-            class="modelo.provider.ModeloItemProviderAdapterFactory"
+            class="Modelo.modelo.provider.ModeloItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

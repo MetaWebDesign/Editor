@@ -4,11 +4,11 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: modelo.editor;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: modelo.presentation.ModeloEditorPlugin$Implementation
+Bundle-Activator: Modelo.modelo.presentation.ModeloEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: modelo.presentation
+Export-Package: Modelo.modelo.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  modelo.edit;visibility:=reexport,

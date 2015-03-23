@@ -1,0 +1,10 @@
+package Modelo.modelo.diagram.edit.helpers;
+
+import org.eclipse.gmf.tooling.runtime.edit.helpers.GeneratedEditHelperBase;
+
+/**
+ * @generated
+ */
+public class ModeloBaseEditHelper extends GeneratedEditHelperBase {
+
+}

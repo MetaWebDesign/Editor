@@ -4,13 +4,15 @@
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>modelo.ecore</foreignModel>
-  <genPackages prefix="Modelo" disposableProviderFactory="true" ecorePackage="modelo.ecore#/">
+  <genPackages prefix="Modelo" basePackage="Modelo" disposableProviderFactory="true"
+      ecorePackage="modelo.ecore#/">
     <genClasses ecoreClass="modelo.ecore#//Model">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelo.ecore#//Model/EReference0"/>
     </genClasses>
     <genClasses ecoreClass="modelo.ecore#//Class">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelo.ecore#//Class/hasRelaction"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modelo.ecore#//Class/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelo.ecore#//Class/name"/>
     </genClasses>
     <genClasses ecoreClass="modelo.ecore#//Relation">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modelo.ecore#//Relation/to"/>
