@@ -42,9 +42,9 @@
         <metaClass
             href="modelo.genmodel#//modelo/Class"/>
         <containmentMetaFeature
-            href="modelo.genmodel#//modelo/Model/EReference0"/>
+            href="modelo.genmodel#//modelo/Model/hasClass"/>
         <childMetaFeature
-            href="modelo.genmodel#//modelo/Model/EReference0"/>
+            href="modelo.genmodel#//modelo/Model/hasClass"/>
       </modelFacet>
       <labels
           visualID="5001"
@@ -91,6 +91,30 @@
             href="modelo.genmodel#//modelo/Relation/to"/>
       </modelFacet>
     </links>
+    <links
+        visualID="4002"
+        editPartClassName="AttributeEditPart"
+        itemSemanticEditPolicyClassName="AttributeItemSemanticEditPolicy"
+        createCommandClassName="AttributeCreateCommand"
+        reorientCommandClassName="AttributeReorientCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="AttributeEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:FigureViewmap"
+          figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx"/>
+      <modelFacet
+          xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass
+            href="modelo.genmodel#//modelo/Attribute"/>
+        <containmentMetaFeature
+            href="modelo.genmodel#//modelo/Class/hasAttribute"/>
+        <childMetaFeature
+            href="modelo.genmodel#//modelo/Class/hasAttribute"/>
+      </modelFacet>
+    </links>
     <palette>
       <groups
           title="modelo">
@@ -104,6 +128,11 @@
             title="Relation"
             description="Create new Relation"
             genLinks="//@diagram/@links.0"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Attribute"
+            description="Create new Attribute"
+            genLinks="//@diagram/@links.1"/>
       </groups>
     </palette>
     <preferencePages
@@ -170,6 +199,23 @@
     <childReferences
         parent="//@diagram/@topLevelNodes.0"
         child="//@diagram/@links.0"
+        referenceType="out_target"
+        groupName="outgoing links"
+        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences
+        parent="//@diagram"
+        child="//@diagram/@links.1"
+        groupName="links"
+        groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences
+        parent="//@diagram/@links.1"
+        child="//@diagram/@topLevelNodes.0"
+        referenceType="in_source"
+        groupName="source"
+        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.0"
+        child="//@diagram/@links.1"
         referenceType="out_target"
         groupName="outgoing links"
         groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>

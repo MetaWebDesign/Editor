@@ -8,7 +8,7 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="modelo.ecore#//Model/EReference0"/>
+        href="modelo.ecore#//Model/hasClass"/>
     <ownedChild>
       <domainMetaElement
           href="modelo.ecore#//Class"/>
@@ -39,6 +39,17 @@
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="modelo.ecore#//Relation/to"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="modelo.ecore#//Attribute"/>
+    <containmentFeature
+        href="modelo.ecore#//Class/hasAttribute"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="modelo.gmftool#//@palette/@tools.0/@tools.2"/>
+    <diagramLink
+        href="modelo.gmfgraph#Relation"/>
   </links>
   <diagram>
     <diagramCanvas

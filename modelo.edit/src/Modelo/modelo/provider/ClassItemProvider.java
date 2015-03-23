@@ -125,6 +125,7 @@ public class ClassItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ModeloPackage.Literals.CLASS__HAS_RELACTION);
+			childrenFeatures.add(ModeloPackage.Literals.CLASS__HAS_ATTRIBUTE);
 		}
 		return childrenFeatures;
 	}
@@ -184,6 +185,7 @@ public class ClassItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case ModeloPackage.CLASS__HAS_RELACTION:
+			case ModeloPackage.CLASS__HAS_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -205,6 +207,11 @@ public class ClassItemProvider
 			(createChildParameter
 				(ModeloPackage.Literals.CLASS__HAS_RELACTION,
 				 ModeloFactory.eINSTANCE.createRelation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModeloPackage.Literals.CLASS__HAS_ATTRIBUTE,
+				 ModeloFactory.eINSTANCE.createAttribute()));
 	}
 
 	/**

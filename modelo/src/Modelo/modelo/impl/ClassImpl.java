@@ -2,6 +2,7 @@
  */
 package Modelo.modelo.impl;
 
+import Modelo.modelo.Attribute;
 import Modelo.modelo.ModeloPackage;
 import Modelo.modelo.Relation;
 
@@ -32,6 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Modelo.modelo.impl.ClassImpl#getHasRelaction <em>Has Relaction</em>}</li>
  *   <li>{@link Modelo.modelo.impl.ClassImpl#getFrom <em>From</em>}</li>
  *   <li>{@link Modelo.modelo.impl.ClassImpl#getName <em>Name</em>}</li>
+ *   <li>{@link Modelo.modelo.impl.ClassImpl#getHasAttribute <em>Has Attribute</em>}</li>
  * </ul>
  * </p>
  *
@@ -77,6 +79,16 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modelo.mo
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getHasAttribute() <em>Has Attribute</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasAttribute()
+	 * @generated
+	 * @ordered
+	 */
+	protected Attribute hasAttribute;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,11 +159,56 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modelo.mo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Attribute getHasAttribute() {
+		return hasAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetHasAttribute(Attribute newHasAttribute, NotificationChain msgs) {
+		Attribute oldHasAttribute = hasAttribute;
+		hasAttribute = newHasAttribute;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ModeloPackage.CLASS__HAS_ATTRIBUTE, oldHasAttribute, newHasAttribute);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setHasAttribute(Attribute newHasAttribute) {
+		if (newHasAttribute != hasAttribute) {
+			NotificationChain msgs = null;
+			if (hasAttribute != null)
+				msgs = ((InternalEObject)hasAttribute).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ModeloPackage.CLASS__HAS_ATTRIBUTE, null, msgs);
+			if (newHasAttribute != null)
+				msgs = ((InternalEObject)newHasAttribute).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ModeloPackage.CLASS__HAS_ATTRIBUTE, null, msgs);
+			msgs = basicSetHasAttribute(newHasAttribute, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeloPackage.CLASS__HAS_ATTRIBUTE, newHasAttribute, newHasAttribute));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case ModeloPackage.CLASS__HAS_RELACTION:
 				return ((InternalEList<?>)getHasRelaction()).basicRemove(otherEnd, msgs);
+			case ModeloPackage.CLASS__HAS_ATTRIBUTE:
+				return basicSetHasAttribute(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -170,6 +227,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modelo.mo
 				return getFrom();
 			case ModeloPackage.CLASS__NAME:
 				return getName();
+			case ModeloPackage.CLASS__HAS_ATTRIBUTE:
+				return getHasAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -194,6 +253,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modelo.mo
 			case ModeloPackage.CLASS__NAME:
 				setName((String)newValue);
 				return;
+			case ModeloPackage.CLASS__HAS_ATTRIBUTE:
+				setHasAttribute((Attribute)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -215,6 +277,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modelo.mo
 			case ModeloPackage.CLASS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case ModeloPackage.CLASS__HAS_ATTRIBUTE:
+				setHasAttribute((Attribute)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -233,6 +298,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modelo.mo
 				return from != null && !from.isEmpty();
 			case ModeloPackage.CLASS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case ModeloPackage.CLASS__HAS_ATTRIBUTE:
+				return hasAttribute != null;
 		}
 		return super.eIsSet(featureID);
 	}

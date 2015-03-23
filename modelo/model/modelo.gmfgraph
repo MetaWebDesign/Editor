@@ -11,8 +11,12 @@
     <descriptors name="RelationFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationFigure"/>
     </descriptors>
+    <descriptors name="AttributeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="AttributeFigure"/>
+    </descriptors>
   </figures>
   <nodes name="Class" figure="ClassFigure"/>
+  <nodes name="Attribute" figure="AttributeFigure"/>
   <connections name="Relation" figure="RelationFigure"/>
   <labels name="ClassName" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
 </gmfgraph:Canvas>

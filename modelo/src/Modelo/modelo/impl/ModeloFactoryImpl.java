@@ -2,6 +2,7 @@
  */
 package Modelo.modelo.impl;
 
+import Modelo.modelo.Attribute;
 import Modelo.modelo.Model;
 import Modelo.modelo.ModeloFactory;
 import Modelo.modelo.ModeloPackage;
@@ -62,6 +63,7 @@ public class ModeloFactoryImpl extends EFactoryImpl implements ModeloFactory {
 			case ModeloPackage.MODEL: return createModel();
 			case ModeloPackage.CLASS: return createClass();
 			case ModeloPackage.RELATION: return createRelation();
+			case ModeloPackage.ATTRIBUTE: return createAttribute();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -95,6 +97,16 @@ public class ModeloFactoryImpl extends EFactoryImpl implements ModeloFactory {
 	public Relation createRelation() {
 		RelationImpl relation = new RelationImpl();
 		return relation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attribute createAttribute() {
+		AttributeImpl attribute = new AttributeImpl();
+		return attribute;
 	}
 
 	/**

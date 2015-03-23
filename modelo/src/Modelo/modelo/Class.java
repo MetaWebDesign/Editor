@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Modelo.modelo.Class#getHasRelaction <em>Has Relaction</em>}</li>
  *   <li>{@link Modelo.modelo.Class#getFrom <em>From</em>}</li>
  *   <li>{@link Modelo.modelo.Class#getName <em>Name</em>}</li>
+ *   <li>{@link Modelo.modelo.Class#getHasAttribute <em>Has Attribute</em>}</li>
  * </ul>
  * </p>
  *
@@ -82,5 +83,31 @@ public interface Class extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Has Attribute</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Attribute</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Attribute</em>' containment reference.
+	 * @see #setHasAttribute(Attribute)
+	 * @see Modelo.modelo.ModeloPackage#getClass_HasAttribute()
+	 * @model containment="true"
+	 * @generated
+	 */
+	Attribute getHasAttribute();
+
+	/**
+	 * Sets the value of the '{@link Modelo.modelo.Class#getHasAttribute <em>Has Attribute</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Has Attribute</em>' containment reference.
+	 * @see #getHasAttribute()
+	 * @generated
+	 */
+	void setHasAttribute(Attribute value);
 
 } // Class

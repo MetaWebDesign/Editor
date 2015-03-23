@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_GgPEkNGeEeS8CtKOkGzjkQ" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_GinqMNGeEeS8CtKOkGzjkQ" type="2001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GinqMtGeEeS8CtKOkGzjkQ" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GinqM9GeEeS8CtKOkGzjkQ" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GinqNNGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GinqNdGeEeS8CtKOkGzjkQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GinqNtGeEeS8CtKOkGzjkQ" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GinqN9GeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GinqONGeEeS8CtKOkGzjkQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GinqOdGeEeS8CtKOkGzjkQ" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GinqOtGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GinqO9GeEeS8CtKOkGzjkQ"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="modelo.ecore#//Model"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GinqMdGeEeS8CtKOkGzjkQ" y="62"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_GioRQNGeEeS8CtKOkGzjkQ" type="2001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GioRQtGeEeS8CtKOkGzjkQ" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GioRQ9GeEeS8CtKOkGzjkQ" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GioRRNGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GioRRdGeEeS8CtKOkGzjkQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GioRRtGeEeS8CtKOkGzjkQ" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GioRR9GeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GioRSNGeEeS8CtKOkGzjkQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GioRSdGeEeS8CtKOkGzjkQ" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GioRStGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GioRS9GeEeS8CtKOkGzjkQ"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="modelo.ecore#//Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GioRQdGeEeS8CtKOkGzjkQ" x="112"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_GioRTNGeEeS8CtKOkGzjkQ" type="2001" fontName="Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Gio4UNGeEeS8CtKOkGzjkQ" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Gio4UdGeEeS8CtKOkGzjkQ" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Gio4UtGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Gio4U9GeEeS8CtKOkGzjkQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Gio4VNGeEeS8CtKOkGzjkQ" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Gio4VdGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Gio4VtGeEeS8CtKOkGzjkQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Gio4V9GeEeS8CtKOkGzjkQ" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Gio4WNGeEeS8CtKOkGzjkQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Gio4WdGeEeS8CtKOkGzjkQ"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="modelo.ecore#//Relation"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GioRTdGeEeS8CtKOkGzjkQ" x="277" y="62"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_GgPEkdGeEeS8CtKOkGzjkQ"/>
+  <element xmi:type="ecore:EPackage" href="modelo.ecore#/"/>
+</notation:Diagram>

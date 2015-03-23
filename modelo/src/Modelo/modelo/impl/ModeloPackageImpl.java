@@ -2,6 +2,7 @@
  */
 package Modelo.modelo.impl;
 
+import Modelo.modelo.Attribute;
 import Modelo.modelo.Model;
 import Modelo.modelo.ModeloFactory;
 import Modelo.modelo.ModeloPackage;
@@ -41,6 +42,13 @@ public class ModeloPackageImpl extends EPackageImpl implements ModeloPackage {
 	 * @generated
 	 */
 	private EClass relationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attributeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -117,7 +125,7 @@ public class ModeloPackageImpl extends EPackageImpl implements ModeloPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getModel_EReference0() {
+	public EReference getModel_HasClass() {
 		return (EReference)modelEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -162,6 +170,15 @@ public class ModeloPackageImpl extends EPackageImpl implements ModeloPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getClass_HasAttribute() {
+		return (EReference)classEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRelation() {
 		return relationEClass;
 	}
@@ -173,6 +190,15 @@ public class ModeloPackageImpl extends EPackageImpl implements ModeloPackage {
 	 */
 	public EReference getRelation_To() {
 		return (EReference)relationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttribute() {
+		return attributeEClass;
 	}
 
 	/**
@@ -204,15 +230,18 @@ public class ModeloPackageImpl extends EPackageImpl implements ModeloPackage {
 
 		// Create classes and their features
 		modelEClass = createEClass(MODEL);
-		createEReference(modelEClass, MODEL__EREFERENCE0);
+		createEReference(modelEClass, MODEL__HAS_CLASS);
 
 		classEClass = createEClass(CLASS);
 		createEReference(classEClass, CLASS__HAS_RELACTION);
 		createEReference(classEClass, CLASS__FROM);
 		createEAttribute(classEClass, CLASS__NAME);
+		createEReference(classEClass, CLASS__HAS_ATTRIBUTE);
 
 		relationEClass = createEClass(RELATION);
 		createEReference(relationEClass, RELATION__TO);
+
+		attributeEClass = createEClass(ATTRIBUTE);
 	}
 
 	/**
@@ -246,15 +275,18 @@ public class ModeloPackageImpl extends EPackageImpl implements ModeloPackage {
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getModel_EReference0(), this.getClass_(), null, "EReference0", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_HasClass(), this.getClass_(), null, "hasClass", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classEClass, Modelo.modelo.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getClass_HasRelaction(), this.getRelation(), null, "hasRelaction", null, 0, -1, Modelo.modelo.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_From(), this.getRelation(), null, "from", null, 0, -1, Modelo.modelo.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClass_Name(), ecorePackage.getEString(), "name", null, 0, 1, Modelo.modelo.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClass_HasAttribute(), this.getAttribute(), null, "hasAttribute", null, 0, 1, Modelo.modelo.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(relationEClass, Relation.class, "Relation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRelation_To(), this.getClass_(), null, "to", null, 0, -1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

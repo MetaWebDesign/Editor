@@ -7,15 +7,17 @@
   <genPackages prefix="Modelo" basePackage="Modelo" disposableProviderFactory="true"
       ecorePackage="modelo.ecore#/">
     <genClasses ecoreClass="modelo.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelo.ecore#//Model/EReference0"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelo.ecore#//Model/hasClass"/>
     </genClasses>
     <genClasses ecoreClass="modelo.ecore#//Class">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelo.ecore#//Class/hasRelaction"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modelo.ecore#//Class/from"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modelo.ecore#//Class/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modelo.ecore#//Class/hasAttribute"/>
     </genClasses>
     <genClasses ecoreClass="modelo.ecore#//Relation">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modelo.ecore#//Relation/to"/>
     </genClasses>
+    <genClasses ecoreClass="modelo.ecore#//Attribute"/>
   </genPackages>
 </genmodel:GenModel>

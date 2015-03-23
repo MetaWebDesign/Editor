@@ -141,6 +141,29 @@ public class ModeloItemProviderAdapterFactory extends ModeloAdapterFactory imple
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link Modelo.modelo.Attribute} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttributeItemProvider attributeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modelo.modelo.Attribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttributeAdapter() {
+		if (attributeItemProvider == null) {
+			attributeItemProvider = new AttributeItemProvider(this);
+		}
+
+		return attributeItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -242,6 +265,7 @@ public class ModeloItemProviderAdapterFactory extends ModeloAdapterFactory imple
 		if (modelItemProvider != null) modelItemProvider.dispose();
 		if (classItemProvider != null) classItemProvider.dispose();
 		if (relationItemProvider != null) relationItemProvider.dispose();
+		if (attributeItemProvider != null) attributeItemProvider.dispose();
 	}
 
 }

@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Modelo.modelo.impl.ModelImpl#getEReference0 <em>EReference0</em>}</li>
+ *   <li>{@link Modelo.modelo.impl.ModelImpl#getHasClass <em>Has Class</em>}</li>
  * </ul>
  * </p>
  *
@@ -34,14 +34,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	/**
-	 * The cached value of the '{@link #getEReference0() <em>EReference0</em>}' containment reference list.
+	 * The cached value of the '{@link #getHasClass() <em>Has Class</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEReference0()
+	 * @see #getHasClass()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Modelo.modelo.Class> eReference0;
+	protected EList<Modelo.modelo.Class> hasClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,11 +67,11 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Modelo.modelo.Class> getEReference0() {
-		if (eReference0 == null) {
-			eReference0 = new EObjectContainmentEList<Modelo.modelo.Class>(Modelo.modelo.Class.class, this, ModeloPackage.MODEL__EREFERENCE0);
+	public EList<Modelo.modelo.Class> getHasClass() {
+		if (hasClass == null) {
+			hasClass = new EObjectContainmentEList<Modelo.modelo.Class>(Modelo.modelo.Class.class, this, ModeloPackage.MODEL__HAS_CLASS);
 		}
-		return eReference0;
+		return hasClass;
 	}
 
 	/**
@@ -82,8 +82,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case ModeloPackage.MODEL__EREFERENCE0:
-				return ((InternalEList<?>)getEReference0()).basicRemove(otherEnd, msgs);
+			case ModeloPackage.MODEL__HAS_CLASS:
+				return ((InternalEList<?>)getHasClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -96,8 +96,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ModeloPackage.MODEL__EREFERENCE0:
-				return getEReference0();
+			case ModeloPackage.MODEL__HAS_CLASS:
+				return getHasClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -111,9 +111,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ModeloPackage.MODEL__EREFERENCE0:
-				getEReference0().clear();
-				getEReference0().addAll((Collection<? extends Modelo.modelo.Class>)newValue);
+			case ModeloPackage.MODEL__HAS_CLASS:
+				getHasClass().clear();
+				getHasClass().addAll((Collection<? extends Modelo.modelo.Class>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -127,8 +127,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ModeloPackage.MODEL__EREFERENCE0:
-				getEReference0().clear();
+			case ModeloPackage.MODEL__HAS_CLASS:
+				getHasClass().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -142,8 +142,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ModeloPackage.MODEL__EREFERENCE0:
-				return eReference0 != null && !eReference0.isEmpty();
+			case ModeloPackage.MODEL__HAS_CLASS:
+				return hasClass != null && !hasClass.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
