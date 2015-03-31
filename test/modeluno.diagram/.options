@@ -1,0 +1,7 @@
+# Tracing options for the modeluno.diagram plug-in
+
+# Common issues
+modeluno.diagram/debug=false
+
+# Visual IDs
+modeluno.diagram/debug/visualID=false
