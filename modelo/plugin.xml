@@ -17,9 +17,15 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated modelo -->
       <package
-            uri="http://modelo/1.0"
-            class="modelo.modelo.ModeloPackage"
+            uri="http://www.example.org/mindmap"
+            class="org.eclipse.gmf.examples.mindmap.mindmap.MindmapPackage"
             genModel="model/modelo.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated modelo -->
+      <parser
+            type="mindmap"
+            class="org.eclipse.gmf.examples.mindmap.mindmap.util.MindmapResourceFactoryImpl"/>
+   </extension>
 </plugin>
