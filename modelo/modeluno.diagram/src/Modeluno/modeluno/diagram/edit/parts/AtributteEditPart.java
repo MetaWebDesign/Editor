@@ -92,25 +92,25 @@ public class AtributteEditPart extends ConnectionNodeEditPart implements
 	 */
 
 	protected Connection createConnectionFigure() {
-		return new AtributteEsDeFigure();
+		return new ClassHasAtributeFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public AtributteEsDeFigure getPrimaryShape() {
-		return (AtributteEsDeFigure) getFigure();
+	public ClassHasAtributeFigure getPrimaryShape() {
+		return (ClassHasAtributeFigure) getFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public class AtributteEsDeFigure extends PolylineConnectionEx {
+	public class ClassHasAtributeFigure extends PolylineConnectionEx {
 
 		/**
 		 * @generated
 		 */
-		public AtributteEsDeFigure() {
+		public ClassHasAtributeFigure() {
 
 			setTargetDecoration(createTargetDecoration());
 		}

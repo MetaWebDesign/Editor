@@ -58,7 +58,7 @@
         xsi:type="gmftool:CreationTool"
         href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
     <diagramLink
-        href="modeluno.gmfgraph#AtributteEsDe"/>
+        href="modeluno.gmfgraph#ClassHasAtribute"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="modeluno.ecore#//Atributte/esDe"/>
