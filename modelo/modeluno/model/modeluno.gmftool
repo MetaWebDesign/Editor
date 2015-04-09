@@ -20,33 +20,6 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="ClassHasRelation"
-          description="Create new ClassHasRelation">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="ClassR1"
-          description="Create new ClassR1">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="ClassHasAtribute"
-          description="Create new ClassHasAtribute">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="Relation"
           description="Create new Relation">
         <smallIcon
@@ -58,15 +31,6 @@
           xsi:type="gmftool:CreationTool"
           title="Atributte"
           description="Create new Atributte">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="AtributteEsDe"
-          description="Create new AtributteEsDe">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

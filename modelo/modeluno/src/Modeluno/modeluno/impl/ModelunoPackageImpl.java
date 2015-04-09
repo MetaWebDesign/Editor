@@ -8,6 +8,8 @@ import Modeluno.modeluno.ModelunoFactory;
 import Modeluno.modeluno.ModelunoPackage;
 import Modeluno.modeluno.Relation;
 
+import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -312,6 +314,29 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// null
+		createNullAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>null</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createNullAnnotations() {
+		String source = null;	
+		addAnnotation
+		  (classEClass, 
+		   source, 
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(eNS_URI).appendFragment("//Atributte"),
+			 URI.createURI(eNS_URI).appendFragment("//Atributte/Aname")
+		   });
 	}
 
 } //ModelunoPackageImpl

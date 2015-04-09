@@ -30,12 +30,8 @@ public class ModelunoPaletteFactory {
 				Modeluno.modeluno.diagram.part.Messages.Modeluno1Group_title);
 		paletteContainer.setId("createModeluno1Group"); //$NON-NLS-1$
 		paletteContainer.add(createClass1CreationTool());
-		paletteContainer.add(createClassHasRelation2CreationTool());
-		paletteContainer.add(createClassR13CreationTool());
-		paletteContainer.add(createClassHasAtribute4CreationTool());
-		paletteContainer.add(createRelation5CreationTool());
-		paletteContainer.add(createAtributte6CreationTool());
-		paletteContainer.add(createAtributteEsDe7CreationTool());
+		paletteContainer.add(createRelation2CreationTool());
+		paletteContainer.add(createAtributte3CreationTool());
 		return paletteContainer;
 	}
 
@@ -58,52 +54,13 @@ public class ModelunoPaletteFactory {
 	/**
 	 * @generated
 	 */
-	private ToolEntry createClassHasRelation2CreationTool() {
-		ToolEntry entry = new ToolEntry(
-				Modeluno.modeluno.diagram.part.Messages.ClassHasRelation2CreationTool_title,
-				Modeluno.modeluno.diagram.part.Messages.ClassHasRelation2CreationTool_desc,
-				null, null) {
-		};
-		entry.setId("createClassHasRelation2CreationTool"); //$NON-NLS-1$
-		return entry;
-	}
-
-	/**
-	 * @generated
-	 */
-	private ToolEntry createClassR13CreationTool() {
-		ToolEntry entry = new ToolEntry(
-				Modeluno.modeluno.diagram.part.Messages.ClassR13CreationTool_title,
-				Modeluno.modeluno.diagram.part.Messages.ClassR13CreationTool_desc,
-				null, null) {
-		};
-		entry.setId("createClassR13CreationTool"); //$NON-NLS-1$
-		return entry;
-	}
-
-	/**
-	 * @generated
-	 */
-	private ToolEntry createClassHasAtribute4CreationTool() {
-		ToolEntry entry = new ToolEntry(
-				Modeluno.modeluno.diagram.part.Messages.ClassHasAtribute4CreationTool_title,
-				Modeluno.modeluno.diagram.part.Messages.ClassHasAtribute4CreationTool_desc,
-				null, null) {
-		};
-		entry.setId("createClassHasAtribute4CreationTool"); //$NON-NLS-1$
-		return entry;
-	}
-
-	/**
-	 * @generated
-	 */
-	private ToolEntry createRelation5CreationTool() {
+	private ToolEntry createRelation2CreationTool() {
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(
-				Modeluno.modeluno.diagram.part.Messages.Relation5CreationTool_title,
-				Modeluno.modeluno.diagram.part.Messages.Relation5CreationTool_desc,
+				Modeluno.modeluno.diagram.part.Messages.Relation2CreationTool_title,
+				Modeluno.modeluno.diagram.part.Messages.Relation2CreationTool_desc,
 				Collections
 						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001));
-		entry.setId("createRelation5CreationTool"); //$NON-NLS-1$
+		entry.setId("createRelation2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
 				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001));
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -113,29 +70,16 @@ public class ModelunoPaletteFactory {
 	/**
 	 * @generated
 	 */
-	private ToolEntry createAtributte6CreationTool() {
+	private ToolEntry createAtributte3CreationTool() {
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(
-				Modeluno.modeluno.diagram.part.Messages.Atributte6CreationTool_title,
-				Modeluno.modeluno.diagram.part.Messages.Atributte6CreationTool_desc,
+				Modeluno.modeluno.diagram.part.Messages.Atributte3CreationTool_title,
+				Modeluno.modeluno.diagram.part.Messages.Atributte3CreationTool_desc,
 				Collections
 						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002));
-		entry.setId("createAtributte6CreationTool"); //$NON-NLS-1$
+		entry.setId("createAtributte3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
 				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002));
 		entry.setLargeIcon(entry.getSmallIcon());
-		return entry;
-	}
-
-	/**
-	 * @generated
-	 */
-	private ToolEntry createAtributteEsDe7CreationTool() {
-		ToolEntry entry = new ToolEntry(
-				Modeluno.modeluno.diagram.part.Messages.AtributteEsDe7CreationTool_title,
-				Modeluno.modeluno.diagram.part.Messages.AtributteEsDe7CreationTool_desc,
-				null, null) {
-		};
-		entry.setId("createAtributteEsDe7CreationTool"); //$NON-NLS-1$
 		return entry;
 	}
 

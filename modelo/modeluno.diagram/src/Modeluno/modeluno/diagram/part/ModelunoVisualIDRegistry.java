@@ -177,13 +177,13 @@ public class ModelunoVisualIDRegistry {
 		if (domainElement == null) {
 			return -1;
 		}
-		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelation()
-				.isSuperTypeOf(domainElement.eClass())) {
-			return Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID;
-		}
 		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getAtributte()
 				.isSuperTypeOf(domainElement.eClass())) {
 			return Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID;
+		}
+		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelation()
+				.isSuperTypeOf(domainElement.eClass())) {
+			return Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID;
 		}
 		return -1;
 	}

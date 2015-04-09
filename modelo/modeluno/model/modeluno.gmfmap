@@ -28,20 +28,6 @@
   </nodes>
   <links>
     <domainMetaElement
-        href="modeluno.ecore#//Relation"/>
-    <containmentFeature
-        href="modeluno.ecore#//Class/hasRelation"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.4"/>
-    <diagramLink
-        href="modeluno.gmfgraph#Relation"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="modeluno.ecore#//Relation/R2"/>
-  </links>
-  <links>
-    <domainMetaElement
         href="modeluno.ecore#//Atributte"/>
     <labelMappings
         xsi:type="gmfmap:FeatureLabelMapping">
@@ -49,19 +35,31 @@
           href="modeluno.gmfgraph#AtributteAname"/>
       <features
           href="modeluno.ecore#//Atributte/Aname"/>
-      <editableFeatures
-          href="modeluno.ecore#//Atributte/Aname"/>
     </labelMappings>
     <containmentFeature
         href="modeluno.ecore#//Class/hasAtribute"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.2"/>
     <diagramLink
-        href="modeluno.gmfgraph#ClassHasAtribute"/>
+        href="modeluno.gmfgraph#Atributte"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="modeluno.ecore#//Atributte/esDe"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="modeluno.ecore#//Relation"/>
+    <containmentFeature
+        href="modeluno.ecore#//Class/hasRelation"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.1"/>
+    <diagramLink
+        href="modeluno.gmfgraph#Relation"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="modeluno.ecore#//Relation/R2"/>
   </links>
   <diagram>
     <diagramCanvas

@@ -1,13 +1,12 @@
 package Modeluno.modeluno.diagram.edit.parts;
 
 import org.eclipse.draw2d.Connection;
-import org.eclipse.draw2d.PolylineDecoration;
-import org.eclipse.draw2d.RotatableDecoration;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.notation.View;
 
 /**
@@ -41,7 +40,6 @@ public class AtributteEditPart extends ConnectionNodeEditPart implements
 	/**
 	 * @generated
 	 */
-	/*
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart) {
 			((Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart) childEditPart)
@@ -49,18 +47,17 @@ public class AtributteEditPart extends ConnectionNodeEditPart implements
 			return true;
 		}
 		return false;
-	}*/
+	}
 
 	/**
 	 * @generated
 	 */
-	/*
 	protected void addChildVisual(EditPart childEditPart, int index) {
 		if (addFixedChild(childEditPart)) {
 			return;
 		}
 		super.addChildVisual(childEditPart, index);
-	}*/
+	}
 
 	/**
 	 * @generated
@@ -92,35 +89,52 @@ public class AtributteEditPart extends ConnectionNodeEditPart implements
 	 */
 
 	protected Connection createConnectionFigure() {
-		return new ClassHasAtributeFigure();
+		return new AtributteFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public ClassHasAtributeFigure getPrimaryShape() {
-		return (ClassHasAtributeFigure) getFigure();
+	public AtributteFigure getPrimaryShape() {
+		return (AtributteFigure) getFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public class ClassHasAtributeFigure extends PolylineConnectionEx {
+	public class AtributteFigure extends PolylineConnectionEx {
 
 		/**
 		 * @generated
 		 */
-		public ClassHasAtributeFigure() {
+		private WrappingLabel fFigureAtributteAnameFigure;
 
-			setTargetDecoration(createTargetDecoration());
+		/**
+		 * @generated
+		 */
+		public AtributteFigure() {
+
+			createContents();
 		}
 
 		/**
 		 * @generated
 		 */
-		private RotatableDecoration createTargetDecoration() {
-			PolylineDecoration df = new PolylineDecoration();
-			return df;
+		private void createContents() {
+
+			fFigureAtributteAnameFigure = new WrappingLabel();
+
+			fFigureAtributteAnameFigure.setText("<...>");
+
+			this.add(fFigureAtributteAnameFigure);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAtributteAnameFigure() {
+			return fFigureAtributteAnameFigure;
 		}
 
 	}

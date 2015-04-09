@@ -232,12 +232,12 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 			connectedViews = getDiagramLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			connectedViews = getDiagramLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			if (!links.isEmpty()) {
 				result.add(links);
@@ -258,25 +258,25 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 			connectedViews = getIncomingLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
 			incominglinks.addChildren(createNavigatorItems(connectedViews,
 					incominglinks, true));
 			connectedViews = getOutgoingLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
 					outgoinglinks, true));
 			connectedViews = getIncomingLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
 			incominglinks.addChildren(createNavigatorItems(connectedViews,
 					incominglinks, true));
 			connectedViews = getOutgoingLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
 					outgoinglinks, true));
 			if (!incominglinks.isEmpty()) {

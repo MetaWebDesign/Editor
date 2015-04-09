@@ -6,6 +6,7 @@
         eType="#//Class" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
+    <eAnnotations references="#//Atributte #//Atributte/Aname"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelation" upperBound="-1"
         eType="#//Relation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="R1" upperBound="-1" eType="#//Relation"/>

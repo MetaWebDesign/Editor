@@ -66,32 +66,6 @@
       </labels>
     </topLevelNodes>
     <links
-        visualID="4001"
-        editPartClassName="RelationEditPart"
-        itemSemanticEditPolicyClassName="RelationItemSemanticEditPolicy"
-        createCommandClassName="RelationCreateCommand"
-        reorientCommandClassName="RelationReorientCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="RelationEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx"/>
-      <modelFacet
-          xsi:type="gmfgen:TypeLinkModelFacet">
-        <metaClass
-            href="modeluno.genmodel#//modeluno/Relation"/>
-        <containmentMetaFeature
-            href="modeluno.genmodel#//modeluno/Class/hasRelation"/>
-        <childMetaFeature
-            href="modeluno.genmodel#//modeluno/Class/hasRelation"/>
-        <targetMetaFeature
-            href="modeluno.genmodel#//modeluno/Relation/R2"/>
-      </modelFacet>
-    </links>
-    <links
         visualID="4002"
         editPartClassName="AtributteEditPart"
         itemSemanticEditPolicyClassName="AtributteItemSemanticEditPolicy"
@@ -104,8 +78,8 @@
           editHelperClassName="AtributteEditHelper"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          className="ClassHasAtributeFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassHasAtributeFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassHasAtributeFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          className="AtributteFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AtributteFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAtributteAnameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AtributteFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAtributteAnameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAtributteAnameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureAtributteAnameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAtributteAnameFigure() {&#xA;&#x9;&#x9;return fFigureAtributteAnameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet
           xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass
@@ -137,10 +111,34 @@
             parser="//@labelParsers/@implementations.0">
           <metaFeatures
               href="modeluno.genmodel#//modeluno/Atributte/Aname"/>
-          <editableMetaFeatures
-              href="modeluno.genmodel#//modeluno/Atributte/Aname"/>
         </modelFacet>
       </labels>
+    </links>
+    <links
+        visualID="4001"
+        editPartClassName="RelationEditPart"
+        itemSemanticEditPolicyClassName="RelationItemSemanticEditPolicy"
+        createCommandClassName="RelationCreateCommand"
+        reorientCommandClassName="RelationReorientCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="RelationEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:FigureViewmap"
+          figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx"/>
+      <modelFacet
+          xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass
+            href="modeluno.genmodel#//modeluno/Relation"/>
+        <containmentMetaFeature
+            href="modeluno.genmodel#//modeluno/Class/hasRelation"/>
+        <childMetaFeature
+            href="modeluno.genmodel#//modeluno/Class/hasRelation"/>
+        <targetMetaFeature
+            href="modeluno.genmodel#//modeluno/Relation/R2"/>
+      </modelFacet>
     </links>
     <palette>
       <groups
@@ -152,30 +150,14 @@
             genNodes="//@diagram/@topLevelNodes.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
-            title="ClassHasRelation"
-            description="Create new ClassHasRelation"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
-            title="ClassR1"
-            description="Create new ClassR1"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
-            title="ClassHasAtribute"
-            description="Create new ClassHasAtribute"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
             title="Relation"
             description="Create new Relation"
-            genLinks="//@diagram/@links.0"/>
+            genLinks="//@diagram/@links.1"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Atributte"
             description="Create new Atributte"
-            genLinks="//@diagram/@links.1"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
-            title="AtributteEsDe"
-            description="Create new AtributteEsDe"/>
+            genLinks="//@diagram/@links.0"/>
       </groups>
     </palette>
     <preferencePages
@@ -301,7 +283,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet"/>
+        uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

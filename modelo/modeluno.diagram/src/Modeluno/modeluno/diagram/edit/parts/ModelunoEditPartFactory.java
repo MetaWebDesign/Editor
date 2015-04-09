@@ -33,16 +33,16 @@ public class ModelunoEditPartFactory implements EditPartFactory {
 				return new Modeluno.modeluno.diagram.edit.parts.ClassCnameEditPart(
 						view);
 
-			case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-				return new Modeluno.modeluno.diagram.edit.parts.RelationEditPart(
-						view);
-
 			case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
 				return new Modeluno.modeluno.diagram.edit.parts.AtributteEditPart(
 						view);
 
 			case Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart.VISUAL_ID:
 				return new Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart(
+						view);
+
+			case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+				return new Modeluno.modeluno.diagram.edit.parts.RelationEditPart(
 						view);
 
 			}

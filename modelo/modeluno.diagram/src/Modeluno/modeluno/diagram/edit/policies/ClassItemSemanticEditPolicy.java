@@ -39,7 +39,7 @@ public class ClassItemSemanticEditPolicy
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-					.getVisualID(incomingLink) == Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
 						incomingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
@@ -47,7 +47,7 @@ public class ClassItemSemanticEditPolicy
 				continue;
 			}
 			if (Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-					.getVisualID(incomingLink) == Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
 						incomingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
@@ -58,7 +58,7 @@ public class ClassItemSemanticEditPolicy
 		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
 			Edge outgoingLink = (Edge) it.next();
 			if (Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-					.getVisualID(outgoingLink) == Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
 						outgoingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
@@ -66,7 +66,7 @@ public class ClassItemSemanticEditPolicy
 				continue;
 			}
 			if (Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-					.getVisualID(outgoingLink) == Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
 						outgoingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
@@ -101,14 +101,14 @@ public class ClassItemSemanticEditPolicy
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001 == req
-				.getElementType()) {
-			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RelationCreateCommand(
-					req, req.getSource(), req.getTarget()));
-		}
 		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.AtributteCreateCommand(
+					req, req.getSource(), req.getTarget()));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RelationCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -119,14 +119,14 @@ public class ClassItemSemanticEditPolicy
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001 == req
-				.getElementType()) {
-			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RelationCreateCommand(
-					req, req.getSource(), req.getTarget()));
-		}
 		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.AtributteCreateCommand(
+					req, req.getSource(), req.getTarget()));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RelationCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -141,11 +141,11 @@ public class ClassItemSemanticEditPolicy
 	protected Command getReorientRelationshipCommand(
 			ReorientRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RelationReorientCommand(
-					req));
 		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.AtributteReorientCommand(
+					req));
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RelationReorientCommand(
 					req));
 		}
 		return super.getReorientRelationshipCommand(req);

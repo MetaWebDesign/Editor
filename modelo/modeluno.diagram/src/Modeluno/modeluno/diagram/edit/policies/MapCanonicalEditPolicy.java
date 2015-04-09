@@ -251,18 +251,18 @@ public class MapCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeluno.modeluno.diagram.part.ModelunoDiagramUpdater
-						.getRelation_4001ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Modeluno.modeluno.diagram.part.ModelunoDiagramUpdater
 						.getAtributte_4002ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Modeluno.modeluno.diagram.part.ModelunoDiagramUpdater
+						.getRelation_4001ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

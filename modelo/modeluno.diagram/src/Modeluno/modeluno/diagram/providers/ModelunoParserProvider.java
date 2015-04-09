@@ -50,10 +50,8 @@ public class ModelunoParserProvider extends AbstractProvider implements
 		if (atributteAname_6001Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
 					.getAtributte_Aname() };
-			EAttribute[] editableFeatures = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
-					.getAtributte_Aname() };
 			Modeluno.modeluno.diagram.parsers.MessageFormatParser parser = new Modeluno.modeluno.diagram.parsers.MessageFormatParser(
-					features, editableFeatures);
+					features);
 			atributteAname_6001Parser = parser;
 		}
 		return atributteAname_6001Parser;

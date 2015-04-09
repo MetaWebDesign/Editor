@@ -218,7 +218,7 @@
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Modeluno"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4002,4001"/>
       </viewProvider>
    </extension>
 
@@ -233,7 +233,7 @@
             <method name="getType()" value="2001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4001,4002"/>
+            <method name="getType()" value="4002,4001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
             <method name="getType()" value="5001"/>
@@ -300,22 +300,22 @@
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Relation_4001"
-               name="%metatype.name.Relation_4001"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Relation"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationEditHelper">
-            <param name="semanticHint" value="4001"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://modeluno/1.0">
-         <metamodelType
                id="modeluno.diagram.Atributte_4002"
                name="%metatype.name.Atributte_4002"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Atributte"
                edithelper="Modeluno.modeluno.diagram.edit.helpers.AtributteEditHelper">
             <param name="semanticHint" value="4002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Relation_4001"
+               name="%metatype.name.Relation_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Relation"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationEditHelper">
+            <param name="semanticHint" value="4001"/>
          </metamodelType>
       </metamodel>
    </extension>
@@ -332,8 +332,8 @@
       <binding context="modeluno.diagram.TypeContext">
          <elementType ref="modeluno.diagram.Map_1000"/>
          <elementType ref="modeluno.diagram.Class_2001"/>
-         <elementType ref="modeluno.diagram.Relation_4001"/>
          <elementType ref="modeluno.diagram.Atributte_4002"/>
+         <elementType ref="modeluno.diagram.Relation_4001"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>
    </extension>

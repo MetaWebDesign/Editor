@@ -53,11 +53,11 @@ public class ModelunoElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Relation_4001 = getElementType("modeluno.diagram.Relation_4001"); //$NON-NLS-1$
+	public static final IElementType Atributte_4002 = getElementType("modeluno.diagram.Atributte_4002"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Atributte_4002 = getElementType("modeluno.diagram.Atributte_4002"); //$NON-NLS-1$
+	public static final IElementType Relation_4001 = getElementType("modeluno.diagram.Relation_4001"); //$NON-NLS-1$
 
 	/**
 	 * @generated
@@ -103,11 +103,11 @@ public class ModelunoElementTypes {
 			elements.put(Class_2001,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getClass_());
 
-			elements.put(Relation_4001,
-					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelation());
-
 			elements.put(Atributte_4002,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getAtributte());
+
+			elements.put(Relation_4001,
+					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelation());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -127,8 +127,8 @@ public class ModelunoElementTypes {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Map_1000);
 			KNOWN_ELEMENT_TYPES.add(Class_2001);
-			KNOWN_ELEMENT_TYPES.add(Relation_4001);
 			KNOWN_ELEMENT_TYPES.add(Atributte_4002);
+			KNOWN_ELEMENT_TYPES.add(Relation_4001);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -142,10 +142,10 @@ public class ModelunoElementTypes {
 			return Map_1000;
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return Class_2001;
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return Relation_4001;
 		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
 			return Atributte_4002;
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return Relation_4001;
 		}
 		return null;
 	}

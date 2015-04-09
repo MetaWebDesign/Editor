@@ -68,10 +68,10 @@ public class ModelunoDiagramUpdater {
 			return getMap_1000ContainedLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2001ContainedLinks(view);
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return getRelation_4001ContainedLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
 			return getAtributte_4002ContainedLinks(view);
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return getRelation_4001ContainedLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -85,10 +85,10 @@ public class ModelunoDiagramUpdater {
 				.getVisualID(view)) {
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2001IncomingLinks(view);
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return getRelation_4001IncomingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
 			return getAtributte_4002IncomingLinks(view);
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return getRelation_4001IncomingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -102,10 +102,10 @@ public class ModelunoDiagramUpdater {
 				.getVisualID(view)) {
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2001OutgoingLinks(view);
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return getRelation_4001OutgoingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
 			return getAtributte_4002OutgoingLinks(view);
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return getRelation_4001OutgoingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -126,15 +126,15 @@ public class ModelunoDiagramUpdater {
 		Modeluno.modeluno.Class modelElement = (Modeluno.modeluno.Class) view
 				.getElement();
 		LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> result = new LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_Relation_4001(modelElement));
 		result.addAll(getContainedTypeModelFacetLinks_Atributte_4002(modelElement));
+		result.addAll(getContainedTypeModelFacetLinks_Relation_4001(modelElement));
 		return result;
 	}
 
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getRelation_4001ContainedLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getAtributte_4002ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -142,7 +142,7 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getAtributte_4002ContainedLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getRelation_4001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -157,19 +157,11 @@ public class ModelunoDiagramUpdater {
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
 		LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> result = new LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor>();
-		result.addAll(getIncomingTypeModelFacetLinks_Relation_4001(
-				modelElement, crossReferences));
 		result.addAll(getIncomingTypeModelFacetLinks_Atributte_4002(
 				modelElement, crossReferences));
+		result.addAll(getIncomingTypeModelFacetLinks_Relation_4001(
+				modelElement, crossReferences));
 		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getRelation_4001IncomingLinks(
-			View view) {
-		return Collections.emptyList();
 	}
 
 	/**
@@ -183,14 +175,30 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getRelation_4001IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getClass_2001OutgoingLinks(
 			View view) {
 		Modeluno.modeluno.Class modelElement = (Modeluno.modeluno.Class) view
 				.getElement();
 		LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> result = new LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_Relation_4001(modelElement));
 		result.addAll(getContainedTypeModelFacetLinks_Atributte_4002(modelElement));
+		result.addAll(getContainedTypeModelFacetLinks_Relation_4001(modelElement));
 		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getAtributte_4002OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
 	}
 
 	/**
@@ -204,9 +212,29 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getAtributte_4002OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
+	private static Collection<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getContainedTypeModelFacetLinks_Atributte_4002(
+			Modeluno.modeluno.Class container) {
+		LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> result = new LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor>();
+		for (Iterator<?> links = container.getHasAtribute().iterator(); links
+				.hasNext();) {
+			EObject linkObject = (EObject) links.next();
+			if (false == linkObject instanceof Modeluno.modeluno.Atributte) {
+				continue;
+			}
+			Modeluno.modeluno.Atributte link = (Modeluno.modeluno.Atributte) linkObject;
+			if (Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID != Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
+					.getLinkWithClassVisualID(link)) {
+				continue;
+			}
+			Modeluno.modeluno.Class dst = link.getEsDe();
+			result.add(new Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor(
+					container,
+					dst,
+					link,
+					Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002,
+					Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+		}
+		return result;
 	}
 
 	/**
@@ -245,27 +273,36 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getContainedTypeModelFacetLinks_Atributte_4002(
-			Modeluno.modeluno.Class container) {
+	private static Collection<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getIncomingTypeModelFacetLinks_Atributte_4002(
+			Modeluno.modeluno.Class target,
+			Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
 		LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> result = new LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor>();
-		for (Iterator<?> links = container.getHasAtribute().iterator(); links
-				.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof Modeluno.modeluno.Atributte) {
+		Collection<EStructuralFeature.Setting> settings = crossReferences
+				.get(target);
+		for (EStructuralFeature.Setting setting : settings) {
+			if (setting.getEStructuralFeature() != Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getAtributte_EsDe()
+					|| false == setting.getEObject() instanceof Modeluno.modeluno.Atributte) {
 				continue;
 			}
-			Modeluno.modeluno.Atributte link = (Modeluno.modeluno.Atributte) linkObject;
+			Modeluno.modeluno.Atributte link = (Modeluno.modeluno.Atributte) setting
+					.getEObject();
 			if (Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID != Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
 					.getLinkWithClassVisualID(link)) {
 				continue;
 			}
-			Modeluno.modeluno.Class dst = link.getEsDe();
+			if (false == link.eContainer() instanceof Modeluno.modeluno.Class) {
+				continue;
+			}
+			Modeluno.modeluno.Class container = (Modeluno.modeluno.Class) link
+					.eContainer();
 			result.add(new Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor(
 					container,
-					dst,
+					target,
 					link,
 					Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002,
 					Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+
 		}
 		return result;
 	}
@@ -302,43 +339,6 @@ public class ModelunoDiagramUpdater {
 					link,
 					Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001,
 					Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
-
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	private static Collection<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getIncomingTypeModelFacetLinks_Atributte_4002(
-			Modeluno.modeluno.Class target,
-			Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
-		LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> result = new LinkedList<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor>();
-		Collection<EStructuralFeature.Setting> settings = crossReferences
-				.get(target);
-		for (EStructuralFeature.Setting setting : settings) {
-			if (setting.getEStructuralFeature() != Modeluno.modeluno.ModelunoPackage.eINSTANCE
-					.getAtributte_EsDe()
-					|| false == setting.getEObject() instanceof Modeluno.modeluno.Atributte) {
-				continue;
-			}
-			Modeluno.modeluno.Atributte link = (Modeluno.modeluno.Atributte) setting
-					.getEObject();
-			if (Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID != Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-					.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			if (false == link.eContainer() instanceof Modeluno.modeluno.Class) {
-				continue;
-			}
-			Modeluno.modeluno.Class container = (Modeluno.modeluno.Class) link
-					.eContainer();
-			result.add(new Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor(
-					container,
-					target,
-					link,
-					Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_4002,
-					Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
 
 		}
 		return result;

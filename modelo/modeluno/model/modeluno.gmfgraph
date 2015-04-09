@@ -64,10 +64,8 @@
     <descriptors
         name="AtributteFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
+          xsi:type="gmfgraph:PolylineConnection"
           name="AtributteFigure">
-        <layout
-            xsi:type="gmfgraph:FlowLayout"/>
         <children
             xsi:type="gmfgraph:Label"
             name="AtributteAnameFigure"
@@ -86,12 +84,7 @@
   </figures>
   <nodes
       name="Class"
-      figure="ClassFigure"
-      contentPane="//@figures.0/@descriptors.5/@accessors.0"/>
-  <nodes
-      name="Atributte"
-      figure="AtributteFigure"
-      contentPane="//@figures.0/@descriptors.5/@accessors.0"/>
+      figure="ClassFigure"/>
   <connections
       name="ClassHasRelation"
       figure="ClassHasRelationFigure"/>
@@ -105,18 +98,17 @@
       name="Relation"
       figure="RelationFigure"/>
   <connections
+      name="Atributte"
+      figure="AtributteFigure"/>
+  <connections
       name="AtributteEsDe"
       figure="AtributteEsDeFigure"/>
   <labels
       name="ClassCname"
       figure="ClassFigure"
-      contentPane="//@figures.0/@descriptors.0/@accessors.0"
-      accessor="//@figures.0/@descriptors.0/@accessors.0"
-      container="//@figures.0/@descriptors.0/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.0/@accessors.0"/>
   <labels
       name="AtributteAname"
       figure="AtributteFigure"
-      contentPane="//@figures.0/@descriptors.5/@accessors.0"
-      accessor="//@figures.0/@descriptors.5/@accessors.0"
-      container="//@figures.0/@descriptors.5/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.5/@accessors.0"/>
 </gmfgraph:Canvas>
