@@ -1,7 +1,0 @@
-# Tracing options for the modelo.diagram plug-in
-
-# Common issues
-modelo.diagram/debug=false
-
-# Visual IDs
-modelo.diagram/debug/visualID=false
