@@ -1,7 +1,7 @@
 eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/modeluno/model/modeluno.genmodel
-gmf_dashboard/domainModel=platform\:/resource/modeluno/model/modeluno.ecore
-gmf_dashboard/generationModel=platform\:/resource/modeluno/model/modeluno.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/modeluno/model/modeluno.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/modeluno/model/modeluno.gmfmap
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/modeluno/model/modeluno.gmftool
+gmf_dashboard/domainGenerationModel=platform\:/resource/modeldos/model/modeldos.genmodel
+gmf_dashboard/domainModel=platform\:/resource/modeldos/model/modeldos.ecore
+gmf_dashboard/generationModel=platform\:/resource/modeldos/model/modeldos.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/modeldos/model/modeldos.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/modeldos/model/modeldos1.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/modeldos/model/modeldos.gmftool

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/modeldos/src" modelPluginID="modeldos" modelName="Modeldos"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>modeldos.ecore</foreignModel>
+  <genPackages prefix="Modeldos" basePackage="Modeldos" disposableProviderFactory="true"
+      ecorePackage="modeldos.ecore#/">
+    <genClasses ecoreClass="modeldos.ecore#//Map">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Map/hasClass"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/hasRelation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/R1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/Cname"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/hasAtribute"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Relation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Relation/R2"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Atributte">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Atributte/Aname"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Atributte/esDe"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
