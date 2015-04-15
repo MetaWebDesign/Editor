@@ -226,24 +226,30 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
+							.getType(Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getDiagramLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			connectedViews = getDiagramLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			if (!links.isEmpty()) {
 				result.add(links);
@@ -254,13 +260,19 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID: {
 			LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem> result = new LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem>();
 			Node sv = (Node) view;
-			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup incominglinks = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Class_2001_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup outgoinglinks = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Class_2001_outgoinglinks,
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Class_2004_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup incominglinks = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Class_2004_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
+							.getType(Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
 			connectedViews = getIncomingLinksByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
@@ -273,26 +285,20 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 							.getType(Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
 					outgoinglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
 			if (!outgoinglinks.isEmpty()) {
 				result.add(outgoinglinks);
 			}
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
 			return result.toArray();
 		}
 
-		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID: {
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID: {
 			LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem> result = new LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup incominglinks = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Atributte_2002_incominglinks,
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_ADerived_2005_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -307,20 +313,45 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 			return result.toArray();
 		}
 
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID: {
+		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID: {
+			LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem> result = new LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup incominglinks = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_ANotDerived_2006_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
+							.getType(Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			return result.toArray();
+		}
+
+		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID: {
 			LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem> result = new LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
 			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup target = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Relation_4001_target,
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_RAttribute_4005_target,
 					"icons/linkTargetNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup source = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Relation_4001_source,
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_RAttribute_4005_source,
 					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
+							.getType(Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target,
 					true));
 			connectedViews = getLinksSourceByType(
@@ -338,20 +369,20 @@ public class ModelunoNavigatorContentProvider implements ICommonContentProvider 
 			return result.toArray();
 		}
 
-		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID: {
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID: {
 			LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem> result = new LinkedList<Modeluno.modeluno.diagram.navigator.ModelunoAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
 			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup target = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_RAttribute_4002_target,
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Relation_4006_target,
 					"icons/linkTargetNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup source = new Modeluno.modeluno.diagram.navigator.ModelunoNavigatorGroup(
-					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_RAttribute_4002_source,
+					Modeluno.modeluno.diagram.part.Messages.NavigatorGroupName_Relation_4006_source,
 					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(
 					Collections.singleton(sv),
 					Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-							.getType(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID));
+							.getType(Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target,
 					true));
 			connectedViews = getLinksSourceByType(

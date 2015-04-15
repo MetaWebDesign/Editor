@@ -288,6 +288,26 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String ANotDerived5CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ANotDerived5CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ADerived6CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ADerived6CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
 	public static String CommandName_OpenDiagram;
 
 	/**
@@ -298,37 +318,42 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2001_incominglinks;
+	public static String NavigatorGroupName_Class_2004_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2001_outgoinglinks;
+	public static String NavigatorGroupName_Class_2004_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Atributte_2002_incominglinks;
+	public static String NavigatorGroupName_ADerived_2005_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Relation_4001_target;
+	public static String NavigatorGroupName_ANotDerived_2006_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Relation_4001_source;
+	public static String NavigatorGroupName_RAttribute_4005_target;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RAttribute_4002_target;
+	public static String NavigatorGroupName_RAttribute_4005_source;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RAttribute_4002_source;
+	public static String NavigatorGroupName_Relation_4006_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Relation_4006_source;
 
 	/**
 	 * @generated

@@ -78,7 +78,7 @@ public class MapItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ModelunoPackage.Literals.MAP__HAS_CLASS);
-			childrenFeatures.add(ModelunoPackage.Literals.MAP__HAS_ATRIBUTE);
+			childrenFeatures.add(ModelunoPackage.Literals.MAP__HAS_ATRIBUTTE);
 		}
 		return childrenFeatures;
 	}
@@ -132,7 +132,7 @@ public class MapItemProvider
 
 		switch (notification.getFeatureID(Map.class)) {
 			case ModelunoPackage.MAP__HAS_CLASS:
-			case ModelunoPackage.MAP__HAS_ATRIBUTE:
+			case ModelunoPackage.MAP__HAS_ATRIBUTTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -157,8 +157,18 @@ public class MapItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ModelunoPackage.Literals.MAP__HAS_ATRIBUTE,
+				(ModelunoPackage.Literals.MAP__HAS_ATRIBUTTE,
 				 ModelunoFactory.eINSTANCE.createAtributte()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__HAS_ATRIBUTTE,
+				 ModelunoFactory.eINSTANCE.createANotDerived()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__HAS_ATRIBUTTE,
+				 ModelunoFactory.eINSTANCE.createADerived()));
 	}
 
 	/**

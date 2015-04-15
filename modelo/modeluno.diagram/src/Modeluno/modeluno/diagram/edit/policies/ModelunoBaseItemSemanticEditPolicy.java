@@ -320,35 +320,35 @@ public class ModelunoBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelation_4001(Modeluno.modeluno.Class source,
-				Modeluno.modeluno.Class target) {
-			return canExistRelation_4001(null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canCreateRAttribute_4002(Modeluno.modeluno.Class source,
+		public boolean canCreateRAttribute_4005(Modeluno.modeluno.Class source,
 				Modeluno.modeluno.Atributte target) {
-			return canExistRAttribute_4002(null, source, target);
+			return canExistRAttribute_4005(null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canExistRelation_4001(
-				Modeluno.modeluno.Relation linkInstance,
-				Modeluno.modeluno.Class source, Modeluno.modeluno.Class target) {
+		public boolean canCreateRelation_4006(Modeluno.modeluno.Class source,
+				Modeluno.modeluno.Class target) {
+			return canExistRelation_4006(null, source, target);
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistRAttribute_4005(
+				Modeluno.modeluno.RAttribute linkInstance,
+				Modeluno.modeluno.Class source,
+				Modeluno.modeluno.Atributte target) {
 			return true;
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canExistRAttribute_4002(
-				Modeluno.modeluno.RAttribute linkInstance,
-				Modeluno.modeluno.Class source,
-				Modeluno.modeluno.Atributte target) {
+		public boolean canExistRelation_4006(
+				Modeluno.modeluno.Relation linkInstance,
+				Modeluno.modeluno.Class source, Modeluno.modeluno.Class target) {
 			return true;
 		}
 	}

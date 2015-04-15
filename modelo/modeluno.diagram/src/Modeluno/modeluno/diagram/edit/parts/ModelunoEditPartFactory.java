@@ -25,14 +25,6 @@ public class ModelunoEditPartFactory implements EditPartFactory {
 				return new Modeluno.modeluno.diagram.edit.parts.MapEditPart(
 						view);
 
-			case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
-				return new Modeluno.modeluno.diagram.edit.parts.AtributteEditPart(
-						view);
-
-			case Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart.VISUAL_ID:
-				return new Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart(
-						view);
-
 			case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 				return new Modeluno.modeluno.diagram.edit.parts.ClassEditPart(
 						view);
@@ -41,12 +33,28 @@ public class ModelunoEditPartFactory implements EditPartFactory {
 				return new Modeluno.modeluno.diagram.edit.parts.ClassCnameEditPart(
 						view);
 
-			case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-				return new Modeluno.modeluno.diagram.edit.parts.RelationEditPart(
+			case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+				return new Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart(
+						view);
+
+			case Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID:
+				return new Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart(
+						view);
+
+			case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
+				return new Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart(
+						view);
+
+			case Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID:
+				return new Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart(
 						view);
 
 			case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
 				return new Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart(
+						view);
+
+			case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+				return new Modeluno.modeluno.diagram.edit.parts.RelationEditPart(
 						view);
 
 			}

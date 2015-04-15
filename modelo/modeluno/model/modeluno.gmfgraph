@@ -19,9 +19,6 @@
     <figures
         xsi:type="gmfgraph:PolylineDecoration"
         name="ClassEReference0TargetDecoration"/>
-    <figures
-        xsi:type="gmfgraph:PolylineDecoration"
-        name="RelationR2TargetDecoration"/>
     <descriptors
         name="ClassFigure">
       <actualFigure
@@ -111,11 +108,70 @@
           name="RAttributeFigure"/>
     </descriptors>
     <descriptors
-        name="RelationR2Figure">
+        name="ANotDerivedFigure">
       <actualFigure
-          xsi:type="gmfgraph:PolylineConnection"
-          name="RelationR2Figure"
-          targetDecoration="//@figures.0/@figures.4"/>
+          xsi:type="gmfgraph:Rectangle"
+          name="ANotDerivedFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ANotDerivedAnameFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ANotDerivedDataTypeFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ANotDerivedPermissionsFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ANotDerivedDefaultValueFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.2"/>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors
+        name="ADerivedFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="ADerivedFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ADerivedAnameFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ADerivedDataTypeFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ADerivedPermissionsFigure"
+            text="&lt;...>"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ADerivedDerivationCommentsFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.1"/>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.2"/>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.3"/>
     </descriptors>
   </figures>
   <nodes
@@ -124,6 +180,12 @@
   <nodes
       name="Atributte"
       figure="AtributteFigure"/>
+  <nodes
+      name="ANotDerived"
+      figure="ANotDerivedFigure"/>
+  <nodes
+      name="ADerived"
+      figure="ADerivedFigure"/>
   <connections
       name="ClassHasRelation"
       figure="ClassHasRelationFigure"/>
@@ -142,9 +204,6 @@
   <connections
       name="RAttribute"
       figure="RAttributeFigure"/>
-  <connections
-      name="RelationR2"
-      figure="RelationR2Figure"/>
   <labels
       name="ClassCname"
       figure="ClassFigure"
@@ -165,4 +224,36 @@
       name="AtributtePermissions"
       figure="AtributteFigure"
       accessor="//@figures.0/@descriptors.6/@accessors.2"/>
+  <labels
+      name="ANotDerivedAname"
+      figure="ANotDerivedFigure"
+      accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels
+      name="ANotDerivedDataType"
+      figure="ANotDerivedFigure"
+      accessor="//@figures.0/@descriptors.8/@accessors.1"/>
+  <labels
+      name="ANotDerivedPermissions"
+      figure="ANotDerivedFigure"
+      accessor="//@figures.0/@descriptors.8/@accessors.2"/>
+  <labels
+      name="ANotDerivedDefaultValue"
+      figure="ANotDerivedFigure"
+      accessor="//@figures.0/@descriptors.8/@accessors.3"/>
+  <labels
+      name="ADerivedAname"
+      figure="ADerivedFigure"
+      accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+  <labels
+      name="ADerivedDataType"
+      figure="ADerivedFigure"
+      accessor="//@figures.0/@descriptors.9/@accessors.1"/>
+  <labels
+      name="ADerivedPermissions"
+      figure="ADerivedFigure"
+      accessor="//@figures.0/@descriptors.9/@accessors.2"/>
+  <labels
+      name="ADerivedDerivationComments"
+      figure="ADerivedFigure"
+      accessor="//@figures.0/@descriptors.9/@accessors.3"/>
 </gmfgraph:Canvas>

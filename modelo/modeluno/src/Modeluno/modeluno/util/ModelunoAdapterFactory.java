@@ -2,6 +2,8 @@
  */
 package Modeluno.modeluno.util;
 
+import Modeluno.modeluno.ADerived;
+import Modeluno.modeluno.ANotDerived;
 import Modeluno.modeluno.Atributte;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoPackage;
@@ -92,6 +94,14 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 				return createRAttributeAdapter();
 			}
 			@Override
+			public Adapter caseANotDerived(ANotDerived object) {
+				return createANotDerivedAdapter();
+			}
+			@Override
+			public Adapter caseADerived(ADerived object) {
+				return createADerivedAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -178,6 +188,34 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ANotDerived <em>ANot Derived</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ANotDerived
+	 * @generated
+	 */
+	public Adapter createANotDerivedAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ADerived <em>ADerived</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ADerived
+	 * @generated
+	 */
+	public Adapter createADerivedAdapter() {
 		return null;
 	}
 

@@ -15,12 +15,12 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class AtributteCreateCommand extends EditElementCommand {
+public class ADerivedCreateCommand extends EditElementCommand {
 
 	/**
 	 * @generated
 	 */
-	public AtributteCreateCommand(CreateElementRequest req) {
+	public ADerivedCreateCommand(CreateElementRequest req) {
 		super(req.getLabel(), null, req);
 	}
 
@@ -41,6 +41,10 @@ public class AtributteCreateCommand extends EditElementCommand {
 	 * @generated
 	 */
 	public boolean canExecute() {
+		Modeluno.modeluno.Map container = (Modeluno.modeluno.Map) getElementToEdit();
+		if (container.getHasAtributte() != null) {
+			return false;
+		}
 		return true;
 
 	}
@@ -50,11 +54,11 @@ public class AtributteCreateCommand extends EditElementCommand {
 	 */
 	protected CommandResult doExecuteWithResult(IProgressMonitor monitor,
 			IAdaptable info) throws ExecutionException {
-		Modeluno.modeluno.Atributte newElement = Modeluno.modeluno.ModelunoFactory.eINSTANCE
-				.createAtributte();
+		Modeluno.modeluno.ADerived newElement = Modeluno.modeluno.ModelunoFactory.eINSTANCE
+				.createADerived();
 
 		Modeluno.modeluno.Map owner = (Modeluno.modeluno.Map) getElementToEdit();
-		owner.getHasAtribute().add(newElement);
+		owner.setHasAtributte(newElement);
 
 		doConfigure(newElement, monitor, info);
 
@@ -65,7 +69,7 @@ public class AtributteCreateCommand extends EditElementCommand {
 	/**
 	 * @generated
 	 */
-	protected void doConfigure(Modeluno.modeluno.Atributte newElement,
+	protected void doConfigure(Modeluno.modeluno.ADerived newElement,
 			IProgressMonitor monitor, IAdaptable info)
 			throws ExecutionException {
 		IElementType elementType = ((CreateElementRequest) getRequest())

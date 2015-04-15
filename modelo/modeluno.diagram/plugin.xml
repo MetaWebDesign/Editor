@@ -217,8 +217,8 @@
       <viewProvider class="Modeluno.modeluno.diagram.providers.ModelunoViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Modeluno"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2002,2001"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2004,2005,2006"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4005,4006"/>
       </viewProvider>
    </extension>
 
@@ -230,13 +230,13 @@
             <method name="getType()" value="Modeluno"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2002,2001"/>
+            <method name="getType()" value="2004,2005,2006"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4001,4002"/>
+            <method name="getType()" value="4005,4006"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5002,5001"/>
+            <method name="getType()" value="5004,5005,5006"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value=""/>
@@ -253,15 +253,20 @@
          <object class="Modeluno.modeluno.diagram.edit.parts.MapEditPart" id="Map_1000"/>
          <context elements="Map_1000"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfAtributteEditPart">
-         <Priority name="Lowest"/>
-         <object class="Modeluno.modeluno.diagram.edit.parts.AtributteEditPart" id="Atributte_2002"/>
-         <context elements="Atributte_2002"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfClassEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeluno.modeluno.diagram.edit.parts.ClassEditPart" id="Class_2001"/>
-         <context elements="Class_2001"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ClassEditPart" id="Class_2004"/>
+         <context elements="Class_2004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfADerivedEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart" id="ADerived_2005"/>
+         <context elements="ADerived_2005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfANotDerivedEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart" id="ANotDerived_2006"/>
+         <context elements="ANotDerived_2006"/>
       </modelingAssistantProvider>
       
    </extension>
@@ -295,42 +300,52 @@
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Atributte_2002"
-               name="%metatype.name.Atributte_2002"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Atributte"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.AtributteEditHelper">
-            <param name="semanticHint" value="2002"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://modeluno/1.0">
-         <metamodelType
-               id="modeluno.diagram.Class_2001"
-               name="%metatype.name.Class_2001"
+               id="modeluno.diagram.Class_2004"
+               name="%metatype.name.Class_2004"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Class"
                edithelper="Modeluno.modeluno.diagram.edit.helpers.ClassEditHelper">
-            <param name="semanticHint" value="2001"/>
+            <param name="semanticHint" value="2004"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Relation_4001"
-               name="%metatype.name.Relation_4001"
+               id="modeluno.diagram.ADerived_2005"
+               name="%metatype.name.ADerived_2005"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Relation"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationEditHelper">
-            <param name="semanticHint" value="4001"/>
+               eclass="ADerived"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ADerivedEditHelper">
+            <param name="semanticHint" value="2005"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.RAttribute_4002"
-               name="%metatype.name.RAttribute_4002"
+               id="modeluno.diagram.ANotDerived_2006"
+               name="%metatype.name.ANotDerived_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ANotDerived"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ANotDerivedEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.RAttribute_4005"
+               name="%metatype.name.RAttribute_4005"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="RAttribute"
                edithelper="Modeluno.modeluno.diagram.edit.helpers.RAttributeEditHelper">
-            <param name="semanticHint" value="4002"/>
+            <param name="semanticHint" value="4005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Relation_4006"
+               name="%metatype.name.Relation_4006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Relation"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationEditHelper">
+            <param name="semanticHint" value="4006"/>
          </metamodelType>
       </metamodel>
    </extension>
@@ -346,10 +361,11 @@
       </clientContext> 
       <binding context="modeluno.diagram.TypeContext">
          <elementType ref="modeluno.diagram.Map_1000"/>
-         <elementType ref="modeluno.diagram.Atributte_2002"/>
-         <elementType ref="modeluno.diagram.Class_2001"/>
-         <elementType ref="modeluno.diagram.Relation_4001"/>
-         <elementType ref="modeluno.diagram.RAttribute_4002"/>
+         <elementType ref="modeluno.diagram.Class_2004"/>
+         <elementType ref="modeluno.diagram.ADerived_2005"/>
+         <elementType ref="modeluno.diagram.ANotDerived_2006"/>
+         <elementType ref="modeluno.diagram.RAttribute_4005"/>
+         <elementType ref="modeluno.diagram.Relation_4006"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>
    </extension>

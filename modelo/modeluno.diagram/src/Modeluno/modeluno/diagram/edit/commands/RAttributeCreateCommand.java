@@ -57,7 +57,7 @@ public class RAttributeCreateCommand extends EditElementCommand {
 		}
 		// target may be null here but it's possible to check constraint
 		return Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy
-				.getLinkConstraints().canCreateRAttribute_4002(getSource(),
+				.getLinkConstraints().canCreateRAttribute_4005(getSource(),
 						getTarget());
 	}
 

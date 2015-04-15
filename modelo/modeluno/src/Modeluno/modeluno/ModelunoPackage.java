@@ -76,13 +76,13 @@ public interface ModelunoPackage extends EPackage {
 	int MAP__HAS_CLASS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Has Atribute</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Has Atributte</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAP__HAS_ATRIBUTE = 1;
+	int MAP__HAS_ATRIBUTTE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Map</em>' class.
@@ -325,6 +325,135 @@ public interface ModelunoPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link Modeluno.modeluno.impl.ANotDerivedImpl <em>ANot Derived</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Modeluno.modeluno.impl.ANotDerivedImpl
+	 * @see Modeluno.modeluno.impl.ModelunoPackageImpl#getANotDerived()
+	 * @generated
+	 */
+	int ANOT_DERIVED = 5;
+
+	/**
+	 * The feature id for the '<em><b>Aname</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANOT_DERIVED__ANAME = ATRIBUTTE__ANAME;
+
+	/**
+	 * The feature id for the '<em><b>Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANOT_DERIVED__DATA_TYPE = ATRIBUTTE__DATA_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Permissions</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANOT_DERIVED__PERMISSIONS = ATRIBUTTE__PERMISSIONS;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANOT_DERIVED__DEFAULT_VALUE = ATRIBUTTE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>ANot Derived</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANOT_DERIVED_FEATURE_COUNT = ATRIBUTTE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>ANot Derived</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANOT_DERIVED_OPERATION_COUNT = ATRIBUTTE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link Modeluno.modeluno.impl.ADerivedImpl <em>ADerived</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Modeluno.modeluno.impl.ADerivedImpl
+	 * @see Modeluno.modeluno.impl.ModelunoPackageImpl#getADerived()
+	 * @generated
+	 */
+	int ADERIVED = 6;
+
+	/**
+	 * The feature id for the '<em><b>Aname</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADERIVED__ANAME = ATRIBUTTE__ANAME;
+
+	/**
+	 * The feature id for the '<em><b>Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADERIVED__DATA_TYPE = ATRIBUTTE__DATA_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Permissions</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADERIVED__PERMISSIONS = ATRIBUTTE__PERMISSIONS;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Comments</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADERIVED__DERIVATION_COMMENTS = ATRIBUTTE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>ADerived</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADERIVED_FEATURE_COUNT = ATRIBUTTE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>ADerived</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADERIVED_OPERATION_COUNT = ATRIBUTTE_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link Modeluno.modeluno.Map <em>Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -346,15 +475,15 @@ public interface ModelunoPackage extends EPackage {
 	EReference getMap_HasClass();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Modeluno.modeluno.Map#getHasAtribute <em>Has Atribute</em>}'.
+	 * Returns the meta object for the containment reference '{@link Modeluno.modeluno.Map#getHasAtributte <em>Has Atributte</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Has Atribute</em>'.
-	 * @see Modeluno.modeluno.Map#getHasAtribute()
+	 * @return the meta object for the containment reference '<em>Has Atributte</em>'.
+	 * @see Modeluno.modeluno.Map#getHasAtributte()
 	 * @see #getMap()
 	 * @generated
 	 */
-	EReference getMap_HasAtribute();
+	EReference getMap_HasAtributte();
 
 	/**
 	 * Returns the meta object for class '{@link Modeluno.modeluno.Class <em>Class</em>}'.
@@ -529,6 +658,48 @@ public interface ModelunoPackage extends EPackage {
 	EReference getRAttribute_RhasAttribute();
 
 	/**
+	 * Returns the meta object for class '{@link Modeluno.modeluno.ANotDerived <em>ANot Derived</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>ANot Derived</em>'.
+	 * @see Modeluno.modeluno.ANotDerived
+	 * @generated
+	 */
+	EClass getANotDerived();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Modeluno.modeluno.ANotDerived#getDefaultValue <em>Default Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Value</em>'.
+	 * @see Modeluno.modeluno.ANotDerived#getDefaultValue()
+	 * @see #getANotDerived()
+	 * @generated
+	 */
+	EAttribute getANotDerived_DefaultValue();
+
+	/**
+	 * Returns the meta object for class '{@link Modeluno.modeluno.ADerived <em>ADerived</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>ADerived</em>'.
+	 * @see Modeluno.modeluno.ADerived
+	 * @generated
+	 */
+	EClass getADerived();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Modeluno.modeluno.ADerived#getDerivationComments <em>Derivation Comments</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Derivation Comments</em>'.
+	 * @see Modeluno.modeluno.ADerived#getDerivationComments()
+	 * @see #getADerived()
+	 * @generated
+	 */
+	EAttribute getADerived_DerivationComments();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -570,12 +741,12 @@ public interface ModelunoPackage extends EPackage {
 		EReference MAP__HAS_CLASS = eINSTANCE.getMap_HasClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Has Atribute</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Has Atributte</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MAP__HAS_ATRIBUTE = eINSTANCE.getMap_HasAtribute();
+		EReference MAP__HAS_ATRIBUTTE = eINSTANCE.getMap_HasAtributte();
 
 		/**
 		 * The meta object literal for the '{@link Modeluno.modeluno.impl.ClassImpl <em>Class</em>}' class.
@@ -712,6 +883,42 @@ public interface ModelunoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference RATTRIBUTE__RHAS_ATTRIBUTE = eINSTANCE.getRAttribute_RhasAttribute();
+
+		/**
+		 * The meta object literal for the '{@link Modeluno.modeluno.impl.ANotDerivedImpl <em>ANot Derived</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Modeluno.modeluno.impl.ANotDerivedImpl
+		 * @see Modeluno.modeluno.impl.ModelunoPackageImpl#getANotDerived()
+		 * @generated
+		 */
+		EClass ANOT_DERIVED = eINSTANCE.getANotDerived();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ANOT_DERIVED__DEFAULT_VALUE = eINSTANCE.getANotDerived_DefaultValue();
+
+		/**
+		 * The meta object literal for the '{@link Modeluno.modeluno.impl.ADerivedImpl <em>ADerived</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Modeluno.modeluno.impl.ADerivedImpl
+		 * @see Modeluno.modeluno.impl.ModelunoPackageImpl#getADerived()
+		 * @generated
+		 */
+		EClass ADERIVED = eINSTANCE.getADerived();
+
+		/**
+		 * The meta object literal for the '<em><b>Derivation Comments</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADERIVED__DERIVATION_COMMENTS = eINSTANCE.getADerived_DerivationComments();
 
 	}
 

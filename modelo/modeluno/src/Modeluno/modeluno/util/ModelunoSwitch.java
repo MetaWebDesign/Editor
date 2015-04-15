@@ -2,6 +2,8 @@
  */
 package Modeluno.modeluno.util;
 
+import Modeluno.modeluno.ADerived;
+import Modeluno.modeluno.ANotDerived;
 import Modeluno.modeluno.Atributte;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoPackage;
@@ -100,6 +102,20 @@ public class ModelunoSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ModelunoPackage.ANOT_DERIVED: {
+				ANotDerived aNotDerived = (ANotDerived)theEObject;
+				T result = caseANotDerived(aNotDerived);
+				if (result == null) result = caseAtributte(aNotDerived);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ModelunoPackage.ADERIVED: {
+				ADerived aDerived = (ADerived)theEObject;
+				T result = caseADerived(aDerived);
+				if (result == null) result = caseAtributte(aDerived);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -176,6 +192,36 @@ public class ModelunoSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRAttribute(RAttribute object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>ANot Derived</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>ANot Derived</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseANotDerived(ANotDerived object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>ADerived</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>ADerived</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseADerived(ADerived object) {
 		return null;
 	}
 

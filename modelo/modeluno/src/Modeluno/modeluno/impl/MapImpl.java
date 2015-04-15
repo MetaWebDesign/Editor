@@ -5,18 +5,14 @@ package Modeluno.modeluno.impl;
 import Modeluno.modeluno.Atributte;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoPackage;
-
 import java.util.Collection;
-
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -28,7 +24,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link Modeluno.modeluno.impl.MapImpl#getHasClass <em>Has Class</em>}</li>
- *   <li>{@link Modeluno.modeluno.impl.MapImpl#getHasAtribute <em>Has Atribute</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.MapImpl#getHasAtributte <em>Has Atributte</em>}</li>
  * </ul>
  * </p>
  *
@@ -46,14 +42,14 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 	protected EList<Modeluno.modeluno.Class> hasClass;
 
 	/**
-	 * The cached value of the '{@link #getHasAtribute() <em>Has Atribute</em>}' containment reference list.
+	 * The cached value of the '{@link #getHasAtributte() <em>Has Atributte</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHasAtribute()
+	 * @see #getHasAtributte()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Atributte> hasAtribute;
+	protected Atributte hasAtributte;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,11 +87,42 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Atributte> getHasAtribute() {
-		if (hasAtribute == null) {
-			hasAtribute = new EObjectContainmentEList<Atributte>(Atributte.class, this, ModelunoPackage.MAP__HAS_ATRIBUTE);
+	public Atributte getHasAtributte() {
+		return hasAtributte;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetHasAtributte(Atributte newHasAtributte, NotificationChain msgs) {
+		Atributte oldHasAtributte = hasAtributte;
+		hasAtributte = newHasAtributte;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ModelunoPackage.MAP__HAS_ATRIBUTTE, oldHasAtributte, newHasAtributte);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
-		return hasAtribute;
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setHasAtributte(Atributte newHasAtributte) {
+		if (newHasAtributte != hasAtributte) {
+			NotificationChain msgs = null;
+			if (hasAtributte != null)
+				msgs = ((InternalEObject)hasAtributte).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ModelunoPackage.MAP__HAS_ATRIBUTTE, null, msgs);
+			if (newHasAtributte != null)
+				msgs = ((InternalEObject)newHasAtributte).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ModelunoPackage.MAP__HAS_ATRIBUTTE, null, msgs);
+			msgs = basicSetHasAtributte(newHasAtributte, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.MAP__HAS_ATRIBUTTE, newHasAtributte, newHasAtributte));
 	}
 
 	/**
@@ -108,8 +135,8 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 		switch (featureID) {
 			case ModelunoPackage.MAP__HAS_CLASS:
 				return ((InternalEList<?>)getHasClass()).basicRemove(otherEnd, msgs);
-			case ModelunoPackage.MAP__HAS_ATRIBUTE:
-				return ((InternalEList<?>)getHasAtribute()).basicRemove(otherEnd, msgs);
+			case ModelunoPackage.MAP__HAS_ATRIBUTTE:
+				return basicSetHasAtributte(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -124,8 +151,8 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 		switch (featureID) {
 			case ModelunoPackage.MAP__HAS_CLASS:
 				return getHasClass();
-			case ModelunoPackage.MAP__HAS_ATRIBUTE:
-				return getHasAtribute();
+			case ModelunoPackage.MAP__HAS_ATRIBUTTE:
+				return getHasAtributte();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -143,9 +170,8 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 				getHasClass().clear();
 				getHasClass().addAll((Collection<? extends Modeluno.modeluno.Class>)newValue);
 				return;
-			case ModelunoPackage.MAP__HAS_ATRIBUTE:
-				getHasAtribute().clear();
-				getHasAtribute().addAll((Collection<? extends Atributte>)newValue);
+			case ModelunoPackage.MAP__HAS_ATRIBUTTE:
+				setHasAtributte((Atributte)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -162,8 +188,8 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 			case ModelunoPackage.MAP__HAS_CLASS:
 				getHasClass().clear();
 				return;
-			case ModelunoPackage.MAP__HAS_ATRIBUTE:
-				getHasAtribute().clear();
+			case ModelunoPackage.MAP__HAS_ATRIBUTTE:
+				setHasAtributte((Atributte)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -179,8 +205,8 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 		switch (featureID) {
 			case ModelunoPackage.MAP__HAS_CLASS:
 				return hasClass != null && !hasClass.isEmpty();
-			case ModelunoPackage.MAP__HAS_ATRIBUTE:
-				return hasAtribute != null && !hasAtribute.isEmpty();
+			case ModelunoPackage.MAP__HAS_ATRIBUTTE:
+				return hasAtributte != null;
 		}
 		return super.eIsSet(featureID);
 	}

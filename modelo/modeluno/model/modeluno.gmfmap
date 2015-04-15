@@ -8,26 +8,6 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="modeluno.ecore#//Map/hasAtribute"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//Atributte"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#AtributteAname"/>
-        <features
-            href="modeluno.ecore#//Atributte/Aname"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.2"/>
-      <diagramNode
-          href="modeluno.gmfgraph#Atributte"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="modeluno.ecore#//Map/hasClass"/>
     <ownedChild>
       <domainMetaElement
@@ -46,20 +26,46 @@
           href="modeluno.gmfgraph#Class"/>
     </ownedChild>
   </nodes>
-  <links>
-    <domainMetaElement
-        href="modeluno.ecore#//Relation"/>
+  <nodes>
     <containmentFeature
-        href="modeluno.ecore#//Class/hasRelation"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.1"/>
-    <diagramLink
-        href="modeluno.gmfgraph#Relation"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="modeluno.ecore#//Relation/R2"/>
-  </links>
+        href="modeluno.ecore#//Map/hasAtributte"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//ADerived"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ADerivedAname"/>
+        <features
+            href="modeluno.ecore#//Atributte/Aname"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="modeluno.gmfgraph#ADerived"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/hasAtributte"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//ANotDerived"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ANotDerivedAname"/>
+        <features
+            href="modeluno.ecore#//Atributte/Aname"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.4"/>
+      <diagramNode
+          href="modeluno.gmfgraph#ANotDerived"/>
+    </ownedChild>
+  </nodes>
   <links>
     <domainMetaElement
         href="modeluno.ecore#//RAttribute"/>
@@ -73,6 +79,20 @@
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="modeluno.ecore#//RAttribute/AtributoEsDe"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="modeluno.ecore#//Relation"/>
+    <containmentFeature
+        href="modeluno.ecore#//Class/hasRelation"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.1"/>
+    <diagramLink
+        href="modeluno.gmfgraph#Relation"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="modeluno.ecore#//Relation/R2"/>
   </links>
   <diagram>
     <diagramCanvas

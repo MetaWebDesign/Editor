@@ -176,6 +176,16 @@ public class RAttributeItemProvider
 			(createChildParameter
 				(ModelunoPackage.Literals.RATTRIBUTE__RHAS_ATTRIBUTE,
 				 ModelunoFactory.eINSTANCE.createAtributte()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.RATTRIBUTE__RHAS_ATTRIBUTE,
+				 ModelunoFactory.eINSTANCE.createANotDerived()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.RATTRIBUTE__RHAS_ATTRIBUTE,
+				 ModelunoFactory.eINSTANCE.createADerived()));
 	}
 
 	/**

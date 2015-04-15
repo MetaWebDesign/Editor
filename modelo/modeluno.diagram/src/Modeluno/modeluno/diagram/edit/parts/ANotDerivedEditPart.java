@@ -24,12 +24,12 @@ import org.eclipse.swt.graphics.Color;
 /**
  * @generated
  */
-public class AtributteEditPart extends ShapeNodeEditPart {
+public class ANotDerivedEditPart extends ShapeNodeEditPart {
 
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2002;
+	public static final int VISUAL_ID = 2006;
 
 	/**
 	 * @generated
@@ -44,7 +44,7 @@ public class AtributteEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public AtributteEditPart(View view) {
+	public ANotDerivedEditPart(View view) {
 		super(view);
 	}
 
@@ -55,7 +55,7 @@ public class AtributteEditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
-				new Modeluno.modeluno.diagram.edit.policies.AtributteItemSemanticEditPolicy());
+				new Modeluno.modeluno.diagram.edit.policies.ANotDerivedItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
 		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
@@ -88,23 +88,24 @@ public class AtributteEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure createNodeShape() {
-		return primaryShape = new AtributteFigure();
+		return primaryShape = new ANotDerivedFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public AtributteFigure getPrimaryShape() {
-		return (AtributteFigure) primaryShape;
+	public ANotDerivedFigure getPrimaryShape() {
+		return (ANotDerivedFigure) primaryShape;
 	}
 
 	/**
 	 * @generated
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart) {
-			((Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart) childEditPart)
-					.setLabel(getPrimaryShape().getFigureAtributteAnameFigure());
+		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart) {
+			((Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart) childEditPart)
+					.setLabel(getPrimaryShape()
+							.getFigureANotDerivedAnameFigure());
 			return true;
 		}
 		return false;
@@ -114,7 +115,7 @@ public class AtributteEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart) {
+		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart) {
 			return true;
 		}
 		return false;
@@ -238,31 +239,35 @@ public class AtributteEditPart extends ShapeNodeEditPart {
 	 */
 	public EditPart getPrimaryChildEditPart() {
 		return getChildBySemanticHint(Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-				.getType(Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart.VISUAL_ID));
+				.getType(Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID));
 	}
 
 	/**
 	 * @generated
 	 */
-	public class AtributteFigure extends RectangleFigure {
+	public class ANotDerivedFigure extends RectangleFigure {
 
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureAtributteAnameFigure;
+		private WrappingLabel fFigureANotDerivedAnameFigure;
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureAtributteDataTypeFigure;
+		private WrappingLabel fFigureANotDerivedDataTypeFigure;
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureAtributtePermissionsFigure;
+		private WrappingLabel fFigureANotDerivedPermissionsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureANotDerivedDefaultValueFigure;
 
 		/**
 		 * @generated
 		 */
-		public AtributteFigure() {
+		public ANotDerivedFigure() {
 
 			FlowLayout layoutThis = new FlowLayout();
 			layoutThis.setStretchMinorAxis(false);
@@ -283,45 +288,58 @@ public class AtributteEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			fFigureAtributteAnameFigure = new WrappingLabel();
+			fFigureANotDerivedAnameFigure = new WrappingLabel();
 
-			fFigureAtributteAnameFigure.setText("<...>");
+			fFigureANotDerivedAnameFigure.setText("<...>");
 
-			this.add(fFigureAtributteAnameFigure);
+			this.add(fFigureANotDerivedAnameFigure);
 
-			fFigureAtributteDataTypeFigure = new WrappingLabel();
+			fFigureANotDerivedDataTypeFigure = new WrappingLabel();
 
-			fFigureAtributteDataTypeFigure.setText("<...>");
+			fFigureANotDerivedDataTypeFigure.setText("<...>");
 
-			this.add(fFigureAtributteDataTypeFigure);
+			this.add(fFigureANotDerivedDataTypeFigure);
 
-			fFigureAtributtePermissionsFigure = new WrappingLabel();
+			fFigureANotDerivedPermissionsFigure = new WrappingLabel();
 
-			fFigureAtributtePermissionsFigure.setText("<...>");
+			fFigureANotDerivedPermissionsFigure.setText("<...>");
 
-			this.add(fFigureAtributtePermissionsFigure);
+			this.add(fFigureANotDerivedPermissionsFigure);
+
+			fFigureANotDerivedDefaultValueFigure = new WrappingLabel();
+
+			fFigureANotDerivedDefaultValueFigure.setText("<...>");
+
+			this.add(fFigureANotDerivedDefaultValueFigure);
 
 		}
 
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureAtributteAnameFigure() {
-			return fFigureAtributteAnameFigure;
+		public WrappingLabel getFigureANotDerivedAnameFigure() {
+			return fFigureANotDerivedAnameFigure;
 		}
 
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureAtributteDataTypeFigure() {
-			return fFigureAtributteDataTypeFigure;
+		public WrappingLabel getFigureANotDerivedDataTypeFigure() {
+			return fFigureANotDerivedDataTypeFigure;
 		}
 
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureAtributtePermissionsFigure() {
-			return fFigureAtributtePermissionsFigure;
+		public WrappingLabel getFigureANotDerivedPermissionsFigure() {
+			return fFigureANotDerivedPermissionsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureANotDerivedDefaultValueFigure() {
+			return fFigureANotDerivedDefaultValueFigure;
 		}
 
 	}

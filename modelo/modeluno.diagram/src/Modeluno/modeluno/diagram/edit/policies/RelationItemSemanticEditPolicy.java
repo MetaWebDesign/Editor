@@ -16,7 +16,7 @@ public class RelationItemSemanticEditPolicy
 	 */
 	public RelationItemSemanticEditPolicy() {
 		super(
-				Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001);
+				Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4006);
 	}
 
 	/**

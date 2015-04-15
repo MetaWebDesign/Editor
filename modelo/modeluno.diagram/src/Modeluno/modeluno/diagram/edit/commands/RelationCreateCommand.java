@@ -57,7 +57,7 @@ public class RelationCreateCommand extends EditElementCommand {
 		}
 		// target may be null here but it's possible to check constraint
 		return Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy
-				.getLinkConstraints().canCreateRelation_4001(getSource(),
+				.getLinkConstraints().canCreateRelation_4006(getSource(),
 						getTarget());
 	}
 

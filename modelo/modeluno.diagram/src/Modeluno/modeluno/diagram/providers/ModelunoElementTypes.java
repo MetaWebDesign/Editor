@@ -49,19 +49,23 @@ public class ModelunoElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Atributte_2002 = getElementType("modeluno.diagram.Atributte_2002"); //$NON-NLS-1$
+	public static final IElementType Class_2004 = getElementType("modeluno.diagram.Class_2004"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Class_2001 = getElementType("modeluno.diagram.Class_2001"); //$NON-NLS-1$
+	public static final IElementType ADerived_2005 = getElementType("modeluno.diagram.ADerived_2005"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Relation_4001 = getElementType("modeluno.diagram.Relation_4001"); //$NON-NLS-1$
+	public static final IElementType ANotDerived_2006 = getElementType("modeluno.diagram.ANotDerived_2006"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType RAttribute_4002 = getElementType("modeluno.diagram.RAttribute_4002"); //$NON-NLS-1$
+	public static final IElementType RAttribute_4005 = getElementType("modeluno.diagram.RAttribute_4005"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Relation_4006 = getElementType("modeluno.diagram.Relation_4006"); //$NON-NLS-1$
 
 	/**
 	 * @generated
@@ -104,17 +108,21 @@ public class ModelunoElementTypes {
 			elements.put(Map_1000,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getMap());
 
-			elements.put(Atributte_2002,
-					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getAtributte());
-
-			elements.put(Class_2001,
+			elements.put(Class_2004,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getClass_());
 
-			elements.put(Relation_4001,
-					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelation());
+			elements.put(ADerived_2005,
+					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getADerived());
 
-			elements.put(RAttribute_4002,
+			elements.put(ANotDerived_2006,
+					Modeluno.modeluno.ModelunoPackage.eINSTANCE
+							.getANotDerived());
+
+			elements.put(RAttribute_4005,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRAttribute());
+
+			elements.put(Relation_4006,
+					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelation());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -133,10 +141,11 @@ public class ModelunoElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Map_1000);
-			KNOWN_ELEMENT_TYPES.add(Atributte_2002);
-			KNOWN_ELEMENT_TYPES.add(Class_2001);
-			KNOWN_ELEMENT_TYPES.add(Relation_4001);
-			KNOWN_ELEMENT_TYPES.add(RAttribute_4002);
+			KNOWN_ELEMENT_TYPES.add(Class_2004);
+			KNOWN_ELEMENT_TYPES.add(ADerived_2005);
+			KNOWN_ELEMENT_TYPES.add(ANotDerived_2006);
+			KNOWN_ELEMENT_TYPES.add(RAttribute_4005);
+			KNOWN_ELEMENT_TYPES.add(Relation_4006);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -148,14 +157,16 @@ public class ModelunoElementTypes {
 		switch (visualID) {
 		case Modeluno.modeluno.diagram.edit.parts.MapEditPart.VISUAL_ID:
 			return Map_1000;
-		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
-			return Atributte_2002;
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return Class_2001;
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return Relation_4001;
+			return Class_2004;
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			return ADerived_2005;
+		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
+			return ANotDerived_2006;
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
-			return RAttribute_4002;
+			return RAttribute_4005;
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return Relation_4006;
 		}
 		return null;
 	}

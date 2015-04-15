@@ -2,6 +2,8 @@
  */
 package Modeluno.modeluno.impl;
 
+import Modeluno.modeluno.ADerived;
+import Modeluno.modeluno.ANotDerived;
 import Modeluno.modeluno.Atributte;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoFactory;
@@ -66,6 +68,8 @@ public class ModelunoFactoryImpl extends EFactoryImpl implements ModelunoFactory
 			case ModelunoPackage.RELATION: return createRelation();
 			case ModelunoPackage.ATRIBUTTE: return createAtributte();
 			case ModelunoPackage.RATTRIBUTE: return createRAttribute();
+			case ModelunoPackage.ANOT_DERIVED: return createANotDerived();
+			case ModelunoPackage.ADERIVED: return createADerived();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -119,6 +123,26 @@ public class ModelunoFactoryImpl extends EFactoryImpl implements ModelunoFactory
 	public RAttribute createRAttribute() {
 		RAttributeImpl rAttribute = new RAttributeImpl();
 		return rAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ANotDerived createANotDerived() {
+		ANotDerivedImpl aNotDerived = new ANotDerivedImpl();
+		return aNotDerived;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ADerived createADerived() {
+		ADerivedImpl aDerived = new ADerivedImpl();
+		return aDerived;
 	}
 
 	/**

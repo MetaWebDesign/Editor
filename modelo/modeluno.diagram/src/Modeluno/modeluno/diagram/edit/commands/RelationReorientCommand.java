@@ -67,7 +67,7 @@ public class RelationReorientCommand extends EditElementCommand {
 		Modeluno.modeluno.Class target = (Modeluno.modeluno.Class) getLink()
 				.getR2().get(0);
 		return Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelation_4001(getLink(),
+				.getLinkConstraints().canExistRelation_4006(getLink(),
 						getNewSource(), target);
 	}
 
@@ -84,7 +84,7 @@ public class RelationReorientCommand extends EditElementCommand {
 		Modeluno.modeluno.Class source = (Modeluno.modeluno.Class) getLink()
 				.eContainer();
 		return Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelation_4001(getLink(), source,
+				.getLinkConstraints().canExistRelation_4006(getLink(), source,
 						getNewTarget());
 	}
 

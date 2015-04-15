@@ -22,39 +22,58 @@ public class ModelunoParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser atributteAname_5002Parser;
+	private IParser classCname_5004Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getAtributteAname_5002Parser() {
-		if (atributteAname_5002Parser == null) {
+	private IParser getClassCname_5004Parser() {
+		if (classCname_5004Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
-					.getAtributte_Aname() };
+					.getClass_Cname() };
 			Modeluno.modeluno.diagram.parsers.MessageFormatParser parser = new Modeluno.modeluno.diagram.parsers.MessageFormatParser(
 					features);
-			atributteAname_5002Parser = parser;
+			classCname_5004Parser = parser;
 		}
-		return atributteAname_5002Parser;
+		return classCname_5004Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser classCname_5001Parser;
+	private IParser aDerivedAname_5005Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getClassCname_5001Parser() {
-		if (classCname_5001Parser == null) {
+	private IParser getADerivedAname_5005Parser() {
+		if (aDerivedAname_5005Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
-					.getClass_Cname() };
+					.getAtributte_Aname() };
 			Modeluno.modeluno.diagram.parsers.MessageFormatParser parser = new Modeluno.modeluno.diagram.parsers.MessageFormatParser(
 					features);
-			classCname_5001Parser = parser;
+			aDerivedAname_5005Parser = parser;
 		}
-		return classCname_5001Parser;
+		return aDerivedAname_5005Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser aNotDerivedAname_5006Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getANotDerivedAname_5006Parser() {
+		if (aNotDerivedAname_5006Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getAtributte_Aname() };
+			Modeluno.modeluno.diagram.parsers.MessageFormatParser parser = new Modeluno.modeluno.diagram.parsers.MessageFormatParser(
+					features);
+			aNotDerivedAname_5006Parser = parser;
+		}
+		return aNotDerivedAname_5006Parser;
 	}
 
 	/**
@@ -62,10 +81,12 @@ public class ModelunoParserProvider extends AbstractProvider implements
 	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
-		case Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart.VISUAL_ID:
-			return getAtributteAname_5002Parser();
 		case Modeluno.modeluno.diagram.edit.parts.ClassCnameEditPart.VISUAL_ID:
-			return getClassCname_5001Parser();
+			return getClassCname_5004Parser();
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID:
+			return getADerivedAname_5005Parser();
+		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID:
+			return getANotDerivedAname_5006Parser();
 		}
 		return null;
 	}

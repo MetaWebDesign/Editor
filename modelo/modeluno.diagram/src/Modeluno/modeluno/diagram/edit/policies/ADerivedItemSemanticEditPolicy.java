@@ -16,16 +16,16 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class AtributteItemSemanticEditPolicy
+public class ADerivedItemSemanticEditPolicy
 		extends
 		Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy {
 
 	/**
 	 * @generated
 	 */
-	public AtributteItemSemanticEditPolicy() {
+	public ADerivedItemSemanticEditPolicy() {
 		super(
-				Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_2002);
+				Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005);
 	}
 
 	/**
@@ -74,7 +74,7 @@ public class AtributteItemSemanticEditPolicy
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002 == req
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005 == req
 				.getElementType()) {
 			return null;
 		}
@@ -86,7 +86,7 @@ public class AtributteItemSemanticEditPolicy
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002 == req
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.RAttributeCreateCommand(
 					req, req.getSource(), req.getTarget()));

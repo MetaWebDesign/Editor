@@ -63,7 +63,7 @@ public class RAttributeReorientCommand extends EditElementCommand {
 		}
 		Modeluno.modeluno.Atributte target = getLink().getAtributoEsDe();
 		return Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRAttribute_4002(getLink(),
+				.getLinkConstraints().canExistRAttribute_4005(getLink(),
 						getNewSource(), target);
 	}
 
@@ -80,7 +80,7 @@ public class RAttributeReorientCommand extends EditElementCommand {
 		Modeluno.modeluno.Class source = (Modeluno.modeluno.Class) getLink()
 				.eContainer();
 		return Modeluno.modeluno.diagram.edit.policies.ModelunoBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRAttribute_4002(getLink(),
+				.getLinkConstraints().canExistRAttribute_4005(getLink(),
 						source, getNewTarget());
 	}
 

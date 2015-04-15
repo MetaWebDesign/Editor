@@ -4,8 +4,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Map">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasClass" upperBound="-1"
         eType="#//Class" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtribute" upperBound="-1"
-        eType="#//Atributte" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributte" eType="#//Atributte"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelation" upperBound="-1"
@@ -29,5 +29,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="AtributoEsDe" eType="#//Atributte"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasAttribute" eType="#//Atributte"
         containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ANotDerived" eSuperTypes="#//Atributte">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ADerived" eSuperTypes="#//Atributte">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="derivationComments" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

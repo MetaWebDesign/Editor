@@ -53,7 +53,7 @@ public class ClassCnameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5001;
+	public static final int VISUAL_ID = 5004;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class ClassCnameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeluno.modeluno.diagram.providers.ModelunoParserProvider
 					.getParser(
-							Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2001,
+							Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004,
 							getParserElement(),
 							Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
 									.getType(Modeluno.modeluno.diagram.edit.parts.ClassCnameEditPart.VISUAL_ID));

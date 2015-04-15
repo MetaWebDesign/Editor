@@ -2,6 +2,8 @@
  */
 package Modeluno.modeluno.impl;
 
+import Modeluno.modeluno.ADerived;
+import Modeluno.modeluno.ANotDerived;
 import Modeluno.modeluno.Atributte;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoFactory;
@@ -55,6 +57,20 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 	 * @generated
 	 */
 	private EClass rAttributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aNotDerivedEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aDerivedEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -140,7 +156,7 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getMap_HasAtribute() {
+	public EReference getMap_HasAtributte() {
 		return (EReference)mapEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -293,6 +309,42 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getANotDerived() {
+		return aNotDerivedEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getANotDerived_DefaultValue() {
+		return (EAttribute)aNotDerivedEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getADerived() {
+		return aDerivedEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getADerived_DerivationComments() {
+		return (EAttribute)aDerivedEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ModelunoFactory getModelunoFactory() {
 		return (ModelunoFactory)getEFactoryInstance();
 	}
@@ -318,7 +370,7 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 		// Create classes and their features
 		mapEClass = createEClass(MAP);
 		createEReference(mapEClass, MAP__HAS_CLASS);
-		createEReference(mapEClass, MAP__HAS_ATRIBUTE);
+		createEReference(mapEClass, MAP__HAS_ATRIBUTTE);
 
 		classEClass = createEClass(CLASS);
 		createEReference(classEClass, CLASS__HAS_RELATION);
@@ -339,6 +391,12 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 		rAttributeEClass = createEClass(RATTRIBUTE);
 		createEReference(rAttributeEClass, RATTRIBUTE__ATRIBUTO_ES_DE);
 		createEReference(rAttributeEClass, RATTRIBUTE__RHAS_ATTRIBUTE);
+
+		aNotDerivedEClass = createEClass(ANOT_DERIVED);
+		createEAttribute(aNotDerivedEClass, ANOT_DERIVED__DEFAULT_VALUE);
+
+		aDerivedEClass = createEClass(ADERIVED);
+		createEAttribute(aDerivedEClass, ADERIVED__DERIVATION_COMMENTS);
 	}
 
 	/**
@@ -369,11 +427,13 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		aNotDerivedEClass.getESuperTypes().add(this.getAtributte());
+		aDerivedEClass.getESuperTypes().add(this.getAtributte());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(mapEClass, Map.class, "Map", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMap_HasClass(), this.getClass_(), null, "hasClass", null, 0, -1, Map.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMap_HasAtribute(), this.getAtributte(), null, "hasAtribute", null, 0, -1, Map.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMap_HasAtributte(), this.getAtributte(), null, "hasAtributte", null, 0, 1, Map.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classEClass, Modeluno.modeluno.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getClass_HasRelation(), this.getRelation(), null, "hasRelation", null, 0, -1, Modeluno.modeluno.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -394,6 +454,12 @@ public class ModelunoPackageImpl extends EPackageImpl implements ModelunoPackage
 		initEClass(rAttributeEClass, RAttribute.class, "RAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRAttribute_AtributoEsDe(), this.getAtributte(), null, "AtributoEsDe", null, 0, 1, RAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRAttribute_RhasAttribute(), this.getAtributte(), null, "RhasAttribute", null, 0, 1, RAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(aNotDerivedEClass, ANotDerived.class, "ANotDerived", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getANotDerived_DefaultValue(), ecorePackage.getEString(), "defaultValue", null, 0, 1, ANotDerived.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(aDerivedEClass, ADerived.class, "ADerived", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getADerived_DerivationComments(), ecorePackage.getEString(), "derivationComments", null, 0, 1, ADerived.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

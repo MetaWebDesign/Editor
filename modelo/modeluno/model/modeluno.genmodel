@@ -8,7 +8,7 @@
       ecorePackage="modeluno.ecore#/">
     <genClasses ecoreClass="modeluno.ecore#//Map">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Map/hasClass"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Map/hasAtribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Map/hasAtributte"/>
     </genClasses>
     <genClasses ecoreClass="modeluno.ecore#//Class">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/hasRelation"/>
@@ -29,6 +29,12 @@
     <genClasses ecoreClass="modeluno.ecore#//RAttribute">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//RAttribute/AtributoEsDe"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//RAttribute/RhasAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//ANotDerived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//ANotDerived/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//ADerived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//ADerived/derivationComments"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -33,6 +33,8 @@ public class ModelunoPaletteFactory {
 		paletteContainer.add(createRelation2CreationTool());
 		paletteContainer.add(createAtributte3CreationTool());
 		paletteContainer.add(createRAttribute4CreationTool());
+		paletteContainer.add(createANotDerived5CreationTool());
+		paletteContainer.add(createADerived6CreationTool());
 		return paletteContainer;
 	}
 
@@ -44,10 +46,10 @@ public class ModelunoPaletteFactory {
 				Modeluno.modeluno.diagram.part.Messages.Class1CreationTool_title,
 				Modeluno.modeluno.diagram.part.Messages.Class1CreationTool_desc,
 				Collections
-						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2001));
+						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004));
 		entry.setId("createClass1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
-				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2001));
+				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -60,10 +62,10 @@ public class ModelunoPaletteFactory {
 				Modeluno.modeluno.diagram.part.Messages.Relation2CreationTool_title,
 				Modeluno.modeluno.diagram.part.Messages.Relation2CreationTool_desc,
 				Collections
-						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001));
+						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4006));
 		entry.setId("createRelation2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
-				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001));
+				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4006));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -72,15 +74,12 @@ public class ModelunoPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createAtributte3CreationTool() {
-		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+		ToolEntry entry = new ToolEntry(
 				Modeluno.modeluno.diagram.part.Messages.Atributte3CreationTool_title,
 				Modeluno.modeluno.diagram.part.Messages.Atributte3CreationTool_desc,
-				Collections
-						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_2002));
+				null, null) {
+		};
 		entry.setId("createAtributte3CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
-				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_2002));
-		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
 
@@ -92,10 +91,42 @@ public class ModelunoPaletteFactory {
 				Modeluno.modeluno.diagram.part.Messages.RAttribute4CreationTool_title,
 				Modeluno.modeluno.diagram.part.Messages.RAttribute4CreationTool_desc,
 				Collections
-						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002));
+						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005));
 		entry.setId("createRAttribute4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
-				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002));
+				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createANotDerived5CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+				Modeluno.modeluno.diagram.part.Messages.ANotDerived5CreationTool_title,
+				Modeluno.modeluno.diagram.part.Messages.ANotDerived5CreationTool_desc,
+				Collections
+						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ANotDerived_2006));
+		entry.setId("createANotDerived5CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
+				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ANotDerived_2006));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createADerived6CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+				Modeluno.modeluno.diagram.part.Messages.ADerived6CreationTool_title,
+				Modeluno.modeluno.diagram.part.Messages.ADerived6CreationTool_desc,
+				Collections
+						.singletonList(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005));
+		entry.setId("createADerived6CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(Modeluno.modeluno.diagram.providers.ModelunoElementTypes
+				.getImageDescriptor(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

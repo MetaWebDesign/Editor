@@ -47,13 +47,13 @@ import org.eclipse.swt.graphics.Image;
 /**
  * @generated
  */
-public class AtributteAnameEditPart extends CompartmentEditPart implements
+public class ADerivedAnameEditPart extends CompartmentEditPart implements
 		ITextAwareEditPart {
 
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5002;
+	public static final int VISUAL_ID = 5005;
 
 	/**
 	 * @generated
@@ -83,7 +83,7 @@ public class AtributteAnameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public AtributteAnameEditPart(View view) {
+	public ADerivedAnameEditPart(View view) {
 		super(view);
 	}
 
@@ -305,10 +305,10 @@ public class AtributteAnameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeluno.modeluno.diagram.providers.ModelunoParserProvider
 					.getParser(
-							Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_2002,
+							Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005,
 							getParserElement(),
 							Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-									.getType(Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart.VISUAL_ID));
+									.getType(Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID));
 		}
 		return parser;
 	}

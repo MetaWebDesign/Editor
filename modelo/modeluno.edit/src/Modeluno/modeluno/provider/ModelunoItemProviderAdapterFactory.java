@@ -187,6 +187,52 @@ public class ModelunoItemProviderAdapterFactory extends ModelunoAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ANotDerived} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ANotDerivedItemProvider aNotDerivedItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ANotDerived}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createANotDerivedAdapter() {
+		if (aNotDerivedItemProvider == null) {
+			aNotDerivedItemProvider = new ANotDerivedItemProvider(this);
+		}
+
+		return aNotDerivedItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ADerived} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ADerivedItemProvider aDerivedItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ADerived}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createADerivedAdapter() {
+		if (aDerivedItemProvider == null) {
+			aDerivedItemProvider = new ADerivedItemProvider(this);
+		}
+
+		return aDerivedItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -290,6 +336,8 @@ public class ModelunoItemProviderAdapterFactory extends ModelunoAdapterFactory i
 		if (relationItemProvider != null) relationItemProvider.dispose();
 		if (atributteItemProvider != null) atributteItemProvider.dispose();
 		if (rAttributeItemProvider != null) rAttributeItemProvider.dispose();
+		if (aNotDerivedItemProvider != null) aNotDerivedItemProvider.dispose();
+		if (aDerivedItemProvider != null) aDerivedItemProvider.dispose();
 	}
 
 }

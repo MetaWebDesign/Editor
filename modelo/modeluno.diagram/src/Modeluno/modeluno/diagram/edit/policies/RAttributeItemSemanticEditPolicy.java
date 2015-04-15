@@ -16,7 +16,7 @@ public class RAttributeItemSemanticEditPolicy
 	 */
 	public RAttributeItemSemanticEditPolicy() {
 		super(
-				Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002);
+				Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005);
 	}
 
 	/**

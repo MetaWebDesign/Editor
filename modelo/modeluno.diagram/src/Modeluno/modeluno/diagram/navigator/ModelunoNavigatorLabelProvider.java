@@ -82,16 +82,19 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 					"Navigator?Diagram?http://modeluno/1.0?Map", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Map_1000); //$NON-NLS-1$
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://modeluno/1.0?Class", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2001); //$NON-NLS-1$
-		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://modeluno/1.0?Class", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004); //$NON-NLS-1$
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://modeluno/1.0?Atributte", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_2002); //$NON-NLS-1$
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://modeluno/1.0?ADerived", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005); //$NON-NLS-1$
+		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?Link?http://modeluno/1.0?Relation", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4001); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://modeluno/1.0?ANotDerived", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ANotDerived_2006); //$NON-NLS-1$
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?Link?http://modeluno/1.0?RAttribute", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002); //$NON-NLS-1$
+					"Navigator?Link?http://modeluno/1.0?RAttribute", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005); //$NON-NLS-1$
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Link?http://modeluno/1.0?Relation", Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4006); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -151,13 +154,15 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 		case Modeluno.modeluno.diagram.edit.parts.MapEditPart.VISUAL_ID:
 			return getMap_1000Text(view);
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return getClass_2001Text(view);
-		case Modeluno.modeluno.diagram.edit.parts.AtributteEditPart.VISUAL_ID:
-			return getAtributte_2002Text(view);
-		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
-			return getRelation_4001Text(view);
+			return getClass_2004Text(view);
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			return getADerived_2005Text(view);
+		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
+			return getANotDerived_2006Text(view);
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
-			return getRAttribute_4002Text(view);
+			return getRAttribute_4005Text(view);
+		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
+			return getRelation_4006Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -172,10 +177,10 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getClass_2001Text(View view) {
+	private String getClass_2004Text(View view) {
 		IParser parser = Modeluno.modeluno.diagram.providers.ModelunoParserProvider
 				.getParser(
-						Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2001,
+						Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004,
 						view.getElement() != null ? view.getElement() : view,
 						Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
 								.getType(Modeluno.modeluno.diagram.edit.parts.ClassCnameEditPart.VISUAL_ID));
@@ -186,7 +191,7 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 		} else {
 			Modeluno.modeluno.diagram.part.ModelunoDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5001); //$NON-NLS-1$
+							"Parser was not found for label " + 5004); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -194,13 +199,13 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getAtributte_2002Text(View view) {
+	private String getADerived_2005Text(View view) {
 		IParser parser = Modeluno.modeluno.diagram.providers.ModelunoParserProvider
 				.getParser(
-						Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Atributte_2002,
+						Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005,
 						view.getElement() != null ? view.getElement() : view,
 						Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
-								.getType(Modeluno.modeluno.diagram.edit.parts.AtributteAnameEditPart.VISUAL_ID));
+								.getType(Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -208,7 +213,7 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 		} else {
 			Modeluno.modeluno.diagram.part.ModelunoDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5002); //$NON-NLS-1$
+							"Parser was not found for label " + 5005); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -216,14 +221,36 @@ public class ModelunoNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getRelation_4001Text(View view) {
+	private String getANotDerived_2006Text(View view) {
+		IParser parser = Modeluno.modeluno.diagram.providers.ModelunoParserProvider
+				.getParser(
+						Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ANotDerived_2006,
+						view.getElement() != null ? view.getElement() : view,
+						Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
+								.getType(Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Modeluno.modeluno.diagram.part.ModelunoDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5006); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRAttribute_4005Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 
 	/**
 	 * @generated
 	 */
-	private String getRAttribute_4002Text(View view) {
+	private String getRelation_4006Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 

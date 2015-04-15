@@ -10,7 +10,7 @@ import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 /**
  * @generated
  */
-public class ModelunoModelingAssistantProviderOfAtributteEditPart extends
+public class ModelunoModelingAssistantProviderOfADerivedEditPart extends
 		Modeluno.modeluno.diagram.providers.ModelunoModelingAssistantProvider {
 
 	/**
@@ -20,16 +20,16 @@ public class ModelunoModelingAssistantProviderOfAtributteEditPart extends
 	public List<IElementType> getRelTypesOnTarget(IAdaptable target) {
 		IGraphicalEditPart targetEditPart = (IGraphicalEditPart) target
 				.getAdapter(IGraphicalEditPart.class);
-		return doGetRelTypesOnTarget((Modeluno.modeluno.diagram.edit.parts.AtributteEditPart) targetEditPart);
+		return doGetRelTypesOnTarget((Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart) targetEditPart);
 	}
 
 	/**
 	 * @generated
 	 */
 	public List<IElementType> doGetRelTypesOnTarget(
-			Modeluno.modeluno.diagram.edit.parts.AtributteEditPart target) {
+			Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
-		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002);
+		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005);
 		return types;
 	}
 
@@ -42,7 +42,7 @@ public class ModelunoModelingAssistantProviderOfAtributteEditPart extends
 		IGraphicalEditPart targetEditPart = (IGraphicalEditPart) target
 				.getAdapter(IGraphicalEditPart.class);
 		return doGetTypesForSource(
-				(Modeluno.modeluno.diagram.edit.parts.AtributteEditPart) targetEditPart,
+				(Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart) targetEditPart,
 				relationshipType);
 	}
 
@@ -50,11 +50,11 @@ public class ModelunoModelingAssistantProviderOfAtributteEditPart extends
 	 * @generated
 	 */
 	public List<IElementType> doGetTypesForSource(
-			Modeluno.modeluno.diagram.edit.parts.AtributteEditPart target,
+			Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart target,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4002) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2001);
+		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004);
 		}
 		return types;
 	}

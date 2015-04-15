@@ -67,6 +67,24 @@ public interface ModelunoFactory extends EFactory {
 	RAttribute createRAttribute();
 
 	/**
+	 * Returns a new object of class '<em>ANot Derived</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>ANot Derived</em>'.
+	 * @generated
+	 */
+	ANotDerived createANotDerived();
+
+	/**
+	 * Returns a new object of class '<em>ADerived</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>ADerived</em>'.
+	 * @generated
+	 */
+	ADerived createADerived();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
