@@ -1,7 +1,0 @@
-# Tracing options for the modeldos.diagram plug-in
-
-# Common issues
-modeldos.diagram/debug=false
-
-# Visual IDs
-modeldos.diagram/debug/visualID=false
