@@ -30,14 +30,14 @@ public class MapItemSemanticEditPolicy
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ClassCreateCommand(
 					req));
 		}
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005 == req
-				.getElementType()) {
-			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ADerivedCreateCommand(
-					req));
-		}
 		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ANotDerived_2006 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ANotDerivedCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ADerivedCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

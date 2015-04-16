@@ -31,26 +31,6 @@
         href="modeluno.ecore#//Map/hasAtributte"/>
     <ownedChild>
       <domainMetaElement
-          href="modeluno.ecore#//ADerived"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#ADerivedAname"/>
-        <features
-            href="modeluno.ecore#//Atributte/Aname"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
-      <diagramNode
-          href="modeluno.gmfgraph#ADerived"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/hasAtributte"/>
-    <ownedChild>
-      <domainMetaElement
           href="modeluno.ecore#//ANotDerived"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
@@ -64,6 +44,26 @@
           href="modeluno.gmftool#//@palette/@tools.0/@tools.4"/>
       <diagramNode
           href="modeluno.gmfgraph#ANotDerived"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/hasAtributte"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//ADerived"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ADerivedAname"/>
+        <features
+            href="modeluno.ecore#//Atributte/Aname"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="modeluno.gmfgraph#ADerived"/>
     </ownedChild>
   </nodes>
   <links>

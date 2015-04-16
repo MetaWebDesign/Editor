@@ -54,18 +54,21 @@ public class ModelunoDiagramUpdater {
 				continue;
 			}
 		}
-		{
-			Modeluno.modeluno.Atributte childElement = modelElement
-					.getHasAtributte();
+		for (Iterator<?> it = modelElement.getHasAtributte().iterator(); it
+				.hasNext();) {
+			Modeluno.modeluno.Atributte childElement = (Modeluno.modeluno.Atributte) it
+					.next();
 			int visualID = Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID) {
-				result.add(new Modeluno.modeluno.diagram.part.ModelunoNodeDescriptor(
-						childElement, visualID));
-			}
 			if (visualID == Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID) {
 				result.add(new Modeluno.modeluno.diagram.part.ModelunoNodeDescriptor(
 						childElement, visualID));
+				continue;
+			}
+			if (visualID == Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID) {
+				result.add(new Modeluno.modeluno.diagram.part.ModelunoNodeDescriptor(
+						childElement, visualID));
+				continue;
 			}
 		}
 		return result;
@@ -82,10 +85,10 @@ public class ModelunoDiagramUpdater {
 			return getMap_1000ContainedLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2004ContainedLinks(view);
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
-			return getADerived_2005ContainedLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
 			return getANotDerived_2006ContainedLinks(view);
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			return getADerived_2005ContainedLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
 			return getRAttribute_4005ContainedLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
@@ -103,10 +106,10 @@ public class ModelunoDiagramUpdater {
 				.getVisualID(view)) {
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2004IncomingLinks(view);
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
-			return getADerived_2005IncomingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
 			return getANotDerived_2006IncomingLinks(view);
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			return getADerived_2005IncomingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
 			return getRAttribute_4005IncomingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
@@ -124,10 +127,10 @@ public class ModelunoDiagramUpdater {
 				.getVisualID(view)) {
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2004OutgoingLinks(view);
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
-			return getADerived_2005OutgoingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
 			return getANotDerived_2006OutgoingLinks(view);
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			return getADerived_2005OutgoingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
 			return getRAttribute_4005OutgoingLinks(view);
 		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:
@@ -160,7 +163,7 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getADerived_2005ContainedLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getANotDerived_2006ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -168,7 +171,7 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getANotDerived_2006ContainedLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getADerived_2005ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -207,9 +210,9 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getADerived_2005IncomingLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getANotDerived_2006IncomingLinks(
 			View view) {
-		Modeluno.modeluno.ADerived modelElement = (Modeluno.modeluno.ADerived) view
+		Modeluno.modeluno.ANotDerived modelElement = (Modeluno.modeluno.ANotDerived) view
 				.getElement();
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
@@ -222,9 +225,9 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getANotDerived_2006IncomingLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getADerived_2005IncomingLinks(
 			View view) {
-		Modeluno.modeluno.ANotDerived modelElement = (Modeluno.modeluno.ANotDerived) view
+		Modeluno.modeluno.ADerived modelElement = (Modeluno.modeluno.ADerived) view
 				.getElement();
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
@@ -266,7 +269,7 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getADerived_2005OutgoingLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getANotDerived_2006OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -274,7 +277,7 @@ public class ModelunoDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getANotDerived_2006OutgoingLinks(
+	public static List<Modeluno.modeluno.diagram.part.ModelunoLinkDescriptor> getADerived_2005OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}

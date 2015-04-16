@@ -100,8 +100,8 @@ public class MapCanonicalEditPolicy extends CanonicalEditPolicy {
 		int visualID = Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
 				.getVisualID(view);
 		return visualID == Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID
-				|| visualID == Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID
-				|| visualID == Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID;
+				|| visualID == Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID
+				|| visualID == Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID;
 	}
 
 	/**
@@ -270,18 +270,18 @@ public class MapCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeluno.modeluno.diagram.part.ModelunoDiagramUpdater
-						.getADerived_2005ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Modeluno.modeluno.diagram.part.ModelunoDiagramUpdater
 						.getANotDerived_2006ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Modeluno.modeluno.diagram.part.ModelunoDiagramUpdater
+						.getADerived_2005ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

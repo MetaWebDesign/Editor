@@ -76,7 +76,7 @@ public interface ModelunoPackage extends EPackage {
 	int MAP__HAS_CLASS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Has Atributte</b></em>' containment reference.
+	 * The feature id for the '<em><b>Has Atributte</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -276,7 +276,6 @@ public interface ModelunoPackage extends EPackage {
 	 */
 	int ATRIBUTTE_OPERATION_COUNT = 0;
 
-
 	/**
 	 * The meta object id for the '{@link Modeluno.modeluno.impl.RAttributeImpl <em>RAttribute</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -322,7 +321,6 @@ public interface ModelunoPackage extends EPackage {
 	 * @ordered
 	 */
 	int RATTRIBUTE_OPERATION_COUNT = 0;
-
 
 	/**
 	 * The meta object id for the '{@link Modeluno.modeluno.impl.ANotDerivedImpl <em>ANot Derived</em>}' class.
@@ -475,10 +473,10 @@ public interface ModelunoPackage extends EPackage {
 	EReference getMap_HasClass();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Modeluno.modeluno.Map#getHasAtributte <em>Has Atributte</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Modeluno.modeluno.Map#getHasAtributte <em>Has Atributte</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Has Atributte</em>'.
+	 * @return the meta object for the containment reference list '<em>Has Atributte</em>'.
 	 * @see Modeluno.modeluno.Map#getHasAtributte()
 	 * @see #getMap()
 	 * @generated
@@ -741,7 +739,7 @@ public interface ModelunoPackage extends EPackage {
 		EReference MAP__HAS_CLASS = eINSTANCE.getMap_HasClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Has Atributte</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Has Atributte</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

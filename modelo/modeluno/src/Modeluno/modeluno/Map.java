@@ -41,29 +41,19 @@ public interface Map extends EObject {
 	EList<Modeluno.modeluno.Class> getHasClass();
 
 	/**
-	 * Returns the value of the '<em><b>Has Atributte</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Has Atributte</b></em>' containment reference list.
+	 * The list contents are of type {@link Modeluno.modeluno.Atributte}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Has Atributte</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Has Atributte</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Atributte</em>' containment reference.
-	 * @see #setHasAtributte(Atributte)
+	 * @return the value of the '<em>Has Atributte</em>' containment reference list.
 	 * @see Modeluno.modeluno.ModelunoPackage#getMap_HasAtributte()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Atributte getHasAtributte();
-
-	/**
-	 * Sets the value of the '{@link Modeluno.modeluno.Map#getHasAtributte <em>Has Atributte</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Has Atributte</em>' containment reference.
-	 * @see #getHasAtributte()
-	 * @generated
-	 */
-	void setHasAtributte(Atributte value);
+	EList<Atributte> getHasAtributte();
 
 } // Map

@@ -57,10 +57,10 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 			Modeluno.modeluno.diagram.edit.parts.ClassEditPart source,
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
-		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart) {
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart) {
 			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005);
 		}
-		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart) {
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart) {
 			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005);
 		}
 		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ClassEditPart) {
@@ -90,8 +90,8 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RAttribute_4005) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005);
 			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ANotDerived_2006);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ADerived_2005);
 		} else if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Relation_4006) {
 			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2004);
 		}

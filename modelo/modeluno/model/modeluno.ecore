@@ -4,8 +4,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Map">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasClass" upperBound="-1"
         eType="#//Class" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributte" eType="#//Atributte"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributte" upperBound="-1"
+        eType="#//Atributte" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelation" upperBound="-1"

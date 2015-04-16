@@ -53,11 +53,11 @@ public class ModelunoElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType ADerived_2005 = getElementType("modeluno.diagram.ADerived_2005"); //$NON-NLS-1$
+	public static final IElementType ANotDerived_2006 = getElementType("modeluno.diagram.ANotDerived_2006"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType ANotDerived_2006 = getElementType("modeluno.diagram.ANotDerived_2006"); //$NON-NLS-1$
+	public static final IElementType ADerived_2005 = getElementType("modeluno.diagram.ADerived_2005"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -111,12 +111,12 @@ public class ModelunoElementTypes {
 			elements.put(Class_2004,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getClass_());
 
-			elements.put(ADerived_2005,
-					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getADerived());
-
 			elements.put(ANotDerived_2006,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE
 							.getANotDerived());
+
+			elements.put(ADerived_2005,
+					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getADerived());
 
 			elements.put(RAttribute_4005,
 					Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRAttribute());
@@ -142,8 +142,8 @@ public class ModelunoElementTypes {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Map_1000);
 			KNOWN_ELEMENT_TYPES.add(Class_2004);
-			KNOWN_ELEMENT_TYPES.add(ADerived_2005);
 			KNOWN_ELEMENT_TYPES.add(ANotDerived_2006);
+			KNOWN_ELEMENT_TYPES.add(ADerived_2005);
 			KNOWN_ELEMENT_TYPES.add(RAttribute_4005);
 			KNOWN_ELEMENT_TYPES.add(Relation_4006);
 		}
@@ -159,10 +159,10 @@ public class ModelunoElementTypes {
 			return Map_1000;
 		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return Class_2004;
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
-			return ADerived_2005;
 		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
 			return ANotDerived_2006;
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			return ADerived_2005;
 		case Modeluno.modeluno.diagram.edit.parts.RAttributeEditPart.VISUAL_ID:
 			return RAttribute_4005;
 		case Modeluno.modeluno.diagram.edit.parts.RelationEditPart.VISUAL_ID:

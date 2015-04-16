@@ -123,13 +123,13 @@ public class ModelunoVisualIDRegistry {
 					.isSuperTypeOf(domainElement.eClass())) {
 				return Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID;
 			}
-			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getADerived()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID;
-			}
 			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getANotDerived()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getADerived()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -163,10 +163,10 @@ public class ModelunoVisualIDRegistry {
 			if (Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID == nodeVisualID) {
+			if (Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID == nodeVisualID) {
+			if (Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -175,13 +175,13 @@ public class ModelunoVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
-			if (Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
+		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
-		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedEditPart.VISUAL_ID:
-			if (Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;

@@ -41,25 +41,6 @@ public class ModelunoParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser aDerivedAname_5005Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getADerivedAname_5005Parser() {
-		if (aDerivedAname_5005Parser == null) {
-			EAttribute[] features = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
-					.getAtributte_Aname() };
-			Modeluno.modeluno.diagram.parsers.MessageFormatParser parser = new Modeluno.modeluno.diagram.parsers.MessageFormatParser(
-					features);
-			aDerivedAname_5005Parser = parser;
-		}
-		return aDerivedAname_5005Parser;
-	}
-
-	/**
-	 * @generated
-	 */
 	private IParser aNotDerivedAname_5006Parser;
 
 	/**
@@ -79,14 +60,33 @@ public class ModelunoParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
+	private IParser aDerivedAname_5005Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getADerivedAname_5005Parser() {
+		if (aDerivedAname_5005Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getAtributte_Aname() };
+			Modeluno.modeluno.diagram.parsers.MessageFormatParser parser = new Modeluno.modeluno.diagram.parsers.MessageFormatParser(
+					features);
+			aDerivedAname_5005Parser = parser;
+		}
+		return aDerivedAname_5005Parser;
+	}
+
+	/**
+	 * @generated
+	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
 		case Modeluno.modeluno.diagram.edit.parts.ClassCnameEditPart.VISUAL_ID:
 			return getClassCname_5004Parser();
-		case Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID:
-			return getADerivedAname_5005Parser();
 		case Modeluno.modeluno.diagram.edit.parts.ANotDerivedAnameEditPart.VISUAL_ID:
 			return getANotDerivedAname_5006Parser();
+		case Modeluno.modeluno.diagram.edit.parts.ADerivedAnameEditPart.VISUAL_ID:
+			return getADerivedAname_5005Parser();
 		}
 		return null;
 	}

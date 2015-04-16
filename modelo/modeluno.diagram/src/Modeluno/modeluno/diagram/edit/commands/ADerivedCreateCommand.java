@@ -41,10 +41,6 @@ public class ADerivedCreateCommand extends EditElementCommand {
 	 * @generated
 	 */
 	public boolean canExecute() {
-		Modeluno.modeluno.Map container = (Modeluno.modeluno.Map) getElementToEdit();
-		if (container.getHasAtributte() != null) {
-			return false;
-		}
 		return true;
 
 	}
@@ -58,7 +54,7 @@ public class ADerivedCreateCommand extends EditElementCommand {
 				.createADerived();
 
 		Modeluno.modeluno.Map owner = (Modeluno.modeluno.Map) getElementToEdit();
-		owner.setHasAtributte(newElement);
+		owner.getHasAtributte().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 
