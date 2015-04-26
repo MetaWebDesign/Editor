@@ -2,38 +2,61 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="modeluno" nsURI="http://modeluno/1.0" nsPrefix="modeluno">
   <eClassifiers xsi:type="ecore:EClass" name="Map">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasClass" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Root_hasClass" upperBound="-1"
         eType="#//Class" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributte" upperBound="-1"
-        eType="#//Atributte" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Root_hasAtributte" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="root_hasConstraints" upperBound="-1"
+        eType="#//Constraints" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelation" upperBound="-1"
-        eType="#//Relation" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="R1" upperBound="-1" eType="#//Relation"/>
+        eType="#//Class_Relation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goRelation" upperBound="-1"
+        eType="#//Class_Relation"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cname" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="idFunction" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="PoseeAtributte" eType="#//RAttribute"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" upperBound="-1"
-        eType="#//RAttribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goAtributteRelation" eType="#//Attribute_Relation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributeRelation" upperBound="-1"
+        eType="#//Attribute_Relation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraintsRelation"
+        eType="#//Constraints_Relation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraintsRelation"
+        eType="#//Constraints_Relation"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Relation">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="R2" upperBound="-1" eType="#//Class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Class_Relation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goClass" upperBound="-1"
+        eType="#//Class"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Atributte">
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Aname" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="permissions" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RAttribute">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="AtributoEsDe" eType="#//Atributte"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="RhasAttribute" eType="#//Atributte"
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute_Relation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goAttribute" eType="#//Attribute"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="RhasAttribute" eType="#//Attribute"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ANotDerived" eSuperTypes="#//Atributte">
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute_Not_Derived" eSuperTypes="#//Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ADerived" eSuperTypes="#//Atributte">
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute_Derived" eSuperTypes="#//Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="derivationComments" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Condition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Effect" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraints">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Comments" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Condition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Error" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraints_Relation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraints" eType="#//Constraints"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraints" eType="#//Constraints"
+        containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
