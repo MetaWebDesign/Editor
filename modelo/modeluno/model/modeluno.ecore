@@ -20,7 +20,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributeRelation" upperBound="-1"
         eType="#//Attribute_Relation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraintsRelation"
-        eType="#//Constraints_Relation" containment="true"/>
+        upperBound="-1" eType="#//Constraints_Relation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraintsRelation"
         eType="#//Constraints_Relation"/>
   </eClassifiers>
@@ -54,8 +54,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Constraints_Relation">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraints" eType="#//Constraints"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraints" upperBound="-1"
+        eType="#//Constraints" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraints" eType="#//Constraints"/>
   </eClassifiers>
 </ecore:EPackage>
