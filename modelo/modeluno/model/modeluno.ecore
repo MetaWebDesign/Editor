@@ -6,8 +6,6 @@
         eType="#//Class" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Root_hasAtributte" upperBound="-1"
         eType="#//Attribute" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="root_hasConstraints" upperBound="-1"
-        eType="#//Constraints" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelation" upperBound="-1"
@@ -19,10 +17,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="goAtributteRelation" eType="#//Attribute_Relation"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributeRelation" upperBound="-1"
         eType="#//Attribute_Relation" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraintsRelation"
-        upperBound="-1" eType="#//Constraints_Relation" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraintsRelation"
-        eType="#//Constraints_Relation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class_Relation">
     <eStructuralFeatures xsi:type="ecore:EReference" name="goClass" upperBound="-1"
@@ -46,16 +40,5 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Condition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Effect" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Constraints">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Comments" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Condition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Error" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Constraints_Relation">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goConstraints" upperBound="-1"
-        eType="#//Constraints" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraints" eType="#//Constraints"/>
   </eClassifiers>
 </ecore:EPackage>

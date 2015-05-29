@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/modeluno/src" modelPluginID="modeluno" modelName="Modeluno"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>modeluno.ecore</foreignModel>
+  <genPackages prefix="Modeluno" basePackage="Modeluno" disposableProviderFactory="true"
+      ecorePackage="modeluno.ecore#/">
+    <genClasses ecoreClass="modeluno.ecore#//Map">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Map/Root_hasClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Map/Root_hasAtributte"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/hasRelation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/goRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Class/Cname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Class/idFunction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/goAtributteRelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/hasAtributeRelation"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//Class_Relation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class_Relation/goClass"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/Aname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/permissions"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//Attribute_Relation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Attribute_Relation/goAttribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Attribute_Relation/RhasAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//Attribute_Not_Derived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute_Not_Derived/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//Attribute_Derived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute_Derived/derivationComments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute_Derived/Condition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute_Derived/Effect"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute_Derived/Formula"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
