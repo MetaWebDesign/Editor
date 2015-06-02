@@ -13,20 +13,20 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelation" upperBound="-1"
-        eType="#//RelationClass" containment="true"/>
+        eType="#//Relation_Class" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goRelation" upperBound="-1"
-        eType="#//RelationClass"/>
+        eType="#//Relation_Class"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cname" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="idFunction" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goAtributteRelation" eType="#//RelationAttribute"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goAtributteRelation" eType="#//Relation_Attribute"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasAtributeRelation" upperBound="-1"
-        eType="#//RelationAttribute" containment="true"/>
+        eType="#//Relation_Attribute" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasServiceRelation" upperBound="7"
-        eType="#//RelationService" containment="true"/>
+        eType="#//Relation_Service" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goServiceRelation" upperBound="7"
-        eType="#//RelationService"/>
+        eType="#//Relation_Service"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationClass">
+  <eClassifiers xsi:type="ecore:EClass" name="Relation_Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="goClass" upperBound="-1"
         eType="#//Class"/>
   </eClassifiers>
@@ -37,8 +37,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rol" eType="#//Rol"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="inTheForm" eType="#//TypeAttributeForm"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" eType="#//PresetationUnit"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasPresentationUnit" eType="#//PresetationUnit"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="AgoToPU" eType="#//PresetationUnit"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationAttribute">
+  <eClassifiers xsi:type="ecore:EClass" name="Relation_Attribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="goAttribute" eType="#//Attribute"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasAttribute" eType="#//Attribute"
         containment="true"/>
@@ -62,11 +66,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Service">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rol" eType="#//Rol"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationView" eType="#//RelationView"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationView" eType="#//Relation_View"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goToRelationView" eType="#//RelationView"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goToRelationView" eType="#//Relation_View"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationService">
+  <eClassifiers xsi:type="ecore:EClass" name="Relation_Service">
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasService" eType="#//Service"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goService" eType="#//Service"/>
@@ -93,7 +97,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasViewUpdateObject" eType="#//ViewUpdateAttribute"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ListView" eSuperTypes="#//Service">
+  <eClassifiers xsi:type="ecore:EClass" name="Index" eSuperTypes="#//Service">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="ListView"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasViewIndex" eType="#//ViewIndex"
@@ -150,7 +154,7 @@
     <eLiterals name="video" value="6"/>
     <eLiterals name="flash" value="8"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationView">
+  <eClassifiers xsi:type="ecore:EClass" name="Relation_View">
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasView" eType="#//Views"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goToView" eType="#//Views"/>
@@ -177,5 +181,14 @@
     <eLiterals name="attention" value="1"/>
     <eLiterals name="warning" value="2"/>
     <eLiterals name="error" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PresetationUnit">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name_field" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TypesView"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="HorizontalPosition" eType="#//typeHorizotalPosition"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="VerticalPosition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="PUhasViews" eType="#//Views"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="PUgoToViews" eType="#//Views"/>
   </eClassifiers>
 </ecore:EPackage>

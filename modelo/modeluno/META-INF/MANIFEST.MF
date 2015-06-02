@@ -7,9 +7,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: Modeluno.modeluno,
- Modeluno.modeluno.impl,
- Modeluno.modeluno.util
+Export-Package: Modelouno.modeluno,
+ Modelouno.modeluno.impl,
+ Modelouno.modeluno.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy

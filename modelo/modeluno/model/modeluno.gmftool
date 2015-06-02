@@ -20,8 +20,17 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="RelationClass"
-          description="Create new RelationClass">
+          title="ClassGoServiceRelation"
+          description="Create new ClassGoServiceRelation">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Relation_Class"
+          description="Create new Relation_Class">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -38,8 +47,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="RelationAttribute"
-          description="Create new RelationAttribute">
+          title="Relation_Attribute"
+          description="Create new Relation_Attribute">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -74,8 +83,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="RelationService"
-          description="Create new RelationService">
+          title="Relation_Service"
+          description="Create new Relation_Service">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -119,8 +128,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="ListView"
-          description="Create new ListView">
+          title="Index"
+          description="Create new Index">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -209,17 +218,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="RelationView"
-          description="Create new RelationView">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="RelationViewGoToView"
-          description="Create new RelationViewGoToView">
+          title="Relation_View"
+          description="Create new Relation_View">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -229,6 +229,15 @@
           xsi:type="gmftool:CreationTool"
           title="Page"
           description="Create new Page">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="PresetationUnit"
+          description="Create new PresetationUnit">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

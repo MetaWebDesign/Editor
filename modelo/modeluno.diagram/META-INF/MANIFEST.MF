@@ -4,12 +4,12 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: modeluno.diagram; singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: Modeluno.modeluno.diagram.part.ModelunoDiagramEditorPlugin
+Bundle-Activator: Modelouno.modeluno.diagram.part.ModelunoDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: Modeluno.modeluno.diagram.edit.parts,
- Modeluno.modeluno.diagram.part,
- Modeluno.modeluno.diagram.providers
+Export-Package: Modelouno.modeluno.diagram.edit.parts, 
+ Modelouno.modeluno.diagram.part,
+ Modelouno.modeluno.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources,
  org.eclipse.core.expressions,

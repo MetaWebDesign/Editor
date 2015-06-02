@@ -12,9 +12,9 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="Modeluno.modeluno.presentation.ModelunoModelWizardID"
+            id="Modelouno.modeluno.presentation.ModelunoModelWizardID"
             name="%_UI_ModelunoModelWizard_label"
-            class="Modeluno.modeluno.presentation.ModelunoModelWizard"
+            class="Modelouno.modeluno.presentation.ModelunoModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
             icon="icons/full/obj16/ModelunoModelFile.gif">
          <description>%_UI_ModelunoModelWizard_description</description>
@@ -25,12 +25,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated modeluno -->
       <editor
-            id="Modeluno.modeluno.presentation.ModelunoEditorID"
+            id="Modelouno.modeluno.presentation.ModelunoEditorID"
             name="%_UI_ModelunoEditor_label"
             icon="icons/full/obj16/ModelunoModelFile.gif"
             extensions="modeluno"
-            class="Modeluno.modeluno.presentation.ModelunoEditor"
-            contributorClass="Modeluno.modeluno.presentation.ModelunoActionBarContributor">
+            class="Modelouno.modeluno.presentation.ModelunoEditor"
+            contributorClass="Modelouno.modeluno.presentation.ModelunoActionBarContributor">
       </editor>
    </extension>
 

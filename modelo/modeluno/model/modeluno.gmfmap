@@ -11,26 +11,6 @@
         href="modeluno.ecore#//Map/RoothasService"/>
     <ownedChild>
       <domainMetaElement
-          href="modeluno.ecore#//View"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#ListViewRol"/>
-        <features
-            href="modeluno.ecore#//View/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.13"/>
-      <diagramNode
-          href="modeluno.gmfgraph#View"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RoothasService"/>
-    <ownedChild>
-      <domainMetaElement
           href="modeluno.ecore#//Create"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
@@ -41,9 +21,49 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.8"/>
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.9"/>
       <diagramNode
           href="modeluno.gmfgraph#Create"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RootHasViews"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//ViewIndex"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ViewIndexTitle"/>
+        <features
+            href="modeluno.ecore#//Views/title"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.20"/>
+      <diagramNode
+          href="modeluno.gmfgraph#ViewIndex"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RootHasViews"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//ViewUpdateObject"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ViewUpdateObjectTitle"/>
+        <features
+            href="modeluno.ecore#//Views/title"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.18"/>
+      <diagramNode
+          href="modeluno.gmfgraph#ViewUpdateObject"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -51,59 +71,59 @@
         href="modeluno.ecore#//Map/RoothasService"/>
     <ownedChild>
       <domainMetaElement
-          href="modeluno.ecore#//UpdateAttribute"/>
+          href="modeluno.ecore#//Admin"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="modeluno.gmfgraph#UpdateAttributeRol"/>
+            href="modeluno.gmfgraph#AdminRol"/>
         <features
-            href="modeluno.ecore#//UpdateAttribute/name"/>
+            href="modeluno.ecore#//Admin/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.15"/>
+      <diagramNode
+          href="modeluno.gmfgraph#Admin"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/Root_hasClass"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//Class"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ClassCname"/>
+        <features
+            href="modeluno.ecore#//Class/Cname"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.0"/>
+      <diagramNode
+          href="modeluno.gmfgraph#Class"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RoothasService"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//UpdateObject"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#UpdateObjectRol"/>
+        <features
+            href="modeluno.ecore#//UpdateObject/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
           href="modeluno.gmftool#//@palette/@tools.0/@tools.11"/>
       <diagramNode
-          href="modeluno.gmfgraph#UpdateAttribute"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RootHasViews"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//ViewInput"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#ViewInputTitle"/>
-        <features
-            href="modeluno.ecore#//Views/title"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.16"/>
-      <diagramNode
-          href="modeluno.gmfgraph#ViewInput"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RootHasViews"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//ViewAdmin"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#ViewAdminTitle"/>
-        <features
-            href="modeluno.ecore#//Views/title"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.21"/>
-      <diagramNode
-          href="modeluno.gmfgraph#ViewAdmin"/>
+          href="modeluno.gmfgraph#UpdateObject"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -131,39 +151,19 @@
         href="modeluno.ecore#//Map/RoothasService"/>
     <ownedChild>
       <domainMetaElement
-          href="modeluno.ecore#//ListView"/>
+          href="modeluno.ecore#//Delete"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="modeluno.gmfgraph#ListViewRol"/>
+            href="modeluno.gmfgraph#DeleteRol"/>
         <features
-            href="modeluno.ecore#//ListView/name"/>
+            href="modeluno.ecore#//Delete/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.12"/>
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.10"/>
       <diagramNode
-          href="modeluno.gmfgraph#ListView"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/Root_hasAtributte"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//Attribute_Not_Derived"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#Attribute_Not_DerivedPrimaryKey"/>
-        <features
-            href="modeluno.ecore#//Attribute/aname"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.4"/>
-      <diagramNode
-          href="modeluno.gmfgraph#Attribute_Not_Derived"/>
+          href="modeluno.gmfgraph#Delete"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -171,19 +171,19 @@
         href="modeluno.ecore#//Map/RootHasViews"/>
     <ownedChild>
       <domainMetaElement
-          href="modeluno.ecore#//ViewUpdateObject"/>
+          href="modeluno.ecore#//ViewAdmin"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="modeluno.gmfgraph#ViewUpdateObjectTitle"/>
+            href="modeluno.gmfgraph#ViewAdminTitle"/>
         <features
             href="modeluno.ecore#//Views/title"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.17"/>
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.22"/>
       <diagramNode
-          href="modeluno.gmfgraph#ViewUpdateObject"/>
+          href="modeluno.gmfgraph#ViewAdmin"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -201,129 +201,9 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.18"/>
-      <diagramNode
-          href="modeluno.gmfgraph#ViewUpdateAttribute"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/Root_hasClass"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//Class"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#ClassCname"/>
-        <features
-            href="modeluno.ecore#//Class/Cname"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.0"/>
-      <diagramNode
-          href="modeluno.gmfgraph#Class"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RootHasViews"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//ViewIndex"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#ViewIndexTitle"/>
-        <features
-            href="modeluno.ecore#//Views/title"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
           href="modeluno.gmftool#//@palette/@tools.0/@tools.19"/>
       <diagramNode
-          href="modeluno.gmfgraph#ViewIndex"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RoothasService"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//Delete"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#DeleteRol"/>
-        <features
-            href="modeluno.ecore#//Delete/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.9"/>
-      <diagramNode
-          href="modeluno.gmfgraph#Delete"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RoothasService"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//Admin"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#AdminRol"/>
-        <features
-            href="modeluno.ecore#//Admin/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.14"/>
-      <diagramNode
-          href="modeluno.gmfgraph#Admin"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/Root_hasAtributte"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//Attribute_Derived"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#Attribute_DerivedPrimaryKey"/>
-        <features
-            href="modeluno.ecore#//Attribute/aname"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
-      <diagramNode
-          href="modeluno.gmfgraph#Attribute_Derived"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeluno.ecore#//Map/RoothasService"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeluno.ecore#//UpdateObject"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeluno.gmfgraph#UpdateObjectRol"/>
-        <features
-            href="modeluno.ecore#//UpdateObject/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.10"/>
-      <diagramNode
-          href="modeluno.gmfgraph#UpdateObject"/>
+          href="modeluno.gmfgraph#ViewUpdateAttribute"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -341,66 +221,207 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeluno.gmftool#//@palette/@tools.0/@tools.20"/>
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.21"/>
       <diagramNode
           href="modeluno.gmfgraph#ViewAttribute"/>
     </ownedChild>
   </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RoothasService"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//Index"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#IndexRol"/>
+        <features
+            href="modeluno.ecore#//Index/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.13"/>
+      <diagramNode
+          href="modeluno.gmfgraph#Index"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RoothasService"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//View"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ViewRol"/>
+        <features
+            href="modeluno.ecore#//View/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.14"/>
+      <diagramNode
+          href="modeluno.gmfgraph#View"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RoothasService"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//UpdateAttribute"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#UpdateAttributeRol"/>
+        <features
+            href="modeluno.ecore#//UpdateAttribute/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.12"/>
+      <diagramNode
+          href="modeluno.gmfgraph#UpdateAttribute"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/Root_hasAtributte"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//Attribute_Not_Derived"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#Attribute_Not_DerivedPrimaryKey"/>
+        <features
+            href="modeluno.ecore#//Attribute/aname"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="modeluno.gmfgraph#Attribute_Not_Derived"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/RootHasViews"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//ViewInput"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#ViewInputTitle"/>
+        <features
+            href="modeluno.ecore#//Views/title"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.17"/>
+      <diagramNode
+          href="modeluno.gmfgraph#ViewInput"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeluno.ecore#//Map/Root_hasAtributte"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeluno.ecore#//Attribute_Derived"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeluno.gmfgraph#Attribute_DerivedPrimaryKey"/>
+        <features
+            href="modeluno.ecore#//Attribute/aname"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeluno.gmftool#//@palette/@tools.0/@tools.6"/>
+      <diagramNode
+          href="modeluno.gmfgraph#Attribute_Derived"/>
+    </ownedChild>
+  </nodes>
   <links>
     <domainMetaElement
-        href="modeluno.ecore#//RelationAttribute"/>
+        href="modeluno.ecore#//Relation_Attribute"/>
     <containmentFeature
         href="modeluno.ecore#//Class/hasAtributeRelation"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.3"/>
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.4"/>
     <diagramLink
-        href="modeluno.gmfgraph#RelationAttribute"/>
+        href="modeluno.gmfgraph#Relation_Attribute"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="modeluno.ecore#//RelationAttribute/goAttribute"/>
+        href="modeluno.ecore#//Relation_Attribute/goAttribute"/>
   </links>
   <links>
     <domainMetaElement
-        href="modeluno.ecore#//RelationClass"/>
-    <containmentFeature
-        href="modeluno.ecore#//Class/hasRelation"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.1"/>
-    <diagramLink
-        href="modeluno.gmfgraph#RelationClass"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="modeluno.ecore#//RelationClass/goClass"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="modeluno.ecore#//RelationService"/>
-    <containmentFeature
-        href="modeluno.ecore#//Class/hasServiceRelation"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.7"/>
-    <diagramLink
-        href="modeluno.gmfgraph#RelationService"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="modeluno.ecore#//RelationService/goService"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="modeluno.ecore#//RelationView"/>
+        href="modeluno.ecore#//Relation_View"/>
     <containmentFeature
         href="modeluno.ecore#//Service/hasRelationView"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="modeluno.gmftool#//@palette/@tools.0/@tools.22"/>
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.23"/>
     <diagramLink
-        href="modeluno.gmfgraph#RelationView"/>
+        href="modeluno.gmfgraph#Relation_View"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="modeluno.ecore#//RelationView/goToView"/>
+        href="modeluno.ecore#//Relation_View/goToView"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="modeluno.ecore#//Relation_Class"/>
+    <containmentFeature
+        href="modeluno.ecore#//Class/hasRelation"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.2"/>
+    <diagramLink
+        href="modeluno.gmfgraph#Relation_Class"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="modeluno.ecore#//Relation_Class/goClass"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="modeluno.ecore#//Relation_Service"/>
+    <containmentFeature
+        href="modeluno.ecore#//Class/hasServiceRelation"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.8"/>
+    <diagramLink
+        href="modeluno.gmfgraph#Relation_Service"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="modeluno.ecore#//Relation_Service/goService"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="modeluno.ecore#//PresetationUnit"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="modeluno.gmfgraph#PresetationUnitName_field"/>
+      <features
+          href="modeluno.ecore#//PresetationUnit/name_field"/>
+    </labelMappings>
+    <containmentFeature
+        href="modeluno.ecore#//Attribute/hasPresentationUnit"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="modeluno.gmftool#//@palette/@tools.0/@tools.25"/>
+    <diagramLink
+        href="modeluno.gmfgraph#PresetationUnit"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="modeluno.ecore#//PresetationUnit/PUgoToViews"/>
   </links>
   <diagram>
     <diagramCanvas

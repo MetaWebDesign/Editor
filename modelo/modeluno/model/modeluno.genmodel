@@ -4,7 +4,7 @@
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>modeluno.ecore</foreignModel>
-  <genPackages prefix="Modeluno" basePackage="Modeluno" disposableProviderFactory="true"
+  <genPackages prefix="Modeluno" basePackage="Modelouno" disposableProviderFactory="true"
       ecorePackage="modeluno.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeluno.ecore#//Rol">
       <genEnumLiterals ecoreEnumLiteral="modeluno.ecore#//Rol/anonymous"/>
@@ -63,8 +63,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/hasServiceRelation"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Class/goServiceRelation"/>
     </genClasses>
-    <genClasses ecoreClass="modeluno.ecore#//RelationClass">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationClass/goClass"/>
+    <genClasses ecoreClass="modeluno.ecore#//Relation_Class">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_Class/goClass"/>
     </genClasses>
     <genClasses ecoreClass="modeluno.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/PrimaryKey"/>
@@ -73,10 +73,13 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/rol"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/inTheForm"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute/valor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Attribute/has"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Attribute/hasPresentationUnit"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Attribute/AgoToPU"/>
     </genClasses>
-    <genClasses ecoreClass="modeluno.ecore#//RelationAttribute">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationAttribute/goAttribute"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationAttribute/RhasAttribute"/>
+    <genClasses ecoreClass="modeluno.ecore#//Relation_Attribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_Attribute/goAttribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_Attribute/RhasAttribute"/>
     </genClasses>
     <genClasses ecoreClass="modeluno.ecore#//Attribute_Not_Derived">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Attribute_Not_Derived/defaultValue"/>
@@ -90,9 +93,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Service/hasRelationView"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Service/goToRelationView"/>
     </genClasses>
-    <genClasses ecoreClass="modeluno.ecore#//RelationService">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationService/RhasService"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationService/goService"/>
+    <genClasses ecoreClass="modeluno.ecore#//Relation_Service">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_Service/RhasService"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_Service/goService"/>
     </genClasses>
     <genClasses ecoreClass="modeluno.ecore#//Create">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Create/name"/>
@@ -109,9 +112,9 @@
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//UpdateAttribute/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//UpdateAttribute/hasViewUpdateObject"/>
     </genClasses>
-    <genClasses ecoreClass="modeluno.ecore#//ListView">
-      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//ListView/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//ListView/hasViewIndex"/>
+    <genClasses ecoreClass="modeluno.ecore#//Index">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Index/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Index/hasViewIndex"/>
     </genClasses>
     <genClasses ecoreClass="modeluno.ecore#//View">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//View/name"/>
@@ -143,12 +146,20 @@
     <genClasses ecoreClass="modeluno.ecore#//ViewAdmin">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//ViewAdmin/name"/>
     </genClasses>
-    <genClasses ecoreClass="modeluno.ecore#//RelationView">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationView/RhasView"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//RelationView/goToView"/>
+    <genClasses ecoreClass="modeluno.ecore#//Relation_View">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_View/RhasView"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//Relation_View/goToView"/>
     </genClasses>
     <genClasses ecoreClass="modeluno.ecore#//Page">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//Page/rol"/>
+    </genClasses>
+    <genClasses ecoreClass="modeluno.ecore#//PresetationUnit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//PresetationUnit/name_field"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//PresetationUnit/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//PresetationUnit/HorizontalPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeluno.ecore#//PresetationUnit/VerticalPosition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeluno.ecore#//PresetationUnit/PUhasViews"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeluno.ecore#//PresetationUnit/PUgoToViews"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

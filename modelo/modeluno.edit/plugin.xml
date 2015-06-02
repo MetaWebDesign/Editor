@@ -10,7 +10,7 @@
       <!-- @generated modeluno -->
       <factory
             uri="http://modeluno/1.0"
-            class="Modeluno.modeluno.provider.ModelunoItemProviderAdapterFactory"
+            class="Modelouno.modeluno.provider.ModelunoItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider
