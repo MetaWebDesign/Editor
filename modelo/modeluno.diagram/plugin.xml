@@ -217,8 +217,8 @@
       <viewProvider class="Modeluno.modeluno.diagram.providers.ModelunoViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Modeluno"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002,4003,4004"/>
       </viewProvider>
    </extension>
 
@@ -230,13 +230,13 @@
             <method name="getType()" value="Modeluno"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,2002,2003"/>
+            <method name="getType()" value="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4001,4002"/>
+            <method name="getType()" value="4001,4002,4003,4004"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5001,5002,5003"/>
+            <method name="getType()" value="5001,5002,5003,5004,5005,5006,5007,5008,5009,5010,5011,5012,5013,5014,5015,5016,5017"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value=""/>
@@ -253,20 +253,90 @@
          <object class="Modeluno.modeluno.diagram.edit.parts.MapEditPart" id="Map_1000"/>
          <context elements="Map_1000"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfAttribute_DerivedEditPart">
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart" id="Attribute_Derived_2001"/>
-         <context elements="Attribute_Derived_2001"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewEditPart" id="View_2001"/>
+         <context elements="View_2001"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfClassEditPart">
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfCreateEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeluno.modeluno.diagram.edit.parts.ClassEditPart" id="Class_2002"/>
-         <context elements="Class_2002"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.CreateEditPart" id="Create_2002"/>
+         <context elements="Create_2002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfUpdateAttributeEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.UpdateAttributeEditPart" id="UpdateAttribute_2003"/>
+         <context elements="UpdateAttribute_2003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewInputEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewInputEditPart" id="ViewInput_2004"/>
+         <context elements="ViewInput_2004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewAdminEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewAdminEditPart" id="ViewAdmin_2005"/>
+         <context elements="ViewAdmin_2005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfPageEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.PageEditPart" id="Page_2006"/>
+         <context elements="Page_2006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfListViewEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ListViewEditPart" id="ListView_2007"/>
+         <context elements="ListView_2007"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfAttribute_Not_DerivedEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart" id="Attribute_Not_Derived_2003"/>
-         <context elements="Attribute_Not_Derived_2003"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart" id="Attribute_Not_Derived_2008"/>
+         <context elements="Attribute_Not_Derived_2008"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewUpdateObjectEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewUpdateObjectEditPart" id="ViewUpdateObject_2009"/>
+         <context elements="ViewUpdateObject_2009"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewUpdateAttributeEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewUpdateAttributeEditPart" id="ViewUpdateAttribute_2010"/>
+         <context elements="ViewUpdateAttribute_2010"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfClassEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ClassEditPart" id="Class_2011"/>
+         <context elements="Class_2011"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewIndexEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewIndexEditPart" id="ViewIndex_2012"/>
+         <context elements="ViewIndex_2012"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfDeleteEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.DeleteEditPart" id="Delete_2013"/>
+         <context elements="Delete_2013"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfAdminEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.AdminEditPart" id="Admin_2014"/>
+         <context elements="Admin_2014"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfAttribute_DerivedEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart" id="Attribute_Derived_2015"/>
+         <context elements="Attribute_Derived_2015"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfUpdateObjectEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.UpdateObjectEditPart" id="UpdateObject_2016"/>
+         <context elements="UpdateObject_2016"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeluno.modeluno.diagram.providers.assistants.ModelunoModelingAssistantProviderOfViewAttributeEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeluno.modeluno.diagram.edit.parts.ViewAttributeEditPart" id="ViewAttribute_2017"/>
+         <context elements="ViewAttribute_2017"/>
       </modelingAssistantProvider>
       
    </extension>
@@ -300,52 +370,212 @@
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Attribute_Derived_2001"
-               name="%metatype.name.Attribute_Derived_2001"
+               id="modeluno.diagram.View_2001"
+               name="%metatype.name.View_2001"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Attribute_Derived"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.Attribute_DerivedEditHelper">
+               eclass="View"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewEditHelper">
             <param name="semanticHint" value="2001"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Class_2002"
-               name="%metatype.name.Class_2002"
+               id="modeluno.diagram.Create_2002"
+               name="%metatype.name.Create_2002"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Class"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.ClassEditHelper">
+               eclass="Create"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.CreateEditHelper">
             <param name="semanticHint" value="2002"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Attribute_Not_Derived_2003"
-               name="%metatype.name.Attribute_Not_Derived_2003"
+               id="modeluno.diagram.UpdateAttribute_2003"
+               name="%metatype.name.UpdateAttribute_2003"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Attribute_Not_Derived"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.Attribute_Not_DerivedEditHelper">
+               eclass="UpdateAttribute"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.UpdateAttributeEditHelper">
             <param name="semanticHint" value="2003"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Attribute_Relation_4001"
-               name="%metatype.name.Attribute_Relation_4001"
+               id="modeluno.diagram.ViewInput_2004"
+               name="%metatype.name.ViewInput_2004"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Attribute_Relation"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.Attribute_RelationEditHelper">
+               eclass="ViewInput"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewInputEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.ViewAdmin_2005"
+               name="%metatype.name.ViewAdmin_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ViewAdmin"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewAdminEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Page_2006"
+               name="%metatype.name.Page_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Page"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.PageEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.ListView_2007"
+               name="%metatype.name.ListView_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ListView"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ListViewEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Attribute_Not_Derived_2008"
+               name="%metatype.name.Attribute_Not_Derived_2008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Attribute_Not_Derived"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.Attribute_Not_DerivedEditHelper">
+            <param name="semanticHint" value="2008"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.ViewUpdateObject_2009"
+               name="%metatype.name.ViewUpdateObject_2009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ViewUpdateObject"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewUpdateObjectEditHelper">
+            <param name="semanticHint" value="2009"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.ViewUpdateAttribute_2010"
+               name="%metatype.name.ViewUpdateAttribute_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ViewUpdateAttribute"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewUpdateAttributeEditHelper">
+            <param name="semanticHint" value="2010"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Class_2011"
+               name="%metatype.name.Class_2011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Class"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ClassEditHelper">
+            <param name="semanticHint" value="2011"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.ViewIndex_2012"
+               name="%metatype.name.ViewIndex_2012"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ViewIndex"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewIndexEditHelper">
+            <param name="semanticHint" value="2012"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Delete_2013"
+               name="%metatype.name.Delete_2013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Delete"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.DeleteEditHelper">
+            <param name="semanticHint" value="2013"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Admin_2014"
+               name="%metatype.name.Admin_2014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Admin"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.AdminEditHelper">
+            <param name="semanticHint" value="2014"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.Attribute_Derived_2015"
+               name="%metatype.name.Attribute_Derived_2015"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Attribute_Derived"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.Attribute_DerivedEditHelper">
+            <param name="semanticHint" value="2015"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.UpdateObject_2016"
+               name="%metatype.name.UpdateObject_2016"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="UpdateObject"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.UpdateObjectEditHelper">
+            <param name="semanticHint" value="2016"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.ViewAttribute_2017"
+               name="%metatype.name.ViewAttribute_2017"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ViewAttribute"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.ViewAttributeEditHelper">
+            <param name="semanticHint" value="2017"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.RelationAttribute_4001"
+               name="%metatype.name.RelationAttribute_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="RelationAttribute"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationAttributeEditHelper">
             <param name="semanticHint" value="4001"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeluno/1.0">
          <metamodelType
-               id="modeluno.diagram.Class_Relation_4002"
-               name="%metatype.name.Class_Relation_4002"
+               id="modeluno.diagram.RelationClass_4002"
+               name="%metatype.name.RelationClass_4002"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Class_Relation"
-               edithelper="Modeluno.modeluno.diagram.edit.helpers.Class_RelationEditHelper">
+               eclass="RelationClass"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationClassEditHelper">
             <param name="semanticHint" value="4002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.RelationService_4003"
+               name="%metatype.name.RelationService_4003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="RelationService"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationServiceEditHelper">
+            <param name="semanticHint" value="4003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeluno/1.0">
+         <metamodelType
+               id="modeluno.diagram.RelationView_4004"
+               name="%metatype.name.RelationView_4004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="RelationView"
+               edithelper="Modeluno.modeluno.diagram.edit.helpers.RelationViewEditHelper">
+            <param name="semanticHint" value="4004"/>
          </metamodelType>
       </metamodel>
    </extension>
@@ -361,11 +591,27 @@
       </clientContext> 
       <binding context="modeluno.diagram.TypeContext">
          <elementType ref="modeluno.diagram.Map_1000"/>
-         <elementType ref="modeluno.diagram.Attribute_Derived_2001"/>
-         <elementType ref="modeluno.diagram.Class_2002"/>
-         <elementType ref="modeluno.diagram.Attribute_Not_Derived_2003"/>
-         <elementType ref="modeluno.diagram.Attribute_Relation_4001"/>
-         <elementType ref="modeluno.diagram.Class_Relation_4002"/>
+         <elementType ref="modeluno.diagram.View_2001"/>
+         <elementType ref="modeluno.diagram.Create_2002"/>
+         <elementType ref="modeluno.diagram.UpdateAttribute_2003"/>
+         <elementType ref="modeluno.diagram.ViewInput_2004"/>
+         <elementType ref="modeluno.diagram.ViewAdmin_2005"/>
+         <elementType ref="modeluno.diagram.Page_2006"/>
+         <elementType ref="modeluno.diagram.ListView_2007"/>
+         <elementType ref="modeluno.diagram.Attribute_Not_Derived_2008"/>
+         <elementType ref="modeluno.diagram.ViewUpdateObject_2009"/>
+         <elementType ref="modeluno.diagram.ViewUpdateAttribute_2010"/>
+         <elementType ref="modeluno.diagram.Class_2011"/>
+         <elementType ref="modeluno.diagram.ViewIndex_2012"/>
+         <elementType ref="modeluno.diagram.Delete_2013"/>
+         <elementType ref="modeluno.diagram.Admin_2014"/>
+         <elementType ref="modeluno.diagram.Attribute_Derived_2015"/>
+         <elementType ref="modeluno.diagram.UpdateObject_2016"/>
+         <elementType ref="modeluno.diagram.ViewAttribute_2017"/>
+         <elementType ref="modeluno.diagram.RelationAttribute_4001"/>
+         <elementType ref="modeluno.diagram.RelationClass_4002"/>
+         <elementType ref="modeluno.diagram.RelationService_4003"/>
+         <elementType ref="modeluno.diagram.RelationView_4004"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>
    </extension>

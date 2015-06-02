@@ -60,11 +60,36 @@ public class AttributeItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addPrimaryKeyPropertyDescriptor(object);
 			addAnamePropertyDescriptor(object);
 			addDataTypePropertyDescriptor(object);
-			addPermissionsPropertyDescriptor(object);
+			addRolPropertyDescriptor(object);
+			addInTheFormPropertyDescriptor(object);
+			addValorPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Primary Key feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPrimaryKeyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attribute_PrimaryKey_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_PrimaryKey_feature", "_UI_Attribute_type"),
+				 ModelunoPackage.Literals.ATTRIBUTE__PRIMARY_KEY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -78,8 +103,8 @@ public class AttributeItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Attribute_Aname_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_Aname_feature", "_UI_Attribute_type"),
+				 getString("_UI_Attribute_aname_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_aname_feature", "_UI_Attribute_type"),
 				 ModelunoPackage.Literals.ATTRIBUTE__ANAME,
 				 true,
 				 false,
@@ -112,19 +137,63 @@ public class AttributeItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Permissions feature.
+	 * This adds a property descriptor for the Rol feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addPermissionsPropertyDescriptor(Object object) {
+	protected void addRolPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Attribute_permissions_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_permissions_feature", "_UI_Attribute_type"),
-				 ModelunoPackage.Literals.ATTRIBUTE__PERMISSIONS,
+				 getString("_UI_Attribute_rol_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_rol_feature", "_UI_Attribute_type"),
+				 ModelunoPackage.Literals.ATTRIBUTE__ROL,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the In The Form feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addInTheFormPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attribute_inTheForm_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_inTheForm_feature", "_UI_Attribute_type"),
+				 ModelunoPackage.Literals.ATTRIBUTE__IN_THE_FORM,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Valor feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addValorPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attribute_valor_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_valor_feature", "_UI_Attribute_type"),
+				 ModelunoPackage.Literals.ATTRIBUTE__VALOR,
 				 true,
 				 false,
 				 false,
@@ -171,9 +240,12 @@ public class AttributeItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Attribute.class)) {
+			case ModelunoPackage.ATTRIBUTE__PRIMARY_KEY:
 			case ModelunoPackage.ATTRIBUTE__ANAME:
 			case ModelunoPackage.ATTRIBUTE__DATA_TYPE:
-			case ModelunoPackage.ATTRIBUTE__PERMISSIONS:
+			case ModelunoPackage.ATTRIBUTE__ROL:
+			case ModelunoPackage.ATTRIBUTE__IN_THE_FORM:
+			case ModelunoPackage.ATTRIBUTE__VALOR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

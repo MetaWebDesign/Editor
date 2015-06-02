@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: Modeluno.modeluno.diagram.part.ModelunoDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: Modeluno.modeluno.diagram.edit.parts, 
+Export-Package: Modeluno.modeluno.diagram.edit.parts,
  Modeluno.modeluno.diagram.part,
  Modeluno.modeluno.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

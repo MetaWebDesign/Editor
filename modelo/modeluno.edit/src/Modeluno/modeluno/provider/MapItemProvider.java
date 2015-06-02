@@ -79,6 +79,8 @@ public class MapItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ModelunoPackage.Literals.MAP__ROOT_HAS_CLASS);
 			childrenFeatures.add(ModelunoPackage.Literals.MAP__ROOT_HAS_ATRIBUTTE);
+			childrenFeatures.add(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS);
+			childrenFeatures.add(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE);
 		}
 		return childrenFeatures;
 	}
@@ -133,6 +135,8 @@ public class MapItemProvider
 		switch (notification.getFeatureID(Map.class)) {
 			case ModelunoPackage.MAP__ROOT_HAS_CLASS:
 			case ModelunoPackage.MAP__ROOT_HAS_ATRIBUTTE:
+			case ModelunoPackage.MAP__ROOT_HAS_VIEWS:
+			case ModelunoPackage.MAP__ROOTHAS_SERVICE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -169,6 +173,86 @@ public class MapItemProvider
 			(createChildParameter
 				(ModelunoPackage.Literals.MAP__ROOT_HAS_ATRIBUTTE,
 				 ModelunoFactory.eINSTANCE.createAttribute_Derived()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViews()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViewInput()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViewUpdateObject()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViewUpdateAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViewIndex()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViewAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createViewAdmin()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOT_HAS_VIEWS,
+				 ModelunoFactory.eINSTANCE.createPage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createService()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createCreate()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createDelete()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createUpdateObject()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createUpdateAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createListView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.MAP__ROOTHAS_SERVICE,
+				 ModelunoFactory.eINSTANCE.createAdmin()));
 	}
 
 	/**

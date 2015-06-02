@@ -25,19 +25,89 @@ public class MapItemSemanticEditPolicy
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Derived_2001 == req
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ViewAdmin_2009 == req
 				.getElementType()) {
-			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.Attribute_DerivedCreateCommand(
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewAdminCreateCommand(
 					req));
 		}
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2002 == req
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Admin_2005 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.AdminCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ViewIndex_2014 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewIndexCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ViewInput_2007 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewInputCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ListView_2012 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ListViewCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2010 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ClassCreateCommand(
 					req));
 		}
-		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Not_Derived_2003 == req
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Delete_2016 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.DeleteCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Not_Derived_2002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.Attribute_Not_DerivedCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Page_2004 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.PageCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ViewAttribute_2011 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewAttributeCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ViewUpdateAttribute_2001 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewUpdateAttributeCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Derived_2015 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.Attribute_DerivedCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.UpdateAttribute_2018 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.UpdateAttributeCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ViewUpdateObject_2008 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewUpdateObjectCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.View_2003 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.ViewCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Create_2006 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.CreateCreateCommand(
+					req));
+		}
+		if (Modeluno.modeluno.diagram.providers.ModelunoElementTypes.UpdateObject_2017 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeluno.modeluno.diagram.edit.commands.UpdateObjectCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

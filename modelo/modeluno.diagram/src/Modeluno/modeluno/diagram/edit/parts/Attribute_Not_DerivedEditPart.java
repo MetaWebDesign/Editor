@@ -29,7 +29,7 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2003;
+	public static final int VISUAL_ID = 2002;
 
 	/**
 	 * @generated
@@ -105,7 +105,7 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedAnameEditPart) {
 			((Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedAnameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureAttribute_Not_DerivedAnameFigure());
+							.getFigureAttribute_Not_DerivedPrimaryKeyFigure());
 			return true;
 		}
 		return false;
@@ -250,6 +250,10 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
+		private WrappingLabel fFigureAttribute_Not_DerivedPrimaryKeyFigure;
+		/**
+		 * @generated
+		 */
 		private WrappingLabel fFigureAttribute_Not_DerivedAnameFigure;
 		/**
 		 * @generated
@@ -258,7 +262,15 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureAttribute_Not_DerivedPermissionsFigure;
+		private WrappingLabel fFigureAttribute_Not_DerivedRolFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureAttribute_Not_DerivedInTheFormFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureAttribute_Not_DerivedValorFigure;
 		/**
 		 * @generated
 		 */
@@ -288,6 +300,12 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
+			fFigureAttribute_Not_DerivedPrimaryKeyFigure = new WrappingLabel();
+
+			fFigureAttribute_Not_DerivedPrimaryKeyFigure.setText("<...>");
+
+			this.add(fFigureAttribute_Not_DerivedPrimaryKeyFigure);
+
 			fFigureAttribute_Not_DerivedAnameFigure = new WrappingLabel();
 
 			fFigureAttribute_Not_DerivedAnameFigure.setText("<...>");
@@ -300,11 +318,23 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureAttribute_Not_DerivedDataTypeFigure);
 
-			fFigureAttribute_Not_DerivedPermissionsFigure = new WrappingLabel();
+			fFigureAttribute_Not_DerivedRolFigure = new WrappingLabel();
 
-			fFigureAttribute_Not_DerivedPermissionsFigure.setText("<...>");
+			fFigureAttribute_Not_DerivedRolFigure.setText("<...>");
 
-			this.add(fFigureAttribute_Not_DerivedPermissionsFigure);
+			this.add(fFigureAttribute_Not_DerivedRolFigure);
+
+			fFigureAttribute_Not_DerivedInTheFormFigure = new WrappingLabel();
+
+			fFigureAttribute_Not_DerivedInTheFormFigure.setText("<...>");
+
+			this.add(fFigureAttribute_Not_DerivedInTheFormFigure);
+
+			fFigureAttribute_Not_DerivedValorFigure = new WrappingLabel();
+
+			fFigureAttribute_Not_DerivedValorFigure.setText("<...>");
+
+			this.add(fFigureAttribute_Not_DerivedValorFigure);
 
 			fFigureAttribute_Not_DerivedDefaultValueFigure = new WrappingLabel();
 
@@ -312,6 +342,13 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureAttribute_Not_DerivedDefaultValueFigure);
 
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttribute_Not_DerivedPrimaryKeyFigure() {
+			return fFigureAttribute_Not_DerivedPrimaryKeyFigure;
 		}
 
 		/**
@@ -331,8 +368,22 @@ public class Attribute_Not_DerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureAttribute_Not_DerivedPermissionsFigure() {
-			return fFigureAttribute_Not_DerivedPermissionsFigure;
+		public WrappingLabel getFigureAttribute_Not_DerivedRolFigure() {
+			return fFigureAttribute_Not_DerivedRolFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttribute_Not_DerivedInTheFormFigure() {
+			return fFigureAttribute_Not_DerivedInTheFormFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttribute_Not_DerivedValorFigure() {
+			return fFigureAttribute_Not_DerivedValorFigure;
 		}
 
 		/**

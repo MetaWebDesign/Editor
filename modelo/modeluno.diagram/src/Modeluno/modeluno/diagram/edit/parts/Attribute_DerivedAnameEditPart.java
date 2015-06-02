@@ -53,7 +53,7 @@ public class Attribute_DerivedAnameEditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5001;
+	public static final int VISUAL_ID = 5015;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class Attribute_DerivedAnameEditPart extends CompartmentEditPart
 		if (parser == null) {
 			parser = Modeluno.modeluno.diagram.providers.ModelunoParserProvider
 					.getParser(
-							Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Derived_2001,
+							Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Derived_2015,
 							getParserElement(),
 							Modeluno.modeluno.diagram.part.ModelunoVisualIDRegistry
 									.getType(Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedAnameEditPart.VISUAL_ID));

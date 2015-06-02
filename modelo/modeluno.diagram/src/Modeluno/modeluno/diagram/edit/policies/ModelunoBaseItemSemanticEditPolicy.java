@@ -320,36 +320,80 @@ public class ModelunoBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		/**
 		 * @generated
 		 */
-		public boolean canCreateAttribute_Relation_4001(
-				Modeluno.modeluno.Class source,
-				Modeluno.modeluno.Attribute target) {
-			return canExistAttribute_Relation_4001(null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canCreateClass_Relation_4002(
+		public boolean canCreateRelationClass_4005(
 				Modeluno.modeluno.Class source, Modeluno.modeluno.Class target) {
-			return canExistClass_Relation_4002(null, source, target);
+			return canExistRelationClass_4005(null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canExistAttribute_Relation_4001(
-				Modeluno.modeluno.Attribute_Relation linkInstance,
+		public boolean canCreateRelationService_4001(
+				Modeluno.modeluno.Class source, Modeluno.modeluno.Service target) {
+			if (source != null) {
+				if (source.getHasServiceRelation().size() >= 7) {
+					return false;
+				}
+			}
+			return canExistRelationService_4001(null, source, target);
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canCreateRelationView_4007(
+				Modeluno.modeluno.Service source, Modeluno.modeluno.Views target) {
+			if (source != null) {
+				if (source.getHasRelationView() != null) {
+					return false;
+				}
+			}
+			return canExistRelationView_4007(null, source, target);
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canCreateRelationAttribute_4003(
 				Modeluno.modeluno.Class source,
 				Modeluno.modeluno.Attribute target) {
+			return canExistRelationAttribute_4003(null, source, target);
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistRelationClass_4005(
+				Modeluno.modeluno.RelationClass linkInstance,
+				Modeluno.modeluno.Class source, Modeluno.modeluno.Class target) {
 			return true;
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canExistClass_Relation_4002(
-				Modeluno.modeluno.Class_Relation linkInstance,
-				Modeluno.modeluno.Class source, Modeluno.modeluno.Class target) {
+		public boolean canExistRelationService_4001(
+				Modeluno.modeluno.RelationService linkInstance,
+				Modeluno.modeluno.Class source, Modeluno.modeluno.Service target) {
+			return true;
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistRelationView_4007(
+				Modeluno.modeluno.RelationView linkInstance,
+				Modeluno.modeluno.Service source, Modeluno.modeluno.Views target) {
+			return true;
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistRelationAttribute_4003(
+				Modeluno.modeluno.RelationAttribute linkInstance,
+				Modeluno.modeluno.Class source,
+				Modeluno.modeluno.Attribute target) {
 			return true;
 		}
 	}

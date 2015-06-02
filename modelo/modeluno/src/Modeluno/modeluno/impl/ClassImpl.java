@@ -2,9 +2,10 @@
  */
 package Modeluno.modeluno.impl;
 
-import Modeluno.modeluno.Attribute_Relation;
-import Modeluno.modeluno.Class_Relation;
 import Modeluno.modeluno.ModelunoPackage;
+import Modeluno.modeluno.RelationAttribute;
+import Modeluno.modeluno.RelationClass;
+import Modeluno.modeluno.RelationService;
 
 import java.util.Collection;
 
@@ -36,6 +37,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Modeluno.modeluno.impl.ClassImpl#getIdFunction <em>Id Function</em>}</li>
  *   <li>{@link Modeluno.modeluno.impl.ClassImpl#getGoAtributteRelation <em>Go Atributte Relation</em>}</li>
  *   <li>{@link Modeluno.modeluno.impl.ClassImpl#getHasAtributeRelation <em>Has Atribute Relation</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.ClassImpl#getHasServiceRelation <em>Has Service Relation</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.ClassImpl#getGoServiceRelation <em>Go Service Relation</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,7 +53,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Class_Relation> hasRelation;
+	protected EList<RelationClass> hasRelation;
 
 	/**
 	 * The cached value of the '{@link #getGoRelation() <em>Go Relation</em>}' reference list.
@@ -60,7 +63,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Class_Relation> goRelation;
+	protected EList<RelationClass> goRelation;
 
 	/**
 	 * The default value of the '{@link #getCname() <em>Cname</em>}' attribute.
@@ -110,7 +113,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * @generated
 	 * @ordered
 	 */
-	protected Attribute_Relation goAtributteRelation;
+	protected RelationAttribute goAtributteRelation;
 
 	/**
 	 * The cached value of the '{@link #getHasAtributeRelation() <em>Has Atribute Relation</em>}' containment reference list.
@@ -120,7 +123,27 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Attribute_Relation> hasAtributeRelation;
+	protected EList<RelationAttribute> hasAtributeRelation;
+
+	/**
+	 * The cached value of the '{@link #getHasServiceRelation() <em>Has Service Relation</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasServiceRelation()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<RelationService> hasServiceRelation;
+
+	/**
+	 * The cached value of the '{@link #getGoServiceRelation() <em>Go Service Relation</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGoServiceRelation()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<RelationService> goServiceRelation;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,9 +169,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Class_Relation> getHasRelation() {
+	public EList<RelationClass> getHasRelation() {
 		if (hasRelation == null) {
-			hasRelation = new EObjectContainmentEList<Class_Relation>(Class_Relation.class, this, ModelunoPackage.CLASS__HAS_RELATION);
+			hasRelation = new EObjectContainmentEList<RelationClass>(RelationClass.class, this, ModelunoPackage.CLASS__HAS_RELATION);
 		}
 		return hasRelation;
 	}
@@ -158,9 +181,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Class_Relation> getGoRelation() {
+	public EList<RelationClass> getGoRelation() {
 		if (goRelation == null) {
-			goRelation = new EObjectResolvingEList<Class_Relation>(Class_Relation.class, this, ModelunoPackage.CLASS__GO_RELATION);
+			goRelation = new EObjectResolvingEList<RelationClass>(RelationClass.class, this, ModelunoPackage.CLASS__GO_RELATION);
 		}
 		return goRelation;
 	}
@@ -212,10 +235,10 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attribute_Relation getGoAtributteRelation() {
+	public RelationAttribute getGoAtributteRelation() {
 		if (goAtributteRelation != null && goAtributteRelation.eIsProxy()) {
 			InternalEObject oldGoAtributteRelation = (InternalEObject)goAtributteRelation;
-			goAtributteRelation = (Attribute_Relation)eResolveProxy(oldGoAtributteRelation);
+			goAtributteRelation = (RelationAttribute)eResolveProxy(oldGoAtributteRelation);
 			if (goAtributteRelation != oldGoAtributteRelation) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ModelunoPackage.CLASS__GO_ATRIBUTTE_RELATION, oldGoAtributteRelation, goAtributteRelation));
@@ -229,7 +252,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attribute_Relation basicGetGoAtributteRelation() {
+	public RelationAttribute basicGetGoAtributteRelation() {
 		return goAtributteRelation;
 	}
 
@@ -238,8 +261,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setGoAtributteRelation(Attribute_Relation newGoAtributteRelation) {
-		Attribute_Relation oldGoAtributteRelation = goAtributteRelation;
+	public void setGoAtributteRelation(RelationAttribute newGoAtributteRelation) {
+		RelationAttribute oldGoAtributteRelation = goAtributteRelation;
 		goAtributteRelation = newGoAtributteRelation;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.CLASS__GO_ATRIBUTTE_RELATION, oldGoAtributteRelation, goAtributteRelation));
@@ -250,11 +273,35 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Attribute_Relation> getHasAtributeRelation() {
+	public EList<RelationAttribute> getHasAtributeRelation() {
 		if (hasAtributeRelation == null) {
-			hasAtributeRelation = new EObjectContainmentEList<Attribute_Relation>(Attribute_Relation.class, this, ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION);
+			hasAtributeRelation = new EObjectContainmentEList<RelationAttribute>(RelationAttribute.class, this, ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION);
 		}
 		return hasAtributeRelation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<RelationService> getHasServiceRelation() {
+		if (hasServiceRelation == null) {
+			hasServiceRelation = new EObjectContainmentEList<RelationService>(RelationService.class, this, ModelunoPackage.CLASS__HAS_SERVICE_RELATION);
+		}
+		return hasServiceRelation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<RelationService> getGoServiceRelation() {
+		if (goServiceRelation == null) {
+			goServiceRelation = new EObjectResolvingEList<RelationService>(RelationService.class, this, ModelunoPackage.CLASS__GO_SERVICE_RELATION);
+		}
+		return goServiceRelation;
 	}
 
 	/**
@@ -269,6 +316,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 				return ((InternalEList<?>)getHasRelation()).basicRemove(otherEnd, msgs);
 			case ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION:
 				return ((InternalEList<?>)getHasAtributeRelation()).basicRemove(otherEnd, msgs);
+			case ModelunoPackage.CLASS__HAS_SERVICE_RELATION:
+				return ((InternalEList<?>)getHasServiceRelation()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -294,6 +343,10 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 				return basicGetGoAtributteRelation();
 			case ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION:
 				return getHasAtributeRelation();
+			case ModelunoPackage.CLASS__HAS_SERVICE_RELATION:
+				return getHasServiceRelation();
+			case ModelunoPackage.CLASS__GO_SERVICE_RELATION:
+				return getGoServiceRelation();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -309,11 +362,11 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 		switch (featureID) {
 			case ModelunoPackage.CLASS__HAS_RELATION:
 				getHasRelation().clear();
-				getHasRelation().addAll((Collection<? extends Class_Relation>)newValue);
+				getHasRelation().addAll((Collection<? extends RelationClass>)newValue);
 				return;
 			case ModelunoPackage.CLASS__GO_RELATION:
 				getGoRelation().clear();
-				getGoRelation().addAll((Collection<? extends Class_Relation>)newValue);
+				getGoRelation().addAll((Collection<? extends RelationClass>)newValue);
 				return;
 			case ModelunoPackage.CLASS__CNAME:
 				setCname((String)newValue);
@@ -322,11 +375,19 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 				setIdFunction((String)newValue);
 				return;
 			case ModelunoPackage.CLASS__GO_ATRIBUTTE_RELATION:
-				setGoAtributteRelation((Attribute_Relation)newValue);
+				setGoAtributteRelation((RelationAttribute)newValue);
 				return;
 			case ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION:
 				getHasAtributeRelation().clear();
-				getHasAtributeRelation().addAll((Collection<? extends Attribute_Relation>)newValue);
+				getHasAtributeRelation().addAll((Collection<? extends RelationAttribute>)newValue);
+				return;
+			case ModelunoPackage.CLASS__HAS_SERVICE_RELATION:
+				getHasServiceRelation().clear();
+				getHasServiceRelation().addAll((Collection<? extends RelationService>)newValue);
+				return;
+			case ModelunoPackage.CLASS__GO_SERVICE_RELATION:
+				getGoServiceRelation().clear();
+				getGoServiceRelation().addAll((Collection<? extends RelationService>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -353,10 +414,16 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 				setIdFunction(ID_FUNCTION_EDEFAULT);
 				return;
 			case ModelunoPackage.CLASS__GO_ATRIBUTTE_RELATION:
-				setGoAtributteRelation((Attribute_Relation)null);
+				setGoAtributteRelation((RelationAttribute)null);
 				return;
 			case ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION:
 				getHasAtributeRelation().clear();
+				return;
+			case ModelunoPackage.CLASS__HAS_SERVICE_RELATION:
+				getHasServiceRelation().clear();
+				return;
+			case ModelunoPackage.CLASS__GO_SERVICE_RELATION:
+				getGoServiceRelation().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -382,6 +449,10 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeluno.
 				return goAtributteRelation != null;
 			case ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION:
 				return hasAtributeRelation != null && !hasAtributeRelation.isEmpty();
+			case ModelunoPackage.CLASS__HAS_SERVICE_RELATION:
+				return hasServiceRelation != null && !hasServiceRelation.isEmpty();
+			case ModelunoPackage.CLASS__GO_SERVICE_RELATION:
+				return goServiceRelation != null && !goServiceRelation.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

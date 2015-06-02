@@ -29,7 +29,7 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2001;
+	public static final int VISUAL_ID = 2015;
 
 	/**
 	 * @generated
@@ -105,7 +105,7 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedAnameEditPart) {
 			((Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedAnameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureAttribute_DerivedAnameFigure());
+							.getFigureAttribute_DerivedPrimaryKeyFigure());
 			return true;
 		}
 		return false;
@@ -250,6 +250,10 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
+		private WrappingLabel fFigureAttribute_DerivedPrimaryKeyFigure;
+		/**
+		 * @generated
+		 */
 		private WrappingLabel fFigureAttribute_DerivedAnameFigure;
 		/**
 		 * @generated
@@ -258,19 +262,19 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureAttribute_DerivedPermissionsFigure;
+		private WrappingLabel fFigureAttribute_DerivedRolFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureAttribute_DerivedInTheFormFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureAttribute_DerivedValorFigure;
 		/**
 		 * @generated
 		 */
 		private WrappingLabel fFigureAttribute_DerivedDerivationCommentsFigure;
-		/**
-		 * @generated
-		 */
-		private WrappingLabel fFigureAttribute_DerivedConditionFigure;
-		/**
-		 * @generated
-		 */
-		private WrappingLabel fFigureAttribute_DerivedEffectFigure;
 		/**
 		 * @generated
 		 */
@@ -300,6 +304,12 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
+			fFigureAttribute_DerivedPrimaryKeyFigure = new WrappingLabel();
+
+			fFigureAttribute_DerivedPrimaryKeyFigure.setText("<...>");
+
+			this.add(fFigureAttribute_DerivedPrimaryKeyFigure);
+
 			fFigureAttribute_DerivedAnameFigure = new WrappingLabel();
 
 			fFigureAttribute_DerivedAnameFigure.setText("<...>");
@@ -312,11 +322,23 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureAttribute_DerivedDataTypeFigure);
 
-			fFigureAttribute_DerivedPermissionsFigure = new WrappingLabel();
+			fFigureAttribute_DerivedRolFigure = new WrappingLabel();
 
-			fFigureAttribute_DerivedPermissionsFigure.setText("<...>");
+			fFigureAttribute_DerivedRolFigure.setText("<...>");
 
-			this.add(fFigureAttribute_DerivedPermissionsFigure);
+			this.add(fFigureAttribute_DerivedRolFigure);
+
+			fFigureAttribute_DerivedInTheFormFigure = new WrappingLabel();
+
+			fFigureAttribute_DerivedInTheFormFigure.setText("<...>");
+
+			this.add(fFigureAttribute_DerivedInTheFormFigure);
+
+			fFigureAttribute_DerivedValorFigure = new WrappingLabel();
+
+			fFigureAttribute_DerivedValorFigure.setText("<...>");
+
+			this.add(fFigureAttribute_DerivedValorFigure);
 
 			fFigureAttribute_DerivedDerivationCommentsFigure = new WrappingLabel();
 
@@ -324,24 +346,19 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureAttribute_DerivedDerivationCommentsFigure);
 
-			fFigureAttribute_DerivedConditionFigure = new WrappingLabel();
-
-			fFigureAttribute_DerivedConditionFigure.setText("<...>");
-
-			this.add(fFigureAttribute_DerivedConditionFigure);
-
-			fFigureAttribute_DerivedEffectFigure = new WrappingLabel();
-
-			fFigureAttribute_DerivedEffectFigure.setText("<...>");
-
-			this.add(fFigureAttribute_DerivedEffectFigure);
-
 			fFigureAttribute_DerivedFormulaFigure = new WrappingLabel();
 
 			fFigureAttribute_DerivedFormulaFigure.setText("<...>");
 
 			this.add(fFigureAttribute_DerivedFormulaFigure);
 
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttribute_DerivedPrimaryKeyFigure() {
+			return fFigureAttribute_DerivedPrimaryKeyFigure;
 		}
 
 		/**
@@ -361,8 +378,22 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureAttribute_DerivedPermissionsFigure() {
-			return fFigureAttribute_DerivedPermissionsFigure;
+		public WrappingLabel getFigureAttribute_DerivedRolFigure() {
+			return fFigureAttribute_DerivedRolFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttribute_DerivedInTheFormFigure() {
+			return fFigureAttribute_DerivedInTheFormFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttribute_DerivedValorFigure() {
+			return fFigureAttribute_DerivedValorFigure;
 		}
 
 		/**
@@ -370,20 +401,6 @@ public class Attribute_DerivedEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureAttribute_DerivedDerivationCommentsFigure() {
 			return fFigureAttribute_DerivedDerivationCommentsFigure;
-		}
-
-		/**
-		 * @generated
-		 */
-		public WrappingLabel getFigureAttribute_DerivedConditionFigure() {
-			return fFigureAttribute_DerivedConditionFigure;
-		}
-
-		/**
-		 * @generated
-		 */
-		public WrappingLabel getFigureAttribute_DerivedEffectFigure() {
-			return fFigureAttribute_DerivedEffectFigure;
 		}
 
 		/**

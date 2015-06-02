@@ -5,29 +5,133 @@
     xmlns:trace="http://www.eclipse.org/gmf/2006/Trace">
   <nodeTraces
       visualID="2001"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Attribute_Derived') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'Root_hasAtributte')">
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'View') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
     <nodeLabelTraces
         visualID="5001"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2002"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Class') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'Root_hasClass')">
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Create') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
     <nodeLabelTraces
         visualID="5002"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2003"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Attribute_Not_Derived') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'Root_hasAtributte')">
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'UpdateAttribute') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
     <nodeLabelTraces
         visualID="5003"
         queryText="true"/>
   </nodeTraces>
+  <nodeTraces
+      visualID="2004"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ViewInput') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5004"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2005"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ViewAdmin') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5005"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2006"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Page') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5006"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2007"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ListView') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
+    <nodeLabelTraces
+        visualID="5007"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2008"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Attribute_Not_Derived') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'Root_hasAtributte')">
+    <nodeLabelTraces
+        visualID="5008"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2009"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ViewUpdateObject') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5009"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2010"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ViewUpdateAttribute') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5010"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2011"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Class') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'Root_hasClass')">
+    <nodeLabelTraces
+        visualID="5011"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2012"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ViewIndex') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5012"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2013"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Delete') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
+    <nodeLabelTraces
+        visualID="5013"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2014"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Admin') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
+    <nodeLabelTraces
+        visualID="5014"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2015"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Attribute_Derived') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'Root_hasAtributte')">
+    <nodeLabelTraces
+        visualID="5015"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2016"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'UpdateObject') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RoothasService')">
+    <nodeLabelTraces
+        visualID="5016"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2017"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'ViewAttribute') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Map') and _containmentMF_.name = 'RootHasViews')">
+    <nodeLabelTraces
+        visualID="5017"
+        queryText="true"/>
+  </nodeTraces>
   <linkTraces
       visualID="4001"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Attribute_Relation')"/>
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'RelationAttribute')"/>
   <linkTraces
       visualID="4002"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'Class_Relation')"/>
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'RelationClass')"/>
+  <linkTraces
+      visualID="4003"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'RelationService')"/>
+  <linkTraces
+      visualID="4004"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://modeluno/1.0' and _eClass_.name = 'RelationView')"/>
 </trace:TraceModel>

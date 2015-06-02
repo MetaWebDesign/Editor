@@ -66,6 +66,7 @@ public class ClassItemProvider
 			addCnamePropertyDescriptor(object);
 			addIdFunctionPropertyDescriptor(object);
 			addGoAtributteRelationPropertyDescriptor(object);
+			addGoServiceRelationPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -159,6 +160,28 @@ public class ClassItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Go Service Relation feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addGoServiceRelationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_goServiceRelation_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_goServiceRelation_feature", "_UI_Class_type"),
+				 ModelunoPackage.Literals.CLASS__GO_SERVICE_RELATION,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -172,6 +195,7 @@ public class ClassItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ModelunoPackage.Literals.CLASS__HAS_RELATION);
 			childrenFeatures.add(ModelunoPackage.Literals.CLASS__HAS_ATRIBUTE_RELATION);
+			childrenFeatures.add(ModelunoPackage.Literals.CLASS__HAS_SERVICE_RELATION);
 		}
 		return childrenFeatures;
 	}
@@ -233,6 +257,7 @@ public class ClassItemProvider
 				return;
 			case ModelunoPackage.CLASS__HAS_RELATION:
 			case ModelunoPackage.CLASS__HAS_ATRIBUTE_RELATION:
+			case ModelunoPackage.CLASS__HAS_SERVICE_RELATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -253,12 +278,17 @@ public class ClassItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(ModelunoPackage.Literals.CLASS__HAS_RELATION,
-				 ModelunoFactory.eINSTANCE.createClass_Relation()));
+				 ModelunoFactory.eINSTANCE.createRelationClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(ModelunoPackage.Literals.CLASS__HAS_ATRIBUTE_RELATION,
-				 ModelunoFactory.eINSTANCE.createAttribute_Relation()));
+				 ModelunoFactory.eINSTANCE.createRelationAttribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModelunoPackage.Literals.CLASS__HAS_SERVICE_RELATION,
+				 ModelunoFactory.eINSTANCE.createRelationService()));
 	}
 
 	/**

@@ -29,9 +29,10 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 	 */
 	public List<IElementType> doGetRelTypesOnSource(
 			Modeluno.modeluno.diagram.edit.parts.ClassEditPart source) {
-		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Relation_4001);
-		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_Relation_4002);
+		List<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationClass_4005);
+		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationAttribute_4003);
 		return types;
 	}
 
@@ -57,14 +58,35 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 			Modeluno.modeluno.diagram.edit.parts.ClassEditPart source,
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
-		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Relation_4001);
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ClassEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationClass_4005);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.AdminEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ListViewEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.DeleteEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.UpdateAttributeEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ViewEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.CreateEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
+		}
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.UpdateObjectEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001);
 		}
 		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Relation_4001);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationAttribute_4003);
 		}
-		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.ClassEditPart) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_Relation_4002);
+		if (targetEditPart instanceof Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationAttribute_4003);
 		}
 		return types;
 	}
@@ -89,11 +111,19 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 			Modeluno.modeluno.diagram.edit.parts.ClassEditPart source,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Relation_4001) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Derived_2001);
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Not_Derived_2003);
-		} else if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_Relation_4002) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2002);
+		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationClass_4005) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2010);
+		} else if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationService_4001) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Admin_2005);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.ListView_2012);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Delete_2016);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.UpdateAttribute_2018);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.View_2003);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Create_2006);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.UpdateObject_2017);
+		} else if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationAttribute_4003) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Not_Derived_2002);
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Derived_2015);
 		}
 		return types;
 	}
@@ -114,7 +144,7 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 	public List<IElementType> doGetRelTypesOnTarget(
 			Modeluno.modeluno.diagram.edit.parts.ClassEditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
-		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_Relation_4002);
+		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationClass_4005);
 		return types;
 	}
 
@@ -138,8 +168,8 @@ public class ModelunoModelingAssistantProviderOfClassEditPart extends
 			Modeluno.modeluno.diagram.edit.parts.ClassEditPart target,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_Relation_4002) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2002);
+		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationClass_4005) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2010);
 		}
 		return types;
 	}

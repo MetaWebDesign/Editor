@@ -19,8 +19,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * <ul>
  *   <li>{@link Modeluno.modeluno.impl.Attribute_DerivedImpl#getDerivationComments <em>Derivation Comments</em>}</li>
- *   <li>{@link Modeluno.modeluno.impl.Attribute_DerivedImpl#isCondition <em>Condition</em>}</li>
- *   <li>{@link Modeluno.modeluno.impl.Attribute_DerivedImpl#getEffect <em>Effect</em>}</li>
  *   <li>{@link Modeluno.modeluno.impl.Attribute_DerivedImpl#getFormula <em>Formula</em>}</li>
  * </ul>
  * </p>
@@ -47,46 +45,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 	 * @ordered
 	 */
 	protected String derivationComments = DERIVATION_COMMENTS_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #isCondition() <em>Condition</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isCondition()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean CONDITION_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isCondition() <em>Condition</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isCondition()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean condition = CONDITION_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEffect()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String EFFECT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getEffect() <em>Effect</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEffect()
-	 * @generated
-	 * @ordered
-	 */
-	protected String effect = EFFECT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getFormula() <em>Formula</em>}' attribute.
@@ -153,48 +111,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isCondition() {
-		return condition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setCondition(boolean newCondition) {
-		boolean oldCondition = condition;
-		condition = newCondition;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE_DERIVED__CONDITION, oldCondition, condition));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getEffect() {
-		return effect;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setEffect(String newEffect) {
-		String oldEffect = effect;
-		effect = newEffect;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE_DERIVED__EFFECT, oldEffect, effect));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getFormula() {
 		return formula;
 	}
@@ -221,10 +137,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 		switch (featureID) {
 			case ModelunoPackage.ATTRIBUTE_DERIVED__DERIVATION_COMMENTS:
 				return getDerivationComments();
-			case ModelunoPackage.ATTRIBUTE_DERIVED__CONDITION:
-				return isCondition();
-			case ModelunoPackage.ATTRIBUTE_DERIVED__EFFECT:
-				return getEffect();
 			case ModelunoPackage.ATTRIBUTE_DERIVED__FORMULA:
 				return getFormula();
 		}
@@ -241,12 +153,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 		switch (featureID) {
 			case ModelunoPackage.ATTRIBUTE_DERIVED__DERIVATION_COMMENTS:
 				setDerivationComments((String)newValue);
-				return;
-			case ModelunoPackage.ATTRIBUTE_DERIVED__CONDITION:
-				setCondition((Boolean)newValue);
-				return;
-			case ModelunoPackage.ATTRIBUTE_DERIVED__EFFECT:
-				setEffect((String)newValue);
 				return;
 			case ModelunoPackage.ATTRIBUTE_DERIVED__FORMULA:
 				setFormula((String)newValue);
@@ -266,12 +172,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 			case ModelunoPackage.ATTRIBUTE_DERIVED__DERIVATION_COMMENTS:
 				setDerivationComments(DERIVATION_COMMENTS_EDEFAULT);
 				return;
-			case ModelunoPackage.ATTRIBUTE_DERIVED__CONDITION:
-				setCondition(CONDITION_EDEFAULT);
-				return;
-			case ModelunoPackage.ATTRIBUTE_DERIVED__EFFECT:
-				setEffect(EFFECT_EDEFAULT);
-				return;
 			case ModelunoPackage.ATTRIBUTE_DERIVED__FORMULA:
 				setFormula(FORMULA_EDEFAULT);
 				return;
@@ -289,10 +189,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 		switch (featureID) {
 			case ModelunoPackage.ATTRIBUTE_DERIVED__DERIVATION_COMMENTS:
 				return DERIVATION_COMMENTS_EDEFAULT == null ? derivationComments != null : !DERIVATION_COMMENTS_EDEFAULT.equals(derivationComments);
-			case ModelunoPackage.ATTRIBUTE_DERIVED__CONDITION:
-				return condition != CONDITION_EDEFAULT;
-			case ModelunoPackage.ATTRIBUTE_DERIVED__EFFECT:
-				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 			case ModelunoPackage.ATTRIBUTE_DERIVED__FORMULA:
 				return FORMULA_EDEFAULT == null ? formula != null : !FORMULA_EDEFAULT.equals(formula);
 		}
@@ -311,10 +207,6 @@ public class Attribute_DerivedImpl extends AttributeImpl implements Attribute_De
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (derivationComments: ");
 		result.append(derivationComments);
-		result.append(", Condition: ");
-		result.append(condition);
-		result.append(", Effect: ");
-		result.append(effect);
 		result.append(", Formula: ");
 		result.append(formula);
 		result.append(')');

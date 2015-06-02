@@ -30,7 +30,7 @@ public class ModelunoModelingAssistantProviderOfAttribute_Not_DerivedEditPart
 	public List<IElementType> doGetRelTypesOnTarget(
 			Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
-		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Relation_4001);
+		types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationAttribute_4003);
 		return types;
 	}
 
@@ -54,8 +54,8 @@ public class ModelunoModelingAssistantProviderOfAttribute_Not_DerivedEditPart
 			Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart target,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Attribute_Relation_4001) {
-			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2002);
+		if (relationshipType == Modeluno.modeluno.diagram.providers.ModelunoElementTypes.RelationAttribute_4003) {
+			types.add(Modeluno.modeluno.diagram.providers.ModelunoElementTypes.Class_2010);
 		}
 		return types;
 	}

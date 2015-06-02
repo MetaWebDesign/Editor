@@ -119,19 +119,77 @@ public class ModelunoVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case Modeluno.modeluno.diagram.edit.parts.MapEditPart.VISUAL_ID:
-			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE
-					.getAttribute_Derived().isSuperTypeOf(
-							domainElement.eClass())) {
-				return Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID;
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getViewAdmin()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewAdminEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getAdmin()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.AdminEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getViewIndex()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewIndexEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getViewInput()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewInputEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getListView()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ListViewEditPart.VISUAL_ID;
 			}
 			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getClass_()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID;
 			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getDelete()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.DeleteEditPart.VISUAL_ID;
+			}
 			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE
 					.getAttribute_Not_Derived().isSuperTypeOf(
 							domainElement.eClass())) {
 				return Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getPage()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.PageEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getViewAttribute()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getViewUpdateAttribute().isSuperTypeOf(
+							domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewUpdateAttributeEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getAttribute_Derived().isSuperTypeOf(
+							domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getUpdateAttribute().isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.UpdateAttributeEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE
+					.getViewUpdateObject()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewUpdateObjectEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getView()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.ViewEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getCreate()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.CreateEditPart.VISUAL_ID;
+			}
+			if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getUpdateObject()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeluno.modeluno.diagram.edit.parts.UpdateObjectEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -162,18 +220,80 @@ public class ModelunoVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case Modeluno.modeluno.diagram.edit.parts.MapEditPart.VISUAL_ID:
-			if (Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID == nodeVisualID) {
+			if (Modeluno.modeluno.diagram.edit.parts.ViewAdminEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.AdminEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ViewIndexEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ViewInputEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ListViewEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Modeluno.modeluno.diagram.edit.parts.DeleteEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Modeluno.modeluno.diagram.edit.parts.PageEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ViewUpdateAttributeEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.UpdateAttributeEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ViewUpdateObjectEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.ViewEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.CreateEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeluno.modeluno.diagram.edit.parts.UpdateObjectEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			break;
-		case Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID:
-			if (Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
+		case Modeluno.modeluno.diagram.edit.parts.ViewAdminEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewAdminTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.AdminEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.AdminNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ViewIndexEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewIndexTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ViewInputEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewInputTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ListViewEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ListViewNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -182,8 +302,58 @@ public class ModelunoVisualIDRegistry {
 				return true;
 			}
 			break;
+		case Modeluno.modeluno.diagram.edit.parts.DeleteEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.DeleteNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart.VISUAL_ID:
 			if (Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.PageTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewAttributeTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ViewUpdateAttributeEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewUpdateAttributeTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedAnameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.UpdateAttributeEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.UpdateAttributeNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ViewUpdateObjectEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewUpdateObjectTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.ViewEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.ViewNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.CreateEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.CreateNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeluno.modeluno.diagram.edit.parts.UpdateObjectEditPart.VISUAL_ID:
+			if (Modeluno.modeluno.diagram.edit.parts.UpdateObjectNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -198,13 +368,21 @@ public class ModelunoVisualIDRegistry {
 		if (domainElement == null) {
 			return -1;
 		}
-		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getAttribute_Relation()
+		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelationClass()
 				.isSuperTypeOf(domainElement.eClass())) {
-			return Modeluno.modeluno.diagram.edit.parts.Attribute_RelationEditPart.VISUAL_ID;
+			return Modeluno.modeluno.diagram.edit.parts.RelationClassEditPart.VISUAL_ID;
 		}
-		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getClass_Relation()
+		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelationService()
 				.isSuperTypeOf(domainElement.eClass())) {
-			return Modeluno.modeluno.diagram.edit.parts.Class_RelationEditPart.VISUAL_ID;
+			return Modeluno.modeluno.diagram.edit.parts.RelationServiceEditPart.VISUAL_ID;
+		}
+		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelationView()
+				.isSuperTypeOf(domainElement.eClass())) {
+			return Modeluno.modeluno.diagram.edit.parts.RelationViewEditPart.VISUAL_ID;
+		}
+		if (Modeluno.modeluno.ModelunoPackage.eINSTANCE.getRelationAttribute()
+				.isSuperTypeOf(domainElement.eClass())) {
+			return Modeluno.modeluno.diagram.edit.parts.RelationAttributeEditPart.VISUAL_ID;
 		}
 		return -1;
 	}
@@ -246,9 +424,23 @@ public class ModelunoVisualIDRegistry {
 		switch (visualID) {
 		case Modeluno.modeluno.diagram.edit.parts.MapEditPart.VISUAL_ID:
 			return false;
-		case Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID:
-		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewUpdateAttributeEditPart.VISUAL_ID:
 		case Modeluno.modeluno.diagram.edit.parts.Attribute_Not_DerivedEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.PageEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.AdminEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.CreateEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewInputEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewUpdateObjectEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewAdminEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ListViewEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.ViewIndexEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.Attribute_DerivedEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.DeleteEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.UpdateObjectEditPart.VISUAL_ID:
+		case Modeluno.modeluno.diagram.edit.parts.UpdateAttributeEditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

@@ -258,12 +258,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String Class_Relation2CreationTool_title;
+	public static String RelationClass2CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Class_Relation2CreationTool_desc;
+	public static String RelationClass2CreationTool_desc;
 
 	/**
 	 * @generated
@@ -278,12 +278,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String Attribute_Relation4CreationTool_title;
+	public static String RelationAttribute4CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Attribute_Relation4CreationTool_desc;
+	public static String RelationAttribute4CreationTool_desc;
 
 	/**
 	 * @generated
@@ -308,6 +308,186 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String Service7CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Service7CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String RelationService8CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String RelationService8CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Create9CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Create9CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Delete10CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Delete10CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String UpdateObject11CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String UpdateObject11CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String UpdateAttribute12CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String UpdateAttribute12CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ListView13CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ListView13CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String View14CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String View14CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Admin15CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Admin15CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Views16CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Views16CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewInput17CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewInput17CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewUpdateObject18CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewUpdateObject18CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewUpdateAttribute19CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewUpdateAttribute19CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewIndex20CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewIndex20CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewAttribute21CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewAttribute21CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewAdmin22CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String ViewAdmin22CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String RelationView23CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String RelationView23CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Page24CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Page24CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
 	public static String CommandName_OpenDiagram;
 
 	/**
@@ -318,42 +498,167 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Attribute_Derived_2001_incominglinks;
+	public static String NavigatorGroupName_ViewUpdateAttribute_2001_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2002_outgoinglinks;
+	public static String NavigatorGroupName_Attribute_Not_Derived_2002_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2002_incominglinks;
+	public static String NavigatorGroupName_View_2003_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Attribute_Not_Derived_2003_incominglinks;
+	public static String NavigatorGroupName_View_2003_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Attribute_Relation_4001_target;
+	public static String NavigatorGroupName_Page_2004_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Attribute_Relation_4001_source;
+	public static String NavigatorGroupName_Admin_2005_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_Relation_4002_target;
+	public static String NavigatorGroupName_Admin_2005_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_Relation_4002_source;
+	public static String NavigatorGroupName_Create_2006_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Create_2006_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ViewInput_2007_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ViewUpdateObject_2008_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ViewAdmin_2009_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Class_2010_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Class_2010_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ViewAttribute_2011_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ListView_2012_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ListView_2012_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_ViewIndex_2014_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Attribute_Derived_2015_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Delete_2016_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_Delete_2016_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_UpdateObject_2017_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_UpdateObject_2017_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_UpdateAttribute_2018_incominglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_UpdateAttribute_2018_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationService_4001_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationService_4001_source;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationAttribute_4003_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationAttribute_4003_source;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationClass_4005_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationClass_4005_source;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationView_4007_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationView_4007_source;
 
 	/**
 	 * @generated

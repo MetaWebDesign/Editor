@@ -118,26 +118,26 @@ public class ModelunoItemProviderAdapterFactory extends ModelunoAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Class_Relation} instances.
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.RelationClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Class_RelationItemProvider class_RelationItemProvider;
+	protected RelationClassItemProvider relationClassItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link Modeluno.modeluno.Class_Relation}.
+	 * This creates an adapter for a {@link Modeluno.modeluno.RelationClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createClass_RelationAdapter() {
-		if (class_RelationItemProvider == null) {
-			class_RelationItemProvider = new Class_RelationItemProvider(this);
+	public Adapter createRelationClassAdapter() {
+		if (relationClassItemProvider == null) {
+			relationClassItemProvider = new RelationClassItemProvider(this);
 		}
 
-		return class_RelationItemProvider;
+		return relationClassItemProvider;
 	}
 
 	/**
@@ -164,26 +164,26 @@ public class ModelunoItemProviderAdapterFactory extends ModelunoAdapterFactory i
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Attribute_Relation} instances.
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.RelationAttribute} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Attribute_RelationItemProvider attribute_RelationItemProvider;
+	protected RelationAttributeItemProvider relationAttributeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link Modeluno.modeluno.Attribute_Relation}.
+	 * This creates an adapter for a {@link Modeluno.modeluno.RelationAttribute}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAttribute_RelationAdapter() {
-		if (attribute_RelationItemProvider == null) {
-			attribute_RelationItemProvider = new Attribute_RelationItemProvider(this);
+	public Adapter createRelationAttributeAdapter() {
+		if (relationAttributeItemProvider == null) {
+			relationAttributeItemProvider = new RelationAttributeItemProvider(this);
 		}
 
-		return attribute_RelationItemProvider;
+		return relationAttributeItemProvider;
 	}
 
 	/**
@@ -230,6 +230,420 @@ public class ModelunoItemProviderAdapterFactory extends ModelunoAdapterFactory i
 		}
 
 		return attribute_DerivedItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Service} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ServiceItemProvider serviceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.Service}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createServiceAdapter() {
+		if (serviceItemProvider == null) {
+			serviceItemProvider = new ServiceItemProvider(this);
+		}
+
+		return serviceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.RelationService} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RelationServiceItemProvider relationServiceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.RelationService}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRelationServiceAdapter() {
+		if (relationServiceItemProvider == null) {
+			relationServiceItemProvider = new RelationServiceItemProvider(this);
+		}
+
+		return relationServiceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Create} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CreateItemProvider createItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.Create}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCreateAdapter() {
+		if (createItemProvider == null) {
+			createItemProvider = new CreateItemProvider(this);
+		}
+
+		return createItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Delete} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DeleteItemProvider deleteItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.Delete}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDeleteAdapter() {
+		if (deleteItemProvider == null) {
+			deleteItemProvider = new DeleteItemProvider(this);
+		}
+
+		return deleteItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.UpdateObject} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UpdateObjectItemProvider updateObjectItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.UpdateObject}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUpdateObjectAdapter() {
+		if (updateObjectItemProvider == null) {
+			updateObjectItemProvider = new UpdateObjectItemProvider(this);
+		}
+
+		return updateObjectItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.UpdateAttribute} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UpdateAttributeItemProvider updateAttributeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.UpdateAttribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUpdateAttributeAdapter() {
+		if (updateAttributeItemProvider == null) {
+			updateAttributeItemProvider = new UpdateAttributeItemProvider(this);
+		}
+
+		return updateAttributeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ListView} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ListViewItemProvider listViewItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ListView}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createListViewAdapter() {
+		if (listViewItemProvider == null) {
+			listViewItemProvider = new ListViewItemProvider(this);
+		}
+
+		return listViewItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.View} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewItemProvider viewItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.View}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewAdapter() {
+		if (viewItemProvider == null) {
+			viewItemProvider = new ViewItemProvider(this);
+		}
+
+		return viewItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Admin} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AdminItemProvider adminItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.Admin}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAdminAdapter() {
+		if (adminItemProvider == null) {
+			adminItemProvider = new AdminItemProvider(this);
+		}
+
+		return adminItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Views} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewsItemProvider viewsItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.Views}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewsAdapter() {
+		if (viewsItemProvider == null) {
+			viewsItemProvider = new ViewsItemProvider(this);
+		}
+
+		return viewsItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ViewInput} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewInputItemProvider viewInputItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ViewInput}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewInputAdapter() {
+		if (viewInputItemProvider == null) {
+			viewInputItemProvider = new ViewInputItemProvider(this);
+		}
+
+		return viewInputItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ViewUpdateObject} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewUpdateObjectItemProvider viewUpdateObjectItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ViewUpdateObject}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewUpdateObjectAdapter() {
+		if (viewUpdateObjectItemProvider == null) {
+			viewUpdateObjectItemProvider = new ViewUpdateObjectItemProvider(this);
+		}
+
+		return viewUpdateObjectItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ViewUpdateAttribute} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewUpdateAttributeItemProvider viewUpdateAttributeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ViewUpdateAttribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewUpdateAttributeAdapter() {
+		if (viewUpdateAttributeItemProvider == null) {
+			viewUpdateAttributeItemProvider = new ViewUpdateAttributeItemProvider(this);
+		}
+
+		return viewUpdateAttributeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ViewIndex} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewIndexItemProvider viewIndexItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ViewIndex}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewIndexAdapter() {
+		if (viewIndexItemProvider == null) {
+			viewIndexItemProvider = new ViewIndexItemProvider(this);
+		}
+
+		return viewIndexItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ViewAttribute} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewAttributeItemProvider viewAttributeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ViewAttribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewAttributeAdapter() {
+		if (viewAttributeItemProvider == null) {
+			viewAttributeItemProvider = new ViewAttributeItemProvider(this);
+		}
+
+		return viewAttributeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.ViewAdmin} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewAdminItemProvider viewAdminItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.ViewAdmin}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewAdminAdapter() {
+		if (viewAdminItemProvider == null) {
+			viewAdminItemProvider = new ViewAdminItemProvider(this);
+		}
+
+		return viewAdminItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.RelationView} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RelationViewItemProvider relationViewItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.RelationView}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRelationViewAdapter() {
+		if (relationViewItemProvider == null) {
+			relationViewItemProvider = new RelationViewItemProvider(this);
+		}
+
+		return relationViewItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Modeluno.modeluno.Page} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PageItemProvider pageItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Modeluno.modeluno.Page}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPageAdapter() {
+		if (pageItemProvider == null) {
+			pageItemProvider = new PageItemProvider(this);
+		}
+
+		return pageItemProvider;
 	}
 
 	/**
@@ -333,11 +747,29 @@ public class ModelunoItemProviderAdapterFactory extends ModelunoAdapterFactory i
 	public void dispose() {
 		if (mapItemProvider != null) mapItemProvider.dispose();
 		if (classItemProvider != null) classItemProvider.dispose();
-		if (class_RelationItemProvider != null) class_RelationItemProvider.dispose();
+		if (relationClassItemProvider != null) relationClassItemProvider.dispose();
 		if (attributeItemProvider != null) attributeItemProvider.dispose();
-		if (attribute_RelationItemProvider != null) attribute_RelationItemProvider.dispose();
+		if (relationAttributeItemProvider != null) relationAttributeItemProvider.dispose();
 		if (attribute_Not_DerivedItemProvider != null) attribute_Not_DerivedItemProvider.dispose();
 		if (attribute_DerivedItemProvider != null) attribute_DerivedItemProvider.dispose();
+		if (serviceItemProvider != null) serviceItemProvider.dispose();
+		if (relationServiceItemProvider != null) relationServiceItemProvider.dispose();
+		if (createItemProvider != null) createItemProvider.dispose();
+		if (deleteItemProvider != null) deleteItemProvider.dispose();
+		if (updateObjectItemProvider != null) updateObjectItemProvider.dispose();
+		if (updateAttributeItemProvider != null) updateAttributeItemProvider.dispose();
+		if (listViewItemProvider != null) listViewItemProvider.dispose();
+		if (viewItemProvider != null) viewItemProvider.dispose();
+		if (adminItemProvider != null) adminItemProvider.dispose();
+		if (viewsItemProvider != null) viewsItemProvider.dispose();
+		if (viewInputItemProvider != null) viewInputItemProvider.dispose();
+		if (viewUpdateObjectItemProvider != null) viewUpdateObjectItemProvider.dispose();
+		if (viewUpdateAttributeItemProvider != null) viewUpdateAttributeItemProvider.dispose();
+		if (viewIndexItemProvider != null) viewIndexItemProvider.dispose();
+		if (viewAttributeItemProvider != null) viewAttributeItemProvider.dispose();
+		if (viewAdminItemProvider != null) viewAdminItemProvider.dispose();
+		if (relationViewItemProvider != null) relationViewItemProvider.dispose();
+		if (pageItemProvider != null) pageItemProvider.dispose();
 	}
 
 }

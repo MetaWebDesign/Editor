@@ -10,7 +10,7 @@ public class ModelunoNavigatorSorter extends ViewerSorter {
 	/**
 	 * @generated
 	 */
-	private static final int GROUP_CATEGORY = 4004;
+	private static final int GROUP_CATEGORY = 4009;
 
 	/**
 	 * @generated

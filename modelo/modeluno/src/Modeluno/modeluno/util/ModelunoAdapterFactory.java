@@ -2,13 +2,31 @@
  */
 package Modeluno.modeluno.util;
 
+import Modeluno.modeluno.Admin;
 import Modeluno.modeluno.Attribute;
 import Modeluno.modeluno.Attribute_Derived;
 import Modeluno.modeluno.Attribute_Not_Derived;
-import Modeluno.modeluno.Attribute_Relation;
-import Modeluno.modeluno.Class_Relation;
+import Modeluno.modeluno.Create;
+import Modeluno.modeluno.Delete;
+import Modeluno.modeluno.ListView;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoPackage;
+import Modeluno.modeluno.Page;
+import Modeluno.modeluno.RelationAttribute;
+import Modeluno.modeluno.RelationClass;
+import Modeluno.modeluno.RelationService;
+import Modeluno.modeluno.RelationView;
+import Modeluno.modeluno.Service;
+import Modeluno.modeluno.UpdateAttribute;
+import Modeluno.modeluno.UpdateObject;
+import Modeluno.modeluno.View;
+import Modeluno.modeluno.ViewAdmin;
+import Modeluno.modeluno.ViewAttribute;
+import Modeluno.modeluno.ViewIndex;
+import Modeluno.modeluno.ViewInput;
+import Modeluno.modeluno.ViewUpdateAttribute;
+import Modeluno.modeluno.ViewUpdateObject;
+import Modeluno.modeluno.Views;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -82,16 +100,16 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 				return createClassAdapter();
 			}
 			@Override
-			public Adapter caseClass_Relation(Class_Relation object) {
-				return createClass_RelationAdapter();
+			public Adapter caseRelationClass(RelationClass object) {
+				return createRelationClassAdapter();
 			}
 			@Override
 			public Adapter caseAttribute(Attribute object) {
 				return createAttributeAdapter();
 			}
 			@Override
-			public Adapter caseAttribute_Relation(Attribute_Relation object) {
-				return createAttribute_RelationAdapter();
+			public Adapter caseRelationAttribute(RelationAttribute object) {
+				return createRelationAttributeAdapter();
 			}
 			@Override
 			public Adapter caseAttribute_Not_Derived(Attribute_Not_Derived object) {
@@ -100,6 +118,78 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAttribute_Derived(Attribute_Derived object) {
 				return createAttribute_DerivedAdapter();
+			}
+			@Override
+			public Adapter caseService(Service object) {
+				return createServiceAdapter();
+			}
+			@Override
+			public Adapter caseRelationService(RelationService object) {
+				return createRelationServiceAdapter();
+			}
+			@Override
+			public Adapter caseCreate(Create object) {
+				return createCreateAdapter();
+			}
+			@Override
+			public Adapter caseDelete(Delete object) {
+				return createDeleteAdapter();
+			}
+			@Override
+			public Adapter caseUpdateObject(UpdateObject object) {
+				return createUpdateObjectAdapter();
+			}
+			@Override
+			public Adapter caseUpdateAttribute(UpdateAttribute object) {
+				return createUpdateAttributeAdapter();
+			}
+			@Override
+			public Adapter caseListView(ListView object) {
+				return createListViewAdapter();
+			}
+			@Override
+			public Adapter caseView(View object) {
+				return createViewAdapter();
+			}
+			@Override
+			public Adapter caseAdmin(Admin object) {
+				return createAdminAdapter();
+			}
+			@Override
+			public Adapter caseViews(Views object) {
+				return createViewsAdapter();
+			}
+			@Override
+			public Adapter caseViewInput(ViewInput object) {
+				return createViewInputAdapter();
+			}
+			@Override
+			public Adapter caseViewUpdateObject(ViewUpdateObject object) {
+				return createViewUpdateObjectAdapter();
+			}
+			@Override
+			public Adapter caseViewUpdateAttribute(ViewUpdateAttribute object) {
+				return createViewUpdateAttributeAdapter();
+			}
+			@Override
+			public Adapter caseViewIndex(ViewIndex object) {
+				return createViewIndexAdapter();
+			}
+			@Override
+			public Adapter caseViewAttribute(ViewAttribute object) {
+				return createViewAttributeAdapter();
+			}
+			@Override
+			public Adapter caseViewAdmin(ViewAdmin object) {
+				return createViewAdminAdapter();
+			}
+			@Override
+			public Adapter caseRelationView(RelationView object) {
+				return createRelationViewAdapter();
+			}
+			@Override
+			public Adapter casePage(Page object) {
+				return createPageAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -150,16 +240,16 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Class_Relation <em>Class Relation</em>}'.
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.RelationClass <em>Relation Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Modeluno.modeluno.Class_Relation
+	 * @see Modeluno.modeluno.RelationClass
 	 * @generated
 	 */
-	public Adapter createClass_RelationAdapter() {
+	public Adapter createRelationClassAdapter() {
 		return null;
 	}
 
@@ -178,16 +268,16 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Attribute_Relation <em>Attribute Relation</em>}'.
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.RelationAttribute <em>Relation Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Modeluno.modeluno.Attribute_Relation
+	 * @see Modeluno.modeluno.RelationAttribute
 	 * @generated
 	 */
-	public Adapter createAttribute_RelationAdapter() {
+	public Adapter createRelationAttributeAdapter() {
 		return null;
 	}
 
@@ -216,6 +306,258 @@ public class ModelunoAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAttribute_DerivedAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Service <em>Service</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.Service
+	 * @generated
+	 */
+	public Adapter createServiceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.RelationService <em>Relation Service</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.RelationService
+	 * @generated
+	 */
+	public Adapter createRelationServiceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Create <em>Create</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.Create
+	 * @generated
+	 */
+	public Adapter createCreateAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Delete <em>Delete</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.Delete
+	 * @generated
+	 */
+	public Adapter createDeleteAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.UpdateObject <em>Update Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.UpdateObject
+	 * @generated
+	 */
+	public Adapter createUpdateObjectAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.UpdateAttribute <em>Update Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.UpdateAttribute
+	 * @generated
+	 */
+	public Adapter createUpdateAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ListView <em>List View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ListView
+	 * @generated
+	 */
+	public Adapter createListViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.View <em>View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.View
+	 * @generated
+	 */
+	public Adapter createViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Admin <em>Admin</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.Admin
+	 * @generated
+	 */
+	public Adapter createAdminAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Views <em>Views</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.Views
+	 * @generated
+	 */
+	public Adapter createViewsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ViewInput <em>View Input</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ViewInput
+	 * @generated
+	 */
+	public Adapter createViewInputAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ViewUpdateObject <em>View Update Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ViewUpdateObject
+	 * @generated
+	 */
+	public Adapter createViewUpdateObjectAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ViewUpdateAttribute <em>View Update Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ViewUpdateAttribute
+	 * @generated
+	 */
+	public Adapter createViewUpdateAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ViewIndex <em>View Index</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ViewIndex
+	 * @generated
+	 */
+	public Adapter createViewIndexAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ViewAttribute <em>View Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ViewAttribute
+	 * @generated
+	 */
+	public Adapter createViewAttributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.ViewAdmin <em>View Admin</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.ViewAdmin
+	 * @generated
+	 */
+	public Adapter createViewAdminAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.RelationView <em>Relation View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.RelationView
+	 * @generated
+	 */
+	public Adapter createRelationViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Modeluno.modeluno.Page <em>Page</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Modeluno.modeluno.Page
+	 * @generated
+	 */
+	public Adapter createPageAdapter() {
 		return null;
 	}
 

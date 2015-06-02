@@ -5,6 +5,8 @@ package Modeluno.modeluno.impl;
 import Modeluno.modeluno.Attribute;
 import Modeluno.modeluno.Map;
 import Modeluno.modeluno.ModelunoPackage;
+import Modeluno.modeluno.Service;
+import Modeluno.modeluno.Views;
 
 import java.util.Collection;
 
@@ -29,6 +31,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link Modeluno.modeluno.impl.MapImpl#getRoot_hasClass <em>Root has Class</em>}</li>
  *   <li>{@link Modeluno.modeluno.impl.MapImpl#getRoot_hasAtributte <em>Root has Atributte</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.MapImpl#getRootHasViews <em>Root Has Views</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.MapImpl#getRoothasService <em>Roothas Service</em>}</li>
  * </ul>
  * </p>
  *
@@ -54,6 +58,26 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 	 * @ordered
 	 */
 	protected EList<Attribute> root_hasAtributte;
+
+	/**
+	 * The cached value of the '{@link #getRootHasViews() <em>Root Has Views</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRootHasViews()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Views> rootHasViews;
+
+	/**
+	 * The cached value of the '{@link #getRoothasService() <em>Roothas Service</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRoothasService()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Service> roothasService;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,6 +127,30 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Views> getRootHasViews() {
+		if (rootHasViews == null) {
+			rootHasViews = new EObjectContainmentEList<Views>(Views.class, this, ModelunoPackage.MAP__ROOT_HAS_VIEWS);
+		}
+		return rootHasViews;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Service> getRoothasService() {
+		if (roothasService == null) {
+			roothasService = new EObjectContainmentEList<Service>(Service.class, this, ModelunoPackage.MAP__ROOTHAS_SERVICE);
+		}
+		return roothasService;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -110,6 +158,10 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 				return ((InternalEList<?>)getRoot_hasClass()).basicRemove(otherEnd, msgs);
 			case ModelunoPackage.MAP__ROOT_HAS_ATRIBUTTE:
 				return ((InternalEList<?>)getRoot_hasAtributte()).basicRemove(otherEnd, msgs);
+			case ModelunoPackage.MAP__ROOT_HAS_VIEWS:
+				return ((InternalEList<?>)getRootHasViews()).basicRemove(otherEnd, msgs);
+			case ModelunoPackage.MAP__ROOTHAS_SERVICE:
+				return ((InternalEList<?>)getRoothasService()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -126,6 +178,10 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 				return getRoot_hasClass();
 			case ModelunoPackage.MAP__ROOT_HAS_ATRIBUTTE:
 				return getRoot_hasAtributte();
+			case ModelunoPackage.MAP__ROOT_HAS_VIEWS:
+				return getRootHasViews();
+			case ModelunoPackage.MAP__ROOTHAS_SERVICE:
+				return getRoothasService();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -147,6 +203,14 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 				getRoot_hasAtributte().clear();
 				getRoot_hasAtributte().addAll((Collection<? extends Attribute>)newValue);
 				return;
+			case ModelunoPackage.MAP__ROOT_HAS_VIEWS:
+				getRootHasViews().clear();
+				getRootHasViews().addAll((Collection<? extends Views>)newValue);
+				return;
+			case ModelunoPackage.MAP__ROOTHAS_SERVICE:
+				getRoothasService().clear();
+				getRoothasService().addAll((Collection<? extends Service>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -165,6 +229,12 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 			case ModelunoPackage.MAP__ROOT_HAS_ATRIBUTTE:
 				getRoot_hasAtributte().clear();
 				return;
+			case ModelunoPackage.MAP__ROOT_HAS_VIEWS:
+				getRootHasViews().clear();
+				return;
+			case ModelunoPackage.MAP__ROOTHAS_SERVICE:
+				getRoothasService().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -181,6 +251,10 @@ public class MapImpl extends MinimalEObjectImpl.Container implements Map {
 				return root_hasClass != null && !root_hasClass.isEmpty();
 			case ModelunoPackage.MAP__ROOT_HAS_ATRIBUTTE:
 				return root_hasAtributte != null && !root_hasAtributte.isEmpty();
+			case ModelunoPackage.MAP__ROOT_HAS_VIEWS:
+				return rootHasViews != null && !rootHasViews.isEmpty();
+			case ModelunoPackage.MAP__ROOTHAS_SERVICE:
+				return roothasService != null && !roothasService.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

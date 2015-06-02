@@ -20,6 +20,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Modeluno.modeluno.Class#getIdFunction <em>Id Function</em>}</li>
  *   <li>{@link Modeluno.modeluno.Class#getGoAtributteRelation <em>Go Atributte Relation</em>}</li>
  *   <li>{@link Modeluno.modeluno.Class#getHasAtributeRelation <em>Has Atribute Relation</em>}</li>
+ *   <li>{@link Modeluno.modeluno.Class#getHasServiceRelation <em>Has Service Relation</em>}</li>
+ *   <li>{@link Modeluno.modeluno.Class#getGoServiceRelation <em>Go Service Relation</em>}</li>
  * </ul>
  * </p>
  *
@@ -30,7 +32,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface Class extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Has Relation</b></em>' containment reference list.
-	 * The list contents are of type {@link Modeluno.modeluno.Class_Relation}.
+	 * The list contents are of type {@link Modeluno.modeluno.RelationClass}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Has Relation</em>' containment reference list isn't clear,
@@ -42,11 +44,11 @@ public interface Class extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Class_Relation> getHasRelation();
+	EList<RelationClass> getHasRelation();
 
 	/**
 	 * Returns the value of the '<em><b>Go Relation</b></em>' reference list.
-	 * The list contents are of type {@link Modeluno.modeluno.Class_Relation}.
+	 * The list contents are of type {@link Modeluno.modeluno.RelationClass}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Go Relation</em>' reference list isn't clear,
@@ -58,7 +60,7 @@ public interface Class extends EObject {
 	 * @model
 	 * @generated
 	 */
-	EList<Class_Relation> getGoRelation();
+	EList<RelationClass> getGoRelation();
 
 	/**
 	 * Returns the value of the '<em><b>Cname</b></em>' attribute.
@@ -121,12 +123,12 @@ public interface Class extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Go Atributte Relation</em>' reference.
-	 * @see #setGoAtributteRelation(Attribute_Relation)
+	 * @see #setGoAtributteRelation(RelationAttribute)
 	 * @see Modeluno.modeluno.ModelunoPackage#getClass_GoAtributteRelation()
 	 * @model
 	 * @generated
 	 */
-	Attribute_Relation getGoAtributteRelation();
+	RelationAttribute getGoAtributteRelation();
 
 	/**
 	 * Sets the value of the '{@link Modeluno.modeluno.Class#getGoAtributteRelation <em>Go Atributte Relation</em>}' reference.
@@ -136,11 +138,11 @@ public interface Class extends EObject {
 	 * @see #getGoAtributteRelation()
 	 * @generated
 	 */
-	void setGoAtributteRelation(Attribute_Relation value);
+	void setGoAtributteRelation(RelationAttribute value);
 
 	/**
 	 * Returns the value of the '<em><b>Has Atribute Relation</b></em>' containment reference list.
-	 * The list contents are of type {@link Modeluno.modeluno.Attribute_Relation}.
+	 * The list contents are of type {@link Modeluno.modeluno.RelationAttribute}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Has Atribute Relation</em>' containment reference list isn't clear,
@@ -152,6 +154,38 @@ public interface Class extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Attribute_Relation> getHasAtributeRelation();
+	EList<RelationAttribute> getHasAtributeRelation();
+
+	/**
+	 * Returns the value of the '<em><b>Has Service Relation</b></em>' containment reference list.
+	 * The list contents are of type {@link Modeluno.modeluno.RelationService}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Service Relation</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Service Relation</em>' containment reference list.
+	 * @see Modeluno.modeluno.ModelunoPackage#getClass_HasServiceRelation()
+	 * @model containment="true" upper="7"
+	 * @generated
+	 */
+	EList<RelationService> getHasServiceRelation();
+
+	/**
+	 * Returns the value of the '<em><b>Go Service Relation</b></em>' reference list.
+	 * The list contents are of type {@link Modeluno.modeluno.RelationService}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Go Service Relation</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Go Service Relation</em>' reference list.
+	 * @see Modeluno.modeluno.ModelunoPackage#getClass_GoServiceRelation()
+	 * @model upper="7"
+	 * @generated
+	 */
+	EList<RelationService> getGoServiceRelation();
 
 } // Class

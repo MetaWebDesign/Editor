@@ -4,6 +4,8 @@ package Modeluno.modeluno.impl;
 
 import Modeluno.modeluno.Attribute;
 import Modeluno.modeluno.ModelunoPackage;
+import Modeluno.modeluno.Rol;
+import Modeluno.modeluno.TypeAttributeForm;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,15 +21,38 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#isPrimaryKey <em>Primary Key</em>}</li>
  *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#getAname <em>Aname</em>}</li>
  *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#getDataType <em>Data Type</em>}</li>
- *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#getPermissions <em>Permissions</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#getRol <em>Rol</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#getInTheForm <em>In The Form</em>}</li>
+ *   <li>{@link Modeluno.modeluno.impl.AttributeImpl#getValor <em>Valor</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class AttributeImpl extends MinimalEObjectImpl.Container implements Attribute {
+	/**
+	 * The default value of the '{@link #isPrimaryKey() <em>Primary Key</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isPrimaryKey()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean PRIMARY_KEY_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isPrimaryKey() <em>Primary Key</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isPrimaryKey()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean primaryKey = PRIMARY_KEY_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getAname() <em>Aname</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -69,24 +94,64 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	protected String dataType = DATA_TYPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getPermissions() <em>Permissions</em>}' attribute.
+	 * The default value of the '{@link #getRol() <em>Rol</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPermissions()
+	 * @see #getRol()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String PERMISSIONS_EDEFAULT = null;
+	protected static final Rol ROL_EDEFAULT = Rol.ANONYMOUS;
 
 	/**
-	 * The cached value of the '{@link #getPermissions() <em>Permissions</em>}' attribute.
+	 * The cached value of the '{@link #getRol() <em>Rol</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPermissions()
+	 * @see #getRol()
 	 * @generated
 	 * @ordered
 	 */
-	protected String permissions = PERMISSIONS_EDEFAULT;
+	protected Rol rol = ROL_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getInTheForm() <em>In The Form</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInTheForm()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final TypeAttributeForm IN_THE_FORM_EDEFAULT = TypeAttributeForm.REQUIRED;
+
+	/**
+	 * The cached value of the '{@link #getInTheForm() <em>In The Form</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInTheForm()
+	 * @generated
+	 * @ordered
+	 */
+	protected TypeAttributeForm inTheForm = IN_THE_FORM_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getValor() <em>Valor</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValor()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALOR_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getValor() <em>Valor</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValor()
+	 * @generated
+	 * @ordered
+	 */
+	protected String valor = VALOR_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,6 +170,27 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	@Override
 	protected EClass eStaticClass() {
 		return ModelunoPackage.Literals.ATTRIBUTE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isPrimaryKey() {
+		return primaryKey;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPrimaryKey(boolean newPrimaryKey) {
+		boolean oldPrimaryKey = primaryKey;
+		primaryKey = newPrimaryKey;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE__PRIMARY_KEY, oldPrimaryKey, primaryKey));
 	}
 
 	/**
@@ -154,8 +240,8 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPermissions() {
-		return permissions;
+	public Rol getRol() {
+		return rol;
 	}
 
 	/**
@@ -163,11 +249,53 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPermissions(String newPermissions) {
-		String oldPermissions = permissions;
-		permissions = newPermissions;
+	public void setRol(Rol newRol) {
+		Rol oldRol = rol;
+		rol = newRol == null ? ROL_EDEFAULT : newRol;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE__PERMISSIONS, oldPermissions, permissions));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE__ROL, oldRol, rol));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TypeAttributeForm getInTheForm() {
+		return inTheForm;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setInTheForm(TypeAttributeForm newInTheForm) {
+		TypeAttributeForm oldInTheForm = inTheForm;
+		inTheForm = newInTheForm == null ? IN_THE_FORM_EDEFAULT : newInTheForm;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE__IN_THE_FORM, oldInTheForm, inTheForm));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getValor() {
+		return valor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setValor(String newValor) {
+		String oldValor = valor;
+		valor = newValor;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelunoPackage.ATTRIBUTE__VALOR, oldValor, valor));
 	}
 
 	/**
@@ -178,12 +306,18 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case ModelunoPackage.ATTRIBUTE__PRIMARY_KEY:
+				return isPrimaryKey();
 			case ModelunoPackage.ATTRIBUTE__ANAME:
 				return getAname();
 			case ModelunoPackage.ATTRIBUTE__DATA_TYPE:
 				return getDataType();
-			case ModelunoPackage.ATTRIBUTE__PERMISSIONS:
-				return getPermissions();
+			case ModelunoPackage.ATTRIBUTE__ROL:
+				return getRol();
+			case ModelunoPackage.ATTRIBUTE__IN_THE_FORM:
+				return getInTheForm();
+			case ModelunoPackage.ATTRIBUTE__VALOR:
+				return getValor();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -196,14 +330,23 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case ModelunoPackage.ATTRIBUTE__PRIMARY_KEY:
+				setPrimaryKey((Boolean)newValue);
+				return;
 			case ModelunoPackage.ATTRIBUTE__ANAME:
 				setAname((String)newValue);
 				return;
 			case ModelunoPackage.ATTRIBUTE__DATA_TYPE:
 				setDataType((String)newValue);
 				return;
-			case ModelunoPackage.ATTRIBUTE__PERMISSIONS:
-				setPermissions((String)newValue);
+			case ModelunoPackage.ATTRIBUTE__ROL:
+				setRol((Rol)newValue);
+				return;
+			case ModelunoPackage.ATTRIBUTE__IN_THE_FORM:
+				setInTheForm((TypeAttributeForm)newValue);
+				return;
+			case ModelunoPackage.ATTRIBUTE__VALOR:
+				setValor((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -217,14 +360,23 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case ModelunoPackage.ATTRIBUTE__PRIMARY_KEY:
+				setPrimaryKey(PRIMARY_KEY_EDEFAULT);
+				return;
 			case ModelunoPackage.ATTRIBUTE__ANAME:
 				setAname(ANAME_EDEFAULT);
 				return;
 			case ModelunoPackage.ATTRIBUTE__DATA_TYPE:
 				setDataType(DATA_TYPE_EDEFAULT);
 				return;
-			case ModelunoPackage.ATTRIBUTE__PERMISSIONS:
-				setPermissions(PERMISSIONS_EDEFAULT);
+			case ModelunoPackage.ATTRIBUTE__ROL:
+				setRol(ROL_EDEFAULT);
+				return;
+			case ModelunoPackage.ATTRIBUTE__IN_THE_FORM:
+				setInTheForm(IN_THE_FORM_EDEFAULT);
+				return;
+			case ModelunoPackage.ATTRIBUTE__VALOR:
+				setValor(VALOR_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -238,12 +390,18 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case ModelunoPackage.ATTRIBUTE__PRIMARY_KEY:
+				return primaryKey != PRIMARY_KEY_EDEFAULT;
 			case ModelunoPackage.ATTRIBUTE__ANAME:
 				return ANAME_EDEFAULT == null ? aname != null : !ANAME_EDEFAULT.equals(aname);
 			case ModelunoPackage.ATTRIBUTE__DATA_TYPE:
 				return DATA_TYPE_EDEFAULT == null ? dataType != null : !DATA_TYPE_EDEFAULT.equals(dataType);
-			case ModelunoPackage.ATTRIBUTE__PERMISSIONS:
-				return PERMISSIONS_EDEFAULT == null ? permissions != null : !PERMISSIONS_EDEFAULT.equals(permissions);
+			case ModelunoPackage.ATTRIBUTE__ROL:
+				return rol != ROL_EDEFAULT;
+			case ModelunoPackage.ATTRIBUTE__IN_THE_FORM:
+				return inTheForm != IN_THE_FORM_EDEFAULT;
+			case ModelunoPackage.ATTRIBUTE__VALOR:
+				return VALOR_EDEFAULT == null ? valor != null : !VALOR_EDEFAULT.equals(valor);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -258,12 +416,18 @@ public class AttributeImpl extends MinimalEObjectImpl.Container implements Attri
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (Aname: ");
+		result.append(" (PrimaryKey: ");
+		result.append(primaryKey);
+		result.append(", aname: ");
 		result.append(aname);
 		result.append(", dataType: ");
 		result.append(dataType);
-		result.append(", permissions: ");
-		result.append(permissions);
+		result.append(", rol: ");
+		result.append(rol);
+		result.append(", inTheForm: ");
+		result.append(inTheForm);
+		result.append(", valor: ");
+		result.append(valor);
 		result.append(')');
 		return result.toString();
 	}

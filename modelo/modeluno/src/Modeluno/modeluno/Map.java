@@ -16,6 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Modeluno.modeluno.Map#getRoot_hasClass <em>Root has Class</em>}</li>
  *   <li>{@link Modeluno.modeluno.Map#getRoot_hasAtributte <em>Root has Atributte</em>}</li>
+ *   <li>{@link Modeluno.modeluno.Map#getRootHasViews <em>Root Has Views</em>}</li>
+ *   <li>{@link Modeluno.modeluno.Map#getRoothasService <em>Roothas Service</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,5 +57,37 @@ public interface Map extends EObject {
 	 * @generated
 	 */
 	EList<Attribute> getRoot_hasAtributte();
+
+	/**
+	 * Returns the value of the '<em><b>Root Has Views</b></em>' containment reference list.
+	 * The list contents are of type {@link Modeluno.modeluno.Views}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Root Has Views</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Root Has Views</em>' containment reference list.
+	 * @see Modeluno.modeluno.ModelunoPackage#getMap_RootHasViews()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Views> getRootHasViews();
+
+	/**
+	 * Returns the value of the '<em><b>Roothas Service</b></em>' containment reference list.
+	 * The list contents are of type {@link Modeluno.modeluno.Service}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Roothas Service</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Roothas Service</em>' containment reference list.
+	 * @see Modeluno.modeluno.ModelunoPackage#getMap_RoothasService()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Service> getRoothasService();
 
 } // Map

@@ -46,8 +46,6 @@ public class Attribute_DerivedItemProvider extends AttributeItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addDerivationCommentsPropertyDescriptor(object);
-			addConditionPropertyDescriptor(object);
-			addEffectPropertyDescriptor(object);
 			addFormulaPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
@@ -67,50 +65,6 @@ public class Attribute_DerivedItemProvider extends AttributeItemProvider {
 				 getString("_UI_Attribute_Derived_derivationComments_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_Derived_derivationComments_feature", "_UI_Attribute_Derived_type"),
 				 ModelunoPackage.Literals.ATTRIBUTE_DERIVED__DERIVATION_COMMENTS,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Condition feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addConditionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Attribute_Derived_Condition_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_Derived_Condition_feature", "_UI_Attribute_Derived_type"),
-				 ModelunoPackage.Literals.ATTRIBUTE_DERIVED__CONDITION,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Effect feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addEffectPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Attribute_Derived_Effect_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_Derived_Effect_feature", "_UI_Attribute_Derived_type"),
-				 ModelunoPackage.Literals.ATTRIBUTE_DERIVED__EFFECT,
 				 true,
 				 false,
 				 false,
@@ -180,8 +134,6 @@ public class Attribute_DerivedItemProvider extends AttributeItemProvider {
 
 		switch (notification.getFeatureID(Attribute_Derived.class)) {
 			case ModelunoPackage.ATTRIBUTE_DERIVED__DERIVATION_COMMENTS:
-			case ModelunoPackage.ATTRIBUTE_DERIVED__CONDITION:
-			case ModelunoPackage.ATTRIBUTE_DERIVED__EFFECT:
 			case ModelunoPackage.ATTRIBUTE_DERIVED__FORMULA:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
