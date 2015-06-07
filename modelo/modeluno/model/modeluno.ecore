@@ -2,13 +2,13 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="modeluno" nsURI="http://modeluno/1.0" nsPrefix="modeluno">
   <eClassifiers xsi:type="ecore:EClass" name="Map">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Root_hasClass" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="class" upperBound="-1"
         eType="#//Class" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Root_hasAtributte" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atributte" upperBound="-1"
         eType="#//Attribute" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="RootHasViews" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="views" upperBound="-1"
         eType="#//Views" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="RoothasService" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="service" upperBound="-1"
         eType="#//Service" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
