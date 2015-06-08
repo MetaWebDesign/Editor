@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="modeldos" nsURI="http://modeldos/1.0" nsPrefix="modeldos">
+  <eClassifiers xsi:type="ecore:EClass" name="Root">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="class" upperBound="-1"
+        eType="#//Class" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//Attributes" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="views" upperBound="-1"
+        eType="#//Views" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentationunit" upperBound="-1"
+        eType="#//PresentationUnit" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="menu" upperBound="-1" eType="#//Menu"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="group" upperBound="-1"
+        eType="#//group" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Class">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="15"
+        eType="#//Attributes" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relationclass" upperBound="-1"
+        eType="#//Relations_Class" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goclass1" eType="#//Relations_Class"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionCreate" eType="#//TypeRol"
+        defaultValueLiteral="authenticated"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionDelete" eType="#//TypeRol"
+        defaultValueLiteral="authenticated"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionUpdate" eType="#//TypeRol"
+        defaultValueLiteral="authenticated"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionIndex" eType="#//TypeRol"
+        defaultValueLiteral="any"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionView" eType="#//TypeRol"
+        defaultValueLiteral="any"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionAdmin" eType="#//TypeRol"
+        defaultValueLiteral="admin"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="views" upperBound="4" eType="#//Views"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Relations_Class">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goclass2" eType="#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attributes">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rol" eType="#//TypeRol"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="primaryKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="#//TypeData"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inTheForm" eType="#//TypeAttributeForm"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasPresentationUnit" upperBound="-1"
+        eType="#//RelationPUnit" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goPunit1" eType="#//RelationPUnit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeRol">
+    <eLiterals name="anonymous"/>
+    <eLiterals name="authenticated" value="1"/>
+    <eLiterals name="admin" value="2"/>
+    <eLiterals name="any" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeAttributeForm">
+    <eLiterals name="required"/>
+    <eLiterals name="not_required" value="1" literal="not_required"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeData">
+    <eLiterals name="numeric"/>
+    <eLiterals name="text" value="1"/>
+    <eLiterals name="autoincremental" value="2"/>
+    <eLiterals name="img" value="3"/>
+    <eLiterals name="time" value="6"/>
+    <eLiterals name="date" value="7"/>
+    <eLiterals name="date_time" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Derived" eSuperTypes="#//Attributes">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NotDerived" eSuperTypes="#//Attributes">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Views">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viewGroup" eType="#//group"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FormCreate" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="createPresentationUnit"
+        eType="#//PresentationUnit" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FormUpdate" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="updatePresentationUnit"
+        eType="#//PresentationUnit" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ViewIndex" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rows" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ViewAdmin" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rows" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PresentationUnit">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameFeild" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentation"
+        defaultValueLiteral="text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="HorizontalPosition" eType="#//typeHorizontalPosition"
+        defaultValueLiteral="center"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="VerticalPosition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="typePresentation">
+    <eLiterals name="text"/>
+    <eLiterals name="table" value="1"/>
+    <eLiterals name="combobox" value="2"/>
+    <eLiterals name="radiobuttom" value="3"/>
+    <eLiterals name="checkbox" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Page" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rol" eType="#//TypeRol"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pagePresentationUnit" eType="#//PresentationUnit"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Menu">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasGroup" eType="#//group"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="group">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="typeHorizontalPosition">
+    <eLiterals name="left"/>
+    <eLiterals name="center" value="1"/>
+    <eLiterals name="right" value="2" literal="right"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationPUnit">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goPunit2" eType="#//PresentationUnit"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="RtoPUnit" eType="#//PresentationUnit"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

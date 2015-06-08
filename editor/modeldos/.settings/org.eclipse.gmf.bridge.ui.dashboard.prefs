@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/test/model/prueba.genmodel
+gmf_dashboard/domainModel=platform\:/resource/test/model/prueba.ecore
+gmf_dashboard/generationModel=platform\:/resource/modeldos/model/modeldos.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/modeldos/model/modeldos.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/modeldos/model/modeldos.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/modeldos/model/modeldos.gmftool
