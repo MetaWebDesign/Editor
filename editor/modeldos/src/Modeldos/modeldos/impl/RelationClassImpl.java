@@ -72,7 +72,7 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * @ordered
 	 */
 	//protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = typePresentation.STRING;
-	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = null;
+	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = typePresentation.STRING;
 
 	/**
 	 * The cached value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.

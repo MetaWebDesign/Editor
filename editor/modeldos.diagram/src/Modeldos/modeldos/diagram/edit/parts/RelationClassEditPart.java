@@ -43,9 +43,9 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart) {
-			((Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart) childEditPart)
+			/*((Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationClassRelationNameFigure());
+							.getFigureRelationClassRelationNameFigure());*/
 			return true;
 		}
 		return false;
