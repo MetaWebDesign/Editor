@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/modeldos/src" modelPluginID="modeldos" modelName="Modeldos"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>modeldos.ecore</foreignModel>
+  <genPackages prefix="Modeldos" basePackage="Modeldos" disposableProviderFactory="true"
+      ecorePackage="modeldos.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//TypeRol">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeRol/anonymous"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeRol/authenticated"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeRol/admin"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeRol/any"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//TypeAttributeForm">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeAttributeForm/required"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeAttributeForm/not_required"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//TypeData">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/numeric"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/text"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/autoincremental"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/img"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/time"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/date"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeData/date_time"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//typePresentation">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typePresentation/string"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typePresentation/table"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typePresentation/combobox"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typePresentation/radiobuttom"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typePresentation/checkbox"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typePresentation/itemList"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//typeHorizontalPosition">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typeHorizontalPosition/left"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typeHorizontalPosition/center"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//typeHorizontalPosition/right"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//TypeService">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/create"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/update_attribute"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/update_object"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/display_objects"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/display_object"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/admin"/>
+    </genEnums>
+    <genClasses ecoreClass="modeldos.ecore#//Root">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/menu"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/group"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/views"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/attributes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionCreate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionUpdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionView"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionAdmin"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/hasRelationClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/goRelationClass"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Attributes">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/rol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/valor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/primaryKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/inTheForm"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Derived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Derived/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Derived/formula"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//NotDerived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//NotDerived/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//RelationClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/relationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/typePresentation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/HorizontalPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/VerticalPosition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/fromClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/attributeGet"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/attributeReplace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/attributeSave"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Menu">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Menu/hasGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Menu/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Group">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Group/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Group/order"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Views">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Views/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Views/groupName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Views/rolView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Views/hasRelationClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Views/viewGoRelationClass"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Form">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Form/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Form/service"/>
+    </genClasses>
+    <genClasses ecoreClass="modeldos.ecore#//Page">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Page/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Page/Content"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

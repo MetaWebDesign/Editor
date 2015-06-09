@@ -16,8 +16,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="15"
         eType="#//Attributes" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionCreate" eType="#//TypeRol"
         defaultValueLiteral="authenticated"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="functionDelete" eType="#//TypeRol"
@@ -112,5 +112,21 @@
         eType="#//RelationClass" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="viewGoRelationClass" upperBound="-1"
         eType="#//RelationClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Form" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeService">
+    <eLiterals name="create"/>
+    <eLiterals name="update_attribute" value="1"/>
+    <eLiterals name="update_object" value="2"/>
+    <eLiterals name="display_objects" value="3"/>
+    <eLiterals name="display_object" value="4"/>
+    <eLiterals name="admin" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Page" eSuperTypes="#//Views">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>
