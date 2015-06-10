@@ -19,7 +19,7 @@ public interface AttributesValidator {
 
 	boolean validateName(String value);
 	boolean validateRol(TypeRol value);
-	boolean validateValor(String value);
+	boolean validateValue(String value);
 	boolean validatePrimaryKey(boolean value);
 	boolean validateDataType(TypeData value);
 	boolean validateInTheForm(TypeAttributeForm value);

@@ -4,6 +4,7 @@
  */
 package Modeldos.modeldos.validation;
 
+import Modeldos.modeldos.Group;
 import Modeldos.modeldos.RelationClass;
 import Modeldos.modeldos.TypeRol;
 
@@ -19,8 +20,8 @@ public interface ViewsValidator {
 	boolean validate();
 
 	boolean validateTitle(String value);
-	boolean validateGroupName(String value);
 	boolean validateRolView(TypeRol value);
 	boolean validateHasRelationClass(EList<RelationClass> value);
 	boolean validateViewGoRelationClass(EList<RelationClass> value);
+	boolean validateGroupName(Group value);
 }

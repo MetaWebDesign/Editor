@@ -226,25 +226,19 @@ public class ModeldosNavigatorContentProvider implements ICommonContentProvider 
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 							.getType(Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID));
+							.getType(Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+							.getType(Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
@@ -256,7 +250,13 @@ public class ModeldosNavigatorContentProvider implements ICommonContentProvider 
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+							.getType(Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+							.getType(Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
@@ -276,20 +276,41 @@ public class ModeldosNavigatorContentProvider implements ICommonContentProvider 
 			return result.toArray();
 		}
 
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID: {
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID: {
 			LinkedList<Modeldos.modeldos.diagram.navigator.ModeldosAbstractNavigatorItem> result = new LinkedList<Modeldos.modeldos.diagram.navigator.ModeldosAbstractNavigatorItem>();
 			Node sv = (Node) view;
+			Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup outgoinglinks = new Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup(
+					Modeldos.modeldos.diagram.part.Messages.NavigatorGroupName_Form_2004_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
-			connectedViews = getChildrenByType(
+			connectedViews = getOutgoingLinksByType(
 					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID));
-			connectedViews = getChildrenByType(
-					connectedViews,
+							.getType(Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID: {
+			LinkedList<Modeldos.modeldos.diagram.navigator.ModeldosAbstractNavigatorItem> result = new LinkedList<Modeldos.modeldos.diagram.navigator.ModeldosAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup outgoinglinks = new Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup(
+					Modeldos.modeldos.diagram.part.Messages.NavigatorGroupName_Page_2005_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
+							.getType(Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
 			return result.toArray();
 		}
 
@@ -299,47 +320,15 @@ public class ModeldosNavigatorContentProvider implements ICommonContentProvider 
 			Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup incominglinks = new Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup(
 					Modeldos.modeldos.diagram.part.Messages.NavigatorGroupName_Class_2006_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup outgoinglinks = new Modeldos.modeldos.diagram.navigator.ModeldosNavigatorGroup(
-					Modeldos.modeldos.diagram.part.Messages.NavigatorGroupName_Class_2006_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID));
-			connectedViews = getChildrenByType(
-					connectedViews,
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID));
-			connectedViews = getChildrenByType(
-					connectedViews,
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
 			connectedViews = getIncomingLinksByType(
 					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 							.getType(Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
 			incominglinks.addChildren(createNavigatorItems(connectedViews,
 					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
 			if (!incominglinks.isEmpty()) {
 				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
 			}
 			return result.toArray();
 		}
@@ -363,7 +352,13 @@ public class ModeldosNavigatorContentProvider implements ICommonContentProvider 
 			connectedViews = getLinksSourceByType(
 					Collections.singleton(sv),
 					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-							.getType(Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+							.getType(Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+							.getType(Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source,
 					true));
 			if (!target.isEmpty()) {

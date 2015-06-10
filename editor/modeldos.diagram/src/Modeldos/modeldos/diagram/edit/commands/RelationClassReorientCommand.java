@@ -58,7 +58,7 @@ public class RelationClassReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected boolean canReorientSource() {
-		if (!(oldEnd instanceof Modeldos.modeldos.Class && newEnd instanceof Modeldos.modeldos.Class)) {
+		if (!(oldEnd instanceof Modeldos.modeldos.Views && newEnd instanceof Modeldos.modeldos.Views)) {
 			return false;
 		}
 		if (getLink().getFromClass().size() != 1) {
@@ -78,10 +78,10 @@ public class RelationClassReorientCommand extends EditElementCommand {
 		if (!(oldEnd instanceof Modeldos.modeldos.Class && newEnd instanceof Modeldos.modeldos.Class)) {
 			return false;
 		}
-		if (!(getLink().eContainer() instanceof Modeldos.modeldos.Class)) {
+		if (!(getLink().eContainer() instanceof Modeldos.modeldos.Views)) {
 			return false;
 		}
-		Modeldos.modeldos.Class source = (Modeldos.modeldos.Class) getLink()
+		Modeldos.modeldos.Views source = (Modeldos.modeldos.Views) getLink()
 				.eContainer();
 		return Modeldos.modeldos.diagram.edit.policies.ModeldosBaseItemSemanticEditPolicy
 				.getLinkConstraints().canExistRelationClass_4001(getLink(),
@@ -134,15 +134,15 @@ public class RelationClassReorientCommand extends EditElementCommand {
 	/**
 	 * @generated
 	 */
-	protected Modeldos.modeldos.Class getOldSource() {
-		return (Modeldos.modeldos.Class) oldEnd;
+	protected Modeldos.modeldos.Views getOldSource() {
+		return (Modeldos.modeldos.Views) oldEnd;
 	}
 
 	/**
 	 * @generated
 	 */
-	protected Modeldos.modeldos.Class getNewSource() {
-		return (Modeldos.modeldos.Class) newEnd;
+	protected Modeldos.modeldos.Views getNewSource() {
+		return (Modeldos.modeldos.Views) newEnd;
 	}
 
 	/**

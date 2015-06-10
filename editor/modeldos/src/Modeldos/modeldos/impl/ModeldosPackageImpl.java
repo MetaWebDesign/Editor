@@ -284,7 +284,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClass_Attributes() {
+	public EReference getClass_HasAttributes() {
 		return (EReference)classEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -383,6 +383,15 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getClass_HasView() {
+		return (EReference)classEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAttributes() {
 		return attributesEClass;
 	}
@@ -410,7 +419,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAttributes_Valor() {
+	public EAttribute getAttributes_Value() {
 		return (EAttribute)attributesEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -500,7 +509,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelationClass_RelationName() {
+	public EAttribute getRelationClass_Name() {
 		return (EAttribute)relationClassEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -518,7 +527,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelationClass_HorizontalPosition() {
+	public EAttribute getRelationClass_PositionHorizotal() {
 		return (EAttribute)relationClassEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -527,7 +536,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelationClass_VerticalPosition() {
+	public EAttribute getRelationClass_PositionVertical() {
 		return (EAttribute)relationClassEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -590,7 +599,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMenu_Nombre() {
+	public EAttribute getMenu_Name() {
 		return (EAttribute)menuEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -608,7 +617,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGroup_Nombre() {
+	public EAttribute getGroup_Name() {
 		return (EAttribute)groupEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -644,7 +653,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getViews_GroupName() {
+	public EAttribute getViews_RolView() {
 		return (EAttribute)viewsEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -653,17 +662,8 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getViews_RolView() {
-		return (EAttribute)viewsEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getViews_HasRelationClass() {
-		return (EReference)viewsEClass.getEStructuralFeatures().get(3);
+		return (EReference)viewsEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -672,6 +672,15 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * @generated
 	 */
 	public EReference getViews_ViewGoRelationClass() {
+		return (EReference)viewsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getViews_GroupName() {
 		return (EReference)viewsEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -716,17 +725,8 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPage_Name() {
-		return (EAttribute)pageEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getPage_Content() {
-		return (EAttribute)pageEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)pageEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -819,7 +819,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		createEReference(rootEClass, ROOT__VIEWS);
 
 		classEClass = createEClass(CLASS);
-		createEReference(classEClass, CLASS__ATTRIBUTES);
+		createEReference(classEClass, CLASS__HAS_ATTRIBUTES);
 		createEAttribute(classEClass, CLASS__NAME);
 		createEAttribute(classEClass, CLASS__ID);
 		createEAttribute(classEClass, CLASS__FUNCTION_CREATE);
@@ -830,11 +830,12 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		createEAttribute(classEClass, CLASS__FUNCTION_ADMIN);
 		createEReference(classEClass, CLASS__HAS_RELATION_CLASS);
 		createEReference(classEClass, CLASS__GO_RELATION_CLASS);
+		createEReference(classEClass, CLASS__HAS_VIEW);
 
 		attributesEClass = createEClass(ATTRIBUTES);
 		createEAttribute(attributesEClass, ATTRIBUTES__NAME);
 		createEAttribute(attributesEClass, ATTRIBUTES__ROL);
-		createEAttribute(attributesEClass, ATTRIBUTES__VALOR);
+		createEAttribute(attributesEClass, ATTRIBUTES__VALUE);
 		createEAttribute(attributesEClass, ATTRIBUTES__PRIMARY_KEY);
 		createEAttribute(attributesEClass, ATTRIBUTES__DATA_TYPE);
 		createEAttribute(attributesEClass, ATTRIBUTES__IN_THE_FORM);
@@ -847,10 +848,10 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		createEAttribute(notDerivedEClass, NOT_DERIVED__DEFAULT_VALUE);
 
 		relationClassEClass = createEClass(RELATION_CLASS);
-		createEAttribute(relationClassEClass, RELATION_CLASS__RELATION_NAME);
+		createEAttribute(relationClassEClass, RELATION_CLASS__NAME);
 		createEAttribute(relationClassEClass, RELATION_CLASS__TYPE_PRESENTATION);
-		createEAttribute(relationClassEClass, RELATION_CLASS__HORIZONTAL_POSITION);
-		createEAttribute(relationClassEClass, RELATION_CLASS__VERTICAL_POSITION);
+		createEAttribute(relationClassEClass, RELATION_CLASS__POSITION_HORIZOTAL);
+		createEAttribute(relationClassEClass, RELATION_CLASS__POSITION_VERTICAL);
 		createEReference(relationClassEClass, RELATION_CLASS__FROM_CLASS);
 		createEReference(relationClassEClass, RELATION_CLASS__ATTRIBUTE_GET);
 		createEReference(relationClassEClass, RELATION_CLASS__ATTRIBUTE_REPLACE);
@@ -858,25 +859,24 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 
 		menuEClass = createEClass(MENU);
 		createEReference(menuEClass, MENU__HAS_GROUP);
-		createEAttribute(menuEClass, MENU__NOMBRE);
+		createEAttribute(menuEClass, MENU__NAME);
 
 		groupEClass = createEClass(GROUP);
-		createEAttribute(groupEClass, GROUP__NOMBRE);
+		createEAttribute(groupEClass, GROUP__NAME);
 		createEAttribute(groupEClass, GROUP__ORDER);
 
 		viewsEClass = createEClass(VIEWS);
 		createEAttribute(viewsEClass, VIEWS__TITLE);
-		createEAttribute(viewsEClass, VIEWS__GROUP_NAME);
 		createEAttribute(viewsEClass, VIEWS__ROL_VIEW);
 		createEReference(viewsEClass, VIEWS__HAS_RELATION_CLASS);
 		createEReference(viewsEClass, VIEWS__VIEW_GO_RELATION_CLASS);
+		createEReference(viewsEClass, VIEWS__GROUP_NAME);
 
 		formEClass = createEClass(FORM);
 		createEAttribute(formEClass, FORM__NAME);
 		createEAttribute(formEClass, FORM__SERVICE);
 
 		pageEClass = createEClass(PAGE);
-		createEAttribute(pageEClass, PAGE__NAME);
 		createEAttribute(pageEClass, PAGE__CONTENT);
 
 		// Create enums
@@ -930,7 +930,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		initEReference(getRoot_Views(), this.getViews(), null, "views", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classEClass, Modeldos.modeldos.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getClass_Attributes(), this.getAttributes(), null, "attributes", null, 0, 15, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClass_HasAttributes(), this.getAttributes(), null, "hasAttributes", null, 0, 15, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClass_Name(), ecorePackage.getEString(), "name", null, 0, 1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClass_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClass_FunctionCreate(), this.getTypeRol(), "functionCreate", "authenticated", 0, 1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -941,11 +941,12 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		initEAttribute(getClass_FunctionAdmin(), this.getTypeRol(), "functionAdmin", "admin", 0, 1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_HasRelationClass(), this.getRelationClass(), null, "hasRelationClass", null, 0, -1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_GoRelationClass(), this.getRelationClass(), null, "goRelationClass", null, 0, -1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClass_HasView(), this.getViews(), null, "hasView", null, 0, 1, Modeldos.modeldos.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributesEClass, Attributes.class, "Attributes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAttributes_Name(), ecorePackage.getEString(), "name", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributes_Rol(), this.getTypeRol(), "rol", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAttributes_Valor(), ecorePackage.getEString(), "valor", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttributes_Value(), ecorePackage.getEString(), "value", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributes_PrimaryKey(), ecorePackage.getEBoolean(), "primaryKey", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributes_DataType(), this.getTypeData(), "dataType", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributes_InTheForm(), this.getTypeAttributeForm(), "inTheForm", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -958,10 +959,10 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		initEAttribute(getNotDerived_DefaultValue(), ecorePackage.getEString(), "defaultValue", null, 0, 1, NotDerived.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(relationClassEClass, RelationClass.class, "RelationClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getRelationClass_RelationName(), ecorePackage.getEString(), "relationName", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRelationClass_Name(), ecorePackage.getEString(), "name", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRelationClass_TypePresentation(), this.gettypePresentation(), "typePresentation", "string", 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationClass_HorizontalPosition(), this.gettypeHorizontalPosition(), "HorizontalPosition", "center", 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationClass_VerticalPosition(), ecorePackage.getEInt(), "VerticalPosition", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRelationClass_PositionHorizotal(), this.gettypeHorizontalPosition(), "positionHorizotal", "center", 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRelationClass_PositionVertical(), ecorePackage.getEInt(), "positionVertical", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRelationClass_FromClass(), this.getClass_(), null, "fromClass", null, 0, -1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRelationClass_AttributeGet(), this.getAttributes(), null, "attributeGet", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRelationClass_AttributeReplace(), this.getAttributes(), null, "attributeReplace", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -969,25 +970,24 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 
 		initEClass(menuEClass, Menu.class, "Menu", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMenu_HasGroup(), this.getGroup(), null, "hasGroup", null, 0, -1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getMenu_Nombre(), ecorePackage.getEString(), "nombre", null, 0, 1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMenu_Name(), ecorePackage.getEString(), "name", null, 0, 1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getGroup_Nombre(), ecorePackage.getEString(), "nombre", null, 0, 1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGroup_Name(), ecorePackage.getEString(), "name", null, 0, 1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGroup_Order(), ecorePackage.getEInt(), "order", null, 0, 1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(viewsEClass, Views.class, "Views", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getViews_Title(), ecorePackage.getEString(), "title", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getViews_GroupName(), ecorePackage.getEString(), "groupName", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getViews_RolView(), this.getTypeRol(), "rolView", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getViews_HasRelationClass(), this.getRelationClass(), null, "hasRelationClass", null, 0, -1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getViews_ViewGoRelationClass(), this.getRelationClass(), null, "viewGoRelationClass", null, 0, -1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getViews_GroupName(), this.getGroup(), null, "groupName", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(formEClass, Form.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getForm_Name(), ecorePackage.getEString(), "name", null, 0, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getForm_Service(), this.getTypeService(), "service", null, 0, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pageEClass, Page.class, "Page", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPage_Name(), ecorePackage.getEString(), "name", null, 0, 1, Page.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPage_Content(), ecorePackage.getEString(), "Content", null, 0, 1, Page.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals

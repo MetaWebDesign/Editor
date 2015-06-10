@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Modeldos.modeldos.impl.GroupImpl#getNombre <em>Nombre</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.GroupImpl#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.GroupImpl#getOrder <em>Order</em>}</li>
  * </ul>
  * </p>
@@ -28,24 +28,24 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	/**
-	 * The default value of the '{@link #getNombre() <em>Nombre</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNombre()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NOMBRE_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getNombre() <em>Nombre</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNombre()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String nombre = NOMBRE_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getOrder() <em>Order</em>}' attribute.
@@ -91,8 +91,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getNombre() {
-		return nombre;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -100,11 +100,11 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNombre(String newNombre) {
-		String oldNombre = nombre;
-		nombre = newNombre;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.GROUP__NOMBRE, oldNombre, nombre));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.GROUP__NAME, oldName, name));
 	}
 
 	/**
@@ -136,8 +136,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ModeldosPackage.GROUP__NOMBRE:
-				return getNombre();
+			case ModeldosPackage.GROUP__NAME:
+				return getName();
 			case ModeldosPackage.GROUP__ORDER:
 				return getOrder();
 		}
@@ -152,8 +152,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ModeldosPackage.GROUP__NOMBRE:
-				setNombre((String)newValue);
+			case ModeldosPackage.GROUP__NAME:
+				setName((String)newValue);
 				return;
 			case ModeldosPackage.GROUP__ORDER:
 				setOrder((Integer)newValue);
@@ -170,8 +170,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ModeldosPackage.GROUP__NOMBRE:
-				setNombre(NOMBRE_EDEFAULT);
+			case ModeldosPackage.GROUP__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 			case ModeldosPackage.GROUP__ORDER:
 				setOrder(ORDER_EDEFAULT);
@@ -188,8 +188,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ModeldosPackage.GROUP__NOMBRE:
-				return NOMBRE_EDEFAULT == null ? nombre != null : !NOMBRE_EDEFAULT.equals(nombre);
+			case ModeldosPackage.GROUP__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ModeldosPackage.GROUP__ORDER:
 				return order != ORDER_EDEFAULT;
 		}
@@ -206,8 +206,8 @@ public class GroupImpl extends MinimalEObjectImpl.Container implements Group {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (nombre: ");
-		result.append(nombre);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(", order: ");
 		result.append(order);
 		result.append(')');

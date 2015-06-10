@@ -18,12 +18,12 @@ public class ModeldosModelingAssistantProviderOfRootEditPart extends
 	@Override
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
 		List<IElementType> types = new ArrayList<IElementType>(7);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002);
 		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005);
 		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002);
 		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007);
 		return types;
 	}

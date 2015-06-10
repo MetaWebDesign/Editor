@@ -61,19 +61,19 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 			myFeaturesToSynchronize = new HashSet<EStructuralFeature>();
 			myFeaturesToSynchronize
 					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
-							.getRoot_Menu());
-			myFeaturesToSynchronize
-					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
-							.getRoot_Group());
-			myFeaturesToSynchronize
-					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
 							.getRoot_Attribute());
+			myFeaturesToSynchronize
+					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
+							.getRoot_Class());
+			myFeaturesToSynchronize
+					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
+							.getRoot_Menu());
 			myFeaturesToSynchronize
 					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
 							.getRoot_Views());
 			myFeaturesToSynchronize
 					.add(Modeldos.modeldos.ModeldosPackage.eINSTANCE
-							.getRoot_Class());
+							.getRoot_Group());
 		}
 		return myFeaturesToSynchronize;
 	}
@@ -109,12 +109,12 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 		int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 				.getVisualID(view);
 		switch (visualID) {
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return true;
 		}
@@ -279,42 +279,10 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getMenu_2001ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getGroup_2002ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
 						.getNotDerived_2003ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getForm_2004ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getPage_2005ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -327,34 +295,42 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
+						.getMenu_2001ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
+						.getPage_2005ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
+						.getForm_2004ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
+						.getGroup_2002ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
 						.getDerived_2007ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getGroup_3001ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getNotDerived_3002ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Modeldos.modeldos.diagram.part.ModeldosDiagramUpdater
-						.getDerived_3003ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

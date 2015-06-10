@@ -12,18 +12,14 @@ import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
 import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
-import org.eclipse.gmf.runtime.diagram.core.edithelpers.CreateElementRequestAdapter;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
-import org.eclipse.gmf.runtime.diagram.ui.requests.CreateViewAndElementRequest;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
-import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
-import org.eclipse.gmf.tooling.runtime.edit.policies.reparent.CreationEditPolicyWithCustomReparent;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -57,10 +53,6 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected void createDefaultEditPolicies() {
-		installEditPolicy(
-				EditPolicyRoles.CREATION_ROLE,
-				new CreationEditPolicyWithCustomReparent(
-						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry.TYPED_INSTANCE));
 		super.createDefaultEditPolicies();
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
@@ -114,16 +106,9 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart) {
-			((Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart) childEditPart)
-					.setLabel(getPrimaryShape().getFigureMenuNombreFigure());
-			return true;
-		}
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajaGrupo();
-			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart) childEditPart)
-					.getFigure());
+		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart) {
+			((Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart) childEditPart)
+					.setLabel(getPrimaryShape().getFigureMenuNameFigure());
 			return true;
 		}
 		return false;
@@ -133,13 +118,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart) {
-			return true;
-		}
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajaGrupo();
-			pane.remove(((Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart) childEditPart)
-					.getFigure());
+		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart) {
 			return true;
 		}
 		return false;
@@ -169,9 +148,6 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart) {
-			return getPrimaryShape().getFigureCajaGrupo();
-		}
 		return getContentPane();
 	}
 
@@ -266,25 +242,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 */
 	public EditPart getPrimaryChildEditPart() {
 		return getChildBySemanticHint(Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-				.getType(Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart.VISUAL_ID));
-	}
-
-	/**
-	 * @generated
-	 */
-	public EditPart getTargetEditPart(Request request) {
-		if (request instanceof CreateViewAndElementRequest) {
-			CreateElementRequestAdapter adapter = ((CreateViewAndElementRequest) request)
-					.getViewAndElementDescriptor()
-					.getCreateElementRequestAdapter();
-			IElementType type = (IElementType) adapter
-					.getAdapter(IElementType.class);
-			if (type == Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3001) {
-				return getChildBySemanticHint(Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-						.getType(Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID));
-			}
-		}
-		return super.getTargetEditPart(request);
+				.getType(Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
 	}
 
 	/**
@@ -295,11 +253,11 @@ public class MenuEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureMenuNombreFigure;
+		private WrappingLabel fFigureMenuNameFigure;
 		/**
 		 * @generated
 		 */
-		private RectangleFigure fFigureCajaGrupo;
+		private RectangleFigure fFigureCajonGrupo;
 
 		/**
 		 * @generated
@@ -317,30 +275,30 @@ public class MenuEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			fFigureMenuNombreFigure = new WrappingLabel();
+			fFigureMenuNameFigure = new WrappingLabel();
 
-			fFigureMenuNombreFigure.setText("<...>");
+			fFigureMenuNameFigure.setText("<...>");
 
-			this.add(fFigureMenuNombreFigure, BorderLayout.TOP);
+			this.add(fFigureMenuNameFigure, BorderLayout.TOP);
 
-			fFigureCajaGrupo = new RectangleFigure();
+			fFigureCajonGrupo = new RectangleFigure();
 
-			this.add(fFigureCajaGrupo, BorderLayout.CENTER);
+			this.add(fFigureCajonGrupo, BorderLayout.CENTER);
 
 		}
 
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureMenuNombreFigure() {
-			return fFigureMenuNombreFigure;
+		public WrappingLabel getFigureMenuNameFigure() {
+			return fFigureMenuNameFigure;
 		}
 
 		/**
 		 * @generated
 		 */
-		public RectangleFigure getFigureCajaGrupo() {
-			return fFigureCajaGrupo;
+		public RectangleFigure getFigureCajonGrupo() {
+			return fFigureCajonGrupo;
 		}
 
 	}

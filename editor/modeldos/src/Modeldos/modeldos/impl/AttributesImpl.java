@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#getRol <em>Rol</em>}</li>
- *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#getValor <em>Valor</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#getValue <em>Value</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#isPrimaryKey <em>Primary Key</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#getDataType <em>Data Type</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.AttributesImpl#getInTheForm <em>In The Form</em>}</li>
@@ -75,24 +75,24 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 	protected TypeRol rol = ROL_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getValor() <em>Valor</em>}' attribute.
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValor()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALOR_EDEFAULT = null;
+	protected static final String VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValor() <em>Valor</em>}' attribute.
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValor()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected String valor = VALOR_EDEFAULT;
+	protected String value = VALUE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #isPrimaryKey() <em>Primary Key</em>}' attribute.
@@ -220,8 +220,8 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValor() {
-		return valor;
+	public String getValue() {
+		return value;
 	}
 
 	/**
@@ -229,11 +229,11 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValor(String newValor) {
-		String oldValor = valor;
-		valor = newValor;
+	public void setValue(String newValue) {
+		String oldValue = value;
+		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.ATTRIBUTES__VALOR, oldValor, valor));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.ATTRIBUTES__VALUE, oldValue, value));
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 				return getName();
 			case ModeldosPackage.ATTRIBUTES__ROL:
 				return getRol();
-			case ModeldosPackage.ATTRIBUTES__VALOR:
-				return getValor();
+			case ModeldosPackage.ATTRIBUTES__VALUE:
+				return getValue();
 			case ModeldosPackage.ATTRIBUTES__PRIMARY_KEY:
 				return isPrimaryKey();
 			case ModeldosPackage.ATTRIBUTES__DATA_TYPE:
@@ -337,8 +337,8 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 			case ModeldosPackage.ATTRIBUTES__ROL:
 				setRol((TypeRol)newValue);
 				return;
-			case ModeldosPackage.ATTRIBUTES__VALOR:
-				setValor((String)newValue);
+			case ModeldosPackage.ATTRIBUTES__VALUE:
+				setValue((String)newValue);
 				return;
 			case ModeldosPackage.ATTRIBUTES__PRIMARY_KEY:
 				setPrimaryKey((Boolean)newValue);
@@ -367,8 +367,8 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 			case ModeldosPackage.ATTRIBUTES__ROL:
 				setRol(ROL_EDEFAULT);
 				return;
-			case ModeldosPackage.ATTRIBUTES__VALOR:
-				setValor(VALOR_EDEFAULT);
+			case ModeldosPackage.ATTRIBUTES__VALUE:
+				setValue(VALUE_EDEFAULT);
 				return;
 			case ModeldosPackage.ATTRIBUTES__PRIMARY_KEY:
 				setPrimaryKey(PRIMARY_KEY_EDEFAULT);
@@ -395,8 +395,8 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ModeldosPackage.ATTRIBUTES__ROL:
 				return rol != ROL_EDEFAULT;
-			case ModeldosPackage.ATTRIBUTES__VALOR:
-				return VALOR_EDEFAULT == null ? valor != null : !VALOR_EDEFAULT.equals(valor);
+			case ModeldosPackage.ATTRIBUTES__VALUE:
+				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case ModeldosPackage.ATTRIBUTES__PRIMARY_KEY:
 				return primaryKey != PRIMARY_KEY_EDEFAULT;
 			case ModeldosPackage.ATTRIBUTES__DATA_TYPE:
@@ -421,8 +421,8 @@ public class AttributesImpl extends MinimalEObjectImpl.Container implements Attr
 		result.append(name);
 		result.append(", rol: ");
 		result.append(rol);
-		result.append(", valor: ");
-		result.append(valor);
+		result.append(", value: ");
+		result.append(value);
 		result.append(", primaryKey: ");
 		result.append(primaryKey);
 		result.append(", dataType: ");

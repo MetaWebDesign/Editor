@@ -19,10 +19,10 @@ import org.eclipse.emf.common.util.EList;
 public interface RelationClassValidator {
 	boolean validate();
 
-	boolean validateRelationName(String value);
+	boolean validateName(String value);
 	boolean validateTypePresentation(typePresentation value);
-	boolean validateHorizontalPosition(typeHorizontalPosition value);
-	boolean validateVerticalPosition(int value);
+	boolean validatePositionHorizotal(typeHorizontalPosition value);
+	boolean validatePositionVertical(int value);
 	boolean validateFromClass(EList<Modeldos.modeldos.Class> value);
 	boolean validateAttributeGet(Attributes value);
 	boolean validateAttributeReplace(Attributes value);

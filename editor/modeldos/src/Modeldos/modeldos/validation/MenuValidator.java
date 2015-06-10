@@ -18,5 +18,5 @@ public interface MenuValidator {
 	boolean validate();
 
 	boolean validateHasGroup(EList<Group> value);
-	boolean validateNombre(String value);
+	boolean validateName(String value);
 }

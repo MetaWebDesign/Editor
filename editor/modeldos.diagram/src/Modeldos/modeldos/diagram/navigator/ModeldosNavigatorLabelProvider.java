@@ -101,15 +101,6 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?http://modeldos/1.0?Derived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Node?http://modeldos/1.0?Group", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3001); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Node?http://modeldos/1.0?NotDerived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3002); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Node?http://modeldos/1.0?Derived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3003); //$NON-NLS-1$
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?Link?http://modeldos/1.0?RelationClass", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.RelationClass_4001); //$NON-NLS-1$
@@ -185,12 +176,6 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 			return getClass_2006Text(view);
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return getDerived_2007Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			return getGroup_3001Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3002Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3003Text(view);
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getRelationClass_4001Text(view);
 		}
@@ -213,7 +198,7 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -235,7 +220,7 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.GroupNombreEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -361,79 +346,13 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getGroup_3001Text(View view) {
-		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
-				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3001,
-						view.getElement() != null ? view.getElement() : view,
-						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.GroupNombre2EditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
-					.getInstance().logError(
-							"Parser was not found for label " + 5001); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getNotDerived_3002Text(View view) {
-		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
-				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3002,
-						view.getElement() != null ? view.getElement() : view,
-						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
-					.getInstance().logError(
-							"Parser was not found for label " + 5007); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getDerived_3003Text(View view) {
-		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
-				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3003,
-						view.getElement() != null ? view.getElement() : view,
-						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
-					.getInstance().logError(
-							"Parser was not found for label " + 5008); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
 	private String getRelationClass_4001Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
 						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.RelationClass_4001,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),

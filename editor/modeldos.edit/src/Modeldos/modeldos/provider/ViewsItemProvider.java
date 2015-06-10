@@ -64,9 +64,9 @@ public class ViewsItemProvider
 			super.getPropertyDescriptors(object);
 
 			addTitlePropertyDescriptor(object);
-			addGroupNamePropertyDescriptor(object);
 			addRolViewPropertyDescriptor(object);
 			addViewGoRelationClassPropertyDescriptor(object);
+			addGroupNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -85,28 +85,6 @@ public class ViewsItemProvider
 				 getString("_UI_Views_title_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Views_title_feature", "_UI_Views_type"),
 				 ModeldosPackage.Literals.VIEWS__TITLE,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Group Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGroupNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Views_groupName_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Views_groupName_feature", "_UI_Views_type"),
-				 ModeldosPackage.Literals.VIEWS__GROUP_NAME,
 				 true,
 				 false,
 				 false,
@@ -151,6 +129,28 @@ public class ViewsItemProvider
 				 getString("_UI_Views_viewGoRelationClass_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Views_viewGoRelationClass_feature", "_UI_Views_type"),
 				 ModeldosPackage.Literals.VIEWS__VIEW_GO_RELATION_CLASS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Group Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addGroupNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Views_groupName_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Views_groupName_feature", "_UI_Views_type"),
+				 ModeldosPackage.Literals.VIEWS__GROUP_NAME,
 				 true,
 				 false,
 				 true,
@@ -208,7 +208,7 @@ public class ViewsItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Views)object).getGroupName();
+		String label = ((Views)object).getTitle();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Views_type") :
 			getString("_UI_Views_type") + " " + label;
@@ -228,7 +228,6 @@ public class ViewsItemProvider
 
 		switch (notification.getFeatureID(Views.class)) {
 			case ModeldosPackage.VIEWS__TITLE:
-			case ModeldosPackage.VIEWS__GROUP_NAME:
 			case ModeldosPackage.VIEWS__ROL_VIEW:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;

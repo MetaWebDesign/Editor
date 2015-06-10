@@ -42,10 +42,10 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 * @generated
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart) {
-			/*((Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart) childEditPart)
+		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.RelationClassNameEditPart) {
+			/*((Modeldos.modeldos.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationClassRelationNameFigure());*/
+							.getFigureRelationClassNameFigure());*/
 			return true;
 		}
 		return false;
@@ -65,7 +65,7 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 * @generated
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart) {
+		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.RelationClassNameEditPart) {
 			return true;
 		}
 		return false;
@@ -91,25 +91,25 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 */
 
 	protected Connection createConnectionFigure() {
-		return new ClassGoRelationClassFigure();
+		return new ClassHasRelationClassFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public ClassGoRelationClassFigure getPrimaryShape() {
-		return (ClassGoRelationClassFigure) getFigure();
+	public ClassHasRelationClassFigure getPrimaryShape() {
+		return (ClassHasRelationClassFigure) getFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public class ClassGoRelationClassFigure extends PolylineConnectionEx {
+	public class ClassHasRelationClassFigure extends PolylineConnectionEx {
 
 		/**
 		 * @generated
 		 */
-		public ClassGoRelationClassFigure() {
+		public ClassHasRelationClassFigure() {
 
 			setTargetDecoration(createTargetDecoration());
 		}

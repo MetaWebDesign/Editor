@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Modeldos.modeldos.Class#getAttributes <em>Attributes</em>}</li>
+ *   <li>{@link Modeldos.modeldos.Class#getHasAttributes <em>Has Attributes</em>}</li>
  *   <li>{@link Modeldos.modeldos.Class#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.Class#getId <em>Id</em>}</li>
  *   <li>{@link Modeldos.modeldos.Class#getFunctionCreate <em>Function Create</em>}</li>
@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Modeldos.modeldos.Class#getFunctionAdmin <em>Function Admin</em>}</li>
  *   <li>{@link Modeldos.modeldos.Class#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Modeldos.modeldos.Class#getGoRelationClass <em>Go Relation Class</em>}</li>
+ *   <li>{@link Modeldos.modeldos.Class#getHasView <em>Has View</em>}</li>
  * </ul>
  * </p>
  *
@@ -34,20 +35,20 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Class extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Attributes</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Has Attributes</b></em>' containment reference list.
 	 * The list contents are of type {@link Modeldos.modeldos.Attributes}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Attributes</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Has Attributes</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Attributes</em>' containment reference list.
-	 * @see Modeldos.modeldos.ModeldosPackage#getClass_Attributes()
+	 * @return the value of the '<em>Has Attributes</em>' containment reference list.
+	 * @see Modeldos.modeldos.ModeldosPackage#getClass_HasAttributes()
 	 * @model containment="true" upper="15"
 	 * @generated
 	 */
-	EList<Attributes> getAttributes();
+	EList<Attributes> getHasAttributes();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -312,5 +313,31 @@ public interface Class extends EObject {
 	 * @generated
 	 */
 	EList<RelationClass> getGoRelationClass();
+
+	/**
+	 * Returns the value of the '<em><b>Has View</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has View</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has View</em>' containment reference.
+	 * @see #setHasView(Views)
+	 * @see Modeldos.modeldos.ModeldosPackage#getClass_HasView()
+	 * @model containment="true"
+	 * @generated
+	 */
+	Views getHasView();
+
+	/**
+	 * Sets the value of the '{@link Modeldos.modeldos.Class#getHasView <em>Has View</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Has View</em>' containment reference.
+	 * @see #getHasView()
+	 * @generated
+	 */
+	void setHasView(Views value);
 
 } // Class

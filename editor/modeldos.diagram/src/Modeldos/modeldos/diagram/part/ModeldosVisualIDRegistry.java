@@ -119,49 +119,33 @@ public class ModeldosVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getMenu()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID;
-			}
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getGroup()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID;
-			}
 			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getNotDerived()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID;
-			}
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getForm()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID;
-			}
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getPage()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID;
 			}
 			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getClass_()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID;
 			}
+			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getMenu()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID;
+			}
+			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getPage()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID;
+			}
+			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getForm()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID;
+			}
+			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getGroup()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID;
+			}
 			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getDerived()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getGroup()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getNotDerived()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID;
-			}
-			if (Modeldos.modeldos.ModeldosPackage.eINSTANCE.getDerived()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -192,38 +176,25 @@ public class ModeldosVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
 			if (Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.GroupNombreEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -232,8 +203,13 @@ public class ModeldosVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.FormTitleEditPart.VISUAL_ID == nodeVisualID) {
+		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+			if (Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			if (Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -242,11 +218,13 @@ public class ModeldosVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID == nodeVisualID) {
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			if (Modeldos.modeldos.diagram.edit.parts.FormTitleEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID == nodeVisualID) {
+			break;
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			if (Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -255,36 +233,8 @@ public class ModeldosVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.GroupNombre2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			if (Modeldos.modeldos.diagram.edit.parts.RelationClassRelationNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (Modeldos.modeldos.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -333,13 +283,6 @@ public class ModeldosVisualIDRegistry {
 	 * @generated
 	 */
 	public static boolean isCompartmentVisualID(int visualID) {
-		switch (visualID) {
-		case Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID:
-			return true;
-		default:
-			break;
-		}
 		return false;
 	}
 
@@ -350,14 +293,13 @@ public class ModeldosVisualIDRegistry {
 		switch (visualID) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return false;
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

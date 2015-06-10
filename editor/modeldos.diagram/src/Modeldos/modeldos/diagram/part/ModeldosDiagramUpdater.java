@@ -27,10 +27,6 @@ public class ModeldosDiagramUpdater {
 				.getVisualID(view)) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return getRoot_1000SemanticChildren(view);
-		case Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuFCajaEditPart.VISUAL_ID:
-			return getMenuGrupoInMenuFCaja_7001SemanticChildren(view);
-		case Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID:
-			return getClassAttributeInClassCaja_7002SemanticChildren(view);
 		}
 		return Collections.emptyList();
 	}
@@ -46,28 +42,6 @@ public class ModeldosDiagramUpdater {
 		Modeldos.modeldos.Root modelElement = (Modeldos.modeldos.Root) view
 				.getElement();
 		LinkedList<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor>();
-		for (Iterator<?> it = modelElement.getMenu().iterator(); it.hasNext();) {
-			Modeldos.modeldos.Menu childElement = (Modeldos.modeldos.Menu) it
-					.next();
-			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID) {
-				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getGroup().iterator(); it.hasNext();) {
-			Modeldos.modeldos.Group childElement = (Modeldos.modeldos.Group) it
-					.next();
-			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID) {
-				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
 		for (Iterator<?> it = modelElement.getAttribute().iterator(); it
 				.hasNext();) {
 			Modeldos.modeldos.Attributes childElement = (Modeldos.modeldos.Attributes) it
@@ -85,22 +59,6 @@ public class ModeldosDiagramUpdater {
 				continue;
 			}
 		}
-		for (Iterator<?> it = modelElement.getViews().iterator(); it.hasNext();) {
-			Modeldos.modeldos.Views childElement = (Modeldos.modeldos.Views) it
-					.next();
-			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID) {
-				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID) {
-				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
 		for (Iterator<?> it = modelElement.getClass_().iterator(); it.hasNext();) {
 			Modeldos.modeldos.Class childElement = (Modeldos.modeldos.Class) it
 					.next();
@@ -112,66 +70,39 @@ public class ModeldosDiagramUpdater {
 				continue;
 			}
 		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor> getMenuGrupoInMenuFCaja_7001SemanticChildren(
-			View view) {
-		if (false == view.eContainer() instanceof View) {
-			return Collections.emptyList();
+		for (Iterator<?> it = modelElement.getMenu().iterator(); it.hasNext();) {
+			Modeldos.modeldos.Menu childElement = (Modeldos.modeldos.Menu) it
+					.next();
+			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID) {
+				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
 		}
-		View containerView = (View) view.eContainer();
-		if (!containerView.isSetElement()) {
-			return Collections.emptyList();
+		for (Iterator<?> it = modelElement.getViews().iterator(); it.hasNext();) {
+			Modeldos.modeldos.Views childElement = (Modeldos.modeldos.Views) it
+					.next();
+			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID) {
+				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID) {
+				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
 		}
-		Modeldos.modeldos.Menu modelElement = (Modeldos.modeldos.Menu) containerView
-				.getElement();
-		LinkedList<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor>();
-		for (Iterator<?> it = modelElement.getHasGroup().iterator(); it
-				.hasNext();) {
+		for (Iterator<?> it = modelElement.getGroup().iterator(); it.hasNext();) {
 			Modeldos.modeldos.Group childElement = (Modeldos.modeldos.Group) it
 					.next();
 			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID) {
-				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor> getClassAttributeInClassCaja_7002SemanticChildren(
-			View view) {
-		if (false == view.eContainer() instanceof View) {
-			return Collections.emptyList();
-		}
-		View containerView = (View) view.eContainer();
-		if (!containerView.isSetElement()) {
-			return Collections.emptyList();
-		}
-		Modeldos.modeldos.Class modelElement = (Modeldos.modeldos.Class) containerView
-				.getElement();
-		LinkedList<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor>();
-		for (Iterator<?> it = modelElement.getAttributes().iterator(); it
-				.hasNext();) {
-			Modeldos.modeldos.Attributes childElement = (Modeldos.modeldos.Attributes) it
-					.next();
-			int visualID = Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID) {
-				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-			if (visualID == Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID) {
+			if (visualID == Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID) {
 				result.add(new Modeldos.modeldos.diagram.part.ModeldosNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -189,26 +120,20 @@ public class ModeldosDiagramUpdater {
 				.getVisualID(view)) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return getRoot_1000ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2001ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return getGroup_2002ContainedLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 			return getNotDerived_2003ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2004ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2005ContainedLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2006ContainedLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2001ContainedLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2005ContainedLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2004ContainedLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getGroup_2002ContainedLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return getDerived_2007ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			return getGroup_3001ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3002ContainedLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3003ContainedLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getRelationClass_4001ContainedLinks(view);
 		}
@@ -222,26 +147,20 @@ public class ModeldosDiagramUpdater {
 			View view) {
 		switch (Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 				.getVisualID(view)) {
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2001IncomingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return getGroup_2002IncomingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 			return getNotDerived_2003IncomingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2004IncomingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2005IncomingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2006IncomingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2001IncomingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2005IncomingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2004IncomingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getGroup_2002IncomingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return getDerived_2007IncomingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			return getGroup_3001IncomingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3002IncomingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3003IncomingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getRelationClass_4001IncomingLinks(view);
 		}
@@ -255,26 +174,20 @@ public class ModeldosDiagramUpdater {
 			View view) {
 		switch (Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 				.getVisualID(view)) {
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2001OutgoingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return getGroup_2002OutgoingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 			return getNotDerived_2003OutgoingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2004OutgoingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2005OutgoingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getClass_2006OutgoingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2001OutgoingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2005OutgoingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2004OutgoingLinks(view);
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getGroup_2002OutgoingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return getDerived_2007OutgoingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			return getGroup_3001OutgoingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3002OutgoingLinks(view);
-		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3003OutgoingLinks(view);
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getRelationClass_4001OutgoingLinks(view);
 		}
@@ -292,9 +205,49 @@ public class ModeldosDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_2003ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getClass_2006ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getMenu_2001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getPage_2005ContainedLinks(
+			View view) {
+		Modeldos.modeldos.Page modelElement = (Modeldos.modeldos.Page) view
+				.getElement();
+		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getForm_2004ContainedLinks(
+			View view) {
+		Modeldos.modeldos.Form modelElement = (Modeldos.modeldos.Form) view
+				.getElement();
+		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
+		return result;
 	}
 
 	/**
@@ -308,67 +261,7 @@ public class ModeldosDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_2003ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getForm_2004ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getPage_2005ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getClass_2006ContainedLinks(
-			View view) {
-		Modeldos.modeldos.Class modelElement = (Modeldos.modeldos.Class) view
-				.getElement();
-		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getDerived_2007ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getGroup_3001ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_3002ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getDerived_3003ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -384,39 +277,7 @@ public class ModeldosDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getMenu_2001IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getGroup_2002IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_2003IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getForm_2004IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getPage_2005IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -439,31 +300,39 @@ public class ModeldosDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getMenu_2001IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getPage_2005IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getForm_2004IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getGroup_2002IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getDerived_2007IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getGroup_3001IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_3002IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getDerived_3003IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -479,9 +348,49 @@ public class ModeldosDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_2003OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getClass_2006OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getMenu_2001OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getPage_2005OutgoingLinks(
+			View view) {
+		Modeldos.modeldos.Page modelElement = (Modeldos.modeldos.Page) view
+				.getElement();
+		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getForm_2004OutgoingLinks(
+			View view) {
+		Modeldos.modeldos.Form modelElement = (Modeldos.modeldos.Form) view
+				.getElement();
+		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
+		return result;
 	}
 
 	/**
@@ -495,67 +404,7 @@ public class ModeldosDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_2003OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getForm_2004OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getPage_2005OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getClass_2006OutgoingLinks(
-			View view) {
-		Modeldos.modeldos.Class modelElement = (Modeldos.modeldos.Class) view
-				.getElement();
-		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getDerived_2007OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getGroup_3001OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getNotDerived_3002OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getDerived_3003OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -572,7 +421,7 @@ public class ModeldosDiagramUpdater {
 	 * @generated
 	 */
 	private static Collection<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> getContainedTypeModelFacetLinks_RelationClass_4001(
-			Modeldos.modeldos.Class container) {
+			Modeldos.modeldos.Views container) {
 		LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor> result = new LinkedList<Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor>();
 		for (Iterator<?> links = container.getHasRelationClass().iterator(); links
 				.hasNext();) {
@@ -622,10 +471,10 @@ public class ModeldosDiagramUpdater {
 					.getLinkWithClassVisualID(link)) {
 				continue;
 			}
-			if (false == link.eContainer() instanceof Modeldos.modeldos.Class) {
+			if (false == link.eContainer() instanceof Modeldos.modeldos.Views) {
 				continue;
 			}
-			Modeldos.modeldos.Class container = (Modeldos.modeldos.Class) link
+			Modeldos.modeldos.Views container = (Modeldos.modeldos.Views) link
 					.eContainer();
 			result.add(new Modeldos.modeldos.diagram.part.ModeldosLinkDescriptor(
 					container,

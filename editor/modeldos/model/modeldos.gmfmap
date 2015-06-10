@@ -8,57 +8,6 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="modeldos.ecore#//Root/menu"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeldos.ecore#//Menu"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeldos.gmfgraph#MenuNombre"/>
-        <features
-            href="modeldos.ecore#//Menu/nombre"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.5"/>
-      <diagramNode
-          href="modeldos.gmfgraph#Menu"/>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.1/@ownedChild">
-        <containmentFeature
-            href="modeldos.ecore#//Menu/hasGroup"/>
-      </children>
-      <compartments
-          children="//@nodes.0/@ownedChild/@children.0">
-        <compartment
-            href="modeldos.gmfgraph#GrupoInMenuFCaja"/>
-      </compartments>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeldos.ecore#//Root/group"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeldos.ecore#//Group"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeldos.gmfgraph#GroupNombre"/>
-        <features
-            href="modeldos.ecore#//Group/nombre"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.6"/>
-      <diagramNode
-          href="modeldos.gmfgraph#Group"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="modeldos.ecore#//Root/attribute"/>
     <ownedChild>
       <domainMetaElement
@@ -79,22 +28,42 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="modeldos.ecore#//Root/views"/>
+        href="modeldos.ecore#//Root/class"/>
     <ownedChild>
       <domainMetaElement
-          href="modeldos.ecore#//Form"/>
+          href="modeldos.ecore#//Class"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="modeldos.gmfgraph#FormTitle"/>
+            href="modeldos.gmfgraph#ClassName"/>
         <features
-            href="modeldos.ecore#//Views/title"/>
+            href="modeldos.ecore#//Class/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.8"/>
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
-          href="modeldos.gmfgraph#Form"/>
+          href="modeldos.gmfgraph#Class"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeldos.ecore#//Root/menu"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeldos.ecore#//Menu"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeldos.gmfgraph#MenuName"/>
+        <features
+            href="modeldos.ecore#//Menu/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="modeldos.gmfgraph#Menu"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -119,39 +88,42 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="modeldos.ecore#//Root/class"/>
+        href="modeldos.ecore#//Root/views"/>
     <ownedChild>
       <domainMetaElement
-          href="modeldos.ecore#//Class"/>
+          href="modeldos.ecore#//Form"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="modeldos.gmfgraph#ClassName"/>
+            href="modeldos.gmfgraph#FormTitle"/>
         <features
-            href="modeldos.ecore#//Class/name"/>
+            href="modeldos.ecore#//Views/title"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.0"/>
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.8"/>
       <diagramNode
-          href="modeldos.gmfgraph#Class"/>
-      <children
-          compartment="//@nodes.5/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.2/@ownedChild">
-        <containmentFeature
-            href="modeldos.ecore#//Class/attributes"/>
-      </children>
-      <children
-          compartment="//@nodes.5/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.6/@ownedChild">
-        <containmentFeature
-            href="modeldos.ecore#//Class/attributes"/>
-      </children>
-      <compartments
-          children="//@nodes.5/@ownedChild/@children.1 //@nodes.5/@ownedChild/@children.0">
-        <compartment
-            href="modeldos.gmfgraph#AttributeInClassCaja"/>
-      </compartments>
+          href="modeldos.gmfgraph#Form"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeldos.ecore#//Root/group"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeldos.ecore#//Group"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeldos.gmfgraph#GroupName"/>
+        <features
+            href="modeldos.ecore#//Group/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.6"/>
+      <diagramNode
+          href="modeldos.gmfgraph#Group"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -180,17 +152,17 @@
     <labelMappings
         xsi:type="gmfmap:FeatureLabelMapping">
       <diagramLabel
-          href="modeldos.gmfgraph#RelationClassRelationName"/>
+          href="modeldos.gmfgraph#RelationClassName"/>
       <features
-          href="modeldos.ecore#//RelationClass/relationName"/>
+          href="modeldos.ecore#//RelationClass/name"/>
     </labelMappings>
     <containmentFeature
-        href="modeldos.ecore#//Class/hasRelationClass"/>
+        href="modeldos.ecore#//Views/hasRelationClass"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="modeldos.gmftool#//@palette/@tools.0/@tools.4"/>
     <diagramLink
-        href="modeldos.gmfgraph#ClassGoRelationClass"/>
+        href="modeldos.gmfgraph#ClassHasRelationClass"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="modeldos.ecore#//RelationClass/fromClass"/>

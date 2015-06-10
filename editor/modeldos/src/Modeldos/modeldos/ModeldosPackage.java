@@ -141,13 +141,13 @@ public interface ModeldosPackage extends EPackage {
 	int CLASS = 1;
 
 	/**
-	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Has Attributes</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__ATTRIBUTES = 0;
+	int CLASS__HAS_ATTRIBUTES = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -240,13 +240,22 @@ public interface ModeldosPackage extends EPackage {
 	int CLASS__GO_RELATION_CLASS = 10;
 
 	/**
+	 * The feature id for the '<em><b>Has View</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__HAS_VIEW = 11;
+
+	/**
 	 * The number of structural features of the '<em>Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = 11;
+	int CLASS_FEATURE_COUNT = 12;
 
 	/**
 	 * The number of operations of the '<em>Class</em>' class.
@@ -286,13 +295,13 @@ public interface ModeldosPackage extends EPackage {
 	int ATTRIBUTES__ROL = 1;
 
 	/**
-	 * The feature id for the '<em><b>Valor</b></em>' attribute.
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTES__VALOR = 2;
+	int ATTRIBUTES__VALUE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Primary Key</b></em>' attribute.
@@ -368,13 +377,13 @@ public interface ModeldosPackage extends EPackage {
 	int DERIVED__ROL = ATTRIBUTES__ROL;
 
 	/**
-	 * The feature id for the '<em><b>Valor</b></em>' attribute.
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DERIVED__VALOR = ATTRIBUTES__VALOR;
+	int DERIVED__VALUE = ATTRIBUTES__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Primary Key</b></em>' attribute.
@@ -468,13 +477,13 @@ public interface ModeldosPackage extends EPackage {
 	int NOT_DERIVED__ROL = ATTRIBUTES__ROL;
 
 	/**
-	 * The feature id for the '<em><b>Valor</b></em>' attribute.
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOT_DERIVED__VALOR = ATTRIBUTES__VALOR;
+	int NOT_DERIVED__VALUE = ATTRIBUTES__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Primary Key</b></em>' attribute.
@@ -541,13 +550,13 @@ public interface ModeldosPackage extends EPackage {
 	int RELATION_CLASS = 5;
 
 	/**
-	 * The feature id for the '<em><b>Relation Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_CLASS__RELATION_NAME = 0;
+	int RELATION_CLASS__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Type Presentation</b></em>' attribute.
@@ -559,22 +568,22 @@ public interface ModeldosPackage extends EPackage {
 	int RELATION_CLASS__TYPE_PRESENTATION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Horizontal Position</b></em>' attribute.
+	 * The feature id for the '<em><b>Position Horizotal</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_CLASS__HORIZONTAL_POSITION = 2;
+	int RELATION_CLASS__POSITION_HORIZOTAL = 2;
 
 	/**
-	 * The feature id for the '<em><b>Vertical Position</b></em>' attribute.
+	 * The feature id for the '<em><b>Position Vertical</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_CLASS__VERTICAL_POSITION = 3;
+	int RELATION_CLASS__POSITION_VERTICAL = 3;
 
 	/**
 	 * The feature id for the '<em><b>From Class</b></em>' reference list.
@@ -650,13 +659,13 @@ public interface ModeldosPackage extends EPackage {
 	int MENU__HAS_GROUP = 0;
 
 	/**
-	 * The feature id for the '<em><b>Nombre</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MENU__NOMBRE = 1;
+	int MENU__NAME = 1;
 
 	/**
 	 * The number of structural features of the '<em>Menu</em>' class.
@@ -687,13 +696,13 @@ public interface ModeldosPackage extends EPackage {
 	int GROUP = 7;
 
 	/**
-	 * The feature id for the '<em><b>Nombre</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__NOMBRE = 0;
+	int GROUP__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Order</b></em>' attribute.
@@ -742,22 +751,13 @@ public interface ModeldosPackage extends EPackage {
 	int VIEWS__TITLE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Group Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEWS__GROUP_NAME = 1;
-
-	/**
 	 * The feature id for the '<em><b>Rol View</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS__ROL_VIEW = 2;
+	int VIEWS__ROL_VIEW = 1;
 
 	/**
 	 * The feature id for the '<em><b>Has Relation Class</b></em>' containment reference list.
@@ -766,7 +766,7 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS__HAS_RELATION_CLASS = 3;
+	int VIEWS__HAS_RELATION_CLASS = 2;
 
 	/**
 	 * The feature id for the '<em><b>View Go Relation Class</b></em>' reference list.
@@ -775,7 +775,16 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS__VIEW_GO_RELATION_CLASS = 4;
+	int VIEWS__VIEW_GO_RELATION_CLASS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Group Name</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEWS__GROUP_NAME = 4;
 
 	/**
 	 * The number of structural features of the '<em>Views</em>' class.
@@ -815,15 +824,6 @@ public interface ModeldosPackage extends EPackage {
 	int FORM__TITLE = VIEWS__TITLE;
 
 	/**
-	 * The feature id for the '<em><b>Group Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM__GROUP_NAME = VIEWS__GROUP_NAME;
-
-	/**
 	 * The feature id for the '<em><b>Rol View</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -849,6 +849,15 @@ public interface ModeldosPackage extends EPackage {
 	 * @ordered
 	 */
 	int FORM__VIEW_GO_RELATION_CLASS = VIEWS__VIEW_GO_RELATION_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Group Name</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM__GROUP_NAME = VIEWS__GROUP_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -906,15 +915,6 @@ public interface ModeldosPackage extends EPackage {
 	int PAGE__TITLE = VIEWS__TITLE;
 
 	/**
-	 * The feature id for the '<em><b>Group Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE__GROUP_NAME = VIEWS__GROUP_NAME;
-
-	/**
 	 * The feature id for the '<em><b>Rol View</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -942,13 +942,13 @@ public interface ModeldosPackage extends EPackage {
 	int PAGE__VIEW_GO_RELATION_CLASS = VIEWS__VIEW_GO_RELATION_CLASS;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Group Name</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE__NAME = VIEWS_FEATURE_COUNT + 0;
+	int PAGE__GROUP_NAME = VIEWS__GROUP_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Content</b></em>' attribute.
@@ -957,7 +957,7 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE__CONTENT = VIEWS_FEATURE_COUNT + 1;
+	int PAGE__CONTENT = VIEWS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Page</em>' class.
@@ -966,7 +966,7 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE_FEATURE_COUNT = VIEWS_FEATURE_COUNT + 2;
+	int PAGE_FEATURE_COUNT = VIEWS_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Page</em>' class.
@@ -1114,15 +1114,15 @@ public interface ModeldosPackage extends EPackage {
 	EClass getClass_();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Modeldos.modeldos.Class#getAttributes <em>Attributes</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Modeldos.modeldos.Class#getHasAttributes <em>Has Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Attributes</em>'.
-	 * @see Modeldos.modeldos.Class#getAttributes()
+	 * @return the meta object for the containment reference list '<em>Has Attributes</em>'.
+	 * @see Modeldos.modeldos.Class#getHasAttributes()
 	 * @see #getClass_()
 	 * @generated
 	 */
-	EReference getClass_Attributes();
+	EReference getClass_HasAttributes();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Class#getName <em>Name</em>}'.
@@ -1235,6 +1235,17 @@ public interface ModeldosPackage extends EPackage {
 	EReference getClass_GoRelationClass();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link Modeldos.modeldos.Class#getHasView <em>Has View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Has View</em>'.
+	 * @see Modeldos.modeldos.Class#getHasView()
+	 * @see #getClass_()
+	 * @generated
+	 */
+	EReference getClass_HasView();
+
+	/**
 	 * Returns the meta object for class '{@link Modeldos.modeldos.Attributes <em>Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1267,15 +1278,15 @@ public interface ModeldosPackage extends EPackage {
 	EAttribute getAttributes_Rol();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Attributes#getValor <em>Valor</em>}'.
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Attributes#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Valor</em>'.
-	 * @see Modeldos.modeldos.Attributes#getValor()
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see Modeldos.modeldos.Attributes#getValue()
 	 * @see #getAttributes()
 	 * @generated
 	 */
-	EAttribute getAttributes_Valor();
+	EAttribute getAttributes_Value();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Attributes#isPrimaryKey <em>Primary Key</em>}'.
@@ -1374,15 +1385,15 @@ public interface ModeldosPackage extends EPackage {
 	EClass getRelationClass();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getRelationName <em>Relation Name</em>}'.
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Relation Name</em>'.
-	 * @see Modeldos.modeldos.RelationClass#getRelationName()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Modeldos.modeldos.RelationClass#getName()
 	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EAttribute getRelationClass_RelationName();
+	EAttribute getRelationClass_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getTypePresentation <em>Type Presentation</em>}'.
@@ -1396,26 +1407,26 @@ public interface ModeldosPackage extends EPackage {
 	EAttribute getRelationClass_TypePresentation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getHorizontalPosition <em>Horizontal Position</em>}'.
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getPositionHorizotal <em>Position Horizotal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Horizontal Position</em>'.
-	 * @see Modeldos.modeldos.RelationClass#getHorizontalPosition()
+	 * @return the meta object for the attribute '<em>Position Horizotal</em>'.
+	 * @see Modeldos.modeldos.RelationClass#getPositionHorizotal()
 	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EAttribute getRelationClass_HorizontalPosition();
+	EAttribute getRelationClass_PositionHorizotal();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getVerticalPosition <em>Vertical Position</em>}'.
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.RelationClass#getPositionVertical <em>Position Vertical</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Vertical Position</em>'.
-	 * @see Modeldos.modeldos.RelationClass#getVerticalPosition()
+	 * @return the meta object for the attribute '<em>Position Vertical</em>'.
+	 * @see Modeldos.modeldos.RelationClass#getPositionVertical()
 	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EAttribute getRelationClass_VerticalPosition();
+	EAttribute getRelationClass_PositionVertical();
 
 	/**
 	 * Returns the meta object for the reference list '{@link Modeldos.modeldos.RelationClass#getFromClass <em>From Class</em>}'.
@@ -1483,15 +1494,15 @@ public interface ModeldosPackage extends EPackage {
 	EReference getMenu_HasGroup();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Menu#getNombre <em>Nombre</em>}'.
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Menu#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Nombre</em>'.
-	 * @see Modeldos.modeldos.Menu#getNombre()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Modeldos.modeldos.Menu#getName()
 	 * @see #getMenu()
 	 * @generated
 	 */
-	EAttribute getMenu_Nombre();
+	EAttribute getMenu_Name();
 
 	/**
 	 * Returns the meta object for class '{@link Modeldos.modeldos.Group <em>Group</em>}'.
@@ -1504,15 +1515,15 @@ public interface ModeldosPackage extends EPackage {
 	EClass getGroup();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Group#getNombre <em>Nombre</em>}'.
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Group#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Nombre</em>'.
-	 * @see Modeldos.modeldos.Group#getNombre()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Modeldos.modeldos.Group#getName()
 	 * @see #getGroup()
 	 * @generated
 	 */
-	EAttribute getGroup_Nombre();
+	EAttribute getGroup_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Group#getOrder <em>Order</em>}'.
@@ -1547,17 +1558,6 @@ public interface ModeldosPackage extends EPackage {
 	EAttribute getViews_Title();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Views#getGroupName <em>Group Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Group Name</em>'.
-	 * @see Modeldos.modeldos.Views#getGroupName()
-	 * @see #getViews()
-	 * @generated
-	 */
-	EAttribute getViews_GroupName();
-
-	/**
 	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Views#getRolView <em>Rol View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1589,6 +1589,17 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getViews_ViewGoRelationClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link Modeldos.modeldos.Views#getGroupName <em>Group Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Group Name</em>'.
+	 * @see Modeldos.modeldos.Views#getGroupName()
+	 * @see #getViews()
+	 * @generated
+	 */
+	EReference getViews_GroupName();
 
 	/**
 	 * Returns the meta object for class '{@link Modeldos.modeldos.Form <em>Form</em>}'.
@@ -1631,17 +1642,6 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPage();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Page#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Modeldos.modeldos.Page#getName()
-	 * @see #getPage()
-	 * @generated
-	 */
-	EAttribute getPage_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Page#getContent <em>Content</em>}'.
@@ -1798,12 +1798,12 @@ public interface ModeldosPackage extends EPackage {
 		EClass CLASS = eINSTANCE.getClass_();
 
 		/**
-		 * The meta object literal for the '<em><b>Attributes</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Has Attributes</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASS__ATTRIBUTES = eINSTANCE.getClass_Attributes();
+		EReference CLASS__HAS_ATTRIBUTES = eINSTANCE.getClass_HasAttributes();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -1886,6 +1886,14 @@ public interface ModeldosPackage extends EPackage {
 		EReference CLASS__GO_RELATION_CLASS = eINSTANCE.getClass_GoRelationClass();
 
 		/**
+		 * The meta object literal for the '<em><b>Has View</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS__HAS_VIEW = eINSTANCE.getClass_HasView();
+
+		/**
 		 * The meta object literal for the '{@link Modeldos.modeldos.impl.AttributesImpl <em>Attributes</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1912,12 +1920,12 @@ public interface ModeldosPackage extends EPackage {
 		EAttribute ATTRIBUTES__ROL = eINSTANCE.getAttributes_Rol();
 
 		/**
-		 * The meta object literal for the '<em><b>Valor</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ATTRIBUTES__VALOR = eINSTANCE.getAttributes_Valor();
+		EAttribute ATTRIBUTES__VALUE = eINSTANCE.getAttributes_Value();
 
 		/**
 		 * The meta object literal for the '<em><b>Primary Key</b></em>' attribute feature.
@@ -1998,12 +2006,12 @@ public interface ModeldosPackage extends EPackage {
 		EClass RELATION_CLASS = eINSTANCE.getRelationClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Relation Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RELATION_CLASS__RELATION_NAME = eINSTANCE.getRelationClass_RelationName();
+		EAttribute RELATION_CLASS__NAME = eINSTANCE.getRelationClass_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Type Presentation</b></em>' attribute feature.
@@ -2014,20 +2022,20 @@ public interface ModeldosPackage extends EPackage {
 		EAttribute RELATION_CLASS__TYPE_PRESENTATION = eINSTANCE.getRelationClass_TypePresentation();
 
 		/**
-		 * The meta object literal for the '<em><b>Horizontal Position</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Position Horizotal</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RELATION_CLASS__HORIZONTAL_POSITION = eINSTANCE.getRelationClass_HorizontalPosition();
+		EAttribute RELATION_CLASS__POSITION_HORIZOTAL = eINSTANCE.getRelationClass_PositionHorizotal();
 
 		/**
-		 * The meta object literal for the '<em><b>Vertical Position</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Position Vertical</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RELATION_CLASS__VERTICAL_POSITION = eINSTANCE.getRelationClass_VerticalPosition();
+		EAttribute RELATION_CLASS__POSITION_VERTICAL = eINSTANCE.getRelationClass_PositionVertical();
 
 		/**
 		 * The meta object literal for the '<em><b>From Class</b></em>' reference list feature.
@@ -2080,12 +2088,12 @@ public interface ModeldosPackage extends EPackage {
 		EReference MENU__HAS_GROUP = eINSTANCE.getMenu_HasGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Nombre</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute MENU__NOMBRE = eINSTANCE.getMenu_Nombre();
+		EAttribute MENU__NAME = eINSTANCE.getMenu_Name();
 
 		/**
 		 * The meta object literal for the '{@link Modeldos.modeldos.impl.GroupImpl <em>Group</em>}' class.
@@ -2098,12 +2106,12 @@ public interface ModeldosPackage extends EPackage {
 		EClass GROUP = eINSTANCE.getGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Nombre</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GROUP__NOMBRE = eINSTANCE.getGroup_Nombre();
+		EAttribute GROUP__NAME = eINSTANCE.getGroup_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Order</b></em>' attribute feature.
@@ -2132,14 +2140,6 @@ public interface ModeldosPackage extends EPackage {
 		EAttribute VIEWS__TITLE = eINSTANCE.getViews_Title();
 
 		/**
-		 * The meta object literal for the '<em><b>Group Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute VIEWS__GROUP_NAME = eINSTANCE.getViews_GroupName();
-
-		/**
 		 * The meta object literal for the '<em><b>Rol View</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2162,6 +2162,14 @@ public interface ModeldosPackage extends EPackage {
 		 * @generated
 		 */
 		EReference VIEWS__VIEW_GO_RELATION_CLASS = eINSTANCE.getViews_ViewGoRelationClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Group Name</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIEWS__GROUP_NAME = eINSTANCE.getViews_GroupName();
 
 		/**
 		 * The meta object literal for the '{@link Modeldos.modeldos.impl.FormImpl <em>Form</em>}' class.
@@ -2198,14 +2206,6 @@ public interface ModeldosPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PAGE = eINSTANCE.getPage();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PAGE__NAME = eINSTANCE.getPage_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Content</b></em>' attribute feature.

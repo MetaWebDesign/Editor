@@ -11,7 +11,6 @@ package Modeldos.modeldos;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Modeldos.modeldos.Page#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.Page#getContent <em>Content</em>}</li>
  * </ul>
  * </p>
@@ -21,32 +20,6 @@ package Modeldos.modeldos;
  * @generated
  */
 public interface Page extends Views {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see Modeldos.modeldos.ModeldosPackage#getPage_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link Modeldos.modeldos.Page#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Content</b></em>' attribute.
 	 * <!-- begin-user-doc -->

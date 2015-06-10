@@ -54,7 +54,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/views"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Class">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/hasAttributes"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionCreate"/>
@@ -65,11 +65,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Class/functionAdmin"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/hasRelationClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/goRelationClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Class/hasView"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Attributes">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/rol"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/valor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/primaryKey"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/dataType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Attributes/inTheForm"/>
@@ -82,10 +83,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//NotDerived/defaultValue"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//RelationClass">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/relationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/typePresentation"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/HorizontalPosition"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/VerticalPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/positionHorizotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//RelationClass/positionVertical"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/fromClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/attributeGet"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//RelationClass/attributeReplace"/>
@@ -93,25 +94,24 @@
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Menu">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Menu/hasGroup"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Menu/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Menu/name"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Group">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Group/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Group/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Group/order"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Views">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Views/title"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Views/groupName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Views/rolView"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Views/hasRelationClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Views/viewGoRelationClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference modeldos.ecore#//Views/groupName"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Form">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Form/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Form/service"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Page">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Page/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Page/Content"/>
     </genClasses>
   </genPackages>

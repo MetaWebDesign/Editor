@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Modeldos.modeldos.Attributes#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.Attributes#getRol <em>Rol</em>}</li>
- *   <li>{@link Modeldos.modeldos.Attributes#getValor <em>Valor</em>}</li>
+ *   <li>{@link Modeldos.modeldos.Attributes#getValue <em>Value</em>}</li>
  *   <li>{@link Modeldos.modeldos.Attributes#isPrimaryKey <em>Primary Key</em>}</li>
  *   <li>{@link Modeldos.modeldos.Attributes#getDataType <em>Data Type</em>}</li>
  *   <li>{@link Modeldos.modeldos.Attributes#getInTheForm <em>In The Form</em>}</li>
@@ -82,30 +82,30 @@ public interface Attributes extends EObject {
 	void setRol(TypeRol value);
 
 	/**
-	 * Returns the value of the '<em><b>Valor</b></em>' attribute.
+	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Valor</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Valor</em>' attribute.
-	 * @see #setValor(String)
-	 * @see Modeldos.modeldos.ModeldosPackage#getAttributes_Valor()
+	 * @return the value of the '<em>Value</em>' attribute.
+	 * @see #setValue(String)
+	 * @see Modeldos.modeldos.ModeldosPackage#getAttributes_Value()
 	 * @model
 	 * @generated
 	 */
-	String getValor();
+	String getValue();
 
 	/**
-	 * Sets the value of the '{@link Modeldos.modeldos.Attributes#getValor <em>Valor</em>}' attribute.
+	 * Sets the value of the '{@link Modeldos.modeldos.Attributes#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Valor</em>' attribute.
-	 * @see #getValor()
+	 * @param value the new value of the '<em>Value</em>' attribute.
+	 * @see #getValue()
 	 * @generated
 	 */
-	void setValor(String value);
+	void setValue(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Primary Key</b></em>' attribute.

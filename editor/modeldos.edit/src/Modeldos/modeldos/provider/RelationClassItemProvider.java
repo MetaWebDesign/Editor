@@ -60,10 +60,10 @@ public class RelationClassItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addRelationNamePropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 			addTypePresentationPropertyDescriptor(object);
-			addHorizontalPositionPropertyDescriptor(object);
-			addVerticalPositionPropertyDescriptor(object);
+			addPositionHorizotalPropertyDescriptor(object);
+			addPositionVerticalPropertyDescriptor(object);
 			addFromClassPropertyDescriptor(object);
 			addAttributeGetPropertyDescriptor(object);
 			addAttributeReplacePropertyDescriptor(object);
@@ -73,19 +73,19 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Relation Name feature.
+	 * This adds a property descriptor for the Name feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addRelationNamePropertyDescriptor(Object object) {
+	protected void addNamePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_relationName_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_relationName_feature", "_UI_RelationClass_type"),
-				 ModeldosPackage.Literals.RELATION_CLASS__RELATION_NAME,
+				 getString("_UI_RelationClass_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_name_feature", "_UI_RelationClass_type"),
+				 ModeldosPackage.Literals.RELATION_CLASS__NAME,
 				 true,
 				 false,
 				 false,
@@ -117,19 +117,19 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Horizontal Position feature.
+	 * This adds a property descriptor for the Position Horizotal feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addHorizontalPositionPropertyDescriptor(Object object) {
+	protected void addPositionHorizotalPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_HorizontalPosition_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_HorizontalPosition_feature", "_UI_RelationClass_type"),
-				 ModeldosPackage.Literals.RELATION_CLASS__HORIZONTAL_POSITION,
+				 getString("_UI_RelationClass_positionHorizotal_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_positionHorizotal_feature", "_UI_RelationClass_type"),
+				 ModeldosPackage.Literals.RELATION_CLASS__POSITION_HORIZOTAL,
 				 true,
 				 false,
 				 false,
@@ -139,19 +139,19 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Vertical Position feature.
+	 * This adds a property descriptor for the Position Vertical feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addVerticalPositionPropertyDescriptor(Object object) {
+	protected void addPositionVerticalPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_VerticalPosition_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_VerticalPosition_feature", "_UI_RelationClass_type"),
-				 ModeldosPackage.Literals.RELATION_CLASS__VERTICAL_POSITION,
+				 getString("_UI_RelationClass_positionVertical_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_positionVertical_feature", "_UI_RelationClass_type"),
+				 ModeldosPackage.Literals.RELATION_CLASS__POSITION_VERTICAL,
 				 true,
 				 false,
 				 false,
@@ -267,7 +267,7 @@ public class RelationClassItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((RelationClass)object).getRelationName();
+		String label = ((RelationClass)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_RelationClass_type") :
 			getString("_UI_RelationClass_type") + " " + label;
@@ -286,10 +286,10 @@ public class RelationClassItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(RelationClass.class)) {
-			case ModeldosPackage.RELATION_CLASS__RELATION_NAME:
+			case ModeldosPackage.RELATION_CLASS__NAME:
 			case ModeldosPackage.RELATION_CLASS__TYPE_PRESENTATION:
-			case ModeldosPackage.RELATION_CLASS__HORIZONTAL_POSITION:
-			case ModeldosPackage.RELATION_CLASS__VERTICAL_POSITION:
+			case ModeldosPackage.RELATION_CLASS__POSITION_HORIZOTAL:
+			case ModeldosPackage.RELATION_CLASS__POSITION_VERTICAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

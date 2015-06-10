@@ -14,6 +14,5 @@ package Modeldos.modeldos.validation;
 public interface PageValidator {
 	boolean validate();
 
-	boolean validateName(String value);
 	boolean validateContent(String value);
 }

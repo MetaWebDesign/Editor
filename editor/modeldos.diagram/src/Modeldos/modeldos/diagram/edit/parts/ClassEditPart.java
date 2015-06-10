@@ -12,18 +12,14 @@ import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
 import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
-import org.eclipse.gmf.runtime.diagram.core.edithelpers.CreateElementRequestAdapter;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
-import org.eclipse.gmf.runtime.diagram.ui.requests.CreateViewAndElementRequest;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
-import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
-import org.eclipse.gmf.tooling.runtime.edit.policies.reparent.CreationEditPolicyWithCustomReparent;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -57,10 +53,6 @@ public class ClassEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected void createDefaultEditPolicies() {
-		installEditPolicy(
-				EditPolicyRoles.CREATION_ROLE,
-				new CreationEditPolicyWithCustomReparent(
-						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry.TYPED_INSTANCE));
 		super.createDefaultEditPolicies();
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
@@ -119,13 +111,6 @@ public class ClassEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureClassNameFigure());
 			return true;
 		}
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajaAttribute();
-			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart) childEditPart)
-					.getFigure());
-			return true;
-		}
 		return false;
 	}
 
@@ -134,12 +119,6 @@ public class ClassEditPart extends ShapeNodeEditPart {
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart) {
-			return true;
-		}
-		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajaAttribute();
-			pane.remove(((Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart) childEditPart)
-					.getFigure());
 			return true;
 		}
 		return false;
@@ -169,9 +148,6 @@ public class ClassEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart) {
-			return getPrimaryShape().getFigureCajaAttribute();
-		}
 		return getContentPane();
 	}
 
@@ -272,28 +248,6 @@ public class ClassEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public EditPart getTargetEditPart(Request request) {
-		if (request instanceof CreateViewAndElementRequest) {
-			CreateElementRequestAdapter adapter = ((CreateViewAndElementRequest) request)
-					.getViewAndElementDescriptor()
-					.getCreateElementRequestAdapter();
-			IElementType type = (IElementType) adapter
-					.getAdapter(IElementType.class);
-			if (type == Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3002) {
-				return getChildBySemanticHint(Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-						.getType(Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID));
-			}
-			if (type == Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3003) {
-				return getChildBySemanticHint(Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-						.getType(Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajaEditPart.VISUAL_ID));
-			}
-		}
-		return super.getTargetEditPart(request);
-	}
-
-	/**
-	 * @generated
-	 */
 	public class ClassFigure extends RectangleFigure {
 
 		/**
@@ -331,7 +285,7 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private RectangleFigure fFigureCajaAttribute;
+		private RectangleFigure fFigureCajonAttribute;
 
 		/**
 		 * @generated
@@ -397,9 +351,9 @@ public class ClassEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureClassFunctionAdminFigure);
 
-			fFigureCajaAttribute = new RectangleFigure();
+			fFigureCajonAttribute = new RectangleFigure();
 
-			this.add(fFigureCajaAttribute, BorderLayout.CENTER);
+			this.add(fFigureCajonAttribute, BorderLayout.CENTER);
 
 		}
 
@@ -462,8 +416,8 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		public RectangleFigure getFigureCajaAttribute() {
-			return fFigureCajaAttribute;
+		public RectangleFigure getFigureCajonAttribute() {
+			return fFigureCajonAttribute;
 		}
 
 	}

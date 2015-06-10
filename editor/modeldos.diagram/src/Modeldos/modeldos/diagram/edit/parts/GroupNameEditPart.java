@@ -47,13 +47,13 @@ import org.eclipse.swt.graphics.Image;
 /**
  * @generated
  */
-public class MenuNombreEditPart extends CompartmentEditPart implements
+public class GroupNameEditPart extends CompartmentEditPart implements
 		ITextAwareEditPart {
 
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5002;
+	public static final int VISUAL_ID = 5003;
 
 	/**
 	 * @generated
@@ -83,7 +83,7 @@ public class MenuNombreEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public MenuNombreEditPart(View view) {
+	public GroupNameEditPart(View view) {
 		super(view);
 	}
 
@@ -305,10 +305,10 @@ public class MenuNombreEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 					.getParser(
-							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001,
+							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002,
 							getParserElement(),
 							Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-									.getType(Modeldos.modeldos.diagram.edit.parts.MenuNombreEditPart.VISUAL_ID));
+									.getType(Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));
 		}
 		return parser;
 	}

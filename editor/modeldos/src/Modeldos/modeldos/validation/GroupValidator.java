@@ -14,6 +14,6 @@ package Modeldos.modeldos.validation;
 public interface GroupValidator {
 	boolean validate();
 
-	boolean validateNombre(String value);
+	boolean validateName(String value);
 	boolean validateOrder(int value);
 }

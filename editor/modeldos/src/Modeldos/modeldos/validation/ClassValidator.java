@@ -7,6 +7,7 @@ package Modeldos.modeldos.validation;
 import Modeldos.modeldos.Attributes;
 import Modeldos.modeldos.RelationClass;
 import Modeldos.modeldos.TypeRol;
+import Modeldos.modeldos.Views;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -19,7 +20,7 @@ import org.eclipse.emf.common.util.EList;
 public interface ClassValidator {
 	boolean validate();
 
-	boolean validateAttributes(EList<Attributes> value);
+	boolean validateHasAttributes(EList<Attributes> value);
 	boolean validateName(String value);
 	boolean validateId(int value);
 	boolean validateFunctionCreate(TypeRol value);
@@ -30,4 +31,5 @@ public interface ClassValidator {
 	boolean validateFunctionAdmin(TypeRol value);
 	boolean validateHasRelationClass(EList<RelationClass> value);
 	boolean validateGoRelationClass(EList<RelationClass> value);
+	boolean validateHasView(Views value);
 }

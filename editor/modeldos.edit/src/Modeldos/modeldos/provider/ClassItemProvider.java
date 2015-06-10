@@ -285,8 +285,9 @@ public class ClassItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(ModeldosPackage.Literals.CLASS__ATTRIBUTES);
+			childrenFeatures.add(ModeldosPackage.Literals.CLASS__HAS_ATTRIBUTES);
 			childrenFeatures.add(ModeldosPackage.Literals.CLASS__HAS_RELATION_CLASS);
+			childrenFeatures.add(ModeldosPackage.Literals.CLASS__HAS_VIEW);
 		}
 		return childrenFeatures;
 	}
@@ -352,8 +353,9 @@ public class ClassItemProvider
 			case ModeldosPackage.CLASS__FUNCTION_ADMIN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case ModeldosPackage.CLASS__ATTRIBUTES:
+			case ModeldosPackage.CLASS__HAS_ATTRIBUTES:
 			case ModeldosPackage.CLASS__HAS_RELATION_CLASS:
+			case ModeldosPackage.CLASS__HAS_VIEW:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -373,23 +375,38 @@ public class ClassItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ModeldosPackage.Literals.CLASS__ATTRIBUTES,
+				(ModeldosPackage.Literals.CLASS__HAS_ATTRIBUTES,
 				 ModeldosFactory.eINSTANCE.createAttributes()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ModeldosPackage.Literals.CLASS__ATTRIBUTES,
+				(ModeldosPackage.Literals.CLASS__HAS_ATTRIBUTES,
 				 ModeldosFactory.eINSTANCE.createDerived()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ModeldosPackage.Literals.CLASS__ATTRIBUTES,
+				(ModeldosPackage.Literals.CLASS__HAS_ATTRIBUTES,
 				 ModeldosFactory.eINSTANCE.createNotDerived()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(ModeldosPackage.Literals.CLASS__HAS_RELATION_CLASS,
 				 ModeldosFactory.eINSTANCE.createRelationClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModeldosPackage.Literals.CLASS__HAS_VIEW,
+				 ModeldosFactory.eINSTANCE.createViews()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModeldosPackage.Literals.CLASS__HAS_VIEW,
+				 ModeldosFactory.eINSTANCE.createForm()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ModeldosPackage.Literals.CLASS__HAS_VIEW,
+				 ModeldosFactory.eINSTANCE.createPage()));
 	}
 
 	/**

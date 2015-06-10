@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getRelationName <em>Relation Name</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getTypePresentation <em>Type Presentation</em>}</li>
- *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getHorizontalPosition <em>Horizontal Position</em>}</li>
- *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getVerticalPosition <em>Vertical Position</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getPositionHorizotal <em>Position Horizotal</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getPositionVertical <em>Position Vertical</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getFromClass <em>From Class</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getAttributeGet <em>Attribute Get</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.RelationClassImpl#getAttributeReplace <em>Attribute Replace</em>}</li>
@@ -44,24 +44,24 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  */
 public class RelationClassImpl extends MinimalEObjectImpl.Container implements RelationClass {
 	/**
-	 * The default value of the '{@link #getRelationName() <em>Relation Name</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRelationName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String RELATION_NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRelationName() <em>Relation Name</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRelationName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String relationName = RELATION_NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.
@@ -71,8 +71,7 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * @generated
 	 * @ordered
 	 */
-	//protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = typePresentation.STRING;
-	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = typePresentation.STRING;
+	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.
@@ -85,44 +84,44 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	protected typePresentation typePresentation = TYPE_PRESENTATION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getHorizontalPosition() <em>Horizontal Position</em>}' attribute.
+	 * The default value of the '{@link #getPositionHorizotal() <em>Position Horizotal</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHorizontalPosition()
+	 * @see #getPositionHorizotal()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final typeHorizontalPosition HORIZONTAL_POSITION_EDEFAULT = typeHorizontalPosition.CENTER;
+	protected static final typeHorizontalPosition POSITION_HORIZOTAL_EDEFAULT = typeHorizontalPosition.CENTER;
 
 	/**
-	 * The cached value of the '{@link #getHorizontalPosition() <em>Horizontal Position</em>}' attribute.
+	 * The cached value of the '{@link #getPositionHorizotal() <em>Position Horizotal</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHorizontalPosition()
+	 * @see #getPositionHorizotal()
 	 * @generated
 	 * @ordered
 	 */
-	protected typeHorizontalPosition horizontalPosition = HORIZONTAL_POSITION_EDEFAULT;
+	protected typeHorizontalPosition positionHorizotal = POSITION_HORIZOTAL_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getVerticalPosition() <em>Vertical Position</em>}' attribute.
+	 * The default value of the '{@link #getPositionVertical() <em>Position Vertical</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVerticalPosition()
+	 * @see #getPositionVertical()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int VERTICAL_POSITION_EDEFAULT = 0;
+	protected static final int POSITION_VERTICAL_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getVerticalPosition() <em>Vertical Position</em>}' attribute.
+	 * The cached value of the '{@link #getPositionVertical() <em>Position Vertical</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVerticalPosition()
+	 * @see #getPositionVertical()
 	 * @generated
 	 * @ordered
 	 */
-	protected int verticalPosition = VERTICAL_POSITION_EDEFAULT;
+	protected int positionVertical = POSITION_VERTICAL_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getFromClass() <em>From Class</em>}' reference list.
@@ -188,8 +187,8 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRelationName() {
-		return relationName;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -197,11 +196,11 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRelationName(String newRelationName) {
-		String oldRelationName = relationName;
-		relationName = newRelationName;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.RELATION_CLASS__RELATION_NAME, oldRelationName, relationName));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.RELATION_CLASS__NAME, oldName, name));
 	}
 
 	/**
@@ -230,8 +229,8 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typeHorizontalPosition getHorizontalPosition() {
-		return horizontalPosition;
+	public typeHorizontalPosition getPositionHorizotal() {
+		return positionHorizotal;
 	}
 
 	/**
@@ -239,11 +238,11 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHorizontalPosition(typeHorizontalPosition newHorizontalPosition) {
-		typeHorizontalPosition oldHorizontalPosition = horizontalPosition;
-		horizontalPosition = newHorizontalPosition == null ? HORIZONTAL_POSITION_EDEFAULT : newHorizontalPosition;
+	public void setPositionHorizotal(typeHorizontalPosition newPositionHorizotal) {
+		typeHorizontalPosition oldPositionHorizotal = positionHorizotal;
+		positionHorizotal = newPositionHorizotal == null ? POSITION_HORIZOTAL_EDEFAULT : newPositionHorizotal;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.RELATION_CLASS__HORIZONTAL_POSITION, oldHorizontalPosition, horizontalPosition));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.RELATION_CLASS__POSITION_HORIZOTAL, oldPositionHorizotal, positionHorizotal));
 	}
 
 	/**
@@ -251,8 +250,8 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getVerticalPosition() {
-		return verticalPosition;
+	public int getPositionVertical() {
+		return positionVertical;
 	}
 
 	/**
@@ -260,11 +259,11 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVerticalPosition(int newVerticalPosition) {
-		int oldVerticalPosition = verticalPosition;
-		verticalPosition = newVerticalPosition;
+	public void setPositionVertical(int newPositionVertical) {
+		int oldPositionVertical = positionVertical;
+		positionVertical = newPositionVertical;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.RELATION_CLASS__VERTICAL_POSITION, oldVerticalPosition, verticalPosition));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.RELATION_CLASS__POSITION_VERTICAL, oldPositionVertical, positionVertical));
 	}
 
 	/**
@@ -401,14 +400,14 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ModeldosPackage.RELATION_CLASS__RELATION_NAME:
-				return getRelationName();
+			case ModeldosPackage.RELATION_CLASS__NAME:
+				return getName();
 			case ModeldosPackage.RELATION_CLASS__TYPE_PRESENTATION:
 				return getTypePresentation();
-			case ModeldosPackage.RELATION_CLASS__HORIZONTAL_POSITION:
-				return getHorizontalPosition();
-			case ModeldosPackage.RELATION_CLASS__VERTICAL_POSITION:
-				return getVerticalPosition();
+			case ModeldosPackage.RELATION_CLASS__POSITION_HORIZOTAL:
+				return getPositionHorizotal();
+			case ModeldosPackage.RELATION_CLASS__POSITION_VERTICAL:
+				return getPositionVertical();
 			case ModeldosPackage.RELATION_CLASS__FROM_CLASS:
 				return getFromClass();
 			case ModeldosPackage.RELATION_CLASS__ATTRIBUTE_GET:
@@ -433,17 +432,17 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ModeldosPackage.RELATION_CLASS__RELATION_NAME:
-				setRelationName((String)newValue);
+			case ModeldosPackage.RELATION_CLASS__NAME:
+				setName((String)newValue);
 				return;
 			case ModeldosPackage.RELATION_CLASS__TYPE_PRESENTATION:
 				setTypePresentation((typePresentation)newValue);
 				return;
-			case ModeldosPackage.RELATION_CLASS__HORIZONTAL_POSITION:
-				setHorizontalPosition((typeHorizontalPosition)newValue);
+			case ModeldosPackage.RELATION_CLASS__POSITION_HORIZOTAL:
+				setPositionHorizotal((typeHorizontalPosition)newValue);
 				return;
-			case ModeldosPackage.RELATION_CLASS__VERTICAL_POSITION:
-				setVerticalPosition((Integer)newValue);
+			case ModeldosPackage.RELATION_CLASS__POSITION_VERTICAL:
+				setPositionVertical((Integer)newValue);
 				return;
 			case ModeldosPackage.RELATION_CLASS__FROM_CLASS:
 				getFromClass().clear();
@@ -470,17 +469,17 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ModeldosPackage.RELATION_CLASS__RELATION_NAME:
-				setRelationName(RELATION_NAME_EDEFAULT);
+			case ModeldosPackage.RELATION_CLASS__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 			case ModeldosPackage.RELATION_CLASS__TYPE_PRESENTATION:
 				setTypePresentation(TYPE_PRESENTATION_EDEFAULT);
 				return;
-			case ModeldosPackage.RELATION_CLASS__HORIZONTAL_POSITION:
-				setHorizontalPosition(HORIZONTAL_POSITION_EDEFAULT);
+			case ModeldosPackage.RELATION_CLASS__POSITION_HORIZOTAL:
+				setPositionHorizotal(POSITION_HORIZOTAL_EDEFAULT);
 				return;
-			case ModeldosPackage.RELATION_CLASS__VERTICAL_POSITION:
-				setVerticalPosition(VERTICAL_POSITION_EDEFAULT);
+			case ModeldosPackage.RELATION_CLASS__POSITION_VERTICAL:
+				setPositionVertical(POSITION_VERTICAL_EDEFAULT);
 				return;
 			case ModeldosPackage.RELATION_CLASS__FROM_CLASS:
 				getFromClass().clear();
@@ -506,14 +505,14 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ModeldosPackage.RELATION_CLASS__RELATION_NAME:
-				return RELATION_NAME_EDEFAULT == null ? relationName != null : !RELATION_NAME_EDEFAULT.equals(relationName);
+			case ModeldosPackage.RELATION_CLASS__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ModeldosPackage.RELATION_CLASS__TYPE_PRESENTATION:
 				return typePresentation != TYPE_PRESENTATION_EDEFAULT;
-			case ModeldosPackage.RELATION_CLASS__HORIZONTAL_POSITION:
-				return horizontalPosition != HORIZONTAL_POSITION_EDEFAULT;
-			case ModeldosPackage.RELATION_CLASS__VERTICAL_POSITION:
-				return verticalPosition != VERTICAL_POSITION_EDEFAULT;
+			case ModeldosPackage.RELATION_CLASS__POSITION_HORIZOTAL:
+				return positionHorizotal != POSITION_HORIZOTAL_EDEFAULT;
+			case ModeldosPackage.RELATION_CLASS__POSITION_VERTICAL:
+				return positionVertical != POSITION_VERTICAL_EDEFAULT;
 			case ModeldosPackage.RELATION_CLASS__FROM_CLASS:
 				return fromClass != null && !fromClass.isEmpty();
 			case ModeldosPackage.RELATION_CLASS__ATTRIBUTE_GET:
@@ -536,14 +535,14 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (relationName: ");
-		result.append(relationName);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(", typePresentation: ");
 		result.append(typePresentation);
-		result.append(", HorizontalPosition: ");
-		result.append(horizontalPosition);
-		result.append(", VerticalPosition: ");
-		result.append(verticalPosition);
+		result.append(", positionHorizotal: ");
+		result.append(positionHorizotal);
+		result.append(", positionVertical: ");
+		result.append(positionVertical);
 		result.append(')');
 		return result.toString();
 	}

@@ -15,7 +15,7 @@ Package modeldos <http://modeldos/1.0>
     Reference views : Views<<0..*>>
 
   Class Class
-    Reference attributes : Attributes<<0..15>>
+    Reference hasAttributes : Attributes<<0..15>>
     Attribute name : EString
     Attribute id : EInt
     Attribute functionCreate : TypeRol
@@ -26,11 +26,12 @@ Package modeldos <http://modeldos/1.0>
     Attribute functionAdmin : TypeRol
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference goRelationClass : RelationClass<<0..*>>
+    Reference hasView : Views
 
   Class Attributes
     Attribute name : EString
     Attribute rol : TypeRol
-    Attribute valor : EString
+    Attribute value : EString
     Attribute primaryKey : EBoolean
     Attribute dataType : TypeData
     Attribute inTheForm : TypeAttributeForm
@@ -43,10 +44,10 @@ Package modeldos <http://modeldos/1.0>
     Attribute defaultValue : EString
 
   Class RelationClass
-    Attribute relationName : EString
+    Attribute name : EString
     Attribute typePresentation : typePresentation
-    Attribute HorizontalPosition : typeHorizontalPosition
-    Attribute VerticalPosition : EInt
+    Attribute positionHorizotal : typeHorizontalPosition
+    Attribute positionVertical : EInt
     Reference fromClass : Class<<0..*>>
     Reference attributeGet : Attributes
     Reference attributeReplace : Attributes
@@ -54,25 +55,24 @@ Package modeldos <http://modeldos/1.0>
 
   Class Menu
     Reference hasGroup : Group<<0..*>>
-    Attribute nombre : EString
+    Attribute name : EString
 
   Class Group
-    Attribute nombre : EString
+    Attribute name : EString
     Attribute order : EInt
 
   Class Views
     Attribute title : EString
-    Attribute groupName : EString
     Attribute rolView : TypeRol
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference viewGoRelationClass : RelationClass<<0..*>>
+    Reference groupName : Group
 
   Class Form -> Views
     Attribute name : EString
     Attribute service : TypeService
 
   Class Page -> Views
-    Attribute name : EString
     Attribute Content : EString
 
   Enum TypeRol

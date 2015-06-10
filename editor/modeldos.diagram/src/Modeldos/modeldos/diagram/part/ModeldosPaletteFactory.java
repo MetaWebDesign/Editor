@@ -1,13 +1,11 @@
 package Modeldos.modeldos.diagram.part;
 
-import java.util.ArrayList;
 import java.util.Collections;
 
 import org.eclipse.gef.palette.PaletteContainer;
 import org.eclipse.gef.palette.PaletteGroup;
 import org.eclipse.gef.palette.PaletteRoot;
 import org.eclipse.gef.palette.ToolEntry;
-import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.tooling.runtime.part.DefaultLinkToolEntry;
 import org.eclipse.gmf.tooling.runtime.part.DefaultNodeToolEntry;
 
@@ -77,16 +75,14 @@ public class ModeldosPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createDerived3CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3003);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Modeldos.modeldos.diagram.part.Messages.Derived3CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Derived3CreationTool_desc,
-				types);
+				Collections
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007));
 		entry.setId("createDerived3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3003));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -95,13 +91,11 @@ public class ModeldosPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createNotDerived4CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3002);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Modeldos.modeldos.diagram.part.Messages.NotDerived4CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.NotDerived4CreationTool_desc,
-				types);
+				Collections
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003));
 		entry.setId("createNotDerived4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
 				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003));
@@ -145,16 +139,14 @@ public class ModeldosPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createGroup7CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3001);
-		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Modeldos.modeldos.diagram.part.Messages.Group7CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Group7CreationTool_desc,
-				types);
+				Collections
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002));
 		entry.setId("createGroup7CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3001));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

@@ -6,6 +6,7 @@ import Modeldos.modeldos.Attributes;
 import Modeldos.modeldos.ModeldosPackage;
 import Modeldos.modeldos.RelationClass;
 import Modeldos.modeldos.TypeRol;
+import Modeldos.modeldos.Views;
 
 import java.util.Collection;
 
@@ -31,7 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getAttributes <em>Attributes</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getHasAttributes <em>Has Attributes</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getId <em>Id</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getFunctionCreate <em>Function Create</em>}</li>
@@ -42,6 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getFunctionAdmin <em>Function Admin</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getGoRelationClass <em>Go Relation Class</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.ClassImpl#getHasView <em>Has View</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,14 +51,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.modeldos.Class {
 	/**
-	 * The cached value of the '{@link #getAttributes() <em>Attributes</em>}' containment reference list.
+	 * The cached value of the '{@link #getHasAttributes() <em>Has Attributes</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttributes()
+	 * @see #getHasAttributes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Attributes> attributes;
+	protected EList<Attributes> hasAttributes;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -239,6 +241,16 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	protected EList<RelationClass> goRelationClass;
 
 	/**
+	 * The cached value of the '{@link #getHasView() <em>Has View</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasView()
+	 * @generated
+	 * @ordered
+	 */
+	protected Views hasView;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -262,11 +274,11 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Attributes> getAttributes() {
-		if (attributes == null) {
-			attributes = new EObjectContainmentEList<Attributes>(Attributes.class, this, ModeldosPackage.CLASS__ATTRIBUTES);
+	public EList<Attributes> getHasAttributes() {
+		if (hasAttributes == null) {
+			hasAttributes = new EObjectContainmentEList<Attributes>(Attributes.class, this, ModeldosPackage.CLASS__HAS_ATTRIBUTES);
 		}
-		return attributes;
+		return hasAttributes;
 	}
 
 	/**
@@ -466,13 +478,58 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Views getHasView() {
+		return hasView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetHasView(Views newHasView, NotificationChain msgs) {
+		Views oldHasView = hasView;
+		hasView = newHasView;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ModeldosPackage.CLASS__HAS_VIEW, oldHasView, newHasView);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setHasView(Views newHasView) {
+		if (newHasView != hasView) {
+			NotificationChain msgs = null;
+			if (hasView != null)
+				msgs = ((InternalEObject)hasView).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ModeldosPackage.CLASS__HAS_VIEW, null, msgs);
+			if (newHasView != null)
+				msgs = ((InternalEObject)newHasView).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ModeldosPackage.CLASS__HAS_VIEW, null, msgs);
+			msgs = basicSetHasView(newHasView, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.CLASS__HAS_VIEW, newHasView, newHasView));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case ModeldosPackage.CLASS__ATTRIBUTES:
-				return ((InternalEList<?>)getAttributes()).basicRemove(otherEnd, msgs);
+			case ModeldosPackage.CLASS__HAS_ATTRIBUTES:
+				return ((InternalEList<?>)getHasAttributes()).basicRemove(otherEnd, msgs);
 			case ModeldosPackage.CLASS__HAS_RELATION_CLASS:
 				return ((InternalEList<?>)getHasRelationClass()).basicRemove(otherEnd, msgs);
+			case ModeldosPackage.CLASS__HAS_VIEW:
+				return basicSetHasView(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -485,8 +542,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ModeldosPackage.CLASS__ATTRIBUTES:
-				return getAttributes();
+			case ModeldosPackage.CLASS__HAS_ATTRIBUTES:
+				return getHasAttributes();
 			case ModeldosPackage.CLASS__NAME:
 				return getName();
 			case ModeldosPackage.CLASS__ID:
@@ -507,6 +564,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 				return getHasRelationClass();
 			case ModeldosPackage.CLASS__GO_RELATION_CLASS:
 				return getGoRelationClass();
+			case ModeldosPackage.CLASS__HAS_VIEW:
+				return getHasView();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -520,9 +579,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ModeldosPackage.CLASS__ATTRIBUTES:
-				getAttributes().clear();
-				getAttributes().addAll((Collection<? extends Attributes>)newValue);
+			case ModeldosPackage.CLASS__HAS_ATTRIBUTES:
+				getHasAttributes().clear();
+				getHasAttributes().addAll((Collection<? extends Attributes>)newValue);
 				return;
 			case ModeldosPackage.CLASS__NAME:
 				setName((String)newValue);
@@ -556,6 +615,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 				getGoRelationClass().clear();
 				getGoRelationClass().addAll((Collection<? extends RelationClass>)newValue);
 				return;
+			case ModeldosPackage.CLASS__HAS_VIEW:
+				setHasView((Views)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -568,8 +630,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ModeldosPackage.CLASS__ATTRIBUTES:
-				getAttributes().clear();
+			case ModeldosPackage.CLASS__HAS_ATTRIBUTES:
+				getHasAttributes().clear();
 				return;
 			case ModeldosPackage.CLASS__NAME:
 				setName(NAME_EDEFAULT);
@@ -601,6 +663,9 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 			case ModeldosPackage.CLASS__GO_RELATION_CLASS:
 				getGoRelationClass().clear();
 				return;
+			case ModeldosPackage.CLASS__HAS_VIEW:
+				setHasView((Views)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -613,8 +678,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ModeldosPackage.CLASS__ATTRIBUTES:
-				return attributes != null && !attributes.isEmpty();
+			case ModeldosPackage.CLASS__HAS_ATTRIBUTES:
+				return hasAttributes != null && !hasAttributes.isEmpty();
 			case ModeldosPackage.CLASS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ModeldosPackage.CLASS__ID:
@@ -635,6 +700,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Modeldos.
 				return hasRelationClass != null && !hasRelationClass.isEmpty();
 			case ModeldosPackage.CLASS__GO_RELATION_CLASS:
 				return goRelationClass != null && !goRelationClass.isEmpty();
+			case ModeldosPackage.CLASS__HAS_VIEW:
+				return hasView != null;
 		}
 		return super.eIsSet(featureID);
 	}

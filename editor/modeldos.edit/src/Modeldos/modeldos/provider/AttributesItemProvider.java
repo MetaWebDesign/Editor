@@ -62,7 +62,7 @@ public class AttributesItemProvider
 
 			addNamePropertyDescriptor(object);
 			addRolPropertyDescriptor(object);
-			addValorPropertyDescriptor(object);
+			addValuePropertyDescriptor(object);
 			addPrimaryKeyPropertyDescriptor(object);
 			addDataTypePropertyDescriptor(object);
 			addInTheFormPropertyDescriptor(object);
@@ -115,19 +115,19 @@ public class AttributesItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Valor feature.
+	 * This adds a property descriptor for the Value feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addValorPropertyDescriptor(Object object) {
+	protected void addValuePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Attributes_valor_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Attributes_valor_feature", "_UI_Attributes_type"),
-				 ModeldosPackage.Literals.ATTRIBUTES__VALOR,
+				 getString("_UI_Attributes_value_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attributes_value_feature", "_UI_Attributes_type"),
+				 ModeldosPackage.Literals.ATTRIBUTES__VALUE,
 				 true,
 				 false,
 				 false,
@@ -242,7 +242,7 @@ public class AttributesItemProvider
 		switch (notification.getFeatureID(Attributes.class)) {
 			case ModeldosPackage.ATTRIBUTES__NAME:
 			case ModeldosPackage.ATTRIBUTES__ROL:
-			case ModeldosPackage.ATTRIBUTES__VALOR:
+			case ModeldosPackage.ATTRIBUTES__VALUE:
 			case ModeldosPackage.ATTRIBUTES__PRIMARY_KEY:
 			case ModeldosPackage.ATTRIBUTES__DATA_TYPE:
 			case ModeldosPackage.ATTRIBUTES__IN_THE_FORM:

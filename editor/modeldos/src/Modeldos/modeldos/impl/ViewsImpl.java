@@ -2,6 +2,7 @@
  */
 package Modeldos.modeldos.impl;
 
+import Modeldos.modeldos.Group;
 import Modeldos.modeldos.ModeldosPackage;
 import Modeldos.modeldos.RelationClass;
 import Modeldos.modeldos.TypeRol;
@@ -32,10 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link Modeldos.modeldos.impl.ViewsImpl#getTitle <em>Title</em>}</li>
- *   <li>{@link Modeldos.modeldos.impl.ViewsImpl#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ViewsImpl#getRolView <em>Rol View</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ViewsImpl#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Modeldos.modeldos.impl.ViewsImpl#getViewGoRelationClass <em>View Go Relation Class</em>}</li>
+ *   <li>{@link Modeldos.modeldos.impl.ViewsImpl#getGroupName <em>Group Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -61,26 +62,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * @ordered
 	 */
 	protected String title = TITLE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getGroupName() <em>Group Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGroupName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GROUP_NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getGroupName() <em>Group Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGroupName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String groupName = GROUP_NAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getRolView() <em>Rol View</em>}' attribute.
@@ -123,6 +104,16 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	protected EList<RelationClass> viewGoRelationClass;
 
 	/**
+	 * The cached value of the '{@link #getGroupName() <em>Group Name</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGroupName()
+	 * @generated
+	 * @ordered
+	 */
+	protected Group groupName;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -160,27 +151,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 		title = newTitle;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.VIEWS__TITLE, oldTitle, title));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getGroupName() {
-		return groupName;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setGroupName(String newGroupName) {
-		String oldGroupName = groupName;
-		groupName = newGroupName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.VIEWS__GROUP_NAME, oldGroupName, groupName));
 	}
 
 	/**
@@ -233,6 +203,44 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Group getGroupName() {
+		if (groupName != null && groupName.eIsProxy()) {
+			InternalEObject oldGroupName = (InternalEObject)groupName;
+			groupName = (Group)eResolveProxy(oldGroupName);
+			if (groupName != oldGroupName) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ModeldosPackage.VIEWS__GROUP_NAME, oldGroupName, groupName));
+			}
+		}
+		return groupName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Group basicGetGroupName() {
+		return groupName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setGroupName(Group newGroupName) {
+		Group oldGroupName = groupName;
+		groupName = newGroupName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModeldosPackage.VIEWS__GROUP_NAME, oldGroupName, groupName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -252,14 +260,15 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 		switch (featureID) {
 			case ModeldosPackage.VIEWS__TITLE:
 				return getTitle();
-			case ModeldosPackage.VIEWS__GROUP_NAME:
-				return getGroupName();
 			case ModeldosPackage.VIEWS__ROL_VIEW:
 				return getRolView();
 			case ModeldosPackage.VIEWS__HAS_RELATION_CLASS:
 				return getHasRelationClass();
 			case ModeldosPackage.VIEWS__VIEW_GO_RELATION_CLASS:
 				return getViewGoRelationClass();
+			case ModeldosPackage.VIEWS__GROUP_NAME:
+				if (resolve) return getGroupName();
+				return basicGetGroupName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -276,9 +285,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case ModeldosPackage.VIEWS__TITLE:
 				setTitle((String)newValue);
 				return;
-			case ModeldosPackage.VIEWS__GROUP_NAME:
-				setGroupName((String)newValue);
-				return;
 			case ModeldosPackage.VIEWS__ROL_VIEW:
 				setRolView((TypeRol)newValue);
 				return;
@@ -289,6 +295,9 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case ModeldosPackage.VIEWS__VIEW_GO_RELATION_CLASS:
 				getViewGoRelationClass().clear();
 				getViewGoRelationClass().addAll((Collection<? extends RelationClass>)newValue);
+				return;
+			case ModeldosPackage.VIEWS__GROUP_NAME:
+				setGroupName((Group)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -305,9 +314,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case ModeldosPackage.VIEWS__TITLE:
 				setTitle(TITLE_EDEFAULT);
 				return;
-			case ModeldosPackage.VIEWS__GROUP_NAME:
-				setGroupName(GROUP_NAME_EDEFAULT);
-				return;
 			case ModeldosPackage.VIEWS__ROL_VIEW:
 				setRolView(ROL_VIEW_EDEFAULT);
 				return;
@@ -316,6 +322,9 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return;
 			case ModeldosPackage.VIEWS__VIEW_GO_RELATION_CLASS:
 				getViewGoRelationClass().clear();
+				return;
+			case ModeldosPackage.VIEWS__GROUP_NAME:
+				setGroupName((Group)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -331,14 +340,14 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 		switch (featureID) {
 			case ModeldosPackage.VIEWS__TITLE:
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
-			case ModeldosPackage.VIEWS__GROUP_NAME:
-				return GROUP_NAME_EDEFAULT == null ? groupName != null : !GROUP_NAME_EDEFAULT.equals(groupName);
 			case ModeldosPackage.VIEWS__ROL_VIEW:
 				return rolView != ROL_VIEW_EDEFAULT;
 			case ModeldosPackage.VIEWS__HAS_RELATION_CLASS:
 				return hasRelationClass != null && !hasRelationClass.isEmpty();
 			case ModeldosPackage.VIEWS__VIEW_GO_RELATION_CLASS:
 				return viewGoRelationClass != null && !viewGoRelationClass.isEmpty();
+			case ModeldosPackage.VIEWS__GROUP_NAME:
+				return groupName != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -355,8 +364,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (title: ");
 		result.append(title);
-		result.append(", groupName: ");
-		result.append(groupName);
 		result.append(", rolView: ");
 		result.append(rolView);
 		result.append(')');

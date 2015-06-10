@@ -14,10 +14,10 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Modeldos.modeldos.RelationClass#getRelationName <em>Relation Name</em>}</li>
+ *   <li>{@link Modeldos.modeldos.RelationClass#getName <em>Name</em>}</li>
  *   <li>{@link Modeldos.modeldos.RelationClass#getTypePresentation <em>Type Presentation</em>}</li>
- *   <li>{@link Modeldos.modeldos.RelationClass#getHorizontalPosition <em>Horizontal Position</em>}</li>
- *   <li>{@link Modeldos.modeldos.RelationClass#getVerticalPosition <em>Vertical Position</em>}</li>
+ *   <li>{@link Modeldos.modeldos.RelationClass#getPositionHorizotal <em>Position Horizotal</em>}</li>
+ *   <li>{@link Modeldos.modeldos.RelationClass#getPositionVertical <em>Position Vertical</em>}</li>
  *   <li>{@link Modeldos.modeldos.RelationClass#getFromClass <em>From Class</em>}</li>
  *   <li>{@link Modeldos.modeldos.RelationClass#getAttributeGet <em>Attribute Get</em>}</li>
  *   <li>{@link Modeldos.modeldos.RelationClass#getAttributeReplace <em>Attribute Replace</em>}</li>
@@ -31,30 +31,30 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface RelationClass extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Relation Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Relation Name</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Relation Name</em>' attribute.
-	 * @see #setRelationName(String)
-	 * @see Modeldos.modeldos.ModeldosPackage#getRelationClass_RelationName()
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see Modeldos.modeldos.ModeldosPackage#getRelationClass_Name()
 	 * @model
 	 * @generated
 	 */
-	String getRelationName();
+	String getName();
 
 	/**
-	 * Sets the value of the '{@link Modeldos.modeldos.RelationClass#getRelationName <em>Relation Name</em>}' attribute.
+	 * Sets the value of the '{@link Modeldos.modeldos.RelationClass#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Relation Name</em>' attribute.
-	 * @see #getRelationName()
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
 	 * @generated
 	 */
-	void setRelationName(String value);
+	void setName(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Type Presentation</b></em>' attribute.
@@ -87,60 +87,60 @@ public interface RelationClass extends EObject {
 	void setTypePresentation(typePresentation value);
 
 	/**
-	 * Returns the value of the '<em><b>Horizontal Position</b></em>' attribute.
+	 * Returns the value of the '<em><b>Position Horizotal</b></em>' attribute.
 	 * The default value is <code>"center"</code>.
 	 * The literals are from the enumeration {@link Modeldos.modeldos.typeHorizontalPosition}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Horizontal Position</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Position Horizotal</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Horizontal Position</em>' attribute.
+	 * @return the value of the '<em>Position Horizotal</em>' attribute.
 	 * @see Modeldos.modeldos.typeHorizontalPosition
-	 * @see #setHorizontalPosition(typeHorizontalPosition)
-	 * @see Modeldos.modeldos.ModeldosPackage#getRelationClass_HorizontalPosition()
+	 * @see #setPositionHorizotal(typeHorizontalPosition)
+	 * @see Modeldos.modeldos.ModeldosPackage#getRelationClass_PositionHorizotal()
 	 * @model default="center"
 	 * @generated
 	 */
-	typeHorizontalPosition getHorizontalPosition();
+	typeHorizontalPosition getPositionHorizotal();
 
 	/**
-	 * Sets the value of the '{@link Modeldos.modeldos.RelationClass#getHorizontalPosition <em>Horizontal Position</em>}' attribute.
+	 * Sets the value of the '{@link Modeldos.modeldos.RelationClass#getPositionHorizotal <em>Position Horizotal</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Horizontal Position</em>' attribute.
+	 * @param value the new value of the '<em>Position Horizotal</em>' attribute.
 	 * @see Modeldos.modeldos.typeHorizontalPosition
-	 * @see #getHorizontalPosition()
+	 * @see #getPositionHorizotal()
 	 * @generated
 	 */
-	void setHorizontalPosition(typeHorizontalPosition value);
+	void setPositionHorizotal(typeHorizontalPosition value);
 
 	/**
-	 * Returns the value of the '<em><b>Vertical Position</b></em>' attribute.
+	 * Returns the value of the '<em><b>Position Vertical</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Vertical Position</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Position Vertical</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vertical Position</em>' attribute.
-	 * @see #setVerticalPosition(int)
-	 * @see Modeldos.modeldos.ModeldosPackage#getRelationClass_VerticalPosition()
+	 * @return the value of the '<em>Position Vertical</em>' attribute.
+	 * @see #setPositionVertical(int)
+	 * @see Modeldos.modeldos.ModeldosPackage#getRelationClass_PositionVertical()
 	 * @model
 	 * @generated
 	 */
-	int getVerticalPosition();
+	int getPositionVertical();
 
 	/**
-	 * Sets the value of the '{@link Modeldos.modeldos.RelationClass#getVerticalPosition <em>Vertical Position</em>}' attribute.
+	 * Sets the value of the '{@link Modeldos.modeldos.RelationClass#getPositionVertical <em>Position Vertical</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vertical Position</em>' attribute.
-	 * @see #getVerticalPosition()
+	 * @param value the new value of the '<em>Position Vertical</em>' attribute.
+	 * @see #getPositionVertical()
 	 * @generated
 	 */
-	void setVerticalPosition(int value);
+	void setPositionVertical(int value);
 
 	/**
 	 * Returns the value of the '<em><b>From Class</b></em>' reference list.

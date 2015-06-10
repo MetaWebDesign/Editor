@@ -60,26 +60,26 @@ public class GroupItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNombrePropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 			addOrderPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Nombre feature.
+	 * This adds a property descriptor for the Name feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addNombrePropertyDescriptor(Object object) {
+	protected void addNamePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Group_nombre_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Group_nombre_feature", "_UI_Group_type"),
-				 ModeldosPackage.Literals.GROUP__NOMBRE,
+				 getString("_UI_Group_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Group_name_feature", "_UI_Group_type"),
+				 ModeldosPackage.Literals.GROUP__NAME,
 				 true,
 				 false,
 				 false,
@@ -129,7 +129,7 @@ public class GroupItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Group)object).getNombre();
+		String label = ((Group)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Group_type") :
 			getString("_UI_Group_type") + " " + label;
@@ -148,7 +148,7 @@ public class GroupItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Group.class)) {
-			case ModeldosPackage.GROUP__NOMBRE:
+			case ModeldosPackage.GROUP__NAME:
 			case ModeldosPackage.GROUP__ORDER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;

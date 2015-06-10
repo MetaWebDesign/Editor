@@ -45,32 +45,9 @@ public class PageItemProvider extends ViewsItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addContentPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Page_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Page_name_feature", "_UI_Page_type"),
-				 ModeldosPackage.Literals.PAGE__NAME,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -114,7 +91,7 @@ public class PageItemProvider extends ViewsItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Page)object).getName();
+		String label = ((Page)object).getTitle();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Page_type") :
 			getString("_UI_Page_type") + " " + label;
@@ -133,7 +110,6 @@ public class PageItemProvider extends ViewsItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Page.class)) {
-			case ModeldosPackage.PAGE__NAME:
 			case ModeldosPackage.PAGE__CONTENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
