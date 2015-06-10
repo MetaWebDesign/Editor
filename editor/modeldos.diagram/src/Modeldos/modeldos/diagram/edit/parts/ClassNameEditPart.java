@@ -53,7 +53,7 @@ public class ClassNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5009;
+	public static final int VISUAL_ID = 5003;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class ClassNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 					.getParser(
-							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006,
+							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2001,
 							getParserElement(),
 							Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 									.getType(Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID));

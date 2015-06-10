@@ -1,11 +1,13 @@
 package Modeldos.modeldos.diagram.part;
 
+import java.util.ArrayList;
 import java.util.Collections;
 
 import org.eclipse.gef.palette.PaletteContainer;
 import org.eclipse.gef.palette.PaletteGroup;
 import org.eclipse.gef.palette.PaletteRoot;
 import org.eclipse.gef.palette.ToolEntry;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.tooling.runtime.part.DefaultLinkToolEntry;
 import org.eclipse.gmf.tooling.runtime.part.DefaultNodeToolEntry;
 
@@ -50,10 +52,10 @@ public class ModeldosPaletteFactory {
 				Modeldos.modeldos.diagram.part.Messages.Class1CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Class1CreationTool_desc,
 				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006));
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2001));
 		entry.setId("createClass1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2001));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -75,14 +77,16 @@ public class ModeldosPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createDerived3CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3002);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2006);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Modeldos.modeldos.diagram.part.Messages.Derived3CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Derived3CreationTool_desc,
-				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007));
+				types);
 		entry.setId("createDerived3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -91,14 +95,16 @@ public class ModeldosPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createNotDerived4CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3001);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2007);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Modeldos.modeldos.diagram.part.Messages.NotDerived4CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.NotDerived4CreationTool_desc,
-				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003));
+				types);
 		entry.setId("createNotDerived4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3001));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -127,10 +133,10 @@ public class ModeldosPaletteFactory {
 				Modeldos.modeldos.diagram.part.Messages.Menu6CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Menu6CreationTool_desc,
 				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001));
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2005));
 		entry.setId("createMenu6CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2005));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -139,14 +145,16 @@ public class ModeldosPaletteFactory {
 	 * @generated
 	 */
 	private ToolEntry createGroup7CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004);
+		types.add(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3003);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Modeldos.modeldos.diagram.part.Messages.Group7CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Group7CreationTool_desc,
-				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002));
+				types);
 		entry.setId("createGroup7CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -172,10 +180,10 @@ public class ModeldosPaletteFactory {
 				Modeldos.modeldos.diagram.part.Messages.Form9CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Form9CreationTool_desc,
 				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004));
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2002));
 		entry.setId("createForm9CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -188,10 +196,10 @@ public class ModeldosPaletteFactory {
 				Modeldos.modeldos.diagram.part.Messages.Page10CreationTool_title,
 				Modeldos.modeldos.diagram.part.Messages.Page10CreationTool_desc,
 				Collections
-						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005));
+						.singletonList(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2003));
 		entry.setId("createPage10CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Modeldos.modeldos.diagram.providers.ModeldosElementTypes
-				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005));
+				.getImageDescriptor(Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2003));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

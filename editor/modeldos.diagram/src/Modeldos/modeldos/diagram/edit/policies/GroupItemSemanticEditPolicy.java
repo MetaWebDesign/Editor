@@ -20,7 +20,7 @@ public class GroupItemSemanticEditPolicy
 	 */
 	public GroupItemSemanticEditPolicy() {
 		super(
-				Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002);
+				Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004);
 	}
 
 	/**

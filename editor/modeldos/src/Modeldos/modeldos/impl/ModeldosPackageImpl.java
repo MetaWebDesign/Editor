@@ -15,6 +15,7 @@ import Modeldos.modeldos.RelationClass;
 import Modeldos.modeldos.Root;
 import Modeldos.modeldos.TypeAttributeForm;
 import Modeldos.modeldos.TypeData;
+import Modeldos.modeldos.TypeOrientation;
 import Modeldos.modeldos.TypeRol;
 import Modeldos.modeldos.TypeService;
 import Modeldos.modeldos.Views;
@@ -154,6 +155,13 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * @generated
 	 */
 	private EEnum typeServiceEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum typeOrientationEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -608,6 +616,15 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getMenu_Orientated() {
+		return (EAttribute)menuEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getGroup() {
 		return groupEClass;
 	}
@@ -788,6 +805,15 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EEnum getTypeOrientation() {
+		return typeOrientationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ModeldosFactory getModeldosFactory() {
 		return (ModeldosFactory)getEFactoryInstance();
 	}
@@ -860,6 +886,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		menuEClass = createEClass(MENU);
 		createEReference(menuEClass, MENU__HAS_GROUP);
 		createEAttribute(menuEClass, MENU__NAME);
+		createEAttribute(menuEClass, MENU__ORIENTATED);
 
 		groupEClass = createEClass(GROUP);
 		createEAttribute(groupEClass, GROUP__NAME);
@@ -886,6 +913,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		typePresentationEEnum = createEEnum(TYPE_PRESENTATION);
 		typeHorizontalPositionEEnum = createEEnum(TYPE_HORIZONTAL_POSITION);
 		typeServiceEEnum = createEEnum(TYPE_SERVICE);
+		typeOrientationEEnum = createEEnum(TYPE_ORIENTATION);
 	}
 
 	/**
@@ -971,6 +999,7 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		initEClass(menuEClass, Menu.class, "Menu", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMenu_HasGroup(), this.getGroup(), null, "hasGroup", null, 0, -1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMenu_Name(), ecorePackage.getEString(), "name", null, 0, 1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMenu_Orientated(), this.getTypeOrientation(), "orientated", null, 0, 1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGroup_Name(), ecorePackage.getEString(), "name", null, 0, 1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1030,6 +1059,12 @@ public class ModeldosPackageImpl extends EPackageImpl implements ModeldosPackage
 		addEEnumLiteral(typeServiceEEnum, TypeService.DISPLAY_OBJECTS);
 		addEEnumLiteral(typeServiceEEnum, TypeService.DISPLAY_OBJECT);
 		addEEnumLiteral(typeServiceEEnum, TypeService.ADMIN);
+
+		initEEnum(typeOrientationEEnum, TypeOrientation.class, "TypeOrientation");
+		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.TOP_HORIZONTAL);
+		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.BOTTOM_HORIZONTAL);
+		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.LEFT_VERTICAL);
+		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.RIGHT_VERTICAL);
 
 		// Create resource
 		createResource(eNS_URI);

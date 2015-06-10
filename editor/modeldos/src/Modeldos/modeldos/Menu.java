@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Modeldos.modeldos.Menu#getHasGroup <em>Has Group</em>}</li>
  *   <li>{@link Modeldos.modeldos.Menu#getName <em>Name</em>}</li>
+ *   <li>{@link Modeldos.modeldos.Menu#getOrientated <em>Orientated</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,5 +66,34 @@ public interface Menu extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Orientated</b></em>' attribute.
+	 * The literals are from the enumeration {@link Modeldos.modeldos.TypeOrientation}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Orientated</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Orientated</em>' attribute.
+	 * @see Modeldos.modeldos.TypeOrientation
+	 * @see #setOrientated(TypeOrientation)
+	 * @see Modeldos.modeldos.ModeldosPackage#getMenu_Orientated()
+	 * @model
+	 * @generated
+	 */
+	TypeOrientation getOrientated();
+
+	/**
+	 * Sets the value of the '{@link Modeldos.modeldos.Menu#getOrientated <em>Orientated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Orientated</em>' attribute.
+	 * @see Modeldos.modeldos.TypeOrientation
+	 * @see #getOrientated()
+	 * @generated
+	 */
+	void setOrientated(TypeOrientation value);
 
 } // Menu

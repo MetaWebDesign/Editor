@@ -12,14 +12,18 @@ import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
 import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
+import org.eclipse.gmf.runtime.diagram.core.edithelpers.CreateElementRequestAdapter;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.diagram.ui.requests.CreateViewAndElementRequest;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.edit.policies.reparent.CreationEditPolicyWithCustomReparent;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -30,7 +34,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2001;
+	public static final int VISUAL_ID = 2005;
 
 	/**
 	 * @generated
@@ -53,6 +57,10 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected void createDefaultEditPolicies() {
+		installEditPolicy(
+				EditPolicyRoles.CREATION_ROLE,
+				new CreationEditPolicyWithCustomReparent(
+						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry.TYPED_INSTANCE));
 		super.createDefaultEditPolicies();
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
@@ -111,6 +119,13 @@ public class MenuEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureMenuNameFigure());
 			return true;
 		}
+		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonGrupo();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) childEditPart)
+					.getFigure());
+			return true;
+		}
 		return false;
 	}
 
@@ -119,6 +134,12 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart) {
+			return true;
+		}
+		if (childEditPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonGrupo();
+			pane.remove(((Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) childEditPart)
+					.getFigure());
 			return true;
 		}
 		return false;
@@ -148,6 +169,9 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		if (editPart instanceof Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) {
+			return getPrimaryShape().getFigureCajonGrupo();
+		}
 		return getContentPane();
 	}
 
@@ -248,12 +272,34 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
+	public EditPart getTargetEditPart(Request request) {
+		if (request instanceof CreateViewAndElementRequest) {
+			CreateElementRequestAdapter adapter = ((CreateViewAndElementRequest) request)
+					.getViewAndElementDescriptor()
+					.getCreateElementRequestAdapter();
+			IElementType type = (IElementType) adapter
+					.getAdapter(IElementType.class);
+			if (type == Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3003) {
+				return getChildBySemanticHint(Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+						.getType(Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart.VISUAL_ID));
+			}
+		}
+		return super.getTargetEditPart(request);
+	}
+
+	/**
+	 * @generated
+	 */
 	public class MenuFigure extends RectangleFigure {
 
 		/**
 		 * @generated
 		 */
 		private WrappingLabel fFigureMenuNameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureMenuOrientatedFigure;
 		/**
 		 * @generated
 		 */
@@ -281,6 +327,12 @@ public class MenuEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureMenuNameFigure, BorderLayout.TOP);
 
+			fFigureMenuOrientatedFigure = new WrappingLabel();
+
+			fFigureMenuOrientatedFigure.setText("<...>");
+
+			this.add(fFigureMenuOrientatedFigure);
+
 			fFigureCajonGrupo = new RectangleFigure();
 
 			this.add(fFigureCajonGrupo, BorderLayout.CENTER);
@@ -292,6 +344,13 @@ public class MenuEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureMenuNameFigure() {
 			return fFigureMenuNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureMenuOrientatedFigure() {
+			return fFigureMenuOrientatedFigure;
 		}
 
 		/**

@@ -25,36 +25,12 @@ public class ModeldosEditPartFactory implements EditPartFactory {
 				return new Modeldos.modeldos.diagram.edit.parts.RootEditPart(
 						view);
 
-			case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-				return new Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart(
-						view);
-
-			case Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID:
-				return new Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart(
-						view);
-
 			case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 				return new Modeldos.modeldos.diagram.edit.parts.ClassEditPart(
 						view);
 
 			case Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID:
 				return new Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart(
-						view);
-
-			case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-				return new Modeldos.modeldos.diagram.edit.parts.MenuEditPart(
-						view);
-
-			case Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID:
-				return new Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart(
-						view);
-
-			case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-				return new Modeldos.modeldos.diagram.edit.parts.PageEditPart(
-						view);
-
-			case Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
-				return new Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart(
 						view);
 
 			case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
@@ -65,6 +41,14 @@ public class ModeldosEditPartFactory implements EditPartFactory {
 				return new Modeldos.modeldos.diagram.edit.parts.FormTitleEditPart(
 						view);
 
+			case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.PageEditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart(
+						view);
+
 			case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 				return new Modeldos.modeldos.diagram.edit.parts.GroupEditPart(
 						view);
@@ -73,12 +57,60 @@ public class ModeldosEditPartFactory implements EditPartFactory {
 				return new Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart(
 						view);
 
+			case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.MenuEditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart(
+						view);
+
 			case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 				return new Modeldos.modeldos.diagram.edit.parts.DerivedEditPart(
 						view);
 
 			case Modeldos.modeldos.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID:
 				return new Modeldos.modeldos.diagram.edit.parts.DerivedNameEditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.NotDerivedName2EditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.Derived2EditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.DerivedName2EditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.Group2EditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.GroupName2EditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.GroupName2EditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajonEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.ClassAttributeInClassCajonEditPart(
+						view);
+
+			case Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart.VISUAL_ID:
+				return new Modeldos.modeldos.diagram.edit.parts.MenuGrupoInMenuCajonEditPart(
 						view);
 
 			case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:

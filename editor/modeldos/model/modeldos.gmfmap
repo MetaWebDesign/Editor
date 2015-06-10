@@ -8,26 +8,6 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="modeldos.ecore#//Root/attribute"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeldos.ecore#//NotDerived"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeldos.gmfgraph#NotDerivedName"/>
-        <features
-            href="modeldos.ecore#//Attributes/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.3"/>
-      <diagramNode
-          href="modeldos.gmfgraph#NotDerived"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="modeldos.ecore#//Root/class"/>
     <ownedChild>
       <domainMetaElement
@@ -44,46 +24,23 @@
           href="modeldos.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
           href="modeldos.gmfgraph#Class"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeldos.ecore#//Root/menu"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeldos.ecore#//Menu"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeldos.gmfgraph#MenuName"/>
-        <features
-            href="modeldos.ecore#//Menu/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.5"/>
-      <diagramNode
-          href="modeldos.gmfgraph#Menu"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="modeldos.ecore#//Root/views"/>
-    <ownedChild>
-      <domainMetaElement
-          href="modeldos.ecore#//Page"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="modeldos.gmfgraph#PageTitle"/>
-        <features
-            href="modeldos.ecore#//Views/title"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="modeldos.gmftool#//@palette/@tools.0/@tools.9"/>
-      <diagramNode
-          href="modeldos.gmfgraph#Page"/>
+      <children
+          compartment="//@nodes.0/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.6/@ownedChild">
+        <containmentFeature
+            href="modeldos.ecore#//Class/hasAttributes"/>
+      </children>
+      <children
+          compartment="//@nodes.0/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.5/@ownedChild">
+        <containmentFeature
+            href="modeldos.ecore#//Class/hasAttributes"/>
+      </children>
+      <compartments
+          children="//@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0">
+        <compartment
+            href="modeldos.gmfgraph#AttributeInClassCajon"/>
+      </compartments>
     </ownedChild>
   </nodes>
   <nodes>
@@ -108,6 +65,26 @@
   </nodes>
   <nodes>
     <containmentFeature
+        href="modeldos.ecore#//Root/views"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeldos.ecore#//Page"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeldos.gmfgraph#PageTitle"/>
+        <features
+            href="modeldos.ecore#//Views/title"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.9"/>
+      <diagramNode
+          href="modeldos.gmfgraph#Page"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
         href="modeldos.ecore#//Root/group"/>
     <ownedChild>
       <domainMetaElement
@@ -124,6 +101,37 @@
           href="modeldos.gmftool#//@palette/@tools.0/@tools.6"/>
       <diagramNode
           href="modeldos.gmfgraph#Group"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeldos.ecore#//Root/menu"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeldos.ecore#//Menu"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeldos.gmfgraph#MenuName"/>
+        <features
+            href="modeldos.ecore#//Menu/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="modeldos.gmfgraph#Menu"/>
+      <children
+          compartment="//@nodes.4/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.3/@ownedChild">
+        <containmentFeature
+            href="modeldos.ecore#//Menu/hasGroup"/>
+      </children>
+      <compartments
+          children="//@nodes.4/@ownedChild/@children.0">
+        <compartment
+            href="modeldos.gmfgraph#GrupoInMenuCajon"/>
+      </compartments>
     </ownedChild>
   </nodes>
   <nodes>
@@ -146,6 +154,26 @@
           href="modeldos.gmfgraph#Derived"/>
     </ownedChild>
   </nodes>
+  <nodes>
+    <containmentFeature
+        href="modeldos.ecore#//Root/attribute"/>
+    <ownedChild>
+      <domainMetaElement
+          href="modeldos.ecore#//NotDerived"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="modeldos.gmfgraph#NotDerivedName"/>
+        <features
+            href="modeldos.ecore#//Attributes/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="modeldos.gmftool#//@palette/@tools.0/@tools.3"/>
+      <diagramNode
+          href="modeldos.gmfgraph#NotDerived"/>
+    </ownedChild>
+  </nodes>
   <links>
     <domainMetaElement
         href="modeldos.ecore#//RelationClass"/>
@@ -157,7 +185,7 @@
           href="modeldos.ecore#//RelationClass/name"/>
     </labelMappings>
     <containmentFeature
-        href="modeldos.ecore#//Views/hasRelationClass"/>
+        href="modeldos.ecore#//Class/hasRelationClass"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="modeldos.gmftool#//@palette/@tools.0/@tools.4"/>

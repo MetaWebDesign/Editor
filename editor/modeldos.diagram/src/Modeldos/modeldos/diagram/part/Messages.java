@@ -348,6 +348,16 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String ClassAttributeInClassCajonEditPart_title;
+
+	/**
+	 * @generated
+	 */
+	public static String MenuGrupoInMenuCajonEditPart_title;
+
+	/**
+	 * @generated
+	 */
 	public static String CommandName_OpenDiagram;
 
 	/**
@@ -358,17 +368,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Form_2004_outgoinglinks;
+	public static String NavigatorGroupName_Class_2001_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Page_2005_outgoinglinks;
-
-	/**
-	 * @generated
-	 */
-	public static String NavigatorGroupName_Class_2006_incominglinks;
+	public static String NavigatorGroupName_Class_2001_outgoinglinks;
 
 	/**
 	 * @generated

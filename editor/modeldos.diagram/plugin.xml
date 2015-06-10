@@ -217,7 +217,7 @@
       <viewProvider class="Modeldos.modeldos.diagram.providers.ModeldosViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Modeldos"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2003,2006,2001,2005,2004,2002,2007"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003,2004,2005,2006,2007,3001,3002,3003"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
       </viewProvider>
    </extension>
@@ -230,16 +230,16 @@
             <method name="getType()" value="Modeldos"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2003,2006,2001,2005,2004,2002,2007"/>
+            <method name="getType()" value="2001,2002,2003,2004,2005,2006,2007,3001,3002,3003"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value="4001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5004,5009,5002,5006,5005,5003,5010"/>
+            <method name="getType()" value="5003,5004,5005,5006,5008,5009,5010,5001,5002,5007"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
-            <method name="getType()" value=""/>
+            <method name="getType()" value="7001,7002"/>
          </object>
          <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
       </editpartProvider>
@@ -253,40 +253,55 @@
          <object class="Modeldos.modeldos.diagram.edit.parts.RootEditPart" id="Root_1000"/>
          <context elements="Root_1000"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfNotDerivedEditPart">
-         <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart" id="NotDerived_2003"/>
-         <context elements="NotDerived_2003"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfClassEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.ClassEditPart" id="Class_2006"/>
-         <context elements="Class_2006"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfMenuEditPart">
-         <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.MenuEditPart" id="Menu_2001"/>
-         <context elements="Menu_2001"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfPageEditPart">
-         <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.PageEditPart" id="Page_2005"/>
-         <context elements="Page_2005"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.ClassEditPart" id="Class_2001"/>
+         <context elements="Class_2001"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfFormEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.FormEditPart" id="Form_2004"/>
-         <context elements="Form_2004"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.FormEditPart" id="Form_2002"/>
+         <context elements="Form_2002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfPageEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.PageEditPart" id="Page_2003"/>
+         <context elements="Page_2003"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfGroupEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.GroupEditPart" id="Group_2002"/>
-         <context elements="Group_2002"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.GroupEditPart" id="Group_2004"/>
+         <context elements="Group_2004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfMenuEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.MenuEditPart" id="Menu_2005"/>
+         <context elements="Menu_2005"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfDerivedEditPart">
          <Priority name="Lowest"/>
-         <object class="Modeldos.modeldos.diagram.edit.parts.DerivedEditPart" id="Derived_2007"/>
-         <context elements="Derived_2007"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.DerivedEditPart" id="Derived_2006"/>
+         <context elements="Derived_2006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfNotDerivedEditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart" id="NotDerived_2007"/>
+         <context elements="NotDerived_2007"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfNotDerived2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart" id="NotDerived_3001"/>
+         <context elements="NotDerived_3001"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfDerived2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.Derived2EditPart" id="Derived_3002"/>
+         <context elements="Derived_3002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Modeldos.modeldos.diagram.providers.assistants.ModeldosModelingAssistantProviderOfGroup2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Modeldos.modeldos.diagram.edit.parts.Group2EditPart" id="Group_3003"/>
+         <context elements="Group_3003"/>
       </modelingAssistantProvider>
       
    </extension>
@@ -320,73 +335,100 @@
       </metamodel>
       <metamodel nsURI="http://modeldos/1.0">
          <metamodelType
-               id="modeldos.diagram.NotDerived_2003"
-               name="%metatype.name.NotDerived_2003"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="NotDerived"
-               edithelper="Modeldos.modeldos.diagram.edit.helpers.NotDerivedEditHelper">
-            <param name="semanticHint" value="2003"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://modeldos/1.0">
-         <metamodelType
-               id="modeldos.diagram.Class_2006"
-               name="%metatype.name.Class_2006"
+               id="modeldos.diagram.Class_2001"
+               name="%metatype.name.Class_2001"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Class"
                edithelper="Modeldos.modeldos.diagram.edit.helpers.ClassEditHelper">
-            <param name="semanticHint" value="2006"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://modeldos/1.0">
-         <metamodelType
-               id="modeldos.diagram.Menu_2001"
-               name="%metatype.name.Menu_2001"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Menu"
-               edithelper="Modeldos.modeldos.diagram.edit.helpers.MenuEditHelper">
             <param name="semanticHint" value="2001"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeldos/1.0">
          <metamodelType
-               id="modeldos.diagram.Page_2005"
-               name="%metatype.name.Page_2005"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Page"
-               edithelper="Modeldos.modeldos.diagram.edit.helpers.PageEditHelper">
-            <param name="semanticHint" value="2005"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://modeldos/1.0">
-         <metamodelType
-               id="modeldos.diagram.Form_2004"
-               name="%metatype.name.Form_2004"
+               id="modeldos.diagram.Form_2002"
+               name="%metatype.name.Form_2002"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Form"
                edithelper="Modeldos.modeldos.diagram.edit.helpers.FormEditHelper">
-            <param name="semanticHint" value="2004"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://modeldos/1.0">
-         <metamodelType
-               id="modeldos.diagram.Group_2002"
-               name="%metatype.name.Group_2002"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Group"
-               edithelper="Modeldos.modeldos.diagram.edit.helpers.GroupEditHelper">
             <param name="semanticHint" value="2002"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://modeldos/1.0">
          <metamodelType
-               id="modeldos.diagram.Derived_2007"
-               name="%metatype.name.Derived_2007"
+               id="modeldos.diagram.Page_2003"
+               name="%metatype.name.Page_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Page"
+               edithelper="Modeldos.modeldos.diagram.edit.helpers.PageEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <metamodelType
+               id="modeldos.diagram.Group_2004"
+               name="%metatype.name.Group_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Group"
+               edithelper="Modeldos.modeldos.diagram.edit.helpers.GroupEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <metamodelType
+               id="modeldos.diagram.Menu_2005"
+               name="%metatype.name.Menu_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Menu"
+               edithelper="Modeldos.modeldos.diagram.edit.helpers.MenuEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <specializationType
+               id="modeldos.diagram.Derived_2006"
+               name="%metatype.name.Derived_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="modeldos.diagram.Derived_3002"/>
+            <param name="semanticHint" value="2006"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <specializationType
+               id="modeldos.diagram.NotDerived_2007"
+               name="%metatype.name.NotDerived_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="modeldos.diagram.NotDerived_3001"/>
+            <param name="semanticHint" value="2007"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <metamodelType
+               id="modeldos.diagram.NotDerived_3001"
+               name="%metatype.name.NotDerived_3001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="NotDerived"
+               edithelper="Modeldos.modeldos.diagram.edit.helpers.NotDerivedEditHelper">
+            <param name="semanticHint" value="3001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <metamodelType
+               id="modeldos.diagram.Derived_3002"
+               name="%metatype.name.Derived_3002"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Derived"
                edithelper="Modeldos.modeldos.diagram.edit.helpers.DerivedEditHelper">
-            <param name="semanticHint" value="2007"/>
+            <param name="semanticHint" value="3002"/>
          </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://modeldos/1.0">
+         <specializationType
+               id="modeldos.diagram.Group_3003"
+               name="%metatype.name.Group_3003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="modeldos.diagram.Group_2004"/>
+            <param name="semanticHint" value="3003"/>
+         </specializationType>
       </metamodel>
       <metamodel nsURI="http://modeldos/1.0">
          <metamodelType
@@ -411,13 +453,16 @@
       </clientContext> 
       <binding context="modeldos.diagram.TypeContext">
          <elementType ref="modeldos.diagram.Root_1000"/>
-         <elementType ref="modeldos.diagram.NotDerived_2003"/>
-         <elementType ref="modeldos.diagram.Class_2006"/>
-         <elementType ref="modeldos.diagram.Menu_2001"/>
-         <elementType ref="modeldos.diagram.Page_2005"/>
-         <elementType ref="modeldos.diagram.Form_2004"/>
-         <elementType ref="modeldos.diagram.Group_2002"/>
-         <elementType ref="modeldos.diagram.Derived_2007"/>
+         <elementType ref="modeldos.diagram.Class_2001"/>
+         <elementType ref="modeldos.diagram.Form_2002"/>
+         <elementType ref="modeldos.diagram.Page_2003"/>
+         <elementType ref="modeldos.diagram.Group_2004"/>
+         <elementType ref="modeldos.diagram.Menu_2005"/>
+         <elementType ref="modeldos.diagram.Derived_2006"/>
+         <elementType ref="modeldos.diagram.NotDerived_2007"/>
+         <elementType ref="modeldos.diagram.NotDerived_3001"/>
+         <elementType ref="modeldos.diagram.Derived_3002"/>
+         <elementType ref="modeldos.diagram.Group_3003"/>
          <elementType ref="modeldos.diagram.RelationClass_4001"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>

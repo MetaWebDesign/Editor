@@ -53,7 +53,7 @@ public class GroupNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5003;
+	public static final int VISUAL_ID = 5006;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class GroupNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 					.getParser(
-							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002,
+							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004,
 							getParserElement(),
 							Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 									.getType(Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));

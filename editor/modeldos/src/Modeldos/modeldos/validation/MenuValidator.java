@@ -5,6 +5,7 @@
 package Modeldos.modeldos.validation;
 
 import Modeldos.modeldos.Group;
+import Modeldos.modeldos.TypeOrientation;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -19,4 +20,5 @@ public interface MenuValidator {
 
 	boolean validateHasGroup(EList<Group> value);
 	boolean validateName(String value);
+	boolean validateOrientated(TypeOrientation value);
 }

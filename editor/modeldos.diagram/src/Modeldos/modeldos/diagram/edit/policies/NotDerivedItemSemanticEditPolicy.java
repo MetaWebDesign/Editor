@@ -20,7 +20,7 @@ public class NotDerivedItemSemanticEditPolicy
 	 */
 	public NotDerivedItemSemanticEditPolicy() {
 		super(
-				Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003);
+				Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2007);
 	}
 
 	/**

@@ -80,27 +80,36 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?Diagram?http://modeldos/1.0?Root", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Root_1000); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?Menu", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?Group", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?NotDerived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?Form", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004); //$NON-NLS-1$
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?Page", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005); //$NON-NLS-1$
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?Class", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://modeldos/1.0?Class", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2001); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://modeldos/1.0?Form", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2002); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://modeldos/1.0?Page", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2003); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://modeldos/1.0?Group", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://modeldos/1.0?Menu", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2005); //$NON-NLS-1$
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://modeldos/1.0?Derived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://modeldos/1.0?Derived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2006); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://modeldos/1.0?NotDerived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2007); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://modeldos/1.0?NotDerived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3001); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://modeldos/1.0?Derived", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3002); //$NON-NLS-1$
+		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://modeldos/1.0?Group", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3003); //$NON-NLS-1$
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?Link?http://modeldos/1.0?RelationClass", Modeldos.modeldos.diagram.providers.ModeldosElementTypes.RelationClass_4001); //$NON-NLS-1$
@@ -162,20 +171,26 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 				.getVisualID(view)) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return getRoot_1000Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2001Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return getGroup_2002Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return getNotDerived_2003Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2004Text(view);
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2005Text(view);
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return getClass_2006Text(view);
+			return getClass_2001Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2002Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2003Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getGroup_2004Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2005Text(view);
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return getDerived_2007Text(view);
+			return getDerived_2006Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return getNotDerived_2007Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return getNotDerived_3001Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return getDerived_3002Text(view);
+		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
+			return getGroup_3003Text(view);
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getRelationClass_4001Text(view);
 		}
@@ -192,35 +207,13 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getMenu_2001Text(View view) {
+	private String getClass_2001Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001,
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2001,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
-					.getInstance().logError(
-							"Parser was not found for label " + 5002); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getGroup_2002Text(View view) {
-		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
-				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002,
-						view.getElement() != null ? view.getElement() : view,
-						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -236,13 +229,13 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getNotDerived_2003Text(View view) {
+	private String getForm_2002Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003,
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2002,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.FormTitleEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -258,13 +251,13 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getForm_2004Text(View view) {
+	private String getPage_2003Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004,
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2003,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.FormTitleEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -280,13 +273,13 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getPage_2005Text(View view) {
+	private String getGroup_2004Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005,
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -302,13 +295,35 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getClass_2006Text(View view) {
+	private String getMenu_2005Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006,
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2005,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5008); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getDerived_2006Text(View view) {
+		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
+				.getParser(
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2006,
+						view.getElement() != null ? view.getElement() : view,
+						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+								.getType(Modeldos.modeldos.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -324,13 +339,13 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getDerived_2007Text(View view) {
+	private String getNotDerived_2007Text(View view) {
 		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 				.getParser(
-						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007,
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2007,
 						view.getElement() != null ? view.getElement() : view,
 						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
-								.getType(Modeldos.modeldos.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID));
+								.getType(Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -339,6 +354,72 @@ public class ModeldosNavigatorLabelProvider extends LabelProvider implements
 			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
 					.getInstance().logError(
 							"Parser was not found for label " + 5010); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getNotDerived_3001Text(View view) {
+		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
+				.getParser(
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_3001,
+						view.getElement() != null ? view.getElement() : view,
+						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+								.getType(Modeldos.modeldos.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5001); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getDerived_3002Text(View view) {
+		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
+				.getParser(
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_3002,
+						view.getElement() != null ? view.getElement() : view,
+						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+								.getType(Modeldos.modeldos.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5002); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getGroup_3003Text(View view) {
+		IParser parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
+				.getParser(
+						Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_3003,
+						view.getElement() != null ? view.getElement() : view,
+						Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
+								.getType(Modeldos.modeldos.diagram.edit.parts.GroupName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Modeldos.modeldos.diagram.part.ModeldosDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5007); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

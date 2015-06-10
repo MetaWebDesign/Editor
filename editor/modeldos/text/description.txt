@@ -56,6 +56,7 @@ Package modeldos <http://modeldos/1.0>
   Class Menu
     Reference hasGroup : Group<<0..*>>
     Attribute name : EString
+    Attribute orientated : TypeOrientation
 
   Class Group
     Attribute name : EString
@@ -114,3 +115,9 @@ Package modeldos <http://modeldos/1.0>
     Literal display_objects = 3
     Literal display_object = 4
     Literal admin = 5
+
+  Enum TypeOrientation
+    Literal topHorizontal = 0
+    Literal bottomHorizontal = 1
+    Literal leftVertical = 2
+    Literal rightVertical = 3

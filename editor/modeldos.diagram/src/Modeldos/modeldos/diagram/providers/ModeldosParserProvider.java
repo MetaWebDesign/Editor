@@ -22,134 +22,191 @@ public class ModeldosParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser notDerivedName_5004Parser;
+	private IParser className_5003Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getNotDerivedName_5004Parser() {
-		if (notDerivedName_5004Parser == null) {
-			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
-					.getAttributes_Name() };
-			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
-					features);
-			notDerivedName_5004Parser = parser;
-		}
-		return notDerivedName_5004Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser className_5009Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getClassName_5009Parser() {
-		if (className_5009Parser == null) {
+	private IParser getClassName_5003Parser() {
+		if (className_5003Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
 					.getClass_Name() };
 			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
 					features);
-			className_5009Parser = parser;
+			className_5003Parser = parser;
 		}
-		return className_5009Parser;
+		return className_5003Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser menuName_5002Parser;
+	private IParser formTitle_5004Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getMenuName_5002Parser() {
-		if (menuName_5002Parser == null) {
-			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
-					.getMenu_Name() };
-			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
-					features);
-			menuName_5002Parser = parser;
-		}
-		return menuName_5002Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser pageTitle_5006Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getPageTitle_5006Parser() {
-		if (pageTitle_5006Parser == null) {
+	private IParser getFormTitle_5004Parser() {
+		if (formTitle_5004Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
 					.getViews_Title() };
 			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
 					features);
-			pageTitle_5006Parser = parser;
+			formTitle_5004Parser = parser;
 		}
-		return pageTitle_5006Parser;
+		return formTitle_5004Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser formTitle_5005Parser;
+	private IParser pageTitle_5005Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getFormTitle_5005Parser() {
-		if (formTitle_5005Parser == null) {
+	private IParser getPageTitle_5005Parser() {
+		if (pageTitle_5005Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
 					.getViews_Title() };
 			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
 					features);
-			formTitle_5005Parser = parser;
+			pageTitle_5005Parser = parser;
 		}
-		return formTitle_5005Parser;
+		return pageTitle_5005Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser groupName_5003Parser;
+	private IParser groupName_5006Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getGroupName_5003Parser() {
-		if (groupName_5003Parser == null) {
+	private IParser getGroupName_5006Parser() {
+		if (groupName_5006Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
 					.getGroup_Name() };
 			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
 					features);
-			groupName_5003Parser = parser;
+			groupName_5006Parser = parser;
 		}
-		return groupName_5003Parser;
+		return groupName_5006Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser derivedName_5010Parser;
+	private IParser menuName_5008Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getDerivedName_5010Parser() {
-		if (derivedName_5010Parser == null) {
+	private IParser getMenuName_5008Parser() {
+		if (menuName_5008Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
+					.getMenu_Name() };
+			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
+					features);
+			menuName_5008Parser = parser;
+		}
+		return menuName_5008Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser derivedName_5009Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getDerivedName_5009Parser() {
+		if (derivedName_5009Parser == null) {
 			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
 					.getAttributes_Name() };
 			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
 					features);
-			derivedName_5010Parser = parser;
+			derivedName_5009Parser = parser;
 		}
-		return derivedName_5010Parser;
+		return derivedName_5009Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser notDerivedName_5010Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getNotDerivedName_5010Parser() {
+		if (notDerivedName_5010Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
+					.getAttributes_Name() };
+			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
+					features);
+			notDerivedName_5010Parser = parser;
+		}
+		return notDerivedName_5010Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser notDerivedName_5001Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getNotDerivedName_5001Parser() {
+		if (notDerivedName_5001Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
+					.getAttributes_Name() };
+			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
+					features);
+			notDerivedName_5001Parser = parser;
+		}
+		return notDerivedName_5001Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser derivedName_5002Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getDerivedName_5002Parser() {
+		if (derivedName_5002Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
+					.getAttributes_Name() };
+			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
+					features);
+			derivedName_5002Parser = parser;
+		}
+		return derivedName_5002Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser groupName_5007Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getGroupName_5007Parser() {
+		if (groupName_5007Parser == null) {
+			EAttribute[] features = new EAttribute[] { Modeldos.modeldos.ModeldosPackage.eINSTANCE
+					.getGroup_Name() };
+			Modeldos.modeldos.diagram.parsers.MessageFormatParser parser = new Modeldos.modeldos.diagram.parsers.MessageFormatParser(
+					features);
+			groupName_5007Parser = parser;
+		}
+		return groupName_5007Parser;
 	}
 
 	/**
@@ -176,20 +233,26 @@ public class ModeldosParserProvider extends AbstractProvider implements
 	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
-		case Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID:
-			return getNotDerivedName_5004Parser();
 		case Modeldos.modeldos.diagram.edit.parts.ClassNameEditPart.VISUAL_ID:
-			return getClassName_5009Parser();
-		case Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID:
-			return getMenuName_5002Parser();
-		case Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
-			return getPageTitle_5006Parser();
+			return getClassName_5003Parser();
 		case Modeldos.modeldos.diagram.edit.parts.FormTitleEditPart.VISUAL_ID:
-			return getFormTitle_5005Parser();
+			return getFormTitle_5004Parser();
+		case Modeldos.modeldos.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
+			return getPageTitle_5005Parser();
 		case Modeldos.modeldos.diagram.edit.parts.GroupNameEditPart.VISUAL_ID:
-			return getGroupName_5003Parser();
+			return getGroupName_5006Parser();
+		case Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID:
+			return getMenuName_5008Parser();
 		case Modeldos.modeldos.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID:
-			return getDerivedName_5010Parser();
+			return getDerivedName_5009Parser();
+		case Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID:
+			return getNotDerivedName_5010Parser();
+		case Modeldos.modeldos.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID:
+			return getNotDerivedName_5001Parser();
+		case Modeldos.modeldos.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID:
+			return getDerivedName_5002Parser();
+		case Modeldos.modeldos.diagram.edit.parts.GroupName2EditPart.VISUAL_ID:
+			return getGroupName_5007Parser();
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID:
 			return getRelationClassName_6001Parser();
 		}
