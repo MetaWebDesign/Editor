@@ -668,13 +668,22 @@ public interface ModeldosPackage extends EPackage {
 	int MENU__NAME = 1;
 
 	/**
+	 * The feature id for the '<em><b>Orientated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MENU__ORIENTATED = 2;
+
+	/**
 	 * The number of structural features of the '<em>Menu</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MENU_FEATURE_COUNT = 2;
+	int MENU_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Menu</em>' class.
@@ -1036,6 +1045,16 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 */
 	int TYPE_SERVICE = 16;
+
+	/**
+	 * The meta object id for the '{@link Modeldos.modeldos.TypeOrientation <em>Type Orientation</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Modeldos.modeldos.TypeOrientation
+	 * @see Modeldos.modeldos.impl.ModeldosPackageImpl#getTypeOrientation()
+	 * @generated
+	 */
+	int TYPE_ORIENTATION = 17;
 
 
 	/**
@@ -1505,6 +1524,17 @@ public interface ModeldosPackage extends EPackage {
 	EAttribute getMenu_Name();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Modeldos.modeldos.Menu#getOrientated <em>Orientated</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Orientated</em>'.
+	 * @see Modeldos.modeldos.Menu#getOrientated()
+	 * @see #getMenu()
+	 * @generated
+	 */
+	EAttribute getMenu_Orientated();
+
+	/**
 	 * Returns the meta object for class '{@link Modeldos.modeldos.Group <em>Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1713,6 +1743,16 @@ public interface ModeldosPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getTypeService();
+
+	/**
+	 * Returns the meta object for enum '{@link Modeldos.modeldos.TypeOrientation <em>Type Orientation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Type Orientation</em>'.
+	 * @see Modeldos.modeldos.TypeOrientation
+	 * @generated
+	 */
+	EEnum getTypeOrientation();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2096,6 +2136,14 @@ public interface ModeldosPackage extends EPackage {
 		EAttribute MENU__NAME = eINSTANCE.getMenu_Name();
 
 		/**
+		 * The meta object literal for the '<em><b>Orientated</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MENU__ORIENTATED = eINSTANCE.getMenu_Orientated();
+
+		/**
 		 * The meta object literal for the '{@link Modeldos.modeldos.impl.GroupImpl <em>Group</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2274,6 +2322,16 @@ public interface ModeldosPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum TYPE_SERVICE = eINSTANCE.getTypeService();
+
+		/**
+		 * The meta object literal for the '{@link Modeldos.modeldos.TypeOrientation <em>Type Orientation</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Modeldos.modeldos.TypeOrientation
+		 * @see Modeldos.modeldos.impl.ModeldosPackageImpl#getTypeOrientation()
+		 * @generated
+		 */
+		EEnum TYPE_ORIENTATION = eINSTANCE.getTypeOrientation();
 
 	}
 

@@ -26,39 +26,39 @@ public class RootItemSemanticEditPolicy
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003 == req
-				.getElementType()) {
-			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.NotDerivedCreateCommand(
-					req));
-		}
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2006 == req
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Class_2001 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.ClassCreateCommand(
 					req));
 		}
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001 == req
-				.getElementType()) {
-			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.MenuCreateCommand(
-					req));
-		}
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2005 == req
-				.getElementType()) {
-			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.PageCreateCommand(
-					req));
-		}
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2004 == req
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Form_2002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.FormCreateCommand(
 					req));
 		}
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2002 == req
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Page_2003 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.PageCreateCommand(
+					req));
+		}
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Group_2004 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.GroupCreateCommand(
 					req));
 		}
-		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007 == req
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2005 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.MenuCreateCommand(
+					req));
+		}
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2006 == req
 				.getElementType()) {
 			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.DerivedCreateCommand(
+					req));
+		}
+		if (Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2007 == req
+				.getElementType()) {
+			return getGEFWrapper(new Modeldos.modeldos.diagram.edit.commands.NotDerivedCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

@@ -53,7 +53,7 @@ public class NotDerivedNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5004;
+	public static final int VISUAL_ID = 5010;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class NotDerivedNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 					.getParser(
-							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2003,
+							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.NotDerived_2007,
 							getParserElement(),
 							Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 									.getType(Modeldos.modeldos.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID));

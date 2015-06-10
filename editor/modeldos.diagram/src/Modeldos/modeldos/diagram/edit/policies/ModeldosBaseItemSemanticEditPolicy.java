@@ -321,7 +321,7 @@ public class ModeldosBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		 * @generated
 		 */
 		public boolean canCreateRelationClass_4001(
-				Modeldos.modeldos.Views source, Modeldos.modeldos.Class target) {
+				Modeldos.modeldos.Class source, Modeldos.modeldos.Class target) {
 			return canExistRelationClass_4001(null, source, target);
 		}
 
@@ -330,7 +330,7 @@ public class ModeldosBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		 */
 		public boolean canExistRelationClass_4001(
 				Modeldos.modeldos.RelationClass linkInstance,
-				Modeldos.modeldos.Views source, Modeldos.modeldos.Class target) {
+				Modeldos.modeldos.Class source, Modeldos.modeldos.Class target) {
 			return true;
 		}
 	}

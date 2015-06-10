@@ -15,6 +15,7 @@ import Modeldos.modeldos.RelationClass;
 import Modeldos.modeldos.Root;
 import Modeldos.modeldos.TypeAttributeForm;
 import Modeldos.modeldos.TypeData;
+import Modeldos.modeldos.TypeOrientation;
 import Modeldos.modeldos.TypeRol;
 import Modeldos.modeldos.TypeService;
 import Modeldos.modeldos.Views;
@@ -110,6 +111,8 @@ public class ModeldosFactoryImpl extends EFactoryImpl implements ModeldosFactory
 				return createtypeHorizontalPositionFromString(eDataType, initialValue);
 			case ModeldosPackage.TYPE_SERVICE:
 				return createTypeServiceFromString(eDataType, initialValue);
+			case ModeldosPackage.TYPE_ORIENTATION:
+				return createTypeOrientationFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -135,6 +138,8 @@ public class ModeldosFactoryImpl extends EFactoryImpl implements ModeldosFactory
 				return converttypeHorizontalPositionToString(eDataType, instanceValue);
 			case ModeldosPackage.TYPE_SERVICE:
 				return convertTypeServiceToString(eDataType, instanceValue);
+			case ModeldosPackage.TYPE_ORIENTATION:
+				return convertTypeOrientationToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -367,6 +372,26 @@ public class ModeldosFactoryImpl extends EFactoryImpl implements ModeldosFactory
 	 * @generated
 	 */
 	public String convertTypeServiceToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TypeOrientation createTypeOrientationFromString(EDataType eDataType, String initialValue) {
+		TypeOrientation result = TypeOrientation.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertTypeOrientationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

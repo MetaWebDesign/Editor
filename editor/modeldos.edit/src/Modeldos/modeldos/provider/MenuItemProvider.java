@@ -64,6 +64,7 @@ public class MenuItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
+			addOrientatedPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -82,6 +83,28 @@ public class MenuItemProvider
 				 getString("_UI_Menu_name_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Menu_name_feature", "_UI_Menu_type"),
 				 ModeldosPackage.Literals.MENU__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Orientated feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addOrientatedPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Menu_orientated_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Menu_orientated_feature", "_UI_Menu_type"),
+				 ModeldosPackage.Literals.MENU__ORIENTATED,
 				 true,
 				 false,
 				 false,
@@ -159,6 +182,7 @@ public class MenuItemProvider
 
 		switch (notification.getFeatureID(Menu.class)) {
 			case ModeldosPackage.MENU__NAME:
+			case ModeldosPackage.MENU__ORIENTATED:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case ModeldosPackage.MENU__HAS_GROUP:

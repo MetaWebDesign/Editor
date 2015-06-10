@@ -49,31 +49,43 @@ public class ModeldosElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType NotDerived_2003 = getElementType("modeldos.diagram.NotDerived_2003"); //$NON-NLS-1$
+	public static final IElementType Class_2001 = getElementType("modeldos.diagram.Class_2001"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Class_2006 = getElementType("modeldos.diagram.Class_2006"); //$NON-NLS-1$
+	public static final IElementType Form_2002 = getElementType("modeldos.diagram.Form_2002"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Menu_2001 = getElementType("modeldos.diagram.Menu_2001"); //$NON-NLS-1$
+	public static final IElementType Page_2003 = getElementType("modeldos.diagram.Page_2003"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Page_2005 = getElementType("modeldos.diagram.Page_2005"); //$NON-NLS-1$
+	public static final IElementType Group_2004 = getElementType("modeldos.diagram.Group_2004"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Form_2004 = getElementType("modeldos.diagram.Form_2004"); //$NON-NLS-1$
+	public static final IElementType Menu_2005 = getElementType("modeldos.diagram.Menu_2005"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Group_2002 = getElementType("modeldos.diagram.Group_2002"); //$NON-NLS-1$
+	public static final IElementType Derived_2006 = getElementType("modeldos.diagram.Derived_2006"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Derived_2007 = getElementType("modeldos.diagram.Derived_2007"); //$NON-NLS-1$
+	public static final IElementType NotDerived_2007 = getElementType("modeldos.diagram.NotDerived_2007"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType NotDerived_3001 = getElementType("modeldos.diagram.NotDerived_3001"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Derived_3002 = getElementType("modeldos.diagram.Derived_3002"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Group_3003 = getElementType("modeldos.diagram.Group_3003"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -120,26 +132,35 @@ public class ModeldosElementTypes {
 			elements.put(Root_1000,
 					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getRoot());
 
-			elements.put(NotDerived_2003,
-					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getNotDerived());
-
-			elements.put(Class_2006,
+			elements.put(Class_2001,
 					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getClass_());
 
-			elements.put(Menu_2001,
-					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getMenu());
-
-			elements.put(Page_2005,
-					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getPage());
-
-			elements.put(Form_2004,
+			elements.put(Form_2002,
 					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getForm());
 
-			elements.put(Group_2002,
+			elements.put(Page_2003,
+					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getPage());
+
+			elements.put(Group_2004,
 					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getGroup());
 
-			elements.put(Derived_2007,
+			elements.put(Menu_2005,
+					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getMenu());
+
+			elements.put(Derived_2006,
 					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getDerived());
+
+			elements.put(NotDerived_2007,
+					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getNotDerived());
+
+			elements.put(NotDerived_3001,
+					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getNotDerived());
+
+			elements.put(Derived_3002,
+					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getDerived());
+
+			elements.put(Group_3003,
+					Modeldos.modeldos.ModeldosPackage.eINSTANCE.getGroup());
 
 			elements.put(RelationClass_4001,
 					Modeldos.modeldos.ModeldosPackage.eINSTANCE
@@ -162,13 +183,16 @@ public class ModeldosElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Root_1000);
-			KNOWN_ELEMENT_TYPES.add(NotDerived_2003);
-			KNOWN_ELEMENT_TYPES.add(Class_2006);
-			KNOWN_ELEMENT_TYPES.add(Menu_2001);
-			KNOWN_ELEMENT_TYPES.add(Page_2005);
-			KNOWN_ELEMENT_TYPES.add(Form_2004);
-			KNOWN_ELEMENT_TYPES.add(Group_2002);
-			KNOWN_ELEMENT_TYPES.add(Derived_2007);
+			KNOWN_ELEMENT_TYPES.add(Class_2001);
+			KNOWN_ELEMENT_TYPES.add(Form_2002);
+			KNOWN_ELEMENT_TYPES.add(Page_2003);
+			KNOWN_ELEMENT_TYPES.add(Group_2004);
+			KNOWN_ELEMENT_TYPES.add(Menu_2005);
+			KNOWN_ELEMENT_TYPES.add(Derived_2006);
+			KNOWN_ELEMENT_TYPES.add(NotDerived_2007);
+			KNOWN_ELEMENT_TYPES.add(NotDerived_3001);
+			KNOWN_ELEMENT_TYPES.add(Derived_3002);
+			KNOWN_ELEMENT_TYPES.add(Group_3003);
 			KNOWN_ELEMENT_TYPES.add(RelationClass_4001);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
@@ -181,20 +205,26 @@ public class ModeldosElementTypes {
 		switch (visualID) {
 		case Modeldos.modeldos.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return Root_1000;
-		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return NotDerived_2003;
 		case Modeldos.modeldos.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return Class_2006;
-		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return Menu_2001;
-		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return Page_2005;
+			return Class_2001;
 		case Modeldos.modeldos.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return Form_2004;
+			return Form_2002;
+		case Modeldos.modeldos.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return Page_2003;
 		case Modeldos.modeldos.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return Group_2002;
+			return Group_2004;
+		case Modeldos.modeldos.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return Menu_2005;
 		case Modeldos.modeldos.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return Derived_2007;
+			return Derived_2006;
+		case Modeldos.modeldos.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return NotDerived_2007;
+		case Modeldos.modeldos.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return NotDerived_3001;
+		case Modeldos.modeldos.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return Derived_3002;
+		case Modeldos.modeldos.diagram.edit.parts.Group2EditPart.VISUAL_ID:
+			return Group_3003;
 		case Modeldos.modeldos.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return RelationClass_4001;
 		}

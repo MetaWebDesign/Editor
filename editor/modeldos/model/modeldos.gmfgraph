@@ -101,7 +101,7 @@
             text="&lt;...>"/>
         <children
             xsi:type="gmfgraph:Rectangle"
-            name="CajonAttribute">
+            name="CajonAtributo">
           <layoutData
               xsi:type="gmfgraph:BorderLayoutData"/>
         </children>
@@ -152,7 +152,7 @@
           xsi:type="gmfgraph:Rectangle"
           name="AttributesFigure">
         <layout
-            xsi:type="gmfgraph:BorderLayout"/>
+            xsi:type="gmfgraph:FlowLayout"/>
         <children
             xsi:type="gmfgraph:Label"
             name="AttributesNameFigure"
@@ -197,7 +197,10 @@
           xsi:type="gmfgraph:Rectangle"
           name="DerivedFigure">
         <layout
-            xsi:type="gmfgraph:BorderLayout"/>
+            xsi:type="gmfgraph:FlowLayout"/>
+        <maximumSize
+            dx="10"
+            dy="4"/>
         <children
             xsi:type="gmfgraph:Label"
             name="DerivedNameFigure"
@@ -254,7 +257,10 @@
           xsi:type="gmfgraph:Rectangle"
           name="NotDerivedFigure">
         <layout
-            xsi:type="gmfgraph:BorderLayout"/>
+            xsi:type="gmfgraph:FlowLayout"/>
+        <maximumSize
+            dx="10"
+            dy="4"/>
         <children
             xsi:type="gmfgraph:Label"
             name="NotDerivedNameFigure"
@@ -375,6 +381,10 @@
               vertical="true"/>
         </children>
         <children
+            xsi:type="gmfgraph:Label"
+            name="MenuOrientatedFigure"
+            text="&lt;...>"/>
+        <children
             xsi:type="gmfgraph:Rectangle"
             name="CajonGrupo">
           <layoutData
@@ -385,6 +395,8 @@
           figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
       <accessors
           figure="//@figures.0/@descriptors.12/@actualFigure/@children.1"/>
+      <accessors
+          figure="//@figures.0/@descriptors.12/@actualFigure/@children.2"/>
     </descriptors>
     <descriptors
         name="GroupFigure">
@@ -392,7 +404,7 @@
           xsi:type="gmfgraph:Rectangle"
           name="GroupFigure">
         <layout
-            xsi:type="gmfgraph:BorderLayout"/>
+            xsi:type="gmfgraph:FlowLayout"/>
         <children
             xsi:type="gmfgraph:Label"
             name="GroupNameFigure"
@@ -455,7 +467,7 @@
           xsi:type="gmfgraph:Rectangle"
           name="FormFigure">
         <layout
-            xsi:type="gmfgraph:BorderLayout"/>
+            xsi:type="gmfgraph:FlowLayout"/>
         <children
             xsi:type="gmfgraph:Label"
             name="FormTitleFigure"
@@ -509,7 +521,7 @@
           xsi:type="gmfgraph:Rectangle"
           name="PageFigure">
         <layout
-            xsi:type="gmfgraph:BorderLayout"/>
+            xsi:type="gmfgraph:FlowLayout"/>
         <children
             xsi:type="gmfgraph:Label"
             name="PageTitleFigure"
@@ -636,10 +648,10 @@
       collapsible="true"
       accessor="//@figures.0/@descriptors.0/@accessors.8"/>
   <compartments
-      name="GrupoIMenuCajon"
+      name="GrupoInMenuCajon"
       figure="MenuFigure"
       collapsible="true"
-      accessor="//@figures.0/@descriptors.12/@accessors.1"/>
+      accessor="//@figures.0/@descriptors.12/@accessors.2"/>
   <labels
       name="ClassName"
       figure="ClassFigure"
@@ -776,6 +788,10 @@
       name="MenuName"
       figure="MenuFigure"
       accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels
+      name="MenuOrientated"
+      figure="MenuFigure"
+      accessor="//@figures.0/@descriptors.12/@accessors.1"/>
   <labels
       name="GroupName"
       figure="GroupFigure"

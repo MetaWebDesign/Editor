@@ -20,7 +20,7 @@ public class DerivedItemSemanticEditPolicy
 	 */
 	public DerivedItemSemanticEditPolicy() {
 		super(
-				Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2007);
+				Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Derived_2006);
 	}
 
 	/**

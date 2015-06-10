@@ -46,6 +46,12 @@
       <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/display_object"/>
       <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeService/admin"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="modeldos.ecore#//TypeOrientation">
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeOrientation/topHorizontal"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeOrientation/bottomHorizontal"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeOrientation/leftVertical"/>
+      <genEnumLiterals ecoreEnumLiteral="modeldos.ecore#//TypeOrientation/rightVertical"/>
+    </genEnums>
     <genClasses ecoreClass="modeldos.ecore#//Root">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/class"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Root/attribute"/>
@@ -95,6 +101,7 @@
     <genClasses ecoreClass="modeldos.ecore#//Menu">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference modeldos.ecore#//Menu/hasGroup"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Menu/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Menu/orientated"/>
     </genClasses>
     <genClasses ecoreClass="modeldos.ecore#//Group">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute modeldos.ecore#//Group/name"/>

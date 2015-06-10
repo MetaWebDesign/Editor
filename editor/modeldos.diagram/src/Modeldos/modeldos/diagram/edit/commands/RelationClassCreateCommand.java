@@ -45,7 +45,7 @@ public class RelationClassCreateCommand extends EditElementCommand {
 			return false;
 		}
 		if (source != null
-				&& false == source instanceof Modeldos.modeldos.Views) {
+				&& false == source instanceof Modeldos.modeldos.Class) {
 			return false;
 		}
 		if (target != null
@@ -115,8 +115,8 @@ public class RelationClassCreateCommand extends EditElementCommand {
 	/**
 	 * @generated
 	 */
-	protected Modeldos.modeldos.Views getSource() {
-		return (Modeldos.modeldos.Views) source;
+	protected Modeldos.modeldos.Class getSource() {
+		return (Modeldos.modeldos.Class) source;
 	}
 
 	/**

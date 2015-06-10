@@ -53,7 +53,7 @@ public class MenuNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5002;
+	public static final int VISUAL_ID = 5008;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class MenuNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Modeldos.modeldos.diagram.providers.ModeldosParserProvider
 					.getParser(
-							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2001,
+							Modeldos.modeldos.diagram.providers.ModeldosElementTypes.Menu_2005,
 							getParserElement(),
 							Modeldos.modeldos.diagram.part.ModeldosVisualIDRegistry
 									.getType(Modeldos.modeldos.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
