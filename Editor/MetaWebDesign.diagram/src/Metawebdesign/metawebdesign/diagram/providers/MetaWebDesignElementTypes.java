@@ -53,15 +53,11 @@ public class MetaWebDesignElementTypes {
 	/**
 	 * @generated
 	 */
+	public static final IElementType Form_2006 = getElementType("MetaWebDesign.diagram.Form_2006"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
 	public static final IElementType NotDerived_2002 = getElementType("MetaWebDesign.diagram.NotDerived_2002"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Derived_2003 = getElementType("MetaWebDesign.diagram.Derived_2003"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Page_2004 = getElementType("MetaWebDesign.diagram.Page_2004"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -69,11 +65,15 @@ public class MetaWebDesignElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Form_2006 = getElementType("MetaWebDesign.diagram.Form_2006"); //$NON-NLS-1$
+	public static final IElementType Group_2007 = getElementType("MetaWebDesign.diagram.Group_2007"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Group_2007 = getElementType("MetaWebDesign.diagram.Group_2007"); //$NON-NLS-1$
+	public static final IElementType Page_2004 = getElementType("MetaWebDesign.diagram.Page_2004"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Derived_2003 = getElementType("MetaWebDesign.diagram.Derived_2003"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -89,11 +89,11 @@ public class MetaWebDesignElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType RelationView_4001 = getElementType("MetaWebDesign.diagram.RelationView_4001"); //$NON-NLS-1$
+	public static final IElementType RelationClass_4002 = getElementType("MetaWebDesign.diagram.RelationClass_4002"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType RelationClass_4002 = getElementType("MetaWebDesign.diagram.RelationClass_4002"); //$NON-NLS-1$
+	public static final IElementType RelationView_4001 = getElementType("MetaWebDesign.diagram.RelationView_4001"); //$NON-NLS-1$
 
 	/**
 	 * @generated
@@ -141,29 +141,29 @@ public class MetaWebDesignElementTypes {
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getClass_());
 
+			elements.put(Form_2006,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getForm());
+
 			elements.put(NotDerived_2002,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getNotDerived());
-
-			elements.put(Derived_2003,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getDerived());
-
-			elements.put(Page_2004,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getPage());
 
 			elements.put(Menu_2005,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getMenu());
 
-			elements.put(Form_2006,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getForm());
-
 			elements.put(Group_2007,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getGroup());
+
+			elements.put(Page_2004,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getPage());
+
+			elements.put(Derived_2003,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getDerived());
 
 			elements.put(Derived_3001,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
@@ -177,13 +177,13 @@ public class MetaWebDesignElementTypes {
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getGroup());
 
-			elements.put(RelationView_4001,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getRelationView());
-
 			elements.put(RelationClass_4002,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getRelationClass());
+
+			elements.put(RelationView_4001,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getRelationView());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -203,17 +203,17 @@ public class MetaWebDesignElementTypes {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Root_1000);
 			KNOWN_ELEMENT_TYPES.add(Class_2001);
-			KNOWN_ELEMENT_TYPES.add(NotDerived_2002);
-			KNOWN_ELEMENT_TYPES.add(Derived_2003);
-			KNOWN_ELEMENT_TYPES.add(Page_2004);
-			KNOWN_ELEMENT_TYPES.add(Menu_2005);
 			KNOWN_ELEMENT_TYPES.add(Form_2006);
+			KNOWN_ELEMENT_TYPES.add(NotDerived_2002);
+			KNOWN_ELEMENT_TYPES.add(Menu_2005);
 			KNOWN_ELEMENT_TYPES.add(Group_2007);
+			KNOWN_ELEMENT_TYPES.add(Page_2004);
+			KNOWN_ELEMENT_TYPES.add(Derived_2003);
 			KNOWN_ELEMENT_TYPES.add(Derived_3001);
 			KNOWN_ELEMENT_TYPES.add(NotDerived_3002);
 			KNOWN_ELEMENT_TYPES.add(Group_3003);
-			KNOWN_ELEMENT_TYPES.add(RelationView_4001);
 			KNOWN_ELEMENT_TYPES.add(RelationClass_4002);
+			KNOWN_ELEMENT_TYPES.add(RelationView_4001);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -227,28 +227,28 @@ public class MetaWebDesignElementTypes {
 			return Root_1000;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return Class_2001;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return NotDerived_2002;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return Derived_2003;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return Page_2004;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return Menu_2005;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
 			return Form_2006;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return NotDerived_2002;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return Menu_2005;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 			return Group_2007;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return Page_2004;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return Derived_2003;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
 			return Derived_3001;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
 			return NotDerived_3002;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID:
 			return Group_3003;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
-			return RelationView_4001;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return RelationClass_4002;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return RelationView_4001;
 		}
 		return null;
 	}

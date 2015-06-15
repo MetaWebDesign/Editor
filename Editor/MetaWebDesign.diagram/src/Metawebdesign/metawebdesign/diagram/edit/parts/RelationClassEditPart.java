@@ -45,7 +45,7 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) {
 			/*((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationClassNameFigure());*/
+							.getFigureRelationClassNameFigure())*/;
 			return true;
 		}
 		return false;

@@ -378,12 +378,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2001_outgoinglinks;
+	public static String NavigatorGroupName_Class_2001_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2001_incominglinks;
+	public static String NavigatorGroupName_Class_2001_outgoinglinks;
 
 	/**
 	 * @generated

@@ -192,39 +192,14 @@
             xsi:type="gmfgraph:Label"
             name="AttributesNameFigure"
             text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="AttributesRolFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="AttributesValueFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="AttributesPrimaryKeyFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="AttributesDataTypeFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="AttributesInTheFormFigure"
-            text="&lt;...>"/>
       </actualFigure>
       <accessors
           figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
-      <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
-      <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.2"/>
-      <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.3"/>
-      <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.4"/>
-      <accessors
-          figure="//@figures.0/@descriptors.6/@actualFigure/@children.5"/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
     </descriptors>
     <descriptors
         name="DerivedFigure">
@@ -294,45 +269,15 @@
             xsi:type="gmfgraph:Label"
             name="NotDerivedNameFigure"
             text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="NotDerivedRolFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="NotDerivedValueFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="NotDerivedPrimaryKeyFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="NotDerivedDataTypeFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="NotDerivedInTheFormFigure"
-            text="&lt;...>"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="NotDerivedDefaultValueFigure"
-            text="&lt;...>"/>
       </actualFigure>
       <accessors
           figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
-      <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
-      <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.2"/>
-      <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.3"/>
-      <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.4"/>
-      <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.5"/>
-      <accessors
-          figure="//@figures.0/@descriptors.8/@actualFigure/@children.6"/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
+      <accessors/>
     </descriptors>
     <descriptors
         name="RelationClassFigure">

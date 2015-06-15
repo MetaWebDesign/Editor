@@ -43,10 +43,9 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) {
-			/*
-			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) childEditPart)
+			/*((Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationViewNameFigure());*/
+							.getFigureRelationViewNameFigure())*/;
 			return true;
 		}
 		return false;

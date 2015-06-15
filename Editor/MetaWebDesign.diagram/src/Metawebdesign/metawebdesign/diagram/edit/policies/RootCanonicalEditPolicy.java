@@ -64,10 +64,10 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 							.getRoot_Class());
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getRoot_Attribute());
+							.getRoot_Views());
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getRoot_Views());
+							.getRoot_Attribute());
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getRoot_Menu());
@@ -110,12 +110,12 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 				.getVisualID(view);
 		switch (visualID) {
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return true;
 		}
 		return false;
@@ -287,26 +287,18 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
+						.getForm_2006ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
 						.getNotDerived_2002ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-						.getDerived_2003ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-						.getPage_2004ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -319,18 +311,26 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-						.getForm_2006ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
 						.getGroup_2007ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
+						.getPage_2004ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
+						.getDerived_2003ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -359,18 +359,18 @@ public class RootCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-						.getRelationView_4001ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
 						.getRelationClass_4002ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
+						.getRelationView_4001ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
