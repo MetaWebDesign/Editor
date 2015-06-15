@@ -29,7 +29,7 @@ public class FormEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2006;
+	public static final int VISUAL_ID = 2001;
 
 	/**
 	 * @generated

@@ -36,10 +36,6 @@
         eType="#//RelationClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasView" eType="#//Views"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationView" upperBound="-1"
-        eType="#//RelationView" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goRelationView" upperBound="-1"
-        eType="#//RelationView"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -73,12 +69,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NotDerived" eSuperTypes="#//Attributes">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valueDefault" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RelationClass">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentation"
-        defaultValueLiteral="string"/>
+        defaultValueLiteral="table"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionHorizotal" eType="#//typeHorizontalPosition"
         defaultValueLiteral="center"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionVertical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -148,13 +144,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RelationView">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentation"
+        defaultValueLiteral="string"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionHorizontal" eType="#//typeHorizontalPosition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionVertical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goViews" upperBound="-1"
-        eType="#//Views"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="RhasViews" upperBound="-1"
-        eType="#//Views" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="RViewsHasClass" upperBound="-1"
         eType="#//Class" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="RviewsGoToClass" upperBound="-1"

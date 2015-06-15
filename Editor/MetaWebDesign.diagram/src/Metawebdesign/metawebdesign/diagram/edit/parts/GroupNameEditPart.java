@@ -53,7 +53,7 @@ public class GroupNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5010;
+	public static final int VISUAL_ID = 5006;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class GroupNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 					.getParser(
-							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2007,
+							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2005,
 							getParserElement(),
 							Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 									.getType(Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));

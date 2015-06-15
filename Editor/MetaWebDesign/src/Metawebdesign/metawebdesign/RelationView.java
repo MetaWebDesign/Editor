@@ -18,8 +18,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.RelationView#getTypePresentation <em>Type Presentation</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.RelationView#getPositionHorizontal <em>Position Horizontal</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.RelationView#getPositionVertical <em>Position Vertical</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.RelationView#getGoViews <em>Go Views</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.RelationView#getRhasViews <em>Rhas Views</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.RelationView#getRViewsHasClass <em>RViews Has Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.RelationView#getRviewsGoToClass <em>Rviews Go To Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.RelationView#getGetAttribute <em>Get Attribute</em>}</li>
@@ -60,6 +58,7 @@ public interface RelationView extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Type Presentation</b></em>' attribute.
+	 * The default value is <code>"string"</code>.
 	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typePresentation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -71,7 +70,7 @@ public interface RelationView extends EObject {
 	 * @see Metawebdesign.metawebdesign.typePresentation
 	 * @see #setTypePresentation(typePresentation)
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationView_TypePresentation()
-	 * @model
+	 * @model default="string"
 	 * @generated
 	 */
 	typePresentation getTypePresentation();
@@ -141,38 +140,6 @@ public interface RelationView extends EObject {
 	 * @generated
 	 */
 	void setPositionVertical(int value);
-
-	/**
-	 * Returns the value of the '<em><b>Go Views</b></em>' reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.Views}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Go Views</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Go Views</em>' reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationView_GoViews()
-	 * @model
-	 * @generated
-	 */
-	EList<Views> getGoViews();
-
-	/**
-	 * Returns the value of the '<em><b>Rhas Views</b></em>' containment reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.Views}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rhas Views</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rhas Views</em>' containment reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationView_RhasViews()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Views> getRhasViews();
 
 	/**
 	 * Returns the value of the '<em><b>RViews Has Class</b></em>' containment reference list.

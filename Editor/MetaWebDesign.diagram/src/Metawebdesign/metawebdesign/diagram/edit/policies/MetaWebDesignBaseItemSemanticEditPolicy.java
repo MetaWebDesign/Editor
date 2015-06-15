@@ -320,6 +320,20 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
+		public boolean canCreateRelationView_4001(
+				Metawebdesign.metawebdesign.Views source,
+				Metawebdesign.metawebdesign.Class target) {
+			if (source != null) {
+				if (source.getHasRelationView() != null) {
+					return false;
+				}
+			}
+			return canExistRelationView_4001(null, source, target);
+		}
+
+		/**
+		 * @generated
+		 */
 		public boolean canCreateRelationClass_4002(
 				Metawebdesign.metawebdesign.Class source,
 				Metawebdesign.metawebdesign.Class target) {
@@ -329,10 +343,11 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationView_4001(
-				Metawebdesign.metawebdesign.Class source,
-				Metawebdesign.metawebdesign.Views target) {
-			return canExistRelationView_4001(null, source, target);
+		public boolean canExistRelationView_4001(
+				Metawebdesign.metawebdesign.RelationView linkInstance,
+				Metawebdesign.metawebdesign.Views source,
+				Metawebdesign.metawebdesign.Class target) {
+			return true;
 		}
 
 		/**
@@ -342,16 +357,6 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 				Metawebdesign.metawebdesign.RelationClass linkInstance,
 				Metawebdesign.metawebdesign.Class source,
 				Metawebdesign.metawebdesign.Class target) {
-			return true;
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canExistRelationView_4001(
-				Metawebdesign.metawebdesign.RelationView linkInstance,
-				Metawebdesign.metawebdesign.Class source,
-				Metawebdesign.metawebdesign.Views target) {
 			return true;
 		}
 	}

@@ -71,7 +71,6 @@ public class ClassItemProvider
 			addFunctionViewPropertyDescriptor(object);
 			addFunctionAdminPropertyDescriptor(object);
 			addGoRelationClassPropertyDescriptor(object);
-			addGoRelationViewPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -275,28 +274,6 @@ public class ClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Go Relation View feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGoRelationViewPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Class_goRelationView_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Class_goRelationView_feature", "_UI_Class_type"),
-				 MetawebdesignPackage.Literals.CLASS__GO_RELATION_VIEW,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -311,7 +288,6 @@ public class ClassItemProvider
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_ATTRIBUTES);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CLASS);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_VIEW);
-			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_VIEW);
 		}
 		return childrenFeatures;
 	}
@@ -380,7 +356,6 @@ public class ClassItemProvider
 			case MetawebdesignPackage.CLASS__HAS_ATTRIBUTES:
 			case MetawebdesignPackage.CLASS__HAS_RELATION_CLASS:
 			case MetawebdesignPackage.CLASS__HAS_VIEW:
-			case MetawebdesignPackage.CLASS__HAS_RELATION_VIEW:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -432,11 +407,6 @@ public class ClassItemProvider
 			(createChildParameter
 				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
 				 MetawebdesignFactory.eINSTANCE.createPage()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_VIEW,
-				 MetawebdesignFactory.eINSTANCE.createRelationView()));
 	}
 
 	/**

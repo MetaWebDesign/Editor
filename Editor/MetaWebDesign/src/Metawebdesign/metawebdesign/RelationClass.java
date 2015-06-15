@@ -58,7 +58,7 @@ public interface RelationClass extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Type Presentation</b></em>' attribute.
-	 * The default value is <code>"string"</code>.
+	 * The default value is <code>"table"</code>.
 	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typePresentation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -70,7 +70,7 @@ public interface RelationClass extends EObject {
 	 * @see Metawebdesign.metawebdesign.typePresentation
 	 * @see #setTypePresentation(typePresentation)
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_TypePresentation()
-	 * @model default="string"
+	 * @model default="table"
 	 * @generated
 	 */
 	typePresentation getTypePresentation();

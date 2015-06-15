@@ -249,31 +249,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int CLASS__HAS_VIEW = 11;
 
 	/**
-	 * The feature id for the '<em><b>Has Relation View</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__HAS_RELATION_VIEW = 12;
-
-	/**
-	 * The feature id for the '<em><b>Go Relation View</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__GO_RELATION_VIEW = 13;
-
-	/**
 	 * The number of structural features of the '<em>Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = 14;
+	int CLASS_FEATURE_COUNT = 12;
 
 	/**
 	 * The number of operations of the '<em>Class</em>' class.
@@ -531,13 +513,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int NOT_DERIVED__IN_THE_FORM = ATTRIBUTES__IN_THE_FORM;
 
 	/**
-	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
+	 * The feature id for the '<em><b>Value Default</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOT_DERIVED__DEFAULT_VALUE = ATTRIBUTES_FEATURE_COUNT + 0;
+	int NOT_DERIVED__VALUE_DEFAULT = ATTRIBUTES_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Not Derived</em>' class.
@@ -1042,31 +1024,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int RELATION_VIEW__POSITION_VERTICAL = 3;
 
 	/**
-	 * The feature id for the '<em><b>Go Views</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_VIEW__GO_VIEWS = 4;
-
-	/**
-	 * The feature id for the '<em><b>Rhas Views</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_VIEW__RHAS_VIEWS = 5;
-
-	/**
 	 * The feature id for the '<em><b>RViews Has Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_VIEW__RVIEWS_HAS_CLASS = 6;
+	int RELATION_VIEW__RVIEWS_HAS_CLASS = 4;
 
 	/**
 	 * The feature id for the '<em><b>Rviews Go To Class</b></em>' reference list.
@@ -1075,7 +1039,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_VIEW__RVIEWS_GO_TO_CLASS = 7;
+	int RELATION_VIEW__RVIEWS_GO_TO_CLASS = 5;
 
 	/**
 	 * The feature id for the '<em><b>Get Attribute</b></em>' reference.
@@ -1084,7 +1048,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_VIEW__GET_ATTRIBUTE = 8;
+	int RELATION_VIEW__GET_ATTRIBUTE = 6;
 
 	/**
 	 * The feature id for the '<em><b>Row</b></em>' attribute.
@@ -1093,7 +1057,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_VIEW__ROW = 9;
+	int RELATION_VIEW__ROW = 7;
 
 	/**
 	 * The number of structural features of the '<em>Relation View</em>' class.
@@ -1102,7 +1066,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_VIEW_FEATURE_COUNT = 10;
+	int RELATION_VIEW_FEATURE_COUNT = 8;
 
 	/**
 	 * The number of operations of the '<em>Relation View</em>' class.
@@ -1392,28 +1356,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getClass_HasView();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Class#getHasRelationView <em>Has Relation View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Has Relation View</em>'.
-	 * @see Metawebdesign.metawebdesign.Class#getHasRelationView()
-	 * @see #getClass_()
-	 * @generated
-	 */
-	EReference getClass_HasRelationView();
-
-	/**
-	 * Returns the meta object for the reference list '{@link Metawebdesign.metawebdesign.Class#getGoRelationView <em>Go Relation View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Go Relation View</em>'.
-	 * @see Metawebdesign.metawebdesign.Class#getGoRelationView()
-	 * @see #getClass_()
-	 * @generated
-	 */
-	EReference getClass_GoRelationView();
-
-	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.Attributes <em>Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1532,15 +1474,15 @@ public interface MetawebdesignPackage extends EPackage {
 	EClass getNotDerived();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.NotDerived#getDefaultValue <em>Default Value</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.NotDerived#getValueDefault <em>Value Default</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Default Value</em>'.
-	 * @see Metawebdesign.metawebdesign.NotDerived#getDefaultValue()
+	 * @return the meta object for the attribute '<em>Value Default</em>'.
+	 * @see Metawebdesign.metawebdesign.NotDerived#getValueDefault()
 	 * @see #getNotDerived()
 	 * @generated
 	 */
-	EAttribute getNotDerived_DefaultValue();
+	EAttribute getNotDerived_ValueDefault();
 
 	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.RelationClass <em>Relation Class</em>}'.
@@ -1877,28 +1819,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EAttribute getRelationView_PositionVertical();
 
 	/**
-	 * Returns the meta object for the reference list '{@link Metawebdesign.metawebdesign.RelationView#getGoViews <em>Go Views</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Go Views</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationView#getGoViews()
-	 * @see #getRelationView()
-	 * @generated
-	 */
-	EReference getRelationView_GoViews();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.RelationView#getRhasViews <em>Rhas Views</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Rhas Views</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationView#getRhasViews()
-	 * @see #getRelationView()
-	 * @generated
-	 */
-	EReference getRelationView_RhasViews();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.RelationView#getRViewsHasClass <em>RViews Has Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2192,22 +2112,6 @@ public interface MetawebdesignPackage extends EPackage {
 		EReference CLASS__HAS_VIEW = eINSTANCE.getClass_HasView();
 
 		/**
-		 * The meta object literal for the '<em><b>Has Relation View</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS__HAS_RELATION_VIEW = eINSTANCE.getClass_HasRelationView();
-
-		/**
-		 * The meta object literal for the '<em><b>Go Relation View</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS__GO_RELATION_VIEW = eINSTANCE.getClass_GoRelationView();
-
-		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.AttributesImpl <em>Attributes</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2302,12 +2206,12 @@ public interface MetawebdesignPackage extends EPackage {
 		EClass NOT_DERIVED = eINSTANCE.getNotDerived();
 
 		/**
-		 * The meta object literal for the '<em><b>Default Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Value Default</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute NOT_DERIVED__DEFAULT_VALUE = eINSTANCE.getNotDerived_DefaultValue();
+		EAttribute NOT_DERIVED__VALUE_DEFAULT = eINSTANCE.getNotDerived_ValueDefault();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.RelationClassImpl <em>Relation Class</em>}' class.
@@ -2570,22 +2474,6 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute RELATION_VIEW__POSITION_VERTICAL = eINSTANCE.getRelationView_PositionVertical();
-
-		/**
-		 * The meta object literal for the '<em><b>Go Views</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RELATION_VIEW__GO_VIEWS = eINSTANCE.getRelationView_GoViews();
-
-		/**
-		 * The meta object literal for the '<em><b>Rhas Views</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RELATION_VIEW__RHAS_VIEWS = eINSTANCE.getRelationView_RhasViews();
 
 		/**
 		 * The meta object literal for the '<em><b>RViews Has Class</b></em>' containment reference list feature.

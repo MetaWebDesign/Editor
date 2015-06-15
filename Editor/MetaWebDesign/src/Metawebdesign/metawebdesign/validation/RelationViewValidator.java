@@ -5,7 +5,6 @@
 package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Attributes;
-import Metawebdesign.metawebdesign.Views;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
 import Metawebdesign.metawebdesign.typePresentation;
 
@@ -24,8 +23,6 @@ public interface RelationViewValidator {
 	boolean validateTypePresentation(typePresentation value);
 	boolean validatePositionHorizontal(typeHorizontalPosition value);
 	boolean validatePositionVertical(int value);
-	boolean validateGoViews(EList<Views> value);
-	boolean validateRhasViews(EList<Views> value);
 	boolean validateRViewsHasClass(EList<Metawebdesign.metawebdesign.Class> value);
 	boolean validateRviewsGoToClass(EList<Metawebdesign.metawebdesign.Class> value);
 	boolean validateGetAttribute(Attributes value);

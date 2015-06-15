@@ -80,8 +80,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasRelationClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/goRelationClass"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasView"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasRelationView"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/goRelationView"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Attributes">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Attributes/name"/>
@@ -96,7 +94,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Derived/formula"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//NotDerived">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//NotDerived/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//NotDerived/valueDefault"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//RelationClass">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationClass/name"/>
@@ -135,8 +133,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationView/typePresentation"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationView/positionHorizontal"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationView/positionVertical"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/goViews"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/RhasViews"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/RViewsHasClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/RviewsGoToClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/getAttribute"/>

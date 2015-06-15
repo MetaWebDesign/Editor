@@ -14,5 +14,5 @@ package Metawebdesign.metawebdesign.validation;
 public interface NotDerivedValidator {
 	boolean validate();
 
-	boolean validateDefaultValue(String value);
+	boolean validateValueDefault(String value);
 }

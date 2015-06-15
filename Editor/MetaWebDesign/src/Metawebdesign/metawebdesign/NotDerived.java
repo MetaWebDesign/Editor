@@ -11,7 +11,7 @@ package Metawebdesign.metawebdesign;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Metawebdesign.metawebdesign.NotDerived#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.NotDerived#getValueDefault <em>Value Default</em>}</li>
  * </ul>
  * </p>
  *
@@ -21,29 +21,29 @@ package Metawebdesign.metawebdesign;
  */
 public interface NotDerived extends Attributes {
 	/**
-	 * Returns the value of the '<em><b>Default Value</b></em>' attribute.
+	 * Returns the value of the '<em><b>Value Default</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Default Value</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Value Default</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Value</em>' attribute.
-	 * @see #setDefaultValue(String)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getNotDerived_DefaultValue()
+	 * @return the value of the '<em>Value Default</em>' attribute.
+	 * @see #setValueDefault(String)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getNotDerived_ValueDefault()
 	 * @model
 	 * @generated
 	 */
-	String getDefaultValue();
+	String getValueDefault();
 
 	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.NotDerived#getDefaultValue <em>Default Value</em>}' attribute.
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.NotDerived#getValueDefault <em>Value Default</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Value</em>' attribute.
-	 * @see #getDefaultValue()
+	 * @param value the new value of the '<em>Value Default</em>' attribute.
+	 * @see #getValueDefault()
 	 * @generated
 	 */
-	void setDefaultValue(String value);
+	void setValueDefault(String value);
 
 } // NotDerived

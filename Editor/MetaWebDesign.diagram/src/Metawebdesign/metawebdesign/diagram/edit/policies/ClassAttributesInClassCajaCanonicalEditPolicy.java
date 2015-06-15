@@ -24,7 +24,7 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class ClassAtributoEnClassCajonCanonicalEditPolicy extends
+public class ClassAttributesInClassCajaCanonicalEditPolicy extends
 		CanonicalEditPolicy {
 
 	/**
@@ -55,7 +55,7 @@ public class ClassAtributoEnClassCajonCanonicalEditPolicy extends
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getClassAtributoEnClassCajon_7001SemanticChildren(viewObject);
+				.getClassAttributesInClassCaja_7002SemanticChildren(viewObject);
 		for (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor d : childDescriptors) {
 			result.add(d.getModelElement());
 		}
@@ -90,7 +90,7 @@ public class ClassAtributoEnClassCajonCanonicalEditPolicy extends
 		}
 		LinkedList<IAdaptable> createdViews = new LinkedList<IAdaptable>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getClassAtributoEnClassCajon_7001SemanticChildren((View) getHost()
+				.getClassAttributesInClassCaja_7002SemanticChildren((View) getHost()
 						.getModel());
 		LinkedList<View> orphaned = new LinkedList<View>();
 		// we care to check only views we recognize as ours

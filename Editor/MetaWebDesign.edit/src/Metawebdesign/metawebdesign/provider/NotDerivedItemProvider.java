@@ -45,25 +45,25 @@ public class NotDerivedItemProvider extends AttributesItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDefaultValuePropertyDescriptor(object);
+			addValueDefaultPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Default Value feature.
+	 * This adds a property descriptor for the Value Default feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDefaultValuePropertyDescriptor(Object object) {
+	protected void addValueDefaultPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_NotDerived_defaultValue_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_NotDerived_defaultValue_feature", "_UI_NotDerived_type"),
-				 MetawebdesignPackage.Literals.NOT_DERIVED__DEFAULT_VALUE,
+				 getString("_UI_NotDerived_valueDefault_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_NotDerived_valueDefault_feature", "_UI_NotDerived_type"),
+				 MetawebdesignPackage.Literals.NOT_DERIVED__VALUE_DEFAULT,
 				 true,
 				 false,
 				 false,
@@ -110,7 +110,7 @@ public class NotDerivedItemProvider extends AttributesItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(NotDerived.class)) {
-			case MetawebdesignPackage.NOT_DERIVED__DEFAULT_VALUE:
+			case MetawebdesignPackage.NOT_DERIVED__VALUE_DEFAULT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

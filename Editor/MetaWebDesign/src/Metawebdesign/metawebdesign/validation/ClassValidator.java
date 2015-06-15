@@ -6,7 +6,6 @@ package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.TypeRol;
 import Metawebdesign.metawebdesign.Views;
 
@@ -33,6 +32,4 @@ public interface ClassValidator {
 	boolean validateHasRelationClass(EList<RelationClass> value);
 	boolean validateGoRelationClass(EList<RelationClass> value);
 	boolean validateHasView(Views value);
-	boolean validateHasRelationView(EList<RelationView> value);
-	boolean validateGoRelationView(EList<RelationView> value);
 }

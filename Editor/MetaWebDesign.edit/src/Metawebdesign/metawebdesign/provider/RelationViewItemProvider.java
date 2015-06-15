@@ -67,7 +67,6 @@ public class RelationViewItemProvider
 			addTypePresentationPropertyDescriptor(object);
 			addPositionHorizontalPropertyDescriptor(object);
 			addPositionVerticalPropertyDescriptor(object);
-			addGoViewsPropertyDescriptor(object);
 			addRviewsGoToClassPropertyDescriptor(object);
 			addGetAttributePropertyDescriptor(object);
 			addRowPropertyDescriptor(object);
@@ -164,28 +163,6 @@ public class RelationViewItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Go Views feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGoViewsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationView_goViews_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_goViews_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__GO_VIEWS,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This adds a property descriptor for the Rviews Go To Class feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -263,7 +240,6 @@ public class RelationViewItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(MetawebdesignPackage.Literals.RELATION_VIEW__RHAS_VIEWS);
 			childrenFeatures.add(MetawebdesignPackage.Literals.RELATION_VIEW__RVIEWS_HAS_CLASS);
 		}
 		return childrenFeatures;
@@ -327,7 +303,6 @@ public class RelationViewItemProvider
 			case MetawebdesignPackage.RELATION_VIEW__ROW:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS:
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -345,21 +320,6 @@ public class RelationViewItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.RELATION_VIEW__RHAS_VIEWS,
-				 MetawebdesignFactory.eINSTANCE.createViews()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.RELATION_VIEW__RHAS_VIEWS,
-				 MetawebdesignFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.RELATION_VIEW__RHAS_VIEWS,
-				 MetawebdesignFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter

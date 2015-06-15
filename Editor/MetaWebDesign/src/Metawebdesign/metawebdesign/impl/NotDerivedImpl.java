@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link Metawebdesign.metawebdesign.impl.NotDerivedImpl#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.NotDerivedImpl#getValueDefault <em>Value Default</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,24 +26,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	/**
-	 * The default value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
+	 * The default value of the '{@link #getValueDefault() <em>Value Default</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDefaultValue()
+	 * @see #getValueDefault()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DEFAULT_VALUE_EDEFAULT = null;
+	protected static final String VALUE_DEFAULT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
+	 * The cached value of the '{@link #getValueDefault() <em>Value Default</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDefaultValue()
+	 * @see #getValueDefault()
 	 * @generated
 	 * @ordered
 	 */
-	protected String defaultValue = DEFAULT_VALUE_EDEFAULT;
+	protected String valueDefault = VALUE_DEFAULT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,8 +69,8 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDefaultValue() {
-		return defaultValue;
+	public String getValueDefault() {
+		return valueDefault;
 	}
 
 	/**
@@ -78,11 +78,11 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefaultValue(String newDefaultValue) {
-		String oldDefaultValue = defaultValue;
-		defaultValue = newDefaultValue;
+	public void setValueDefault(String newValueDefault) {
+		String oldValueDefault = valueDefault;
+		valueDefault = newValueDefault;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.NOT_DERIVED__DEFAULT_VALUE, oldDefaultValue, defaultValue));
+			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.NOT_DERIVED__VALUE_DEFAULT, oldValueDefault, valueDefault));
 	}
 
 	/**
@@ -93,8 +93,8 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MetawebdesignPackage.NOT_DERIVED__DEFAULT_VALUE:
-				return getDefaultValue();
+			case MetawebdesignPackage.NOT_DERIVED__VALUE_DEFAULT:
+				return getValueDefault();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +107,8 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MetawebdesignPackage.NOT_DERIVED__DEFAULT_VALUE:
-				setDefaultValue((String)newValue);
+			case MetawebdesignPackage.NOT_DERIVED__VALUE_DEFAULT:
+				setValueDefault((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +122,8 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MetawebdesignPackage.NOT_DERIVED__DEFAULT_VALUE:
-				setDefaultValue(DEFAULT_VALUE_EDEFAULT);
+			case MetawebdesignPackage.NOT_DERIVED__VALUE_DEFAULT:
+				setValueDefault(VALUE_DEFAULT_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +137,8 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MetawebdesignPackage.NOT_DERIVED__DEFAULT_VALUE:
-				return DEFAULT_VALUE_EDEFAULT == null ? defaultValue != null : !DEFAULT_VALUE_EDEFAULT.equals(defaultValue);
+			case MetawebdesignPackage.NOT_DERIVED__VALUE_DEFAULT:
+				return VALUE_DEFAULT_EDEFAULT == null ? valueDefault != null : !VALUE_DEFAULT_EDEFAULT.equals(valueDefault);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -153,8 +153,8 @@ public class NotDerivedImpl extends AttributesImpl implements NotDerived {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (defaultValue: ");
-		result.append(defaultValue);
+		result.append(" (valueDefault: ");
+		result.append(valueDefault);
 		result.append(')');
 		return result.toString();
 	}

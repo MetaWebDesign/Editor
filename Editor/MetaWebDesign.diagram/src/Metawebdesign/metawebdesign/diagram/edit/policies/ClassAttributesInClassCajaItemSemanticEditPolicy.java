@@ -6,28 +6,28 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 /**
  * @generated
  */
-public class ClassAtributoEnClassCajonItemSemanticEditPolicy
+public class ClassAttributesInClassCajaItemSemanticEditPolicy
 		extends
 		Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy {
 
 	/**
 	 * @generated
 	 */
-	public ClassAtributoEnClassCajonItemSemanticEditPolicy() {
+	public ClassAttributesInClassCajaItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2001);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006);
 	}
 
 	/**
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3001 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.Derived2CreateCommand(
 					req));
 		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3002 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3003 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.NotDerived2CreateCommand(
 					req));

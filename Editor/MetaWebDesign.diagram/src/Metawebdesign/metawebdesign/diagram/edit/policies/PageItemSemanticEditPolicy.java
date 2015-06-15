@@ -25,7 +25,7 @@ public class PageItemSemanticEditPolicy
 	 */
 	public PageItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2004);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2007);
 	}
 
 	/**
@@ -36,14 +36,14 @@ public class PageItemSemanticEditPolicy
 		CompositeTransactionalCommand cmd = new CompositeTransactionalCommand(
 				getEditingDomain(), null);
 		cmd.setTransactionNestingEnabled(false);
-		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
-			Edge incomingLink = (Edge) it.next();
+		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
+			Edge outgoingLink = (Edge) it.next();
 			if (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getVisualID(incomingLink) == Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
-						incomingLink.getElement(), false);
+						outgoingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
-				cmd.add(new DeleteCommand(getEditingDomain(), incomingLink));
+				cmd.add(new DeleteCommand(getEditingDomain(), outgoingLink));
 				continue;
 			}
 		}
@@ -76,7 +76,8 @@ public class PageItemSemanticEditPolicy
 			CreateRelationshipRequest req) {
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001 == req
 				.getElementType()) {
-			return null;
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewCreateCommand(
+					req, req.getSource(), req.getTarget()));
 		}
 		return null;
 	}
@@ -88,8 +89,7 @@ public class PageItemSemanticEditPolicy
 			CreateRelationshipRequest req) {
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001 == req
 				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewCreateCommand(
-					req, req.getSource(), req.getTarget()));
+			return null;
 		}
 		return null;
 	}

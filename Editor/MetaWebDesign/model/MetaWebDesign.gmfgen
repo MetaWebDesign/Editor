@@ -23,22 +23,65 @@
         href="MetaWebDesign.genmodel#//metawebdesign/Root"/>
     <childNodes
         visualID="3001"
-        editPartClassName="Derived2EditPart"
-        itemSemanticEditPolicyClassName="Derived2ItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="Derived2CanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="Derived2GraphicalNodeEditPolicy"
-        createCommandClassName="Derived2CreateCommand"
+        editPartClassName="Group2EditPart"
+        itemSemanticEditPolicyClassName="Group2ItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="Group2CanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="Group2GraphicalNodeEditPolicy"
+        createCommandClassName="Group2CreateCommand"
         containers="//@diagram/@compartments.0">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType
           xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="DerivedEditHelper"/>
+          editHelperClassName="GroupEditHelper"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
+          className="GroupFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GroupFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupOrderFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GroupFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureGroupNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupNameFigure, org.eclipse.draw2d.BorderLayout.BOTTOM);&#xA;&#xA;&#xA;&#xA;fFigureGroupOrderFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupOrderFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupOrderFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupNameFigure() {&#xA;&#x9;&#x9;return fFigureGroupNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupOrderFigure() {&#xA;&#x9;&#x9;return fFigureGroupOrderFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="MetaWebDesign.genmodel#//metawebdesign/Group"/>
+        <containmentMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Menu/hasGroup"/>
+        <childMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Menu/hasGroup"/>
+      </modelFacet>
+      <labels
+          visualID="5002"
+          editPartClassName="GroupName2EditPart"
+          itemSemanticEditPolicyClassName="GroupName2ItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureGroupNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="MetaWebDesign.genmodel#//metawebdesign/Group/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes
+        visualID="3002"
+        editPartClassName="Derived2EditPart"
+        itemSemanticEditPolicyClassName="Derived2ItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="Derived2CanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="Derived2GraphicalNodeEditPolicy"
+        createCommandClassName="Derived2CreateCommand"
+        containers="//@diagram/@compartments.1">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:SpecializationType"
+          metamodelType="//@diagram/@topLevelNodes.2/@elementType"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
           className="DerivedFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedRolFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedValueFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedPrimaryKeyFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedDataTypeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedInTheFormFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedCommentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedFormulaFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedRolFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedRolFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedRolFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedValueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedValueFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedValueFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedPrimaryKeyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedPrimaryKeyFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedPrimaryKeyFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedDataTypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedDataTypeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedDataTypeFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedInTheFormFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedInTheFormFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedInTheFormFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedCommentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedCommentFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedCommentFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedFormulaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedFormulaFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedFormulaFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedRolFigure() {&#xA;&#x9;&#x9;return fFigureDerivedRolFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedValueFigure() {&#xA;&#x9;&#x9;return fFigureDerivedValueFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedPrimaryKeyFigure() {&#xA;&#x9;&#x9;return fFigureDerivedPrimaryKeyFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedDataTypeFigure() {&#xA;&#x9;&#x9;return fFigureDerivedDataTypeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedInTheFormFigure() {&#xA;&#x9;&#x9;return fFigureDerivedInTheFormFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedCommentFigure() {&#xA;&#x9;&#x9;return fFigureDerivedCommentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedFormulaFigure() {&#xA;&#x9;&#x9;return fFigureDerivedFormulaFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedRolFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedValueFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedPrimaryKeyFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedDataTypeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedInTheFormFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedCommentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedFormulaFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedNameFigure, org.eclipse.draw2d.BorderLayout.BOTTOM);&#xA;&#xA;&#xA;&#xA;fFigureDerivedRolFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedRolFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedRolFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedValueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedValueFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedValueFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedPrimaryKeyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedPrimaryKeyFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedPrimaryKeyFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedDataTypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedDataTypeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedDataTypeFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedInTheFormFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedInTheFormFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedInTheFormFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedCommentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedCommentFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedCommentFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedFormulaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedFormulaFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedFormulaFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedRolFigure() {&#xA;&#x9;&#x9;return fFigureDerivedRolFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedValueFigure() {&#xA;&#x9;&#x9;return fFigureDerivedValueFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedPrimaryKeyFigure() {&#xA;&#x9;&#x9;return fFigureDerivedPrimaryKeyFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedDataTypeFigure() {&#xA;&#x9;&#x9;return fFigureDerivedDataTypeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedInTheFormFigure() {&#xA;&#x9;&#x9;return fFigureDerivedInTheFormFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedCommentFigure() {&#xA;&#x9;&#x9;return fFigureDerivedCommentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedFormulaFigure() {&#xA;&#x9;&#x9;return fFigureDerivedFormulaFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet>
         <metaClass
             href="MetaWebDesign.genmodel#//metawebdesign/Derived"/>
@@ -48,7 +91,7 @@
             href="MetaWebDesign.genmodel#//metawebdesign/Class/hasAttributes"/>
       </modelFacet>
       <labels
-          visualID="5001"
+          visualID="5007"
           editPartClassName="DerivedName2EditPart"
           itemSemanticEditPolicyClassName="DerivedName2ItemSemanticEditPolicy"
           elementIcon="true">
@@ -67,23 +110,22 @@
       </labels>
     </childNodes>
     <childNodes
-        visualID="3002"
+        visualID="3003"
         editPartClassName="NotDerived2EditPart"
         itemSemanticEditPolicyClassName="NotDerived2ItemSemanticEditPolicy"
         canonicalEditPolicyClassName="NotDerived2CanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="NotDerived2GraphicalNodeEditPolicy"
         createCommandClassName="NotDerived2CreateCommand"
-        containers="//@diagram/@compartments.0">
+        containers="//@diagram/@compartments.1">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="NotDerivedEditHelper"/>
+          xsi:type="gmfgen:SpecializationType"
+          metamodelType="//@diagram/@topLevelNodes.3/@elementType"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
           className="NotDerivedFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class NotDerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public NotDerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureNotDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class NotDerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedRolFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedValueFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedPrimaryKeyFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedDataTypeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedInTheFormFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedValueDefaultFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public NotDerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureNotDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedNameFigure, org.eclipse.draw2d.BorderLayout.BOTTOM);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedRolFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedRolFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedRolFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedValueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedValueFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedValueFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedPrimaryKeyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedPrimaryKeyFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedPrimaryKeyFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedDataTypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedDataTypeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedDataTypeFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedInTheFormFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedInTheFormFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedInTheFormFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedValueDefaultFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedValueDefaultFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedValueDefaultFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedRolFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedRolFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedValueFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedValueFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedPrimaryKeyFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedPrimaryKeyFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedDataTypeFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedDataTypeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedInTheFormFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedInTheFormFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedValueDefaultFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedValueDefaultFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet>
         <metaClass
             href="MetaWebDesign.genmodel#//metawebdesign/NotDerived"/>
@@ -93,7 +135,7 @@
             href="MetaWebDesign.genmodel#//metawebdesign/Class/hasAttributes"/>
       </modelFacet>
       <labels
-          visualID="5002"
+          visualID="5008"
           editPartClassName="NotDerivedName2EditPart"
           itemSemanticEditPolicyClassName="NotDerivedName2ItemSemanticEditPolicy"
           elementIcon="true">
@@ -111,97 +153,8 @@
         </modelFacet>
       </labels>
     </childNodes>
-    <childNodes
-        visualID="3003"
-        editPartClassName="Group2EditPart"
-        itemSemanticEditPolicyClassName="Group2ItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="Group2CanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="Group2GraphicalNodeEditPolicy"
-        createCommandClassName="Group2CreateCommand"
-        containers="//@diagram/@compartments.1">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="GroupEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
-          className="GroupFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GroupFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupOrderFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GroupFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureGroupNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureGroupOrderFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupOrderFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupOrderFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupNameFigure() {&#xA;&#x9;&#x9;return fFigureGroupNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupOrderFigure() {&#xA;&#x9;&#x9;return fFigureGroupOrderFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="MetaWebDesign.genmodel#//metawebdesign/Group"/>
-        <containmentMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Menu/hasGroup"/>
-        <childMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Menu/hasGroup"/>
-      </modelFacet>
-      <labels
-          visualID="5007"
-          editPartClassName="GroupName2EditPart"
-          itemSemanticEditPolicyClassName="GroupName2ItemSemanticEditPolicy"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureGroupNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="MetaWebDesign.genmodel#//metawebdesign/Group/name"/>
-        </modelFacet>
-      </labels>
-    </childNodes>
     <topLevelNodes
         visualID="2001"
-        editPartClassName="ClassEditPart"
-        itemSemanticEditPolicyClassName="ClassItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="ClassCanonicalEditPolicy"
-        compartments="//@diagram/@compartments.0"
-        graphicalNodeEditPolicyClassName="ClassGraphicalNodeEditPolicy"
-        createCommandClassName="ClassCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="ClassEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          className="ClassFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassIdFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionCreateFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionDeleteFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionUpdateFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionIndexFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionViewFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionAdminFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fFigureCajaAttribute; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassNameFigure, org.eclipse.draw2d.BorderLayout.TOP);&#xA;&#xA;&#xA;&#xA;fFigureClassIdFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassIdFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassIdFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionCreateFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionCreateFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionCreateFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionDeleteFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionDeleteFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionDeleteFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionUpdateFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionUpdateFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionUpdateFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionIndexFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionIndexFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionIndexFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionViewFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionViewFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionViewFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionAdminFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionAdminFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionAdminFigure);&#xA;&#xA;&#xA;&#xA;fFigureCajaAttribute = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;&#xA;this.add(fFigureCajaAttribute, org.eclipse.draw2d.BorderLayout.CENTER);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassNameFigure() {&#xA;&#x9;&#x9;return fFigureClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassIdFigure() {&#xA;&#x9;&#x9;return fFigureClassIdFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionCreateFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionCreateFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionDeleteFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionDeleteFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionUpdateFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionUpdateFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionIndexFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionIndexFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionViewFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionViewFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionAdminFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionAdminFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getFigureCajaAttribute() {&#xA;&#x9;&#x9;return fFigureCajaAttribute;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="MetaWebDesign.genmodel#//metawebdesign/Class"/>
-        <containmentMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Root/class"/>
-        <childMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Root/class"/>
-      </modelFacet>
-      <labels
-          visualID="5003"
-          editPartClassName="ClassNameEditPart"
-          itemSemanticEditPolicyClassName="ClassNameItemSemanticEditPolicy"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureClassNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="MetaWebDesign.genmodel#//metawebdesign/Class/name"/>
-        </modelFacet>
-      </labels>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2006"
         editPartClassName="FormEditPart"
         itemSemanticEditPolicyClassName="FormItemSemanticEditPolicy"
         canonicalEditPolicyClassName="FormCanonicalEditPolicy"
@@ -226,7 +179,7 @@
             href="MetaWebDesign.genmodel#//metawebdesign/Root/views"/>
       </modelFacet>
       <labels
-          visualID="5009"
+          visualID="5001"
           editPartClassName="FormTitleEditPart"
           itemSemanticEditPolicyClassName="FormTitleItemSemanticEditPolicy"
           elementIcon="true">
@@ -246,54 +199,10 @@
     </topLevelNodes>
     <topLevelNodes
         visualID="2002"
-        editPartClassName="NotDerivedEditPart"
-        itemSemanticEditPolicyClassName="NotDerivedItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="NotDerivedCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="NotDerivedGraphicalNodeEditPolicy"
-        createCommandClassName="NotDerivedCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:SpecializationType"
-          metamodelType="//@diagram/@childNodes.1/@elementType"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
-          className="NotDerivedFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class NotDerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private  fFigureNull; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public NotDerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureNotDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public  getFigureNull() {&#xA;&#x9;&#x9;return fFigureNull;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="MetaWebDesign.genmodel#//metawebdesign/NotDerived"/>
-        <containmentMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
-        <childMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
-      </modelFacet>
-      <labels
-          visualID="5004"
-          editPartClassName="NotDerivedNameEditPart"
-          itemSemanticEditPolicyClassName="NotDerivedNameItemSemanticEditPolicy"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureNotDerivedNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="MetaWebDesign.genmodel#//metawebdesign/Attributes/name"/>
-        </modelFacet>
-      </labels>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2005"
         editPartClassName="MenuEditPart"
         itemSemanticEditPolicyClassName="MenuItemSemanticEditPolicy"
         canonicalEditPolicyClassName="MenuCanonicalEditPolicy"
-        compartments="//@diagram/@compartments.1"
+        compartments="//@diagram/@compartments.0"
         graphicalNodeEditPolicyClassName="MenuGraphicalNodeEditPolicy"
         createCommandClassName="MenuCreateCommand">
       <diagramRunTimeClass
@@ -314,7 +223,7 @@
             href="MetaWebDesign.genmodel#//metawebdesign/Root/menu"/>
       </modelFacet>
       <labels
-          visualID="5008"
+          visualID="5003"
           editPartClassName="MenuNameEditPart"
           itemSemanticEditPolicyClassName="MenuNameItemSemanticEditPolicy"
           elementIcon="true">
@@ -333,7 +242,93 @@
       </labels>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2007"
+        visualID="2003"
+        editPartClassName="DerivedEditPart"
+        itemSemanticEditPolicyClassName="DerivedItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="DerivedCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="DerivedGraphicalNodeEditPolicy"
+        createCommandClassName="DerivedCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="DerivedEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="DerivedFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedRolFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedValueFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedPrimaryKeyFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedDataTypeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedInTheFormFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedCommentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedFormulaFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedNameFigure, org.eclipse.draw2d.BorderLayout.BOTTOM);&#xA;&#xA;&#xA;&#xA;fFigureDerivedRolFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedRolFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedRolFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedValueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedValueFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedValueFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedPrimaryKeyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedPrimaryKeyFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedPrimaryKeyFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedDataTypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedDataTypeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedDataTypeFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedInTheFormFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedInTheFormFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedInTheFormFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedCommentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedCommentFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedCommentFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedFormulaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedFormulaFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedFormulaFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedRolFigure() {&#xA;&#x9;&#x9;return fFigureDerivedRolFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedValueFigure() {&#xA;&#x9;&#x9;return fFigureDerivedValueFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedPrimaryKeyFigure() {&#xA;&#x9;&#x9;return fFigureDerivedPrimaryKeyFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedDataTypeFigure() {&#xA;&#x9;&#x9;return fFigureDerivedDataTypeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedInTheFormFigure() {&#xA;&#x9;&#x9;return fFigureDerivedInTheFormFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedCommentFigure() {&#xA;&#x9;&#x9;return fFigureDerivedCommentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedFormulaFigure() {&#xA;&#x9;&#x9;return fFigureDerivedFormulaFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="MetaWebDesign.genmodel#//metawebdesign/Derived"/>
+        <containmentMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
+        <childMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
+      </modelFacet>
+      <labels
+          visualID="5004"
+          editPartClassName="DerivedNameEditPart"
+          itemSemanticEditPolicyClassName="DerivedNameItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureDerivedNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="MetaWebDesign.genmodel#//metawebdesign/Attributes/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2004"
+        editPartClassName="NotDerivedEditPart"
+        itemSemanticEditPolicyClassName="NotDerivedItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="NotDerivedCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="NotDerivedGraphicalNodeEditPolicy"
+        createCommandClassName="NotDerivedCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="NotDerivedEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="NotDerivedFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class NotDerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedRolFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedValueFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedPrimaryKeyFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedDataTypeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedInTheFormFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureNotDerivedValueDefaultFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public NotDerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureNotDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedNameFigure, org.eclipse.draw2d.BorderLayout.BOTTOM);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedRolFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedRolFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedRolFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedValueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedValueFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedValueFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedPrimaryKeyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedPrimaryKeyFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedPrimaryKeyFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedDataTypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedDataTypeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedDataTypeFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedInTheFormFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedInTheFormFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedInTheFormFigure);&#xA;&#xA;&#xA;&#xA;fFigureNotDerivedValueDefaultFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureNotDerivedValueDefaultFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureNotDerivedValueDefaultFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedRolFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedRolFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedValueFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedValueFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedPrimaryKeyFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedPrimaryKeyFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedDataTypeFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedDataTypeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedInTheFormFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedInTheFormFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureNotDerivedValueDefaultFigure() {&#xA;&#x9;&#x9;return fFigureNotDerivedValueDefaultFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="MetaWebDesign.genmodel#//metawebdesign/NotDerived"/>
+        <containmentMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
+        <childMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
+      </modelFacet>
+      <labels
+          visualID="5005"
+          editPartClassName="NotDerivedNameEditPart"
+          itemSemanticEditPolicyClassName="NotDerivedNameItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureNotDerivedNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="MetaWebDesign.genmodel#//metawebdesign/Attributes/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2005"
         editPartClassName="GroupEditPart"
         itemSemanticEditPolicyClassName="GroupItemSemanticEditPolicy"
         canonicalEditPolicyClassName="GroupCanonicalEditPolicy"
@@ -343,12 +338,11 @@
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType
           xsi:type="gmfgen:SpecializationType"
-          metamodelType="//@diagram/@childNodes.2/@elementType"/>
+          metamodelType="//@diagram/@childNodes.0/@elementType"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
           className="GroupFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GroupFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupOrderFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GroupFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureGroupNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureGroupOrderFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupOrderFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupOrderFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupNameFigure() {&#xA;&#x9;&#x9;return fFigureGroupNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupOrderFigure() {&#xA;&#x9;&#x9;return fFigureGroupOrderFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GroupFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGroupOrderFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GroupFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureGroupNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupNameFigure, org.eclipse.draw2d.BorderLayout.BOTTOM);&#xA;&#xA;&#xA;&#xA;fFigureGroupOrderFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGroupOrderFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureGroupOrderFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupNameFigure() {&#xA;&#x9;&#x9;return fFigureGroupNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGroupOrderFigure() {&#xA;&#x9;&#x9;return fFigureGroupOrderFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet>
         <metaClass
             href="MetaWebDesign.genmodel#//metawebdesign/Group"/>
@@ -358,7 +352,7 @@
             href="MetaWebDesign.genmodel#//metawebdesign/Root/group"/>
       </modelFacet>
       <labels
-          visualID="5010"
+          visualID="5006"
           editPartClassName="GroupNameEditPart"
           itemSemanticEditPolicyClassName="GroupNameItemSemanticEditPolicy"
           elementIcon="true">
@@ -377,7 +371,51 @@
       </labels>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2004"
+        visualID="2006"
+        editPartClassName="ClassEditPart"
+        itemSemanticEditPolicyClassName="ClassItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="ClassCanonicalEditPolicy"
+        compartments="//@diagram/@compartments.1"
+        graphicalNodeEditPolicyClassName="ClassGraphicalNodeEditPolicy"
+        createCommandClassName="ClassCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="ClassEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="ClassFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionCreateFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionDeleteFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionUpdateFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionIndexFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionViewFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassFunctionAdminFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fFigureCajaAttribute; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutThis = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureClassNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassNameFigure, org.eclipse.draw2d.BorderLayout.TOP);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionCreateFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionCreateFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionCreateFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionDeleteFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionDeleteFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionDeleteFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionUpdateFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionUpdateFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionUpdateFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionIndexFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionIndexFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionIndexFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionViewFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionViewFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionViewFigure);&#xA;&#xA;&#xA;&#xA;fFigureClassFunctionAdminFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassFunctionAdminFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureClassFunctionAdminFigure);&#xA;&#xA;&#xA;&#xA;fFigureCajaAttribute = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;&#xA;this.add(fFigureCajaAttribute, org.eclipse.draw2d.BorderLayout.CENTER);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassNameFigure() {&#xA;&#x9;&#x9;return fFigureClassNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionCreateFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionCreateFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionDeleteFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionDeleteFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionUpdateFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionUpdateFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionIndexFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionIndexFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionViewFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionViewFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassFunctionAdminFigure() {&#xA;&#x9;&#x9;return fFigureClassFunctionAdminFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getFigureCajaAttribute() {&#xA;&#x9;&#x9;return fFigureCajaAttribute;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass
+            href="MetaWebDesign.genmodel#//metawebdesign/Class"/>
+        <containmentMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Root/class"/>
+        <childMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/Root/class"/>
+      </modelFacet>
+      <labels
+          visualID="5009"
+          editPartClassName="ClassNameEditPart"
+          itemSemanticEditPolicyClassName="ClassNameItemSemanticEditPolicy"
+          elementIcon="true">
+        <diagramRunTimeClass
+            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap
+            xsi:type="gmfgen:ParentAssignedViewmap"
+            getterName="getFigureClassNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet
+            xsi:type="gmfgen:FeatureLabelModelFacet"
+            parser="//@labelParsers/@implementations.0">
+          <metaFeatures
+              href="MetaWebDesign.genmodel#//metawebdesign/Class/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2007"
         editPartClassName="PageEditPart"
         itemSemanticEditPolicyClassName="PageItemSemanticEditPolicy"
         canonicalEditPolicyClassName="PageCanonicalEditPolicy"
@@ -402,7 +440,7 @@
             href="MetaWebDesign.genmodel#//metawebdesign/Root/views"/>
       </modelFacet>
       <labels
-          visualID="5006"
+          visualID="5010"
           editPartClassName="PageTitleEditPart"
           itemSemanticEditPolicyClassName="PageTitleItemSemanticEditPolicy"
           elementIcon="true">
@@ -420,50 +458,55 @@
         </modelFacet>
       </labels>
     </topLevelNodes>
-    <topLevelNodes
-        visualID="2003"
-        editPartClassName="DerivedEditPart"
-        itemSemanticEditPolicyClassName="DerivedItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="DerivedCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="DerivedGraphicalNodeEditPolicy"
-        createCommandClassName="DerivedCreateCommand">
+    <links
+        visualID="4001"
+        editPartClassName="RelationViewEditPart"
+        itemSemanticEditPolicyClassName="RelationViewItemSemanticEditPolicy"
+        createCommandClassName="RelationViewCreateCommand"
+        reorientCommandClassName="RelationViewReorientCommand">
       <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType
-          xsi:type="gmfgen:SpecializationType"
-          metamodelType="//@diagram/@childNodes.0/@elementType"/>
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="RelationViewEditHelper"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
-          className="DerivedFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DerivedFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedNameFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedRolFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedValueFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedPrimaryKeyFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedDataTypeFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedInTheFormFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedCommentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDerivedFormulaFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DerivedFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureDerivedNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedNameFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedRolFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedRolFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedRolFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedValueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedValueFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedValueFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedPrimaryKeyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedPrimaryKeyFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedPrimaryKeyFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedDataTypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedDataTypeFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedDataTypeFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedInTheFormFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedInTheFormFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedInTheFormFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedCommentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedCommentFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedCommentFigure);&#xA;&#xA;&#xA;&#xA;fFigureDerivedFormulaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDerivedFormulaFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigureDerivedFormulaFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedNameFigure() {&#xA;&#x9;&#x9;return fFigureDerivedNameFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedRolFigure() {&#xA;&#x9;&#x9;return fFigureDerivedRolFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedValueFigure() {&#xA;&#x9;&#x9;return fFigureDerivedValueFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedPrimaryKeyFigure() {&#xA;&#x9;&#x9;return fFigureDerivedPrimaryKeyFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedDataTypeFigure() {&#xA;&#x9;&#x9;return fFigureDerivedDataTypeFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedInTheFormFigure() {&#xA;&#x9;&#x9;return fFigureDerivedInTheFormFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedCommentFigure() {&#xA;&#x9;&#x9;return fFigureDerivedCommentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDerivedFormulaFigure() {&#xA;&#x9;&#x9;return fFigureDerivedFormulaFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
+          className="ViewsHasRelationViewFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ViewsHasRelationViewFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ViewsHasRelationViewFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet
+          xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass
-            href="MetaWebDesign.genmodel#//metawebdesign/Derived"/>
+            href="MetaWebDesign.genmodel#//metawebdesign/RelationView"/>
         <containmentMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
+            href="MetaWebDesign.genmodel#//metawebdesign/Views/hasRelationView"/>
         <childMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Root/attribute"/>
+            href="MetaWebDesign.genmodel#//metawebdesign/Views/hasRelationView"/>
+        <targetMetaFeature
+            href="MetaWebDesign.genmodel#//metawebdesign/RelationView/RviewsGoToClass"/>
       </modelFacet>
       <labels
-          visualID="5005"
-          editPartClassName="DerivedNameEditPart"
-          itemSemanticEditPolicyClassName="DerivedNameItemSemanticEditPolicy"
+          visualID="6001"
+          editPartClassName="RelationViewNameEditPart"
+          itemSemanticEditPolicyClassName="RelationViewNameItemSemanticEditPolicy"
           elementIcon="true">
         <diagramRunTimeClass
             href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap
             xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureDerivedNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+            getterName="getFigureRelationViewNameFigure"
+            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes
+              xsi:type="gmfgen:LabelOffsetAttributes"
+              y="40"/>
+        </viewmap>
         <modelFacet
             xsi:type="gmfgen:FeatureLabelModelFacet"
             parser="//@labelParsers/@implementations.0">
           <metaFeatures
-              href="MetaWebDesign.genmodel#//metawebdesign/Attributes/name"/>
+              href="MetaWebDesign.genmodel#//metawebdesign/RelationView/name"/>
         </modelFacet>
       </labels>
-    </topLevelNodes>
+    </links>
     <links
         visualID="4002"
         editPartClassName="RelationClassEditPart"
@@ -513,85 +556,36 @@
         </modelFacet>
       </labels>
     </links>
-    <links
-        visualID="4001"
-        editPartClassName="RelationViewEditPart"
-        itemSemanticEditPolicyClassName="RelationViewItemSemanticEditPolicy"
-        createCommandClassName="RelationViewCreateCommand"
-        reorientCommandClassName="RelationViewReorientCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="RelationViewEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          className="ClassHasRelationViewFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassHasRelationViewFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassHasRelationViewFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet
-          xsi:type="gmfgen:TypeLinkModelFacet">
-        <metaClass
-            href="MetaWebDesign.genmodel#//metawebdesign/RelationView"/>
-        <containmentMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Class/hasRelationView"/>
-        <childMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/Class/hasRelationView"/>
-        <targetMetaFeature
-            href="MetaWebDesign.genmodel#//metawebdesign/RelationView/goViews"/>
-      </modelFacet>
-      <labels
-          visualID="6001"
-          editPartClassName="RelationViewNameEditPart"
-          itemSemanticEditPolicyClassName="RelationViewNameItemSemanticEditPolicy"
-          elementIcon="true">
-        <diagramRunTimeClass
-            href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap
-            xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigureRelationViewNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
-          <attributes
-              xsi:type="gmfgen:LabelOffsetAttributes"
-              y="40"/>
-        </viewmap>
-        <modelFacet
-            xsi:type="gmfgen:FeatureLabelModelFacet"
-            parser="//@labelParsers/@implementations.0">
-          <metaFeatures
-              href="MetaWebDesign.genmodel#//metawebdesign/RelationView/name"/>
-        </modelFacet>
-      </labels>
-    </links>
     <compartments
         visualID="7001"
-        editPartClassName="ClassAtributoEnClassCajonEditPart"
-        itemSemanticEditPolicyClassName="ClassAtributoEnClassCajonItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="ClassAtributoEnClassCajonCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.0 //@diagram/@childNodes.1"
-        title="AtributoEnClassCajon"
+        editPartClassName="MenuGroupsInMenuCajaEditPart"
+        itemSemanticEditPolicyClassName="MenuGroupsInMenuCajaItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="MenuGroupsInMenuCajaCanonicalEditPolicy"
+        childNodes="//@diagram/@childNodes.0"
+        title="GroupsInMenuCaja"
         needsTitle="false"
-        node="//@diagram/@topLevelNodes.0">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <viewmap
-          xsi:type="gmfgen:ParentAssignedViewmap"
-          getterName="getFigureCajaAttribute"
-          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
-    </compartments>
-    <compartments
-        visualID="7002"
-        editPartClassName="MenuGrupoEnMenuCajonEditPart"
-        itemSemanticEditPolicyClassName="MenuGrupoEnMenuCajonItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="MenuGrupoEnMenuCajonCanonicalEditPolicy"
-        childNodes="//@diagram/@childNodes.2"
-        title="GrupoEnMenuCajon"
-        needsTitle="false"
-        node="//@diagram/@topLevelNodes.3">
+        node="//@diagram/@topLevelNodes.1">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap
           xsi:type="gmfgen:ParentAssignedViewmap"
           getterName="getFigureCajaGroup"
+          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments
+        visualID="7002"
+        editPartClassName="ClassAttributesInClassCajaEditPart"
+        itemSemanticEditPolicyClassName="ClassAttributesInClassCajaItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="ClassAttributesInClassCajaCanonicalEditPolicy"
+        childNodes="//@diagram/@childNodes.1 //@diagram/@childNodes.2"
+        title="AttributesInClassCaja"
+        needsTitle="false"
+        node="//@diagram/@topLevelNodes.5">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap
+          xsi:type="gmfgen:ParentAssignedViewmap"
+          getterName="getFigureCajaAttribute"
           figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>
     <palette>
@@ -601,7 +595,7 @@
             xsi:type="gmfgen:ToolEntry"
             title="Class"
             description="Create new Class"
-            genNodes="//@diagram/@topLevelNodes.0"/>
+            genNodes="//@diagram/@topLevelNodes.5"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Attributes"
@@ -610,27 +604,27 @@
             xsi:type="gmfgen:ToolEntry"
             title="Derived"
             description="Create new Derived"
-            genNodes="//@diagram/@childNodes.0 //@diagram/@topLevelNodes.6"/>
+            genNodes="//@diagram/@topLevelNodes.2 //@diagram/@childNodes.1"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="NotDerived"
             description="Create new NotDerived"
-            genNodes="//@diagram/@childNodes.1 //@diagram/@topLevelNodes.2"/>
+            genNodes="//@diagram/@topLevelNodes.3 //@diagram/@childNodes.2"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="RelationClass"
             description="Create new RelationClass"
-            genLinks="//@diagram/@links.0"/>
+            genLinks="//@diagram/@links.1"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Menu"
             description="Create new Menu"
-            genNodes="//@diagram/@topLevelNodes.3"/>
+            genNodes="//@diagram/@topLevelNodes.1"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Group"
             description="Create new Group"
-            genNodes="//@diagram/@childNodes.2 //@diagram/@topLevelNodes.4"/>
+            genNodes="//@diagram/@childNodes.0 //@diagram/@topLevelNodes.4"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Views"
@@ -639,17 +633,17 @@
             xsi:type="gmfgen:ToolEntry"
             title="Form"
             description="Create new Form"
-            genNodes="//@diagram/@topLevelNodes.1"/>
+            genNodes="//@diagram/@topLevelNodes.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Page"
             description="Create new Page"
-            genNodes="//@diagram/@topLevelNodes.5"/>
+            genNodes="//@diagram/@topLevelNodes.6"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="RelationView"
             description="Create new RelationView"
-            genLinks="//@diagram/@links.1"/>
+            genLinks="//@diagram/@links.0"/>
       </groups>
     </palette>
     <preferencePages
@@ -688,14 +682,11 @@
     <childReferences
         child="//@diagram"/>
     <childReferences
-        parent="//@diagram/@topLevelNodes.0"
-        child="//@diagram/@childNodes.0"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.0"
-        child="//@diagram/@childNodes.1"/>
-    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.0"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.1"
+        child="//@diagram/@childNodes.0"/>
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.1"/>
@@ -703,14 +694,17 @@
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.2"/>
     <childReferences
-        parent="//@diagram/@topLevelNodes.3"
-        child="//@diagram/@childNodes.2"/>
-    <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.3"/>
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.4"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.5"
+        child="//@diagram/@childNodes.1"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.5"
+        child="//@diagram/@childNodes.2"/>
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.5"/>
@@ -724,12 +718,12 @@
         groupIcon="icons/linksNavigatorGroup.gif"/>
     <childReferences
         parent="//@diagram/@links.0"
-        child="//@diagram/@topLevelNodes.0"
+        child="//@diagram/@topLevelNodes.5"
         referenceType="out_target"
         groupName="target"
         groupIcon="icons/linkTargetNavigatorGroup.gif"/>
     <childReferences
-        parent="//@diagram/@topLevelNodes.0"
+        parent="//@diagram/@topLevelNodes.5"
         child="//@diagram/@links.0"
         referenceType="in_source"
         groupName="incoming links"
@@ -747,22 +741,22 @@
         groupName="outgoing links"
         groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
     <childReferences
+        parent="//@diagram/@links.0"
+        child="//@diagram/@topLevelNodes.6"
+        referenceType="in_source"
+        groupName="source"
+        groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.6"
+        child="//@diagram/@links.0"
+        referenceType="out_target"
+        groupName="outgoing links"
+        groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences
         parent="//@diagram"
         child="//@diagram/@links.1"
         groupName="links"
         groupIcon="icons/linksNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.1"
-        referenceType="out_target"
-        groupName="target"
-        groupIcon="icons/linkTargetNavigatorGroup.gif"/>
-    <childReferences
-        parent="//@diagram/@topLevelNodes.1"
-        child="//@diagram/@links.1"
-        referenceType="in_source"
-        groupName="incoming links"
-        groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
     <childReferences
         parent="//@diagram/@links.1"
         child="//@diagram/@topLevelNodes.5"
@@ -777,12 +771,12 @@
         groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
     <childReferences
         parent="//@diagram/@links.1"
-        child="//@diagram/@topLevelNodes.0"
+        child="//@diagram/@topLevelNodes.5"
         referenceType="in_source"
         groupName="source"
         groupIcon="icons/linkSourceNavigatorGroup.gif"/>
     <childReferences
-        parent="//@diagram/@topLevelNodes.0"
+        parent="//@diagram/@topLevelNodes.5"
         child="//@diagram/@links.1"
         referenceType="out_target"
         groupName="outgoing links"
@@ -814,7 +808,7 @@
       extensibleViaService="true">
     <implementations
         xsi:type="gmfgen:PredefinedParser"
-        uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet //@diagram/@topLevelNodes.4/@labels.0/@modelFacet //@diagram/@topLevelNodes.5/@labels.0/@modelFacet //@diagram/@topLevelNodes.6/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet"/>
+        uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet //@diagram/@topLevelNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.5/@labels.0/@modelFacet //@diagram/@topLevelNodes.6/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus
       context="//@diagram">

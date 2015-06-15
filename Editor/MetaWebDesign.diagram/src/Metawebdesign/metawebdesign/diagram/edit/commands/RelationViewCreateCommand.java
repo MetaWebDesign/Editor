@@ -45,11 +45,11 @@ public class RelationViewCreateCommand extends EditElementCommand {
 			return false;
 		}
 		if (source != null
-				&& false == source instanceof Metawebdesign.metawebdesign.Class) {
+				&& false == source instanceof Metawebdesign.metawebdesign.Views) {
 			return false;
 		}
 		if (target != null
-				&& false == target instanceof Metawebdesign.metawebdesign.Views) {
+				&& false == target instanceof Metawebdesign.metawebdesign.Class) {
 			return false;
 		}
 		if (getSource() == null) {
@@ -73,8 +73,8 @@ public class RelationViewCreateCommand extends EditElementCommand {
 
 		Metawebdesign.metawebdesign.RelationView newElement = Metawebdesign.metawebdesign.MetawebdesignFactory.eINSTANCE
 				.createRelationView();
-		getSource().getHasRelationView().add(newElement);
-		newElement.getGoViews().add(getTarget());
+		getSource().setHasRelationView(newElement);
+		newElement.getRviewsGoToClass().add(getTarget());
 		doConfigure(newElement, monitor, info);
 		((CreateElementRequest) getRequest()).setNewElement(newElement);
 		return CommandResult.newOKCommandResult(newElement);
@@ -116,15 +116,15 @@ public class RelationViewCreateCommand extends EditElementCommand {
 	/**
 	 * @generated
 	 */
-	protected Metawebdesign.metawebdesign.Class getSource() {
-		return (Metawebdesign.metawebdesign.Class) source;
+	protected Metawebdesign.metawebdesign.Views getSource() {
+		return (Metawebdesign.metawebdesign.Views) source;
 	}
 
 	/**
 	 * @generated
 	 */
-	protected Metawebdesign.metawebdesign.Views getTarget() {
-		return (Metawebdesign.metawebdesign.Views) target;
+	protected Metawebdesign.metawebdesign.Class getTarget() {
+		return (Metawebdesign.metawebdesign.Class) target;
 	}
 
 }

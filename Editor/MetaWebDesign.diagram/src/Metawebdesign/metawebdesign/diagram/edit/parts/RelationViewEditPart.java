@@ -8,7 +8,10 @@ import org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.notation.View;
+
+//import RelationPrueba.relationPrueba.diagram.edit.parts.RelationEditPart.RelationFigure;
 
 /**
  * @generated
@@ -43,9 +46,8 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) {
-			/*((Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) childEditPart)
-					.setLabel(getPrimaryShape()
-							.getFigureRelationViewNameFigure())*/;
+			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) childEditPart)
+			.setLabel(getPrimaryShape().getFigureRelationViewNameFigure());
 			return true;
 		}
 		return false;
@@ -91,28 +93,52 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 */
 
 	protected Connection createConnectionFigure() {
-		return new ClassHasRelationViewFigure();
+		return new ViewsHasRelationViewFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public ClassHasRelationViewFigure getPrimaryShape() {
-		return (ClassHasRelationViewFigure) getFigure();
+	public ViewsHasRelationViewFigure getPrimaryShape() {
+		return (ViewsHasRelationViewFigure) getFigure();
 	}
+
 
 	/**
 	 * @generated
 	 */
-	public class ClassHasRelationViewFigure extends PolylineConnectionEx {
+	public class ViewsHasRelationViewFigure extends PolylineConnectionEx {
+
+		//NEW-----
+		private WrappingLabel fFigureRelationViewNameFigure;
+		
+		public ViewsHasRelationViewFigure() {
+
+			createContents();
+		}
 
 		/**
 		 * @generated
 		 */
-		public ClassHasRelationViewFigure() {
+		private void createContents() {
+
+			fFigureRelationViewNameFigure = new WrappingLabel();
+
+			fFigureRelationViewNameFigure.setText("<...>");
+
+			this.add(fFigureRelationViewNameFigure);
+
+		}
+		
+		//END ----
+		/**
+		 * @generated
+		 */
+		/*
+		public ViewsHasRelationViewFigure() {
 
 			setTargetDecoration(createTargetDecoration());
-		}
+		}*/
 
 		/**
 		 * @generated
@@ -120,6 +146,13 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 		private RotatableDecoration createTargetDecoration() {
 			PolylineDecoration df = new PolylineDecoration();
 			return df;
+		}
+		
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureRelationViewNameFigure() {
+			return fFigureRelationViewNameFigure;
 		}
 
 	}

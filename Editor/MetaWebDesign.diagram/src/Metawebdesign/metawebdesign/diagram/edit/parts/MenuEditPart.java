@@ -34,7 +34,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2005;
+	public static final int VISUAL_ID = 2002;
 
 	/**
 	 * @generated
@@ -119,10 +119,10 @@ public class MenuEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureMenuNameFigure());
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoEnMenuCajonEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupsInMenuCajaEditPart) {
 			IFigure pane = getPrimaryShape().getFigureCajaGroup();
 			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoEnMenuCajonEditPart) childEditPart)
+			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupsInMenuCajaEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -136,9 +136,9 @@ public class MenuEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart) {
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoEnMenuCajonEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupsInMenuCajaEditPart) {
 			IFigure pane = getPrimaryShape().getFigureCajaGroup();
-			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoEnMenuCajonEditPart) childEditPart)
+			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupsInMenuCajaEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -169,7 +169,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoEnMenuCajonEditPart) {
+		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupsInMenuCajaEditPart) {
 			return getPrimaryShape().getFigureCajaGroup();
 		}
 		return getContentPane();
@@ -279,9 +279,9 @@ public class MenuEditPart extends ShapeNodeEditPart {
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3003) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001) {
 				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoEnMenuCajonEditPart.VISUAL_ID));
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupsInMenuCajaEditPart.VISUAL_ID));
 			}
 		}
 		return super.getTargetEditPart(request);

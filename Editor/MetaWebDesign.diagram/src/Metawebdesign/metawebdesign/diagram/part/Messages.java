@@ -358,12 +358,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String ClassAtributoEnClassCajonEditPart_title;
+	public static String MenuGroupsInMenuCajaEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String MenuGrupoEnMenuCajonEditPart_title;
+	public static String ClassAttributesInClassCajaEditPart_title;
 
 	/**
 	 * @generated
@@ -378,22 +378,22 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2001_incominglinks;
+	public static String NavigatorGroupName_Form_2001_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2001_outgoinglinks;
+	public static String NavigatorGroupName_Class_2006_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Page_2004_incominglinks;
+	public static String NavigatorGroupName_Class_2006_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Form_2006_incominglinks;
+	public static String NavigatorGroupName_Page_2007_outgoinglinks;
 
 	/**
 	 * @generated

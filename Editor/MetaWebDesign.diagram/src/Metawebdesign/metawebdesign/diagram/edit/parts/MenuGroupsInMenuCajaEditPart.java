@@ -21,7 +21,7 @@ import org.eclipse.gmf.tooling.runtime.edit.policies.reparent.CreationEditPolicy
 /**
  * @generated
  */
-public class ClassAtributoEnClassCajonEditPart extends ListCompartmentEditPart {
+public class MenuGroupsInMenuCajaEditPart extends ListCompartmentEditPart {
 
 	/**
 	 * @generated
@@ -31,7 +31,7 @@ public class ClassAtributoEnClassCajonEditPart extends ListCompartmentEditPart {
 	/**
 	 * @generated
 	 */
-	public ClassAtributoEnClassCajonEditPart(View view) {
+	public MenuGroupsInMenuCajaEditPart(View view) {
 		super(view);
 	}
 
@@ -46,7 +46,7 @@ public class ClassAtributoEnClassCajonEditPart extends ListCompartmentEditPart {
 	 * @generated
 	 */
 	public String getCompartmentName() {
-		return Metawebdesign.metawebdesign.diagram.part.Messages.ClassAtributoEnClassCajonEditPart_title;
+		return Metawebdesign.metawebdesign.diagram.part.Messages.MenuGroupsInMenuCajaEditPart_title;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class ClassAtributoEnClassCajonEditPart extends ListCompartmentEditPart {
 				new ResizableCompartmentEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.ClassAtributoEnClassCajonItemSemanticEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.MenuGroupsInMenuCajaItemSemanticEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.CREATION_ROLE,
 				new CreationEditPolicyWithCustomReparent(
@@ -77,7 +77,7 @@ public class ClassAtributoEnClassCajonEditPart extends ListCompartmentEditPart {
 				new DragDropEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.CANONICAL_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.ClassAtributoEnClassCajonCanonicalEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.MenuGroupsInMenuCajaCanonicalEditPolicy());
 	}
 
 	/**
@@ -99,10 +99,7 @@ public class ClassAtributoEnClassCajonEditPart extends ListCompartmentEditPart {
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3001) {
-				return this;
-			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3002) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

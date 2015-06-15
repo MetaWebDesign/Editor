@@ -5,7 +5,6 @@ package Metawebdesign.metawebdesign.impl;
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.RelationView;
-import Metawebdesign.metawebdesign.Views;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
 import Metawebdesign.metawebdesign.typePresentation;
 
@@ -37,8 +36,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getTypePresentation <em>Type Presentation</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getPositionHorizontal <em>Position Horizontal</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getPositionVertical <em>Position Vertical</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getGoViews <em>Go Views</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getRhasViews <em>Rhas Views</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getRViewsHasClass <em>RViews Has Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getRviewsGoToClass <em>Rviews Go To Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationViewImpl#getGetAttribute <em>Get Attribute</em>}</li>
@@ -128,26 +125,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 	 * @ordered
 	 */
 	protected int positionVertical = POSITION_VERTICAL_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getGoViews() <em>Go Views</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGoViews()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Views> goViews;
-
-	/**
-	 * The cached value of the '{@link #getRhasViews() <em>Rhas Views</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRhasViews()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Views> rhasViews;
 
 	/**
 	 * The cached value of the '{@link #getRViewsHasClass() <em>RViews Has Class</em>}' containment reference list.
@@ -307,30 +284,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Views> getGoViews() {
-		if (goViews == null) {
-			goViews = new EObjectResolvingEList<Views>(Views.class, this, MetawebdesignPackage.RELATION_VIEW__GO_VIEWS);
-		}
-		return goViews;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Views> getRhasViews() {
-		if (rhasViews == null) {
-			rhasViews = new EObjectContainmentEList<Views>(Views.class, this, MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS);
-		}
-		return rhasViews;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<Metawebdesign.metawebdesign.Class> getRViewsHasClass() {
 		if (rViewsHasClass == null) {
 			rViewsHasClass = new EObjectContainmentEList<Metawebdesign.metawebdesign.Class>(Metawebdesign.metawebdesign.Class.class, this, MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS);
@@ -417,8 +370,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS:
-				return ((InternalEList<?>)getRhasViews()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:
 				return ((InternalEList<?>)getRViewsHasClass()).basicRemove(otherEnd, msgs);
 		}
@@ -441,10 +392,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 				return getPositionHorizontal();
 			case MetawebdesignPackage.RELATION_VIEW__POSITION_VERTICAL:
 				return getPositionVertical();
-			case MetawebdesignPackage.RELATION_VIEW__GO_VIEWS:
-				return getGoViews();
-			case MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS:
-				return getRhasViews();
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:
 				return getRViewsHasClass();
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_GO_TO_CLASS:
@@ -478,14 +425,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 				return;
 			case MetawebdesignPackage.RELATION_VIEW__POSITION_VERTICAL:
 				setPositionVertical((Integer)newValue);
-				return;
-			case MetawebdesignPackage.RELATION_VIEW__GO_VIEWS:
-				getGoViews().clear();
-				getGoViews().addAll((Collection<? extends Views>)newValue);
-				return;
-			case MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS:
-				getRhasViews().clear();
-				getRhasViews().addAll((Collection<? extends Views>)newValue);
 				return;
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:
 				getRViewsHasClass().clear();
@@ -525,12 +464,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 			case MetawebdesignPackage.RELATION_VIEW__POSITION_VERTICAL:
 				setPositionVertical(POSITION_VERTICAL_EDEFAULT);
 				return;
-			case MetawebdesignPackage.RELATION_VIEW__GO_VIEWS:
-				getGoViews().clear();
-				return;
-			case MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS:
-				getRhasViews().clear();
-				return;
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:
 				getRViewsHasClass().clear();
 				return;
@@ -563,10 +496,6 @@ public class RelationViewImpl extends MinimalEObjectImpl.Container implements Re
 				return positionHorizontal != POSITION_HORIZONTAL_EDEFAULT;
 			case MetawebdesignPackage.RELATION_VIEW__POSITION_VERTICAL:
 				return positionVertical != POSITION_VERTICAL_EDEFAULT;
-			case MetawebdesignPackage.RELATION_VIEW__GO_VIEWS:
-				return goViews != null && !goViews.isEmpty();
-			case MetawebdesignPackage.RELATION_VIEW__RHAS_VIEWS:
-				return rhasViews != null && !rhasViews.isEmpty();
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:
 				return rViewsHasClass != null && !rViewsHasClass.isEmpty();
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_GO_TO_CLASS:

@@ -26,8 +26,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Class#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Class#getGoRelationClass <em>Go Relation Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Class#getHasView <em>Has View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Class#getHasRelationView <em>Has Relation View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Class#getGoRelationView <em>Go Relation View</em>}</li>
  * </ul>
  * </p>
  *
@@ -341,37 +339,5 @@ public interface Class extends EObject {
 	 * @generated
 	 */
 	void setHasView(Views value);
-
-	/**
-	 * Returns the value of the '<em><b>Has Relation View</b></em>' containment reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationView}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Relation View</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Relation View</em>' containment reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_HasRelationView()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<RelationView> getHasRelationView();
-
-	/**
-	 * Returns the value of the '<em><b>Go Relation View</b></em>' reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationView}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Go Relation View</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Go Relation View</em>' reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_GoRelationView()
-	 * @model
-	 * @generated
-	 */
-	EList<RelationView> getGoRelationView();
 
 } // Class

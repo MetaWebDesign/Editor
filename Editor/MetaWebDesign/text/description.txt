@@ -27,8 +27,6 @@ Package metawebdesign <http://metawebdesign/1.0>
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference goRelationClass : RelationClass<<0..*>>
     Reference hasView : Views
-    Reference hasRelationView : RelationView<<0..*>>
-    Reference goRelationView : RelationView<<0..*>>
 
   Class Attributes
     Attribute name : EString
@@ -43,7 +41,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute formula : EString
 
   Class NotDerived -> Attributes
-    Attribute defaultValue : EString
+    Attribute valueDefault : EString
 
   Class RelationClass
     Attribute name : EString
@@ -82,8 +80,6 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute typePresentation : typePresentation
     Attribute positionHorizontal : typeHorizontalPosition
     Attribute positionVertical : EInt
-    Reference goViews : Views<<0..*>>
-    Reference RhasViews : Views<<0..*>>
     Reference RViewsHasClass : Class<<0..*>>
     Reference RviewsGoToClass : Class<<0..*>>
     Reference getAttribute : Attributes

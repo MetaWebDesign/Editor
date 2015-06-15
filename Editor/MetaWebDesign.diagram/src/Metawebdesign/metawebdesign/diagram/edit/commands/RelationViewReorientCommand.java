@@ -58,14 +58,14 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected boolean canReorientSource() {
-		if (!(oldEnd instanceof Metawebdesign.metawebdesign.Class && newEnd instanceof Metawebdesign.metawebdesign.Class)) {
+		if (!(oldEnd instanceof Metawebdesign.metawebdesign.Views && newEnd instanceof Metawebdesign.metawebdesign.Views)) {
 			return false;
 		}
-		if (getLink().getGoViews().size() != 1) {
+		if (getLink().getRviewsGoToClass().size() != 1) {
 			return false;
 		}
-		Metawebdesign.metawebdesign.Views target = (Metawebdesign.metawebdesign.Views) getLink()
-				.getGoViews().get(0);
+		Metawebdesign.metawebdesign.Class target = (Metawebdesign.metawebdesign.Class) getLink()
+				.getRviewsGoToClass().get(0);
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
 				.getLinkConstraints().canExistRelationView_4001(getLink(),
 						getNewSource(), target);
@@ -75,13 +75,13 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected boolean canReorientTarget() {
-		if (!(oldEnd instanceof Metawebdesign.metawebdesign.Views && newEnd instanceof Metawebdesign.metawebdesign.Views)) {
+		if (!(oldEnd instanceof Metawebdesign.metawebdesign.Class && newEnd instanceof Metawebdesign.metawebdesign.Class)) {
 			return false;
 		}
-		if (!(getLink().eContainer() instanceof Metawebdesign.metawebdesign.Class)) {
+		if (!(getLink().eContainer() instanceof Metawebdesign.metawebdesign.Views)) {
 			return false;
 		}
-		Metawebdesign.metawebdesign.Class source = (Metawebdesign.metawebdesign.Class) getLink()
+		Metawebdesign.metawebdesign.Views source = (Metawebdesign.metawebdesign.Views) getLink()
 				.eContainer();
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
 				.getLinkConstraints().canExistRelationView_4001(getLink(),
@@ -110,8 +110,8 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected CommandResult reorientSource() throws ExecutionException {
-		getOldSource().getHasRelationView().remove(getLink());
-		getNewSource().getHasRelationView().add(getLink());
+		getOldSource().setHasRelationView(null);
+		getNewSource().setHasRelationView(getLink());
 		return CommandResult.newOKCommandResult(getLink());
 	}
 
@@ -119,8 +119,8 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected CommandResult reorientTarget() throws ExecutionException {
-		getLink().getGoViews().remove(getOldTarget());
-		getLink().getGoViews().add(getNewTarget());
+		getLink().getRviewsGoToClass().remove(getOldTarget());
+		getLink().getRviewsGoToClass().add(getNewTarget());
 		return CommandResult.newOKCommandResult(getLink());
 	}
 
@@ -134,28 +134,28 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	/**
 	 * @generated
 	 */
-	protected Metawebdesign.metawebdesign.Class getOldSource() {
-		return (Metawebdesign.metawebdesign.Class) oldEnd;
-	}
-
-	/**
-	 * @generated
-	 */
-	protected Metawebdesign.metawebdesign.Class getNewSource() {
-		return (Metawebdesign.metawebdesign.Class) newEnd;
-	}
-
-	/**
-	 * @generated
-	 */
-	protected Metawebdesign.metawebdesign.Views getOldTarget() {
+	protected Metawebdesign.metawebdesign.Views getOldSource() {
 		return (Metawebdesign.metawebdesign.Views) oldEnd;
 	}
 
 	/**
 	 * @generated
 	 */
-	protected Metawebdesign.metawebdesign.Views getNewTarget() {
+	protected Metawebdesign.metawebdesign.Views getNewSource() {
 		return (Metawebdesign.metawebdesign.Views) newEnd;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected Metawebdesign.metawebdesign.Class getOldTarget() {
+		return (Metawebdesign.metawebdesign.Class) oldEnd;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected Metawebdesign.metawebdesign.Class getNewTarget() {
+		return (Metawebdesign.metawebdesign.Class) newEnd;
 	}
 }
