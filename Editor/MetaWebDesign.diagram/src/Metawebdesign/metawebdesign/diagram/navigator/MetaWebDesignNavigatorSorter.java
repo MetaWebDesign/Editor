@@ -10,7 +10,7 @@ public class MetaWebDesignNavigatorSorter extends ViewerSorter {
 	/**
 	 * @generated
 	 */
-	private static final int GROUP_CATEGORY = 7004;
+	private static final int GROUP_CATEGORY = 7008;
 
 	/**
 	 * @generated

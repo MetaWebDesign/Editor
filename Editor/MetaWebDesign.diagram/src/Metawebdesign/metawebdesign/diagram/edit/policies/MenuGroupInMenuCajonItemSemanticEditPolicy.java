@@ -6,23 +6,23 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 /**
  * @generated
  */
-public class MenuGroupsInMenuCajaItemSemanticEditPolicy
+public class MenuGroupInMenuCajonItemSemanticEditPolicy
 		extends
 		Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy {
 
 	/**
 	 * @generated
 	 */
-	public MenuGroupsInMenuCajaItemSemanticEditPolicy() {
+	public MenuGroupInMenuCajonItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2006);
 	}
 
 	/**
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3005 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.Group2CreateCommand(
 					req));

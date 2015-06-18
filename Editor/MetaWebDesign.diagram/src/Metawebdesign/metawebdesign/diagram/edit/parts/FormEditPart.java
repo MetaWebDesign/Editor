@@ -1,19 +1,20 @@
 package Metawebdesign.metawebdesign.diagram.edit.parts;
 
-import org.eclipse.draw2d.FlowLayout;
+import org.eclipse.draw2d.BorderLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.Request;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
-import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
@@ -65,15 +66,18 @@ public class FormEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected LayoutEditPolicy createLayoutEditPolicy() {
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
-		FlowLayoutEditPolicy lep = new FlowLayoutEditPolicy() {
-
-			protected Command createAddCommand(EditPart child, EditPart after) {
-				return null;
+			protected EditPolicy createChildEditPolicy(EditPart child) {
+				EditPolicy result = child
+						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
+				if (result == null) {
+					result = new NonResizableEditPolicy();
+				}
+				return result;
 			}
 
-			protected Command createMoveChildCommand(EditPart child,
-					EditPart after) {
+			protected Command getMoveChildrenCommand(Request request) {
 				return null;
 			}
 
@@ -107,6 +111,13 @@ public class FormEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureFormTitleFigure());
 			return true;
 		}
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewComponentInFormCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonInForm();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.FormViewComponentInFormCajonEditPart) childEditPart)
+					.getFigure());
+			return true;
+		}
 		return false;
 	}
 
@@ -115,6 +126,12 @@ public class FormEditPart extends ShapeNodeEditPart {
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart) {
+			return true;
+		}
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewComponentInFormCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonInForm();
+			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.FormViewComponentInFormCajonEditPart) childEditPart)
+					.getFigure());
 			return true;
 		}
 		return false;
@@ -144,6 +161,9 @@ public class FormEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewComponentInFormCajonEditPart) {
+			return getPrimaryShape().getFigureCajonInForm();
+		}
 		return getContentPane();
 	}
 
@@ -258,21 +278,17 @@ public class FormEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureFormServiceFigure;
+		/**
+		 * @generated
+		 */
+		private RectangleFigure fFigureCajonInForm;
 
 		/**
 		 * @generated
 		 */
 		public FormFigure() {
 
-			FlowLayout layoutThis = new FlowLayout();
-			layoutThis.setStretchMinorAxis(false);
-			layoutThis.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
-
-			layoutThis.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
-			layoutThis.setMajorSpacing(5);
-			layoutThis.setMinorSpacing(5);
-			layoutThis.setHorizontal(true);
-
+			BorderLayout layoutThis = new BorderLayout();
 			this.setLayoutManager(layoutThis);
 
 			createContents();
@@ -287,7 +303,7 @@ public class FormEditPart extends ShapeNodeEditPart {
 
 			fFigureFormTitleFigure.setText("<...>");
 
-			this.add(fFigureFormTitleFigure);
+			this.add(fFigureFormTitleFigure, BorderLayout.TOP);
 
 			fFigureFormRolViewFigure = new WrappingLabel();
 
@@ -300,6 +316,10 @@ public class FormEditPart extends ShapeNodeEditPart {
 			fFigureFormServiceFigure.setText("<...>");
 
 			this.add(fFigureFormServiceFigure);
+
+			fFigureCajonInForm = new RectangleFigure();
+
+			this.add(fFigureCajonInForm, BorderLayout.CENTER);
 
 		}
 
@@ -322,6 +342,13 @@ public class FormEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureFormServiceFigure() {
 			return fFigureFormServiceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public RectangleFigure getFigureCajonInForm() {
+			return fFigureCajonInForm;
 		}
 
 	}

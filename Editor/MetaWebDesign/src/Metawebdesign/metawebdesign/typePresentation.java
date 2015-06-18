@@ -146,7 +146,17 @@ public enum typePresentation implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	TABLE_HOVER(12, "table_hover", "table_hover");
+	TABLE_HOVER(12, "table_hover", "table_hover"),
+
+	/**
+	 * The '<em><b>Img</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #IMG_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	IMG(13, "img", "img");
 
 	/**
 	 * The '<em><b>String</b></em>' literal value.
@@ -344,6 +354,21 @@ public enum typePresentation implements Enumerator {
 	public static final int TABLE_HOVER_VALUE = 12;
 
 	/**
+	 * The '<em><b>Img</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Img</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #IMG
+	 * @model name="img"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int IMG_VALUE = 13;
+
+	/**
 	 * An array of all the '<em><b>type Presentation</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -364,6 +389,7 @@ public enum typePresentation implements Enumerator {
 			TABLE_STRIPED,
 			TABLE_BORDERED,
 			TABLE_HOVER,
+			IMG,
 		};
 
 	/**
@@ -427,6 +453,7 @@ public enum typePresentation implements Enumerator {
 			case TABLE_STRIPED_VALUE: return TABLE_STRIPED;
 			case TABLE_BORDERED_VALUE: return TABLE_BORDERED;
 			case TABLE_HOVER_VALUE: return TABLE_HOVER;
+			case IMG_VALUE: return IMG;
 		}
 		return null;
 	}

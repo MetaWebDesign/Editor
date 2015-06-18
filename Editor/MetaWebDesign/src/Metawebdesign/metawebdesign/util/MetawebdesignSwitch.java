@@ -3,16 +3,22 @@
 package Metawebdesign.metawebdesign.util;
 
 import Metawebdesign.metawebdesign.Attributes;
+import Metawebdesign.metawebdesign.CallAtribute;
 import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Group;
+import Metawebdesign.metawebdesign.Link;
+import Metawebdesign.metawebdesign.LinkView;
+import Metawebdesign.metawebdesign.LinkViewCRUD;
 import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
+import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
+import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 
 import org.eclipse.emf.ecore.EObject;
@@ -150,6 +156,46 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 			case MetawebdesignPackage.RELATION_VIEW: {
 				RelationView relationView = (RelationView)theEObject;
 				T result = caseRelationView(relationView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MetawebdesignPackage.VIEW_COMPONENT: {
+				ViewComponent viewComponent = (ViewComponent)theEObject;
+				T result = caseViewComponent(viewComponent);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MetawebdesignPackage.CALL_ATRIBUTE: {
+				CallAtribute callAtribute = (CallAtribute)theEObject;
+				T result = caseCallAtribute(callAtribute);
+				if (result == null) result = caseViewComponent(callAtribute);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MetawebdesignPackage.NAVEGATION_MENU: {
+				NavegationMenu navegationMenu = (NavegationMenu)theEObject;
+				T result = caseNavegationMenu(navegationMenu);
+				if (result == null) result = caseViewComponent(navegationMenu);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MetawebdesignPackage.LINK: {
+				Link link = (Link)theEObject;
+				T result = caseLink(link);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MetawebdesignPackage.LINK_VIEW_CRUD: {
+				LinkViewCRUD linkViewCRUD = (LinkViewCRUD)theEObject;
+				T result = caseLinkViewCRUD(linkViewCRUD);
+				if (result == null) result = caseLink(linkViewCRUD);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MetawebdesignPackage.LINK_VIEW: {
+				LinkView linkView = (LinkView)theEObject;
+				T result = caseLinkView(linkView);
+				if (result == null) result = caseLink(linkView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -334,6 +380,96 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRelationView(RelationView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>View Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>View Component</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseViewComponent(ViewComponent object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Call Atribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Call Atribute</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCallAtribute(CallAtribute object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Navegation Menu</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Navegation Menu</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNavegationMenu(NavegationMenu object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Link</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Link</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLink(Link object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Link View CRUD</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Link View CRUD</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLinkViewCRUD(LinkViewCRUD object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Link View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Link View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLinkView(LinkView object) {
 		return null;
 	}
 

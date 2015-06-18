@@ -27,7 +27,7 @@ public class ClassItemSemanticEditPolicy
 	 */
 	public ClassItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2007);
 	}
 
 	/**
@@ -41,7 +41,7 @@ public class ClassItemSemanticEditPolicy
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getVisualID(incomingLink) == Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
 						incomingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
@@ -49,7 +49,7 @@ public class ClassItemSemanticEditPolicy
 				continue;
 			}
 			if (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getVisualID(incomingLink) == Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID) {
 				DestroyElementRequest r = new DestroyElementRequest(
 						incomingLink.getElement(), false);
 				cmd.add(new DestroyElementCommand(r));
@@ -90,20 +90,20 @@ public class ClassItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();
 					switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 							.getVisualID(cnode)) {
-					case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+					case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(),
 										cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+					case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(),
 										cnode.getElement(), false))); // directlyOwned: true
@@ -132,14 +132,14 @@ public class ClassItemSemanticEditPolicy
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001 == req
-				.getElementType()) {
-			return null;
-		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationClassCreateCommand(
 					req, req.getSource(), req.getTarget()));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002 == req
+				.getElementType()) {
+			return null;
 		}
 		return null;
 	}
@@ -149,14 +149,14 @@ public class ClassItemSemanticEditPolicy
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001 == req
-				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewCreateCommand(
-					req, req.getSource(), req.getTarget()));
-		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationClassCreateCommand(
+					req, req.getSource(), req.getTarget()));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -171,11 +171,11 @@ public class ClassItemSemanticEditPolicy
 	protected Command getReorientRelationshipCommand(
 			ReorientRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewReorientCommand(
-					req));
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationClassReorientCommand(
+					req));
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewReorientCommand(
 					req));
 		}
 		return super.getReorientRelationshipCommand(req);

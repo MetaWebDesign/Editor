@@ -3,12 +3,17 @@
 package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.Attributes;
+import Metawebdesign.metawebdesign.CallAtribute;
 import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Group;
+import Metawebdesign.metawebdesign.Link;
+import Metawebdesign.metawebdesign.LinkView;
+import Metawebdesign.metawebdesign.LinkViewCRUD;
 import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignFactory;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
+import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
@@ -19,6 +24,7 @@ import Metawebdesign.metawebdesign.TypeData;
 import Metawebdesign.metawebdesign.TypeOrientation;
 import Metawebdesign.metawebdesign.TypeRol;
 import Metawebdesign.metawebdesign.TypeService;
+import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
 import Metawebdesign.metawebdesign.typePresentation;
@@ -121,6 +127,48 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * @generated
 	 */
 	private EClass relationViewEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass viewComponentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass callAtributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass navegationMenuEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass linkEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass linkViewCRUDEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass linkViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,6 +332,24 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 */
 	public EReference getRoot_Views() {
 		return (EReference)rootEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRoot_View_component() {
+		return (EReference)rootEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRoot_Link() {
+		return (EReference)rootEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -534,35 +600,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelationClass_TypePresentation() {
-		return (EAttribute)relationClassEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRelationClass_PositionHorizotal() {
-		return (EAttribute)relationClassEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRelationClass_PositionVertical() {
-		return (EAttribute)relationClassEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getRelationClass_FromClass() {
-		return (EReference)relationClassEClass.getEStructuralFeatures().get(4);
+		return (EReference)relationClassEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -570,8 +609,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRelationClass_AttributeGet() {
-		return (EReference)relationClassEClass.getEStructuralFeatures().get(5);
+	public EReference getRelationClass_Class_A() {
+		return (EReference)relationClassEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -579,17 +618,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRelationClass_AttributeReplace() {
-		return (EReference)relationClassEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getRelationClass_AttributeSave() {
-		return (EReference)relationClassEClass.getEStructuralFeatures().get(7);
+	public EReference getRelationClass_Class_B() {
+		return (EReference)relationClassEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -714,6 +744,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getViews_HasViewComponent() {
+		return (EReference)viewsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getForm() {
 		return formEClass;
 	}
@@ -768,35 +807,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelationView_TypePresentation() {
-		return (EAttribute)relationViewEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRelationView_PositionHorizontal() {
-		return (EAttribute)relationViewEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRelationView_PositionVertical() {
-		return (EAttribute)relationViewEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getRelationView_RViewsHasClass() {
-		return (EReference)relationViewEClass.getEStructuralFeatures().get(4);
+		return (EReference)relationViewEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -804,8 +816,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRelationView_RviewsGoToClass() {
-		return (EReference)relationViewEClass.getEStructuralFeatures().get(5);
+	public EReference getRelationView_FromClass() {
+		return (EReference)relationViewEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -813,8 +825,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRelationView_GetAttribute() {
-		return (EReference)relationViewEClass.getEStructuralFeatures().get(6);
+	public EClass getViewComponent() {
+		return viewComponentEClass;
 	}
 
 	/**
@@ -822,8 +834,143 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelationView_Row() {
-		return (EAttribute)relationViewEClass.getEStructuralFeatures().get(7);
+	public EClass getCallAtribute() {
+		return callAtributeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCallAtribute_GetAttribute() {
+		return (EReference)callAtributeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallAtribute_TypePresentation() {
+		return (EAttribute)callAtributeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallAtribute_Name() {
+		return (EAttribute)callAtributeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallAtribute_PositionHorizontal() {
+		return (EAttribute)callAtributeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCallAtribute_PostionVertical() {
+		return (EAttribute)callAtributeEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNavegationMenu() {
+		return navegationMenuEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getNavegationMenu_HasLink() {
+		return (EReference)navegationMenuEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNavegationMenu_Name() {
+		return (EAttribute)navegationMenuEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLink() {
+		return linkEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getLink_Name() {
+		return (EAttribute)linkEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLinkViewCRUD() {
+		return linkViewCRUDEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getLinkViewCRUD_Service() {
+		return (EAttribute)linkViewCRUDEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getLinkViewCRUD_FromClass() {
+		return (EReference)linkViewCRUDEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLinkView() {
+		return linkViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getLinkView_LinkView() {
+		return (EReference)linkViewEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -923,6 +1070,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEReference(rootEClass, ROOT__MENU);
 		createEReference(rootEClass, ROOT__GROUP);
 		createEReference(rootEClass, ROOT__VIEWS);
+		createEReference(rootEClass, ROOT__VIEW_COMPONENT);
+		createEReference(rootEClass, ROOT__LINK);
 
 		classEClass = createEClass(CLASS);
 		createEReference(classEClass, CLASS__HAS_ATTRIBUTES);
@@ -955,13 +1104,9 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 
 		relationClassEClass = createEClass(RELATION_CLASS);
 		createEAttribute(relationClassEClass, RELATION_CLASS__NAME);
-		createEAttribute(relationClassEClass, RELATION_CLASS__TYPE_PRESENTATION);
-		createEAttribute(relationClassEClass, RELATION_CLASS__POSITION_HORIZOTAL);
-		createEAttribute(relationClassEClass, RELATION_CLASS__POSITION_VERTICAL);
 		createEReference(relationClassEClass, RELATION_CLASS__FROM_CLASS);
-		createEReference(relationClassEClass, RELATION_CLASS__ATTRIBUTE_GET);
-		createEReference(relationClassEClass, RELATION_CLASS__ATTRIBUTE_REPLACE);
-		createEReference(relationClassEClass, RELATION_CLASS__ATTRIBUTE_SAVE);
+		createEReference(relationClassEClass, RELATION_CLASS__CLASS_A);
+		createEReference(relationClassEClass, RELATION_CLASS__CLASS_B);
 
 		menuEClass = createEClass(MENU);
 		createEReference(menuEClass, MENU__HAS_GROUP);
@@ -978,6 +1123,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEReference(viewsEClass, VIEWS__GROUP_NAME);
 		createEReference(viewsEClass, VIEWS__HAS_RELATION_VIEW);
 		createEReference(viewsEClass, VIEWS__FROM_RELATION);
+		createEReference(viewsEClass, VIEWS__HAS_VIEW_COMPONENT);
 
 		formEClass = createEClass(FORM);
 		createEAttribute(formEClass, FORM__SERVICE);
@@ -987,13 +1133,31 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 
 		relationViewEClass = createEClass(RELATION_VIEW);
 		createEAttribute(relationViewEClass, RELATION_VIEW__NAME);
-		createEAttribute(relationViewEClass, RELATION_VIEW__TYPE_PRESENTATION);
-		createEAttribute(relationViewEClass, RELATION_VIEW__POSITION_HORIZONTAL);
-		createEAttribute(relationViewEClass, RELATION_VIEW__POSITION_VERTICAL);
 		createEReference(relationViewEClass, RELATION_VIEW__RVIEWS_HAS_CLASS);
-		createEReference(relationViewEClass, RELATION_VIEW__RVIEWS_GO_TO_CLASS);
-		createEReference(relationViewEClass, RELATION_VIEW__GET_ATTRIBUTE);
-		createEAttribute(relationViewEClass, RELATION_VIEW__ROW);
+		createEReference(relationViewEClass, RELATION_VIEW__FROM_CLASS);
+
+		viewComponentEClass = createEClass(VIEW_COMPONENT);
+
+		callAtributeEClass = createEClass(CALL_ATRIBUTE);
+		createEReference(callAtributeEClass, CALL_ATRIBUTE__GET_ATTRIBUTE);
+		createEAttribute(callAtributeEClass, CALL_ATRIBUTE__TYPE_PRESENTATION);
+		createEAttribute(callAtributeEClass, CALL_ATRIBUTE__NAME);
+		createEAttribute(callAtributeEClass, CALL_ATRIBUTE__POSITION_HORIZONTAL);
+		createEAttribute(callAtributeEClass, CALL_ATRIBUTE__POSTION_VERTICAL);
+
+		navegationMenuEClass = createEClass(NAVEGATION_MENU);
+		createEReference(navegationMenuEClass, NAVEGATION_MENU__HAS_LINK);
+		createEAttribute(navegationMenuEClass, NAVEGATION_MENU__NAME);
+
+		linkEClass = createEClass(LINK);
+		createEAttribute(linkEClass, LINK__NAME);
+
+		linkViewCRUDEClass = createEClass(LINK_VIEW_CRUD);
+		createEAttribute(linkViewCRUDEClass, LINK_VIEW_CRUD__SERVICE);
+		createEReference(linkViewCRUDEClass, LINK_VIEW_CRUD__FROM_CLASS);
+
+		linkViewEClass = createEClass(LINK_VIEW);
+		createEReference(linkViewEClass, LINK_VIEW__LINK_VIEW);
 
 		// Create enums
 		typeRolEEnum = createEEnum(TYPE_ROL);
@@ -1037,6 +1201,10 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		notDerivedEClass.getESuperTypes().add(this.getAttributes());
 		formEClass.getESuperTypes().add(this.getViews());
 		pageEClass.getESuperTypes().add(this.getViews());
+		callAtributeEClass.getESuperTypes().add(this.getViewComponent());
+		navegationMenuEClass.getESuperTypes().add(this.getViewComponent());
+		linkViewCRUDEClass.getESuperTypes().add(this.getLink());
+		linkViewEClass.getESuperTypes().add(this.getLink());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(rootEClass, Root.class, "Root", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1045,6 +1213,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEReference(getRoot_Menu(), this.getMenu(), null, "menu", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRoot_Group(), this.getGroup(), null, "group", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRoot_Views(), this.getViews(), null, "views", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRoot_View_component(), this.getViewComponent(), null, "view_component", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRoot_Link(), this.getLink(), null, "link", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classEClass, Metawebdesign.metawebdesign.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getClass_HasAttributes(), this.getAttributes(), null, "hasAttributes", null, 0, 15, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1077,13 +1247,9 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 
 		initEClass(relationClassEClass, RelationClass.class, "RelationClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRelationClass_Name(), ecorePackage.getEString(), "name", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationClass_TypePresentation(), this.gettypePresentation(), "typePresentation", "table", 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationClass_PositionHorizotal(), this.gettypeHorizontalPosition(), "positionHorizotal", "center", 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationClass_PositionVertical(), ecorePackage.getEInt(), "positionVertical", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRelationClass_FromClass(), this.getClass_(), null, "fromClass", null, 0, -1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRelationClass_AttributeGet(), this.getAttributes(), null, "attributeGet", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRelationClass_AttributeReplace(), this.getAttributes(), null, "attributeReplace", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRelationClass_AttributeSave(), this.getAttributes(), null, "attributeSave", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRelationClass_Class_A(), this.getAttributes(), null, "Class_A", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRelationClass_Class_B(), this.getAttributes(), null, "Class_B", null, 0, 1, RelationClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(menuEClass, Menu.class, "Menu", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMenu_HasGroup(), this.getGroup(), null, "hasGroup", null, 0, -1, Menu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1098,8 +1264,9 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEAttribute(getViews_Title(), ecorePackage.getEString(), "title", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getViews_RolView(), this.getTypeRol(), "rolView", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getViews_GroupName(), this.getGroup(), null, "groupName", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getViews_HasRelationView(), this.getRelationView(), null, "hasRelationView", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getViews_FromRelation(), this.getRelationView(), null, "fromRelation", null, 0, 1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getViews_HasRelationView(), this.getRelationView(), null, "hasRelationView", null, 0, -1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getViews_FromRelation(), this.getRelationView(), null, "fromRelation", null, 0, -1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getViews_HasViewComponent(), this.getViewComponent(), null, "hasViewComponent", null, 0, -1, Views.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(formEClass, Form.class, "Form", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getForm_Service(), this.getTypeService(), "service", null, 0, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1109,13 +1276,31 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 
 		initEClass(relationViewEClass, RelationView.class, "RelationView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRelationView_Name(), ecorePackage.getEString(), "name", null, 0, 1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationView_TypePresentation(), this.gettypePresentation(), "typePresentation", "string", 0, 1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationView_PositionHorizontal(), this.gettypeHorizontalPosition(), "positionHorizontal", null, 0, 1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationView_PositionVertical(), ecorePackage.getEInt(), "positionVertical", null, 0, 1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRelationView_RViewsHasClass(), this.getClass_(), null, "RViewsHasClass", null, 0, -1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRelationView_RviewsGoToClass(), this.getClass_(), null, "RviewsGoToClass", null, 0, -1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRelationView_GetAttribute(), this.getAttributes(), null, "getAttribute", null, 0, 1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationView_Row(), ecorePackage.getEInt(), "row", null, 0, 1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRelationView_FromClass(), this.getClass_(), null, "fromClass", null, 0, -1, RelationView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(viewComponentEClass, ViewComponent.class, "ViewComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(callAtributeEClass, CallAtribute.class, "CallAtribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCallAtribute_GetAttribute(), this.getAttributes(), null, "getAttribute", null, 0, 1, CallAtribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallAtribute_TypePresentation(), this.gettypePresentation(), "typePresentation", "string", 0, 1, CallAtribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallAtribute_Name(), ecorePackage.getEString(), "name", null, 0, 1, CallAtribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallAtribute_PositionHorizontal(), this.gettypeHorizontalPosition(), "positionHorizontal", null, 0, 1, CallAtribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCallAtribute_PostionVertical(), ecorePackage.getEInt(), "postionVertical", null, 0, 1, CallAtribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(navegationMenuEClass, NavegationMenu.class, "NavegationMenu", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getNavegationMenu_HasLink(), this.getLink(), null, "hasLink", null, 0, -1, NavegationMenu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNavegationMenu_Name(), ecorePackage.getEString(), "name", null, 0, 1, NavegationMenu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(linkEClass, Link.class, "Link", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLink_Name(), ecorePackage.getEString(), "name", null, 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(linkViewCRUDEClass, LinkViewCRUD.class, "LinkViewCRUD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLinkViewCRUD_Service(), this.getTypeService(), "service", null, 0, 1, LinkViewCRUD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLinkViewCRUD_FromClass(), this.getClass_(), null, "fromClass", null, 0, -1, LinkViewCRUD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(linkViewEClass, LinkView.class, "LinkView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getLinkView_LinkView(), this.getViews(), null, "linkView", null, 0, 1, LinkView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(typeRolEEnum, TypeRol.class, "TypeRol");
@@ -1151,6 +1336,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE_STRIPED);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE_BORDERED);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE_HOVER);
+		addEEnumLiteral(typePresentationEEnum, typePresentation.IMG);
 
 		initEEnum(typeHorizontalPositionEEnum, typeHorizontalPosition.class, "typeHorizontalPosition");
 		addEEnumLiteral(typeHorizontalPositionEEnum, typeHorizontalPosition.LEFT);

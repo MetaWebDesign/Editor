@@ -30,7 +30,7 @@ public class GroupEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2005;
+	public static final int VISUAL_ID = 2009;
 
 	/**
 	 * @generated
@@ -279,13 +279,17 @@ public class GroupEditPart extends ShapeNodeEditPart {
 
 			fFigureGroupNameFigure.setText("<...>");
 
-			this.add(fFigureGroupNameFigure, BorderLayout.BOTTOM);
+			this.add(fFigureGroupNameFigure, BorderLayout.TOP);
 
 			fFigureGroupOrderFigure = new WrappingLabel();
 
 			fFigureGroupOrderFigure.setText("<...>");
 
 			this.add(fFigureGroupOrderFigure);
+
+			RectangleFigure cleanGroup0 = new RectangleFigure();
+
+			this.add(cleanGroup0, BorderLayout.CENTER);
 
 		}
 

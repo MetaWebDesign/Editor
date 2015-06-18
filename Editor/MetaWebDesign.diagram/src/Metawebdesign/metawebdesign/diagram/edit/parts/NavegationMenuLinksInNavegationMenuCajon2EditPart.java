@@ -21,7 +21,8 @@ import org.eclipse.gmf.tooling.runtime.edit.policies.reparent.CreationEditPolicy
 /**
  * @generated
  */
-public class ClassAttributesInClassCajaEditPart extends ListCompartmentEditPart {
+public class NavegationMenuLinksInNavegationMenuCajon2EditPart extends
+		ListCompartmentEditPart {
 
 	/**
 	 * @generated
@@ -31,7 +32,7 @@ public class ClassAttributesInClassCajaEditPart extends ListCompartmentEditPart 
 	/**
 	 * @generated
 	 */
-	public ClassAttributesInClassCajaEditPart(View view) {
+	public NavegationMenuLinksInNavegationMenuCajon2EditPart(View view) {
 		super(view);
 	}
 
@@ -46,7 +47,7 @@ public class ClassAttributesInClassCajaEditPart extends ListCompartmentEditPart 
 	 * @generated
 	 */
 	public String getCompartmentName() {
-		return Metawebdesign.metawebdesign.diagram.part.Messages.ClassAttributesInClassCajaEditPart_title;
+		return Metawebdesign.metawebdesign.diagram.part.Messages.NavegationMenuLinksInNavegationMenuCajon2EditPart_title;
 	}
 
 	/**
@@ -68,7 +69,7 @@ public class ClassAttributesInClassCajaEditPart extends ListCompartmentEditPart 
 				new ResizableCompartmentEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.ClassAttributesInClassCajaItemSemanticEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.NavegationMenuLinksInNavegationMenuCajon2ItemSemanticEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.CREATION_ROLE,
 				new CreationEditPolicyWithCustomReparent(
@@ -77,7 +78,7 @@ public class ClassAttributesInClassCajaEditPart extends ListCompartmentEditPart 
 				new DragDropEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.CANONICAL_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.ClassAttributesInClassCajaCanonicalEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.NavegationMenuLinksInNavegationMenuCajon2CanonicalEditPolicy());
 	}
 
 	/**
@@ -99,10 +100,10 @@ public class ClassAttributesInClassCajaEditPart extends ListCompartmentEditPart 
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3002) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002) {
 				return this;
 			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3003) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

@@ -2,6 +2,8 @@
  */
 package Metawebdesign.metawebdesign;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -17,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Views#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getHasRelationView <em>Has Relation View</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getFromRelation <em>From Relation</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Views#getHasViewComponent <em>Has View Component</em>}</li>
  * </ul>
  * </p>
  *
@@ -107,55 +110,51 @@ public interface Views extends EObject {
 	void setGroupName(Group value);
 
 	/**
-	 * Returns the value of the '<em><b>Has Relation View</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Has Relation View</b></em>' containment reference list.
+	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationView}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Has Relation View</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Has Relation View</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Relation View</em>' containment reference.
-	 * @see #setHasRelationView(RelationView)
+	 * @return the value of the '<em>Has Relation View</em>' containment reference list.
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViews_HasRelationView()
 	 * @model containment="true"
 	 * @generated
 	 */
-	RelationView getHasRelationView();
+	EList<RelationView> getHasRelationView();
 
 	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Views#getHasRelationView <em>Has Relation View</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Has Relation View</em>' containment reference.
-	 * @see #getHasRelationView()
-	 * @generated
-	 */
-	void setHasRelationView(RelationView value);
-
-	/**
-	 * Returns the value of the '<em><b>From Relation</b></em>' reference.
+	 * Returns the value of the '<em><b>From Relation</b></em>' reference list.
+	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationView}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>From Relation</em>' reference isn't clear,
+	 * If the meaning of the '<em>From Relation</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Relation</em>' reference.
-	 * @see #setFromRelation(RelationView)
+	 * @return the value of the '<em>From Relation</em>' reference list.
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViews_FromRelation()
 	 * @model
 	 * @generated
 	 */
-	RelationView getFromRelation();
+	EList<RelationView> getFromRelation();
 
 	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Views#getFromRelation <em>From Relation</em>}' reference.
+	 * Returns the value of the '<em><b>Has View Component</b></em>' containment reference list.
+	 * The list contents are of type {@link Metawebdesign.metawebdesign.ViewComponent}.
 	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has View Component</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>From Relation</em>' reference.
-	 * @see #getFromRelation()
+	 * @return the value of the '<em>Has View Component</em>' containment reference list.
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViews_HasViewComponent()
+	 * @model containment="true"
 	 * @generated
 	 */
-	void setFromRelation(RelationView value);
+	EList<ViewComponent> getHasViewComponent();
 
 } // Views

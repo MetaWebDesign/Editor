@@ -3,12 +3,17 @@
 package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.Attributes;
+import Metawebdesign.metawebdesign.CallAtribute;
 import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Group;
+import Metawebdesign.metawebdesign.Link;
+import Metawebdesign.metawebdesign.LinkView;
+import Metawebdesign.metawebdesign.LinkViewCRUD;
 import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignFactory;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
+import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
@@ -19,6 +24,7 @@ import Metawebdesign.metawebdesign.TypeData;
 import Metawebdesign.metawebdesign.TypeOrientation;
 import Metawebdesign.metawebdesign.TypeRol;
 import Metawebdesign.metawebdesign.TypeService;
+import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
 import Metawebdesign.metawebdesign.typePresentation;
@@ -88,6 +94,12 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 			case MetawebdesignPackage.FORM: return createForm();
 			case MetawebdesignPackage.PAGE: return createPage();
 			case MetawebdesignPackage.RELATION_VIEW: return createRelationView();
+			case MetawebdesignPackage.VIEW_COMPONENT: return createViewComponent();
+			case MetawebdesignPackage.CALL_ATRIBUTE: return createCallAtribute();
+			case MetawebdesignPackage.NAVEGATION_MENU: return createNavegationMenu();
+			case MetawebdesignPackage.LINK: return createLink();
+			case MetawebdesignPackage.LINK_VIEW_CRUD: return createLinkViewCRUD();
+			case MetawebdesignPackage.LINK_VIEW: return createLinkView();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -265,6 +277,66 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	public RelationView createRelationView() {
 		RelationViewImpl relationView = new RelationViewImpl();
 		return relationView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ViewComponent createViewComponent() {
+		ViewComponentImpl viewComponent = new ViewComponentImpl();
+		return viewComponent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CallAtribute createCallAtribute() {
+		CallAtributeImpl callAtribute = new CallAtributeImpl();
+		return callAtribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NavegationMenu createNavegationMenu() {
+		NavegationMenuImpl navegationMenu = new NavegationMenuImpl();
+		return navegationMenu;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Link createLink() {
+		LinkImpl link = new LinkImpl();
+		return link;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LinkViewCRUD createLinkViewCRUD() {
+		LinkViewCRUDImpl linkViewCRUD = new LinkViewCRUDImpl();
+		return linkViewCRUD;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LinkView createLinkView() {
+		LinkViewImpl linkView = new LinkViewImpl();
+		return linkView;
 	}
 
 	/**

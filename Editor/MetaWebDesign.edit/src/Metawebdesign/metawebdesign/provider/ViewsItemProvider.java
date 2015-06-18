@@ -172,6 +172,7 @@ public class ViewsItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(MetawebdesignPackage.Literals.VIEWS__HAS_RELATION_VIEW);
+			childrenFeatures.add(MetawebdesignPackage.Literals.VIEWS__HAS_VIEW_COMPONENT);
 		}
 		return childrenFeatures;
 	}
@@ -232,6 +233,7 @@ public class ViewsItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
+			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -253,6 +255,21 @@ public class ViewsItemProvider
 			(createChildParameter
 				(MetawebdesignPackage.Literals.VIEWS__HAS_RELATION_VIEW,
 				 MetawebdesignFactory.eINSTANCE.createRelationView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.VIEWS__HAS_VIEW_COMPONENT,
+				 MetawebdesignFactory.eINSTANCE.createViewComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.VIEWS__HAS_VIEW_COMPONENT,
+				 MetawebdesignFactory.eINSTANCE.createCallAtribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.VIEWS__HAS_VIEW_COMPONENT,
+				 MetawebdesignFactory.eINSTANCE.createNavegationMenu()));
 	}
 
 	/**

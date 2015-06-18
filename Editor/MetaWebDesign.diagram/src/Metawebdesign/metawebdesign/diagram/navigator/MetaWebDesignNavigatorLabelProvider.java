@@ -83,39 +83,63 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?http://metawebdesign/1.0?Form", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2001); //$NON-NLS-1$
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://metawebdesign/1.0?Menu", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002); //$NON-NLS-1$
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?LinkView", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_2002); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://metawebdesign/1.0?Derived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2003); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?NavegationMenu", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2003); //$NON-NLS-1$
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?http://metawebdesign/1.0?NotDerived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_2004); //$NON-NLS-1$
-		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://metawebdesign/1.0?Group", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2005); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?CallAtribute", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2005); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?Menu", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2006); //$NON-NLS-1$
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://metawebdesign/1.0?Class", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?Class", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2007); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?LinkViewCRUD", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2008); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?Group", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2009); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?Derived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2010); //$NON-NLS-1$
 		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://metawebdesign/1.0?Page", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2007); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://metawebdesign/1.0?Page", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2011); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://metawebdesign/1.0?NavegationMenu", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3001); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://metawebdesign/1.0?LinkView", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://metawebdesign/1.0?LinkViewCRUD", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Node?http://metawebdesign/1.0?CallAtribute", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3004); //$NON-NLS-1$
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?Node?http://metawebdesign/1.0?Group", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001); //$NON-NLS-1$
-		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Node?http://metawebdesign/1.0?Derived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3002); //$NON-NLS-1$
+					"Navigator?Node?http://metawebdesign/1.0?Group", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3005); //$NON-NLS-1$
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?Node?http://metawebdesign/1.0?NotDerived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3003); //$NON-NLS-1$
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+					"Navigator?Node?http://metawebdesign/1.0?NotDerived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?Link?http://metawebdesign/1.0?RelationView", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001); //$NON-NLS-1$
+					"Navigator?Node?http://metawebdesign/1.0?Derived", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3007); //$NON-NLS-1$
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?Link?http://metawebdesign/1.0?RelationClass", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002); //$NON-NLS-1$
+					"Navigator?Link?http://metawebdesign/1.0?RelationClass", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001); //$NON-NLS-1$
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Link?http://metawebdesign/1.0?RelationView", Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -176,28 +200,44 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 			return getRoot_1000Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
 			return getForm_2001Text(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2002Text(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return getDerived_2003Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			return getLinkView_2002Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
+			return getNavegationMenu_2003Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 			return getNotDerived_2004Text(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return getGroup_2005Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
+			return getCallAtribute_2005Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2006Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return getClass_2006Text(view);
+			return getClass_2007Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
+			return getLinkViewCRUD_2008Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return getGroup_2009Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return getDerived_2010Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2007Text(view);
+			return getPage_2011Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
+			return getNavegationMenu_3001Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID:
+			return getLinkView_3002Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
+			return getLinkViewCRUD_3003Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
+			return getCallAtribute_3004Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID:
-			return getGroup_3001Text(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3002Text(view);
+			return getGroup_3005Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3003Text(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
-			return getRelationView_4001Text(view);
+			return getNotDerived_3006Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return getDerived_3007Text(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			return getRelationClass_4002Text(view);
+			return getRelationClass_4001Text(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return getRelationView_4002Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -226,7 +266,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5001); //$NON-NLS-1$
+							"Parser was not found for label " + 5005); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -234,13 +274,13 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getMenu_2002Text(View view) {
+	private String getLinkView_2002Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_2002,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -248,7 +288,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5003); //$NON-NLS-1$
+							"Parser was not found for label " + 5006); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -256,13 +296,13 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getDerived_2003Text(View view) {
+	private String getNavegationMenu_2003Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2003,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2003,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -270,7 +310,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5004); //$NON-NLS-1$
+							"Parser was not found for label " + 5007); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -292,7 +332,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5005); //$NON-NLS-1$
+							"Parser was not found for label " + 5008); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -300,35 +340,13 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getGroup_2005Text(View view) {
+	private String getCallAtribute_2005Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2005,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2005,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
-					.getInstance().logError(
-							"Parser was not found for label " + 5006); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getClass_2006Text(View view) {
-		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
-				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006,
-						view.getElement() != null ? view.getElement() : view,
-						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -344,10 +362,120 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getPage_2007Text(View view) {
+	private String getMenu_2006Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2007,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2006,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5011); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getClass_2007Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2007,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5014); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLinkViewCRUD_2008Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2008,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5015); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getGroup_2009Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2009,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5016); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getDerived_2010Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2010,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5017); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getPage_2011Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2011,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID));
@@ -358,7 +486,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5010); //$NON-NLS-1$
+							"Parser was not found for label " + 5018); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -366,13 +494,57 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getGroup_3001Text(View view) {
+	private String getNavegationMenu_3001Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3001,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.GroupName2EditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5003); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLinkView_3002Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5001); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLinkViewCRUD_3003Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -388,13 +560,13 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getDerived_3002Text(View view) {
+	private String getCallAtribute_3004Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3002,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3004,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeName2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -402,7 +574,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5007); //$NON-NLS-1$
+							"Parser was not found for label " + 5004); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -410,10 +582,32 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getNotDerived_3003Text(View view) {
+	private String getGroup_3005Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3003,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3005,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.GroupName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5010); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getNotDerived_3006Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID));
@@ -424,7 +618,7 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 		} else {
 			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
 					.getInstance().logError(
-							"Parser was not found for label " + 5008); //$NON-NLS-1$
+							"Parser was not found for label " + 5012); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -432,13 +626,35 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getRelationView_4001Text(View view) {
+	private String getDerived_3007Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3007,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramEditorPlugin
+					.getInstance().logError(
+							"Parser was not found for label " + 5013); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRelationClass_4001Text(View view) {
+		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
+				.getParser(
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001,
+						view.getElement() != null ? view.getElement() : view,
+						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -454,13 +670,13 @@ public class MetaWebDesignNavigatorLabelProvider extends LabelProvider
 	/**
 	 * @generated
 	 */
-	private String getRelationClass_4002Text(View view) {
+	private String getRelationView_4002Text(View view) {
 		IParser parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 				.getParser(
-						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002,
+						Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002,
 						view.getElement() != null ? view.getElement() : view,
 						Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID));
+								.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),

@@ -30,7 +30,7 @@ public class NotDerived2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 3003;
+	public static final int VISUAL_ID = 3006;
 
 	/**
 	 * @generated
@@ -299,7 +299,7 @@ public class NotDerived2EditPart extends ShapeNodeEditPart {
 
 			fFigureNotDerivedNameFigure.setText("<...>");
 
-			this.add(fFigureNotDerivedNameFigure, BorderLayout.BOTTOM);
+			this.add(fFigureNotDerivedNameFigure, BorderLayout.TOP);
 
 			fFigureNotDerivedRolFigure = new WrappingLabel();
 
@@ -336,6 +336,10 @@ public class NotDerived2EditPart extends ShapeNodeEditPart {
 			fFigureNotDerivedValueDefaultFigure.setText("<...>");
 
 			this.add(fFigureNotDerivedValueDefaultFigure);
+
+			RectangleFigure cleanNotFerived0 = new RectangleFigure();
+
+			this.add(cleanNotFerived0, BorderLayout.CENTER);
 
 		}
 

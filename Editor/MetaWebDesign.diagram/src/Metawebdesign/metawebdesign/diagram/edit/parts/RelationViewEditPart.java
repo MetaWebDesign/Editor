@@ -11,8 +11,6 @@ import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.notation.View;
 
-//import RelationPrueba.relationPrueba.diagram.edit.parts.RelationEditPart.RelationFigure;
-
 /**
  * @generated
  */
@@ -22,7 +20,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 4001;
+	public static final int VISUAL_ID = 4002;
 
 	/**
 	 * @generated
@@ -47,7 +45,8 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) {
 			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) childEditPart)
-			.setLabel(getPrimaryShape().getFigureRelationViewNameFigure());
+					.setLabel(getPrimaryShape()
+							.getFigureRelationViewNameFigure());
 			return true;
 		}
 		return false;
@@ -103,20 +102,30 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 		return (ViewsHasRelationViewFigure) getFigure();
 	}
 
-
 	/**
 	 * @generated
 	 */
 	public class ViewsHasRelationViewFigure extends PolylineConnectionEx {
 
-		//NEW-----
 		private WrappingLabel fFigureRelationViewNameFigure;
 		
+		/**
+		 * @generated
+		 */
 		public ViewsHasRelationViewFigure() {
 
+			setTargetDecoration(createTargetDecoration());
 			createContents();
 		}
 
+		/**
+		 * @generated
+		 */
+		private RotatableDecoration createTargetDecoration() {
+			PolylineDecoration df = new PolylineDecoration();
+			return df;
+		}
+		
 		/**
 		 * @generated
 		 */
@@ -129,25 +138,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 			this.add(fFigureRelationViewNameFigure);
 
 		}
-		
-		//END ----
-		/**
-		 * @generated
-		 */
-		/*
-		public ViewsHasRelationViewFigure() {
 
-			setTargetDecoration(createTargetDecoration());
-		}*/
-
-		/**
-		 * @generated
-		 */
-		private RotatableDecoration createTargetDecoration() {
-			PolylineDecoration df = new PolylineDecoration();
-			return df;
-		}
-		
 		/**
 		 * @generated
 		 */

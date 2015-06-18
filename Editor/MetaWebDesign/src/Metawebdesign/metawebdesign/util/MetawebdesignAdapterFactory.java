@@ -3,16 +3,22 @@
 package Metawebdesign.metawebdesign.util;
 
 import Metawebdesign.metawebdesign.Attributes;
+import Metawebdesign.metawebdesign.CallAtribute;
 import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Group;
+import Metawebdesign.metawebdesign.Link;
+import Metawebdesign.metawebdesign.LinkView;
+import Metawebdesign.metawebdesign.LinkViewCRUD;
 import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
+import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
+import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -125,6 +131,30 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseRelationView(RelationView object) {
 				return createRelationViewAdapter();
+			}
+			@Override
+			public Adapter caseViewComponent(ViewComponent object) {
+				return createViewComponentAdapter();
+			}
+			@Override
+			public Adapter caseCallAtribute(CallAtribute object) {
+				return createCallAtributeAdapter();
+			}
+			@Override
+			public Adapter caseNavegationMenu(NavegationMenu object) {
+				return createNavegationMenuAdapter();
+			}
+			@Override
+			public Adapter caseLink(Link object) {
+				return createLinkAdapter();
+			}
+			@Override
+			public Adapter caseLinkViewCRUD(LinkViewCRUD object) {
+				return createLinkViewCRUDAdapter();
+			}
+			@Override
+			public Adapter caseLinkView(LinkView object) {
+				return createLinkViewAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -311,6 +341,90 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRelationViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.ViewComponent <em>View Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metawebdesign.metawebdesign.ViewComponent
+	 * @generated
+	 */
+	public Adapter createViewComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.CallAtribute <em>Call Atribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metawebdesign.metawebdesign.CallAtribute
+	 * @generated
+	 */
+	public Adapter createCallAtributeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.NavegationMenu <em>Navegation Menu</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metawebdesign.metawebdesign.NavegationMenu
+	 * @generated
+	 */
+	public Adapter createNavegationMenuAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.Link <em>Link</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metawebdesign.metawebdesign.Link
+	 * @generated
+	 */
+	public Adapter createLinkAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.LinkViewCRUD <em>Link View CRUD</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metawebdesign.metawebdesign.LinkViewCRUD
+	 * @generated
+	 */
+	public Adapter createLinkViewCRUDAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.LinkView <em>Link View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Metawebdesign.metawebdesign.LinkView
+	 * @generated
+	 */
+	public Adapter createLinkViewAdapter() {
 		return null;
 	}
 

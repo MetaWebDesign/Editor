@@ -7,6 +7,9 @@ package Metawebdesign.metawebdesign.validation;
 import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.TypeRol;
+import Metawebdesign.metawebdesign.ViewComponent;
+
+import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link Metawebdesign.metawebdesign.Views}.
@@ -20,6 +23,7 @@ public interface ViewsValidator {
 	boolean validateTitle(String value);
 	boolean validateRolView(TypeRol value);
 	boolean validateGroupName(Group value);
-	boolean validateHasRelationView(RelationView value);
-	boolean validateFromRelation(RelationView value);
+	boolean validateHasRelationView(EList<RelationView> value);
+	boolean validateFromRelation(EList<RelationView> value);
+	boolean validateHasViewComponent(EList<ViewComponent> value);
 }

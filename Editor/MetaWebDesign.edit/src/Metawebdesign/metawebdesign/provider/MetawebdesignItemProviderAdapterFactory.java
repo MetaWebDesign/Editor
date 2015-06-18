@@ -348,6 +348,144 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.ViewComponent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViewComponentItemProvider viewComponentItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.ViewComponent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createViewComponentAdapter() {
+		if (viewComponentItemProvider == null) {
+			viewComponentItemProvider = new ViewComponentItemProvider(this);
+		}
+
+		return viewComponentItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.CallAtribute} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CallAtributeItemProvider callAtributeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.CallAtribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCallAtributeAdapter() {
+		if (callAtributeItemProvider == null) {
+			callAtributeItemProvider = new CallAtributeItemProvider(this);
+		}
+
+		return callAtributeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.NavegationMenu} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NavegationMenuItemProvider navegationMenuItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.NavegationMenu}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createNavegationMenuAdapter() {
+		if (navegationMenuItemProvider == null) {
+			navegationMenuItemProvider = new NavegationMenuItemProvider(this);
+		}
+
+		return navegationMenuItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.Link} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LinkItemProvider linkItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.Link}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLinkAdapter() {
+		if (linkItemProvider == null) {
+			linkItemProvider = new LinkItemProvider(this);
+		}
+
+		return linkItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.LinkViewCRUD} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LinkViewCRUDItemProvider linkViewCRUDItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.LinkViewCRUD}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLinkViewCRUDAdapter() {
+		if (linkViewCRUDItemProvider == null) {
+			linkViewCRUDItemProvider = new LinkViewCRUDItemProvider(this);
+		}
+
+		return linkViewCRUDItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.LinkView} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected LinkViewItemProvider linkViewItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.LinkView}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createLinkViewAdapter() {
+		if (linkViewItemProvider == null) {
+			linkViewItemProvider = new LinkViewItemProvider(this);
+		}
+
+		return linkViewItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -458,6 +596,12 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 		if (formItemProvider != null) formItemProvider.dispose();
 		if (pageItemProvider != null) pageItemProvider.dispose();
 		if (relationViewItemProvider != null) relationViewItemProvider.dispose();
+		if (viewComponentItemProvider != null) viewComponentItemProvider.dispose();
+		if (callAtributeItemProvider != null) callAtributeItemProvider.dispose();
+		if (navegationMenuItemProvider != null) navegationMenuItemProvider.dispose();
+		if (linkItemProvider != null) linkItemProvider.dispose();
+		if (linkViewCRUDItemProvider != null) linkViewCRUDItemProvider.dispose();
+		if (linkViewItemProvider != null) linkViewItemProvider.dispose();
 	}
 
 }

@@ -130,6 +130,60 @@ public interface MetawebdesignFactory extends EFactory {
 	RelationView createRelationView();
 
 	/**
+	 * Returns a new object of class '<em>View Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>View Component</em>'.
+	 * @generated
+	 */
+	ViewComponent createViewComponent();
+
+	/**
+	 * Returns a new object of class '<em>Call Atribute</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Call Atribute</em>'.
+	 * @generated
+	 */
+	CallAtribute createCallAtribute();
+
+	/**
+	 * Returns a new object of class '<em>Navegation Menu</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Navegation Menu</em>'.
+	 * @generated
+	 */
+	NavegationMenu createNavegationMenu();
+
+	/**
+	 * Returns a new object of class '<em>Link</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Link</em>'.
+	 * @generated
+	 */
+	Link createLink();
+
+	/**
+	 * Returns a new object of class '<em>Link View CRUD</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Link View CRUD</em>'.
+	 * @generated
+	 */
+	LinkViewCRUD createLinkViewCRUD();
+
+	/**
+	 * Returns a new object of class '<em>Link View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Link View</em>'.
+	 * @generated
+	 */
+	LinkView createLinkView();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

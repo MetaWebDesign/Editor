@@ -299,7 +299,7 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 
 			fFigureNotDerivedNameFigure.setText("<...>");
 
-			this.add(fFigureNotDerivedNameFigure, BorderLayout.BOTTOM);
+			this.add(fFigureNotDerivedNameFigure, BorderLayout.TOP);
 
 			fFigureNotDerivedRolFigure = new WrappingLabel();
 
@@ -336,6 +336,10 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 			fFigureNotDerivedValueDefaultFigure.setText("<...>");
 
 			this.add(fFigureNotDerivedValueDefaultFigure);
+
+			RectangleFigure cleanNotFerived0 = new RectangleFigure();
+
+			this.add(cleanNotFerived0, BorderLayout.CENTER);
 
 		}
 

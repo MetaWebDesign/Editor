@@ -24,7 +24,7 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class MenuGroupsInMenuCajaCanonicalEditPolicy extends
+public class ClassAttributeInClassCajonCanonicalEditPolicy extends
 		CanonicalEditPolicy {
 
 	/**
@@ -44,7 +44,7 @@ public class MenuGroupsInMenuCajaCanonicalEditPolicy extends
 	 */
 	protected EStructuralFeature getFeatureToSynchronize() {
 		return Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-				.getMenu_HasGroup();
+				.getClass_HasAttributes();
 	}
 
 	/**
@@ -55,7 +55,7 @@ public class MenuGroupsInMenuCajaCanonicalEditPolicy extends
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getMenuGroupsInMenuCaja_7001SemanticChildren(viewObject);
+				.getClassAttributeInClassCajon_7005SemanticChildren(viewObject);
 		for (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor d : childDescriptors) {
 			result.add(d.getModelElement());
 		}
@@ -75,8 +75,10 @@ public class MenuGroupsInMenuCajaCanonicalEditPolicy extends
 	 * @generated
 	 */
 	private boolean isMyDiagramElement(View view) {
-		return Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID == Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+		int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getVisualID(view);
+		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID
+				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID;
 	}
 
 	/**
@@ -88,7 +90,7 @@ public class MenuGroupsInMenuCajaCanonicalEditPolicy extends
 		}
 		LinkedList<IAdaptable> createdViews = new LinkedList<IAdaptable>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getMenuGroupsInMenuCaja_7001SemanticChildren((View) getHost()
+				.getClassAttributeInClassCajon_7005SemanticChildren((View) getHost()
 						.getModel());
 		LinkedList<View> orphaned = new LinkedList<View>();
 		// we care to check only views we recognize as ours

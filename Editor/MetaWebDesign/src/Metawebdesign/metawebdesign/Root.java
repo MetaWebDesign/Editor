@@ -19,6 +19,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Root#getMenu <em>Menu</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getGroup <em>Group</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getViews <em>Views</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Root#getView_component <em>View component</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Root#getLink <em>Link</em>}</li>
  * </ul>
  * </p>
  *
@@ -106,5 +108,37 @@ public interface Root extends EObject {
 	 * @generated
 	 */
 	EList<Views> getViews();
+
+	/**
+	 * Returns the value of the '<em><b>View component</b></em>' containment reference list.
+	 * The list contents are of type {@link Metawebdesign.metawebdesign.ViewComponent}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>View component</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>View component</em>' containment reference list.
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRoot_View_component()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<ViewComponent> getView_component();
+
+	/**
+	 * Returns the value of the '<em><b>Link</b></em>' containment reference list.
+	 * The list contents are of type {@link Metawebdesign.metawebdesign.Link}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Link</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Link</em>' containment reference list.
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRoot_Link()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Link> getLink();
 
 } // Root

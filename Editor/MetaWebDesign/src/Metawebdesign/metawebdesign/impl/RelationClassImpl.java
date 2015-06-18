@@ -5,8 +5,6 @@ package Metawebdesign.metawebdesign.impl;
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.typeHorizontalPosition;
-import Metawebdesign.metawebdesign.typePresentation;
 
 import java.util.Collection;
 
@@ -30,13 +28,9 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getName <em>Name</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getTypePresentation <em>Type Presentation</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getPositionHorizotal <em>Position Horizotal</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getPositionVertical <em>Position Vertical</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getFromClass <em>From Class</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getAttributeGet <em>Attribute Get</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getAttributeReplace <em>Attribute Replace</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getAttributeSave <em>Attribute Save</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getClass_A <em>Class A</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.RelationClassImpl#getClass_B <em>Class B</em>}</li>
  * </ul>
  * </p>
  *
@@ -64,66 +58,6 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTypePresentation()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTypePresentation()
-	 * @generated
-	 * @ordered
-	 */
-	protected typePresentation typePresentation = TYPE_PRESENTATION_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPositionHorizotal() <em>Position Horizotal</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPositionHorizotal()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final typeHorizontalPosition POSITION_HORIZOTAL_EDEFAULT = typeHorizontalPosition.CENTER;
-
-	/**
-	 * The cached value of the '{@link #getPositionHorizotal() <em>Position Horizotal</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPositionHorizotal()
-	 * @generated
-	 * @ordered
-	 */
-	protected typeHorizontalPosition positionHorizotal = POSITION_HORIZOTAL_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPositionVertical() <em>Position Vertical</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPositionVertical()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int POSITION_VERTICAL_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getPositionVertical() <em>Position Vertical</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPositionVertical()
-	 * @generated
-	 * @ordered
-	 */
-	protected int positionVertical = POSITION_VERTICAL_EDEFAULT;
-
-	/**
 	 * The cached value of the '{@link #getFromClass() <em>From Class</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -134,34 +68,24 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	protected EList<Metawebdesign.metawebdesign.Class> fromClass;
 
 	/**
-	 * The cached value of the '{@link #getAttributeGet() <em>Attribute Get</em>}' reference.
+	 * The cached value of the '{@link #getClass_A() <em>Class A</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttributeGet()
+	 * @see #getClass_A()
 	 * @generated
 	 * @ordered
 	 */
-	protected Attributes attributeGet;
+	protected Attributes class_A;
 
 	/**
-	 * The cached value of the '{@link #getAttributeReplace() <em>Attribute Replace</em>}' reference.
+	 * The cached value of the '{@link #getClass_B() <em>Class B</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttributeReplace()
+	 * @see #getClass_B()
 	 * @generated
 	 * @ordered
 	 */
-	protected Attributes attributeReplace;
-
-	/**
-	 * The cached value of the '{@link #getAttributeSave() <em>Attribute Save</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAttributeSave()
-	 * @generated
-	 * @ordered
-	 */
-	protected Attributes attributeSave;
+	protected Attributes class_B;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,69 +132,6 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typePresentation getTypePresentation() {
-		return typePresentation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTypePresentation(typePresentation newTypePresentation) {
-		typePresentation oldTypePresentation = typePresentation;
-		typePresentation = newTypePresentation == null ? TYPE_PRESENTATION_EDEFAULT : newTypePresentation;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__TYPE_PRESENTATION, oldTypePresentation, typePresentation));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public typeHorizontalPosition getPositionHorizotal() {
-		return positionHorizotal;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setPositionHorizotal(typeHorizontalPosition newPositionHorizotal) {
-		typeHorizontalPosition oldPositionHorizotal = positionHorizotal;
-		positionHorizotal = newPositionHorizotal == null ? POSITION_HORIZOTAL_EDEFAULT : newPositionHorizotal;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__POSITION_HORIZOTAL, oldPositionHorizotal, positionHorizotal));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public int getPositionVertical() {
-		return positionVertical;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setPositionVertical(int newPositionVertical) {
-		int oldPositionVertical = positionVertical;
-		positionVertical = newPositionVertical;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__POSITION_VERTICAL, oldPositionVertical, positionVertical));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<Metawebdesign.metawebdesign.Class> getFromClass() {
 		if (fromClass == null) {
 			fromClass = new EObjectResolvingEList<Metawebdesign.metawebdesign.Class>(Metawebdesign.metawebdesign.Class.class, this, MetawebdesignPackage.RELATION_CLASS__FROM_CLASS);
@@ -283,16 +144,16 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attributes getAttributeGet() {
-		if (attributeGet != null && attributeGet.eIsProxy()) {
-			InternalEObject oldAttributeGet = (InternalEObject)attributeGet;
-			attributeGet = (Attributes)eResolveProxy(oldAttributeGet);
-			if (attributeGet != oldAttributeGet) {
+	public Attributes getClass_A() {
+		if (class_A != null && class_A.eIsProxy()) {
+			InternalEObject oldClass_A = (InternalEObject)class_A;
+			class_A = (Attributes)eResolveProxy(oldClass_A);
+			if (class_A != oldClass_A) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_GET, oldAttributeGet, attributeGet));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.RELATION_CLASS__CLASS_A, oldClass_A, class_A));
 			}
 		}
-		return attributeGet;
+		return class_A;
 	}
 
 	/**
@@ -300,8 +161,8 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attributes basicGetAttributeGet() {
-		return attributeGet;
+	public Attributes basicGetClass_A() {
+		return class_A;
 	}
 
 	/**
@@ -309,11 +170,11 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttributeGet(Attributes newAttributeGet) {
-		Attributes oldAttributeGet = attributeGet;
-		attributeGet = newAttributeGet;
+	public void setClass_A(Attributes newClass_A) {
+		Attributes oldClass_A = class_A;
+		class_A = newClass_A;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_GET, oldAttributeGet, attributeGet));
+			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__CLASS_A, oldClass_A, class_A));
 	}
 
 	/**
@@ -321,16 +182,16 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attributes getAttributeReplace() {
-		if (attributeReplace != null && attributeReplace.eIsProxy()) {
-			InternalEObject oldAttributeReplace = (InternalEObject)attributeReplace;
-			attributeReplace = (Attributes)eResolveProxy(oldAttributeReplace);
-			if (attributeReplace != oldAttributeReplace) {
+	public Attributes getClass_B() {
+		if (class_B != null && class_B.eIsProxy()) {
+			InternalEObject oldClass_B = (InternalEObject)class_B;
+			class_B = (Attributes)eResolveProxy(oldClass_B);
+			if (class_B != oldClass_B) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_REPLACE, oldAttributeReplace, attributeReplace));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.RELATION_CLASS__CLASS_B, oldClass_B, class_B));
 			}
 		}
-		return attributeReplace;
+		return class_B;
 	}
 
 	/**
@@ -338,8 +199,8 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attributes basicGetAttributeReplace() {
-		return attributeReplace;
+	public Attributes basicGetClass_B() {
+		return class_B;
 	}
 
 	/**
@@ -347,49 +208,11 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttributeReplace(Attributes newAttributeReplace) {
-		Attributes oldAttributeReplace = attributeReplace;
-		attributeReplace = newAttributeReplace;
+	public void setClass_B(Attributes newClass_B) {
+		Attributes oldClass_B = class_B;
+		class_B = newClass_B;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_REPLACE, oldAttributeReplace, attributeReplace));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Attributes getAttributeSave() {
-		if (attributeSave != null && attributeSave.eIsProxy()) {
-			InternalEObject oldAttributeSave = (InternalEObject)attributeSave;
-			attributeSave = (Attributes)eResolveProxy(oldAttributeSave);
-			if (attributeSave != oldAttributeSave) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_SAVE, oldAttributeSave, attributeSave));
-			}
-		}
-		return attributeSave;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Attributes basicGetAttributeSave() {
-		return attributeSave;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setAttributeSave(Attributes newAttributeSave) {
-		Attributes oldAttributeSave = attributeSave;
-		attributeSave = newAttributeSave;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_SAVE, oldAttributeSave, attributeSave));
+			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.RELATION_CLASS__CLASS_B, oldClass_B, class_B));
 	}
 
 	/**
@@ -402,23 +225,14 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 		switch (featureID) {
 			case MetawebdesignPackage.RELATION_CLASS__NAME:
 				return getName();
-			case MetawebdesignPackage.RELATION_CLASS__TYPE_PRESENTATION:
-				return getTypePresentation();
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_HORIZOTAL:
-				return getPositionHorizotal();
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_VERTICAL:
-				return getPositionVertical();
 			case MetawebdesignPackage.RELATION_CLASS__FROM_CLASS:
 				return getFromClass();
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_GET:
-				if (resolve) return getAttributeGet();
-				return basicGetAttributeGet();
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_REPLACE:
-				if (resolve) return getAttributeReplace();
-				return basicGetAttributeReplace();
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_SAVE:
-				if (resolve) return getAttributeSave();
-				return basicGetAttributeSave();
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_A:
+				if (resolve) return getClass_A();
+				return basicGetClass_A();
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_B:
+				if (resolve) return getClass_B();
+				return basicGetClass_B();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -435,27 +249,15 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 			case MetawebdesignPackage.RELATION_CLASS__NAME:
 				setName((String)newValue);
 				return;
-			case MetawebdesignPackage.RELATION_CLASS__TYPE_PRESENTATION:
-				setTypePresentation((typePresentation)newValue);
-				return;
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_HORIZOTAL:
-				setPositionHorizotal((typeHorizontalPosition)newValue);
-				return;
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_VERTICAL:
-				setPositionVertical((Integer)newValue);
-				return;
 			case MetawebdesignPackage.RELATION_CLASS__FROM_CLASS:
 				getFromClass().clear();
 				getFromClass().addAll((Collection<? extends Metawebdesign.metawebdesign.Class>)newValue);
 				return;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_GET:
-				setAttributeGet((Attributes)newValue);
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_A:
+				setClass_A((Attributes)newValue);
 				return;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_REPLACE:
-				setAttributeReplace((Attributes)newValue);
-				return;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_SAVE:
-				setAttributeSave((Attributes)newValue);
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_B:
+				setClass_B((Attributes)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -472,26 +274,14 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 			case MetawebdesignPackage.RELATION_CLASS__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case MetawebdesignPackage.RELATION_CLASS__TYPE_PRESENTATION:
-				setTypePresentation(TYPE_PRESENTATION_EDEFAULT);
-				return;
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_HORIZOTAL:
-				setPositionHorizotal(POSITION_HORIZOTAL_EDEFAULT);
-				return;
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_VERTICAL:
-				setPositionVertical(POSITION_VERTICAL_EDEFAULT);
-				return;
 			case MetawebdesignPackage.RELATION_CLASS__FROM_CLASS:
 				getFromClass().clear();
 				return;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_GET:
-				setAttributeGet((Attributes)null);
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_A:
+				setClass_A((Attributes)null);
 				return;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_REPLACE:
-				setAttributeReplace((Attributes)null);
-				return;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_SAVE:
-				setAttributeSave((Attributes)null);
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_B:
+				setClass_B((Attributes)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -507,20 +297,12 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 		switch (featureID) {
 			case MetawebdesignPackage.RELATION_CLASS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case MetawebdesignPackage.RELATION_CLASS__TYPE_PRESENTATION:
-				return typePresentation != TYPE_PRESENTATION_EDEFAULT;
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_HORIZOTAL:
-				return positionHorizotal != POSITION_HORIZOTAL_EDEFAULT;
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_VERTICAL:
-				return positionVertical != POSITION_VERTICAL_EDEFAULT;
 			case MetawebdesignPackage.RELATION_CLASS__FROM_CLASS:
 				return fromClass != null && !fromClass.isEmpty();
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_GET:
-				return attributeGet != null;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_REPLACE:
-				return attributeReplace != null;
-			case MetawebdesignPackage.RELATION_CLASS__ATTRIBUTE_SAVE:
-				return attributeSave != null;
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_A:
+				return class_A != null;
+			case MetawebdesignPackage.RELATION_CLASS__CLASS_B:
+				return class_B != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -537,12 +319,6 @@ public class RelationClassImpl extends MinimalEObjectImpl.Container implements R
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
-		result.append(", typePresentation: ");
-		result.append(typePresentation);
-		result.append(", positionHorizotal: ");
-		result.append(positionHorizotal);
-		result.append(", positionVertical: ");
-		result.append(positionVertical);
 		result.append(')');
 		return result.toString();
 	}

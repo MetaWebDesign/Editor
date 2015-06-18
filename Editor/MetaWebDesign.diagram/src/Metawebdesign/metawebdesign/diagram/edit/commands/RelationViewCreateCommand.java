@@ -57,7 +57,7 @@ public class RelationViewCreateCommand extends EditElementCommand {
 		}
 		// target may be null here but it's possible to check constraint
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canCreateRelationView_4001(getSource(),
+				.getLinkConstraints().canCreateRelationView_4002(getSource(),
 						getTarget());
 	}
 
@@ -73,8 +73,8 @@ public class RelationViewCreateCommand extends EditElementCommand {
 
 		Metawebdesign.metawebdesign.RelationView newElement = Metawebdesign.metawebdesign.MetawebdesignFactory.eINSTANCE
 				.createRelationView();
-		getSource().setHasRelationView(newElement);
-		newElement.getRviewsGoToClass().add(getTarget());
+		getSource().getHasRelationView().add(newElement);
+		newElement.getFromClass().add(getTarget());
 		doConfigure(newElement, monitor, info);
 		((CreateElementRequest) getRequest()).setNewElement(newElement);
 		return CommandResult.newOKCommandResult(newElement);

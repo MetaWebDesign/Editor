@@ -8,6 +8,7 @@ import org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.notation.View;
 
 /**
@@ -19,7 +20,7 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 4002;
+	public static final int VISUAL_ID = 4001;
 
 	/**
 	 * @generated
@@ -43,9 +44,9 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) {
-			/*((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
+			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationClassNameFigure());*/
+							.getFigureRelationClassNameFigure());
 			return true;
 		}
 		return false;
@@ -106,12 +107,35 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 */
 	public class ClassHasRelationClassFigure extends PolylineConnectionEx {
 
+		private WrappingLabel fFigureRelationClassNameFigure;
+		
 		/**
 		 * @generated
 		 */
 		public ClassHasRelationClassFigure() {
 
 			setTargetDecoration(createTargetDecoration());
+			createContents();
+		}
+		
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			fFigureRelationClassNameFigure = new WrappingLabel();
+
+			fFigureRelationClassNameFigure.setText("<...>");
+
+			this.add(fFigureRelationClassNameFigure);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureRelationClassNameFigure() {
+			return fFigureRelationClassNameFigure;
 		}
 
 		/**

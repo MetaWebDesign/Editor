@@ -61,13 +61,9 @@ public class RelationClassItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
-			addTypePresentationPropertyDescriptor(object);
-			addPositionHorizotalPropertyDescriptor(object);
-			addPositionVerticalPropertyDescriptor(object);
 			addFromClassPropertyDescriptor(object);
-			addAttributeGetPropertyDescriptor(object);
-			addAttributeReplacePropertyDescriptor(object);
-			addAttributeSavePropertyDescriptor(object);
+			addClass_APropertyDescriptor(object);
+			addClass_BPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -95,72 +91,6 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Type Presentation feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTypePresentationPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationClass_typePresentation_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_typePresentation_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__TYPE_PRESENTATION,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Position Horizotal feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPositionHorizotalPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationClass_positionHorizotal_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_positionHorizotal_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__POSITION_HORIZOTAL,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Position Vertical feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPositionVerticalPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationClass_positionVertical_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_positionVertical_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__POSITION_VERTICAL,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This adds a property descriptor for the From Class feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -183,19 +113,19 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Attribute Get feature.
+	 * This adds a property descriptor for the Class A feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addAttributeGetPropertyDescriptor(Object object) {
+	protected void addClass_APropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_attributeGet_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_attributeGet_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__ATTRIBUTE_GET,
+				 getString("_UI_RelationClass_Class_A_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Class_A_feature", "_UI_RelationClass_type"),
+				 MetawebdesignPackage.Literals.RELATION_CLASS__CLASS_A,
 				 true,
 				 false,
 				 true,
@@ -205,41 +135,19 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Attribute Replace feature.
+	 * This adds a property descriptor for the Class B feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addAttributeReplacePropertyDescriptor(Object object) {
+	protected void addClass_BPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_attributeReplace_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_attributeReplace_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__ATTRIBUTE_REPLACE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Attribute Save feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addAttributeSavePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationClass_attributeSave_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_attributeSave_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__ATTRIBUTE_SAVE,
+				 getString("_UI_RelationClass_Class_B_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Class_B_feature", "_UI_RelationClass_type"),
+				 MetawebdesignPackage.Literals.RELATION_CLASS__CLASS_B,
 				 true,
 				 false,
 				 true,
@@ -287,9 +195,6 @@ public class RelationClassItemProvider
 
 		switch (notification.getFeatureID(RelationClass.class)) {
 			case MetawebdesignPackage.RELATION_CLASS__NAME:
-			case MetawebdesignPackage.RELATION_CLASS__TYPE_PRESENTATION:
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_HORIZOTAL:
-			case MetawebdesignPackage.RELATION_CLASS__POSITION_VERTICAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

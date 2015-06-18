@@ -4,9 +4,11 @@ package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Group;
+import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.Root;
+import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 
 import java.util.Collection;
@@ -35,6 +37,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getMenu <em>Menu</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getViews <em>Views</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getView_component <em>View component</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getLink <em>Link</em>}</li>
  * </ul>
  * </p>
  *
@@ -90,6 +94,26 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * @ordered
 	 */
 	protected EList<Views> views;
+
+	/**
+	 * The cached value of the '{@link #getView_component() <em>View component</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getView_component()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ViewComponent> view_component;
+
+	/**
+	 * The cached value of the '{@link #getLink() <em>Link</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLink()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Link> link;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,6 +199,30 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<ViewComponent> getView_component() {
+		if (view_component == null) {
+			view_component = new EObjectContainmentEList<ViewComponent>(ViewComponent.class, this, MetawebdesignPackage.ROOT__VIEW_COMPONENT);
+		}
+		return view_component;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Link> getLink() {
+		if (link == null) {
+			link = new EObjectContainmentEList<Link>(Link.class, this, MetawebdesignPackage.ROOT__LINK);
+		}
+		return link;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -188,6 +236,10 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.ROOT__VIEWS:
 				return ((InternalEList<?>)getViews()).basicRemove(otherEnd, msgs);
+			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
+				return ((InternalEList<?>)getView_component()).basicRemove(otherEnd, msgs);
+			case MetawebdesignPackage.ROOT__LINK:
+				return ((InternalEList<?>)getLink()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -210,6 +262,10 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return getGroup();
 			case MetawebdesignPackage.ROOT__VIEWS:
 				return getViews();
+			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
+				return getView_component();
+			case MetawebdesignPackage.ROOT__LINK:
+				return getLink();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -243,6 +299,14 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				getViews().clear();
 				getViews().addAll((Collection<? extends Views>)newValue);
 				return;
+			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
+				getView_component().clear();
+				getView_component().addAll((Collection<? extends ViewComponent>)newValue);
+				return;
+			case MetawebdesignPackage.ROOT__LINK:
+				getLink().clear();
+				getLink().addAll((Collection<? extends Link>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -270,6 +334,12 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 			case MetawebdesignPackage.ROOT__VIEWS:
 				getViews().clear();
 				return;
+			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
+				getView_component().clear();
+				return;
+			case MetawebdesignPackage.ROOT__LINK:
+				getLink().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -292,6 +362,10 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return group != null && !group.isEmpty();
 			case MetawebdesignPackage.ROOT__VIEWS:
 				return views != null && !views.isEmpty();
+			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
+				return view_component != null && !view_component.isEmpty();
+			case MetawebdesignPackage.ROOT__LINK:
+				return link != null && !link.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

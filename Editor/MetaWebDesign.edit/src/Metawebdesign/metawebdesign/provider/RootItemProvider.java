@@ -82,6 +82,8 @@ public class RootItemProvider
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__MENU);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__GROUP);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__VIEWS);
+			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT);
+			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__LINK);
 		}
 		return childrenFeatures;
 	}
@@ -139,6 +141,8 @@ public class RootItemProvider
 			case MetawebdesignPackage.ROOT__MENU:
 			case MetawebdesignPackage.ROOT__GROUP:
 			case MetawebdesignPackage.ROOT__VIEWS:
+			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
+			case MetawebdesignPackage.ROOT__LINK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -200,6 +204,36 @@ public class RootItemProvider
 			(createChildParameter
 				(MetawebdesignPackage.Literals.ROOT__VIEWS,
 				 MetawebdesignFactory.eINSTANCE.createPage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT,
+				 MetawebdesignFactory.eINSTANCE.createViewComponent()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT,
+				 MetawebdesignFactory.eINSTANCE.createCallAtribute()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT,
+				 MetawebdesignFactory.eINSTANCE.createNavegationMenu()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__LINK,
+				 MetawebdesignFactory.eINSTANCE.createLink()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__LINK,
+				 MetawebdesignFactory.eINSTANCE.createLinkViewCRUD()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__LINK,
+				 MetawebdesignFactory.eINSTANCE.createLinkView()));
 	}
 
 	/**

@@ -64,12 +64,7 @@ public class RelationViewItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
-			addTypePresentationPropertyDescriptor(object);
-			addPositionHorizontalPropertyDescriptor(object);
-			addPositionVerticalPropertyDescriptor(object);
-			addRviewsGoToClassPropertyDescriptor(object);
-			addGetAttributePropertyDescriptor(object);
-			addRowPropertyDescriptor(object);
+			addFromClassPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -97,133 +92,23 @@ public class RelationViewItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Type Presentation feature.
+	 * This adds a property descriptor for the From Class feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTypePresentationPropertyDescriptor(Object object) {
+	protected void addFromClassPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationView_typePresentation_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_typePresentation_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__TYPE_PRESENTATION,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Position Horizontal feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPositionHorizontalPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationView_positionHorizontal_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_positionHorizontal_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__POSITION_HORIZONTAL,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Position Vertical feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addPositionVerticalPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationView_positionVertical_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_positionVertical_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__POSITION_VERTICAL,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Rviews Go To Class feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addRviewsGoToClassPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationView_RviewsGoToClass_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_RviewsGoToClass_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__RVIEWS_GO_TO_CLASS,
+				 getString("_UI_RelationView_fromClass_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_fromClass_feature", "_UI_RelationView_type"),
+				 MetawebdesignPackage.Literals.RELATION_VIEW__FROM_CLASS,
 				 true,
 				 false,
 				 true,
 				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Get Attribute feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGetAttributePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationView_getAttribute_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_getAttribute_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__GET_ATTRIBUTE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Row feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addRowPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_RelationView_row_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationView_row_feature", "_UI_RelationView_type"),
-				 MetawebdesignPackage.Literals.RELATION_VIEW__ROW,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -297,10 +182,6 @@ public class RelationViewItemProvider
 
 		switch (notification.getFeatureID(RelationView.class)) {
 			case MetawebdesignPackage.RELATION_VIEW__NAME:
-			case MetawebdesignPackage.RELATION_VIEW__TYPE_PRESENTATION:
-			case MetawebdesignPackage.RELATION_VIEW__POSITION_HORIZONTAL:
-			case MetawebdesignPackage.RELATION_VIEW__POSITION_VERTICAL:
-			case MetawebdesignPackage.RELATION_VIEW__ROW:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case MetawebdesignPackage.RELATION_VIEW__RVIEWS_HAS_CLASS:

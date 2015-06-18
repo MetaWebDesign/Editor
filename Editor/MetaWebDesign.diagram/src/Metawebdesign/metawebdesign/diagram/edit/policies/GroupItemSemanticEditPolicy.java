@@ -20,7 +20,7 @@ public class GroupItemSemanticEditPolicy
 	 */
 	public GroupItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2005);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2009);
 	}
 
 	/**

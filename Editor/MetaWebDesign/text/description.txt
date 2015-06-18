@@ -13,6 +13,8 @@ Package metawebdesign <http://metawebdesign/1.0>
     Reference menu : Menu<<0..*>>
     Reference group : Group<<0..*>>
     Reference views : Views<<0..*>>
+    Reference view_component : ViewComponent<<0..*>>
+    Reference link : Link<<0..*>>
 
   Class Class
     Reference hasAttributes : Attributes<<0..15>>
@@ -45,13 +47,9 @@ Package metawebdesign <http://metawebdesign/1.0>
 
   Class RelationClass
     Attribute name : EString
-    Attribute typePresentation : typePresentation
-    Attribute positionHorizotal : typeHorizontalPosition
-    Attribute positionVertical : EInt
     Reference fromClass : Class<<0..*>>
-    Reference attributeGet : Attributes
-    Reference attributeReplace : Attributes
-    Reference attributeSave : Attributes
+    Reference Class_A : Attributes
+    Reference Class_B : Attributes
 
   Class Menu
     Reference hasGroup : Group<<0..*>>
@@ -66,8 +64,9 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute title : EString
     Attribute rolView : TypeRol
     Reference groupName : Group
-    Reference hasRelationView : RelationView
-    Reference fromRelation : RelationView
+    Reference hasRelationView : RelationView<<0..*>>
+    Reference fromRelation : RelationView<<0..*>>
+    Reference hasViewComponent : ViewComponent<<0..*>>
 
   Class Form -> Views
     Attribute service : TypeService
@@ -77,13 +76,31 @@ Package metawebdesign <http://metawebdesign/1.0>
 
   Class RelationView
     Attribute name : EString
-    Attribute typePresentation : typePresentation
-    Attribute positionHorizontal : typeHorizontalPosition
-    Attribute positionVertical : EInt
     Reference RViewsHasClass : Class<<0..*>>
-    Reference RviewsGoToClass : Class<<0..*>>
+    Reference fromClass : Class<<0..*>>
+
+  Class ViewComponent
+
+  Class CallAtribute -> ViewComponent
     Reference getAttribute : Attributes
-    Attribute row : EInt
+    Attribute typePresentation : typePresentation
+    Attribute name : EString
+    Attribute positionHorizontal : typeHorizontalPosition
+    Attribute postionVertical : EInt
+
+  Class NavegationMenu -> ViewComponent
+    Reference hasLink : Link<<0..*>>
+    Attribute name : EString
+
+  Class Link
+    Attribute name : EString
+
+  Class LinkViewCRUD -> Link
+    Attribute service : TypeService
+    Reference fromClass : Class<<0..*>>
+
+  Class LinkView -> Link
+    Reference linkView : Views
 
   Enum TypeRol
     Literal anonymous = 0
@@ -118,6 +135,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal table_striped = 10
     Literal table_bordered = 11
     Literal table_hover = 12
+    Literal img = 13
 
   Enum typeHorizontalPosition
     Literal left = 0

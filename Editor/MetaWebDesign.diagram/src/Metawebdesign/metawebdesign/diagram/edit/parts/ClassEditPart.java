@@ -34,7 +34,7 @@ public class ClassEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2006;
+	public static final int VISUAL_ID = 2007;
 
 	/**
 	 * @generated
@@ -119,10 +119,10 @@ public class ClassEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureClassNameFigure());
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajaAttribute();
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonAttribute();
 			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart) childEditPart)
+			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -136,9 +136,9 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart) {
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajaAttribute();
-			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart) childEditPart)
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonAttribute();
+			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -169,8 +169,8 @@ public class ClassEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart) {
-			return getPrimaryShape().getFigureCajaAttribute();
+		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart) {
+			return getPrimaryShape().getFigureCajonAttribute();
 		}
 		return getContentPane();
 	}
@@ -279,13 +279,13 @@ public class ClassEditPart extends ShapeNodeEditPart {
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3002) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006) {
 				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart.VISUAL_ID));
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart.VISUAL_ID));
 			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3003) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3007) {
 				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributesInClassCajaEditPart.VISUAL_ID));
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInClassCajonEditPart.VISUAL_ID));
 			}
 		}
 		return super.getTargetEditPart(request);
@@ -300,6 +300,10 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureClassNameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClassIdFigure;
 		/**
 		 * @generated
 		 */
@@ -327,7 +331,7 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private RectangleFigure fFigureCajaAttribute;
+		private RectangleFigure fFigureCajonAttribute;
 
 		/**
 		 * @generated
@@ -350,6 +354,12 @@ public class ClassEditPart extends ShapeNodeEditPart {
 			fFigureClassNameFigure.setText("<...>");
 
 			this.add(fFigureClassNameFigure, BorderLayout.TOP);
+
+			fFigureClassIdFigure = new WrappingLabel();
+
+			fFigureClassIdFigure.setText("<...>");
+
+			this.add(fFigureClassIdFigure);
 
 			fFigureClassFunctionCreateFigure = new WrappingLabel();
 
@@ -387,9 +397,9 @@ public class ClassEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureClassFunctionAdminFigure);
 
-			fFigureCajaAttribute = new RectangleFigure();
+			fFigureCajonAttribute = new RectangleFigure();
 
-			this.add(fFigureCajaAttribute, BorderLayout.CENTER);
+			this.add(fFigureCajonAttribute, BorderLayout.CENTER);
 
 		}
 
@@ -398,6 +408,13 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureClassNameFigure() {
 			return fFigureClassNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClassIdFigure() {
+			return fFigureClassIdFigure;
 		}
 
 		/**
@@ -445,8 +462,8 @@ public class ClassEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		public RectangleFigure getFigureCajaAttribute() {
-			return fFigureCajaAttribute;
+		public RectangleFigure getFigureCajonAttribute() {
+			return fFigureCajonAttribute;
 		}
 
 	}

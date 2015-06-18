@@ -5,8 +5,6 @@
 package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Attributes;
-import Metawebdesign.metawebdesign.typeHorizontalPosition;
-import Metawebdesign.metawebdesign.typePresentation;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -20,11 +18,7 @@ public interface RelationClassValidator {
 	boolean validate();
 
 	boolean validateName(String value);
-	boolean validateTypePresentation(typePresentation value);
-	boolean validatePositionHorizotal(typeHorizontalPosition value);
-	boolean validatePositionVertical(int value);
 	boolean validateFromClass(EList<Metawebdesign.metawebdesign.Class> value);
-	boolean validateAttributeGet(Attributes value);
-	boolean validateAttributeReplace(Attributes value);
-	boolean validateAttributeSave(Attributes value);
+	boolean validateClass_A(Attributes value);
+	boolean validateClass_B(Attributes value);
 }

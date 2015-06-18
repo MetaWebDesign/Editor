@@ -61,13 +61,13 @@ public class RelationViewReorientCommand extends EditElementCommand {
 		if (!(oldEnd instanceof Metawebdesign.metawebdesign.Views && newEnd instanceof Metawebdesign.metawebdesign.Views)) {
 			return false;
 		}
-		if (getLink().getRviewsGoToClass().size() != 1) {
+		if (getLink().getFromClass().size() != 1) {
 			return false;
 		}
 		Metawebdesign.metawebdesign.Class target = (Metawebdesign.metawebdesign.Class) getLink()
-				.getRviewsGoToClass().get(0);
+				.getFromClass().get(0);
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelationView_4001(getLink(),
+				.getLinkConstraints().canExistRelationView_4002(getLink(),
 						getNewSource(), target);
 	}
 
@@ -84,7 +84,7 @@ public class RelationViewReorientCommand extends EditElementCommand {
 		Metawebdesign.metawebdesign.Views source = (Metawebdesign.metawebdesign.Views) getLink()
 				.eContainer();
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelationView_4001(getLink(),
+				.getLinkConstraints().canExistRelationView_4002(getLink(),
 						source, getNewTarget());
 	}
 
@@ -110,8 +110,8 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected CommandResult reorientSource() throws ExecutionException {
-		getOldSource().setHasRelationView(null);
-		getNewSource().setHasRelationView(getLink());
+		getOldSource().getHasRelationView().remove(getLink());
+		getNewSource().getHasRelationView().add(getLink());
 		return CommandResult.newOKCommandResult(getLink());
 	}
 
@@ -119,8 +119,8 @@ public class RelationViewReorientCommand extends EditElementCommand {
 	 * @generated
 	 */
 	protected CommandResult reorientTarget() throws ExecutionException {
-		getLink().getRviewsGoToClass().remove(getOldTarget());
-		getLink().getRviewsGoToClass().add(getNewTarget());
+		getLink().getFromClass().remove(getOldTarget());
+		getLink().getFromClass().add(getNewTarget());
 		return CommandResult.newOKCommandResult(getLink());
 	}
 

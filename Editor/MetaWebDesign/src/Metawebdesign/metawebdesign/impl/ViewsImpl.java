@@ -6,16 +6,25 @@ import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.TypeRol;
+import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
+
+import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,6 +38,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getHasRelationView <em>Has Relation View</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getFromRelation <em>From Relation</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getHasViewComponent <em>Has View Component</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,24 +96,34 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	protected Group groupName;
 
 	/**
-	 * The cached value of the '{@link #getHasRelationView() <em>Has Relation View</em>}' containment reference.
+	 * The cached value of the '{@link #getHasRelationView() <em>Has Relation View</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getHasRelationView()
 	 * @generated
 	 * @ordered
 	 */
-	protected RelationView hasRelationView;
+	protected EList<RelationView> hasRelationView;
 
 	/**
-	 * The cached value of the '{@link #getFromRelation() <em>From Relation</em>}' reference.
+	 * The cached value of the '{@link #getFromRelation() <em>From Relation</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getFromRelation()
 	 * @generated
 	 * @ordered
 	 */
-	protected RelationView fromRelation;
+	protected EList<RelationView> fromRelation;
+
+	/**
+	 * The cached value of the '{@link #getHasViewComponent() <em>Has View Component</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasViewComponent()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ViewComponent> hasViewComponent;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,7 +229,10 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RelationView getHasRelationView() {
+	public EList<RelationView> getHasRelationView() {
+		if (hasRelationView == null) {
+			hasRelationView = new EObjectContainmentEList<RelationView>(RelationView.class, this, MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW);
+		}
 		return hasRelationView;
 	}
 
@@ -218,48 +241,9 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetHasRelationView(RelationView newHasRelationView, NotificationChain msgs) {
-		RelationView oldHasRelationView = hasRelationView;
-		hasRelationView = newHasRelationView;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW, oldHasRelationView, newHasRelationView);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setHasRelationView(RelationView newHasRelationView) {
-		if (newHasRelationView != hasRelationView) {
-			NotificationChain msgs = null;
-			if (hasRelationView != null)
-				msgs = ((InternalEObject)hasRelationView).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW, null, msgs);
-			if (newHasRelationView != null)
-				msgs = ((InternalEObject)newHasRelationView).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW, null, msgs);
-			msgs = basicSetHasRelationView(newHasRelationView, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW, newHasRelationView, newHasRelationView));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RelationView getFromRelation() {
-		if (fromRelation != null && fromRelation.eIsProxy()) {
-			InternalEObject oldFromRelation = (InternalEObject)fromRelation;
-			fromRelation = (RelationView)eResolveProxy(oldFromRelation);
-			if (fromRelation != oldFromRelation) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.VIEWS__FROM_RELATION, oldFromRelation, fromRelation));
-			}
+	public EList<RelationView> getFromRelation() {
+		if (fromRelation == null) {
+			fromRelation = new EObjectResolvingEList<RelationView>(RelationView.class, this, MetawebdesignPackage.VIEWS__FROM_RELATION);
 		}
 		return fromRelation;
 	}
@@ -269,20 +253,11 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RelationView basicGetFromRelation() {
-		return fromRelation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFromRelation(RelationView newFromRelation) {
-		RelationView oldFromRelation = fromRelation;
-		fromRelation = newFromRelation;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.VIEWS__FROM_RELATION, oldFromRelation, fromRelation));
+	public EList<ViewComponent> getHasViewComponent() {
+		if (hasViewComponent == null) {
+			hasViewComponent = new EObjectContainmentEList<ViewComponent>(ViewComponent.class, this, MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT);
+		}
+		return hasViewComponent;
 	}
 
 	/**
@@ -294,7 +269,9 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				return basicSetHasRelationView(null, msgs);
+				return ((InternalEList<?>)getHasRelationView()).basicRemove(otherEnd, msgs);
+			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
+				return ((InternalEList<?>)getHasViewComponent()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -317,8 +294,9 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
 				return getHasRelationView();
 			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				if (resolve) return getFromRelation();
-				return basicGetFromRelation();
+				return getFromRelation();
+			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
+				return getHasViewComponent();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -328,6 +306,7 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -341,10 +320,16 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				setGroupName((Group)newValue);
 				return;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				setHasRelationView((RelationView)newValue);
+				getHasRelationView().clear();
+				getHasRelationView().addAll((Collection<? extends RelationView>)newValue);
 				return;
 			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				setFromRelation((RelationView)newValue);
+				getFromRelation().clear();
+				getFromRelation().addAll((Collection<? extends RelationView>)newValue);
+				return;
+			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
+				getHasViewComponent().clear();
+				getHasViewComponent().addAll((Collection<? extends ViewComponent>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -368,10 +353,13 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				setGroupName((Group)null);
 				return;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				setHasRelationView((RelationView)null);
+				getHasRelationView().clear();
 				return;
 			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				setFromRelation((RelationView)null);
+				getFromRelation().clear();
+				return;
+			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
+				getHasViewComponent().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -392,9 +380,11 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case MetawebdesignPackage.VIEWS__GROUP_NAME:
 				return groupName != null;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				return hasRelationView != null;
+				return hasRelationView != null && !hasRelationView.isEmpty();
 			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				return fromRelation != null;
+				return fromRelation != null && !fromRelation.isEmpty();
+			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
+				return hasViewComponent != null && !hasViewComponent.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

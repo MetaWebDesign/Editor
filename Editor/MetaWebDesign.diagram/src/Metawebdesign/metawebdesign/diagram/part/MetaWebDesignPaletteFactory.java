@@ -42,6 +42,12 @@ public class MetaWebDesignPaletteFactory {
 		paletteContainer.add(createForm9CreationTool());
 		paletteContainer.add(createPage10CreationTool());
 		paletteContainer.add(createRelationView11CreationTool());
+		paletteContainer.add(createViewComponent12CreationTool());
+		paletteContainer.add(createCallAtribute13CreationTool());
+		paletteContainer.add(createNavegationMenu14CreationTool());
+		paletteContainer.add(createLink15CreationTool());
+		paletteContainer.add(createLinkViewCRUD16CreationTool());
+		paletteContainer.add(createLinkView17CreationTool());
 		return paletteContainer;
 	}
 
@@ -53,10 +59,10 @@ public class MetaWebDesignPaletteFactory {
 				Metawebdesign.metawebdesign.diagram.part.Messages.Class1CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.Class1CreationTool_desc,
 				Collections
-						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006));
+						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2007));
 		entry.setId("createClass1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2007));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -79,15 +85,15 @@ public class MetaWebDesignPaletteFactory {
 	 */
 	private ToolEntry createDerived3CreationTool() {
 		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2003);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3002);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2010);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3007);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Metawebdesign.metawebdesign.diagram.part.Messages.Derived3CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.Derived3CreationTool_desc,
 				types);
 		entry.setId("createDerived3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2003));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2010));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -97,15 +103,15 @@ public class MetaWebDesignPaletteFactory {
 	 */
 	private ToolEntry createNotDerived4CreationTool() {
 		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006);
 		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_2004);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3003);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Metawebdesign.metawebdesign.diagram.part.Messages.NotDerived4CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.NotDerived4CreationTool_desc,
 				types);
 		entry.setId("createNotDerived4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_2004));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -118,10 +124,10 @@ public class MetaWebDesignPaletteFactory {
 				Metawebdesign.metawebdesign.diagram.part.Messages.RelationClass5CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.RelationClass5CreationTool_desc,
 				Collections
-						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002));
+						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001));
 		entry.setId("createRelationClass5CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -134,10 +140,10 @@ public class MetaWebDesignPaletteFactory {
 				Metawebdesign.metawebdesign.diagram.part.Messages.Menu6CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.Menu6CreationTool_desc,
 				Collections
-						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002));
+						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2006));
 		entry.setId("createMenu6CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2006));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -147,15 +153,15 @@ public class MetaWebDesignPaletteFactory {
 	 */
 	private ToolEntry createGroup7CreationTool() {
 		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2005);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3005);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2009);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
 				Metawebdesign.metawebdesign.diagram.part.Messages.Group7CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.Group7CreationTool_desc,
 				types);
 		entry.setId("createGroup7CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3005));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -197,10 +203,10 @@ public class MetaWebDesignPaletteFactory {
 				Metawebdesign.metawebdesign.diagram.part.Messages.Page10CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.Page10CreationTool_desc,
 				Collections
-						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2007));
+						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2011));
 		entry.setId("createPage10CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2007));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2011));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -213,10 +219,108 @@ public class MetaWebDesignPaletteFactory {
 				Metawebdesign.metawebdesign.diagram.part.Messages.RelationView11CreationTool_title,
 				Metawebdesign.metawebdesign.diagram.part.Messages.RelationView11CreationTool_desc,
 				Collections
-						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001));
+						.singletonList(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002));
 		entry.setId("createRelationView11CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
-				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001));
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createViewComponent12CreationTool() {
+		ToolEntry entry = new ToolEntry(
+				Metawebdesign.metawebdesign.diagram.part.Messages.ViewComponent12CreationTool_title,
+				Metawebdesign.metawebdesign.diagram.part.Messages.ViewComponent12CreationTool_desc,
+				null, null) {
+		};
+		entry.setId("createViewComponent12CreationTool"); //$NON-NLS-1$
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createCallAtribute13CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3004);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2005);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+				Metawebdesign.metawebdesign.diagram.part.Messages.CallAtribute13CreationTool_title,
+				Metawebdesign.metawebdesign.diagram.part.Messages.CallAtribute13CreationTool_desc,
+				types);
+		entry.setId("createCallAtribute13CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3004));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createNavegationMenu14CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2003);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3001);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+				Metawebdesign.metawebdesign.diagram.part.Messages.NavegationMenu14CreationTool_title,
+				Metawebdesign.metawebdesign.diagram.part.Messages.NavegationMenu14CreationTool_desc,
+				types);
+		entry.setId("createNavegationMenu14CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2003));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createLink15CreationTool() {
+		ToolEntry entry = new ToolEntry(
+				Metawebdesign.metawebdesign.diagram.part.Messages.Link15CreationTool_title,
+				Metawebdesign.metawebdesign.diagram.part.Messages.Link15CreationTool_desc,
+				null, null) {
+		};
+		entry.setId("createLink15CreationTool"); //$NON-NLS-1$
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createLinkViewCRUD16CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2008);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+				Metawebdesign.metawebdesign.diagram.part.Messages.LinkViewCRUD16CreationTool_title,
+				Metawebdesign.metawebdesign.diagram.part.Messages.LinkViewCRUD16CreationTool_desc,
+				types);
+		entry.setId("createLinkViewCRUD16CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2008));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	 * @generated
+	 */
+	private ToolEntry createLinkView17CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_2002);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(
+				Metawebdesign.metawebdesign.diagram.part.Messages.LinkView17CreationTool_title,
+				Metawebdesign.metawebdesign.diagram.part.Messages.LinkView17CreationTool_desc,
+				types);
+		entry.setId("createLinkView17CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes
+				.getImageDescriptor(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

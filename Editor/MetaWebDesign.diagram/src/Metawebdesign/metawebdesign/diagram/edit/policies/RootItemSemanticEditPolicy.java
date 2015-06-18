@@ -26,19 +26,49 @@ public class RootItemSemanticEditPolicy
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2008 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.LinkViewCRUDCreateCommand(
+					req));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2010 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.DerivedCreateCommand(
+					req));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2006 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.MenuCreateCommand(
+					req));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2003 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.NavegationMenuCreateCommand(
+					req));
+		}
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2001 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.FormCreateCommand(
 					req));
 		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2011 == req
 				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.MenuCreateCommand(
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.PageCreateCommand(
 					req));
 		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2003 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2009 == req
 				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.DerivedCreateCommand(
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.GroupCreateCommand(
+					req));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2005 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.CallAtributeCreateCommand(
+					req));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2007 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.ClassCreateCommand(
 					req));
 		}
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_2004 == req
@@ -46,19 +76,9 @@ public class RootItemSemanticEditPolicy
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.NotDerivedCreateCommand(
 					req));
 		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2005 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_2002 == req
 				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.GroupCreateCommand(
-					req));
-		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2006 == req
-				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.ClassCreateCommand(
-					req));
-		}
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2007 == req
-				.getElementType()) {
-			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.PageCreateCommand(
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.LinkViewCreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);
