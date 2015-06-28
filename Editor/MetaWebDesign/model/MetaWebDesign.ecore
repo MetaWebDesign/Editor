@@ -112,6 +112,7 @@
     <eLiterals name="left"/>
     <eLiterals name="center" value="1"/>
     <eLiterals name="right" value="2" literal="right"/>
+    <eLiterals name="EEnumLiteral0" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Views">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
