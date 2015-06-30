@@ -92,15 +92,6 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="ViewsFromRelation"
-          description="Create new ViewsFromRelation">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="Page"
           description="Create new Page">
         <smallIcon

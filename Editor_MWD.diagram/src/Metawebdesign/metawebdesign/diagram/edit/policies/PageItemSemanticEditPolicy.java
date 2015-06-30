@@ -27,7 +27,7 @@ public class PageItemSemanticEditPolicy
 	 */
 	public PageItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2008);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2003);
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class PageItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.PageCompViewInPageCajonEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.PageCompVIewInPageCajonEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();

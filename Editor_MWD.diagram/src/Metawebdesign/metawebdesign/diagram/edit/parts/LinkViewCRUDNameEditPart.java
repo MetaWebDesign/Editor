@@ -305,7 +305,7 @@ public class LinkViewCRUDNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 					.getParser(
-							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2009,
+							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2010,
 							getParserElement(),
 							Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 									.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID));

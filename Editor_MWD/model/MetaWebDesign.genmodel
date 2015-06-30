@@ -167,6 +167,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/operator"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/name"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//RelationContraint">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationContraint/RhasConstraint"/>

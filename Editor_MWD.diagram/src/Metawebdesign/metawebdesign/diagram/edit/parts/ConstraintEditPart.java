@@ -10,9 +10,11 @@ import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
@@ -27,7 +29,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2001;
+	public static final int VISUAL_ID = 2002;
 
 	/**
 	 * @generated
@@ -99,6 +101,56 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
+	protected boolean addFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart) {
+			((Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart) childEditPart)
+					.setLabel(getPrimaryShape()
+							.getFigureConstraintOperatorFigure());
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean removeFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void addChildVisual(EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void removeChildVisual(EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)) {
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		return getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
 	protected NodeFigure createNodePlate() {
 		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
 		return result;
@@ -128,6 +180,11 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure setupContentPane(IFigure nodeShape) {
+		if (nodeShape.getLayoutManager() == null) {
+			ConstrainedToolbarLayout layout = new ConstrainedToolbarLayout();
+			layout.setSpacing(5);
+			nodeShape.setLayoutManager(layout);
+		}
 		return nodeShape; // use nodeShape itself as contentPane
 	}
 
@@ -180,6 +237,14 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
+	public EditPart getPrimaryChildEditPart() {
+		return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart.VISUAL_ID));
+	}
+
+	/**
+	 * @generated
+	 */
 	public class ConstraintFigure extends RectangleFigure {
 
 		/**
@@ -194,6 +259,10 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private WrappingLabel fFigureConstraintServiceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureConstraintNameFigure;
 
 		/**
 		 * @generated
@@ -237,6 +306,12 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureConstraintServiceFigure);
 
+			fFigureConstraintNameFigure = new WrappingLabel();
+
+			fFigureConstraintNameFigure.setText("<...>");
+
+			this.add(fFigureConstraintNameFigure);
+
 		}
 
 		/**
@@ -258,6 +333,13 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureConstraintServiceFigure() {
 			return fFigureConstraintServiceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureConstraintNameFigure() {
+			return fFigureConstraintNameFigure;
 		}
 
 	}

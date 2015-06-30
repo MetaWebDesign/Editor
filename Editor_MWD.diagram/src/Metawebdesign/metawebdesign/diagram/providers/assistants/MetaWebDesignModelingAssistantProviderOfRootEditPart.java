@@ -19,18 +19,18 @@ public class MetaWebDesignModelingAssistantProviderOfRootEditPart
 	@Override
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
 		List<IElementType> types = new ArrayList<IElementType>(12);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2001);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2002);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2003);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_2004);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2005);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2006);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2007);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2008);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2009);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_2010);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2011);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2012);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_2001);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2002);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2003);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_2004);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2005);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2006);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2007);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_2008);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_2009);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_2010);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2011);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2012);
 		return types;
 	}
 

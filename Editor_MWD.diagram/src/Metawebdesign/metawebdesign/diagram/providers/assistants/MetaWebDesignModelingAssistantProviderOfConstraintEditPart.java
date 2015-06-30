@@ -30,7 +30,7 @@ public class MetaWebDesignModelingAssistantProviderOfConstraintEditPart
 	public List<IElementType> doGetRelTypesOnTarget(
 			Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4002);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4001);
 		return types;
 	}
 
@@ -54,8 +54,8 @@ public class MetaWebDesignModelingAssistantProviderOfConstraintEditPart
 			Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart target,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4002) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2002);
+		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4001) {
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2011);
 		}
 		return types;
 	}

@@ -1,12 +1,11 @@
 package Metawebdesign.metawebdesign.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
 import org.eclipse.gmf.runtime.diagram.core.edithelpers.CreateElementRequestAdapter;
-import org.eclipse.gmf.runtime.diagram.ui.editparts.ListCompartmentEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeCompartmentEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableCompartmentEditPolicy;
@@ -21,32 +20,25 @@ import org.eclipse.gmf.tooling.runtime.edit.policies.reparent.CreationEditPolicy
 /**
  * @generated
  */
-public class ClassAttributoInClassCajonEditPart extends ListCompartmentEditPart {
+public class FormViewCompInFormCajonEditPart extends ShapeCompartmentEditPart {
 
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 7001;
+	public static final int VISUAL_ID = 7003;
 
 	/**
 	 * @generated
 	 */
-	public ClassAttributoInClassCajonEditPart(View view) {
+	public FormViewCompInFormCajonEditPart(View view) {
 		super(view);
 	}
 
 	/**
 	 * @generated
 	 */
-	protected boolean hasModelChildrenChanged(Notification evt) {
-		return false;
-	}
-
-	/**
-	 * @generated
-	 */
 	public String getCompartmentName() {
-		return Metawebdesign.metawebdesign.diagram.part.Messages.ClassAttributoInClassCajonEditPart_title;
+		return Metawebdesign.metawebdesign.diagram.part.Messages.FormViewCompInFormCajonEditPart_title;
 	}
 
 	/**
@@ -68,7 +60,7 @@ public class ClassAttributoInClassCajonEditPart extends ListCompartmentEditPart 
 				new ResizableCompartmentEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.ClassAttributoInClassCajonItemSemanticEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.FormViewCompInFormCajonItemSemanticEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.CREATION_ROLE,
 				new CreationEditPolicyWithCustomReparent(
@@ -77,7 +69,7 @@ public class ClassAttributoInClassCajonEditPart extends ListCompartmentEditPart 
 				new DragDropEditPolicy());
 		installEditPolicy(
 				EditPolicyRoles.CANONICAL_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.ClassAttributoInClassCajonCanonicalEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.FormViewCompInFormCajonCanonicalEditPolicy());
 	}
 
 	/**
@@ -99,10 +91,10 @@ public class ClassAttributoInClassCajonEditPart extends ListCompartmentEditPart 
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3001) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3001) {
 				return this;
 			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3002) {
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3002) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

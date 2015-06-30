@@ -30,7 +30,7 @@ public class FormEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2006;
+	public static final int VISUAL_ID = 2005;
 
 	/**
 	 * @generated
@@ -111,10 +111,10 @@ public class FormEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureFormTitleFigure());
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormCajonEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajonViewComponentForm();
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonViewCompForm();
 			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormCajonEditPart) childEditPart)
+			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -128,9 +128,9 @@ public class FormEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart) {
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormCajonEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajonViewComponentForm();
-			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormCajonEditPart) childEditPart)
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) {
+			IFigure pane = getPrimaryShape().getFigureCajonViewCompForm();
+			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -161,8 +161,8 @@ public class FormEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormCajonEditPart) {
-			return getPrimaryShape().getFigureCajonViewComponentForm();
+		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) {
+			return getPrimaryShape().getFigureCajonViewCompForm();
 		}
 		return getContentPane();
 	}
@@ -281,7 +281,7 @@ public class FormEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private RectangleFigure fFigureCajonViewComponentForm;
+		private RectangleFigure fFigureCajonViewCompForm;
 
 		/**
 		 * @generated
@@ -317,9 +317,9 @@ public class FormEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureFormServiceFigure);
 
-			fFigureCajonViewComponentForm = new RectangleFigure();
+			fFigureCajonViewCompForm = new RectangleFigure();
 
-			this.add(fFigureCajonViewComponentForm, BorderLayout.CENTER);
+			this.add(fFigureCajonViewCompForm, BorderLayout.CENTER);
 
 		}
 
@@ -347,8 +347,8 @@ public class FormEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		public RectangleFigure getFigureCajonViewComponentForm() {
-			return fFigureCajonViewComponentForm;
+		public RectangleFigure getFigureCajonViewCompForm() {
+			return fFigureCajonViewCompForm;
 		}
 
 	}

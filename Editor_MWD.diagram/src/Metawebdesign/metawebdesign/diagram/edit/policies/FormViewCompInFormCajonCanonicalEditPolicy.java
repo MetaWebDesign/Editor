@@ -24,7 +24,7 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class PageCompViewInPageCajonCanonicalEditPolicy extends
+public class FormViewCompInFormCajonCanonicalEditPolicy extends
 		CanonicalEditPolicy {
 
 	/**
@@ -55,7 +55,7 @@ public class PageCompViewInPageCajonCanonicalEditPolicy extends
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getPageCompViewInPageCajon_7005SemanticChildren(viewObject);
+				.getFormViewCompInFormCajon_7003SemanticChildren(viewObject);
 		for (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor d : childDescriptors) {
 			result.add(d.getModelElement());
 		}
@@ -90,7 +90,7 @@ public class PageCompViewInPageCajonCanonicalEditPolicy extends
 		}
 		LinkedList<IAdaptable> createdViews = new LinkedList<IAdaptable>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getPageCompViewInPageCajon_7005SemanticChildren((View) getHost()
+				.getFormViewCompInFormCajon_7003SemanticChildren((View) getHost()
 						.getModel());
 		LinkedList<View> orphaned = new LinkedList<View>();
 		// we care to check only views we recognize as ours

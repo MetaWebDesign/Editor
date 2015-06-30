@@ -16,7 +16,7 @@ public class RelationClassItemSemanticEditPolicy
 	 */
 	public RelationClassItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002);
 	}
 
 	/**

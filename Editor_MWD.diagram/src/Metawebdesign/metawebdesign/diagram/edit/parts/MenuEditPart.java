@@ -34,7 +34,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2011;
+	public static final int VISUAL_ID = 2012;
 
 	/**
 	 * @generated
@@ -115,9 +115,9 @@ public class MenuEditPart extends ShapeNodeEditPart {
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart) {
-		/*	((Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart) childEditPart)
+			((Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureNavegationMenuNameFigure());*/
+							.getFigureNavegationMenuNameFigure());
 			return true;
 		}
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) {

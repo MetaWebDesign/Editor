@@ -8,51 +8,78 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
+        href="MetaWebDesign.ecore#//Root/link"/>
+    <ownedChild>
+      <domainMetaElement
+          href="MetaWebDesign.ecore#//LinkView"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="MetaWebDesign.gmfgraph#LinkViewName"/>
+        <features
+            href="MetaWebDesign.ecore#//Link/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.16"/>
+      <diagramNode
+          href="MetaWebDesign.gmfgraph#LinkView"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
         href="MetaWebDesign.ecore#//Root/constraint"/>
     <ownedChild>
       <domainMetaElement
           href="MetaWebDesign.ecore#//Constraint"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="MetaWebDesign.gmfgraph#ConstraintOperator"/>
+        <features
+            href="MetaWebDesign.ecore#//Constraint/name"/>
+      </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.18"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.17"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#Constraint"/>
     </ownedChild>
   </nodes>
   <nodes>
     <containmentFeature
-        href="MetaWebDesign.ecore#//Root/class"/>
+        href="MetaWebDesign.ecore#//Root/views"/>
     <ownedChild>
       <domainMetaElement
-          href="MetaWebDesign.ecore#//Class"/>
+          href="MetaWebDesign.ecore#//Page"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="MetaWebDesign.gmfgraph#ClassName"/>
+            href="MetaWebDesign.gmfgraph#PageTitle"/>
         <features
-            href="MetaWebDesign.ecore#//Class/name"/>
+            href="MetaWebDesign.ecore#//Views/title"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.0"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.9"/>
       <diagramNode
-          href="MetaWebDesign.gmfgraph#Class"/>
+          href="MetaWebDesign.gmfgraph#Page"/>
       <children
-          compartment="//@nodes.1/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.2/@ownedChild">
+          compartment="//@nodes.2/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
-            href="MetaWebDesign.ecore#//Class/hasAttributes"/>
+            href="MetaWebDesign.ecore#//Views/hasViewComponent"/>
       </children>
       <children
-          compartment="//@nodes.1/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.9/@ownedChild">
+          compartment="//@nodes.2/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
-            href="MetaWebDesign.ecore#//Class/hasAttributes"/>
+            href="MetaWebDesign.ecore#//Views/hasViewComponent"/>
       </children>
       <compartments
-          children="//@nodes.1/@ownedChild/@children.0 //@nodes.1/@ownedChild/@children.1">
+          children="//@nodes.2/@ownedChild/@children.0 //@nodes.2/@ownedChild/@children.1">
         <compartment
-            href="MetaWebDesign.gmfgraph#AttributoInClassCajon"/>
+            href="MetaWebDesign.gmfgraph#CompVIewInPageCajon"/>
       </compartments>
     </ownedChild>
   </nodes>
@@ -78,63 +105,6 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="MetaWebDesign.ecore#//Root/link"/>
-    <ownedChild>
-      <domainMetaElement
-          href="MetaWebDesign.ecore#//LinkView"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="MetaWebDesign.gmfgraph#LinkViewName"/>
-        <features
-            href="MetaWebDesign.ecore#//Link/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.17"/>
-      <diagramNode
-          href="MetaWebDesign.gmfgraph#LinkView"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="MetaWebDesign.ecore#//Root/view_component"/>
-    <ownedChild>
-      <domainMetaElement
-          href="MetaWebDesign.ecore#//NavegationMenu"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="MetaWebDesign.gmfgraph#NavegationMenuName"/>
-        <features
-            href="MetaWebDesign.ecore#//NavegationMenu/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.14"/>
-      <diagramNode
-          href="MetaWebDesign.gmfgraph#NavegationMenu"/>
-      <children
-          compartment="//@nodes.4/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.3/@ownedChild">
-        <containmentFeature
-            href="MetaWebDesign.ecore#//NavegationMenu/hasLink"/>
-      </children>
-      <children
-          compartment="//@nodes.4/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.8/@ownedChild">
-        <containmentFeature
-            href="MetaWebDesign.ecore#//NavegationMenu/hasLink"/>
-      </children>
-      <compartments
-          children="//@nodes.4/@ownedChild/@children.0 //@nodes.4/@ownedChild/@children.1">
-        <compartment
-            href="MetaWebDesign.gmfgraph#LinksInNavMenuCajon"/>
-      </compartments>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="MetaWebDesign.ecore#//Root/views"/>
     <ownedChild>
       <domainMetaElement
@@ -152,21 +122,21 @@
       <diagramNode
           href="MetaWebDesign.gmfgraph#Form"/>
       <children
-          compartment="//@nodes.5/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.6/@ownedChild">
+          compartment="//@nodes.4/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
             href="MetaWebDesign.ecore#//Views/hasViewComponent"/>
       </children>
       <children
-          compartment="//@nodes.5/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.4/@ownedChild">
+          compartment="//@nodes.4/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
             href="MetaWebDesign.ecore#//Views/hasViewComponent"/>
       </children>
       <compartments
-          children="//@nodes.5/@ownedChild/@children.0 //@nodes.5/@ownedChild/@children.1">
+          children="//@nodes.4/@ownedChild/@children.0 //@nodes.4/@ownedChild/@children.1">
         <compartment
-            href="MetaWebDesign.gmfgraph#CompViewInFormCajon"/>
+            href="MetaWebDesign.gmfgraph#ViewCompInFormCajon"/>
       </compartments>
     </ownedChild>
   </nodes>
@@ -185,66 +155,46 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.13"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.12"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#CallAtribute"/>
     </ownedChild>
   </nodes>
   <nodes>
     <containmentFeature
-        href="MetaWebDesign.ecore#//Root/views"/>
+        href="MetaWebDesign.ecore#//Root/view_component"/>
     <ownedChild>
       <domainMetaElement
-          href="MetaWebDesign.ecore#//Page"/>
+          href="MetaWebDesign.ecore#//NavegationMenu"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="MetaWebDesign.gmfgraph#PageTitle"/>
+            href="MetaWebDesign.gmfgraph#NavegationMenuName"/>
         <features
-            href="MetaWebDesign.ecore#//Views/title"/>
+            href="MetaWebDesign.ecore#//NavegationMenu/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.10"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.13"/>
       <diagramNode
-          href="MetaWebDesign.gmfgraph#Page"/>
+          href="MetaWebDesign.gmfgraph#NavegationMenu"/>
       <children
-          compartment="//@nodes.7/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.6/@ownedChild">
+          compartment="//@nodes.6/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.0/@ownedChild">
         <containmentFeature
-            href="MetaWebDesign.ecore#//Views/hasViewComponent"/>
+            href="MetaWebDesign.ecore#//NavegationMenu/hasLink"/>
       </children>
       <children
-          compartment="//@nodes.7/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.4/@ownedChild">
+          compartment="//@nodes.6/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.9/@ownedChild">
         <containmentFeature
-            href="MetaWebDesign.ecore#//Views/hasViewComponent"/>
+            href="MetaWebDesign.ecore#//NavegationMenu/hasLink"/>
       </children>
       <compartments
-          children="//@nodes.7/@ownedChild/@children.0 //@nodes.7/@ownedChild/@children.1">
+          children="//@nodes.6/@ownedChild/@children.0 //@nodes.6/@ownedChild/@children.1">
         <compartment
-            href="MetaWebDesign.gmfgraph#CompViewInPageCajon"/>
+            href="MetaWebDesign.gmfgraph#LinksInNavMenuCajon"/>
       </compartments>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="MetaWebDesign.ecore#//Root/link"/>
-    <ownedChild>
-      <domainMetaElement
-          href="MetaWebDesign.ecore#//LinkViewCRUD"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="MetaWebDesign.gmfgraph#LinkViewCRUDName"/>
-        <features
-            href="MetaWebDesign.ecore#//Link/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.16"/>
-      <diagramNode
-          href="MetaWebDesign.gmfgraph#LinkViewCRUD"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -269,37 +219,6 @@
   </nodes>
   <nodes>
     <containmentFeature
-        href="MetaWebDesign.ecore#//Root/menu"/>
-    <ownedChild>
-      <domainMetaElement
-          href="MetaWebDesign.ecore#//Menu"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="MetaWebDesign.gmfgraph#NavegationMenuName"/>
-        <features
-            href="MetaWebDesign.ecore#//Menu/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.5"/>
-      <diagramNode
-          href="MetaWebDesign.gmfgraph#Menu"/>
-      <children
-          compartment="//@nodes.10/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.11/@ownedChild">
-        <containmentFeature
-            href="MetaWebDesign.ecore#//Menu/hasGroup"/>
-      </children>
-      <compartments
-          children="//@nodes.10/@ownedChild/@children.0">
-        <compartment
-            href="MetaWebDesign.gmfgraph#GrupoInMenuCajon"/>
-      </compartments>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="MetaWebDesign.ecore#//Root/group"/>
     <ownedChild>
       <domainMetaElement
@@ -318,6 +237,115 @@
           href="MetaWebDesign.gmfgraph#Group"/>
     </ownedChild>
   </nodes>
+  <nodes>
+    <containmentFeature
+        href="MetaWebDesign.ecore#//Root/link"/>
+    <ownedChild>
+      <domainMetaElement
+          href="MetaWebDesign.ecore#//LinkViewCRUD"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="MetaWebDesign.gmfgraph#LinkViewCRUDName"/>
+        <features
+            href="MetaWebDesign.ecore#//Link/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.15"/>
+      <diagramNode
+          href="MetaWebDesign.gmfgraph#LinkViewCRUD"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="MetaWebDesign.ecore#//Root/class"/>
+    <ownedChild>
+      <domainMetaElement
+          href="MetaWebDesign.ecore#//Class"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="MetaWebDesign.gmfgraph#ClassName"/>
+        <features
+            href="MetaWebDesign.ecore#//Class/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.0"/>
+      <diagramNode
+          href="MetaWebDesign.gmfgraph#Class"/>
+      <children
+          compartment="//@nodes.10/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.3/@ownedChild">
+        <containmentFeature
+            href="MetaWebDesign.ecore#//Class/hasAttributes"/>
+      </children>
+      <children
+          compartment="//@nodes.10/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.7/@ownedChild">
+        <containmentFeature
+            href="MetaWebDesign.ecore#//Class/hasAttributes"/>
+      </children>
+      <compartments
+          children="//@nodes.10/@ownedChild/@children.0 //@nodes.10/@ownedChild/@children.1">
+        <compartment
+            href="MetaWebDesign.gmfgraph#AtributoInClassCajon"/>
+      </compartments>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="MetaWebDesign.ecore#//Root/menu"/>
+    <ownedChild>
+      <domainMetaElement
+          href="MetaWebDesign.ecore#//Menu"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="MetaWebDesign.gmfgraph#NavegationMenuName"/>
+        <features
+            href="MetaWebDesign.ecore#//Menu/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="MetaWebDesign.gmfgraph#Menu"/>
+      <children
+          compartment="//@nodes.11/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.8/@ownedChild">
+        <containmentFeature
+            href="MetaWebDesign.ecore#//Menu/hasGroup"/>
+      </children>
+      <compartments
+          children="//@nodes.11/@ownedChild/@children.0">
+        <compartment
+            href="MetaWebDesign.gmfgraph#GrupoInMenuCajon"/>
+      </compartments>
+    </ownedChild>
+  </nodes>
+  <links>
+    <domainMetaElement
+        href="MetaWebDesign.ecore#//RelationContraint"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="MetaWebDesign.gmfgraph#RelationContraintName"/>
+      <features
+          href="MetaWebDesign.ecore#//RelationContraint/name"/>
+    </labelMappings>
+    <containmentFeature
+        href="MetaWebDesign.ecore#//Class/hasRelationConstraint"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.18"/>
+    <diagramLink
+        href="MetaWebDesign.gmfgraph#RelationContraint"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="MetaWebDesign.ecore#//RelationContraint/goRConstraint2"/>
+  </links>
   <links>
     <domainMetaElement
         href="MetaWebDesign.ecore#//RelationClass"/>
@@ -341,27 +369,6 @@
   </links>
   <links>
     <domainMetaElement
-        href="MetaWebDesign.ecore#//RelationContraint"/>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <diagramLabel
-          href="MetaWebDesign.gmfgraph#RelationContraintName"/>
-      <features
-          href="MetaWebDesign.ecore#//RelationContraint/name"/>
-    </labelMappings>
-    <containmentFeature
-        href="MetaWebDesign.ecore#//Class/hasRelationConstraint"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.19"/>
-    <diagramLink
-        href="MetaWebDesign.gmfgraph#RelationContraint"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="MetaWebDesign.ecore#//RelationContraint/goRConstraint2"/>
-  </links>
-  <links>
-    <domainMetaElement
         href="MetaWebDesign.ecore#//RelationView"/>
     <labelMappings
         xsi:type="gmfmap:FeatureLabelMapping">
@@ -374,7 +381,7 @@
         href="MetaWebDesign.ecore#//Views/hasRelationView"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.11"/>
+        href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.10"/>
     <diagramLink
         href="MetaWebDesign.gmfgraph#ViewsHasRelationView"/>
     <linkMetaFeature

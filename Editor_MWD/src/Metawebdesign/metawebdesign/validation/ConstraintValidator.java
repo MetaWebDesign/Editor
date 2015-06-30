@@ -21,4 +21,5 @@ public interface ConstraintValidator {
 	boolean validateOperator(TypeOperator value);
 	boolean validateValue(int value);
 	boolean validateService(TypeService value);
+	boolean validateName(String value);
 }

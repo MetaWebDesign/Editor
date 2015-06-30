@@ -47,13 +47,13 @@ import org.eclipse.swt.graphics.Image;
 /**
  * @generated
  */
-public class MenuNameEditPart extends CompartmentEditPart implements
+public class ConstraintNameEditPart extends CompartmentEditPart implements
 		ITextAwareEditPart {
 
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5019;
+	public static final int VISUAL_ID = 5002;
 
 	/**
 	 * @generated
@@ -83,7 +83,7 @@ public class MenuNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public MenuNameEditPart(View view) {
+	public ConstraintNameEditPart(View view) {
 		super(view);
 	}
 
@@ -305,10 +305,10 @@ public class MenuNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 					.getParser(
-							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2012,
+							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2002,
 							getParserElement(),
 							Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-									.getType(Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID));
+									.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart.VISUAL_ID));
 		}
 		return parser;
 	}

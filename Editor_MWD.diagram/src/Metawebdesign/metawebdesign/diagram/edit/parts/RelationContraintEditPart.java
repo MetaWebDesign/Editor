@@ -18,7 +18,7 @@ public class RelationContraintEditPart extends ConnectionNodeEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 4002;
+	public static final int VISUAL_ID = 4001;
 
 	/**
 	 * @generated

@@ -1400,13 +1400,22 @@ public interface MetawebdesignPackage extends EPackage {
 	int CONSTRAINT__SERVICE = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__NAME = 4;
+
+	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT_FEATURE_COUNT = 4;
+	int CONSTRAINT_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Constraint</em>' class.
@@ -2470,6 +2479,17 @@ public interface MetawebdesignPackage extends EPackage {
 	EAttribute getConstraint_Service();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Constraint#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Metawebdesign.metawebdesign.Constraint#getName()
+	 * @see #getConstraint()
+	 * @generated
+	 */
+	EAttribute getConstraint_Name();
+
+	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.RelationContraint <em>Relation Contraint</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3332,6 +3352,14 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONSTRAINT__SERVICE = eINSTANCE.getConstraint_Service();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONSTRAINT__NAME = eINSTANCE.getConstraint_Name();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.RelationContraintImpl <em>Relation Contraint</em>}' class.

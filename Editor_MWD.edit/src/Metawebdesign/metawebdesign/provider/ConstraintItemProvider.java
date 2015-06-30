@@ -5,7 +5,6 @@ package Metawebdesign.metawebdesign.provider;
 
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
-import Metawebdesign.metawebdesign.TypeOperator;
 
 import java.util.Collection;
 import java.util.List;
@@ -65,6 +64,7 @@ public class ConstraintItemProvider
 			addOperatorPropertyDescriptor(object);
 			addValuePropertyDescriptor(object);
 			addServicePropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -158,6 +158,28 @@ public class ConstraintItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Constraint_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Constraint_name_feature", "_UI_Constraint_type"),
+				 MetawebdesignPackage.Literals.CONSTRAINT__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Constraint.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -176,8 +198,7 @@ public class ConstraintItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		TypeOperator labelValue = ((Constraint)object).getOperator();
-		String label = labelValue == null ? null : labelValue.toString();
+		String label = ((Constraint)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Constraint_type") :
 			getString("_UI_Constraint_type") + " " + label;
@@ -199,6 +220,7 @@ public class ConstraintItemProvider
 			case MetawebdesignPackage.CONSTRAINT__OPERATOR:
 			case MetawebdesignPackage.CONSTRAINT__VALUE:
 			case MetawebdesignPackage.CONSTRAINT__SERVICE:
+			case MetawebdesignPackage.CONSTRAINT__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

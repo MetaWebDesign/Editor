@@ -15,7 +15,7 @@ public class MenuGrupoInMenuCajonItemSemanticEditPolicy
 	 */
 	public MenuGrupoInMenuCajonItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2011);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2012);
 	}
 
 	/**

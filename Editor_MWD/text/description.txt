@@ -110,6 +110,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute operator : TypeOperator
     Attribute value : EInt
     Attribute service : TypeService
+    Attribute name : EString
 
   Class RelationContraint
     Reference RhasConstraint : Constraint<<0..*>>

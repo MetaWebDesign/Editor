@@ -338,117 +338,107 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String ViewsFromRelation10CreationTool_title;
+	public static String Page10CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewsFromRelation10CreationTool_desc;
+	public static String Page10CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Page11CreationTool_title;
+	public static String RelationView11CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Page11CreationTool_desc;
+	public static String RelationView11CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationView12CreationTool_title;
+	public static String ViewComponent12CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationView12CreationTool_desc;
+	public static String ViewComponent12CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewComponent13CreationTool_title;
+	public static String CallAtribute13CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewComponent13CreationTool_desc;
+	public static String CallAtribute13CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String CallAtribute14CreationTool_title;
+	public static String NavegationMenu14CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String CallAtribute14CreationTool_desc;
+	public static String NavegationMenu14CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenu15CreationTool_title;
+	public static String Link15CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenu15CreationTool_desc;
+	public static String Link15CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Link16CreationTool_title;
+	public static String LinkViewCRUD16CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Link16CreationTool_desc;
+	public static String LinkViewCRUD16CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkViewCRUD17CreationTool_title;
+	public static String LinkView17CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkViewCRUD17CreationTool_desc;
+	public static String LinkView17CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkView18CreationTool_title;
+	public static String Constraint18CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkView18CreationTool_desc;
+	public static String Constraint18CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Constraint19CreationTool_title;
+	public static String RelationContraint19CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Constraint19CreationTool_desc;
+	public static String RelationContraint19CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationContraint20CreationTool_title;
-
-	/**
-	 * @generated
-	 */
-	public static String RelationContraint20CreationTool_desc;
-
-	/**
-	 * @generated
-	 */
-	public static String ClassAttributoInClassCajonEditPart_title;
+	public static String PageCompVIewInPageCajonEditPart_title;
 
 	/**
 	 * @generated
@@ -458,7 +448,7 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String FormCompViewInFormCajonEditPart_title;
+	public static String FormViewCompInFormCajonEditPart_title;
 
 	/**
 	 * @generated
@@ -468,7 +458,7 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String PageCompViewInPageCajonEditPart_title;
+	public static String ClassAtributoInClassCajonEditPart_title;
 
 	/**
 	 * @generated
@@ -488,47 +478,47 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Constraint_2001_incominglinks;
+	public static String NavigatorGroupName_Constraint_2002_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2002_incominglinks;
+	public static String NavigatorGroupName_Page_2003_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2002_outgoinglinks;
+	public static String NavigatorGroupName_Form_2005_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Form_2006_outgoinglinks;
+	public static String NavigatorGroupName_Class_2011_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Page_2008_outgoinglinks;
+	public static String NavigatorGroupName_Class_2011_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationClass_4001_target;
+	public static String NavigatorGroupName_RelationContraint_4001_target;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationClass_4001_source;
+	public static String NavigatorGroupName_RelationContraint_4001_source;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationContraint_4002_target;
+	public static String NavigatorGroupName_RelationClass_4002_target;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationContraint_4002_source;
+	public static String NavigatorGroupName_RelationClass_4002_source;
 
 	/**
 	 * @generated

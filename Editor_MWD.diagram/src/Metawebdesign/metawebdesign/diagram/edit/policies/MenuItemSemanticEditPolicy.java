@@ -24,7 +24,7 @@ public class MenuItemSemanticEditPolicy
 	 */
 	public MenuItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2011);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2012);
 	}
 
 	/**

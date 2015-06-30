@@ -24,7 +24,7 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class ClassAttributoInClassCajonCanonicalEditPolicy extends
+public class PageCompVIewInPageCajonCanonicalEditPolicy extends
 		CanonicalEditPolicy {
 
 	/**
@@ -44,7 +44,7 @@ public class ClassAttributoInClassCajonCanonicalEditPolicy extends
 	 */
 	protected EStructuralFeature getFeatureToSynchronize() {
 		return Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-				.getClass_HasAttributes();
+				.getViews_HasViewComponent();
 	}
 
 	/**
@@ -55,7 +55,7 @@ public class ClassAttributoInClassCajonCanonicalEditPolicy extends
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getClassAttributoInClassCajon_7001SemanticChildren(viewObject);
+				.getPageCompVIewInPageCajon_7001SemanticChildren(viewObject);
 		for (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor d : childDescriptors) {
 			result.add(d.getModelElement());
 		}
@@ -77,8 +77,8 @@ public class ClassAttributoInClassCajonCanonicalEditPolicy extends
 	private boolean isMyDiagramElement(View view) {
 		int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getVisualID(view);
-		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID
-				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID;
+		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID
+				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class ClassAttributoInClassCajonCanonicalEditPolicy extends
 		}
 		LinkedList<IAdaptable> createdViews = new LinkedList<IAdaptable>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
-				.getClassAttributoInClassCajon_7001SemanticChildren((View) getHost()
+				.getPageCompVIewInPageCajon_7001SemanticChildren((View) getHost()
 						.getModel());
 		LinkedList<View> orphaned = new LinkedList<View>();
 		// we care to check only views we recognize as ours

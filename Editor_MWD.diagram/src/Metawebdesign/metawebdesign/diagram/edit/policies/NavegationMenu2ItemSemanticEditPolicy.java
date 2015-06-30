@@ -24,7 +24,7 @@ public class NavegationMenu2ItemSemanticEditPolicy
 	 */
 	public NavegationMenu2ItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3006);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3002);
 	}
 
 	/**
@@ -57,7 +57,7 @@ public class NavegationMenu2ItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenuCajon2EditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenuCajonEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();

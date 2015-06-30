@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link Metawebdesign.metawebdesign.impl.ConstraintImpl#getOperator <em>Operator</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ConstraintImpl#getValue <em>Value</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ConstraintImpl#getService <em>Service</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.ConstraintImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -102,6 +103,26 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 	 * @ordered
 	 */
 	protected TypeService service = SERVICE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,6 +249,27 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.CONSTRAINT__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -240,6 +282,8 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 				return getValue();
 			case MetawebdesignPackage.CONSTRAINT__SERVICE:
 				return getService();
+			case MetawebdesignPackage.CONSTRAINT__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -263,6 +307,9 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 				return;
 			case MetawebdesignPackage.CONSTRAINT__SERVICE:
 				setService((TypeService)newValue);
+				return;
+			case MetawebdesignPackage.CONSTRAINT__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -288,6 +335,9 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 			case MetawebdesignPackage.CONSTRAINT__SERVICE:
 				setService(SERVICE_EDEFAULT);
 				return;
+			case MetawebdesignPackage.CONSTRAINT__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -308,6 +358,8 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 				return value != VALUE_EDEFAULT;
 			case MetawebdesignPackage.CONSTRAINT__SERVICE:
 				return service != SERVICE_EDEFAULT;
+			case MetawebdesignPackage.CONSTRAINT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -328,6 +380,8 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 		result.append(value);
 		result.append(", service: ");
 		result.append(service);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

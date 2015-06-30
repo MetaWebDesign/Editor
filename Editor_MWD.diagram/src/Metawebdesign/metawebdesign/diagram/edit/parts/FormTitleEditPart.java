@@ -53,7 +53,7 @@ public class FormTitleEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5011;
+	public static final int VISUAL_ID = 5009;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class FormTitleEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 					.getParser(
-							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2006,
+							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2005,
 							getParserElement(),
 							Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 									.getType(Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart.VISUAL_ID));

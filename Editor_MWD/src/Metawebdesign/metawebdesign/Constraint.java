@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getOperator <em>Operator</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getService <em>Service</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Constraint#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -133,5 +134,31 @@ public interface Constraint extends EObject {
 	 * @generated
 	 */
 	void setService(TypeService value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // Constraint

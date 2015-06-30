@@ -15,7 +15,7 @@ public class NavegationMenuLinksInNavMenuCajon2ItemSemanticEditPolicy
 	 */
 	public NavegationMenuLinksInNavMenuCajon2ItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_3006);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NavegationMenu_2007);
 	}
 
 	/**

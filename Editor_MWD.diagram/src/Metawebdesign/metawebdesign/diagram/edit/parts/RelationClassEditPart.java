@@ -19,7 +19,7 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 4001;
+	public static final int VISUAL_ID = 4002;
 
 	/**
 	 * @generated
@@ -43,9 +43,9 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) {
-			/*((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
+			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationClassNameFigure());*/
+							.getFigureRelationClassNameFigure());
 			return true;
 		}
 		return false;

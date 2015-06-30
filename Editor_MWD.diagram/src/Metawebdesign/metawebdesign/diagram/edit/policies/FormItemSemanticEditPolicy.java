@@ -27,7 +27,7 @@ public class FormItemSemanticEditPolicy
 	 */
 	public FormItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2006);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2005);
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class FormItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormCajonEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();

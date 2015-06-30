@@ -1074,6 +1074,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getConstraint_Name() {
+		return (EAttribute)constraintEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRelationContraint() {
 		return relationContraintEClass;
 	}
@@ -1308,6 +1317,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEAttribute(constraintEClass, CONSTRAINT__OPERATOR);
 		createEAttribute(constraintEClass, CONSTRAINT__VALUE);
 		createEAttribute(constraintEClass, CONSTRAINT__SERVICE);
+		createEAttribute(constraintEClass, CONSTRAINT__NAME);
 
 		relationContraintEClass = createEClass(RELATION_CONTRAINT);
 		createEReference(relationContraintEClass, RELATION_CONTRAINT__RHAS_CONSTRAINT);
@@ -1466,6 +1476,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEAttribute(getConstraint_Operator(), this.getTypeOperator(), "operator", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_Value(), ecorePackage.getEInt(), "value", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_Service(), this.getTypeService(), "service", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getConstraint_Name(), ecorePackage.getEString(), "name", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(relationContraintEClass, RelationContraint.class, "RelationContraint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRelationContraint_RhasConstraint(), this.getConstraint(), null, "RhasConstraint", null, 0, -1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
