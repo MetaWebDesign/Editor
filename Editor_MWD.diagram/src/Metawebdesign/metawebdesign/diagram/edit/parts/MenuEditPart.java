@@ -117,7 +117,7 @@ public class MenuEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart) {
 			((Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureNavegationMenuNameFigure());
+							.getFigureMenuNameFigure());
 			return true;
 		}
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoInMenuCajonEditPart) {
