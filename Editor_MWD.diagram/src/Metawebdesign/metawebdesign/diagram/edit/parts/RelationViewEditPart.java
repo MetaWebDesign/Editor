@@ -8,6 +8,7 @@ import org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.notation.View;
 
 /**
@@ -106,14 +107,33 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 */
 	public class ViewsHasRelationViewFigure extends PolylineConnectionEx {
 
+		private WrappingLabel fFigureRelationViewNameFigure;
+		
 		/**
 		 * @generated
 		 */
 		public ViewsHasRelationViewFigure() {
 
 			setTargetDecoration(createTargetDecoration());
+			createContents();
 		}
 
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+			fFigureRelationViewNameFigure = new WrappingLabel();
+			fFigureRelationViewNameFigure.setText("<...>");
+			this.add(fFigureRelationViewNameFigure);
+		}
+		
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureRelationViewNameFigure() {
+			return fFigureRelationViewNameFigure;
+		}
+		
 		/**
 		 * @generated
 		 */
