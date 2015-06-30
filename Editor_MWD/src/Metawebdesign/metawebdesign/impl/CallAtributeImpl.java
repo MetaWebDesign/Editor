@@ -51,7 +51,7 @@ public class CallAtributeImpl extends ViewComponentImpl implements CallAtribute 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = null;
+	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = typePresentation.STRING;
 
 	/**
 	 * The cached value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.
