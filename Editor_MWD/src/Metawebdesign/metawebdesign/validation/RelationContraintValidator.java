@@ -19,4 +19,5 @@ public interface RelationContraintValidator {
 
 	boolean validateRhasConstraint(EList<Constraint> value);
 	boolean validateGoRConstraint2(EList<Constraint> value);
+	boolean validateName(String value);
 }

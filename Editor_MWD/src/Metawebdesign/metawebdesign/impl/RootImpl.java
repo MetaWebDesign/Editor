@@ -3,6 +3,7 @@
 package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.Attributes;
+import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.Menu;
@@ -13,6 +14,7 @@ import Metawebdesign.metawebdesign.Views;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -20,6 +22,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -39,6 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getViews <em>Views</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getView_component <em>View component</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getLink <em>Link</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getConstraint <em>Constraint</em>}</li>
  * </ul>
  * </p>
  *
@@ -114,6 +118,16 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * @ordered
 	 */
 	protected EList<Link> link;
+
+	/**
+	 * The cached value of the '{@link #getConstraint() <em>Constraint</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConstraint()
+	 * @generated
+	 * @ordered
+	 */
+	protected Constraint constraint;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,6 +237,49 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Constraint getConstraint() {
+		return constraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetConstraint(Constraint newConstraint, NotificationChain msgs) {
+		Constraint oldConstraint = constraint;
+		constraint = newConstraint;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.ROOT__CONSTRAINT, oldConstraint, newConstraint);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setConstraint(Constraint newConstraint) {
+		if (newConstraint != constraint) {
+			NotificationChain msgs = null;
+			if (constraint != null)
+				msgs = ((InternalEObject)constraint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.ROOT__CONSTRAINT, null, msgs);
+			if (newConstraint != null)
+				msgs = ((InternalEObject)newConstraint).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.ROOT__CONSTRAINT, null, msgs);
+			msgs = basicSetConstraint(newConstraint, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.ROOT__CONSTRAINT, newConstraint, newConstraint));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -240,6 +297,8 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return ((InternalEList<?>)getView_component()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.ROOT__LINK:
 				return ((InternalEList<?>)getLink()).basicRemove(otherEnd, msgs);
+			case MetawebdesignPackage.ROOT__CONSTRAINT:
+				return basicSetConstraint(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -266,6 +325,8 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return getView_component();
 			case MetawebdesignPackage.ROOT__LINK:
 				return getLink();
+			case MetawebdesignPackage.ROOT__CONSTRAINT:
+				return getConstraint();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -307,6 +368,9 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				getLink().clear();
 				getLink().addAll((Collection<? extends Link>)newValue);
 				return;
+			case MetawebdesignPackage.ROOT__CONSTRAINT:
+				setConstraint((Constraint)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -340,6 +404,9 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 			case MetawebdesignPackage.ROOT__LINK:
 				getLink().clear();
 				return;
+			case MetawebdesignPackage.ROOT__CONSTRAINT:
+				setConstraint((Constraint)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -366,6 +433,8 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return view_component != null && !view_component.isEmpty();
 			case MetawebdesignPackage.ROOT__LINK:
 				return link != null && !link.isEmpty();
+			case MetawebdesignPackage.ROOT__CONSTRAINT:
+				return constraint != null;
 		}
 		return super.eIsSet(featureID);
 	}

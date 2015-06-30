@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Root#getViews <em>Views</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getView_component <em>View component</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getLink <em>Link</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Root#getConstraint <em>Constraint</em>}</li>
  * </ul>
  * </p>
  *
@@ -140,5 +141,31 @@ public interface Root extends EObject {
 	 * @generated
 	 */
 	EList<Link> getLink();
+
+	/**
+	 * Returns the value of the '<em><b>Constraint</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Constraint</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Constraint</em>' containment reference.
+	 * @see #setConstraint(Constraint)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRoot_Constraint()
+	 * @model containment="true"
+	 * @generated
+	 */
+	Constraint getConstraint();
+
+	/**
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Root#getConstraint <em>Constraint</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Constraint</em>' containment reference.
+	 * @see #getConstraint()
+	 * @generated
+	 */
+	void setConstraint(Constraint value);
 
 } // Root

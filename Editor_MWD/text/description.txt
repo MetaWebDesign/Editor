@@ -15,6 +15,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Reference views : Views<<0..*>>
     Reference view_component : ViewComponent<<0..*>>
     Reference link : Link<<0..*>>
+    Reference constraint : Constraint
 
   Class Class
     Reference hasAttributes : Attributes<<0..15>>
@@ -113,6 +114,7 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class RelationContraint
     Reference RhasConstraint : Constraint<<0..*>>
     Reference goRConstraint2 : Constraint<<0..*>>
+    Attribute name : EString
 
   Enum TypeRol
     Literal anonymous = 0

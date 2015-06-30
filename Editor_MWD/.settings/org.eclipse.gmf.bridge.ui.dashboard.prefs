@@ -1,5 +1,7 @@
 eclipse.preferences.version=1
 gmf_dashboard/domainGenerationModel=platform\:/resource/Editor_MWD/model/MetaWebDesign.genmodel
 gmf_dashboard/domainModel=platform\:/resource/Editor_MWD/model/MetaWebDesign.ecore
+gmf_dashboard/generationModel=platform\:/resource/Editor_MWD/model/MetaWebDesign.gmfgen
 gmf_dashboard/graphicalDefinitionModel=platform\:/resource/Editor_MWD/model/MetaWebDesign.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/Editor_MWD/model/MetaWebDesign.gmfmap
 gmf_dashboard/toolingDefinitionModel=platform\:/resource/Editor_MWD/model/MetaWebDesign.gmftool

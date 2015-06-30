@@ -73,6 +73,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/views"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/view_component"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/link"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/constraint"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Class">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasAttributes"/>
@@ -170,6 +171,7 @@
     <genClasses ecoreClass="MetaWebDesign.ecore#//RelationContraint">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationContraint/RhasConstraint"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationContraint/goRConstraint2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationContraint/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

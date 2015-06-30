@@ -24,6 +24,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
@@ -63,6 +64,7 @@ public class RelationContraintItemProvider
 			super.getPropertyDescriptors(object);
 
 			addGoRConstraint2PropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -85,6 +87,28 @@ public class RelationContraintItemProvider
 				 false,
 				 true,
 				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_RelationContraint_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationContraint_name_feature", "_UI_RelationContraint_type"),
+				 MetawebdesignPackage.Literals.RELATION_CONTRAINT__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -138,7 +162,10 @@ public class RelationContraintItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_RelationContraint_type");
+		String label = ((RelationContraint)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_RelationContraint_type") :
+			getString("_UI_RelationContraint_type") + " " + label;
 	}
 	
 
@@ -154,6 +181,9 @@ public class RelationContraintItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(RelationContraint.class)) {
+			case MetawebdesignPackage.RELATION_CONTRAINT__NAME:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
 			case MetawebdesignPackage.RELATION_CONTRAINT__RHAS_CONSTRAINT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;

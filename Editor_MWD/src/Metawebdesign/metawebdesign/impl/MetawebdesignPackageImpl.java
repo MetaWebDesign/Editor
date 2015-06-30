@@ -381,6 +381,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getRoot_Constraint() {
+		return (EReference)rootEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getClass_() {
 		return classEClass;
 	}
@@ -1092,6 +1101,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getRelationContraint_Name() {
+		return (EAttribute)relationContraintEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getTypeRol() {
 		return typeRolEEnum;
 	}
@@ -1195,6 +1213,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEReference(rootEClass, ROOT__VIEWS);
 		createEReference(rootEClass, ROOT__VIEW_COMPONENT);
 		createEReference(rootEClass, ROOT__LINK);
+		createEReference(rootEClass, ROOT__CONSTRAINT);
 
 		classEClass = createEClass(CLASS);
 		createEReference(classEClass, CLASS__HAS_ATTRIBUTES);
@@ -1293,6 +1312,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		relationContraintEClass = createEClass(RELATION_CONTRAINT);
 		createEReference(relationContraintEClass, RELATION_CONTRAINT__RHAS_CONSTRAINT);
 		createEReference(relationContraintEClass, RELATION_CONTRAINT__GO_RCONSTRAINT2);
+		createEAttribute(relationContraintEClass, RELATION_CONTRAINT__NAME);
 
 		// Create enums
 		typeRolEEnum = createEEnum(TYPE_ROL);
@@ -1351,6 +1371,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEReference(getRoot_Views(), this.getViews(), null, "views", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRoot_View_component(), this.getViewComponent(), null, "view_component", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRoot_Link(), this.getLink(), null, "link", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRoot_Constraint(), this.getConstraint(), null, "constraint", null, 0, 1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classEClass, Metawebdesign.metawebdesign.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getClass_HasAttributes(), this.getAttributes(), null, "hasAttributes", null, 0, 15, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1449,6 +1470,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEClass(relationContraintEClass, RelationContraint.class, "RelationContraint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRelationContraint_RhasConstraint(), this.getConstraint(), null, "RhasConstraint", null, 0, -1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRelationContraint_GoRConstraint2(), this.getConstraint(), null, "goRConstraint2", null, 0, -1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRelationContraint_Name(), ecorePackage.getEString(), "name", null, 0, 1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(typeRolEEnum, TypeRol.class, "TypeRol");

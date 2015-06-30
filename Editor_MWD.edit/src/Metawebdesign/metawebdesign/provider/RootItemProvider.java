@@ -84,6 +84,7 @@ public class RootItemProvider
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__VIEWS);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__LINK);
+			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__CONSTRAINT);
 		}
 		return childrenFeatures;
 	}
@@ -143,6 +144,7 @@ public class RootItemProvider
 			case MetawebdesignPackage.ROOT__VIEWS:
 			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
 			case MetawebdesignPackage.ROOT__LINK:
+			case MetawebdesignPackage.ROOT__CONSTRAINT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -234,6 +236,11 @@ public class RootItemProvider
 			(createChildParameter
 				(MetawebdesignPackage.Literals.ROOT__LINK,
 				 MetawebdesignFactory.eINSTANCE.createLinkView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.ROOT__CONSTRAINT,
+				 MetawebdesignFactory.eINSTANCE.createConstraint()));
 	}
 
 	/**
