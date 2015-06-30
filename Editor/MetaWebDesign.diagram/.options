@@ -1,7 +1,0 @@
-# Tracing options for the MetaWebDesign.diagram plug-in
-
-# Common issues
-MetaWebDesign.diagram/debug=false
-
-# Visual IDs
-MetaWebDesign.diagram/debug/visualID=false
