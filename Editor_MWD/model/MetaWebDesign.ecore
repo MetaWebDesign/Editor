@@ -184,6 +184,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="#//TypeOperator"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RelationContraint">
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasConstraint" upperBound="-1"

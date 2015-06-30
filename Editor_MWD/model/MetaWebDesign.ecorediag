@@ -664,6 +664,10 @@
         <element xmi:type="ecore:EAttribute" href="MetaWebDesign.ecore#//Constraint/service"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_aclNMx7MEeW8B7dmgfPXjg"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_fRByoB7XEeW8B7dmgfPXjg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="MetaWebDesign.ecore#//Constraint/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fRByoR7XEeW8B7dmgfPXjg"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_ackmIh7MEeW8B7dmgfPXjg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_ackmIx7MEeW8B7dmgfPXjg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_ackmJB7MEeW8B7dmgfPXjg"/>

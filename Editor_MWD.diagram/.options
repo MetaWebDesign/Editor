@@ -1,0 +1,7 @@
+# Tracing options for the Editor_MWD.diagram plug-in
+
+# Common issues
+Editor_MWD.diagram/debug=false
+
+# Visual IDs
+Editor_MWD.diagram/debug/visualID=false
