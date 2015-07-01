@@ -320,44 +320,44 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationContraint_4001(
+		public boolean canCreateRelationClass_4001(
 				Metawebdesign.metawebdesign.Class source,
-				Metawebdesign.metawebdesign.Constraint target) {
-			return canExistRelationContraint_4001(null, source, target);
+				Metawebdesign.metawebdesign.Class target) {
+			return canExistRelationClass_4001(null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationView_4003(
+		public boolean canCreateRelationView_4002(
 				Metawebdesign.metawebdesign.Views source,
 				Metawebdesign.metawebdesign.Class target) {
-			return canExistRelationView_4003(null, source, target);
+			return canExistRelationView_4002(null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationClass_4002(
-				Metawebdesign.metawebdesign.Class source,
-				Metawebdesign.metawebdesign.Class target) {
-			return canExistRelationClass_4002(null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canExistRelationContraint_4001(
-				Metawebdesign.metawebdesign.RelationContraint linkInstance,
+		public boolean canCreateRelationContraint_4003(
 				Metawebdesign.metawebdesign.Class source,
 				Metawebdesign.metawebdesign.Constraint target) {
+			return canExistRelationContraint_4003(null, source, target);
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistRelationClass_4001(
+				Metawebdesign.metawebdesign.RelationClass linkInstance,
+				Metawebdesign.metawebdesign.Class source,
+				Metawebdesign.metawebdesign.Class target) {
 			return true;
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canExistRelationView_4003(
+		public boolean canExistRelationView_4002(
 				Metawebdesign.metawebdesign.RelationView linkInstance,
 				Metawebdesign.metawebdesign.Views source,
 				Metawebdesign.metawebdesign.Class target) {
@@ -367,10 +367,10 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canExistRelationClass_4002(
-				Metawebdesign.metawebdesign.RelationClass linkInstance,
+		public boolean canExistRelationContraint_4003(
+				Metawebdesign.metawebdesign.RelationContraint linkInstance,
 				Metawebdesign.metawebdesign.Class source,
-				Metawebdesign.metawebdesign.Class target) {
+				Metawebdesign.metawebdesign.Constraint target) {
 			return true;
 		}
 	}

@@ -19,7 +19,7 @@ public class MetaWebDesignModelingAssistantProviderOfMenuEditPart
 	@Override
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3007);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Group_3001);
 		return types;
 	}
 

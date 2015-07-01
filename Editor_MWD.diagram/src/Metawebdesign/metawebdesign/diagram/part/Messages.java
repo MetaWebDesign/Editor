@@ -438,32 +438,32 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String FormViewCompInFormCajonEditPart_title;
+	public static String MenuGroupInMenuEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenuLinksInNavMenuCajonEditPart_title;
+	public static String PageViewCompInPageEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String ClassAtributoInClassCajonEditPart_title;
+	public static String NavegationMenuLinksInNavMenuEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenuLinksInNavMenuCajon2EditPart_title;
+	public static String ClassAttributeInCajonClassEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String PageCompVIewInPageCajonEditPart_title;
+	public static String FormCompVIewInFormEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String MenuGrupoInMenuCajonEditPart_title;
+	public static String NavegationMenuLinksInNavMenu2EditPart_title;
 
 	/**
 	 * @generated
@@ -478,57 +478,57 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Constraint_2002_incominglinks;
-
-	/**
-	 * @generated
-	 */
 	public static String NavigatorGroupName_Page_2003_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Form_2005_outgoinglinks;
+	public static String NavigatorGroupName_Class_2004_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2011_outgoinglinks;
+	public static String NavigatorGroupName_Class_2004_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2011_incominglinks;
+	public static String NavigatorGroupName_Constraint_2007_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationContraint_4001_target;
+	public static String NavigatorGroupName_Form_2008_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationContraint_4001_source;
+	public static String NavigatorGroupName_RelationClass_4001_target;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationClass_4002_target;
+	public static String NavigatorGroupName_RelationClass_4001_source;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationClass_4002_source;
+	public static String NavigatorGroupName_RelationView_4002_target;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationView_4003_target;
+	public static String NavigatorGroupName_RelationView_4002_source;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_RelationView_4003_source;
+	public static String NavigatorGroupName_RelationContraint_4003_target;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorGroupName_RelationContraint_4003_source;
 
 	/**
 	 * @generated

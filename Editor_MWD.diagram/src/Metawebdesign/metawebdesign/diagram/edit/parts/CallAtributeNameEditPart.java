@@ -53,7 +53,7 @@ public class CallAtributeNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5010;
+	public static final int VISUAL_ID = 5017;
 
 	/**
 	 * @generated
@@ -305,7 +305,7 @@ public class CallAtributeNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignParserProvider
 					.getParser(
-							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2006,
+							Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_2010,
 							getParserElement(),
 							Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 									.getType(Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeNameEditPart.VISUAL_ID));

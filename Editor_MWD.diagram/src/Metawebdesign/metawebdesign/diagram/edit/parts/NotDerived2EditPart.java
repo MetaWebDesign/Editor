@@ -30,7 +30,7 @@ public class NotDerived2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 3006;
+	public static final int VISUAL_ID = 3007;
 
 	/**
 	 * @generated

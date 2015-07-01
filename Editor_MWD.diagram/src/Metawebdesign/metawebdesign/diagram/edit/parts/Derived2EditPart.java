@@ -30,7 +30,7 @@ public class Derived2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 3005;
+	public static final int VISUAL_ID = 3006;
 
 	/**
 	 * @generated

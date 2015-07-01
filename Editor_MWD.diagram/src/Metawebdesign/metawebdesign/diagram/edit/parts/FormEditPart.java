@@ -30,7 +30,7 @@ public class FormEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2005;
+	public static final int VISUAL_ID = 2008;
 
 	/**
 	 * @generated
@@ -111,10 +111,10 @@ public class FormEditPart extends ShapeNodeEditPart {
 					.setLabel(getPrimaryShape().getFigureFormTitleFigure());
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart) {
 			IFigure pane = getPrimaryShape().getFigureCajonViewCompForm();
 			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) childEditPart)
+			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -128,9 +128,9 @@ public class FormEditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart) {
 			return true;
 		}
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart) {
 			IFigure pane = getPrimaryShape().getFigureCajonViewCompForm();
-			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) childEditPart)
+			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart) childEditPart)
 					.getFigure());
 			return true;
 		}
@@ -161,7 +161,7 @@ public class FormEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart) {
+		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart) {
 			return getPrimaryShape().getFigureCajonViewCompForm();
 		}
 		return getContentPane();

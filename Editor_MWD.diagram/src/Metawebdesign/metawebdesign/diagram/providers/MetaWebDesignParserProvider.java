@@ -22,115 +22,77 @@ public class MetaWebDesignParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser formTitle_5009Parser;
+	private IParser linkViewCRUDName_5001Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getFormTitle_5009Parser() {
-		if (formTitle_5009Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getViews_Title() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			formTitle_5009Parser = parser;
-		}
-		return formTitle_5009Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser className_5017Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getClassName_5017Parser() {
-		if (className_5017Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getClass_Name() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			className_5017Parser = parser;
-		}
-		return className_5017Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser linkViewCRUDName_5014Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getLinkViewCRUDName_5014Parser() {
-		if (linkViewCRUDName_5014Parser == null) {
+	private IParser getLinkViewCRUDName_5001Parser() {
+		if (linkViewCRUDName_5001Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getLink_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			linkViewCRUDName_5014Parser = parser;
+			linkViewCRUDName_5001Parser = parser;
 		}
-		return linkViewCRUDName_5014Parser;
+		return linkViewCRUDName_5001Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser groupName_5013Parser;
+	private IParser menuName_5003Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getGroupName_5013Parser() {
-		if (groupName_5013Parser == null) {
+	private IParser getMenuName_5003Parser() {
+		if (menuName_5003Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getGroup_Name() };
+					.getMenu_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			groupName_5013Parser = parser;
+			menuName_5003Parser = parser;
 		}
-		return groupName_5013Parser;
+		return menuName_5003Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser navegationMenuName_5011Parser;
+	private IParser pageTitle_5008Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getNavegationMenuName_5011Parser() {
-		if (navegationMenuName_5011Parser == null) {
+	private IParser getPageTitle_5008Parser() {
+		if (pageTitle_5008Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getNavegationMenu_Name() };
+					.getViews_Title() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			navegationMenuName_5011Parser = parser;
+			pageTitle_5008Parser = parser;
 		}
-		return navegationMenuName_5011Parser;
+		return pageTitle_5008Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser callAtributeName_5010Parser;
+	private IParser className_5011Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getCallAtributeName_5010Parser() {
-		if (callAtributeName_5010Parser == null) {
+	private IParser getClassName_5011Parser() {
+		if (className_5011Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getCallAtribute_Name() };
+					.getClass_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			callAtributeName_5010Parser = parser;
+			className_5011Parser = parser;
 		}
-		return callAtributeName_5010Parser;
+		return className_5011Parser;
 	}
 
 	/**
@@ -155,210 +117,96 @@ public class MetaWebDesignParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser derivedName_5008Parser;
+	private IParser derivedName_5013Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getDerivedName_5008Parser() {
-		if (derivedName_5008Parser == null) {
+	private IParser getDerivedName_5013Parser() {
+		if (derivedName_5013Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getAttributes_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			derivedName_5008Parser = parser;
+			derivedName_5013Parser = parser;
 		}
-		return derivedName_5008Parser;
+		return derivedName_5013Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser pageTitle_5007Parser;
+	private IParser constraintName_5014Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getPageTitle_5007Parser() {
-		if (pageTitle_5007Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getViews_Title() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			pageTitle_5007Parser = parser;
-		}
-		return pageTitle_5007Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser constraintName_5002Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getConstraintName_5002Parser() {
-		if (constraintName_5002Parser == null) {
+	private IParser getConstraintName_5014Parser() {
+		if (constraintName_5014Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getConstraint_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			constraintName_5002Parser = parser;
+			constraintName_5014Parser = parser;
 		}
-		return constraintName_5002Parser;
+		return constraintName_5014Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser menuName_5019Parser;
+	private IParser formTitle_5015Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getMenuName_5019Parser() {
-		if (menuName_5019Parser == null) {
+	private IParser getFormTitle_5015Parser() {
+		if (formTitle_5015Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getMenu_Name() };
+					.getViews_Title() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			menuName_5019Parser = parser;
+			formTitle_5015Parser = parser;
 		}
-		return menuName_5019Parser;
+		return formTitle_5015Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser linkViewName_5001Parser;
+	private IParser linkViewName_5016Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getLinkViewName_5001Parser() {
-		if (linkViewName_5001Parser == null) {
+	private IParser getLinkViewName_5016Parser() {
+		if (linkViewName_5016Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getLink_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			linkViewName_5001Parser = parser;
+			linkViewName_5016Parser = parser;
 		}
-		return linkViewName_5001Parser;
+		return linkViewName_5016Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser callAtributeName_5003Parser;
+	private IParser callAtributeName_5017Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getCallAtributeName_5003Parser() {
-		if (callAtributeName_5003Parser == null) {
+	private IParser getCallAtributeName_5017Parser() {
+		if (callAtributeName_5017Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getCallAtribute_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			callAtributeName_5003Parser = parser;
+			callAtributeName_5017Parser = parser;
 		}
-		return callAtributeName_5003Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser navegationMenuName_5006Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getNavegationMenuName_5006Parser() {
-		if (navegationMenuName_5006Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getNavegationMenu_Name() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			navegationMenuName_5006Parser = parser;
-		}
-		return navegationMenuName_5006Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser linkViewName_5004Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getLinkViewName_5004Parser() {
-		if (linkViewName_5004Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getLink_Name() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			linkViewName_5004Parser = parser;
-		}
-		return linkViewName_5004Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser linkViewCRUDName_5005Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getLinkViewCRUDName_5005Parser() {
-		if (linkViewCRUDName_5005Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getLink_Name() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			linkViewCRUDName_5005Parser = parser;
-		}
-		return linkViewCRUDName_5005Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser derivedName_5015Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getDerivedName_5015Parser() {
-		if (derivedName_5015Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getAttributes_Name() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			derivedName_5015Parser = parser;
-		}
-		return derivedName_5015Parser;
-	}
-
-	/**
-	 * @generated
-	 */
-	private IParser notDerivedName_5016Parser;
-
-	/**
-	 * @generated
-	 */
-	private IParser getNotDerivedName_5016Parser() {
-		if (notDerivedName_5016Parser == null) {
-			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getAttributes_Name() };
-			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
-					features);
-			notDerivedName_5016Parser = parser;
-		}
-		return notDerivedName_5016Parser;
+		return callAtributeName_5017Parser;
 	}
 
 	/**
@@ -383,58 +231,210 @@ public class MetaWebDesignParserProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	private IParser relationContraintName_6001Parser;
+	private IParser navegationMenuName_5019Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getRelationContraintName_6001Parser() {
-		if (relationContraintName_6001Parser == null) {
+	private IParser getNavegationMenuName_5019Parser() {
+		if (navegationMenuName_5019Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getRelationContraint_Name() };
+					.getNavegationMenu_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			relationContraintName_6001Parser = parser;
+			navegationMenuName_5019Parser = parser;
 		}
-		return relationContraintName_6001Parser;
+		return navegationMenuName_5019Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser relationViewName_6003Parser;
+	private IParser groupName_5002Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getRelationViewName_6003Parser() {
-		if (relationViewName_6003Parser == null) {
+	private IParser getGroupName_5002Parser() {
+		if (groupName_5002Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getRelationView_Name() };
+					.getGroup_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			relationViewName_6003Parser = parser;
+			groupName_5002Parser = parser;
 		}
-		return relationViewName_6003Parser;
+		return groupName_5002Parser;
 	}
 
 	/**
 	 * @generated
 	 */
-	private IParser relationClassName_6002Parser;
+	private IParser callAtributeName_5004Parser;
 
 	/**
 	 * @generated
 	 */
-	private IParser getRelationClassName_6002Parser() {
-		if (relationClassName_6002Parser == null) {
+	private IParser getCallAtributeName_5004Parser() {
+		if (callAtributeName_5004Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getCallAtribute_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			callAtributeName_5004Parser = parser;
+		}
+		return callAtributeName_5004Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser navegationMenuName_5007Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getNavegationMenuName_5007Parser() {
+		if (navegationMenuName_5007Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getNavegationMenu_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			navegationMenuName_5007Parser = parser;
+		}
+		return navegationMenuName_5007Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser linkViewName_5005Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getLinkViewName_5005Parser() {
+		if (linkViewName_5005Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getLink_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			linkViewName_5005Parser = parser;
+		}
+		return linkViewName_5005Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser linkViewCRUDName_5006Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getLinkViewCRUDName_5006Parser() {
+		if (linkViewCRUDName_5006Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getLink_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			linkViewCRUDName_5006Parser = parser;
+		}
+		return linkViewCRUDName_5006Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser derivedName_5009Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getDerivedName_5009Parser() {
+		if (derivedName_5009Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getAttributes_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			derivedName_5009Parser = parser;
+		}
+		return derivedName_5009Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser notDerivedName_5010Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getNotDerivedName_5010Parser() {
+		if (notDerivedName_5010Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getAttributes_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			notDerivedName_5010Parser = parser;
+		}
+		return notDerivedName_5010Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser relationClassName_6001Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getRelationClassName_6001Parser() {
+		if (relationClassName_6001Parser == null) {
 			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getRelationClass_Name() };
 			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
 					features);
-			relationClassName_6002Parser = parser;
+			relationClassName_6001Parser = parser;
 		}
-		return relationClassName_6002Parser;
+		return relationClassName_6001Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser relationViewName_6002Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getRelationViewName_6002Parser() {
+		if (relationViewName_6002Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getRelationView_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			relationViewName_6002Parser = parser;
+		}
+		return relationViewName_6002Parser;
+	}
+
+	/**
+	 * @generated
+	 */
+	private IParser relationContraintName_6003Parser;
+
+	/**
+	 * @generated
+	 */
+	private IParser getRelationContraintName_6003Parser() {
+		if (relationContraintName_6003Parser == null) {
+			EAttribute[] features = new EAttribute[] { Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getRelationContraint_Name() };
+			Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser parser = new Metawebdesign.metawebdesign.diagram.parsers.MessageFormatParser(
+					features);
+			relationContraintName_6003Parser = parser;
+		}
+		return relationContraintName_6003Parser;
 	}
 
 	/**
@@ -442,50 +442,50 @@ public class MetaWebDesignParserProvider extends AbstractProvider implements
 	 */
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
-		case Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart.VISUAL_ID:
-			return getFormTitle_5009Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart.VISUAL_ID:
-			return getClassName_5017Parser();
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID:
-			return getLinkViewCRUDName_5014Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID:
-			return getGroupName_5013Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart.VISUAL_ID:
-			return getNavegationMenuName_5011Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeNameEditPart.VISUAL_ID:
-			return getCallAtributeName_5010Parser();
+			return getLinkViewCRUDName_5001Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID:
+			return getMenuName_5003Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
+			return getPageTitle_5008Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart.VISUAL_ID:
+			return getClassName_5011Parser();
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID:
 			return getNotDerivedName_5012Parser();
 		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID:
-			return getDerivedName_5008Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
-			return getPageTitle_5007Parser();
+			return getDerivedName_5013Parser();
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart.VISUAL_ID:
-			return getConstraintName_5002Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID:
-			return getMenuName_5019Parser();
+			return getConstraintName_5014Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart.VISUAL_ID:
+			return getFormTitle_5015Parser();
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID:
-			return getLinkViewName_5001Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeName2EditPart.VISUAL_ID:
-			return getCallAtributeName_5003Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID:
-			return getNavegationMenuName_5006Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewName2EditPart.VISUAL_ID:
-			return getLinkViewName_5004Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID:
-			return getLinkViewCRUDName_5005Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID:
-			return getDerivedName_5015Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID:
-			return getNotDerivedName_5016Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupName2EditPart.VISUAL_ID:
+			return getLinkViewName_5016Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeNameEditPart.VISUAL_ID:
+			return getCallAtributeName_5017Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID:
 			return getGroupName_5018Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintNameEditPart.VISUAL_ID:
-			return getRelationContraintName_6001Parser();
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart.VISUAL_ID:
-			return getRelationViewName_6003Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart.VISUAL_ID:
+			return getNavegationMenuName_5019Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupName2EditPart.VISUAL_ID:
+			return getGroupName_5002Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeName2EditPart.VISUAL_ID:
+			return getCallAtributeName_5004Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID:
+			return getNavegationMenuName_5007Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewName2EditPart.VISUAL_ID:
+			return getLinkViewName_5005Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID:
+			return getLinkViewCRUDName_5006Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID:
+			return getDerivedName_5009Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID:
+			return getNotDerivedName_5010Parser();
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID:
-			return getRelationClassName_6002Parser();
+			return getRelationClassName_6001Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart.VISUAL_ID:
+			return getRelationViewName_6002Parser();
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintNameEditPart.VISUAL_ID:
+			return getRelationContraintName_6003Parser();
 		}
 		return null;
 	}

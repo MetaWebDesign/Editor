@@ -1,5 +1,6 @@
 package Metawebdesign.metawebdesign.diagram.edit.parts;
 
+import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
@@ -30,7 +31,7 @@ public class LinkViewCRUD2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 3004;
+	public static final int VISUAL_ID = 3005;
 
 	/**
 	 * @generated
@@ -286,6 +287,35 @@ public class LinkViewCRUD2EditPart extends ShapeNodeEditPart {
 			fFigureLinkViewCRUDServiceFigure.setText("<...>");
 
 			this.add(fFigureLinkViewCRUDServiceFigure);
+
+			RectangleFigure linkViewCRUDFigure0 = new RectangleFigure();
+
+			this.add(linkViewCRUDFigure0);
+
+			FlowLayout layoutLinkViewCRUDFigure0 = new FlowLayout();
+			layoutLinkViewCRUDFigure0.setStretchMinorAxis(false);
+			layoutLinkViewCRUDFigure0
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutLinkViewCRUDFigure0
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutLinkViewCRUDFigure0.setMajorSpacing(5);
+			layoutLinkViewCRUDFigure0.setMinorSpacing(5);
+			layoutLinkViewCRUDFigure0.setHorizontal(true);
+
+			linkViewCRUDFigure0.setLayoutManager(layoutLinkViewCRUDFigure0);
+
+			WrappingLabel linkViewCRUDNameFigure1 = new WrappingLabel();
+
+			linkViewCRUDNameFigure1.setText("<...>");
+
+			linkViewCRUDFigure0.add(linkViewCRUDNameFigure1);
+
+			WrappingLabel linkViewCRUDServiceFigure1 = new WrappingLabel();
+
+			linkViewCRUDServiceFigure1.setText("<...>");
+
+			linkViewCRUDFigure0.add(linkViewCRUDServiceFigure1);
 
 		}
 

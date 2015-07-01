@@ -41,10 +41,6 @@ public class ConstraintCreateCommand extends EditElementCommand {
 	 * @generated
 	 */
 	public boolean canExecute() {
-		Metawebdesign.metawebdesign.Root container = (Metawebdesign.metawebdesign.Root) getElementToEdit();
-		if (container.getConstraint() != null) {
-			return false;
-		}
 		return true;
 
 	}
@@ -58,7 +54,7 @@ public class ConstraintCreateCommand extends EditElementCommand {
 				.createConstraint();
 
 		Metawebdesign.metawebdesign.Root owner = (Metawebdesign.metawebdesign.Root) getElementToEdit();
-		owner.setConstraint(newElement);
+		owner.getConstraint().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

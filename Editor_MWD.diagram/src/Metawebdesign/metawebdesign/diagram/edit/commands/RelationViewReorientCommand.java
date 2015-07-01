@@ -67,7 +67,7 @@ public class RelationViewReorientCommand extends EditElementCommand {
 		Metawebdesign.metawebdesign.Class target = (Metawebdesign.metawebdesign.Class) getLink()
 				.getFromClass().get(0);
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelationView_4003(getLink(),
+				.getLinkConstraints().canExistRelationView_4002(getLink(),
 						getNewSource(), target);
 	}
 
@@ -84,7 +84,7 @@ public class RelationViewReorientCommand extends EditElementCommand {
 		Metawebdesign.metawebdesign.Views source = (Metawebdesign.metawebdesign.Views) getLink()
 				.eContainer();
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelationView_4003(getLink(),
+				.getLinkConstraints().canExistRelationView_4002(getLink(),
 						source, getNewTarget());
 	}
 

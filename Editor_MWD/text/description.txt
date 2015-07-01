@@ -15,7 +15,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Reference views : Views<<0..*>>
     Reference view_component : ViewComponent<<0..*>>
     Reference link : Link<<0..*>>
-    Reference constraint : Constraint
+    Reference constraint : Constraint<<0..*>>
 
   Class Class
     Reference hasAttributes : Attributes<<0..15>>

@@ -24,7 +24,7 @@ public class MenuItemSemanticEditPolicy
 	 */
 	public MenuItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2012);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Menu_2002);
 	}
 
 	/**
@@ -57,7 +57,7 @@ public class MenuItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.MenuGrupoInMenuCajonEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupInMenuEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();

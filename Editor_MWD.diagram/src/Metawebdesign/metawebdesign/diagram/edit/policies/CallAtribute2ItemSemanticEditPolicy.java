@@ -20,7 +20,7 @@ public class CallAtribute2ItemSemanticEditPolicy
 	 */
 	public CallAtribute2ItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3001);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.CallAtribute_3002);
 	}
 
 	/**

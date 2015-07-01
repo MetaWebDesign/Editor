@@ -31,7 +31,7 @@ public class MetaWebDesignModelingAssistantProviderOfPageEditPart
 	public List<IElementType> doGetRelTypesOnSource(
 			Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart source) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002);
 		return types;
 	}
 
@@ -58,7 +58,7 @@ public class MetaWebDesignModelingAssistantProviderOfPageEditPart
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
 		if (targetEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003);
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002);
 		}
 		return types;
 	}
@@ -83,8 +83,8 @@ public class MetaWebDesignModelingAssistantProviderOfPageEditPart
 			Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart source,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2011);
+		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002) {
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2004);
 		}
 		return types;
 	}

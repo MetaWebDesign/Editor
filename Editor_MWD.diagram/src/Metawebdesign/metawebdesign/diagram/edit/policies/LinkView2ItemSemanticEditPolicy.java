@@ -20,7 +20,7 @@ public class LinkView2ItemSemanticEditPolicy
 	 */
 	public LinkView2ItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3003);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3004);
 	}
 
 	/**

@@ -27,7 +27,7 @@ public class FormItemSemanticEditPolicy
 	 */
 	public FormItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2005);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2008);
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class FormItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.FormViewCompInFormCajonEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();
@@ -113,7 +113,7 @@ public class FormItemSemanticEditPolicy
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewCreateCommand(
 					req, req.getSource(), req.getTarget()));
@@ -126,7 +126,7 @@ public class FormItemSemanticEditPolicy
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002 == req
 				.getElementType()) {
 			return null;
 		}

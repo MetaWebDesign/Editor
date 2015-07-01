@@ -67,7 +67,7 @@ public class RelationContraintReorientCommand extends EditElementCommand {
 		Metawebdesign.metawebdesign.Constraint target = (Metawebdesign.metawebdesign.Constraint) getLink()
 				.getGoRConstraint2().get(0);
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelationContraint_4001(getLink(),
+				.getLinkConstraints().canExistRelationContraint_4003(getLink(),
 						getNewSource(), target);
 	}
 
@@ -84,7 +84,7 @@ public class RelationContraintReorientCommand extends EditElementCommand {
 		Metawebdesign.metawebdesign.Class source = (Metawebdesign.metawebdesign.Class) getLink()
 				.eContainer();
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistRelationContraint_4001(getLink(),
+				.getLinkConstraints().canExistRelationContraint_4003(getLink(),
 						source, getNewTarget());
 	}
 

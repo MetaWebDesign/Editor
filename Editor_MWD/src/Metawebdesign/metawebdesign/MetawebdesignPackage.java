@@ -131,7 +131,7 @@ public interface MetawebdesignPackage extends EPackage {
 	int ROOT__LINK = 6;
 
 	/**
-	 * The feature id for the '<em><b>Constraint</b></em>' containment reference.
+	 * The feature id for the '<em><b>Constraint</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1650,10 +1650,10 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getRoot_Link();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Metawebdesign.metawebdesign.Root#getConstraint <em>Constraint</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Root#getConstraint <em>Constraint</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Constraint</em>'.
+	 * @return the meta object for the containment reference list '<em>Constraint</em>'.
 	 * @see Metawebdesign.metawebdesign.Root#getConstraint()
 	 * @see #getRoot()
 	 * @generated
@@ -2702,7 +2702,7 @@ public interface MetawebdesignPackage extends EPackage {
 		EReference ROOT__LINK = eINSTANCE.getRoot_Link();
 
 		/**
-		 * The meta object literal for the '<em><b>Constraint</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Constraint</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

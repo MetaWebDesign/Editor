@@ -20,7 +20,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 4003;
+	public static final int VISUAL_ID = 4002;
 
 	/**
 	 * @generated
@@ -117,17 +117,18 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 			setTargetDecoration(createTargetDecoration());
 			createContents();
 		}
-		
+
 		private void createContents() {
 			fFigureRelationViewNameFigure = new WrappingLabel();
 			fFigureRelationViewNameFigure.setText("<...>");
 			this.add(fFigureRelationViewNameFigure);
 		}
 		
+
 		public WrappingLabel getFigureRelationViewNameFigure() {
 			return fFigureRelationViewNameFigure;
 		}
-
+		
 		/**
 		 * @generated
 		 */

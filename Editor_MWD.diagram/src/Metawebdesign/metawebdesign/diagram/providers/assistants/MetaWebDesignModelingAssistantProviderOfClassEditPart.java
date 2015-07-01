@@ -21,8 +21,8 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 	@Override
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
 		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3006);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3007);
 		return types;
 	}
 
@@ -42,8 +42,8 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 	public List<IElementType> doGetRelTypesOnSource(
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart source) {
 		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4001);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003);
 		return types;
 	}
 
@@ -69,11 +69,11 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart source,
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
-		if (targetEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4001);
-		}
 		if (targetEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002);
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001);
+		}
+		if (targetEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart) {
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003);
 		}
 		return types;
 	}
@@ -98,10 +98,10 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart source,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4001) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2002);
-		} else if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2011);
+		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001) {
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2004);
+		} else if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003) {
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2007);
 		}
 		return types;
 	}
@@ -122,8 +122,8 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 	public List<IElementType> doGetRelTypesOnTarget(
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001);
+		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002);
 		return types;
 	}
 
@@ -147,11 +147,11 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart target,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2005);
+		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001) {
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2004);
+		} else if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002) {
 			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2003);
-		} else if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2011);
+			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2008);
 		}
 		return types;
 	}

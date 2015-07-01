@@ -30,5 +30,7 @@ public interface RootValidator {
 	boolean validateViews(EList<Views> value);
 	boolean validateView_component(EList<ViewComponent> value);
 	boolean validateLink(EList<Link> value);
+	boolean validateConstraint(EList<Constraint> value);
+
 	boolean validateConstraint(Constraint value);
 }

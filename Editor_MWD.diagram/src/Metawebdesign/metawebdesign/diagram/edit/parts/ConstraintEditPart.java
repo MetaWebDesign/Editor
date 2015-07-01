@@ -30,7 +30,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2002;
+	public static final int VISUAL_ID = 2007;
 
 	/**
 	 * @generated
@@ -156,7 +156,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected NodeFigure createNodePlate() {
-		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(100, 16);
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
 		return result;
 	}
 
@@ -272,7 +272,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public ConstraintFigure() {
-			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
+			this.setMaximumSize(new Dimension(getMapMode().DPtoLP(100),
 					getMapMode().DPtoLP(16)));
 			createContents();
 		}
@@ -281,12 +281,6 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		private void createContents() {
-
-			fFigureConstraintNameFigure = new WrappingLabel();
-
-			fFigureConstraintNameFigure.setText("<...>");
-
-			this.add(fFigureConstraintNameFigure);
 
 			fFigureConstraintOperatorFigure = new WrappingLabel();
 
@@ -305,6 +299,12 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 			fFigureConstraintServiceFigure.setText("<...>");
 
 			this.add(fFigureConstraintServiceFigure);
+
+			fFigureConstraintNameFigure = new WrappingLabel();
+
+			fFigureConstraintNameFigure.setText("<...>");
+
+			this.add(fFigureConstraintNameFigure);
 
 		}
 

@@ -57,7 +57,7 @@ public class RelationContraintCreateCommand extends EditElementCommand {
 		}
 		// target may be null here but it's possible to check constraint
 		return Metawebdesign.metawebdesign.diagram.edit.policies.MetaWebDesignBaseItemSemanticEditPolicy
-				.getLinkConstraints().canCreateRelationContraint_4001(
+				.getLinkConstraints().canCreateRelationContraint_4003(
 						getSource(), getTarget());
 	}
 

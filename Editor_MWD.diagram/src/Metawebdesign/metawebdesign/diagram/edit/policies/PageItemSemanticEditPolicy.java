@@ -71,7 +71,7 @@ public class PageItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.PageCompVIewInPageCajonEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.PageViewCompInPageEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();
@@ -113,7 +113,7 @@ public class PageItemSemanticEditPolicy
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.RelationViewCreateCommand(
 					req, req.getSource(), req.getTarget()));
@@ -126,7 +126,7 @@ public class PageItemSemanticEditPolicy
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4003 == req
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4002 == req
 				.getElementType()) {
 			return null;
 		}

@@ -30,7 +30,7 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 3001;
+	public static final int VISUAL_ID = 3002;
 
 	/**
 	 * @generated
@@ -156,7 +156,7 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected NodeFigure createNodePlate() {
-		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(100, 16);
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
 		return result;
 	}
 
@@ -272,9 +272,8 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public CallAtributeFigure() {
-			this.setLineWidth(0);
-			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
-					getMapMode().DPtoLP(16)));
+			this.setMaximumSize(new Dimension(getMapMode().DPtoLP(100),
+					getMapMode().DPtoLP(10)));
 			createContents();
 		}
 
@@ -283,17 +282,17 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			fFigureCallAtributeNameFigure = new WrappingLabel();
-
-			fFigureCallAtributeNameFigure.setText("<...>");
-
-			this.add(fFigureCallAtributeNameFigure);
-
 			fFigureCallAtributeTypePresentationFigure = new WrappingLabel();
 
 			fFigureCallAtributeTypePresentationFigure.setText("<...>");
 
 			this.add(fFigureCallAtributeTypePresentationFigure);
+
+			fFigureCallAtributeNameFigure = new WrappingLabel();
+
+			fFigureCallAtributeNameFigure.setText("<...>");
+
+			this.add(fFigureCallAtributeNameFigure);
 
 			fFigureCallAtributePositionHorizontalFigure = new WrappingLabel();
 
