@@ -283,17 +283,17 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			fFigureCallAtributeTypePresentationFigure = new WrappingLabel();
-
-			fFigureCallAtributeTypePresentationFigure.setText("<...>");
-
-			this.add(fFigureCallAtributeTypePresentationFigure);
-
 			fFigureCallAtributeNameFigure = new WrappingLabel();
 
 			fFigureCallAtributeNameFigure.setText("<...>");
 
 			this.add(fFigureCallAtributeNameFigure);
+
+			fFigureCallAtributeTypePresentationFigure = new WrappingLabel();
+
+			fFigureCallAtributeTypePresentationFigure.setText("<...>");
+
+			this.add(fFigureCallAtributeTypePresentationFigure);
 
 			fFigureCallAtributePositionHorizontalFigure = new WrappingLabel();
 

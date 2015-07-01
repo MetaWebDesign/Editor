@@ -117,23 +117,17 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 			setTargetDecoration(createTargetDecoration());
 			createContents();
 		}
-
-		/**
-		 * @generated
-		 */
+		
 		private void createContents() {
 			fFigureRelationViewNameFigure = new WrappingLabel();
 			fFigureRelationViewNameFigure.setText("<...>");
 			this.add(fFigureRelationViewNameFigure);
 		}
 		
-		/**
-		 * @generated
-		 */
 		public WrappingLabel getFigureRelationViewNameFigure() {
 			return fFigureRelationViewNameFigure;
 		}
-		
+
 		/**
 		 * @generated
 		 */

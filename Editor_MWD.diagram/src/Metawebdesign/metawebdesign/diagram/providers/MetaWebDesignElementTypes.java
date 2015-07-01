@@ -49,43 +49,7 @@ public class MetaWebDesignElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType LinkView_2001 = getElementType("Editor_MWD.diagram.LinkView_2001"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Constraint_2002 = getElementType("Editor_MWD.diagram.Constraint_2002"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Page_2003 = getElementType("Editor_MWD.diagram.Page_2003"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Derived_2004 = getElementType("Editor_MWD.diagram.Derived_2004"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
 	public static final IElementType Form_2005 = getElementType("Editor_MWD.diagram.Form_2005"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType CallAtribute_2006 = getElementType("Editor_MWD.diagram.CallAtribute_2006"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType NavegationMenu_2007 = getElementType("Editor_MWD.diagram.NavegationMenu_2007"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType NotDerived_2008 = getElementType("Editor_MWD.diagram.NotDerived_2008"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Group_2009 = getElementType("Editor_MWD.diagram.Group_2009"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType LinkViewCRUD_2010 = getElementType("Editor_MWD.diagram.LinkViewCRUD_2010"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -93,7 +57,43 @@ public class MetaWebDesignElementTypes {
 	/**
 	 * @generated
 	 */
+	public static final IElementType LinkViewCRUD_2010 = getElementType("Editor_MWD.diagram.LinkViewCRUD_2010"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Group_2009 = getElementType("Editor_MWD.diagram.Group_2009"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType NavegationMenu_2007 = getElementType("Editor_MWD.diagram.NavegationMenu_2007"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType CallAtribute_2006 = getElementType("Editor_MWD.diagram.CallAtribute_2006"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType NotDerived_2008 = getElementType("Editor_MWD.diagram.NotDerived_2008"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Derived_2004 = getElementType("Editor_MWD.diagram.Derived_2004"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Page_2003 = getElementType("Editor_MWD.diagram.Page_2003"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Constraint_2002 = getElementType("Editor_MWD.diagram.Constraint_2002"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
 	public static final IElementType Menu_2012 = getElementType("Editor_MWD.diagram.Menu_2012"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType LinkView_2001 = getElementType("Editor_MWD.diagram.LinkView_2001"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -129,11 +129,11 @@ public class MetaWebDesignElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType RelationClass_4002 = getElementType("Editor_MWD.diagram.RelationClass_4002"); //$NON-NLS-1$
+	public static final IElementType RelationView_4003 = getElementType("Editor_MWD.diagram.RelationView_4003"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType RelationView_4003 = getElementType("Editor_MWD.diagram.RelationView_4003"); //$NON-NLS-1$
+	public static final IElementType RelationClass_4002 = getElementType("Editor_MWD.diagram.RelationClass_4002"); //$NON-NLS-1$
 
 	/**
 	 * @generated
@@ -177,53 +177,53 @@ public class MetaWebDesignElementTypes {
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getRoot());
 
-			elements.put(LinkView_2001,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getLinkView());
-
-			elements.put(Constraint_2002,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getConstraint());
-
-			elements.put(Page_2003,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getPage());
-
-			elements.put(Derived_2004,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getDerived());
-
 			elements.put(Form_2005,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getForm());
-
-			elements.put(CallAtribute_2006,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getCallAtribute());
-
-			elements.put(NavegationMenu_2007,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getNavegationMenu());
-
-			elements.put(NotDerived_2008,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getNotDerived());
-
-			elements.put(Group_2009,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getGroup());
-
-			elements.put(LinkViewCRUD_2010,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getLinkViewCRUD());
 
 			elements.put(Class_2011,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getClass_());
 
+			elements.put(LinkViewCRUD_2010,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getLinkViewCRUD());
+
+			elements.put(Group_2009,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getGroup());
+
+			elements.put(NavegationMenu_2007,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getNavegationMenu());
+
+			elements.put(CallAtribute_2006,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getCallAtribute());
+
+			elements.put(NotDerived_2008,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getNotDerived());
+
+			elements.put(Derived_2004,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getDerived());
+
+			elements.put(Page_2003,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getPage());
+
+			elements.put(Constraint_2002,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getConstraint());
+
 			elements.put(Menu_2012,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getMenu());
+
+			elements.put(LinkView_2001,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getLinkView());
 
 			elements.put(CallAtribute_3001,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
@@ -257,13 +257,13 @@ public class MetaWebDesignElementTypes {
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getRelationContraint());
 
-			elements.put(RelationClass_4002,
-					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getRelationClass());
-
 			elements.put(RelationView_4003,
 					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getRelationView());
+
+			elements.put(RelationClass_4002,
+					Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getRelationClass());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -282,18 +282,18 @@ public class MetaWebDesignElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(Root_1000);
-			KNOWN_ELEMENT_TYPES.add(LinkView_2001);
-			KNOWN_ELEMENT_TYPES.add(Constraint_2002);
-			KNOWN_ELEMENT_TYPES.add(Page_2003);
-			KNOWN_ELEMENT_TYPES.add(Derived_2004);
 			KNOWN_ELEMENT_TYPES.add(Form_2005);
-			KNOWN_ELEMENT_TYPES.add(CallAtribute_2006);
-			KNOWN_ELEMENT_TYPES.add(NavegationMenu_2007);
-			KNOWN_ELEMENT_TYPES.add(NotDerived_2008);
-			KNOWN_ELEMENT_TYPES.add(Group_2009);
-			KNOWN_ELEMENT_TYPES.add(LinkViewCRUD_2010);
 			KNOWN_ELEMENT_TYPES.add(Class_2011);
+			KNOWN_ELEMENT_TYPES.add(LinkViewCRUD_2010);
+			KNOWN_ELEMENT_TYPES.add(Group_2009);
+			KNOWN_ELEMENT_TYPES.add(NavegationMenu_2007);
+			KNOWN_ELEMENT_TYPES.add(CallAtribute_2006);
+			KNOWN_ELEMENT_TYPES.add(NotDerived_2008);
+			KNOWN_ELEMENT_TYPES.add(Derived_2004);
+			KNOWN_ELEMENT_TYPES.add(Page_2003);
+			KNOWN_ELEMENT_TYPES.add(Constraint_2002);
 			KNOWN_ELEMENT_TYPES.add(Menu_2012);
+			KNOWN_ELEMENT_TYPES.add(LinkView_2001);
 			KNOWN_ELEMENT_TYPES.add(CallAtribute_3001);
 			KNOWN_ELEMENT_TYPES.add(NavegationMenu_3002);
 			KNOWN_ELEMENT_TYPES.add(LinkView_3003);
@@ -302,8 +302,8 @@ public class MetaWebDesignElementTypes {
 			KNOWN_ELEMENT_TYPES.add(NotDerived_3006);
 			KNOWN_ELEMENT_TYPES.add(Group_3007);
 			KNOWN_ELEMENT_TYPES.add(RelationContraint_4001);
-			KNOWN_ELEMENT_TYPES.add(RelationClass_4002);
 			KNOWN_ELEMENT_TYPES.add(RelationView_4003);
+			KNOWN_ELEMENT_TYPES.add(RelationClass_4002);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -315,30 +315,30 @@ public class MetaWebDesignElementTypes {
 		switch (visualID) {
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return Root_1000;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
-			return LinkView_2001;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
-			return Constraint_2002;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return Page_2003;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return Derived_2004;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
 			return Form_2005;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
-			return CallAtribute_2006;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
-			return NavegationMenu_2007;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return NotDerived_2008;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			return Group_2009;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
-			return LinkViewCRUD_2010;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return Class_2011;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
+			return LinkViewCRUD_2010;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			return Group_2009;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
+			return NavegationMenu_2007;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
+			return CallAtribute_2006;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return NotDerived_2008;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return Derived_2004;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return Page_2003;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+			return Constraint_2002;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
 			return Menu_2012;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			return LinkView_2001;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
 			return CallAtribute_3001;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
@@ -355,10 +355,10 @@ public class MetaWebDesignElementTypes {
 			return Group_3007;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID:
 			return RelationContraint_4001;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			return RelationClass_4002;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
 			return RelationView_4003;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
+			return RelationClass_4002;
 		}
 		return null;
 	}

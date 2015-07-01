@@ -118,7 +118,7 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 			createContents();
 		}
 
-		
+
 		private void createContents() {
 			fFigureRelationClassNameFigure = new WrappingLabel();
 			fFigureRelationClassNameFigure.setText("<...>");

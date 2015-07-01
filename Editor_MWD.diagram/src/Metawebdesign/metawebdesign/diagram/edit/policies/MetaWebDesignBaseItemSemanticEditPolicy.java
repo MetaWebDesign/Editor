@@ -329,19 +329,19 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationClass_4002(
-				Metawebdesign.metawebdesign.Class source,
+		public boolean canCreateRelationView_4003(
+				Metawebdesign.metawebdesign.Views source,
 				Metawebdesign.metawebdesign.Class target) {
-			return canExistRelationClass_4002(null, source, target);
+			return canExistRelationView_4003(null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationView_4003(
-				Metawebdesign.metawebdesign.Views source,
+		public boolean canCreateRelationClass_4002(
+				Metawebdesign.metawebdesign.Class source,
 				Metawebdesign.metawebdesign.Class target) {
-			return canExistRelationView_4003(null, source, target);
+			return canExistRelationClass_4002(null, source, target);
 		}
 
 		/**
@@ -357,9 +357,9 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canExistRelationClass_4002(
-				Metawebdesign.metawebdesign.RelationClass linkInstance,
-				Metawebdesign.metawebdesign.Class source,
+		public boolean canExistRelationView_4003(
+				Metawebdesign.metawebdesign.RelationView linkInstance,
+				Metawebdesign.metawebdesign.Views source,
 				Metawebdesign.metawebdesign.Class target) {
 			return true;
 		}
@@ -367,9 +367,9 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canExistRelationView_4003(
-				Metawebdesign.metawebdesign.RelationView linkInstance,
-				Metawebdesign.metawebdesign.Views source,
+		public boolean canExistRelationClass_4002(
+				Metawebdesign.metawebdesign.RelationClass linkInstance,
+				Metawebdesign.metawebdesign.Class source,
 				Metawebdesign.metawebdesign.Class target) {
 			return true;
 		}

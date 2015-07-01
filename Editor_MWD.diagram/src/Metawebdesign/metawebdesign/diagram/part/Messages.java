@@ -438,7 +438,7 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String PageCompVIewInPageCajonEditPart_title;
+	public static String FormViewCompInFormCajonEditPart_title;
 
 	/**
 	 * @generated
@@ -448,7 +448,7 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String FormViewCompInFormCajonEditPart_title;
+	public static String ClassAtributoInClassCajonEditPart_title;
 
 	/**
 	 * @generated
@@ -458,7 +458,7 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String ClassAtributoInClassCajonEditPart_title;
+	public static String PageCompVIewInPageCajonEditPart_title;
 
 	/**
 	 * @generated
