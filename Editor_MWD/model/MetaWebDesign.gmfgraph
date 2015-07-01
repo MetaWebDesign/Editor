@@ -138,7 +138,9 @@
           <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
         </children>
         <children xsi:type="gmfgraph:Label" name="MenuOrientatedFigure" text="&lt;...>"/>
-        <children xsi:type="gmfgraph:Rectangle" name="CajonGrupo"/>
+        <children xsi:type="gmfgraph:Rectangle" name="CajonGrupo">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData"/>
+        </children>
       </actualFigure>
       <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.1"/>
@@ -229,18 +231,19 @@
       <actualFigure xsi:type="gmfgraph:Rectangle" name="ViewComponentFigure"/>
     </descriptors>
     <descriptors name="CallAtributeFigure">
-      <actualFigure xsi:type="gmfgraph:Rectangle" name="CallAtributeFigure">
-        <maximumSize dx="100" dy="10"/>
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CallAtributeFigure" lineWidth="0">
+        <layout xsi:type="gmfgraph:StackLayout"/>
+        <preferredSize dx="100" dy="16"/>
         <children xsi:type="gmfgraph:Label" name="CallAtributeTypePresentationFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="CallAtributePositionHorizontalFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="CallAtributeNameFigure" text="&lt;...>">
           <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
         </children>
-        <children xsi:type="gmfgraph:Label" name="CallAtributePositionHorizontalFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="CallAtributePostionVerticalFigure" text="&lt;...>"/>
       </actualFigure>
       <accessors figure="//@figures.0/@descriptors.25/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.25/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.25/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.25/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.25/@actualFigure/@children.3"/>
     </descriptors>
     <descriptors name="CallAtributeGetAttributeFigure">
@@ -299,7 +302,8 @@
     </descriptors>
     <descriptors name="ConstraintFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="ConstraintFigure">
-        <maximumSize dx="100" dy="16"/>
+        <layout xsi:type="gmfgraph:StackLayout"/>
+        <preferredSize dx="100" dy="20"/>
         <children xsi:type="gmfgraph:Label" name="ConstraintOperatorFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="ConstraintValueFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="ConstraintServiceFigure" text="&lt;...>"/>

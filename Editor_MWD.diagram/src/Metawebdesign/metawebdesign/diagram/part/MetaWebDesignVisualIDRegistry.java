@@ -124,48 +124,58 @@ public class MetaWebDesignVisualIDRegistry {
 				return Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID;
 			}
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getMenu().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID;
-			}
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getPage().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID;
-			}
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getClass_().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID;
-			}
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getNotDerived().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID;
+					.getCallAtribute().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID;
 			}
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getDerived().isSuperTypeOf(domainElement.eClass())) {
 				return Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID;
 			}
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getConstraint().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID;
-			}
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getForm().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID;
+					.getClass_().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID;
 			}
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getLinkView().isSuperTypeOf(domainElement.eClass())) {
 				return Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID;
 			}
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getCallAtribute().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID;
-			}
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getGroup().isSuperTypeOf(domainElement.eClass())) {
 				return Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID;
 			}
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getMenu().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID;
+			}
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getNotDerived().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID;
+			}
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getConstraint().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID;
+			}
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getPage().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID;
+			}
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getForm().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID;
+			}
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getNavegationMenu().isSuperTypeOf(domainElement.eClass())) {
 				return Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID;
+			}
+			break;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getDerived().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID;
+			}
+			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+					.getNotDerived().isSuperTypeOf(domainElement.eClass())) {
+				return Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID;
 			}
 			break;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupInMenuEditPart.VISUAL_ID:
@@ -192,16 +202,6 @@ public class MetaWebDesignVisualIDRegistry {
 			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 					.getLinkViewCRUD().isSuperTypeOf(domainElement.eClass())) {
 				return Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID;
-			}
-			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getDerived().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID;
-			}
-			if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getNotDerived().isSuperTypeOf(domainElement.eClass())) {
-				return Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID;
 			}
 			break;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart.VISUAL_ID:
@@ -255,34 +255,34 @@ public class MetaWebDesignVisualIDRegistry {
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID == nodeVisualID) {
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID == nodeVisualID) {
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID == nodeVisualID) {
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID == nodeVisualID) {
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID == nodeVisualID) {
@@ -294,19 +294,13 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupInMenuEditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.PageViewCompInPageEditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -318,18 +312,39 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.MenuNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupInMenuEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.PageViewCompInPageEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -341,26 +356,21 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeNameEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.GroupNameEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenu2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -392,13 +402,11 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -423,14 +431,6 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart.VISUAL_ID:
 			if (Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
@@ -447,8 +447,8 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -457,8 +457,8 @@ public class MetaWebDesignVisualIDRegistry {
 				return true;
 			}
 			break;
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID:
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintNameEditPart.VISUAL_ID == nodeVisualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -474,16 +474,16 @@ public class MetaWebDesignVisualIDRegistry {
 			return -1;
 		}
 		if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-				.getRelationClass().isSuperTypeOf(domainElement.eClass())) {
-			return Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID;
+				.getRelationContraint().isSuperTypeOf(domainElement.eClass())) {
+			return Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID;
 		}
 		if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 				.getRelationView().isSuperTypeOf(domainElement.eClass())) {
 			return Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID;
 		}
 		if (Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-				.getRelationContraint().isSuperTypeOf(domainElement.eClass())) {
-			return Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID;
+				.getRelationClass().isSuperTypeOf(domainElement.eClass())) {
+			return Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID;
 		}
 		return -1;
 	}
@@ -516,10 +516,10 @@ public class MetaWebDesignVisualIDRegistry {
 	 */
 	public static boolean isCompartmentVisualID(int visualID) {
 		switch (visualID) {
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupInMenuEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.PageViewCompInPageEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenuEditPart.VISUAL_ID:
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart.VISUAL_ID:
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenu2EditPart.VISUAL_ID:
 			return true;

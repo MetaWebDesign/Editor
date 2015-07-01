@@ -27,14 +27,14 @@ public class MetaWebDesignDiagramUpdater {
 				.getVisualID(view)) {
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RootEditPart.VISUAL_ID:
 			return getRoot_1000SemanticChildren(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
+			return getClassAttributeInCajonClass_7004SemanticChildren(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuGroupInMenuEditPart.VISUAL_ID:
 			return getMenuGroupInMenu_7001SemanticChildren(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.PageViewCompInPageEditPart.VISUAL_ID:
 			return getPageViewCompInPage_7002SemanticChildren(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenuEditPart.VISUAL_ID:
 			return getNavegationMenuLinksInNavMenu_7003SemanticChildren(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassAttributeInCajonClassEditPart.VISUAL_ID:
-			return getClassAttributeInCajonClass_7004SemanticChildren(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart.VISUAL_ID:
 			return getFormCompVIewInForm_7005SemanticChildren(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuLinksInNavMenu2EditPart.VISUAL_ID:
@@ -70,12 +70,80 @@ public class MetaWebDesignDiagramUpdater {
 				continue;
 			}
 		}
+		for (Iterator<?> it = modelElement.getView_component().iterator(); it
+				.hasNext();) {
+			Metawebdesign.metawebdesign.ViewComponent childElement = (Metawebdesign.metawebdesign.ViewComponent) it
+					.next();
+			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getAttribute().iterator(); it
+				.hasNext();) {
+			Metawebdesign.metawebdesign.Attributes childElement = (Metawebdesign.metawebdesign.Attributes) it
+					.next();
+			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getClass_().iterator(); it.hasNext();) {
+			Metawebdesign.metawebdesign.Class childElement = (Metawebdesign.metawebdesign.Class) it
+					.next();
+			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getGroup().iterator(); it.hasNext();) {
+			Metawebdesign.metawebdesign.Group childElement = (Metawebdesign.metawebdesign.Group) it
+					.next();
+			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
 		for (Iterator<?> it = modelElement.getMenu().iterator(); it.hasNext();) {
 			Metawebdesign.metawebdesign.Menu childElement = (Metawebdesign.metawebdesign.Menu) it
 					.next();
 			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getNodeVisualID(view, childElement);
 			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID) {
+				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getConstraint().iterator(); it
+				.hasNext();) {
+			Metawebdesign.metawebdesign.Constraint childElement = (Metawebdesign.metawebdesign.Constraint) it
+					.next();
+			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID) {
 				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -97,69 +165,36 @@ public class MetaWebDesignDiagramUpdater {
 				continue;
 			}
 		}
-		for (Iterator<?> it = modelElement.getClass_().iterator(); it.hasNext();) {
-			Metawebdesign.metawebdesign.Class childElement = (Metawebdesign.metawebdesign.Class) it
-					.next();
-			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> getClassAttributeInCajonClass_7004SemanticChildren(
+			View view) {
+		if (false == view.eContainer() instanceof View) {
+			return Collections.emptyList();
 		}
-		for (Iterator<?> it = modelElement.getAttribute().iterator(); it
+		View containerView = (View) view.eContainer();
+		if (!containerView.isSetElement()) {
+			return Collections.emptyList();
+		}
+		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) containerView
+				.getElement();
+		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor>();
+		for (Iterator<?> it = modelElement.getHasAttributes().iterator(); it
 				.hasNext();) {
 			Metawebdesign.metawebdesign.Attributes childElement = (Metawebdesign.metawebdesign.Attributes) it
 					.next();
 			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID) {
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID) {
 				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
 						childElement, visualID));
 				continue;
 			}
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getConstraint().iterator(); it
-				.hasNext();) {
-			Metawebdesign.metawebdesign.Constraint childElement = (Metawebdesign.metawebdesign.Constraint) it
-					.next();
-			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getView_component().iterator(); it
-				.hasNext();) {
-			Metawebdesign.metawebdesign.ViewComponent childElement = (Metawebdesign.metawebdesign.ViewComponent) it
-					.next();
-			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getGroup().iterator(); it.hasNext();) {
-			Metawebdesign.metawebdesign.Group childElement = (Metawebdesign.metawebdesign.Group) it
-					.next();
-			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID) {
+			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID) {
 				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -271,41 +306,6 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> getClassAttributeInCajonClass_7004SemanticChildren(
-			View view) {
-		if (false == view.eContainer() instanceof View) {
-			return Collections.emptyList();
-		}
-		View containerView = (View) view.eContainer();
-		if (!containerView.isSetElement()) {
-			return Collections.emptyList();
-		}
-		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) containerView
-				.getElement();
-		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor>();
-		for (Iterator<?> it = modelElement.getHasAttributes().iterator(); it
-				.hasNext();) {
-			Metawebdesign.metawebdesign.Attributes childElement = (Metawebdesign.metawebdesign.Attributes) it
-					.next();
-			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID) {
-				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> getFormCompVIewInForm_7005SemanticChildren(
 			View view) {
 		if (false == view.eContainer() instanceof View) {
@@ -384,28 +384,32 @@ public class MetaWebDesignDiagramUpdater {
 			return getRoot_1000ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
 			return getLinkViewCRUD_2001ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2002ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2003ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return getClass_2004ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return getNotDerived_2005ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return getDerived_2006ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
-			return getConstraint_2007ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2008ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
-			return getLinkView_2009ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
 			return getCallAtribute_2010ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return getDerived_2006ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+			return getClass_2004ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			return getLinkView_2009ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 			return getGroup_2011ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2002ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return getNotDerived_2005ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+			return getConstraint_2007ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2003ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2008ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
 			return getNavegationMenu_2012ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return getDerived_3006ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return getNotDerived_3007ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID:
 			return getGroup_3001ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
@@ -416,16 +420,12 @@ public class MetaWebDesignDiagramUpdater {
 			return getLinkView_3004ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
 			return getLinkViewCRUD_3005ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3006ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3007ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			return getRelationClass_4001ContainedLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
-			return getRelationView_4002ContainedLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID:
 			return getRelationContraint_4003ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return getRelationView_4002ContainedLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
+			return getRelationClass_4001ContainedLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -439,28 +439,32 @@ public class MetaWebDesignDiagramUpdater {
 				.getVisualID(view)) {
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
 			return getLinkViewCRUD_2001IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2002IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2003IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return getClass_2004IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return getNotDerived_2005IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return getDerived_2006IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
-			return getConstraint_2007IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2008IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
-			return getLinkView_2009IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
 			return getCallAtribute_2010IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return getDerived_2006IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+			return getClass_2004IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			return getLinkView_2009IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 			return getGroup_2011IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2002IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return getNotDerived_2005IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+			return getConstraint_2007IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2003IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2008IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
 			return getNavegationMenu_2012IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return getDerived_3006IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return getNotDerived_3007IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID:
 			return getGroup_3001IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
@@ -471,16 +475,12 @@ public class MetaWebDesignDiagramUpdater {
 			return getLinkView_3004IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
 			return getLinkViewCRUD_3005IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3006IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3007IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			return getRelationClass_4001IncomingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
-			return getRelationView_4002IncomingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID:
 			return getRelationContraint_4003IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return getRelationView_4002IncomingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
+			return getRelationClass_4001IncomingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -494,28 +494,32 @@ public class MetaWebDesignDiagramUpdater {
 				.getVisualID(view)) {
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
 			return getLinkViewCRUD_2001OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
-			return getMenu_2002OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-			return getPage_2003OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-			return getClass_2004OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-			return getNotDerived_2005OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-			return getDerived_2006OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
-			return getConstraint_2007OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
-			return getForm_2008OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
-			return getLinkView_2009OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtributeEditPart.VISUAL_ID:
 			return getCallAtribute_2010OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return getDerived_2006OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+			return getClass_2004OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			return getLinkView_2009OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.GroupEditPart.VISUAL_ID:
 			return getGroup_2011OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.MenuEditPart.VISUAL_ID:
+			return getMenu_2002OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return getNotDerived_2005OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+			return getConstraint_2007OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return getPage_2003OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return getForm_2008OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
 			return getNavegationMenu_2012OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return getDerived_3006OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return getNotDerived_3007OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.Group2EditPart.VISUAL_ID:
 			return getGroup_3001OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
@@ -526,16 +530,12 @@ public class MetaWebDesignDiagramUpdater {
 			return getLinkView_3004OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
 			return getLinkViewCRUD_3005OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
-			return getDerived_3006OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
-			return getNotDerived_3007OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
-			return getRelationClass_4001OutgoingLinks(view);
-		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
-			return getRelationView_4002OutgoingLinks(view);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID:
 			return getRelationContraint_4003OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return getRelationView_4002OutgoingLinks(view);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
+			return getRelationClass_4001OutgoingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -559,7 +559,68 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getCallAtribute_2010ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_2006ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getClass_2004ContainedLinks(
+			View view) {
+		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) view
+				.getElement();
+		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_RelationContraint_4003(modelElement));
+		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getLinkView_2009ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getGroup_2011ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getMenu_2002ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_2005ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getConstraint_2007ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -579,43 +640,6 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getClass_2004ContainedLinks(
-			View view) {
-		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) view
-				.getElement();
-		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
-		result.addAll(getContainedTypeModelFacetLinks_RelationContraint_4003(modelElement));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_2005ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_2006ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getConstraint_2007ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getForm_2008ContainedLinks(
 			View view) {
 		Metawebdesign.metawebdesign.Form modelElement = (Metawebdesign.metawebdesign.Form) view
@@ -628,31 +652,23 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getLinkView_2009ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getCallAtribute_2010ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getGroup_2011ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNavegationMenu_2012ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_3006ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_3007ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -700,23 +716,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_3006ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_3007ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationClass_4001ContainedLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationContraint_4003ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -732,7 +732,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationContraint_4003ContainedLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationClass_4001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -748,7 +748,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getMenu_2002IncomingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getCallAtribute_2010IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -756,7 +756,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getPage_2003IncomingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_2006IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -771,9 +771,9 @@ public class MetaWebDesignDiagramUpdater {
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
 		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
-		result.addAll(getIncomingTypeModelFacetLinks_RelationClass_4001(
-				modelElement, crossReferences));
 		result.addAll(getIncomingTypeModelFacetLinks_RelationView_4002(
+				modelElement, crossReferences));
+		result.addAll(getIncomingTypeModelFacetLinks_RelationClass_4001(
 				modelElement, crossReferences));
 		return result;
 	}
@@ -781,7 +781,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_2005IncomingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getLinkView_2009IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -789,7 +789,23 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_2006IncomingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getGroup_2011IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getMenu_2002IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_2005IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -812,6 +828,14 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getPage_2003IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getForm_2008IncomingLinks(
 			View view) {
 		return Collections.emptyList();
@@ -820,31 +844,23 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getLinkView_2009IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getCallAtribute_2010IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getGroup_2011IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNavegationMenu_2012IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_3006IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_3007IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -892,23 +908,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_3006IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_3007IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationClass_4001IncomingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationContraint_4003IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -924,7 +924,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationContraint_4003IncomingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationClass_4001IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -940,7 +940,68 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getCallAtribute_2010OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_2006OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getClass_2004OutgoingLinks(
+			View view) {
+		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) view
+				.getElement();
+		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_RelationContraint_4003(modelElement));
+		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getLinkView_2009OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getGroup_2011OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getMenu_2002OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_2005OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getConstraint_2007OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -960,43 +1021,6 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getClass_2004OutgoingLinks(
-			View view) {
-		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) view
-				.getElement();
-		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
-		result.addAll(getContainedTypeModelFacetLinks_RelationClass_4001(modelElement));
-		result.addAll(getContainedTypeModelFacetLinks_RelationContraint_4003(modelElement));
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_2005OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_2006OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getConstraint_2007OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getForm_2008OutgoingLinks(
 			View view) {
 		Metawebdesign.metawebdesign.Form modelElement = (Metawebdesign.metawebdesign.Form) view
@@ -1009,31 +1033,23 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getLinkView_2009OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getCallAtribute_2010OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getGroup_2011OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNavegationMenu_2012OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_3006OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_3007OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -1081,23 +1097,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getDerived_3006OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getNotDerived_3007OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationClass_4001OutgoingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationContraint_4003OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -1113,7 +1113,7 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationContraint_4003OutgoingLinks(
+	public static List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getRelationClass_4001OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -1121,32 +1121,32 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getContainedTypeModelFacetLinks_RelationClass_4001(
+	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getContainedTypeModelFacetLinks_RelationContraint_4003(
 			Metawebdesign.metawebdesign.Class container) {
 		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
-		for (Iterator<?> links = container.getHasRelationClass().iterator(); links
-				.hasNext();) {
+		for (Iterator<?> links = container.getHasRelationConstraint()
+				.iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof Metawebdesign.metawebdesign.RelationClass) {
+			if (false == linkObject instanceof Metawebdesign.metawebdesign.RelationContraint) {
 				continue;
 			}
-			Metawebdesign.metawebdesign.RelationClass link = (Metawebdesign.metawebdesign.RelationClass) linkObject;
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+			Metawebdesign.metawebdesign.RelationContraint link = (Metawebdesign.metawebdesign.RelationContraint) linkObject;
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getLinkWithClassVisualID(link)) {
 				continue;
 			}
-			List targets = link.getFromClass();
+			List targets = link.getGoRConstraint2();
 			Object theTarget = targets.size() == 1 ? targets.get(0) : null;
-			if (false == theTarget instanceof Metawebdesign.metawebdesign.Class) {
+			if (false == theTarget instanceof Metawebdesign.metawebdesign.Constraint) {
 				continue;
 			}
-			Metawebdesign.metawebdesign.Class dst = (Metawebdesign.metawebdesign.Class) theTarget;
+			Metawebdesign.metawebdesign.Constraint dst = (Metawebdesign.metawebdesign.Constraint) theTarget;
 			result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor(
 					container,
 					dst,
 					link,
-					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001,
-					Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
+					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003,
+					Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID));
 		}
 		return result;
 	}
@@ -1187,32 +1187,32 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getContainedTypeModelFacetLinks_RelationContraint_4003(
+	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getContainedTypeModelFacetLinks_RelationClass_4001(
 			Metawebdesign.metawebdesign.Class container) {
 		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
-		for (Iterator<?> links = container.getHasRelationConstraint()
-				.iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getHasRelationClass().iterator(); links
+				.hasNext();) {
 			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof Metawebdesign.metawebdesign.RelationContraint) {
+			if (false == linkObject instanceof Metawebdesign.metawebdesign.RelationClass) {
 				continue;
 			}
-			Metawebdesign.metawebdesign.RelationContraint link = (Metawebdesign.metawebdesign.RelationContraint) linkObject;
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+			Metawebdesign.metawebdesign.RelationClass link = (Metawebdesign.metawebdesign.RelationClass) linkObject;
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getLinkWithClassVisualID(link)) {
 				continue;
 			}
-			List targets = link.getGoRConstraint2();
+			List targets = link.getFromClass();
 			Object theTarget = targets.size() == 1 ? targets.get(0) : null;
-			if (false == theTarget instanceof Metawebdesign.metawebdesign.Constraint) {
+			if (false == theTarget instanceof Metawebdesign.metawebdesign.Class) {
 				continue;
 			}
-			Metawebdesign.metawebdesign.Constraint dst = (Metawebdesign.metawebdesign.Constraint) theTarget;
+			Metawebdesign.metawebdesign.Class dst = (Metawebdesign.metawebdesign.Class) theTarget;
 			result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor(
 					container,
 					dst,
 					link,
-					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003,
-					Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID));
+					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001,
+					Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
 		}
 		return result;
 	}
@@ -1220,21 +1220,21 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getIncomingTypeModelFacetLinks_RelationClass_4001(
-			Metawebdesign.metawebdesign.Class target,
+	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getIncomingTypeModelFacetLinks_RelationContraint_4003(
+			Metawebdesign.metawebdesign.Constraint target,
 			Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
 		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
 		Collection<EStructuralFeature.Setting> settings = crossReferences
 				.get(target);
 		for (EStructuralFeature.Setting setting : settings) {
 			if (setting.getEStructuralFeature() != Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getRelationClass_FromClass()
-					|| false == setting.getEObject() instanceof Metawebdesign.metawebdesign.RelationClass) {
+					.getRelationContraint_GoRConstraint2()
+					|| false == setting.getEObject() instanceof Metawebdesign.metawebdesign.RelationContraint) {
 				continue;
 			}
-			Metawebdesign.metawebdesign.RelationClass link = (Metawebdesign.metawebdesign.RelationClass) setting
+			Metawebdesign.metawebdesign.RelationContraint link = (Metawebdesign.metawebdesign.RelationContraint) setting
 					.getEObject();
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getLinkWithClassVisualID(link)) {
 				continue;
 			}
@@ -1247,8 +1247,8 @@ public class MetaWebDesignDiagramUpdater {
 					container,
 					target,
 					link,
-					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001,
-					Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
+					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003,
+					Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID));
 
 		}
 		return result;
@@ -1294,21 +1294,21 @@ public class MetaWebDesignDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getIncomingTypeModelFacetLinks_RelationContraint_4003(
-			Metawebdesign.metawebdesign.Constraint target,
+	private static Collection<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> getIncomingTypeModelFacetLinks_RelationClass_4001(
+			Metawebdesign.metawebdesign.Class target,
 			Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
 		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignLinkDescriptor>();
 		Collection<EStructuralFeature.Setting> settings = crossReferences
 				.get(target);
 		for (EStructuralFeature.Setting setting : settings) {
 			if (setting.getEStructuralFeature() != Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-					.getRelationContraint_GoRConstraint2()
-					|| false == setting.getEObject() instanceof Metawebdesign.metawebdesign.RelationContraint) {
+					.getRelationClass_FromClass()
+					|| false == setting.getEObject() instanceof Metawebdesign.metawebdesign.RelationClass) {
 				continue;
 			}
-			Metawebdesign.metawebdesign.RelationContraint link = (Metawebdesign.metawebdesign.RelationContraint) setting
+			Metawebdesign.metawebdesign.RelationClass link = (Metawebdesign.metawebdesign.RelationClass) setting
 					.getEObject();
-			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+			if (Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getLinkWithClassVisualID(link)) {
 				continue;
 			}
@@ -1321,8 +1321,8 @@ public class MetaWebDesignDiagramUpdater {
 					container,
 					target,
 					link,
-					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationContraint_4003,
-					Metawebdesign.metawebdesign.diagram.edit.parts.RelationContraintEditPart.VISUAL_ID));
+					Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4001,
+					Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
 
 		}
 		return result;

@@ -1,5 +1,6 @@
 package Metawebdesign.metawebdesign.diagram.edit.parts;
 
+import org.eclipse.draw2d.BorderLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
@@ -156,7 +157,7 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected NodeFigure createNodePlate() {
-		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(100, 16);
 		return result;
 	}
 
@@ -272,8 +273,10 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public CallAtributeFigure() {
-			this.setMaximumSize(new Dimension(getMapMode().DPtoLP(100),
-					getMapMode().DPtoLP(10)));
+			this.setLayoutManager(new StackLayout());
+			this.setLineWidth(0);
+			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
+					getMapMode().DPtoLP(16)));
 			createContents();
 		}
 
@@ -288,17 +291,17 @@ public class CallAtribute2EditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureCallAtributeTypePresentationFigure);
 
-			fFigureCallAtributeNameFigure = new WrappingLabel();
-
-			fFigureCallAtributeNameFigure.setText("<...>");
-
-			this.add(fFigureCallAtributeNameFigure);
-
 			fFigureCallAtributePositionHorizontalFigure = new WrappingLabel();
 
 			fFigureCallAtributePositionHorizontalFigure.setText("<...>");
 
 			this.add(fFigureCallAtributePositionHorizontalFigure);
+
+			fFigureCallAtributeNameFigure = new WrappingLabel();
+
+			fFigureCallAtributeNameFigure.setText("<...>");
+
+			this.add(fFigureCallAtributeNameFigure, BorderLayout.TOP);
 
 			fFigureCallAtributePostionVerticalFigure = new WrappingLabel();
 

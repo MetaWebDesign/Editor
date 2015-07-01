@@ -438,6 +438,11 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String ClassAttributeInCajonClassEditPart_title;
+
+	/**
+	 * @generated
+	 */
 	public static String MenuGroupInMenuEditPart_title;
 
 	/**
@@ -449,11 +454,6 @@ public class Messages extends NLS {
 	 * @generated
 	 */
 	public static String NavegationMenuLinksInNavMenuEditPart_title;
-
-	/**
-	 * @generated
-	 */
-	public static String ClassAttributeInCajonClassEditPart_title;
 
 	/**
 	 * @generated
@@ -483,12 +483,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2004_incominglinks;
+	public static String NavigatorGroupName_Class_2004_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2004_outgoinglinks;
+	public static String NavigatorGroupName_Class_2004_incominglinks;
 
 	/**
 	 * @generated

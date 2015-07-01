@@ -14,18 +14,18 @@ import org.eclipse.gmf.runtime.notation.View;
 /**
  * @generated
  */
-public class RelationViewEditPart extends ConnectionNodeEditPart implements
+public class RelationClassEditPart extends ConnectionNodeEditPart implements
 		ITreeBranchEditPart {
 
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 4002;
+	public static final int VISUAL_ID = 4001;
 
 	/**
 	 * @generated
 	 */
-	public RelationViewEditPart(View view) {
+	public RelationClassEditPart(View view) {
 		super(view);
 	}
 
@@ -36,17 +36,17 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 		super.createDefaultEditPolicies();
 		installEditPolicy(
 				EditPolicyRoles.SEMANTIC_ROLE,
-				new Metawebdesign.metawebdesign.diagram.edit.policies.RelationViewItemSemanticEditPolicy());
+				new Metawebdesign.metawebdesign.diagram.edit.policies.RelationClassItemSemanticEditPolicy());
 	}
 
 	/**
 	 * @generated
 	 */
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) {
-			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) childEditPart)
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) {
+			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
 					.setLabel(getPrimaryShape()
-							.getFigureRelationViewNameFigure());
+							.getFigureRelationClassNameFigure());
 			return true;
 		}
 		return false;
@@ -66,7 +66,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 * @generated
 	 */
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart) {
+		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) {
 			return true;
 		}
 		return false;
@@ -92,42 +92,41 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 */
 
 	protected Connection createConnectionFigure() {
-		return new ViewsHasRelationViewFigure();
+		return new ClassHasRelationClassFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public ViewsHasRelationViewFigure getPrimaryShape() {
-		return (ViewsHasRelationViewFigure) getFigure();
+	public ClassHasRelationClassFigure getPrimaryShape() {
+		return (ClassHasRelationClassFigure) getFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public class ViewsHasRelationViewFigure extends PolylineConnectionEx {
+	public class ClassHasRelationClassFigure extends PolylineConnectionEx {
 
-		private WrappingLabel fFigureRelationViewNameFigure;
+		private WrappingLabel fFigureRelationClassNameFigure;
 		
 		/**
 		 * @generated
 		 */
-		public ViewsHasRelationViewFigure() {
+		public ClassHasRelationClassFigure() {
 
 			setTargetDecoration(createTargetDecoration());
 			createContents();
 		}
 		
 		private void createContents() {
-			fFigureRelationViewNameFigure = new WrappingLabel();
-			fFigureRelationViewNameFigure.setText("<...>");
-			this.add(fFigureRelationViewNameFigure);
+			fFigureRelationClassNameFigure = new WrappingLabel();
+			fFigureRelationClassNameFigure.setText("<...>");
+			this.add(fFigureRelationClassNameFigure);
 		}
 		
-		public WrappingLabel getFigureRelationViewNameFigure() {
-			return fFigureRelationViewNameFigure;
+		public WrappingLabel getFigureRelationClassNameFigure() {
+			return fFigureRelationClassNameFigure;
 		}
-
 
 		/**
 		 * @generated

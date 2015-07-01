@@ -1,5 +1,6 @@
 package Metawebdesign.metawebdesign.diagram.edit.parts;
 
+import org.eclipse.draw2d.BorderLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
@@ -156,7 +157,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected NodeFigure createNodePlate() {
-		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(100, 20);
 		return result;
 	}
 
@@ -272,8 +273,9 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public ConstraintFigure() {
-			this.setMaximumSize(new Dimension(getMapMode().DPtoLP(100),
-					getMapMode().DPtoLP(16)));
+			this.setLayoutManager(new StackLayout());
+			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
+					getMapMode().DPtoLP(20)));
 			createContents();
 		}
 
@@ -304,7 +306,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 
 			fFigureConstraintNameFigure.setText("<...>");
 
-			this.add(fFigureConstraintNameFigure);
+			this.add(fFigureConstraintNameFigure, BorderLayout.TOP);
 
 		}
 
