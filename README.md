@@ -1,7 +1,7 @@
 # MDD_Editor (Modelo V2.0)
 
 ##Modelo
-![Alt text](https://github.com/TestMode/Editor/blob/master/Editor_MWD/resp/modelo.png "Metamodelo")
+![Alt text](https://github.com/TestMode/Editor/blob/master/Editor_MWD/resp/model.png "Metamodelo")
 
 ##Editor Grafico:
 Este editor gráfico basado en Eclipse usando los frameworks EMF y GMF esta compuesto por varios elementos descritos, para modelar de forma completa un software, basado en OO-Method, posee un Modelo de Presentación, para la generación automática de Software.
