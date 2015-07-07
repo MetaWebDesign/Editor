@@ -1,7 +1,7 @@
 # MDD_Editor (Modelo V2.0)
 
 ##Modelo
-![Alt text](https://raw.githubusercontent.com/TestMode/Editor/legacy/modelo/src/model_legacy.png "Metamodelo")
+![Alt text](https://github.com/TestMode/Editor/blob/master/Editor_MWD/resp/modelo.png "Metamodelo")
 
 ##Editor Grafico:
 Este editor gráfico basado en Eclipse usando los frameworks EMF y GMF esta compuesto por varios elementos descritos, para modelar de forma completa un software, basado en OO-Method, posee un Modelo de Presentación, para la generación automática de Software.
@@ -31,8 +31,12 @@ estos operadores interactúan con algún atributo derivado o no derivado.
 
   * Grupo, esta compuesto de vista, ordenan el menú según una agrupación.
 
-##INSTALACIÓN
+##Descarga
 
+###GNU Linux 32-bit
 
+[Eclipse - MetaWebDesign i686 ](#)
 
+###GNU Linux 64-bit
 
+[Eclipse - MetaWebDesign X64 ](#)
