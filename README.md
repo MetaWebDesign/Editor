@@ -35,8 +35,8 @@ estos operadores interactúan con algún atributo derivado o no derivado.
 
 ###GNU Linux 32-bit
 
-[Eclipse - MetaWebDesign i686 ](#)
+[Eclipse - MetaWebDesign i686 ](http://www.piratevalpo.cl/desarrollo/MetaWebDesign_32bits.7z)
 
 ###GNU Linux 64-bit
 
-[Eclipse - MetaWebDesign X64 ](#)
+[Eclipse - MetaWebDesign X64 ](http://www.piratevalpo.cl/desarrollo/MetaWebDesign64bits.tar.gz)
