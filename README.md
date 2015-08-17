@@ -1,4 +1,4 @@
-# MDD_Editor (Modelo V2.0)
+# MDD_Editor - Testing (Modelo V2.5)
 
 ##Modelo
 ![Alt text](https://github.com/TestMode/Editor/blob/master/Editor_MWD/resp/model.png "Metamodelo")
