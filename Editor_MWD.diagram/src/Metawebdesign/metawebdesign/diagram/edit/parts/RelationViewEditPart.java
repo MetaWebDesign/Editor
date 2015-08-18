@@ -106,7 +106,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 	 * @generated
 	 */
 	public class ViewsHasRelationViewFigure extends PolylineConnectionEx {
-
+  
 		private WrappingLabel fFigureRelationViewNameFigure;
 		
 		/**
@@ -117,7 +117,6 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 			setTargetDecoration(createTargetDecoration());
 			createContents();
 		}
-
 		
 		private void createContents() {
 			fFigureRelationViewNameFigure = new WrappingLabel();
@@ -128,6 +127,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 		public WrappingLabel getFigureRelationViewNameFigure() {
 			return fFigureRelationViewNameFigure;
 		}
+
 		/**
 		 * @generated
 		 */

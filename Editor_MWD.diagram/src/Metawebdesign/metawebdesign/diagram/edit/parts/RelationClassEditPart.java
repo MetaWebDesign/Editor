@@ -45,7 +45,8 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	protected boolean addFixedChild(EditPart childEditPart) {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) {
 			((Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassNameEditPart) childEditPart)
-					.setLabel(getPrimaryShape().getFigureRelationClassNameFigure());
+					.setLabel(getPrimaryShape()
+							.getFigureRelationClassNameFigure());
 			return true;
 		}
 		return false;
@@ -106,6 +107,7 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 	 */
 	public class ClassHasRelationClassFigure extends PolylineConnectionEx {
 
+
 		private WrappingLabel fFigureRelationClassNameFigure;
 		
 		/**
@@ -115,9 +117,8 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 
 			setTargetDecoration(createTargetDecoration());
 			createContents();
-			
 		}
-
+		
 		private void createContents() {
 			fFigureRelationClassNameFigure = new WrappingLabel();
 			fFigureRelationClassNameFigure.setText("<...>");
