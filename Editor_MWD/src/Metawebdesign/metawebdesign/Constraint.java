@@ -14,9 +14,9 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getOperator <em>Operator</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getService <em>Service</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getName <em>Name</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -34,12 +34,12 @@ public interface Constraint extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Attribute</em>' reference.
-	 * @see #setAttribute(Attributes)
+	 * @see #setAttribute(Derived)
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Attribute()
 	 * @model
 	 * @generated
 	 */
-	Attributes getAttribute();
+	Derived getAttribute();
 
 	/**
 	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}' reference.
@@ -49,7 +49,7 @@ public interface Constraint extends EObject {
 	 * @see #getAttribute()
 	 * @generated
 	 */
-	void setAttribute(Attributes value);
+	void setAttribute(Derived value);
 
 	/**
 	 * Returns the value of the '<em><b>Operator</b></em>' attribute.
@@ -79,32 +79,6 @@ public interface Constraint extends EObject {
 	 * @generated
 	 */
 	void setOperator(TypeOperator value);
-
-	/**
-	 * Returns the value of the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(int)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Value()
-	 * @model
-	 * @generated
-	 */
-	int getValue();
-
-	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Value</em>' attribute.
-	 * @see #getValue()
-	 * @generated
-	 */
-	void setValue(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Service</b></em>' attribute.
@@ -160,5 +134,31 @@ public interface Constraint extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Value</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Value</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Value</em>' reference.
+	 * @see #setValue(NotDerived)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Value()
+	 * @model
+	 * @generated
+	 */
+	NotDerived getValue();
+
+	/**
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Value</em>' reference.
+	 * @see #getValue()
+	 * @generated
+	 */
+	void setValue(NotDerived value);
 
 } // Constraint

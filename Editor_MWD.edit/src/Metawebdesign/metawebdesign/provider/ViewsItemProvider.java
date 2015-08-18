@@ -65,7 +65,6 @@ public class ViewsItemProvider
 
 			addTitlePropertyDescriptor(object);
 			addRolViewPropertyDescriptor(object);
-			addGroupNamePropertyDescriptor(object);
 			addFromRelationPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
@@ -111,28 +110,6 @@ public class ViewsItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Group Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGroupNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Views_groupName_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Views_groupName_feature", "_UI_Views_type"),
-				 MetawebdesignPackage.Literals.VIEWS__GROUP_NAME,
-				 true,
-				 false,
-				 true,
-				 null,
 				 null,
 				 null));
 	}
@@ -264,7 +241,7 @@ public class ViewsItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(MetawebdesignPackage.Literals.VIEWS__HAS_VIEW_COMPONENT,
-				 MetawebdesignFactory.eINSTANCE.createCallAtribute()));
+				 MetawebdesignFactory.eINSTANCE.createViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter

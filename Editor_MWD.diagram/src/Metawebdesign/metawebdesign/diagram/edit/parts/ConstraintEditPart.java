@@ -1,6 +1,5 @@
 package Metawebdesign.metawebdesign.diagram.edit.parts;
 
-import org.eclipse.draw2d.BorderLayout;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
@@ -31,7 +30,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2007;
+	public static final int VISUAL_ID = 2005;
 
 	/**
 	 * @generated
@@ -157,7 +156,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected NodeFigure createNodePlate() {
-		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(100, 20);
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(100, 16);
 		return result;
 	}
 
@@ -259,10 +258,6 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureConstraintValueFigure;
-		/**
-		 * @generated
-		 */
 		private WrappingLabel fFigureConstraintServiceFigure;
 		/**
 		 * @generated
@@ -273,9 +268,8 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public ConstraintFigure() {
-			this.setLayoutManager(new StackLayout());
 			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
-					getMapMode().DPtoLP(20)));
+					getMapMode().DPtoLP(16)));
 			createContents();
 		}
 
@@ -290,12 +284,6 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 
 			this.add(fFigureConstraintOperatorFigure);
 
-			fFigureConstraintValueFigure = new WrappingLabel();
-
-			fFigureConstraintValueFigure.setText("<...>");
-
-			this.add(fFigureConstraintValueFigure);
-
 			fFigureConstraintServiceFigure = new WrappingLabel();
 
 			fFigureConstraintServiceFigure.setText("<...>");
@@ -306,7 +294,7 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 
 			fFigureConstraintNameFigure.setText("<...>");
 
-			this.add(fFigureConstraintNameFigure, BorderLayout.TOP);
+			this.add(fFigureConstraintNameFigure);
 
 		}
 
@@ -315,13 +303,6 @@ public class ConstraintEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureConstraintOperatorFigure() {
 			return fFigureConstraintOperatorFigure;
-		}
-
-		/**
-		 * @generated
-		 */
-		public WrappingLabel getFigureConstraintValueFigure() {
-			return fFigureConstraintValueFigure;
 		}
 
 		/**

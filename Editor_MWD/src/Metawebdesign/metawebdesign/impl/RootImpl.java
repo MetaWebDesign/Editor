@@ -4,19 +4,23 @@ package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
-import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.Link;
-import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
+
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -29,8 +33,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getClass_ <em>Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getAttribute <em>Attribute</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getMenu <em>Menu</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getViews <em>Views</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getView_component <em>View component</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.RootImpl#getLink <em>Link</em>}</li>
@@ -60,26 +62,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * @ordered
 	 */
 	protected EList<Attributes> attribute;
-
-	/**
-	 * The cached value of the '{@link #getMenu() <em>Menu</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getMenu()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Menu> menu;
-
-	/**
-	 * The cached value of the '{@link #getGroup() <em>Group</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGroup()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Group> group;
 
 	/**
 	 * The cached value of the '{@link #getViews() <em>Views</em>}' containment reference list.
@@ -169,30 +151,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Menu> getMenu() {
-		if (menu == null) {
-			menu = new EObjectContainmentEList<Menu>(Menu.class, this, MetawebdesignPackage.ROOT__MENU);
-		}
-		return menu;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Group> getGroup() {
-		if (group == null) {
-			group = new EObjectContainmentEList<Group>(Group.class, this, MetawebdesignPackage.ROOT__GROUP);
-		}
-		return group;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<Views> getViews() {
 		if (views == null) {
 			views = new EObjectContainmentEList<Views>(Views.class, this, MetawebdesignPackage.ROOT__VIEWS);
@@ -248,10 +206,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return ((InternalEList<?>)getClass_()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.ROOT__ATTRIBUTE:
 				return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
-			case MetawebdesignPackage.ROOT__MENU:
-				return ((InternalEList<?>)getMenu()).basicRemove(otherEnd, msgs);
-			case MetawebdesignPackage.ROOT__GROUP:
-				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.ROOT__VIEWS:
 				return ((InternalEList<?>)getViews()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
@@ -276,10 +230,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return getClass_();
 			case MetawebdesignPackage.ROOT__ATTRIBUTE:
 				return getAttribute();
-			case MetawebdesignPackage.ROOT__MENU:
-				return getMenu();
-			case MetawebdesignPackage.ROOT__GROUP:
-				return getGroup();
 			case MetawebdesignPackage.ROOT__VIEWS:
 				return getViews();
 			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
@@ -308,14 +258,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 			case MetawebdesignPackage.ROOT__ATTRIBUTE:
 				getAttribute().clear();
 				getAttribute().addAll((Collection<? extends Attributes>)newValue);
-				return;
-			case MetawebdesignPackage.ROOT__MENU:
-				getMenu().clear();
-				getMenu().addAll((Collection<? extends Menu>)newValue);
-				return;
-			case MetawebdesignPackage.ROOT__GROUP:
-				getGroup().clear();
-				getGroup().addAll((Collection<? extends Group>)newValue);
 				return;
 			case MetawebdesignPackage.ROOT__VIEWS:
 				getViews().clear();
@@ -351,12 +293,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 			case MetawebdesignPackage.ROOT__ATTRIBUTE:
 				getAttribute().clear();
 				return;
-			case MetawebdesignPackage.ROOT__MENU:
-				getMenu().clear();
-				return;
-			case MetawebdesignPackage.ROOT__GROUP:
-				getGroup().clear();
-				return;
 			case MetawebdesignPackage.ROOT__VIEWS:
 				getViews().clear();
 				return;
@@ -385,10 +321,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return class_ != null && !class_.isEmpty();
 			case MetawebdesignPackage.ROOT__ATTRIBUTE:
 				return attribute != null && !attribute.isEmpty();
-			case MetawebdesignPackage.ROOT__MENU:
-				return menu != null && !menu.isEmpty();
-			case MetawebdesignPackage.ROOT__GROUP:
-				return group != null && !group.isEmpty();
 			case MetawebdesignPackage.ROOT__VIEWS:
 				return views != null && !views.isEmpty();
 			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:

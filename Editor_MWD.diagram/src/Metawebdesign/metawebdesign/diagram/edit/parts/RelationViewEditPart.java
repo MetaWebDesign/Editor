@@ -117,6 +117,7 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 			setTargetDecoration(createTargetDecoration());
 			createContents();
 		}
+
 		
 		private void createContents() {
 			fFigureRelationViewNameFigure = new WrappingLabel();
@@ -127,8 +128,6 @@ public class RelationViewEditPart extends ConnectionNodeEditPart implements
 		public WrappingLabel getFigureRelationViewNameFigure() {
 			return fFigureRelationViewNameFigure;
 		}
-
-
 		/**
 		 * @generated
 		 */

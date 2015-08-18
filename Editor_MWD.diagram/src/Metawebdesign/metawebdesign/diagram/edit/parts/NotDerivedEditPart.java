@@ -30,7 +30,7 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 2005;
+	public static final int VISUAL_ID = 2006;
 
 	/**
 	 * @generated
@@ -261,10 +261,6 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureNotDerivedValueFigure;
-		/**
-		 * @generated
-		 */
 		private WrappingLabel fFigureNotDerivedPrimaryKeyFigure;
 		/**
 		 * @generated
@@ -283,7 +279,6 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public NotDerivedFigure() {
-			this.setLineWidth(0);
 			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
 					getMapMode().DPtoLP(16)));
 			createContents();
@@ -305,12 +300,6 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 			fFigureNotDerivedRolFigure.setText("<...>");
 
 			this.add(fFigureNotDerivedRolFigure);
-
-			fFigureNotDerivedValueFigure = new WrappingLabel();
-
-			fFigureNotDerivedValueFigure.setText("<...>");
-
-			this.add(fFigureNotDerivedValueFigure);
 
 			fFigureNotDerivedPrimaryKeyFigure = new WrappingLabel();
 
@@ -350,13 +339,6 @@ public class NotDerivedEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureNotDerivedRolFigure() {
 			return fFigureNotDerivedRolFigure;
-		}
-
-		/**
-		 * @generated
-		 */
-		public WrappingLabel getFigureNotDerivedValueFigure() {
-			return fFigureNotDerivedValueFigure;
 		}
 
 		/**

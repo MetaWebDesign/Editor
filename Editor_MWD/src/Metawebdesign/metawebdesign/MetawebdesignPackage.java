@@ -86,31 +86,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int ROOT__ATTRIBUTE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Menu</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT__MENU = 2;
-
-	/**
-	 * The feature id for the '<em><b>Group</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT__GROUP = 3;
-
-	/**
 	 * The feature id for the '<em><b>Views</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT__VIEWS = 4;
+	int ROOT__VIEWS = 2;
 
 	/**
 	 * The feature id for the '<em><b>View component</b></em>' containment reference list.
@@ -119,7 +101,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT__VIEW_COMPONENT = 5;
+	int ROOT__VIEW_COMPONENT = 3;
 
 	/**
 	 * The feature id for the '<em><b>Link</b></em>' containment reference list.
@@ -128,7 +110,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT__LINK = 6;
+	int ROOT__LINK = 4;
 
 	/**
 	 * The feature id for the '<em><b>Constraint</b></em>' containment reference list.
@@ -137,7 +119,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT__CONSTRAINT = 7;
+	int ROOT__CONSTRAINT = 5;
 
 	/**
 	 * The number of structural features of the '<em>Root</em>' class.
@@ -146,7 +128,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_FEATURE_COUNT = 8;
+	int ROOT_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Root</em>' class.
@@ -613,22 +595,40 @@ public interface MetawebdesignPackage extends EPackage {
 	int RELATION_CLASS__FROM_CLASS = 1;
 
 	/**
-	 * The feature id for the '<em><b>Class A</b></em>' reference.
+	 * The feature id for the '<em><b>Attribute Class A</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_CLASS__CLASS_A = 2;
+	int RELATION_CLASS__ATTRIBUTE_CLASS_A = 2;
 
 	/**
-	 * The feature id for the '<em><b>Class B</b></em>' reference.
+	 * The feature id for the '<em><b>Attribute Class B</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_CLASS__CLASS_B = 3;
+	int RELATION_CLASS__ATTRIBUTE_CLASS_B = 3;
+
+	/**
+	 * The feature id for the '<em><b>Cardinality Class A</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RELATION_CLASS__CARDINALITY_CLASS_A = 4;
+
+	/**
+	 * The feature id for the '<em><b>Cardinality Class B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RELATION_CLASS__CARDINALITY_CLASS_B = 5;
 
 	/**
 	 * The number of structural features of the '<em>Relation Class</em>' class.
@@ -637,7 +637,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELATION_CLASS_FEATURE_COUNT = 4;
+	int RELATION_CLASS_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Relation Class</em>' class.
@@ -649,107 +649,6 @@ public interface MetawebdesignPackage extends EPackage {
 	int RELATION_CLASS_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.MenuImpl <em>Menu</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.impl.MenuImpl
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getMenu()
-	 * @generated
-	 */
-	int MENU = 6;
-
-	/**
-	 * The feature id for the '<em><b>Has Group</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU__HAS_GROUP = 0;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU__NAME = 1;
-
-	/**
-	 * The feature id for the '<em><b>Orientated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU__ORIENTATED = 2;
-
-	/**
-	 * The number of structural features of the '<em>Menu</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Menu</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.GroupImpl <em>Group</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.impl.GroupImpl
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getGroup()
-	 * @generated
-	 */
-	int GROUP = 7;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Order</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP__ORDER = 1;
-
-	/**
-	 * The number of structural features of the '<em>Group</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Group</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.ViewsImpl <em>Views</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -757,7 +656,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getViews()
 	 * @generated
 	 */
-	int VIEWS = 8;
+	int VIEWS = 6;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -778,22 +677,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int VIEWS__ROL_VIEW = 1;
 
 	/**
-	 * The feature id for the '<em><b>Group Name</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEWS__GROUP_NAME = 2;
-
-	/**
 	 * The feature id for the '<em><b>Has Relation View</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS__HAS_RELATION_VIEW = 3;
+	int VIEWS__HAS_RELATION_VIEW = 2;
 
 	/**
 	 * The feature id for the '<em><b>From Relation</b></em>' reference list.
@@ -802,7 +692,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS__FROM_RELATION = 4;
+	int VIEWS__FROM_RELATION = 3;
 
 	/**
 	 * The feature id for the '<em><b>Has View Component</b></em>' containment reference list.
@@ -811,7 +701,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS__HAS_VIEW_COMPONENT = 5;
+	int VIEWS__HAS_VIEW_COMPONENT = 4;
 
 	/**
 	 * The number of structural features of the '<em>Views</em>' class.
@@ -820,7 +710,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIEWS_FEATURE_COUNT = 6;
+	int VIEWS_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Views</em>' class.
@@ -839,7 +729,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getForm()
 	 * @generated
 	 */
-	int FORM = 9;
+	int FORM = 7;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -858,15 +748,6 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @ordered
 	 */
 	int FORM__ROL_VIEW = VIEWS__ROL_VIEW;
-
-	/**
-	 * The feature id for the '<em><b>Group Name</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM__GROUP_NAME = VIEWS__GROUP_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Has Relation View</b></em>' containment reference list.
@@ -930,7 +811,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getPage()
 	 * @generated
 	 */
-	int PAGE = 10;
+	int PAGE = 8;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -949,15 +830,6 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @ordered
 	 */
 	int PAGE__ROL_VIEW = VIEWS__ROL_VIEW;
-
-	/**
-	 * The feature id for the '<em><b>Group Name</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PAGE__GROUP_NAME = VIEWS__GROUP_NAME;
 
 	/**
 	 * The feature id for the '<em><b>Has Relation View</b></em>' containment reference list.
@@ -987,13 +859,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int PAGE__HAS_VIEW_COMPONENT = VIEWS__HAS_VIEW_COMPONENT;
 
 	/**
-	 * The feature id for the '<em><b>Content</b></em>' attribute.
+	 * The feature id for the '<em><b>Content HTML</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAGE__CONTENT = VIEWS_FEATURE_COUNT + 0;
+	int PAGE__CONTENT_HTML = VIEWS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Page</em>' class.
@@ -1021,7 +893,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getRelationView()
 	 * @generated
 	 */
-	int RELATION_VIEW = 11;
+	int RELATION_VIEW = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1076,7 +948,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getViewComponent()
 	 * @generated
 	 */
-	int VIEW_COMPONENT = 12;
+	int VIEW_COMPONENT = 10;
 
 	/**
 	 * The number of structural features of the '<em>View Component</em>' class.
@@ -1097,14 +969,14 @@ public interface MetawebdesignPackage extends EPackage {
 	int VIEW_COMPONENT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.CallAtributeImpl <em>Call Atribute</em>}' class.
+	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.ViewAttributeImpl <em>View Attribute</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.impl.CallAtributeImpl
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getCallAtribute()
+	 * @see Metawebdesign.metawebdesign.impl.ViewAttributeImpl
+	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getViewAttribute()
 	 * @generated
 	 */
-	int CALL_ATRIBUTE = 13;
+	int VIEW_ATTRIBUTE = 11;
 
 	/**
 	 * The feature id for the '<em><b>Get Attribute</b></em>' reference.
@@ -1113,7 +985,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE__GET_ATTRIBUTE = VIEW_COMPONENT_FEATURE_COUNT + 0;
+	int VIEW_ATTRIBUTE__GET_ATTRIBUTE = VIEW_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Type Presentation</b></em>' attribute.
@@ -1122,7 +994,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE__TYPE_PRESENTATION = VIEW_COMPONENT_FEATURE_COUNT + 1;
+	int VIEW_ATTRIBUTE__TYPE_PRESENTATION = VIEW_COMPONENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1131,7 +1003,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE__NAME = VIEW_COMPONENT_FEATURE_COUNT + 2;
+	int VIEW_ATTRIBUTE__NAME = VIEW_COMPONENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Position Horizontal</b></em>' attribute.
@@ -1140,7 +1012,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE__POSITION_HORIZONTAL = VIEW_COMPONENT_FEATURE_COUNT + 3;
+	int VIEW_ATTRIBUTE__POSITION_HORIZONTAL = VIEW_COMPONENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Postion Vertical</b></em>' attribute.
@@ -1149,25 +1021,34 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE__POSTION_VERTICAL = VIEW_COMPONENT_FEATURE_COUNT + 4;
+	int VIEW_ATTRIBUTE__POSTION_VERTICAL = VIEW_COMPONENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The number of structural features of the '<em>Call Atribute</em>' class.
+	 * The feature id for the '<em><b>From</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE_FEATURE_COUNT = VIEW_COMPONENT_FEATURE_COUNT + 5;
+	int VIEW_ATTRIBUTE__FROM = VIEW_COMPONENT_FEATURE_COUNT + 5;
 
 	/**
-	 * The number of operations of the '<em>Call Atribute</em>' class.
+	 * The number of structural features of the '<em>View Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALL_ATRIBUTE_OPERATION_COUNT = VIEW_COMPONENT_OPERATION_COUNT + 0;
+	int VIEW_ATTRIBUTE_FEATURE_COUNT = VIEW_COMPONENT_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of operations of the '<em>View Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VIEW_ATTRIBUTE_OPERATION_COUNT = VIEW_COMPONENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.NavegationMenuImpl <em>Navegation Menu</em>}' class.
@@ -1177,7 +1058,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getNavegationMenu()
 	 * @generated
 	 */
-	int NAVEGATION_MENU = 14;
+	int NAVEGATION_MENU = 12;
 
 	/**
 	 * The feature id for the '<em><b>Has Link</b></em>' containment reference list.
@@ -1223,7 +1104,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getLink()
 	 * @generated
 	 */
-	int LINK = 15;
+	int LINK = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1260,7 +1141,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getLinkViewCRUD()
 	 * @generated
 	 */
-	int LINK_VIEW_CRUD = 16;
+	int LINK_VIEW_CRUD = 14;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1290,13 +1171,22 @@ public interface MetawebdesignPackage extends EPackage {
 	int LINK_VIEW_CRUD__FROM_CLASS = LINK_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>From Relation</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK_VIEW_CRUD__FROM_RELATION = LINK_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Link View CRUD</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LINK_VIEW_CRUD_FEATURE_COUNT = LINK_FEATURE_COUNT + 2;
+	int LINK_VIEW_CRUD_FEATURE_COUNT = LINK_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Link View CRUD</em>' class.
@@ -1315,7 +1205,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getLinkView()
 	 * @generated
 	 */
-	int LINK_VIEW = 17;
+	int LINK_VIEW = 15;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1361,7 +1251,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getConstraint()
 	 * @generated
 	 */
-	int CONSTRAINT = 18;
+	int CONSTRAINT = 16;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' reference.
@@ -1382,22 +1272,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int CONSTRAINT__OPERATOR = 1;
 
 	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT__VALUE = 2;
-
-	/**
 	 * The feature id for the '<em><b>Service</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__SERVICE = 3;
+	int CONSTRAINT__SERVICE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1406,7 +1287,16 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__NAME = 4;
+	int CONSTRAINT__NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__VALUE = 4;
 
 	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
@@ -1434,7 +1324,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getRelationContraint()
 	 * @generated
 	 */
-	int RELATION_CONTRAINT = 19;
+	int RELATION_CONTRAINT = 17;
 
 	/**
 	 * The feature id for the '<em><b>Rhas Constraint</b></em>' containment reference list.
@@ -1489,7 +1379,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeRol()
 	 * @generated
 	 */
-	int TYPE_ROL = 20;
+	int TYPE_ROL = 18;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeAttributeForm <em>Type Attribute Form</em>}' enum.
@@ -1499,7 +1389,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeAttributeForm()
 	 * @generated
 	 */
-	int TYPE_ATTRIBUTE_FORM = 21;
+	int TYPE_ATTRIBUTE_FORM = 19;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeData <em>Type Data</em>}' enum.
@@ -1509,7 +1399,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeData()
 	 * @generated
 	 */
-	int TYPE_DATA = 22;
+	int TYPE_DATA = 20;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typePresentation <em>type Presentation</em>}' enum.
@@ -1519,7 +1409,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypePresentation()
 	 * @generated
 	 */
-	int TYPE_PRESENTATION = 23;
+	int TYPE_PRESENTATION = 21;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeHorizontalPosition <em>type Horizontal Position</em>}' enum.
@@ -1529,7 +1419,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeHorizontalPosition()
 	 * @generated
 	 */
-	int TYPE_HORIZONTAL_POSITION = 24;
+	int TYPE_HORIZONTAL_POSITION = 22;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeService <em>Type Service</em>}' enum.
@@ -1539,7 +1429,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeService()
 	 * @generated
 	 */
-	int TYPE_SERVICE = 25;
+	int TYPE_SERVICE = 23;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeOrientation <em>Type Orientation</em>}' enum.
@@ -1549,7 +1439,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeOrientation()
 	 * @generated
 	 */
-	int TYPE_ORIENTATION = 26;
+	int TYPE_ORIENTATION = 24;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeOperator <em>Type Operator</em>}' enum.
@@ -1559,7 +1449,27 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeOperator()
 	 * @generated
 	 */
-	int TYPE_OPERATOR = 27;
+	int TYPE_OPERATOR = 25;
+
+	/**
+	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Metawebdesign.metawebdesign.typeViewAttribute
+	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeViewAttribute()
+	 * @generated
+	 */
+	int TYPE_VIEW_ATTRIBUTE = 26;
+
+	/**
+	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Metawebdesign.metawebdesign.typeCardinality
+	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeCardinality()
+	 * @generated
+	 */
+	int TYPE_CARDINALITY = 27;
 
 
 	/**
@@ -1593,28 +1503,6 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRoot_Attribute();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Root#getMenu <em>Menu</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Menu</em>'.
-	 * @see Metawebdesign.metawebdesign.Root#getMenu()
-	 * @see #getRoot()
-	 * @generated
-	 */
-	EReference getRoot_Menu();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Root#getGroup <em>Group</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Group</em>'.
-	 * @see Metawebdesign.metawebdesign.Root#getGroup()
-	 * @see #getRoot()
-	 * @generated
-	 */
-	EReference getRoot_Group();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Root#getViews <em>Views</em>}'.
@@ -1986,101 +1874,48 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getRelationClass_FromClass();
 
 	/**
-	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.RelationClass#getClass_A <em>Class A</em>}'.
+	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_A <em>Attribute Class A</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Class A</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationClass#getClass_A()
+	 * @return the meta object for the reference '<em>Attribute Class A</em>'.
+	 * @see Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_A()
 	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EReference getRelationClass_Class_A();
+	EReference getRelationClass_Attribute_Class_A();
 
 	/**
-	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.RelationClass#getClass_B <em>Class B</em>}'.
+	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_B <em>Attribute Class B</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Class B</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationClass#getClass_B()
+	 * @return the meta object for the reference '<em>Attribute Class B</em>'.
+	 * @see Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_B()
 	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EReference getRelationClass_Class_B();
+	EReference getRelationClass_Attribute_Class_B();
 
 	/**
-	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.Menu <em>Menu</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_A <em>Cardinality Class A</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Menu</em>'.
-	 * @see Metawebdesign.metawebdesign.Menu
+	 * @return the meta object for the attribute '<em>Cardinality Class A</em>'.
+	 * @see Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_A()
+	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EClass getMenu();
+	EAttribute getRelationClass_Cardinality_Class_A();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Menu#getHasGroup <em>Has Group</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_B <em>Cardinality Class B</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Has Group</em>'.
-	 * @see Metawebdesign.metawebdesign.Menu#getHasGroup()
-	 * @see #getMenu()
+	 * @return the meta object for the attribute '<em>Cardinality Class B</em>'.
+	 * @see Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_B()
+	 * @see #getRelationClass()
 	 * @generated
 	 */
-	EReference getMenu_HasGroup();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Menu#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Metawebdesign.metawebdesign.Menu#getName()
-	 * @see #getMenu()
-	 * @generated
-	 */
-	EAttribute getMenu_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Menu#getOrientated <em>Orientated</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Orientated</em>'.
-	 * @see Metawebdesign.metawebdesign.Menu#getOrientated()
-	 * @see #getMenu()
-	 * @generated
-	 */
-	EAttribute getMenu_Orientated();
-
-	/**
-	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.Group <em>Group</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Group</em>'.
-	 * @see Metawebdesign.metawebdesign.Group
-	 * @generated
-	 */
-	EClass getGroup();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Group#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Metawebdesign.metawebdesign.Group#getName()
-	 * @see #getGroup()
-	 * @generated
-	 */
-	EAttribute getGroup_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Group#getOrder <em>Order</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Order</em>'.
-	 * @see Metawebdesign.metawebdesign.Group#getOrder()
-	 * @see #getGroup()
-	 * @generated
-	 */
-	EAttribute getGroup_Order();
+	EAttribute getRelationClass_Cardinality_Class_B();
 
 	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.Views <em>Views</em>}'.
@@ -2113,17 +1948,6 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getViews_RolView();
-
-	/**
-	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.Views#getGroupName <em>Group Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Group Name</em>'.
-	 * @see Metawebdesign.metawebdesign.Views#getGroupName()
-	 * @see #getViews()
-	 * @generated
-	 */
-	EReference getViews_GroupName();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Views#getHasRelationView <em>Has Relation View</em>}'.
@@ -2190,15 +2014,15 @@ public interface MetawebdesignPackage extends EPackage {
 	EClass getPage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Page#getContent <em>Content</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Page#getContent_HTML <em>Content HTML</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Content</em>'.
-	 * @see Metawebdesign.metawebdesign.Page#getContent()
+	 * @return the meta object for the attribute '<em>Content HTML</em>'.
+	 * @see Metawebdesign.metawebdesign.Page#getContent_HTML()
 	 * @see #getPage()
 	 * @generated
 	 */
-	EAttribute getPage_Content();
+	EAttribute getPage_Content_HTML();
 
 	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.RelationView <em>Relation View</em>}'.
@@ -2254,69 +2078,80 @@ public interface MetawebdesignPackage extends EPackage {
 	EClass getViewComponent();
 
 	/**
-	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.CallAtribute <em>Call Atribute</em>}'.
+	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.ViewAttribute <em>View Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Call Atribute</em>'.
-	 * @see Metawebdesign.metawebdesign.CallAtribute
+	 * @return the meta object for class '<em>View Attribute</em>'.
+	 * @see Metawebdesign.metawebdesign.ViewAttribute
 	 * @generated
 	 */
-	EClass getCallAtribute();
+	EClass getViewAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.CallAtribute#getGetAttribute <em>Get Attribute</em>}'.
+	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.ViewAttribute#getGetAttribute <em>Get Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Get Attribute</em>'.
-	 * @see Metawebdesign.metawebdesign.CallAtribute#getGetAttribute()
-	 * @see #getCallAtribute()
+	 * @see Metawebdesign.metawebdesign.ViewAttribute#getGetAttribute()
+	 * @see #getViewAttribute()
 	 * @generated
 	 */
-	EReference getCallAtribute_GetAttribute();
+	EReference getViewAttribute_GetAttribute();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.CallAtribute#getTypePresentation <em>Type Presentation</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.ViewAttribute#getTypePresentation <em>Type Presentation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type Presentation</em>'.
-	 * @see Metawebdesign.metawebdesign.CallAtribute#getTypePresentation()
-	 * @see #getCallAtribute()
+	 * @see Metawebdesign.metawebdesign.ViewAttribute#getTypePresentation()
+	 * @see #getViewAttribute()
 	 * @generated
 	 */
-	EAttribute getCallAtribute_TypePresentation();
+	EAttribute getViewAttribute_TypePresentation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.CallAtribute#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.ViewAttribute#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Metawebdesign.metawebdesign.CallAtribute#getName()
-	 * @see #getCallAtribute()
+	 * @see Metawebdesign.metawebdesign.ViewAttribute#getName()
+	 * @see #getViewAttribute()
 	 * @generated
 	 */
-	EAttribute getCallAtribute_Name();
+	EAttribute getViewAttribute_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.CallAtribute#getPositionHorizontal <em>Position Horizontal</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.ViewAttribute#getPositionHorizontal <em>Position Horizontal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Position Horizontal</em>'.
-	 * @see Metawebdesign.metawebdesign.CallAtribute#getPositionHorizontal()
-	 * @see #getCallAtribute()
+	 * @see Metawebdesign.metawebdesign.ViewAttribute#getPositionHorizontal()
+	 * @see #getViewAttribute()
 	 * @generated
 	 */
-	EAttribute getCallAtribute_PositionHorizontal();
+	EAttribute getViewAttribute_PositionHorizontal();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.CallAtribute#getPostionVertical <em>Postion Vertical</em>}'.
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.ViewAttribute#getPostionVertical <em>Postion Vertical</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Postion Vertical</em>'.
-	 * @see Metawebdesign.metawebdesign.CallAtribute#getPostionVertical()
-	 * @see #getCallAtribute()
+	 * @see Metawebdesign.metawebdesign.ViewAttribute#getPostionVertical()
+	 * @see #getViewAttribute()
 	 * @generated
 	 */
-	EAttribute getCallAtribute_PostionVertical();
+	EAttribute getViewAttribute_PostionVertical();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.ViewAttribute#getFrom <em>From</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>From</em>'.
+	 * @see Metawebdesign.metawebdesign.ViewAttribute#getFrom()
+	 * @see #getViewAttribute()
+	 * @generated
+	 */
+	EAttribute getViewAttribute_From();
 
 	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.NavegationMenu <em>Navegation Menu</em>}'.
@@ -2404,6 +2239,17 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getLinkViewCRUD_FromClass();
 
 	/**
+	 * Returns the meta object for the reference list '{@link Metawebdesign.metawebdesign.LinkViewCRUD#getFromRelation <em>From Relation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>From Relation</em>'.
+	 * @see Metawebdesign.metawebdesign.LinkViewCRUD#getFromRelation()
+	 * @see #getLinkViewCRUD()
+	 * @generated
+	 */
+	EReference getLinkViewCRUD_FromRelation();
+
+	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.LinkView <em>Link View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2457,17 +2303,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EAttribute getConstraint_Operator();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see Metawebdesign.metawebdesign.Constraint#getValue()
-	 * @see #getConstraint()
-	 * @generated
-	 */
-	EAttribute getConstraint_Value();
-
-	/**
 	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Constraint#getService <em>Service</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2488,6 +2323,17 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConstraint_Name();
+
+	/**
+	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Value</em>'.
+	 * @see Metawebdesign.metawebdesign.Constraint#getValue()
+	 * @see #getConstraint()
+	 * @generated
+	 */
+	EReference getConstraint_Value();
 
 	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.RelationContraint <em>Relation Contraint</em>}'.
@@ -2613,6 +2459,26 @@ public interface MetawebdesignPackage extends EPackage {
 	EEnum getTypeOperator();
 
 	/**
+	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>type View Attribute</em>'.
+	 * @see Metawebdesign.metawebdesign.typeViewAttribute
+	 * @generated
+	 */
+	EEnum gettypeViewAttribute();
+
+	/**
+	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>type Cardinality</em>'.
+	 * @see Metawebdesign.metawebdesign.typeCardinality
+	 * @generated
+	 */
+	EEnum gettypeCardinality();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2660,22 +2526,6 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ROOT__ATTRIBUTE = eINSTANCE.getRoot_Attribute();
-
-		/**
-		 * The meta object literal for the '<em><b>Menu</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ROOT__MENU = eINSTANCE.getRoot_Menu();
-
-		/**
-		 * The meta object literal for the '<em><b>Group</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ROOT__GROUP = eINSTANCE.getRoot_Group();
 
 		/**
 		 * The meta object literal for the '<em><b>Views</b></em>' containment reference list feature.
@@ -2960,80 +2810,36 @@ public interface MetawebdesignPackage extends EPackage {
 		EReference RELATION_CLASS__FROM_CLASS = eINSTANCE.getRelationClass_FromClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Class A</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Attribute Class A</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RELATION_CLASS__CLASS_A = eINSTANCE.getRelationClass_Class_A();
+		EReference RELATION_CLASS__ATTRIBUTE_CLASS_A = eINSTANCE.getRelationClass_Attribute_Class_A();
 
 		/**
-		 * The meta object literal for the '<em><b>Class B</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Attribute Class B</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RELATION_CLASS__CLASS_B = eINSTANCE.getRelationClass_Class_B();
+		EReference RELATION_CLASS__ATTRIBUTE_CLASS_B = eINSTANCE.getRelationClass_Attribute_Class_B();
 
 		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.MenuImpl <em>Menu</em>}' class.
+		 * The meta object literal for the '<em><b>Cardinality Class A</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.impl.MenuImpl
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getMenu()
 		 * @generated
 		 */
-		EClass MENU = eINSTANCE.getMenu();
+		EAttribute RELATION_CLASS__CARDINALITY_CLASS_A = eINSTANCE.getRelationClass_Cardinality_Class_A();
 
 		/**
-		 * The meta object literal for the '<em><b>Has Group</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Cardinality Class B</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MENU__HAS_GROUP = eINSTANCE.getMenu_HasGroup();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute MENU__NAME = eINSTANCE.getMenu_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Orientated</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute MENU__ORIENTATED = eINSTANCE.getMenu_Orientated();
-
-		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.GroupImpl <em>Group</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.impl.GroupImpl
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getGroup()
-		 * @generated
-		 */
-		EClass GROUP = eINSTANCE.getGroup();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GROUP__NAME = eINSTANCE.getGroup_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Order</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute GROUP__ORDER = eINSTANCE.getGroup_Order();
+		EAttribute RELATION_CLASS__CARDINALITY_CLASS_B = eINSTANCE.getRelationClass_Cardinality_Class_B();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.ViewsImpl <em>Views</em>}' class.
@@ -3060,14 +2866,6 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute VIEWS__ROL_VIEW = eINSTANCE.getViews_RolView();
-
-		/**
-		 * The meta object literal for the '<em><b>Group Name</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference VIEWS__GROUP_NAME = eINSTANCE.getViews_GroupName();
 
 		/**
 		 * The meta object literal for the '<em><b>Has Relation View</b></em>' containment reference list feature.
@@ -3122,12 +2920,12 @@ public interface MetawebdesignPackage extends EPackage {
 		EClass PAGE = eINSTANCE.getPage();
 
 		/**
-		 * The meta object literal for the '<em><b>Content</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Content HTML</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute PAGE__CONTENT = eINSTANCE.getPage_Content();
+		EAttribute PAGE__CONTENT_HTML = eINSTANCE.getPage_Content_HTML();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.RelationViewImpl <em>Relation View</em>}' class.
@@ -3174,14 +2972,14 @@ public interface MetawebdesignPackage extends EPackage {
 		EClass VIEW_COMPONENT = eINSTANCE.getViewComponent();
 
 		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.CallAtributeImpl <em>Call Atribute</em>}' class.
+		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.ViewAttributeImpl <em>View Attribute</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.impl.CallAtributeImpl
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getCallAtribute()
+		 * @see Metawebdesign.metawebdesign.impl.ViewAttributeImpl
+		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getViewAttribute()
 		 * @generated
 		 */
-		EClass CALL_ATRIBUTE = eINSTANCE.getCallAtribute();
+		EClass VIEW_ATTRIBUTE = eINSTANCE.getViewAttribute();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Attribute</b></em>' reference feature.
@@ -3189,7 +2987,7 @@ public interface MetawebdesignPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CALL_ATRIBUTE__GET_ATTRIBUTE = eINSTANCE.getCallAtribute_GetAttribute();
+		EReference VIEW_ATTRIBUTE__GET_ATTRIBUTE = eINSTANCE.getViewAttribute_GetAttribute();
 
 		/**
 		 * The meta object literal for the '<em><b>Type Presentation</b></em>' attribute feature.
@@ -3197,7 +2995,7 @@ public interface MetawebdesignPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CALL_ATRIBUTE__TYPE_PRESENTATION = eINSTANCE.getCallAtribute_TypePresentation();
+		EAttribute VIEW_ATTRIBUTE__TYPE_PRESENTATION = eINSTANCE.getViewAttribute_TypePresentation();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -3205,7 +3003,7 @@ public interface MetawebdesignPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CALL_ATRIBUTE__NAME = eINSTANCE.getCallAtribute_Name();
+		EAttribute VIEW_ATTRIBUTE__NAME = eINSTANCE.getViewAttribute_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Position Horizontal</b></em>' attribute feature.
@@ -3213,7 +3011,7 @@ public interface MetawebdesignPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CALL_ATRIBUTE__POSITION_HORIZONTAL = eINSTANCE.getCallAtribute_PositionHorizontal();
+		EAttribute VIEW_ATTRIBUTE__POSITION_HORIZONTAL = eINSTANCE.getViewAttribute_PositionHorizontal();
 
 		/**
 		 * The meta object literal for the '<em><b>Postion Vertical</b></em>' attribute feature.
@@ -3221,7 +3019,15 @@ public interface MetawebdesignPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CALL_ATRIBUTE__POSTION_VERTICAL = eINSTANCE.getCallAtribute_PostionVertical();
+		EAttribute VIEW_ATTRIBUTE__POSTION_VERTICAL = eINSTANCE.getViewAttribute_PostionVertical();
+
+		/**
+		 * The meta object literal for the '<em><b>From</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VIEW_ATTRIBUTE__FROM = eINSTANCE.getViewAttribute_From();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.NavegationMenuImpl <em>Navegation Menu</em>}' class.
@@ -3294,6 +3100,14 @@ public interface MetawebdesignPackage extends EPackage {
 		EReference LINK_VIEW_CRUD__FROM_CLASS = eINSTANCE.getLinkViewCRUD_FromClass();
 
 		/**
+		 * The meta object literal for the '<em><b>From Relation</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINK_VIEW_CRUD__FROM_RELATION = eINSTANCE.getLinkViewCRUD_FromRelation();
+
+		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.LinkViewImpl <em>Link View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3338,14 +3152,6 @@ public interface MetawebdesignPackage extends EPackage {
 		EAttribute CONSTRAINT__OPERATOR = eINSTANCE.getConstraint_Operator();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CONSTRAINT__VALUE = eINSTANCE.getConstraint_Value();
-
-		/**
 		 * The meta object literal for the '<em><b>Service</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3360,6 +3166,14 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONSTRAINT__NAME = eINSTANCE.getConstraint_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONSTRAINT__VALUE = eINSTANCE.getConstraint_Value();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.RelationContraintImpl <em>Relation Contraint</em>}' class.
@@ -3474,6 +3288,26 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum TYPE_OPERATOR = eINSTANCE.getTypeOperator();
+
+		/**
+		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Metawebdesign.metawebdesign.typeViewAttribute
+		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeViewAttribute()
+		 * @generated
+		 */
+		EEnum TYPE_VIEW_ATTRIBUTE = eINSTANCE.gettypeViewAttribute();
+
+		/**
+		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Metawebdesign.metawebdesign.typeCardinality
+		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeCardinality()
+		 * @generated
+		 */
+		EEnum TYPE_CARDINALITY = eINSTANCE.gettypeCardinality();
 
 	}
 

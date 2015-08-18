@@ -14,5 +14,5 @@ package Metawebdesign.metawebdesign.validation;
 public interface PageValidator {
 	boolean validate();
 
-	boolean validateContent(String value);
+	boolean validateContent_HTML(String value);
 }

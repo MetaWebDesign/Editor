@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getTitle <em>Title</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getRolView <em>Rol View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Views#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getHasRelationView <em>Has Relation View</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getFromRelation <em>From Relation</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getHasViewComponent <em>Has View Component</em>}</li>
@@ -82,32 +81,6 @@ public interface Views extends EObject {
 	 * @generated
 	 */
 	void setRolView(TypeRol value);
-
-	/**
-	 * Returns the value of the '<em><b>Group Name</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group Name</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Group Name</em>' reference.
-	 * @see #setGroupName(Group)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViews_GroupName()
-	 * @model
-	 * @generated
-	 */
-	Group getGroupName();
-
-	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Views#getGroupName <em>Group Name</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Group Name</em>' reference.
-	 * @see #getGroupName()
-	 * @generated
-	 */
-	void setGroupName(Group value);
 
 	/**
 	 * Returns the value of the '<em><b>Has Relation View</b></em>' containment reference list.

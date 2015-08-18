@@ -10,8 +10,6 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class Root
     Reference class : Class<<0..*>>
     Reference attribute : Attributes<<0..*>>
-    Reference menu : Menu<<0..*>>
-    Reference group : Group<<0..*>>
     Reference views : Views<<0..*>>
     Reference view_component : ViewComponent<<0..*>>
     Reference link : Link<<0..*>>
@@ -51,22 +49,14 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class RelationClass
     Attribute name : EString
     Reference fromClass : Class<<0..*>>
-    Reference Class_A : Attributes
-    Reference Class_B : Attributes
-
-  Class Menu
-    Reference hasGroup : Group<<0..*>>
-    Attribute name : EString
-    Attribute orientated : TypeOrientation
-
-  Class Group
-    Attribute name : EString
-    Attribute order : EInt
+    Reference Attribute_Class_A : Attributes
+    Reference Attribute_Class_B : Attributes
+    Attribute Cardinality_Class_A : typeCardinality
+    Attribute Cardinality_Class_B : typeCardinality
 
   Class Views
     Attribute title : EString
     Attribute rolView : TypeRol
-    Reference groupName : Group
     Reference hasRelationView : RelationView<<0..*>>
     Reference fromRelation : RelationView<<0..*>>
     Reference hasViewComponent : ViewComponent<<0..*>>
@@ -75,7 +65,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute service : TypeService
 
   Class Page -> Views
-    Attribute Content : EString
+    Attribute Content_HTML : EString
 
   Class RelationView
     Attribute name : EString
@@ -84,12 +74,13 @@ Package metawebdesign <http://metawebdesign/1.0>
 
   Class ViewComponent
 
-  Class CallAtribute -> ViewComponent
+  Class ViewAttribute -> ViewComponent
     Reference getAttribute : Attributes
     Attribute typePresentation : typePresentation
     Attribute name : EString
     Attribute positionHorizontal : typeHorizontalPosition
     Attribute postionVertical : EInt
+    Attribute From : typeViewAttribute
 
   Class NavegationMenu -> ViewComponent
     Reference hasLink : Link<<0..*>>
@@ -101,16 +92,17 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class LinkViewCRUD -> Link
     Attribute service : TypeService
     Reference fromClass : Class<<0..*>>
+    Reference FromRelation : Class<<0..*>>
 
   Class LinkView -> Link
     Reference linkView : Views
 
   Class Constraint
-    Reference attribute : Attributes
+    Reference Attribute : Derived
     Attribute operator : TypeOperator
-    Attribute value : EInt
     Attribute service : TypeService
     Attribute name : EString
+    Reference Value : NotDerived
 
   Class RelationContraint
     Reference RhasConstraint : Constraint<<0..*>>
@@ -175,3 +167,11 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal menor_igual = 3
     Literal mayor_igual = 4
     Literal diferente = 5
+
+  Enum typeViewAttribute
+    Literal DataBase = 0
+    Literal SessionUser = 0
+
+  Enum typeCardinality
+    Literal one = 0
+    Literal many = 0

@@ -56,24 +56,6 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Menu"
-          description="Create new Menu">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Group"
-          description="Create new Group">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="Views"
           description="Create new Views">
         <smallIcon
@@ -119,8 +101,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="CallAtribute"
-          description="Create new CallAtribute">
+          title="ViewAttribute"
+          description="Create new ViewAttribute">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

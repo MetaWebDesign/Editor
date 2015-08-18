@@ -30,7 +30,7 @@ public class LinkView2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 3004;
+	public static final int VISUAL_ID = 3003;
 
 	/**
 	 * @generated
@@ -259,7 +259,6 @@ public class LinkView2EditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public LinkViewFigure() {
-			this.setLineWidth(0);
 			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(100),
 					getMapMode().DPtoLP(16)));
 			createContents();

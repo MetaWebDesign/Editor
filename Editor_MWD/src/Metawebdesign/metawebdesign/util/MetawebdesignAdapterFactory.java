@@ -3,15 +3,12 @@
 package Metawebdesign.metawebdesign.util;
 
 import Metawebdesign.metawebdesign.Attributes;
-import Metawebdesign.metawebdesign.CallAtribute;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.Form;
-import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.LinkView;
 import Metawebdesign.metawebdesign.LinkViewCRUD;
-import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
@@ -20,6 +17,7 @@ import Metawebdesign.metawebdesign.RelationClass;
 import Metawebdesign.metawebdesign.RelationContraint;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
+import Metawebdesign.metawebdesign.ViewAttribute;
 import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 
@@ -111,14 +109,6 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 				return createRelationClassAdapter();
 			}
 			@Override
-			public Adapter caseMenu(Menu object) {
-				return createMenuAdapter();
-			}
-			@Override
-			public Adapter caseGroup(Group object) {
-				return createGroupAdapter();
-			}
-			@Override
 			public Adapter caseViews(Views object) {
 				return createViewsAdapter();
 			}
@@ -139,8 +129,8 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 				return createViewComponentAdapter();
 			}
 			@Override
-			public Adapter caseCallAtribute(CallAtribute object) {
-				return createCallAtributeAdapter();
+			public Adapter caseViewAttribute(ViewAttribute object) {
+				return createViewAttributeAdapter();
 			}
 			@Override
 			public Adapter caseNavegationMenu(NavegationMenu object) {
@@ -271,34 +261,6 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.Menu <em>Menu</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metawebdesign.metawebdesign.Menu
-	 * @generated
-	 */
-	public Adapter createMenuAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.Group <em>Group</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metawebdesign.metawebdesign.Group
-	 * @generated
-	 */
-	public Adapter createGroupAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.Views <em>Views</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -369,16 +331,16 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.CallAtribute <em>Call Atribute</em>}'.
+	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.ViewAttribute <em>View Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Metawebdesign.metawebdesign.CallAtribute
+	 * @see Metawebdesign.metawebdesign.ViewAttribute
 	 * @generated
 	 */
-	public Adapter createCallAtributeAdapter() {
+	public Adapter createViewAttributeAdapter() {
 		return null;
 	}
 

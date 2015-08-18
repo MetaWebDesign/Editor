@@ -79,8 +79,6 @@ public class RootItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__CLASS);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__ATTRIBUTE);
-			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__MENU);
-			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__GROUP);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__VIEWS);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT);
 			childrenFeatures.add(MetawebdesignPackage.Literals.ROOT__LINK);
@@ -139,8 +137,6 @@ public class RootItemProvider
 		switch (notification.getFeatureID(Root.class)) {
 			case MetawebdesignPackage.ROOT__CLASS:
 			case MetawebdesignPackage.ROOT__ATTRIBUTE:
-			case MetawebdesignPackage.ROOT__MENU:
-			case MetawebdesignPackage.ROOT__GROUP:
 			case MetawebdesignPackage.ROOT__VIEWS:
 			case MetawebdesignPackage.ROOT__VIEW_COMPONENT:
 			case MetawebdesignPackage.ROOT__LINK:
@@ -184,16 +180,6 @@ public class RootItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MetawebdesignPackage.Literals.ROOT__MENU,
-				 MetawebdesignFactory.eINSTANCE.createMenu()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.ROOT__GROUP,
-				 MetawebdesignFactory.eINSTANCE.createGroup()));
-
-		newChildDescriptors.add
-			(createChildParameter
 				(MetawebdesignPackage.Literals.ROOT__VIEWS,
 				 MetawebdesignFactory.eINSTANCE.createViews()));
 
@@ -215,7 +201,7 @@ public class RootItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(MetawebdesignPackage.Literals.ROOT__VIEW_COMPONENT,
-				 MetawebdesignFactory.eINSTANCE.createCallAtribute()));
+				 MetawebdesignFactory.eINSTANCE.createViewAttribute()));
 
 		newChildDescriptors.add
 			(createChildParameter

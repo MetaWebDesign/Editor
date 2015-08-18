@@ -25,7 +25,7 @@ public class ConstraintItemSemanticEditPolicy
 	 */
 	public ConstraintItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2007);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_2005);
 	}
 
 	/**

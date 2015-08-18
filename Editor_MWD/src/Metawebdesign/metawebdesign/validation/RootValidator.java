@@ -6,9 +6,7 @@ package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
-import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.Link;
-import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 
@@ -25,12 +23,8 @@ public interface RootValidator {
 
 	boolean validateClass(EList<Metawebdesign.metawebdesign.Class> value);
 	boolean validateAttribute(EList<Attributes> value);
-	boolean validateMenu(EList<Menu> value);
-	boolean validateGroup(EList<Group> value);
 	boolean validateViews(EList<Views> value);
 	boolean validateView_component(EList<ViewComponent> value);
 	boolean validateLink(EList<Link> value);
 	boolean validateConstraint(EList<Constraint> value);
-
-	boolean validateConstraint(Constraint value);
 }

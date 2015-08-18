@@ -2,7 +2,6 @@
  */
 package Metawebdesign.metawebdesign.impl;
 
-import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.TypeRol;
@@ -35,7 +34,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getTitle <em>Title</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getRolView <em>Rol View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getHasRelationView <em>Has Relation View</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getFromRelation <em>From Relation</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getHasViewComponent <em>Has View Component</em>}</li>
@@ -84,16 +82,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * @ordered
 	 */
 	protected TypeRol rolView = ROL_VIEW_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getGroupName() <em>Group Name</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getGroupName()
-	 * @generated
-	 * @ordered
-	 */
-	protected Group groupName;
 
 	/**
 	 * The cached value of the '{@link #getHasRelationView() <em>Has Relation View</em>}' containment reference list.
@@ -191,44 +179,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Group getGroupName() {
-		if (groupName != null && groupName.eIsProxy()) {
-			InternalEObject oldGroupName = (InternalEObject)groupName;
-			groupName = (Group)eResolveProxy(oldGroupName);
-			if (groupName != oldGroupName) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MetawebdesignPackage.VIEWS__GROUP_NAME, oldGroupName, groupName));
-			}
-		}
-		return groupName;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Group basicGetGroupName() {
-		return groupName;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setGroupName(Group newGroupName) {
-		Group oldGroupName = groupName;
-		groupName = newGroupName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.VIEWS__GROUP_NAME, oldGroupName, groupName));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<RelationView> getHasRelationView() {
 		if (hasRelationView == null) {
 			hasRelationView = new EObjectContainmentEList<RelationView>(RelationView.class, this, MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW);
@@ -288,9 +238,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return getTitle();
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				return getRolView();
-			case MetawebdesignPackage.VIEWS__GROUP_NAME:
-				if (resolve) return getGroupName();
-				return basicGetGroupName();
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
 				return getHasRelationView();
 			case MetawebdesignPackage.VIEWS__FROM_RELATION:
@@ -315,9 +262,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return;
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				setRolView((TypeRol)newValue);
-				return;
-			case MetawebdesignPackage.VIEWS__GROUP_NAME:
-				setGroupName((Group)newValue);
 				return;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
 				getHasRelationView().clear();
@@ -349,9 +293,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				setRolView(ROL_VIEW_EDEFAULT);
 				return;
-			case MetawebdesignPackage.VIEWS__GROUP_NAME:
-				setGroupName((Group)null);
-				return;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
 				getHasRelationView().clear();
 				return;
@@ -377,8 +318,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				return rolView != ROL_VIEW_EDEFAULT;
-			case MetawebdesignPackage.VIEWS__GROUP_NAME:
-				return groupName != null;
 			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
 				return hasRelationView != null && !hasRelationView.isEmpty();
 			case MetawebdesignPackage.VIEWS__FROM_RELATION:

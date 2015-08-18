@@ -16,8 +16,10 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getName <em>Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getFromClass <em>From Class</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getClass_A <em>Class A</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getClass_B <em>Class B</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_A <em>Attribute Class A</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_B <em>Attribute Class B</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_A <em>Cardinality Class A</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_B <em>Cardinality Class B</em>}</li>
  * </ul>
  * </p>
  *
@@ -69,55 +71,113 @@ public interface RelationClass extends EObject {
 	EList<Metawebdesign.metawebdesign.Class> getFromClass();
 
 	/**
-	 * Returns the value of the '<em><b>Class A</b></em>' reference.
+	 * Returns the value of the '<em><b>Attribute Class A</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Class A</em>' reference isn't clear,
+	 * If the meaning of the '<em>Attribute Class A</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Class A</em>' reference.
-	 * @see #setClass_A(Attributes)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_Class_A()
+	 * @return the value of the '<em>Attribute Class A</em>' reference.
+	 * @see #setAttribute_Class_A(Attributes)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_Attribute_Class_A()
 	 * @model
 	 * @generated
 	 */
-	Attributes getClass_A();
+	Attributes getAttribute_Class_A();
 
 	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.RelationClass#getClass_A <em>Class A</em>}' reference.
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_A <em>Attribute Class A</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Class A</em>' reference.
-	 * @see #getClass_A()
+	 * @param value the new value of the '<em>Attribute Class A</em>' reference.
+	 * @see #getAttribute_Class_A()
 	 * @generated
 	 */
-	void setClass_A(Attributes value);
+	void setAttribute_Class_A(Attributes value);
 
 	/**
-	 * Returns the value of the '<em><b>Class B</b></em>' reference.
+	 * Returns the value of the '<em><b>Attribute Class B</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Class B</em>' reference isn't clear,
+	 * If the meaning of the '<em>Attribute Class B</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Class B</em>' reference.
-	 * @see #setClass_B(Attributes)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_Class_B()
+	 * @return the value of the '<em>Attribute Class B</em>' reference.
+	 * @see #setAttribute_Class_B(Attributes)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_Attribute_Class_B()
 	 * @model
 	 * @generated
 	 */
-	Attributes getClass_B();
+	Attributes getAttribute_Class_B();
 
 	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.RelationClass#getClass_B <em>Class B</em>}' reference.
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.RelationClass#getAttribute_Class_B <em>Attribute Class B</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Class B</em>' reference.
-	 * @see #getClass_B()
+	 * @param value the new value of the '<em>Attribute Class B</em>' reference.
+	 * @see #getAttribute_Class_B()
 	 * @generated
 	 */
-	void setClass_B(Attributes value);
+	void setAttribute_Class_B(Attributes value);
+
+	/**
+	 * Returns the value of the '<em><b>Cardinality Class A</b></em>' attribute.
+	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typeCardinality}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Cardinality Class A</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cardinality Class A</em>' attribute.
+	 * @see Metawebdesign.metawebdesign.typeCardinality
+	 * @see #setCardinality_Class_A(typeCardinality)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_Cardinality_Class_A()
+	 * @model
+	 * @generated
+	 */
+	typeCardinality getCardinality_Class_A();
+
+	/**
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_A <em>Cardinality Class A</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cardinality Class A</em>' attribute.
+	 * @see Metawebdesign.metawebdesign.typeCardinality
+	 * @see #getCardinality_Class_A()
+	 * @generated
+	 */
+	void setCardinality_Class_A(typeCardinality value);
+
+	/**
+	 * Returns the value of the '<em><b>Cardinality Class B</b></em>' attribute.
+	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typeCardinality}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Cardinality Class B</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cardinality Class B</em>' attribute.
+	 * @see Metawebdesign.metawebdesign.typeCardinality
+	 * @see #setCardinality_Class_B(typeCardinality)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRelationClass_Cardinality_Class_B()
+	 * @model
+	 * @generated
+	 */
+	typeCardinality getCardinality_Class_B();
+
+	/**
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.RelationClass#getCardinality_Class_B <em>Cardinality Class B</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cardinality Class B</em>' attribute.
+	 * @see Metawebdesign.metawebdesign.typeCardinality
+	 * @see #getCardinality_Class_B()
+	 * @generated
+	 */
+	void setCardinality_Class_B(typeCardinality value);
 
 } // RelationClass

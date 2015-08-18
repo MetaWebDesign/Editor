@@ -76,24 +76,6 @@ public interface MetawebdesignFactory extends EFactory {
 	RelationClass createRelationClass();
 
 	/**
-	 * Returns a new object of class '<em>Menu</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Menu</em>'.
-	 * @generated
-	 */
-	Menu createMenu();
-
-	/**
-	 * Returns a new object of class '<em>Group</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Group</em>'.
-	 * @generated
-	 */
-	Group createGroup();
-
-	/**
 	 * Returns a new object of class '<em>Views</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -139,13 +121,13 @@ public interface MetawebdesignFactory extends EFactory {
 	ViewComponent createViewComponent();
 
 	/**
-	 * Returns a new object of class '<em>Call Atribute</em>'.
+	 * Returns a new object of class '<em>View Attribute</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Call Atribute</em>'.
+	 * @return a new object of class '<em>View Attribute</em>'.
 	 * @generated
 	 */
-	CallAtribute createCallAtribute();
+	ViewAttribute createViewAttribute();
 
 	/**
 	 * Returns a new object of class '<em>Navegation Menu</em>'.

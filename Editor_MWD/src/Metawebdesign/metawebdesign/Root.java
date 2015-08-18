@@ -16,8 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getClass_ <em>Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getAttribute <em>Attribute</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Root#getMenu <em>Menu</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Root#getGroup <em>Group</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getViews <em>Views</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getView_component <em>View component</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Root#getLink <em>Link</em>}</li>
@@ -61,38 +59,6 @@ public interface Root extends EObject {
 	 * @generated
 	 */
 	EList<Attributes> getAttribute();
-
-	/**
-	 * Returns the value of the '<em><b>Menu</b></em>' containment reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.Menu}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Menu</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Menu</em>' containment reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRoot_Menu()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Menu> getMenu();
-
-	/**
-	 * Returns the value of the '<em><b>Group</b></em>' containment reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.Group}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Group</em>' containment reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getRoot_Group()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Group> getGroup();
 
 	/**
 	 * Returns the value of the '<em><b>Views</b></em>' containment reference list.
@@ -147,7 +113,7 @@ public interface Root extends EObject {
 	 * The list contents are of type {@link Metawebdesign.metawebdesign.Constraint}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Constraint</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Constraint</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

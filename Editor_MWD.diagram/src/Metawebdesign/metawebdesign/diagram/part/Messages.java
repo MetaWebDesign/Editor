@@ -298,142 +298,137 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String Menu6CreationTool_title;
+	public static String Views6CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Menu6CreationTool_desc;
+	public static String Views6CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Group7CreationTool_title;
+	public static String Form7CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Group7CreationTool_desc;
+	public static String Form7CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Views8CreationTool_title;
+	public static String Page8CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Views8CreationTool_desc;
+	public static String Page8CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Form9CreationTool_title;
+	public static String RelationView9CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Form9CreationTool_desc;
+	public static String RelationView9CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Page10CreationTool_title;
+	public static String ViewComponent10CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Page10CreationTool_desc;
+	public static String ViewComponent10CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationView11CreationTool_title;
+	public static String ViewAttribute11CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationView11CreationTool_desc;
+	public static String ViewAttribute11CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewComponent12CreationTool_title;
+	public static String NavegationMenu12CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewComponent12CreationTool_desc;
+	public static String NavegationMenu12CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String CallAtribute13CreationTool_title;
+	public static String Link13CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String CallAtribute13CreationTool_desc;
+	public static String Link13CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenu14CreationTool_title;
+	public static String LinkViewCRUD14CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenu14CreationTool_desc;
+	public static String LinkViewCRUD14CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Link15CreationTool_title;
+	public static String LinkView15CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Link15CreationTool_desc;
+	public static String LinkView15CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkViewCRUD16CreationTool_title;
+	public static String Constraint16CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkViewCRUD16CreationTool_desc;
+	public static String Constraint16CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkView17CreationTool_title;
+	public static String RelationContraint17CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkView17CreationTool_desc;
+	public static String RelationContraint17CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Constraint18CreationTool_title;
+	public static String FormCompViewInFormEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Constraint18CreationTool_desc;
+	public static String NavegationMenuLinksInCajonNavMenuEditPart_title;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationContraint19CreationTool_title;
-
-	/**
-	 * @generated
-	 */
-	public static String RelationContraint19CreationTool_desc;
+	public static String PageCompViewInPageEditPart_title;
 
 	/**
 	 * @generated
@@ -443,27 +438,7 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String MenuGroupInMenuEditPart_title;
-
-	/**
-	 * @generated
-	 */
-	public static String PageViewCompInPageEditPart_title;
-
-	/**
-	 * @generated
-	 */
-	public static String NavegationMenuLinksInNavMenuEditPart_title;
-
-	/**
-	 * @generated
-	 */
-	public static String FormCompVIewInFormEditPart_title;
-
-	/**
-	 * @generated
-	 */
-	public static String NavegationMenuLinksInNavMenu2EditPart_title;
+	public static String NavegationMenuLinksInCajonNavMenu2EditPart_title;
 
 	/**
 	 * @generated
@@ -478,27 +453,27 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String NavigatorGroupName_Form_2001_outgoinglinks;
+
+	/**
+	 * @generated
+	 */
 	public static String NavigatorGroupName_Page_2003_outgoinglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2004_outgoinglinks;
+	public static String NavigatorGroupName_Constraint_2005_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Class_2004_incominglinks;
+	public static String NavigatorGroupName_Class_2009_incominglinks;
 
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Constraint_2007_incominglinks;
-
-	/**
-	 * @generated
-	 */
-	public static String NavigatorGroupName_Form_2008_outgoinglinks;
+	public static String NavigatorGroupName_Class_2009_outgoinglinks;
 
 	/**
 	 * @generated

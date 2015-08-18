@@ -5,6 +5,7 @@
 package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Attributes;
+import Metawebdesign.metawebdesign.typeCardinality;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -19,6 +20,8 @@ public interface RelationClassValidator {
 
 	boolean validateName(String value);
 	boolean validateFromClass(EList<Metawebdesign.metawebdesign.Class> value);
-	boolean validateClass_A(Attributes value);
-	boolean validateClass_B(Attributes value);
+	boolean validateAttribute_Class_A(Attributes value);
+	boolean validateAttribute_Class_B(Attributes value);
+	boolean validateCardinality_Class_A(typeCardinality value);
+	boolean validateCardinality_Class_B(typeCardinality value);
 }

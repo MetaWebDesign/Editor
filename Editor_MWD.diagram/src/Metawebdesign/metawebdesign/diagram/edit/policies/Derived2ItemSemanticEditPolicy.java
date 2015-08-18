@@ -20,7 +20,7 @@ public class Derived2ItemSemanticEditPolicy
 	 */
 	public Derived2ItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3006);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005);
 	}
 
 	/**

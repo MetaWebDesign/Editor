@@ -3,15 +3,12 @@
 package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.Attributes;
-import Metawebdesign.metawebdesign.CallAtribute;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.Form;
-import Metawebdesign.metawebdesign.Group;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.LinkView;
 import Metawebdesign.metawebdesign.LinkViewCRUD;
-import Metawebdesign.metawebdesign.Menu;
 import Metawebdesign.metawebdesign.MetawebdesignFactory;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.NavegationMenu;
@@ -27,10 +24,13 @@ import Metawebdesign.metawebdesign.TypeOperator;
 import Metawebdesign.metawebdesign.TypeOrientation;
 import Metawebdesign.metawebdesign.TypeRol;
 import Metawebdesign.metawebdesign.TypeService;
+import Metawebdesign.metawebdesign.ViewAttribute;
 import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
+import Metawebdesign.metawebdesign.typeCardinality;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
 import Metawebdesign.metawebdesign.typePresentation;
+import Metawebdesign.metawebdesign.typeViewAttribute;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -91,14 +91,12 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 			case MetawebdesignPackage.DERIVED: return createDerived();
 			case MetawebdesignPackage.NOT_DERIVED: return createNotDerived();
 			case MetawebdesignPackage.RELATION_CLASS: return createRelationClass();
-			case MetawebdesignPackage.MENU: return createMenu();
-			case MetawebdesignPackage.GROUP: return createGroup();
 			case MetawebdesignPackage.VIEWS: return createViews();
 			case MetawebdesignPackage.FORM: return createForm();
 			case MetawebdesignPackage.PAGE: return createPage();
 			case MetawebdesignPackage.RELATION_VIEW: return createRelationView();
 			case MetawebdesignPackage.VIEW_COMPONENT: return createViewComponent();
-			case MetawebdesignPackage.CALL_ATRIBUTE: return createCallAtribute();
+			case MetawebdesignPackage.VIEW_ATTRIBUTE: return createViewAttribute();
 			case MetawebdesignPackage.NAVEGATION_MENU: return createNavegationMenu();
 			case MetawebdesignPackage.LINK: return createLink();
 			case MetawebdesignPackage.LINK_VIEW_CRUD: return createLinkViewCRUD();
@@ -134,6 +132,10 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 				return createTypeOrientationFromString(eDataType, initialValue);
 			case MetawebdesignPackage.TYPE_OPERATOR:
 				return createTypeOperatorFromString(eDataType, initialValue);
+			case MetawebdesignPackage.TYPE_VIEW_ATTRIBUTE:
+				return createtypeViewAttributeFromString(eDataType, initialValue);
+			case MetawebdesignPackage.TYPE_CARDINALITY:
+				return createtypeCardinalityFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -163,6 +165,10 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 				return convertTypeOrientationToString(eDataType, instanceValue);
 			case MetawebdesignPackage.TYPE_OPERATOR:
 				return convertTypeOperatorToString(eDataType, instanceValue);
+			case MetawebdesignPackage.TYPE_VIEW_ATTRIBUTE:
+				return converttypeViewAttributeToString(eDataType, instanceValue);
+			case MetawebdesignPackage.TYPE_CARDINALITY:
+				return converttypeCardinalityToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -233,26 +239,6 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Menu createMenu() {
-		MenuImpl menu = new MenuImpl();
-		return menu;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Group createGroup() {
-		GroupImpl group = new GroupImpl();
-		return group;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Views createViews() {
 		ViewsImpl views = new ViewsImpl();
 		return views;
@@ -303,9 +289,9 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CallAtribute createCallAtribute() {
-		CallAtributeImpl callAtribute = new CallAtributeImpl();
-		return callAtribute;
+	public ViewAttribute createViewAttribute() {
+		ViewAttributeImpl viewAttribute = new ViewAttributeImpl();
+		return viewAttribute;
 	}
 
 	/**
@@ -525,6 +511,46 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * @generated
 	 */
 	public String convertTypeOperatorToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public typeViewAttribute createtypeViewAttributeFromString(EDataType eDataType, String initialValue) {
+		typeViewAttribute result = typeViewAttribute.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String converttypeViewAttributeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public typeCardinality createtypeCardinalityFromString(EDataType eDataType, String initialValue) {
+		typeCardinality result = typeCardinality.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String converttypeCardinalityToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

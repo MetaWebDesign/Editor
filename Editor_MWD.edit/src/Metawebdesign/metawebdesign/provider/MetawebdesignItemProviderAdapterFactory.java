@@ -210,52 +210,6 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.Menu} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MenuItemProvider menuItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.Menu}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createMenuAdapter() {
-		if (menuItemProvider == null) {
-			menuItemProvider = new MenuItemProvider(this);
-		}
-
-		return menuItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.Group} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected GroupItemProvider groupItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.Group}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createGroupAdapter() {
-		if (groupItemProvider == null) {
-			groupItemProvider = new GroupItemProvider(this);
-		}
-
-		return groupItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.Views} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -371,26 +325,26 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.CallAtribute} instances.
+	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.ViewAttribute} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CallAtributeItemProvider callAtributeItemProvider;
+	protected ViewAttributeItemProvider viewAttributeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.CallAtribute}.
+	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.ViewAttribute}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createCallAtributeAdapter() {
-		if (callAtributeItemProvider == null) {
-			callAtributeItemProvider = new CallAtributeItemProvider(this);
+	public Adapter createViewAttributeAdapter() {
+		if (viewAttributeItemProvider == null) {
+			viewAttributeItemProvider = new ViewAttributeItemProvider(this);
 		}
 
-		return callAtributeItemProvider;
+		return viewAttributeItemProvider;
 	}
 
 	/**
@@ -636,14 +590,12 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 		if (derivedItemProvider != null) derivedItemProvider.dispose();
 		if (notDerivedItemProvider != null) notDerivedItemProvider.dispose();
 		if (relationClassItemProvider != null) relationClassItemProvider.dispose();
-		if (menuItemProvider != null) menuItemProvider.dispose();
-		if (groupItemProvider != null) groupItemProvider.dispose();
 		if (viewsItemProvider != null) viewsItemProvider.dispose();
 		if (formItemProvider != null) formItemProvider.dispose();
 		if (pageItemProvider != null) pageItemProvider.dispose();
 		if (relationViewItemProvider != null) relationViewItemProvider.dispose();
 		if (viewComponentItemProvider != null) viewComponentItemProvider.dispose();
-		if (callAtributeItemProvider != null) callAtributeItemProvider.dispose();
+		if (viewAttributeItemProvider != null) viewAttributeItemProvider.dispose();
 		if (navegationMenuItemProvider != null) navegationMenuItemProvider.dispose();
 		if (linkItemProvider != null) linkItemProvider.dispose();
 		if (linkViewCRUDItemProvider != null) linkViewCRUDItemProvider.dispose();

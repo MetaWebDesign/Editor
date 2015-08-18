@@ -6,10 +6,6 @@
         eType="#//Class" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
         eType="#//Attributes" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="menu" upperBound="-1" eType="#//Menu"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="group" upperBound="-1"
-        eType="#//Group" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="views" upperBound="-1"
         eType="#//Views" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="view_component" upperBound="-1"
@@ -85,8 +81,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fromClass" upperBound="-1"
         eType="#//Class"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Class_A" eType="#//Attributes"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Class_B" eType="#//Attributes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute_Class_A" eType="#//Attributes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute_Class_B" eType="#//Attributes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_Class_A" eType="#//typeCardinality"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_Class_B" eType="#//typeCardinality"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typePresentation">
     <eLiterals name="string"/>
@@ -104,16 +102,6 @@
     <eLiterals name="table_hover" value="12" literal="table_hover"/>
     <eLiterals name="img" value="13"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Menu">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasGroup" upperBound="-1"
-        eType="#//Group" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="orientated" eType="#//TypeOrientation"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Group">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typeHorizontalPosition">
     <eLiterals name="left"/>
     <eLiterals name="center" value="1"/>
@@ -123,7 +111,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Views">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rolView" eType="#//TypeRol"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="groupName" eType="#//Group"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationView" upperBound="-1"
         eType="#//RelationView" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fromRelation" upperBound="-1"
@@ -139,7 +126,7 @@
     <eLiterals name="update" value="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Page" eSuperTypes="#//Views">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Content_HTML" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeOrientation">
     <eLiterals name="topHorizontal"/>
@@ -155,13 +142,15 @@
         eType="#//Class"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViewComponent"/>
-  <eClassifiers xsi:type="ecore:EClass" name="CallAtribute" eSuperTypes="#//ViewComponent">
+  <eClassifiers xsi:type="ecore:EClass" name="ViewAttribute" eSuperTypes="#//ViewComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="getAttribute" eType="#//Attributes"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentation"
         defaultValueLiteral="string"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionHorizontal" eType="#//typeHorizontalPosition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="postionVertical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="From" eType="#//typeViewAttribute"
+        defaultValueLiteral="DataBase"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavegationMenu" eSuperTypes="#//ViewComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasLink" upperBound="-1"
@@ -175,16 +164,18 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fromClass" upperBound="-1"
         eType="#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="FromRelation" upperBound="-1"
+        eType="#//Class"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LinkView" eSuperTypes="#//Link">
     <eStructuralFeatures xsi:type="ecore:EReference" name="linkView" eType="#//Views"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Constraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" eType="#//Attributes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute" eType="#//Derived"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="#//TypeOperator"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Value" eType="#//NotDerived"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RelationContraint">
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasConstraint" upperBound="-1"
@@ -200,5 +191,13 @@
     <eLiterals name="menor_igual" value="3"/>
     <eLiterals name="mayor_igual" value="4"/>
     <eLiterals name="diferente" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="typeViewAttribute">
+    <eLiterals name="DataBase"/>
+    <eLiterals name="SessionUser"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="typeCardinality">
+    <eLiterals name="one"/>
+    <eLiterals name="many"/>
   </eClassifiers>
 </ecore:EPackage>

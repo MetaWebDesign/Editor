@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.impl.LinkViewCRUDImpl#getService <em>Service</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.LinkViewCRUDImpl#getFromClass <em>From Class</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.impl.LinkViewCRUDImpl#getFromRelation <em>From Relation</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,6 +63,16 @@ public class LinkViewCRUDImpl extends LinkImpl implements LinkViewCRUD {
 	 * @ordered
 	 */
 	protected EList<Metawebdesign.metawebdesign.Class> fromClass;
+
+	/**
+	 * The cached value of the '{@link #getFromRelation() <em>From Relation</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFromRelation()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Metawebdesign.metawebdesign.Class> fromRelation;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,6 +131,18 @@ public class LinkViewCRUDImpl extends LinkImpl implements LinkViewCRUD {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Metawebdesign.metawebdesign.Class> getFromRelation() {
+		if (fromRelation == null) {
+			fromRelation = new EObjectResolvingEList<Metawebdesign.metawebdesign.Class>(Metawebdesign.metawebdesign.Class.class, this, MetawebdesignPackage.LINK_VIEW_CRUD__FROM_RELATION);
+		}
+		return fromRelation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -127,6 +150,8 @@ public class LinkViewCRUDImpl extends LinkImpl implements LinkViewCRUD {
 				return getService();
 			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_CLASS:
 				return getFromClass();
+			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_RELATION:
+				return getFromRelation();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -147,6 +172,10 @@ public class LinkViewCRUDImpl extends LinkImpl implements LinkViewCRUD {
 				getFromClass().clear();
 				getFromClass().addAll((Collection<? extends Metawebdesign.metawebdesign.Class>)newValue);
 				return;
+			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_RELATION:
+				getFromRelation().clear();
+				getFromRelation().addAll((Collection<? extends Metawebdesign.metawebdesign.Class>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -165,6 +194,9 @@ public class LinkViewCRUDImpl extends LinkImpl implements LinkViewCRUD {
 			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_CLASS:
 				getFromClass().clear();
 				return;
+			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_RELATION:
+				getFromRelation().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -181,6 +213,8 @@ public class LinkViewCRUDImpl extends LinkImpl implements LinkViewCRUD {
 				return service != SERVICE_EDEFAULT;
 			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_CLASS:
 				return fromClass != null && !fromClass.isEmpty();
+			case MetawebdesignPackage.LINK_VIEW_CRUD__FROM_RELATION:
+				return fromRelation != null && !fromRelation.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

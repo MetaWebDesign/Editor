@@ -45,25 +45,25 @@ public class PageItemProvider extends ViewsItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addContentPropertyDescriptor(object);
+			addContent_HTMLPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Content feature.
+	 * This adds a property descriptor for the Content HTML feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addContentPropertyDescriptor(Object object) {
+	protected void addContent_HTMLPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Page_Content_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Page_Content_feature", "_UI_Page_type"),
-				 MetawebdesignPackage.Literals.PAGE__CONTENT,
+				 getString("_UI_Page_Content_HTML_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Page_Content_HTML_feature", "_UI_Page_type"),
+				 MetawebdesignPackage.Literals.PAGE__CONTENT_HTML,
 				 true,
 				 false,
 				 false,
@@ -110,7 +110,7 @@ public class PageItemProvider extends ViewsItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Page.class)) {
-			case MetawebdesignPackage.PAGE__CONTENT:
+			case MetawebdesignPackage.PAGE__CONTENT_HTML:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

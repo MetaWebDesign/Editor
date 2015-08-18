@@ -62,8 +62,10 @@ public class RelationClassItemProvider
 
 			addNamePropertyDescriptor(object);
 			addFromClassPropertyDescriptor(object);
-			addClass_APropertyDescriptor(object);
-			addClass_BPropertyDescriptor(object);
+			addAttribute_Class_APropertyDescriptor(object);
+			addAttribute_Class_BPropertyDescriptor(object);
+			addCardinality_Class_APropertyDescriptor(object);
+			addCardinality_Class_BPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -113,19 +115,19 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Class A feature.
+	 * This adds a property descriptor for the Attribute Class A feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addClass_APropertyDescriptor(Object object) {
+	protected void addAttribute_Class_APropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_Class_A_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Class_A_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__CLASS_A,
+				 getString("_UI_RelationClass_Attribute_Class_A_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Attribute_Class_A_feature", "_UI_RelationClass_type"),
+				 MetawebdesignPackage.Literals.RELATION_CLASS__ATTRIBUTE_CLASS_A,
 				 true,
 				 false,
 				 true,
@@ -135,23 +137,67 @@ public class RelationClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Class B feature.
+	 * This adds a property descriptor for the Attribute Class B feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addClass_BPropertyDescriptor(Object object) {
+	protected void addAttribute_Class_BPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_RelationClass_Class_B_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Class_B_feature", "_UI_RelationClass_type"),
-				 MetawebdesignPackage.Literals.RELATION_CLASS__CLASS_B,
+				 getString("_UI_RelationClass_Attribute_Class_B_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Attribute_Class_B_feature", "_UI_RelationClass_type"),
+				 MetawebdesignPackage.Literals.RELATION_CLASS__ATTRIBUTE_CLASS_B,
 				 true,
 				 false,
 				 true,
 				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Cardinality Class A feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCardinality_Class_APropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_RelationClass_Cardinality_Class_A_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Cardinality_Class_A_feature", "_UI_RelationClass_type"),
+				 MetawebdesignPackage.Literals.RELATION_CLASS__CARDINALITY_CLASS_A,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Cardinality Class B feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCardinality_Class_BPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_RelationClass_Cardinality_Class_B_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RelationClass_Cardinality_Class_B_feature", "_UI_RelationClass_type"),
+				 MetawebdesignPackage.Literals.RELATION_CLASS__CARDINALITY_CLASS_B,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -195,6 +241,8 @@ public class RelationClassItemProvider
 
 		switch (notification.getFeatureID(RelationClass.class)) {
 			case MetawebdesignPackage.RELATION_CLASS__NAME:
+			case MetawebdesignPackage.RELATION_CLASS__CARDINALITY_CLASS_A:
+			case MetawebdesignPackage.RELATION_CLASS__CARDINALITY_CLASS_B:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

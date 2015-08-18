@@ -27,7 +27,7 @@ public class FormItemSemanticEditPolicy
 	 */
 	public FormItemSemanticEditPolicy() {
 		super(
-				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2008);
+				Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2001);
 	}
 
 	/**
@@ -71,13 +71,13 @@ public class FormItemSemanticEditPolicy
 			Node node = (Node) nit.next();
 			switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getVisualID(node)) {
-			case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompVIewInFormEditPart.VISUAL_ID:
+			case Metawebdesign.metawebdesign.diagram.edit.parts.FormCompViewInFormEditPart.VISUAL_ID:
 				for (Iterator<?> cit = node.getChildren().iterator(); cit
 						.hasNext();) {
 					Node cnode = (Node) cit.next();
 					switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 							.getVisualID(cnode)) {
-					case Metawebdesign.metawebdesign.diagram.edit.parts.CallAtribute2EditPart.VISUAL_ID:
+					case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(),
 										cnode.getElement(), false))); // directlyOwned: true
