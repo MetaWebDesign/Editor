@@ -128,7 +128,8 @@ public class RelationClassEditPart extends ConnectionNodeEditPart implements
 		public WrappingLabel getFigureRelationClassNameFigure() {
 			return fFigureRelationClassNameFigure;
 		}
-		
+
+
 		/**
 		 * @generated
 		 */
