@@ -47,7 +47,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rol" eType="#//TypeRol"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="primaryKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PrimaryKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="#//TypeData"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="inTheForm" eType="#//TypeAttributeForm"/>
   </eClassifiers>
@@ -62,7 +62,8 @@
     <eLiterals name="not_required" value="1" literal="not_required"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeData">
-    <eLiterals name="numeric"/>
+    <eLiterals name=" "/>
+    <eLiterals name="numeric" value="4"/>
     <eLiterals name="text" value="1"/>
     <eLiterals name="autoincremental" value="2"/>
     <eLiterals name="img" value="3"/>
@@ -176,6 +177,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Value" eType="#//NotDerived"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mansajeError" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RelationContraint">
     <eStructuralFeatures xsi:type="ecore:EReference" name="RhasConstraint" upperBound="-1"
