@@ -61,7 +61,7 @@
     <eLiterals name="not_required" value="1" literal="not_required"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeData">
-    <eLiterals name="integer"/>
+    <eLiterals name="none" literal="none"/>
     <eLiterals name="numeric" value="4"/>
     <eLiterals name="text" value="1"/>
     <eLiterals name="autoincremental" value="2"/>
@@ -72,6 +72,7 @@
     <eLiterals name="varchar10" literal="varchar10"/>
     <eLiterals name="varchar30" literal="varchar30"/>
     <eLiterals name="varchar50" literal="varchar50"/>
+    <eLiterals name="integer" literal="integer"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Derived" eSuperTypes="#//Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -84,10 +85,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fromClass" upperBound="-1"
         eType="#//Class"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute_Class_A" eType="#//Attributes"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute_Class_B" eType="#//Attributes"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_Class_A" eType="#//typeCardinality"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_Class_B" eType="#//typeCardinality"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute_Destination"
+        eType="#//Attributes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_origin" eType="#//typeCardinality"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_Destination"
+        eType="#//typeCardinality"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typePresentation">
     <eLiterals name="string"/>
@@ -159,6 +161,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasLink" upperBound="-1"
         eType="#//Link" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeMenu" eType="#//typeMenu"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -203,5 +206,13 @@
   <eClassifiers xsi:type="ecore:EEnum" name="typeCardinality">
     <eLiterals name="one"/>
     <eLiterals name="many"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="typeMenu">
+    <eLiterals name="default" literal="default"/>
+    <eLiterals name="all_view_horizontal" literal="all_view_horizontal"/>
+    <eLiterals name="all_view_vertical_left" literal="all_view_vertical_left"/>
+    <eLiterals name="all_view_vertical_right" literal="all_view_vertical_right"/>
+    <eLiterals name="vertical_left" literal="vertical_left"/>
+    <eLiterals name="vertical_right" literal="vertical_right"/>
   </eClassifiers>
 </ecore:EPackage>
