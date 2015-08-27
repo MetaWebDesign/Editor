@@ -26,8 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Class#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Class#getGoRelationClass <em>Go Relation Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Class#getHasView <em>Has View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Class#getHasRelationConstraint <em>Has Relation Constraint</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Class#getGoRConstriant1 <em>Go RConstriant1</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}</li>
  * </ul>
  * </p>
  *
@@ -343,35 +342,29 @@ public interface Class extends EObject {
 	void setHasView(Views value);
 
 	/**
-	 * Returns the value of the '<em><b>Has Relation Constraint</b></em>' containment reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationContraint}.
+	 * Returns the value of the '<em><b>Has Constraint</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Has Relation Constraint</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Has Constraint</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Relation Constraint</em>' containment reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_HasRelationConstraint()
+	 * @return the value of the '<em>Has Constraint</em>' containment reference.
+	 * @see #setHasConstraint(Constraint)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_HasConstraint()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<RelationContraint> getHasRelationConstraint();
+	Constraint getHasConstraint();
 
 	/**
-	 * Returns the value of the '<em><b>Go RConstriant1</b></em>' reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationContraint}.
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Go RConstriant1</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Go RConstriant1</em>' reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_GoRConstriant1()
-	 * @model
+	 * @param value the new value of the '<em>Has Constraint</em>' containment reference.
+	 * @see #getHasConstraint()
 	 * @generated
 	 */
-	EList<RelationContraint> getGoRConstriant1();
+	void setHasConstraint(Constraint value);
 
 } // Class

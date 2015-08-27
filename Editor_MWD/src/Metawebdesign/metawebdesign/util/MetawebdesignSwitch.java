@@ -14,7 +14,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationContraint;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.ViewAttribute;
@@ -190,12 +189,6 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 			case MetawebdesignPackage.CONSTRAINT: {
 				Constraint constraint = (Constraint)theEObject;
 				T result = caseConstraint(constraint);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case MetawebdesignPackage.RELATION_CONTRAINT: {
-				RelationContraint relationContraint = (RelationContraint)theEObject;
-				T result = caseRelationContraint(relationContraint);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -455,21 +448,6 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseConstraint(Constraint object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Relation Contraint</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Relation Contraint</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRelationContraint(RelationContraint object) {
 		return null;
 	}
 

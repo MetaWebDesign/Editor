@@ -463,29 +463,6 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.RelationContraint} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RelationContraintItemProvider relationContraintItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.RelationContraint}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createRelationContraintAdapter() {
-		if (relationContraintItemProvider == null) {
-			relationContraintItemProvider = new RelationContraintItemProvider(this);
-		}
-
-		return relationContraintItemProvider;
-	}
-
-	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -601,7 +578,6 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 		if (linkViewCRUDItemProvider != null) linkViewCRUDItemProvider.dispose();
 		if (linkViewItemProvider != null) linkViewItemProvider.dispose();
 		if (constraintItemProvider != null) constraintItemProvider.dispose();
-		if (relationContraintItemProvider != null) relationContraintItemProvider.dispose();
 	}
 
 }

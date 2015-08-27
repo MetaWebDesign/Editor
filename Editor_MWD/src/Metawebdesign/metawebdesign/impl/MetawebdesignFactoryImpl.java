@@ -15,7 +15,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationContraint;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.TypeAttributeForm;
@@ -103,7 +102,6 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 			case MetawebdesignPackage.LINK_VIEW_CRUD: return createLinkViewCRUD();
 			case MetawebdesignPackage.LINK_VIEW: return createLinkView();
 			case MetawebdesignPackage.CONSTRAINT: return createConstraint();
-			case MetawebdesignPackage.RELATION_CONTRAINT: return createRelationContraint();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -347,16 +345,6 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	public Constraint createConstraint() {
 		ConstraintImpl constraint = new ConstraintImpl();
 		return constraint;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RelationContraint createRelationContraint() {
-		RelationContraintImpl relationContraint = new RelationContraintImpl();
-		return relationContraint;
 	}
 
 	/**

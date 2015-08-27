@@ -28,8 +28,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference goRelationClass : RelationClass<<0..*>>
     Reference hasView : Views
-    Reference hasRelationConstraint : RelationContraint<<0..*>>
-    Reference goRConstriant1 : RelationContraint<<0..*>>
+    Reference hasConstraint : Constraint
 
   Class Attributes
     Attribute name : EString
@@ -103,11 +102,6 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute name : EString
     Reference Value : NotDerived
     Attribute mansajeError : EString
-
-  Class RelationContraint
-    Reference RhasConstraint : Constraint<<0..*>>
-    Reference goRConstraint2 : Constraint<<0..*>>
-    Attribute name : EString
 
   Enum TypeRol
     Literal anonymous = 0

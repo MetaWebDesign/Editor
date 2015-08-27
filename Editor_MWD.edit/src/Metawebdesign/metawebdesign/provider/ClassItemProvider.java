@@ -71,7 +71,6 @@ public class ClassItemProvider
 			addFunctionViewPropertyDescriptor(object);
 			addFunctionAdminPropertyDescriptor(object);
 			addGoRelationClassPropertyDescriptor(object);
-			addGoRConstriant1PropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -275,28 +274,6 @@ public class ClassItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Go RConstriant1 feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addGoRConstriant1PropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Class_goRConstriant1_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Class_goRConstriant1_feature", "_UI_Class_type"),
-				 MetawebdesignPackage.Literals.CLASS__GO_RCONSTRIANT1,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -311,7 +288,7 @@ public class ClassItemProvider
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_ATTRIBUTES);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CLASS);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_VIEW);
-			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CONSTRAINT);
+			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_CONSTRAINT);
 		}
 		return childrenFeatures;
 	}
@@ -380,7 +357,7 @@ public class ClassItemProvider
 			case MetawebdesignPackage.CLASS__HAS_ATTRIBUTES:
 			case MetawebdesignPackage.CLASS__HAS_RELATION_CLASS:
 			case MetawebdesignPackage.CLASS__HAS_VIEW:
-			case MetawebdesignPackage.CLASS__HAS_RELATION_CONSTRAINT:
+			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -435,8 +412,8 @@ public class ClassItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CONSTRAINT,
-				 MetawebdesignFactory.eINSTANCE.createRelationContraint()));
+				(MetawebdesignPackage.Literals.CLASS__HAS_CONSTRAINT,
+				 MetawebdesignFactory.eINSTANCE.createConstraint()));
 	}
 
 	/**

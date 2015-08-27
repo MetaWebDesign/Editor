@@ -15,7 +15,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationContraint;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.TypeAttributeForm;
@@ -166,13 +165,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * @generated
 	 */
 	private EClass constraintEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass relationContraintEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -497,17 +489,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClass_HasRelationConstraint() {
+	public EReference getClass_HasConstraint() {
 		return (EReference)classEClass.getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getClass_GoRConstriant1() {
-		return (EReference)classEClass.getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -1037,42 +1020,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRelationContraint() {
-		return relationContraintEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getRelationContraint_RhasConstraint() {
-		return (EReference)relationContraintEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getRelationContraint_GoRConstraint2() {
-		return (EReference)relationContraintEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getRelationContraint_Name() {
-		return (EAttribute)relationContraintEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EEnum getTypeRol() {
 		return typeRolEEnum;
 	}
@@ -1216,8 +1163,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEReference(classEClass, CLASS__HAS_RELATION_CLASS);
 		createEReference(classEClass, CLASS__GO_RELATION_CLASS);
 		createEReference(classEClass, CLASS__HAS_VIEW);
-		createEReference(classEClass, CLASS__HAS_RELATION_CONSTRAINT);
-		createEReference(classEClass, CLASS__GO_RCONSTRIANT1);
+		createEReference(classEClass, CLASS__HAS_CONSTRAINT);
 
 		attributesEClass = createEClass(ATTRIBUTES);
 		createEAttribute(attributesEClass, ATTRIBUTES__NAME);
@@ -1292,11 +1238,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEReference(constraintEClass, CONSTRAINT__VALUE);
 		createEAttribute(constraintEClass, CONSTRAINT__MANSAJE_ERROR);
 
-		relationContraintEClass = createEClass(RELATION_CONTRAINT);
-		createEReference(relationContraintEClass, RELATION_CONTRAINT__RHAS_CONSTRAINT);
-		createEReference(relationContraintEClass, RELATION_CONTRAINT__GO_RCONSTRAINT2);
-		createEAttribute(relationContraintEClass, RELATION_CONTRAINT__NAME);
-
 		// Create enums
 		typeRolEEnum = createEEnum(TYPE_ROL);
 		typeAttributeFormEEnum = createEEnum(TYPE_ATTRIBUTE_FORM);
@@ -1370,8 +1311,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEReference(getClass_HasRelationClass(), this.getRelationClass(), null, "hasRelationClass", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_GoRelationClass(), this.getRelationClass(), null, "goRelationClass", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_HasView(), this.getViews(), null, "hasView", null, 0, 1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClass_HasRelationConstraint(), this.getRelationContraint(), null, "hasRelationConstraint", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClass_GoRConstriant1(), this.getRelationContraint(), null, "goRConstriant1", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClass_HasConstraint(), this.getConstraint(), null, "hasConstraint", null, 0, 1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributesEClass, Attributes.class, "Attributes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAttributes_Name(), ecorePackage.getEString(), "name", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1445,11 +1385,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEAttribute(getConstraint_Name(), ecorePackage.getEString(), "name", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getConstraint_Value(), this.getNotDerived(), null, "Value", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_MansajeError(), ecorePackage.getEString(), "mansajeError", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(relationContraintEClass, RelationContraint.class, "RelationContraint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRelationContraint_RhasConstraint(), this.getConstraint(), null, "RhasConstraint", null, 0, -1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRelationContraint_GoRConstraint2(), this.getConstraint(), null, "goRConstraint2", null, 0, -1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getRelationContraint_Name(), ecorePackage.getEString(), "name", null, 0, 1, RelationContraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(typeRolEEnum, TypeRol.class, "TypeRol");

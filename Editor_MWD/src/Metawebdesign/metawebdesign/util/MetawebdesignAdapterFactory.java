@@ -14,7 +14,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationContraint;
 import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.ViewAttribute;
@@ -151,10 +150,6 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConstraint(Constraint object) {
 				return createConstraintAdapter();
-			}
-			@Override
-			public Adapter caseRelationContraint(RelationContraint object) {
-				return createRelationContraintAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -411,20 +406,6 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConstraintAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.RelationContraint <em>Relation Contraint</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metawebdesign.metawebdesign.RelationContraint
-	 * @generated
-	 */
-	public Adapter createRelationContraintAdapter() {
 		return null;
 	}
 

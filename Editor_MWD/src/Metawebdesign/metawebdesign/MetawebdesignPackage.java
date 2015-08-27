@@ -258,22 +258,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int CLASS__HAS_VIEW = 11;
 
 	/**
-	 * The feature id for the '<em><b>Has Relation Constraint</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Has Constraint</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__HAS_RELATION_CONSTRAINT = 12;
-
-	/**
-	 * The feature id for the '<em><b>Go RConstriant1</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__GO_RCONSTRIANT1 = 13;
+	int CLASS__HAS_CONSTRAINT = 12;
 
 	/**
 	 * The number of structural features of the '<em>Class</em>' class.
@@ -282,7 +273,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = 14;
+	int CLASS_FEATURE_COUNT = 13;
 
 	/**
 	 * The number of operations of the '<em>Class</em>' class.
@@ -1299,61 +1290,6 @@ public interface MetawebdesignPackage extends EPackage {
 	int CONSTRAINT_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.impl.RelationContraintImpl <em>Relation Contraint</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.impl.RelationContraintImpl
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getRelationContraint()
-	 * @generated
-	 */
-	int RELATION_CONTRAINT = 17;
-
-	/**
-	 * The feature id for the '<em><b>Rhas Constraint</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_CONTRAINT__RHAS_CONSTRAINT = 0;
-
-	/**
-	 * The feature id for the '<em><b>Go RConstraint2</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_CONTRAINT__GO_RCONSTRAINT2 = 1;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_CONTRAINT__NAME = 2;
-
-	/**
-	 * The number of structural features of the '<em>Relation Contraint</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_CONTRAINT_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Relation Contraint</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RELATION_CONTRAINT_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeRol <em>Type Rol</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1361,7 +1297,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeRol()
 	 * @generated
 	 */
-	int TYPE_ROL = 18;
+	int TYPE_ROL = 17;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeAttributeForm <em>Type Attribute Form</em>}' enum.
@@ -1371,7 +1307,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeAttributeForm()
 	 * @generated
 	 */
-	int TYPE_ATTRIBUTE_FORM = 19;
+	int TYPE_ATTRIBUTE_FORM = 18;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeData <em>Type Data</em>}' enum.
@@ -1381,7 +1317,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeData()
 	 * @generated
 	 */
-	int TYPE_DATA = 20;
+	int TYPE_DATA = 19;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typePresentation <em>type Presentation</em>}' enum.
@@ -1391,7 +1327,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypePresentation()
 	 * @generated
 	 */
-	int TYPE_PRESENTATION = 21;
+	int TYPE_PRESENTATION = 20;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeHorizontalPosition <em>type Horizontal Position</em>}' enum.
@@ -1401,7 +1337,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeHorizontalPosition()
 	 * @generated
 	 */
-	int TYPE_HORIZONTAL_POSITION = 22;
+	int TYPE_HORIZONTAL_POSITION = 21;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeService <em>Type Service</em>}' enum.
@@ -1411,7 +1347,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeService()
 	 * @generated
 	 */
-	int TYPE_SERVICE = 23;
+	int TYPE_SERVICE = 22;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeOrientation <em>Type Orientation</em>}' enum.
@@ -1421,7 +1357,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeOrientation()
 	 * @generated
 	 */
-	int TYPE_ORIENTATION = 24;
+	int TYPE_ORIENTATION = 23;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.TypeOperator <em>Type Operator</em>}' enum.
@@ -1431,7 +1367,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getTypeOperator()
 	 * @generated
 	 */
-	int TYPE_OPERATOR = 25;
+	int TYPE_OPERATOR = 24;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}' enum.
@@ -1441,7 +1377,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeViewAttribute()
 	 * @generated
 	 */
-	int TYPE_VIEW_ATTRIBUTE = 26;
+	int TYPE_VIEW_ATTRIBUTE = 25;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}' enum.
@@ -1451,7 +1387,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeCardinality()
 	 * @generated
 	 */
-	int TYPE_CARDINALITY = 27;
+	int TYPE_CARDINALITY = 26;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeMenu <em>type Menu</em>}' enum.
@@ -1461,7 +1397,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeMenu()
 	 * @generated
 	 */
-	int TYPE_MENU = 28;
+	int TYPE_MENU = 27;
 
 
 	/**
@@ -1683,26 +1619,15 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getClass_HasView();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Class#getHasRelationConstraint <em>Has Relation Constraint</em>}'.
+	 * Returns the meta object for the containment reference '{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Has Relation Constraint</em>'.
-	 * @see Metawebdesign.metawebdesign.Class#getHasRelationConstraint()
+	 * @return the meta object for the containment reference '<em>Has Constraint</em>'.
+	 * @see Metawebdesign.metawebdesign.Class#getHasConstraint()
 	 * @see #getClass_()
 	 * @generated
 	 */
-	EReference getClass_HasRelationConstraint();
-
-	/**
-	 * Returns the meta object for the reference list '{@link Metawebdesign.metawebdesign.Class#getGoRConstriant1 <em>Go RConstriant1</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Go RConstriant1</em>'.
-	 * @see Metawebdesign.metawebdesign.Class#getGoRConstriant1()
-	 * @see #getClass_()
-	 * @generated
-	 */
-	EReference getClass_GoRConstriant1();
+	EReference getClass_HasConstraint();
 
 	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.Attributes <em>Attributes</em>}'.
@@ -2328,49 +2253,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EAttribute getConstraint_MansajeError();
 
 	/**
-	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.RelationContraint <em>Relation Contraint</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Relation Contraint</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationContraint
-	 * @generated
-	 */
-	EClass getRelationContraint();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.RelationContraint#getRhasConstraint <em>Rhas Constraint</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Rhas Constraint</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationContraint#getRhasConstraint()
-	 * @see #getRelationContraint()
-	 * @generated
-	 */
-	EReference getRelationContraint_RhasConstraint();
-
-	/**
-	 * Returns the meta object for the reference list '{@link Metawebdesign.metawebdesign.RelationContraint#getGoRConstraint2 <em>Go RConstraint2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Go RConstraint2</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationContraint#getGoRConstraint2()
-	 * @see #getRelationContraint()
-	 * @generated
-	 */
-	EReference getRelationContraint_GoRConstraint2();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.RelationContraint#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see Metawebdesign.metawebdesign.RelationContraint#getName()
-	 * @see #getRelationContraint()
-	 * @generated
-	 */
-	EAttribute getRelationContraint_Name();
-
-	/**
 	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.TypeRol <em>Type Rol</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2668,20 +2550,12 @@ public interface MetawebdesignPackage extends EPackage {
 		EReference CLASS__HAS_VIEW = eINSTANCE.getClass_HasView();
 
 		/**
-		 * The meta object literal for the '<em><b>Has Relation Constraint</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Has Constraint</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASS__HAS_RELATION_CONSTRAINT = eINSTANCE.getClass_HasRelationConstraint();
-
-		/**
-		 * The meta object literal for the '<em><b>Go RConstriant1</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS__GO_RCONSTRIANT1 = eINSTANCE.getClass_GoRConstriant1();
+		EReference CLASS__HAS_CONSTRAINT = eINSTANCE.getClass_HasConstraint();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.AttributesImpl <em>Attributes</em>}' class.
@@ -3176,40 +3050,6 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONSTRAINT__MANSAJE_ERROR = eINSTANCE.getConstraint_MansajeError();
-
-		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.RelationContraintImpl <em>Relation Contraint</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.impl.RelationContraintImpl
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#getRelationContraint()
-		 * @generated
-		 */
-		EClass RELATION_CONTRAINT = eINSTANCE.getRelationContraint();
-
-		/**
-		 * The meta object literal for the '<em><b>Rhas Constraint</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RELATION_CONTRAINT__RHAS_CONSTRAINT = eINSTANCE.getRelationContraint_RhasConstraint();
-
-		/**
-		 * The meta object literal for the '<em><b>Go RConstraint2</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RELATION_CONTRAINT__GO_RCONSTRAINT2 = eINSTANCE.getRelationContraint_GoRConstraint2();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute RELATION_CONTRAINT__NAME = eINSTANCE.getRelationContraint_Name();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.TypeRol <em>Type Rol</em>}' enum.
