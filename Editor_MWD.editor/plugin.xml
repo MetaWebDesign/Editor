@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated MetaWebDesign -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Metawebdesign.metawebdesign.presentation.MetawebdesignModelWizardID"
+            name="%_UI_MetawebdesignModelWizard_label"
+            class="Metawebdesign.metawebdesign.presentation.MetawebdesignModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MetawebdesignModelFile.gif">
+         <description>%_UI_MetawebdesignModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated MetaWebDesign -->
+      <editor
+            id="Metawebdesign.metawebdesign.presentation.MetawebdesignEditorID"
+            name="%_UI_MetawebdesignEditor_label"
+            icon="icons/full/obj16/MetawebdesignModelFile.gif"
+            extensions="metawebdesign"
+            class="Metawebdesign.metawebdesign.presentation.MetawebdesignEditor"
+            contributorClass="Metawebdesign.metawebdesign.presentation.MetawebdesignActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
