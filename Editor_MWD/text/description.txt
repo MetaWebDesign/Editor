@@ -34,8 +34,7 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class Attributes
     Attribute name : EString
     Attribute rol : TypeRol
-    Attribute value : EString
-    Attribute primaryKey : EBoolean
+    Attribute PrimaryKey : EBoolean
     Attribute dataType : TypeData
     Attribute inTheForm : TypeAttributeForm
 
@@ -103,6 +102,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute service : TypeService
     Attribute name : EString
     Reference Value : NotDerived
+    Attribute mansajeError : EString
 
   Class RelationContraint
     Reference RhasConstraint : Constraint<<0..*>>
@@ -120,13 +120,17 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal not_required = 1
 
   Enum TypeData
-    Literal numeric = 0
+    Literal integer = 0
+    Literal numeric = 4
     Literal text = 1
     Literal autoincremental = 2
     Literal img = 3
     Literal time = 6
     Literal date = 7
     Literal date_time = 8
+    Literal varchar10 = 0
+    Literal varchar30 = 0
+    Literal varchar50 = 0
 
   Enum typePresentation
     Literal string = 0

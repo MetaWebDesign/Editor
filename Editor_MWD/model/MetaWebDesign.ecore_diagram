@@ -80,6 +80,38 @@
   <children xmi:type="notation:Shape" xmi:id="_H2IRtkUnEeWLz_rPkZGecg" type="2005" fontName="Ubuntu">
     <children xmi:type="notation:DecorationNode" xmi:id="_H2IRuEUnEeWLz_rPkZGecg" type="5005"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_H2IRuUUnEeWLz_rPkZGecg" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_idcEIExREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/integer"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idcEIUxREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_idcEIkxREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/numeric"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idcEI0xREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_idcrMExREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/text"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idcrMUxREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_idcrMkxREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/autoincremental"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idcrM0xREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_idcrNExREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/img"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idcrNUxREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_idcrNkxREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/time"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idcrN0xREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_iddSQExREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/date"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_iddSQUxREeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_iddSQkxREeW4I5dYeCyfag" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/date_time"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_iddSQ0xREeW4I5dYeCyfag"/>
+      </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_H2IRukUnEeWLz_rPkZGecg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_H2IRu0UnEeWLz_rPkZGecg"/>
     </children>
@@ -93,6 +125,14 @@
   <children xmi:type="notation:Shape" xmi:id="_H2I4wkUnEeWLz_rPkZGecg" type="2001" fontName="Ubuntu">
     <children xmi:type="notation:DecorationNode" xmi:id="_H2I4xEUnEeWLz_rPkZGecg" type="5001"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_H2I4xUUnEeWLz_rPkZGecg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_J1ZQAExUEeW4I5dYeCyfag" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaWebDesign.ecore#//Derived/comment"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J1ZQAUxUEeW4I5dYeCyfag"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_J1Z3EExUEeW4I5dYeCyfag" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaWebDesign.ecore#//Derived/formula"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J1Z3EUxUEeW4I5dYeCyfag"/>
+      </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_H2I4xkUnEeWLz_rPkZGecg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_H2I4x0UnEeWLz_rPkZGecg"/>
     </children>
@@ -470,7 +510,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_ZqzhWEU0EeWLz_rPkZGecg"/>
     </children>
     <element xmi:type="ecore:EEnum" href="MetaWebDesign.ecore#//typeCardinality"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZqzhUUU0EeWLz_rPkZGecg" x="295" y="170"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZqzhUUU0EeWLz_rPkZGecg" x="210" y="201"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_HYiWwUUnEeWLz_rPkZGecg"/>
   <element xmi:type="ecore:EPackage" href="MetaWebDesign.ecore#/"/>

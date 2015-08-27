@@ -46,7 +46,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rol" eType="#//TypeRol"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="PrimaryKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="#//TypeData"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="inTheForm" eType="#//TypeAttributeForm"/>
@@ -62,7 +61,7 @@
     <eLiterals name="not_required" value="1" literal="not_required"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeData">
-    <eLiterals name=" "/>
+    <eLiterals name="integer"/>
     <eLiterals name="numeric" value="4"/>
     <eLiterals name="text" value="1"/>
     <eLiterals name="autoincremental" value="2"/>
@@ -70,6 +69,9 @@
     <eLiterals name="time" value="6"/>
     <eLiterals name="date" value="7"/>
     <eLiterals name="date_time" value="8"/>
+    <eLiterals name="varchar10" literal="varchar10"/>
+    <eLiterals name="varchar30" literal="varchar30"/>
+    <eLiterals name="varchar50" literal="varchar50"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Derived" eSuperTypes="#//Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
