@@ -62,7 +62,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_H2HqpkUnEeWLz_rPkZGecg"/>
     </children>
     <element xmi:type="ecore:EEnum" href="MetaWebDesign.ecore#//TypeRol"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H2HDm0UnEeWLz_rPkZGecg" x="5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H2HDm0UnEeWLz_rPkZGecg" x="10"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_H2Hqp0UnEeWLz_rPkZGecg" type="2005" fontName="Ubuntu">
     <children xmi:type="notation:DecorationNode" xmi:id="_H2HqqUUnEeWLz_rPkZGecg" type="5005"/>
