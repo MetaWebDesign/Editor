@@ -38,10 +38,8 @@
         eType="#//RelationClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasView" eType="#//Views"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationConstraint"
-        upperBound="-1" eType="#//RelationContraint" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goRConstriant1" upperBound="-1"
-        eType="#//RelationContraint"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraint" eType="#//Constraint"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -183,13 +181,6 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Value" eType="#//NotDerived"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mansajeError" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationContraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="RhasConstraint" upperBound="-1"
-        eType="#//Constraint" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="goRConstraint2" upperBound="-1"
-        eType="#//Constraint"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeOperator">
     <eLiterals name="igual"/>

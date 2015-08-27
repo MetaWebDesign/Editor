@@ -48,10 +48,9 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class RelationClass
     Attribute name : EString
     Reference fromClass : Class<<0..*>>
-    Reference Attribute_Class_A : Attributes
-    Reference Attribute_Class_B : Attributes
-    Attribute Cardinality_Class_A : typeCardinality
-    Attribute Cardinality_Class_B : typeCardinality
+    Reference Attribute_Destination : Attributes
+    Attribute Cardinality_origin : typeCardinality
+    Attribute Cardinality_Destination : typeCardinality
 
   Class Views
     Attribute title : EString
@@ -84,6 +83,7 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class NavegationMenu -> ViewComponent
     Reference hasLink : Link<<0..*>>
     Attribute name : EString
+    Attribute typeMenu : typeMenu
 
   Class Link
     Attribute name : EString
@@ -120,7 +120,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal not_required = 1
 
   Enum TypeData
-    Literal integer = 0
+    Literal none = 0
     Literal numeric = 4
     Literal text = 1
     Literal autoincremental = 2
@@ -131,6 +131,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal varchar10 = 0
     Literal varchar30 = 0
     Literal varchar50 = 0
+    Literal integer = 0
 
   Enum typePresentation
     Literal string = 0
@@ -179,3 +180,11 @@ Package metawebdesign <http://metawebdesign/1.0>
   Enum typeCardinality
     Literal one = 0
     Literal many = 0
+
+  Enum typeMenu
+    Literal default = 0
+    Literal all_view_horizontal = 0
+    Literal all_view_vertical_left = 0
+    Literal all_view_vertical_right = 0
+    Literal vertical_left = 0
+    Literal vertical_right = 0
