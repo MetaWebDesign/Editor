@@ -71,6 +71,8 @@
     <eLiterals name="varchar30" literal="varchar30"/>
     <eLiterals name="varchar50" literal="varchar50"/>
     <eLiterals name="integer" literal="integer"/>
+    <eLiterals name="file"/>
+    <eLiterals name="passwd"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Derived" eSuperTypes="#//Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

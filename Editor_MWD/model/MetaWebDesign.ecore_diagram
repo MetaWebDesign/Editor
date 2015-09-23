@@ -128,6 +128,14 @@
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/integer"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_ev_A4UzTEeWRO_baYdW6NQ"/>
       </children>
+      <children xmi:type="notation:Node" xmi:id="_wWDzIGGBEeWtS72LJ9WWzQ" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/file"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wWDzIWGBEeWtS72LJ9WWzQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_wWa_gGGBEeWtS72LJ9WWzQ" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeData/passwd"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wWa_gWGBEeWtS72LJ9WWzQ"/>
+      </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_M5W9lEzTEeWRO_baYdW6NQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_M5W9lUzTEeWRO_baYdW6NQ"/>
     </children>
@@ -541,7 +549,7 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_sGt0oUzXEeWpr_mMwPz2pw" y="40"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_sGt0okzXEeWpr_mMwPz2pw" type="6004">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_sGt0o0zXEeWpr_mMwPz2pw" y="60"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sGt0o0zXEeWpr_mMwPz2pw" x="55" y="-22"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_sGtNkUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Root/views"/>
