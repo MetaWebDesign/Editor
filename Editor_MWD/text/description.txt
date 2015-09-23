@@ -126,6 +126,8 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal varchar30 = 0
     Literal varchar50 = 0
     Literal integer = 0
+    Literal file = 0
+    Literal passwd = 0
 
   Enum typePresentation
     Literal string = 0

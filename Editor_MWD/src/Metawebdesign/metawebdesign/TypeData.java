@@ -136,7 +136,23 @@ public enum TypeData implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTEGER(0, "integer", "integer");
+	INTEGER(0, "integer", "integer"), /**
+	 * The '<em><b>File</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #FILE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	FILE(0, "file", "file"), /**
+	 * The '<em><b>Passwd</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #PASSWD_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	PASSWD(0, "passwd", "passwd");
 
 	/**
 	 * The '<em><b>None</b></em>' literal value.
@@ -319,6 +335,36 @@ public enum TypeData implements Enumerator {
 	public static final int INTEGER_VALUE = 0;
 
 	/**
+	 * The '<em><b>File</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>File</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #FILE
+	 * @model name="file"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int FILE_VALUE = 0;
+
+	/**
+	 * The '<em><b>Passwd</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Passwd</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #PASSWD
+	 * @model name="passwd"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int PASSWD_VALUE = 0;
+
+	/**
 	 * An array of all the '<em><b>Type Data</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -338,6 +384,8 @@ public enum TypeData implements Enumerator {
 			VARCHAR30,
 			VARCHAR50,
 			INTEGER,
+			FILE,
+			PASSWD,
 		};
 
 	/**

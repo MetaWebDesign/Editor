@@ -1410,6 +1410,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typeDataEEnum, TypeData.VARCHAR30);
 		addEEnumLiteral(typeDataEEnum, TypeData.VARCHAR50);
 		addEEnumLiteral(typeDataEEnum, TypeData.INTEGER);
+		addEEnumLiteral(typeDataEEnum, TypeData.FILE);
+		addEEnumLiteral(typeDataEEnum, TypeData.PASSWD);
 
 		initEEnum(typePresentationEEnum, typePresentation.class, "typePresentation");
 		addEEnumLiteral(typePresentationEEnum, typePresentation.STRING);

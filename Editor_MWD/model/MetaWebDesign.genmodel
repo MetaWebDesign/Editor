@@ -29,6 +29,8 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/varchar30"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/varchar50"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/integer"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/file"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/passwd"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typePresentation">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/string"/>
