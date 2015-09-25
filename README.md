@@ -1,42 +1,30 @@
-# MDD_Editor - Testing (Modelo V2.5)
+# MDD_Editor - Stable (Modelo V2.5)
 
 ##Modelo
-![Alt text](https://github.com/TestMode/Editor/blob/master/Editor_MWD/resp/model.png "Metamodelo")
+![Alt text](https://github.com/MetaWebDesign/Editor/blob/master/Editor_MWD/text/model.png "Metamodelo")
 
 ##Editor Grafico:
 Este editor gráfico basado en Eclipse usando los frameworks EMF y GMF esta compuesto por varios elementos descritos, para modelar de forma completa un software, basado en OO-Method, posee un Modelo de Presentación, para la generación automática de Software.
 
 
-![Alt text](https://github.com/TestMode/Editor/blob/master/Editor_MWD/resp/modelo.png "Editor de Modelos")
+![Alt text](https://github.com/MetaWebDesign/Editor/blob/master/Editor_MWD/text/editor.png "Editor de Modelos")
 
-* Clases
+El editor de modelos de MetaWebDesign permite modelar un sitio web, para luego ser compilado a código PHP, generado además la base de datos, junto con la configuración de esta. 
 
-  * Atributos
-  * Servicios (CRUD)
+El sitio web generado esta pensado para ser puesto en producción sin intervención de un programador, una vez generado el código por medio del compilador.
 
-* Restricciones, posee operadores como
+##Ramas de Desarrollo
 
-  * Igual A
-  * Menor
-  * Mayor
-  * Menor igual
-  * Mayor igual
-estos operadores interactúan con algún atributo derivado o no derivado.
-* Vista, puede ser un formulario o una pagina web que muestra información, cada vista puede pertenecer a un grupo para formar parte de un menú.
+* [Lagacy / Versiones anteriores](https://github.com/MetaWebDesign/Editor/tree/legacy)
 
-  * Formularios, se pueden definir los atributos registrar, y se puede crear un menú de navegación
-  * Paginas, puede llamar a atributos y definir la forma de presentación, y se puede crear un menú de navegación
+* [Stable / Usuarios](https://github.com/MetaWebDesign/Editor)
 
-* Menú, pertenece al menú estático que estará presente en todas las vistas del sitio web.
+* [Testing o de Pruebas / Desarrollador ](https://github.com/MetaWebDesign/Editor/tree/testing)
 
-  * Grupo, esta compuesto de vista, ordenan el menú según una agrupación.
+##Descarga Versión 1.0
 
-##Descarga
-
-###GNU Linux 32-bit
-
+### MWD V2.0 GNU Linux 32-bit
 [Eclipse - MetaWebDesign i686 ](http://www.piratevalpo.cl/desarrollo/MetaWebDesign_32bits.7z)
 
-###GNU Linux 64-bit
-
+### MWD V2.0 GNU Linux 64-bit
 [Eclipse - MetaWebDesign X64 ](http://www.piratevalpo.cl/desarrollo/MetaWebDesign64bits.tar.gz)

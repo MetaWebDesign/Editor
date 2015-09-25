@@ -255,7 +255,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_M5drR0zTEeWRO_baYdW6NQ"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaWebDesign.ecore#//Form"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M5dENEzTEeWRO_baYdW6NQ" x="1672"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M5dENEzTEeWRO_baYdW6NQ" x="1670"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_M5drSEzTEeWRO_baYdW6NQ" type="2005" fontName="Ubuntu">
     <children xmi:type="notation:DecorationNode" xmi:id="_M5eSUUzTEeWRO_baYdW6NQ" type="5005"/>
