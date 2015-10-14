@@ -201,11 +201,7 @@
     <eLiterals name="many"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typeMenu">
-    <eLiterals name="default" literal="default"/>
-    <eLiterals name="all_view_horizontal" literal="all_view_horizontal"/>
-    <eLiterals name="all_view_vertical_left" literal="all_view_vertical_left"/>
-    <eLiterals name="all_view_vertical_right" literal="all_view_vertical_right"/>
-    <eLiterals name="vertical_left" literal="vertical_left"/>
-    <eLiterals name="vertical_right" literal="vertical_right"/>
+    <eLiterals name="principal" literal="principal"/>
+    <eLiterals name="navegation" literal="navegation"/>
   </eClassifiers>
 </ecore:EPackage>

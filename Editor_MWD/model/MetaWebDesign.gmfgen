@@ -1011,19 +1011,9 @@
             description="Create new Views"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
-            title="Form"
-            description="Create new Form"
-            genNodes="//@diagram/@topLevelNodes.7"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
             title="Page"
             description="Create new Page"
-            genNodes="//@diagram/@topLevelNodes.0"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
-            title="RelationView"
-            description="Create new RelationView"
-            genLinks="//@diagram/@links.0"/>
+            genNodes="//@diagram/@topLevelNodes.0 //@diagram/@topLevelNodes.7"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="ViewComponent"
@@ -1032,7 +1022,8 @@
             xsi:type="gmfgen:ToolEntry"
             title="ViewAttribute"
             description="Create new ViewAttribute"
-            genNodes="//@diagram/@childNodes.3 //@diagram/@topLevelNodes.1"/>
+            genNodes="//@diagram/@childNodes.3 //@diagram/@topLevelNodes.1"
+            genLinks="//@diagram/@links.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="NavegationMenu"

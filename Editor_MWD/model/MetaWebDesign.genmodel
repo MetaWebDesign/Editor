@@ -81,12 +81,8 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeCardinality/many"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeMenu">
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/default"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/all_view_horizontal"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/all_view_vertical_left"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/all_view_vertical_right"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/vertical_left"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/vertical_right"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/principal"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/navegation"/>
     </genEnums>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Root">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/class"/>

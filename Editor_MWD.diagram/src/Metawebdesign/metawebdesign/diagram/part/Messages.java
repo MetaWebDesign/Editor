@@ -308,102 +308,82 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String Form7CreationTool_title;
+	public static String Page7CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Form7CreationTool_desc;
+	public static String Page7CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Page8CreationTool_title;
+	public static String ViewComponent8CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Page8CreationTool_desc;
+	public static String ViewComponent8CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationView9CreationTool_title;
+	public static String ViewAttribute9CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String RelationView9CreationTool_desc;
+	public static String ViewAttribute9CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewComponent10CreationTool_title;
+	public static String NavegationMenu10CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewComponent10CreationTool_desc;
+	public static String NavegationMenu10CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewAttribute11CreationTool_title;
+	public static String Link11CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String ViewAttribute11CreationTool_desc;
+	public static String Link11CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenu12CreationTool_title;
+	public static String LinkViewCRUD12CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String NavegationMenu12CreationTool_desc;
+	public static String LinkViewCRUD12CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Link13CreationTool_title;
+	public static String LinkView13CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Link13CreationTool_desc;
+	public static String LinkView13CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkViewCRUD14CreationTool_title;
+	public static String Constraint14CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String LinkViewCRUD14CreationTool_desc;
-
-	/**
-	 * @generated
-	 */
-	public static String LinkView15CreationTool_title;
-
-	/**
-	 * @generated
-	 */
-	public static String LinkView15CreationTool_desc;
-
-	/**
-	 * @generated
-	 */
-	public static String Constraint16CreationTool_title;
-
-	/**
-	 * @generated
-	 */
-	public static String Constraint16CreationTool_desc;
+	public static String Constraint14CreationTool_desc;
 
 	/**
 	 * @generated

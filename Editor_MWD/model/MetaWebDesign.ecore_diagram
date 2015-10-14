@@ -487,28 +487,12 @@
     <children xmi:type="notation:DecorationNode" xmi:id="_VktHoEzUEeWRO_baYdW6NQ" type="5005"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_VktHoUzUEeWRO_baYdW6NQ" type="7011">
       <children xmi:type="notation:Node" xmi:id="_Wn1YkEzUEeWRO_baYdW6NQ" type="3009">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/default"/>
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/principal"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Wn1YkUzUEeWRO_baYdW6NQ"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_iUwSsEzUEeWRO_baYdW6NQ" type="3009">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/all_view_horizontal"/>
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/navegation"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_iUwSsUzUEeWRO_baYdW6NQ"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_oUDisEzUEeWRO_baYdW6NQ" type="3009">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/all_view_vertical_left"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_oUDisUzUEeWRO_baYdW6NQ"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_snl0cEzUEeWRO_baYdW6NQ" type="3009">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/all_view_vertical_right"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_snl0cUzUEeWRO_baYdW6NQ"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_zZ8SAEzUEeWRO_baYdW6NQ" type="3009">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/vertical_left"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_zZ8SAUzUEeWRO_baYdW6NQ"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_2y1gcEzUEeWRO_baYdW6NQ" type="3009">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenu/vertical_right"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_2y1gcUzUEeWRO_baYdW6NQ"/>
       </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_VktHokzUEeWRO_baYdW6NQ"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_VktHo0zUEeWRO_baYdW6NQ"/>

@@ -21,7 +21,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.7"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.6"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#Page"/>
       <children
@@ -58,7 +58,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.10"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.8"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#ViewAttribute"/>
     </ownedChild>
@@ -78,7 +78,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.14"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.12"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#LinkView"/>
     </ownedChild>
@@ -141,7 +141,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.15"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.13"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#Constraint"/>
     </ownedChild>
@@ -181,7 +181,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.11"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.9"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#NavegationMenu"/>
       <children
@@ -258,7 +258,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.13"/>
+          href="MetaWebDesign.gmftool#//@palette/@tools.0/@tools.11"/>
       <diagramNode
           href="MetaWebDesign.gmfgraph#LinkViewCRUD"/>
     </ownedChild>

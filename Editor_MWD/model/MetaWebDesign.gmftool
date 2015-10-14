@@ -65,26 +65,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Form"
-          description="Create new Form">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="Page"
           description="Create new Page">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="RelationView"
-          description="Create new RelationView">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

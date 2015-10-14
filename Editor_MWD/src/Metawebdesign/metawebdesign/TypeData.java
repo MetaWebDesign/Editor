@@ -136,7 +136,9 @@ public enum TypeData implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTEGER(0, "integer", "integer"), /**
+	INTEGER(0, "integer", "integer"),
+
+	/**
 	 * The '<em><b>File</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -144,7 +146,9 @@ public enum TypeData implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	FILE(0, "file", "file"), /**
+	FILE(0, "file", "file"),
+
+	/**
 	 * The '<em><b>Passwd</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
