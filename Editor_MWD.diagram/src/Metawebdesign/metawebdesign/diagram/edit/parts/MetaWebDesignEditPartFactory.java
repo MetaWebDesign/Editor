@@ -25,17 +25,12 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.RootEditPart(
 						view);
 
-<<<<<<< HEAD
 			case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart(
-=======
-			case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart(
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 						view);
 
-			case Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart(
+			case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID:
+				return new Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart(
 						view);
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
@@ -58,7 +53,6 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart(
 						view);
 
-<<<<<<< HEAD
 			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart(
 						view);
@@ -85,14 +79,6 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart(
-=======
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ClassNameEditPart(
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 						view);
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
@@ -103,7 +89,6 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart(
 						view);
 
-<<<<<<< HEAD
 			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart(
 						view);
@@ -118,14 +103,6 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart(
-=======
-			case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart(
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 						view);
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID:
@@ -142,81 +119,6 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintName2EditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintName2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart(
-						view);
-
-<<<<<<< HEAD
-=======
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedNameEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart(
-						view);
-
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart(
-						view);
-
-<<<<<<< HEAD
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart(
-=======
-			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewName2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewName2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart(
 						view);
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
@@ -235,16 +137,20 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart(
 						view);
 
-			case Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart(
+			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
+				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart(
 						view);
 
-			case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintName2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintName2EditPart(
+			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID:
+				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart(
 						view);
 
-			case Metawebdesign.metawebdesign.diagram.edit.parts.PageCompartmentCajonPageEditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.PageCompartmentCajonPageEditPart(
+			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
+				return new Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart(
+						view);
+
+			case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart.VISUAL_ID:
+				return new Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart(
 						view);
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID:
@@ -253,11 +159,6 @@ public class MetaWebDesignEditPartFactory implements EditPartFactory {
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart.VISUAL_ID:
 				return new Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart(
-						view);
-
-			case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID:
-				return new Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart(
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 						view);
 
 			case Metawebdesign.metawebdesign.diagram.edit.parts.PageCompartmentCajonPageEditPart.VISUAL_ID:

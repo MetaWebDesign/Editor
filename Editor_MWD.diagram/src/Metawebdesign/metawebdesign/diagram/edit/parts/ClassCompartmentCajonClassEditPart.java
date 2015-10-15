@@ -99,7 +99,6 @@ public class ClassCompartmentCajonClassEditPart extends ListCompartmentEditPart 
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/parts/ClassCompartmentCajonClassEditPart.java
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007) {
 				return this;
 			}
@@ -107,15 +106,6 @@ public class ClassCompartmentCajonClassEditPart extends ListCompartmentEditPart 
 				return this;
 			}
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006) {
-=======
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005) {
-				return this;
-			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006) {
-				return this;
-			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007) {
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/parts/ClassCompartmentCajonClassEditPart.java
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

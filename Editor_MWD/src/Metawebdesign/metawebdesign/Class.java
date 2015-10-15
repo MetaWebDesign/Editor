@@ -25,10 +25,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Metawebdesign.metawebdesign.Class#getFunctionAdmin <em>Function Admin</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Class#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Class#getGoRelationClass <em>Go Relation Class</em>}</li>
-<<<<<<< HEAD
-=======
- *   <li>{@link Metawebdesign.metawebdesign.Class#getHasView <em>Has View</em>}</li>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
  *   <li>{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}</li>
  * </ul>
  * </p>
@@ -342,35 +338,6 @@ public interface Class extends EObject {
 	 * @see #getHasConstraint()
 	 * @generated
 	 */
-<<<<<<< HEAD
-=======
-	void setHasView(Views value);
-
-	/**
-	 * Returns the value of the '<em><b>Has Constraint</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Constraint</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Constraint</em>' containment reference.
-	 * @see #setHasConstraint(Constraint)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_HasConstraint()
-	 * @model containment="true"
-	 * @generated
-	 */
-	Constraint getHasConstraint();
-
-	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Has Constraint</em>' containment reference.
-	 * @see #getHasConstraint()
-	 * @generated
-	 */
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 	void setHasConstraint(Constraint value);
 
 } // Class

@@ -5,10 +5,6 @@ package Metawebdesign.metawebdesign.util;
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Derived;
-<<<<<<< HEAD
-=======
-import Metawebdesign.metawebdesign.Form;
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.LinkView;
 import Metawebdesign.metawebdesign.LinkViewCRUD;
@@ -17,10 +13,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-<<<<<<< HEAD
-=======
-import Metawebdesign.metawebdesign.RelationView;
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.ViewAttribute;
 import Metawebdesign.metawebdesign.ViewComponent;

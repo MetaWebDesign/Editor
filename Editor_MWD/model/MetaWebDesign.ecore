@@ -38,11 +38,6 @@
         eType="#//RelationClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraint" eType="#//Constraint"
         containment="true"/>
-<<<<<<< HEAD
-=======
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraint" eType="#//Constraint"
-        containment="true"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -119,13 +114,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Views">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rolView" eType="#//TypeRol"/>
-<<<<<<< HEAD
-=======
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationView" upperBound="-1"
-        eType="#//RelationView" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fromRelation" upperBound="-1"
-        eType="#//RelationView"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasViewComponent" upperBound="-1"
         eType="#//ViewComponent" containment="true"/>
   </eClassifiers>
@@ -197,16 +185,7 @@
     <eLiterals name="many"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typeMenu">
-<<<<<<< HEAD
     <eLiterals name="principal" literal="principal"/>
     <eLiterals name="navegation" literal="navegation"/>
-=======
-    <eLiterals name="default" literal="default"/>
-    <eLiterals name="all_view_horizontal" literal="all_view_horizontal"/>
-    <eLiterals name="all_view_vertical_left" literal="all_view_vertical_left"/>
-    <eLiterals name="all_view_vertical_right" literal="all_view_vertical_right"/>
-    <eLiterals name="vertical_left" literal="vertical_left"/>
-    <eLiterals name="vertical_right" literal="vertical_right"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
   </eClassifiers>
 </ecore:EPackage>

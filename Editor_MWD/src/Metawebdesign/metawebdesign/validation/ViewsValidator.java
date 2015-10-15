@@ -4,10 +4,6 @@
  */
 package Metawebdesign.metawebdesign.validation;
 
-<<<<<<< HEAD
-=======
-import Metawebdesign.metawebdesign.RelationView;
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 import Metawebdesign.metawebdesign.TypeRol;
 import Metawebdesign.metawebdesign.ViewComponent;
 
@@ -24,10 +20,5 @@ public interface ViewsValidator {
 
 	boolean validateTitle(String value);
 	boolean validateRolView(TypeRol value);
-<<<<<<< HEAD
-=======
-	boolean validateHasRelationView(EList<RelationView> value);
-	boolean validateFromRelation(EList<RelationView> value);
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 	boolean validateHasViewComponent(EList<ViewComponent> value);
 }

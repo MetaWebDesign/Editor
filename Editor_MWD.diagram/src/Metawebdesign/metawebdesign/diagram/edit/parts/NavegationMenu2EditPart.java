@@ -120,17 +120,10 @@ public class NavegationMenu2EditPart extends ShapeNodeEditPart {
 							.getFigureNavegationMenuNameFigure());
 			return true;
 		}
-<<<<<<< HEAD
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart) {
 			IFigure pane = getPrimaryShape().getFigureCajonNavMenu();
 			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
 			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart) childEditPart)
-=======
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajonNavMenu();
-			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
-			pane.add(((Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart) childEditPart)
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 					.getFigure());
 			return true;
 		}
@@ -144,15 +137,9 @@ public class NavegationMenu2EditPart extends ShapeNodeEditPart {
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart) {
 			return true;
 		}
-<<<<<<< HEAD
 		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart) {
 			IFigure pane = getPrimaryShape().getFigureCajonNavMenu();
 			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart) childEditPart)
-=======
-		if (childEditPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart) {
-			IFigure pane = getPrimaryShape().getFigureCajonNavMenu();
-			pane.remove(((Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart) childEditPart)
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 					.getFigure());
 			return true;
 		}
@@ -183,11 +170,7 @@ public class NavegationMenu2EditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-<<<<<<< HEAD
 		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart) {
-=======
-		if (editPart instanceof Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart) {
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			return getPrimaryShape().getFigureCajonNavMenu();
 		}
 		return getContentPane();
@@ -297,7 +280,6 @@ public class NavegationMenu2EditPart extends ShapeNodeEditPart {
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
-<<<<<<< HEAD
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003) {
 				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID));
@@ -305,15 +287,6 @@ public class NavegationMenu2EditPart extends ShapeNodeEditPart {
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002) {
 				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID));
-=======
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002) {
-				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID));
-			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003) {
-				return getChildBySemanticHint(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID));
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			}
 		}
 		return super.getTargetEditPart(request);

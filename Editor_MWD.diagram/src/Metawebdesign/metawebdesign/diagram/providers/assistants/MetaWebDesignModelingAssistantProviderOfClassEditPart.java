@@ -21,15 +21,9 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 	@Override
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
 		List<IElementType> types = new ArrayList<IElementType>(3);
-<<<<<<< HEAD
 		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007);
 		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005);
 		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006);
-=======
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007);
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return types;
 	}
 
@@ -122,12 +116,7 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 	 */
 	public List<IElementType> doGetRelTypesOnTarget(
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart target) {
-<<<<<<< HEAD
 		List<IElementType> types = new ArrayList<IElementType>(1);
-=======
-		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001);
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002);
 		return types;
 	}
@@ -152,14 +141,7 @@ public class MetaWebDesignModelingAssistantProviderOfClassEditPart
 			Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart target,
 			IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
-<<<<<<< HEAD
 		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002) {
-=======
-		if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationView_4001) {
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Page_2001);
-			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Form_2008);
-		} else if (relationshipType == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.RelationClass_4002) {
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			types.add(Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Class_2004);
 		}
 		return types;

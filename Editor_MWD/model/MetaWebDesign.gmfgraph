@@ -2,17 +2,8 @@
 <gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="metawebdesign">
   <figures name="Default">
     <figures xsi:type="gmfgraph:PolylineDecoration" name="ClassHasRelationClassTargetDecoration"/>
-<<<<<<< HEAD
     <figures xsi:type="gmfgraph:PolylineDecoration" name="RelationClassFromClassTargetDecoration"/>
     <figures xsi:type="gmfgraph:PolylineDecoration" name="RelationClassAttribute_DestinationTargetDecoration"/>
-=======
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClassHasViewTargetDecoration"/>
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="RelationClassAttribute_DestinationTargetDecoration"/>
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="ViewsHasRelationViewTargetDecoration"/>
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="FormHasRelationViewTargetDecoration"/>
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="PageHasRelationViewTargetDecoration"/>
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="RelationViewRViewsHasClassTargetDecoration"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     <figures xsi:type="gmfgraph:PolylineDecoration" name="ViewAttributeGetAttributeTargetDecoration"/>
     <figures xsi:type="gmfgraph:PolylineDecoration" name="LinkViewCRUDFromClassTargetDecoration"/>
     <figures xsi:type="gmfgraph:PolylineDecoration" name="LinkViewCRUDFromRelationTargetDecoration"/>
@@ -49,12 +40,6 @@
     <descriptors name="ClassHasRelationClassFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClassHasRelationClassFigure" targetDecoration="//@figures.0/@figures.0"/>
     </descriptors>
-<<<<<<< HEAD
-=======
-    <descriptors name="ClassHasViewFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClassHasViewFigure" targetDecoration="//@figures.0/@figures.1"/>
-    </descriptors>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     <descriptors name="AttributesFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="AttributesFigure">
         <layout xsi:type="gmfgraph:FlowLayout"/>
@@ -64,19 +49,11 @@
         <children xsi:type="gmfgraph:Label" name="AttributesDataTypeFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="AttributesInTheFormFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.2"/>
       <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.3"/>
       <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.4"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.2"/>
-      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.3"/>
-      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.4"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="DerivedFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="DerivedFigure" lineWidth="0">
@@ -91,7 +68,6 @@
         <children xsi:type="gmfgraph:Label" name="DerivedCommentFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="DerivedFormulaFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.2"/>
@@ -99,15 +75,6 @@
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.4"/>
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.5"/>
       <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.6"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.2"/>
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.3"/>
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.4"/>
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.5"/>
-      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.6"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="NotDerivedFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="NotDerivedFigure" lineWidth="0">
@@ -121,21 +88,12 @@
         <children xsi:type="gmfgraph:Label" name="NotDerivedInTheFormFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="NotDerivedValueDefaultFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.2"/>
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.3"/>
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.4"/>
       <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.5"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.2"/>
-      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.3"/>
-      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.4"/>
-      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.5"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="RelationClassFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationClassFigure">
@@ -143,18 +101,12 @@
         <children xsi:type="gmfgraph:Label" name="RelationClassCardinality_originFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="RelationClassCardinality_DestinationFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.2"/>
     </descriptors>
     <descriptors name="RelationClassFromClassFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationClassFromClassFigure" targetDecoration="//@figures.0/@figures.1"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.2"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="RelationClassAttribute_DestinationFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationClassAttribute_DestinationFigure" targetDecoration="//@figures.0/@figures.2"/>
@@ -167,32 +119,6 @@
       </actualFigure>
       <accessors figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
-<<<<<<< HEAD
-=======
-    </descriptors>
-    <descriptors name="ViewsHasRelationViewFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ViewsHasRelationViewFigure" targetDecoration="//@figures.0/@figures.3"/>
-    </descriptors>
-    <descriptors name="FormFigure">
-      <actualFigure xsi:type="gmfgraph:Rectangle" name="FormFigure">
-        <layout xsi:type="gmfgraph:BorderLayout"/>
-        <children xsi:type="gmfgraph:Label" name="FormTitleFigure" text="&lt;...>">
-          <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
-        </children>
-        <children xsi:type="gmfgraph:Label" name="FormRolViewFigure" text="&lt;...>"/>
-        <children xsi:type="gmfgraph:Label" name="FormServiceFigure" text="&lt;...>"/>
-        <children xsi:type="gmfgraph:Rectangle" name="CajonForm">
-          <layoutData xsi:type="gmfgraph:BorderLayoutData"/>
-        </children>
-      </actualFigure>
-      <accessors figure="//@figures.0/@descriptors.10/@actualFigure/@children.3"/>
-      <accessors figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.10/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.10/@actualFigure/@children.2"/>
-    </descriptors>
-    <descriptors name="FormHasRelationViewFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="FormHasRelationViewFigure" targetDecoration="//@figures.0/@figures.4"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="PageFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="PageFigure">
@@ -206,35 +132,15 @@
           <layoutData xsi:type="gmfgraph:BorderLayoutData"/>
         </children>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.9/@actualFigure/@children.3"/>
       <accessors figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.9/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.9/@actualFigure/@children.2"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.3"/>
-      <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.2"/>
-    </descriptors>
-    <descriptors name="PageHasRelationViewFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PageHasRelationViewFigure" targetDecoration="//@figures.0/@figures.5"/>
-    </descriptors>
-    <descriptors name="RelationViewFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationViewFigure">
-        <children xsi:type="gmfgraph:Label" name="RelationViewNameFigure" text="&lt;...>"/>
-      </actualFigure>
-      <accessors figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="RelationViewRViewsHasClassFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationViewRViewsHasClassFigure" targetDecoration="//@figures.0/@figures.6"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="ViewComponentFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="ViewComponentFigure"/>
     </descriptors>
     <descriptors name="ViewAttributeFigure">
-<<<<<<< HEAD
       <actualFigure xsi:type="gmfgraph:Rectangle" name="ViewAttributeFigure" lineWidth="0">
         <layout xsi:type="gmfgraph:StackLayout"/>
         <preferredSize dx="100" dy="16"/>
@@ -242,17 +148,10 @@
         <children xsi:type="gmfgraph:Label" name="ViewAttributeNameFigure" text="">
           <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
         </children>
-=======
-      <actualFigure xsi:type="gmfgraph:Rectangle" name="ViewAttributeFigure">
-        <layout xsi:type="gmfgraph:FlowLayout"/>
-        <children xsi:type="gmfgraph:Label" name="ViewAttributeTypePresentationFigure" text="&lt;...>"/>
-        <children xsi:type="gmfgraph:Label" name="ViewAttributeNameFigure" text="&lt;...>"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
         <children xsi:type="gmfgraph:Label" name="ViewAttributePositionHorizontalFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="ViewAttributePostionVerticalFigure" text="&lt;...>"/>
         <children xsi:type="gmfgraph:Label" name="ViewAttributeFromFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.2"/>
@@ -261,16 +160,6 @@
     </descriptors>
     <descriptors name="ViewAttributeGetAttributeFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ViewAttributeGetAttributeFigure" targetDecoration="//@figures.0/@figures.3"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.2"/>
-      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.3"/>
-      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.4"/>
-    </descriptors>
-    <descriptors name="ViewAttributeGetAttributeFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ViewAttributeGetAttributeFigure" targetDecoration="//@figures.0/@figures.7"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="NavegationMenuFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="NavegationMenuFigure">
@@ -283,26 +172,16 @@
           <layoutData xsi:type="gmfgraph:BorderLayoutData"/>
         </children>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.13/@actualFigure/@children.2"/>
       <accessors figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.13/@actualFigure/@children.1"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.2"/>
-      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.1"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="LinkFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="LinkFigure">
         <layout xsi:type="gmfgraph:FlowLayout"/>
         <children xsi:type="gmfgraph:Label" name="LinkNameFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.20/@actualFigure/@children.0"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="LinkViewCRUDFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="LinkViewCRUDFigure" lineWidth="0">
@@ -312,7 +191,6 @@
         </children>
         <children xsi:type="gmfgraph:Label" name="LinkViewCRUDServiceFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.15/@actualFigure/@children.1"/>
     </descriptors>
@@ -321,16 +199,6 @@
     </descriptors>
     <descriptors name="LinkViewCRUDFromRelationFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LinkViewCRUDFromRelationFigure" targetDecoration="//@figures.0/@figures.5"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.21/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.21/@actualFigure/@children.1"/>
-    </descriptors>
-    <descriptors name="LinkViewCRUDFromClassFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LinkViewCRUDFromClassFigure" targetDecoration="//@figures.0/@figures.8"/>
-    </descriptors>
-    <descriptors name="LinkViewCRUDFromRelationFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LinkViewCRUDFromRelationFigure" targetDecoration="//@figures.0/@figures.9"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="LinkViewFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="LinkViewFigure" lineWidth="0">
@@ -339,17 +207,10 @@
           <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
         </children>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.18/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="LinkViewLinkViewFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LinkViewLinkViewFigure" targetDecoration="//@figures.0/@figures.6"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="LinkViewLinkViewFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LinkViewLinkViewFigure" targetDecoration="//@figures.0/@figures.10"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
     <descriptors name="ConstraintFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="ConstraintFigure" lineWidth="0">
@@ -361,7 +222,6 @@
         </children>
         <children xsi:type="gmfgraph:Label" name="ConstraintMansajeErrorFigure" text="&lt;...>"/>
       </actualFigure>
-<<<<<<< HEAD
       <accessors figure="//@figures.0/@descriptors.20/@actualFigure/@children.0"/>
       <accessors figure="//@figures.0/@descriptors.20/@actualFigure/@children.1"/>
       <accessors figure="//@figures.0/@descriptors.20/@actualFigure/@children.2"/>
@@ -372,18 +232,6 @@
     </descriptors>
     <descriptors name="ConstraintValueFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConstraintValueFigure" targetDecoration="//@figures.0/@figures.8"/>
-=======
-      <accessors figure="//@figures.0/@descriptors.26/@actualFigure/@children.0"/>
-      <accessors figure="//@figures.0/@descriptors.26/@actualFigure/@children.1"/>
-      <accessors figure="//@figures.0/@descriptors.26/@actualFigure/@children.2"/>
-      <accessors figure="//@figures.0/@descriptors.26/@actualFigure/@children.3"/>
-    </descriptors>
-    <descriptors name="ConstraintAttributeFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConstraintAttributeFigure" targetDecoration="//@figures.0/@figures.11"/>
-    </descriptors>
-    <descriptors name="ConstraintValueFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConstraintValueFigure" targetDecoration="//@figures.0/@figures.12"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </descriptors>
   </figures>
   <nodes name="Class" figure="ClassFigure"/>
@@ -400,20 +248,9 @@
   <nodes name="LinkView" figure="LinkViewFigure"/>
   <nodes name="Constraint" figure="ConstraintFigure"/>
   <connections name="ClassHasRelationClass" figure="ClassHasRelationClassFigure"/>
-<<<<<<< HEAD
   <connections name="RelationClass" figure="RelationClassFigure"/>
   <connections name="RelationClassFromClass" figure="RelationClassFromClassFigure"/>
   <connections name="RelationClassAttribute_Destination" figure="RelationClassAttribute_DestinationFigure"/>
-=======
-  <connections name="ClassHasView" figure="ClassHasViewFigure"/>
-  <connections name="RelationClass" figure="RelationClassFigure"/>
-  <connections name="RelationClassAttribute_Destination" figure="RelationClassAttribute_DestinationFigure"/>
-  <connections name="ViewsHasRelationView" figure="ViewsHasRelationViewFigure"/>
-  <connections name="FormHasRelationView" figure="FormHasRelationViewFigure"/>
-  <connections name="PageHasRelationView" figure="PageHasRelationViewFigure"/>
-  <connections name="RelationView" figure="RelationViewFigure"/>
-  <connections name="RelationViewRViewsHasClass" figure="RelationViewRViewsHasClassFigure"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
   <connections name="ViewAttributeGetAttribute" figure="ViewAttributeGetAttributeFigure"/>
   <connections name="LinkViewCRUDFromClass" figure="LinkViewCRUDFromClassFigure"/>
   <connections name="LinkViewCRUDFromRelation" figure="LinkViewCRUDFromRelationFigure"/>
@@ -421,14 +258,8 @@
   <connections name="ConstraintAttribute" figure="ConstraintAttributeFigure"/>
   <connections name="ConstraintValue" figure="ConstraintValueFigure"/>
   <compartments name="CompartmentCajonClass" figure="ClassFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
-<<<<<<< HEAD
   <compartments name="CompartmentCajoNavMenu" figure="NavegationMenuFigure" collapsible="true" accessor="//@figures.0/@descriptors.13/@accessors.0"/>
   <compartments name="CompartmentCajonPage" figure="PageFigure" collapsible="true" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
-=======
-  <compartments name="CompartmentCajonForm" figure="FormFigure" collapsible="true" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
-  <compartments name="CompartmentCajoNavMenu" figure="NavegationMenuFigure" collapsible="true" accessor="//@figures.0/@descriptors.19/@accessors.0"/>
-  <compartments name="CompartmentCajonPage" figure="PageFigure" collapsible="true" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
   <labels name="ClassName" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
   <labels name="ClassId" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.2"/>
   <labels name="ClassFunctionCreate" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.3"/>
@@ -437,7 +268,6 @@
   <labels name="ClassFunctionIndex" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.6"/>
   <labels name="ClassFunctionView" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.7"/>
   <labels name="ClassFunctionAdmin" figure="ClassFigure" accessor="//@figures.0/@descriptors.0/@accessors.8"/>
-<<<<<<< HEAD
   <labels name="AttributesName" figure="AttributesFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
   <labels name="AttributesRol" figure="AttributesFigure" accessor="//@figures.0/@descriptors.2/@accessors.1"/>
   <labels name="AttributesPrimaryKey" figure="AttributesFigure" accessor="//@figures.0/@descriptors.2/@accessors.2"/>
@@ -479,51 +309,4 @@
   <labels name="ConstraintService" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.20/@accessors.1"/>
   <labels name="ConstraintName" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.20/@accessors.2"/>
   <labels name="ConstraintMansajeError" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.20/@accessors.3"/>
-=======
-  <labels name="AttributesName" figure="AttributesFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
-  <labels name="AttributesRol" figure="AttributesFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
-  <labels name="AttributesPrimaryKey" figure="AttributesFigure" accessor="//@figures.0/@descriptors.3/@accessors.2"/>
-  <labels name="AttributesDataType" figure="AttributesFigure" accessor="//@figures.0/@descriptors.3/@accessors.3"/>
-  <labels name="AttributesInTheForm" figure="AttributesFigure" accessor="//@figures.0/@descriptors.3/@accessors.4"/>
-  <labels name="DerivedName" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
-  <labels name="DerivedRol" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.1"/>
-  <labels name="DerivedPrimaryKey" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.2"/>
-  <labels name="DerivedDataType" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.3"/>
-  <labels name="DerivedInTheForm" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.4"/>
-  <labels name="DerivedComment" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.5"/>
-  <labels name="DerivedFormula" figure="DerivedFigure" accessor="//@figures.0/@descriptors.4/@accessors.6"/>
-  <labels name="NotDerivedName" figure="NotDerivedFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
-  <labels name="NotDerivedRol" figure="NotDerivedFigure" accessor="//@figures.0/@descriptors.5/@accessors.1"/>
-  <labels name="NotDerivedPrimaryKey" figure="NotDerivedFigure" accessor="//@figures.0/@descriptors.5/@accessors.2"/>
-  <labels name="NotDerivedDataType" figure="NotDerivedFigure" accessor="//@figures.0/@descriptors.5/@accessors.3"/>
-  <labels name="NotDerivedInTheForm" figure="NotDerivedFigure" accessor="//@figures.0/@descriptors.5/@accessors.4"/>
-  <labels name="NotDerivedValueDefault" figure="NotDerivedFigure" accessor="//@figures.0/@descriptors.5/@accessors.5"/>
-  <labels name="RelationClassName" figure="RelationClassFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
-  <labels name="RelationClassCardinality_origin" figure="RelationClassFigure" accessor="//@figures.0/@descriptors.6/@accessors.1"/>
-  <labels name="RelationClassCardinality_Destination" figure="RelationClassFigure" accessor="//@figures.0/@descriptors.6/@accessors.2"/>
-  <labels name="ViewsTitle" figure="ViewsFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
-  <labels name="ViewsRolView" figure="ViewsFigure" accessor="//@figures.0/@descriptors.8/@accessors.1"/>
-  <labels name="FormTitle" figure="FormFigure" accessor="//@figures.0/@descriptors.10/@accessors.1"/>
-  <labels name="FormRolView" figure="FormFigure" accessor="//@figures.0/@descriptors.10/@accessors.2"/>
-  <labels name="FormService" figure="FormFigure" accessor="//@figures.0/@descriptors.10/@accessors.3"/>
-  <labels name="PageTitle" figure="PageFigure" accessor="//@figures.0/@descriptors.12/@accessors.1"/>
-  <labels name="PageRolView" figure="PageFigure" accessor="//@figures.0/@descriptors.12/@accessors.2"/>
-  <labels name="PageContent_HTML" figure="PageFigure" accessor="//@figures.0/@descriptors.12/@accessors.3"/>
-  <labels name="RelationViewName" figure="RelationViewFigure" accessor="//@figures.0/@descriptors.14/@accessors.0"/>
-  <labels name="ViewAttributeTypePresentation" figure="ViewAttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.0"/>
-  <labels name="ViewAttributeName" figure="ViewAttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.1"/>
-  <labels name="ViewAttributePositionHorizontal" figure="ViewAttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.2"/>
-  <labels name="ViewAttributePostionVertical" figure="ViewAttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.3"/>
-  <labels name="ViewAttributeFrom" figure="ViewAttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.4"/>
-  <labels name="NavegationMenuName" figure="NavegationMenuFigure" accessor="//@figures.0/@descriptors.19/@accessors.1"/>
-  <labels name="NavegationMenuTypeMenu" figure="NavegationMenuFigure" accessor="//@figures.0/@descriptors.19/@accessors.2"/>
-  <labels name="LinkName" figure="LinkFigure" accessor="//@figures.0/@descriptors.20/@accessors.0"/>
-  <labels name="LinkViewCRUDName" figure="LinkViewCRUDFigure" accessor="//@figures.0/@descriptors.21/@accessors.0"/>
-  <labels name="LinkViewCRUDService" figure="LinkViewCRUDFigure" accessor="//@figures.0/@descriptors.21/@accessors.1"/>
-  <labels name="LinkViewName" figure="LinkViewFigure" accessor="//@figures.0/@descriptors.24/@accessors.0"/>
-  <labels name="ConstraintOperator" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.26/@accessors.0"/>
-  <labels name="ConstraintService" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.26/@accessors.1"/>
-  <labels name="ConstraintName" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.26/@accessors.2"/>
-  <labels name="ConstraintMansajeError" figure="ConstraintFigure" accessor="//@figures.0/@descriptors.26/@accessors.3"/>
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 </gmfgraph:Canvas>

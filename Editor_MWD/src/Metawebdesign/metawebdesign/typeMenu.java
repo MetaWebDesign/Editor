@@ -19,7 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum typeMenu implements Enumerator {
 	/**
-<<<<<<< HEAD
 	 * The '<em><b>Principal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,156 +67,6 @@ public enum typeMenu implements Enumerator {
 	 * @ordered
 	 */
 	public static final int NAVEGATION_VALUE = 0;
-=======
-	 * The '<em><b>Default</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DEFAULT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	DEFAULT(0, "default", "default"),
-
-	/**
-	 * The '<em><b>All view horizontal</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ALL_VIEW_HORIZONTAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ALL_VIEW_HORIZONTAL(0, "all_view_horizontal", "all_view_horizontal"),
-
-	/**
-	 * The '<em><b>All view vertical left</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ALL_VIEW_VERTICAL_LEFT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ALL_VIEW_VERTICAL_LEFT(0, "all_view_vertical_left", "all_view_vertical_left"),
-
-	/**
-	 * The '<em><b>All view vertical right</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ALL_VIEW_VERTICAL_RIGHT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ALL_VIEW_VERTICAL_RIGHT(0, "all_view_vertical_right", "all_view_vertical_right"),
-
-	/**
-	 * The '<em><b>Vertical left</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #VERTICAL_LEFT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	VERTICAL_LEFT(0, "vertical_left", "vertical_left"),
-
-	/**
-	 * The '<em><b>Vertical right</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #VERTICAL_RIGHT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	VERTICAL_RIGHT(0, "vertical_right", "vertical_right");
-
-	/**
-	 * The '<em><b>Default</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Default</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #DEFAULT
-	 * @model name="default"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int DEFAULT_VALUE = 0;
-
-	/**
-	 * The '<em><b>All view horizontal</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>All view horizontal</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #ALL_VIEW_HORIZONTAL
-	 * @model name="all_view_horizontal"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ALL_VIEW_HORIZONTAL_VALUE = 0;
-
-	/**
-	 * The '<em><b>All view vertical left</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>All view vertical left</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #ALL_VIEW_VERTICAL_LEFT
-	 * @model name="all_view_vertical_left"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ALL_VIEW_VERTICAL_LEFT_VALUE = 0;
-
-	/**
-	 * The '<em><b>All view vertical right</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>All view vertical right</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #ALL_VIEW_VERTICAL_RIGHT
-	 * @model name="all_view_vertical_right"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ALL_VIEW_VERTICAL_RIGHT_VALUE = 0;
-
-	/**
-	 * The '<em><b>Vertical left</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Vertical left</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #VERTICAL_LEFT
-	 * @model name="vertical_left"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int VERTICAL_LEFT_VALUE = 0;
-
-	/**
-	 * The '<em><b>Vertical right</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Vertical right</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #VERTICAL_RIGHT
-	 * @model name="vertical_right"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int VERTICAL_RIGHT_VALUE = 0;
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 
 	/**
 	 * An array of all the '<em><b>type Menu</b></em>' enumerators.
@@ -227,17 +76,8 @@ public enum typeMenu implements Enumerator {
 	 */
 	private static final typeMenu[] VALUES_ARRAY =
 		new typeMenu[] {
-<<<<<<< HEAD
 			PRINCIPAL,
 			NAVEGATION,
-=======
-			DEFAULT,
-			ALL_VIEW_HORIZONTAL,
-			ALL_VIEW_VERTICAL_LEFT,
-			ALL_VIEW_VERTICAL_RIGHT,
-			VERTICAL_LEFT,
-			VERTICAL_RIGHT,
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		};
 
 	/**
@@ -288,11 +128,7 @@ public enum typeMenu implements Enumerator {
 	 */
 	public static typeMenu get(int value) {
 		switch (value) {
-<<<<<<< HEAD
 			case PRINCIPAL_VALUE: return PRINCIPAL;
-=======
-			case DEFAULT_VALUE: return DEFAULT;
->>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		}
 		return null;
 	}
