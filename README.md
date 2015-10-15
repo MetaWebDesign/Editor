@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # MDD_Editor - Estable (Modelo V0.2.7)
+=======
+# MDD_Editor - Testing (Modelo V2.7)
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 
 ##Modelo
 ![Alt text](https://github.com/MetaWebDesign/Editor/blob/master/Editor_MWD/text/model.png "Metamodelo")

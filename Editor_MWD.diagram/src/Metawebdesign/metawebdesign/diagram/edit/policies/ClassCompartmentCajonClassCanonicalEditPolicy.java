@@ -54,10 +54,17 @@ public class ClassCompartmentCajonClassCanonicalEditPolicy extends
 			myFeaturesToSynchronize = new HashSet<EStructuralFeature>();
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/ClassCompartmentCajonClassCanonicalEditPolicy.java
 							.getClass_HasConstraint());
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
 							.getClass_HasAttributes());
+=======
+							.getClass_HasAttributes());
+			myFeaturesToSynchronize
+					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
+							.getClass_HasConstraint());
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/ClassCompartmentCajonClassCanonicalEditPolicy.java
 		}
 		return myFeaturesToSynchronize;
 	}
@@ -92,9 +99,15 @@ public class ClassCompartmentCajonClassCanonicalEditPolicy extends
 	private boolean isMyDiagramElement(View view) {
 		int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getVisualID(view);
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/ClassCompartmentCajonClassCanonicalEditPolicy.java
 		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID
 				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID
 				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID;
+=======
+		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID
+				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID
+				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID;
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/ClassCompartmentCajonClassCanonicalEditPolicy.java
 	}
 
 	/**

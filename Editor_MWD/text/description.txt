@@ -27,6 +27,10 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute functionAdmin : TypeRol
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference goRelationClass : RelationClass<<0..*>>
+<<<<<<< HEAD
+=======
+    Reference hasView : Views
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     Reference hasConstraint : Constraint
 
   Class Attributes
@@ -53,10 +57,23 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class Views
     Attribute title : EString
     Attribute rolView : TypeRol
+<<<<<<< HEAD
+=======
+    Reference hasRelationView : RelationView<<0..*>>
+    Reference fromRelation : RelationView<<0..*>>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     Reference hasViewComponent : ViewComponent<<0..*>>
 
   Class Page -> Views
     Attribute Content_HTML : EString
+<<<<<<< HEAD
+=======
+
+  Class RelationView
+    Attribute name : EString
+    Reference RViewsHasClass : Class<<0..*>>
+    Reference fromClass : Class<<0..*>>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 
   Class ViewComponent
 
@@ -167,5 +184,14 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal many = 0
 
   Enum typeMenu
+<<<<<<< HEAD
     Literal principal = 0
     Literal navegation = 0
+=======
+    Literal default = 0
+    Literal all_view_horizontal = 0
+    Literal all_view_vertical_left = 0
+    Literal all_view_vertical_right = 0
+    Literal vertical_left = 0
+    Literal vertical_right = 0
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98

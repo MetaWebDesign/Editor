@@ -287,6 +287,10 @@ public class ClassItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_ATTRIBUTES);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CLASS);
+<<<<<<< HEAD
+=======
+			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_VIEW);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_CONSTRAINT);
 		}
 		return childrenFeatures;
@@ -355,6 +359,10 @@ public class ClassItemProvider
 				return;
 			case MetawebdesignPackage.CLASS__HAS_ATTRIBUTES:
 			case MetawebdesignPackage.CLASS__HAS_RELATION_CLASS:
+<<<<<<< HEAD
+=======
+			case MetawebdesignPackage.CLASS__HAS_VIEW:
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -395,6 +403,24 @@ public class ClassItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+<<<<<<< HEAD
+=======
+				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
+				 MetawebdesignFactory.eINSTANCE.createViews()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
+				 MetawebdesignFactory.eINSTANCE.createForm()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
+				 MetawebdesignFactory.eINSTANCE.createPage()));
+
+		newChildDescriptors.add
+			(createChildParameter
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 				(MetawebdesignPackage.Literals.CLASS__HAS_CONSTRAINT,
 				 MetawebdesignFactory.eINSTANCE.createConstraint()));
 	}

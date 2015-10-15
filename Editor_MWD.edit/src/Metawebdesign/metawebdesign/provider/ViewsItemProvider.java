@@ -65,6 +65,10 @@ public class ViewsItemProvider
 
 			addTitlePropertyDescriptor(object);
 			addRolViewPropertyDescriptor(object);
+<<<<<<< HEAD
+=======
+			addFromRelationPropertyDescriptor(object);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		}
 		return itemPropertyDescriptors;
 	}
@@ -114,6 +118,31 @@ public class ViewsItemProvider
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * This adds a property descriptor for the From Relation feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFromRelationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Views_fromRelation_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Views_fromRelation_feature", "_UI_Views_type"),
+				 MetawebdesignPackage.Literals.VIEWS__FROM_RELATION,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.

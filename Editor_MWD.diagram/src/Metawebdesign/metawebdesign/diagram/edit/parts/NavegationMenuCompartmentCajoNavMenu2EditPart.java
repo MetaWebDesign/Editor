@@ -27,7 +27,11 @@ public class NavegationMenuCompartmentCajoNavMenu2EditPart extends
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/parts/NavegationMenuCompartmentCajoNavMenu2EditPart.java
 	public static final int VISUAL_ID = 7002;
+=======
+	public static final int VISUAL_ID = 7004;
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/parts/NavegationMenuCompartmentCajoNavMenu2EditPart.java
 
 	/**
 	 * @generated
@@ -100,10 +104,17 @@ public class NavegationMenuCompartmentCajoNavMenu2EditPart extends
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/parts/NavegationMenuCompartmentCajoNavMenu2EditPart.java
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003) {
 				return this;
 			}
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002) {
+=======
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkView_3002) {
+				return this;
+			}
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.LinkViewCRUD_3003) {
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/parts/NavegationMenuCompartmentCajoNavMenu2EditPart.java
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

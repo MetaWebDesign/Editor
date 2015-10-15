@@ -22,11 +22,14 @@ public class ClassCompartmentCajonClassItemSemanticEditPolicy
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/ClassCompartmentCajonClassItemSemanticEditPolicy.java
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.Constraint2CreateCommand(
 					req));
 		}
+=======
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/ClassCompartmentCajonClassItemSemanticEditPolicy.java
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.Derived2CreateCommand(
@@ -35,6 +38,11 @@ public class ClassCompartmentCajonClassItemSemanticEditPolicy
 		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006 == req
 				.getElementType()) {
 			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.NotDerived2CreateCommand(
+					req));
+		}
+		if (Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007 == req
+				.getElementType()) {
+			return getGEFWrapper(new Metawebdesign.metawebdesign.diagram.edit.commands.Constraint2CreateCommand(
 					req));
 		}
 		return super.getCreateCommand(req);

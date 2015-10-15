@@ -60,6 +60,16 @@
     <compartmentTraces
         visualID="7004"
         queryText="true"/>
+<<<<<<< HEAD
+=======
+  </nodeTraces>
+  <nodeTraces
+      visualID="2008"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://metawebdesign/1.0' and _eClass_.name = 'Form') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://metawebdesign/1.0' and _eClass_.name = 'Root') and _containmentMF_.name = 'views')">
+    <nodeLabelTraces
+        visualID="5015"
+        queryText="true"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
   </nodeTraces>
   <nodeTraces
       visualID="2009"
@@ -128,6 +138,16 @@
         queryText="true"/>
   </childNodeTraces>
   <linkTraces
+<<<<<<< HEAD
+=======
+      visualID="4001"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://metawebdesign/1.0' and _eClass_.name = 'RelationView')">
+    <linkLabelTraces
+        visualID="6001"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       visualID="4002"
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://metawebdesign/1.0' and _eClass_.name = 'RelationClass')">
     <linkLabelTraces

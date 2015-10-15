@@ -227,60 +227,109 @@ public class MetaWebDesignNavigatorContentProvider implements
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID));
+<<<<<<< HEAD
+=======
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getDiagramLinksByType(
 					Collections.singleton(sv),
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID));
+			links.addChildren(createNavigatorItems(connectedViews, links, false));
+			connectedViews = getDiagramLinksByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			if (!links.isEmpty()) {
@@ -292,6 +341,12 @@ public class MetaWebDesignNavigatorContentProvider implements
 		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID: {
 			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
 			Node sv = (Node) view;
+<<<<<<< HEAD
+=======
+			Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup outgoinglinks = new Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup(
+					Metawebdesign.metawebdesign.diagram.part.Messages.NavigatorGroupName_Page_2001_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			Collection<View> connectedViews;
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
@@ -352,6 +407,15 @@ public class MetaWebDesignNavigatorContentProvider implements
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(
 					connectedViews,
+<<<<<<< HEAD
+=======
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
@@ -371,12 +435,62 @@ public class MetaWebDesignNavigatorContentProvider implements
 			if (!incominglinks.isEmpty()) {
 				result.add(incominglinks);
 			}
+<<<<<<< HEAD
+=======
 			if (!outgoinglinks.isEmpty()) {
 				result.add(outgoinglinks);
 			}
 			return result.toArray();
 		}
 
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID: {
+			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			Collection<View> connectedViews;
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(
+					connectedViews,
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(
+					connectedViews,
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			return result.toArray();
+		}
+
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID: {
+			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup outgoinglinks = new Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup(
+					Metawebdesign.metawebdesign.diagram.part.Messages.NavigatorGroupName_Form_2008_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+<<<<<<< HEAD
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID: {
 			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
 			Node sv = (Node) view;
@@ -404,6 +518,8 @@ public class MetaWebDesignNavigatorContentProvider implements
 			return result.toArray();
 		}
 
+=======
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID: {
 			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
 			Node sv = (Node) view;
@@ -411,7 +527,11 @@ public class MetaWebDesignNavigatorContentProvider implements
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			connectedViews = getChildrenByType(
 					connectedViews,
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
@@ -421,7 +541,11 @@ public class MetaWebDesignNavigatorContentProvider implements
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID));
+=======
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			connectedViews = getChildrenByType(
 					connectedViews,
 					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
@@ -431,6 +555,46 @@ public class MetaWebDesignNavigatorContentProvider implements
 			return result.toArray();
 		}
 
+<<<<<<< HEAD
+=======
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID: {
+			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
+			Edge sv = (Edge) view;
+			Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup target = new Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup(
+					Metawebdesign.metawebdesign.diagram.part.Messages.NavigatorGroupName_RelationView_4001_target,
+					"icons/linkTargetNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup source = new Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignNavigatorGroup(
+					Metawebdesign.metawebdesign.diagram.part.Messages.NavigatorGroupName_RelationView_4001_source,
+					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+							.getType(Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			if (!target.isEmpty()) {
+				result.add(target);
+			}
+			if (!source.isEmpty()) {
+				result.add(source);
+			}
+			return result.toArray();
+		}
+
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID: {
 			LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem> result = new LinkedList<Metawebdesign.metawebdesign.diagram.navigator.MetaWebDesignAbstractNavigatorItem>();
 			Edge sv = (Edge) view;

@@ -138,6 +138,7 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 					return false; // foreign diagram
 				}
 				switch (visualID) {
+<<<<<<< HEAD
 				case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 				case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
 				case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
@@ -154,6 +155,25 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 				case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
 				case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
 				case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
+=======
+				case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+				case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 					if (domainElement == null
 							|| visualID != Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 									.getNodeVisualID(op.getContainerView(),
@@ -166,6 +186,7 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 				}
 			}
 		}
+<<<<<<< HEAD
 		return Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID == visualID
 				|| Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID == visualID
 				|| Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID == visualID
@@ -182,6 +203,25 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 				|| Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID == visualID
 				|| Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID == visualID
 				|| Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID == visualID;
+=======
+		return Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID == visualID
+				|| Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID == visualID;
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 	}
 
 	/**
@@ -241,8 +281,19 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 					.getVisualID(semanticHint);
 		}
 		switch (visualID) {
+<<<<<<< HEAD
 		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
 			return createDerived_2006(domainElement, containerView, index,
+=======
+		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
+			return createPage_2001(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
+			return createViewAttribute_2002(domainElement, containerView,
+					index, persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID:
+			return createLinkView_2003(domainElement, containerView, index,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 					persisted, preferencesHint);
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart.VISUAL_ID:
 			return createViewAttribute_2002(domainElement, containerView,
@@ -256,6 +307,7 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID:
 			return createClass_2004(domainElement, containerView, index,
 					persisted, preferencesHint);
+<<<<<<< HEAD
 		case Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID:
 			return createPage_2001(domainElement, containerView, index,
 					persisted, preferencesHint);
@@ -289,6 +341,47 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
 			return createViewAttribute_3004(domainElement, containerView,
 					index, persisted, preferencesHint);
+=======
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID:
+			return createConstraint_2005(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID:
+			return createDerived_2006(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID:
+			return createNavegationMenu_2007(domainElement, containerView,
+					index, persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID:
+			return createForm_2008(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID:
+			return createNotDerived_2009(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID:
+			return createLinkViewCRUD_2010(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID:
+			return createNavegationMenu_3001(domainElement, containerView,
+					index, persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart.VISUAL_ID:
+			return createLinkView_3002(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID:
+			return createLinkViewCRUD_3003(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID:
+			return createViewAttribute_3004(domainElement, containerView,
+					index, persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID:
+			return createDerived_3005(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID:
+			return createNotDerived_3006(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID:
+			return createConstraint_3007(domainElement, containerView, index,
+					persisted, preferencesHint);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		}
 		// can't happen, provided #provides(CreateNodeViewOperation) is correct
 		return null;
@@ -304,6 +397,12 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		String elementTypeHint = ((IHintedType) elementType).getSemanticHint();
 		switch (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getVisualID(elementTypeHint)) {
+<<<<<<< HEAD
+=======
+		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID:
+			return createRelationView_4001(getSemanticElement(semanticAdapter),
+					containerView, index, persisted, preferencesHint);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		case Metawebdesign.metawebdesign.diagram.edit.parts.RelationClassEditPart.VISUAL_ID:
 			return createRelationClass_4002(
 					getSemanticElement(semanticAdapter), containerView, index,
@@ -316,12 +415,20 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD
 	public Node createDerived_2006(EObject domainElement, View containerView,
+=======
+	public Node createPage_2001(EObject domainElement, View containerView,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			int index, boolean persisted, PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID));
+=======
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		stampShortcut(containerView, node);
@@ -353,10 +460,22 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
 		Node label5013 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID));
+=======
+		Node label5005 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID));
+		createCompartment(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageCompartmentCajonPageEditPart.VISUAL_ID),
+				true, false, false, false);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return node;
 	}
 
@@ -411,6 +530,7 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD
 	public Node createNotDerived_2009(EObject domainElement,
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
@@ -418,6 +538,14 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID));
+=======
+	public Node createLinkView_2003(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		stampShortcut(containerView, node);
@@ -449,10 +577,17 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
 		Node label5016 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID));
+=======
+		Node label5007 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return node;
 	}
 
@@ -504,7 +639,11 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		createCompartment(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID),
+=======
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart.VISUAL_ID),
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 				true, false, true, true);
 		return node;
 	}
@@ -512,12 +651,22 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD
 	public Node createClass_2004(EObject domainElement, View containerView,
 			int index, boolean persisted, PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassEditPart.VISUAL_ID));
+=======
+	public Node createConstraint_2005(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		stampShortcut(containerView, node);
@@ -549,6 +698,7 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
 		Node label5011 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
@@ -558,150 +708,7 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ClassCompartmentCajonClassEditPart.VISUAL_ID),
 				true, false, true, true);
-		return node;
-	}
-
-	/**
-	 * @generated
-	 */
-	public Node createPage_2001(EObject domainElement, View containerView,
-			int index, boolean persisted, PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
-		ViewUtil.insertChildView(containerView, node, index, persisted);
-		node.setElement(domainElement);
-		stampShortcut(containerView, node);
-		// initializeFromPreferences 
-		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
-				.getPreferenceStore();
-
-		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
-				FigureUtilities.RGBToInteger(lineRGB));
-		FontStyle nodeFontStyle = (FontStyle) node
-				.getStyle(NotationPackage.Literals.FONT_STYLE);
-		if (nodeFontStyle != null) {
-			FontData fontData = PreferenceConverter.getFontData(prefStore,
-					IPreferenceConstants.PREF_DEFAULT_FONT);
-			nodeFontStyle.setFontName(fontData.getName());
-			nodeFontStyle.setFontHeight(fontData.getHeight());
-			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
-			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
-			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
-					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
-			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
-					.intValue());
-		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5005 = createLabel(
-				node,
-				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID));
-		createCompartment(
-				node,
-				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageCompartmentCajonPageEditPart.VISUAL_ID),
-				true, false, false, false);
-		return node;
-	}
-
-	/**
-	 * @generated
-	 */
-	public Node createLinkViewCRUD_2010(EObject domainElement,
-			View containerView, int index, boolean persisted,
-			PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID));
-		ViewUtil.insertChildView(containerView, node, index, persisted);
-		node.setElement(domainElement);
-		stampShortcut(containerView, node);
-		// initializeFromPreferences 
-		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
-				.getPreferenceStore();
-
-		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
-				FigureUtilities.RGBToInteger(lineRGB));
-		FontStyle nodeFontStyle = (FontStyle) node
-				.getStyle(NotationPackage.Literals.FONT_STYLE);
-		if (nodeFontStyle != null) {
-			FontData fontData = PreferenceConverter.getFontData(prefStore,
-					IPreferenceConstants.PREF_DEFAULT_FONT);
-			nodeFontStyle.setFontName(fontData.getName());
-			nodeFontStyle.setFontHeight(fontData.getHeight());
-			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
-			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
-			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
-					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
-			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
-					.intValue());
-		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5017 = createLabel(
-				node,
-				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID));
-		return node;
-	}
-
-	/**
-	 * @generated
-	 */
-	public Node createConstraint_2005(EObject domainElement,
-			View containerView, int index, boolean persisted,
-			PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID));
-		ViewUtil.insertChildView(containerView, node, index, persisted);
-		node.setElement(domainElement);
-		stampShortcut(containerView, node);
-		// initializeFromPreferences 
-		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
-				.getPreferenceStore();
-
-		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
-				FigureUtilities.RGBToInteger(lineRGB));
-		FontStyle nodeFontStyle = (FontStyle) node
-				.getStyle(NotationPackage.Literals.FONT_STYLE);
-		if (nodeFontStyle != null) {
-			FontData fontData = PreferenceConverter.getFontData(prefStore,
-					IPreferenceConstants.PREF_DEFAULT_FONT);
-			nodeFontStyle.setFontName(fontData.getName());
-			nodeFontStyle.setFontHeight(fontData.getHeight());
-			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
-			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
-			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
-					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
-			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
-					.intValue());
-		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
+=======
 		Node label5012 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
@@ -712,12 +719,12 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	public Node createLinkView_2003(EObject domainElement, View containerView,
+	public Node createDerived_2006(EObject domainElement, View containerView,
 			int index, boolean persisted, PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID));
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		stampShortcut(containerView, node);
@@ -749,23 +756,297 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5007 = createLabel(
+		Node label5013 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID));
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedNameEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return node;
 	}
 
 	/**
 	 * @generated
 	 */
-	public Node createLinkViewCRUD_3003(EObject domainElement,
+<<<<<<< HEAD
+	public Node createPage_2001(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart.VISUAL_ID));
+=======
+	public Node createNavegationMenu_2007(EObject domainElement,
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
+		Node label5005 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageTitleEditPart.VISUAL_ID));
+		createCompartment(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.PageCompartmentCajonPageEditPart.VISUAL_ID),
+				true, false, false, false);
+=======
+		Node label5014 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuNameEditPart.VISUAL_ID));
+		createCompartment(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID),
+				true, false, true, true);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+<<<<<<< HEAD
+	public Node createLinkViewCRUD_2010(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID));
+=======
+	public Node createForm_2008(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.FormEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
+		Node label5017 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID));
+=======
+		Node label5015 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.FormTitleEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+<<<<<<< HEAD
+	public Node createConstraint_2005(EObject domainElement,
+=======
+	public Node createNotDerived_2009(EObject domainElement,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart.VISUAL_ID));
+=======
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
+		Node label5012 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintNameEditPart.VISUAL_ID));
+=======
+		Node label5016 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedNameEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+<<<<<<< HEAD
+	public Node createLinkView_2003(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart.VISUAL_ID));
+=======
+	public Node createLinkViewCRUD_2010(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
+		Node label5007 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewNameEditPart.VISUAL_ID));
+=======
+		Node label5017 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDNameEditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+<<<<<<< HEAD
+	public Node createLinkViewCRUD_3003(EObject domainElement,
+=======
+	public Node createNavegationMenu_3001(EObject domainElement,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID));
+=======
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -796,10 +1077,22 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
 		Node label5002 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID));
+=======
+		Node label5003 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID));
+		createCompartment(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenuEditPart.VISUAL_ID),
+				true, false, true, true);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return node;
 	}
 
@@ -852,12 +1145,17 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD
 	public Node createConstraint_3007(EObject domainElement,
+=======
+	public Node createLinkViewCRUD_3003(EObject domainElement,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
@@ -905,6 +1203,9 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID));
+=======
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -938,13 +1239,143 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		Node label5008 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID));
+=======
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDName2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return node;
 	}
 
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD
+	public Node createNotDerived_3006(EObject domainElement,
+=======
+	public Node createViewAttribute_3004(EObject domainElement,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID));
+=======
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5009 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedName2EditPart.VISUAL_ID));
+=======
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+<<<<<<< HEAD
+	public Node createNavegationMenu_3001(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+=======
+	public Node createDerived_3005(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
+		Node label5003 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID));
+		createCompartment(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID),
+				true, false, true, true);
+=======
+		Node label5008 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.DerivedName2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+<<<<<<< HEAD
+	public Node createViewAttribute_3004(EObject domainElement,
+=======
 	public Node createNotDerived_3006(EObject domainElement,
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
@@ -992,65 +1423,18 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 	/**
 	 * @generated
 	 */
-	public Node createNavegationMenu_3001(EObject domainElement,
+	public Node createConstraint_3007(EObject domainElement,
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart.VISUAL_ID));
-		ViewUtil.insertChildView(containerView, node, index, persisted);
-		node.setElement(domainElement);
-		// initializeFromPreferences 
-		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
-				.getPreferenceStore();
-
-		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
-				FigureUtilities.RGBToInteger(lineRGB));
-		FontStyle nodeFontStyle = (FontStyle) node
-				.getStyle(NotationPackage.Literals.FONT_STYLE);
-		if (nodeFontStyle != null) {
-			FontData fontData = PreferenceConverter.getFontData(prefStore,
-					IPreferenceConstants.PREF_DEFAULT_FONT);
-			nodeFontStyle.setFontName(fontData.getName());
-			nodeFontStyle.setFontHeight(fontData.getHeight());
-			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
-			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
-			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
-					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
-			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
-					.intValue());
-		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
-				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node,
-				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5003 = createLabel(
-				node,
-				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuName2EditPart.VISUAL_ID));
-		createCompartment(
-				node,
-				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
-						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuCompartmentCajoNavMenu2EditPart.VISUAL_ID),
-				true, false, true, true);
-		return node;
-	}
-
-	/**
-	 * @generated
-	 */
-	public Node createViewAttribute_3004(EObject domainElement,
-			View containerView, int index, boolean persisted,
-			PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
-		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+<<<<<<< HEAD
 				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart.VISUAL_ID));
+=======
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -1081,16 +1465,88 @@ public class MetaWebDesignViewProvider extends AbstractProvider implements
 		ViewUtil.setStructuralFeatureValue(node,
 				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
+<<<<<<< HEAD
 		Node label5004 = createLabel(
 				node,
 				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeName2EditPart.VISUAL_ID));
+=======
+		Node label5010 = createLabel(
+				node,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintName2EditPart.VISUAL_ID));
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 		return node;
 	}
 
 	/**
 	 * @generated
 	 */
+<<<<<<< HEAD
+=======
+	public Edge createRelationView_4001(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Connector edge = NotationFactory.eINSTANCE.createConnector();
+		edge.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		RelativeBendpoints bendpoints = NotationFactory.eINSTANCE
+				.createRelativeBendpoints();
+		ArrayList<RelativeBendpoint> points = new ArrayList<RelativeBendpoint>(
+				2);
+		points.add(new RelativeBendpoint());
+		points.add(new RelativeBendpoint());
+		bendpoints.setPoints(points);
+		edge.setBendpoints(bendpoints);
+		ViewUtil.insertChildView(containerView, edge, index, persisted);
+		edge.setType(Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+				.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewEditPart.VISUAL_ID));
+		edge.setElement(domainElement);
+		// initializePreferences
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(edge,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle edgeFontStyle = (FontStyle) edge
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (edgeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			edgeFontStyle.setFontName(fontData.getName());
+			edgeFontStyle.setFontHeight(fontData.getHeight());
+			edgeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			edgeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			edgeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		Routing routing = Routing.get(prefStore
+				.getInt(IPreferenceConstants.PREF_LINE_STYLE));
+		if (routing != null) {
+			ViewUtil.setStructuralFeatureValue(edge,
+					NotationPackage.eINSTANCE.getRoutingStyle_Routing(),
+					routing);
+		}
+		Node label6001 = createLabel(
+				edge,
+				Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
+						.getType(Metawebdesign.metawebdesign.diagram.edit.parts.RelationViewNameEditPart.VISUAL_ID));
+		label6001.setLayoutConstraint(NotationFactory.eINSTANCE
+				.createLocation());
+		Location location6001 = (Location) label6001.getLayoutConstraint();
+		location6001.setX(0);
+		location6001.setY(40);
+		return edge;
+	}
+
+	/**
+	 * @generated
+	 */
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
 	public Edge createRelationClass_4002(EObject domainElement,
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {

@@ -81,8 +81,17 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeCardinality/many"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeMenu">
+<<<<<<< HEAD
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/principal"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/navegation"/>
+=======
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/default"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/all_view_horizontal"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/all_view_vertical_left"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/all_view_vertical_right"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/vertical_left"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/vertical_right"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </genEnums>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Root">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/class"/>
@@ -104,6 +113,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionAdmin"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasRelationClass"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/goRelationClass"/>
+<<<<<<< HEAD
+=======
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasView"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasConstraint"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Attributes">
@@ -130,10 +143,23 @@
     <genClasses ecoreClass="MetaWebDesign.ecore#//Views">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Views/title"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Views/rolView"/>
+<<<<<<< HEAD
+=======
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Views/hasRelationView"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Views/fromRelation"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Views/hasViewComponent"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Page">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Page/Content_HTML"/>
+<<<<<<< HEAD
+=======
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//RelationView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationView/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/RViewsHasClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationView/fromClass"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//ViewComponent"/>
     <genClasses ecoreClass="MetaWebDesign.ecore#//ViewAttribute">

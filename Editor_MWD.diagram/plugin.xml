@@ -217,8 +217,13 @@
       <viewProvider class="Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="MetaWebDesign"/>
+<<<<<<< HEAD
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2006,2002,2009,2007,2004,2001,2010,2005,2003,3003,3002,3007,3005,3006,3001,3004"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4002"/>
+=======
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,3001,3002,3003,3004,3005,3006,3007"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       </viewProvider>
    </extension>
 
@@ -230,6 +235,7 @@
             <method name="getType()" value="MetaWebDesign"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+<<<<<<< HEAD
             <method name="getType()" value="2006,2002,2009,2007,2004,2001,2010,2005,2003,3003,3002,3007,3005,3006,3001,3004"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
@@ -240,6 +246,18 @@
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value="7004,7003,7001,7002"/>
+=======
+            <method name="getType()" value="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,3001,3002,3003,3004,3005,3006,3007"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4001,4002"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5005,5006,5007,5011,5012,5013,5014,5015,5016,5017,5003,5001,5002,5004,5008,5009,5010"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value="7001,7002,7003,7004"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
          </object>
          <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
       </editpartProvider>
@@ -253,16 +271,31 @@
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.RootEditPart" id="Root_1000"/>
          <context elements="Root_1000"/>
       </modelingAssistantProvider>
+<<<<<<< HEAD
             <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfDerivedEditPart">
+=======
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfPageEditPart">
          <Priority name="Lowest"/>
-         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart" id="Derived_2006"/>
-         <context elements="Derived_2006"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.PageEditPart" id="Page_2001"/>
+         <context elements="Page_2001"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfViewAttributeEditPart">
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart" id="ViewAttribute_2002"/>
          <context elements="ViewAttribute_2002"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfLinkViewEditPart">
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart" id="LinkView_2003"/>
+         <context elements="LinkView_2003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfViewAttributeEditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttributeEditPart" id="ViewAttribute_2002"/>
+         <context elements="ViewAttribute_2002"/>
+      </modelingAssistantProvider>
+<<<<<<< HEAD
             <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfNotDerivedEditPart">
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart" id="NotDerived_2009"/>
@@ -292,12 +325,29 @@
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart" id="Constraint_2005"/>
          <context elements="Constraint_2005"/>
+=======
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfConstraintEditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.ConstraintEditPart" id="Constraint_2005"/>
+         <context elements="Constraint_2005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfDerivedEditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.DerivedEditPart" id="Derived_2006"/>
+         <context elements="Derived_2006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfNavegationMenuEditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenuEditPart" id="NavegationMenu_2007"/>
+         <context elements="NavegationMenu_2007"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfLinkViewEditPart">
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewEditPart" id="LinkView_2003"/>
          <context elements="LinkView_2003"/>
       </modelingAssistantProvider>
+<<<<<<< HEAD
             <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfLinkViewCRUD2EditPart">
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart" id="LinkViewCRUD_3003"/>
@@ -322,9 +372,36 @@
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart" id="NotDerived_3006"/>
          <context elements="NotDerived_3006"/>
+=======
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfNotDerivedEditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NotDerivedEditPart" id="NotDerived_2009"/>
+         <context elements="NotDerived_2009"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfLinkViewCRUDEditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUDEditPart" id="LinkViewCRUD_2010"/>
+         <context elements="LinkViewCRUD_2010"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfNavegationMenu2EditPart">
          <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart" id="NavegationMenu_3001"/>
+         <context elements="NavegationMenu_3001"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfLinkView2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.LinkView2EditPart" id="LinkView_3002"/>
+         <context elements="LinkView_3002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfLinkViewCRUD2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.LinkViewCRUD2EditPart" id="LinkViewCRUD_3003"/>
+         <context elements="LinkViewCRUD_3003"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfViewAttribute2EditPart">
+         <Priority name="Lowest"/>
+<<<<<<< HEAD
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NavegationMenu2EditPart" id="NavegationMenu_3001"/>
          <context elements="NavegationMenu_3001"/>
       </modelingAssistantProvider>
@@ -332,6 +409,25 @@
          <Priority name="Lowest"/>
          <object class="Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart" id="ViewAttribute_3004"/>
          <context elements="ViewAttribute_3004"/>
+=======
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.ViewAttribute2EditPart" id="ViewAttribute_3004"/>
+         <context elements="ViewAttribute_3004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfDerived2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart" id="Derived_3005"/>
+         <context elements="Derived_3005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfNotDerived2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart" id="NotDerived_3006"/>
+         <context elements="NotDerived_3006"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="Metawebdesign.metawebdesign.diagram.providers.assistants.MetaWebDesignModelingAssistantProviderOfConstraint2EditPart">
+         <Priority name="Lowest"/>
+         <object class="Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart" id="Constraint_3007"/>
+         <context elements="Constraint_3007"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       </modelingAssistantProvider>
       
    </extension>
@@ -365,6 +461,7 @@
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <metamodelType
+<<<<<<< HEAD
                id="Editor_MWD.diagram.Derived_2006"
                name="%metatype.name.Derived_2006"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -372,6 +469,33 @@
                edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.DerivedEditHelper">
             <param name="semanticHint" value="2006"/>
          </metamodelType>
+=======
+               id="Editor_MWD.diagram.Page_2001"
+               name="%metatype.name.Page_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Page"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.PageEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <specializationType
+               id="Editor_MWD.diagram.ViewAttribute_2002"
+               name="%metatype.name.ViewAttribute_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.ViewAttribute_3004"/>
+            <param name="semanticHint" value="2002"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <specializationType
+               id="Editor_MWD.diagram.LinkView_2003"
+               name="%metatype.name.LinkView_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.LinkView_3002"/>
+            <param name="semanticHint" value="2003"/>
+         </specializationType>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <metamodelType
@@ -384,6 +508,7 @@
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
+<<<<<<< HEAD
          <metamodelType
                id="Editor_MWD.diagram.NotDerived_2009"
                name="%metatype.name.NotDerived_2009"
@@ -422,6 +547,33 @@
                edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.PageEditHelper">
             <param name="semanticHint" value="2001"/>
          </metamodelType>
+=======
+         <specializationType
+               id="Editor_MWD.diagram.Constraint_2005"
+               name="%metatype.name.Constraint_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.Constraint_3007"/>
+            <param name="semanticHint" value="2005"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <specializationType
+               id="Editor_MWD.diagram.Derived_2006"
+               name="%metatype.name.Derived_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.Derived_3005"/>
+            <param name="semanticHint" value="2006"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <specializationType
+               id="Editor_MWD.diagram.NavegationMenu_2007"
+               name="%metatype.name.NavegationMenu_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.NavegationMenu_3001"/>
+            <param name="semanticHint" value="2007"/>
+         </specializationType>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <specializationType
@@ -434,30 +586,55 @@
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <specializationType
+<<<<<<< HEAD
                id="Editor_MWD.diagram.Constraint_2005"
                name="%metatype.name.Constraint_2005"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="Editor_MWD.diagram.Constraint_3007"/>
             <param name="semanticHint" value="2005"/>
+=======
+               id="Editor_MWD.diagram.NotDerived_2009"
+               name="%metatype.name.NotDerived_2009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.NotDerived_3006"/>
+            <param name="semanticHint" value="2009"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <specializationType
+<<<<<<< HEAD
                id="Editor_MWD.diagram.LinkView_2003"
                name="%metatype.name.LinkView_2003"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="Editor_MWD.diagram.LinkView_3002"/>
             <param name="semanticHint" value="2003"/>
+=======
+               id="Editor_MWD.diagram.LinkViewCRUD_2010"
+               name="%metatype.name.LinkViewCRUD_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="Editor_MWD.diagram.LinkViewCRUD_3003"/>
+            <param name="semanticHint" value="2010"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <metamodelType
+<<<<<<< HEAD
                id="Editor_MWD.diagram.LinkViewCRUD_3003"
                name="%metatype.name.LinkViewCRUD_3003"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="LinkViewCRUD"
                edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.LinkViewCRUDEditHelper">
             <param name="semanticHint" value="3003"/>
+=======
+               id="Editor_MWD.diagram.NavegationMenu_3001"
+               name="%metatype.name.NavegationMenu_3001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="NavegationMenu"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.NavegationMenuEditHelper">
+            <param name="semanticHint" value="3001"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
@@ -472,6 +649,7 @@
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <metamodelType
+<<<<<<< HEAD
                id="Editor_MWD.diagram.Constraint_3007"
                name="%metatype.name.Constraint_3007"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -515,6 +693,65 @@
             <specializes id="Editor_MWD.diagram.ViewAttribute_2002"/>
             <param name="semanticHint" value="3004"/>
          </specializationType>
+=======
+               id="Editor_MWD.diagram.LinkViewCRUD_3003"
+               name="%metatype.name.LinkViewCRUD_3003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="LinkViewCRUD"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.LinkViewCRUDEditHelper">
+            <param name="semanticHint" value="3003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <metamodelType
+               id="Editor_MWD.diagram.ViewAttribute_3004"
+               name="%metatype.name.ViewAttribute_3004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ViewAttribute"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.ViewAttributeEditHelper">
+            <param name="semanticHint" value="3004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <metamodelType
+               id="Editor_MWD.diagram.Derived_3005"
+               name="%metatype.name.Derived_3005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Derived"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.DerivedEditHelper">
+            <param name="semanticHint" value="3005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <metamodelType
+               id="Editor_MWD.diagram.NotDerived_3006"
+               name="%metatype.name.NotDerived_3006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="NotDerived"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.NotDerivedEditHelper">
+            <param name="semanticHint" value="3006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <metamodelType
+               id="Editor_MWD.diagram.Constraint_3007"
+               name="%metatype.name.Constraint_3007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Constraint"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.ConstraintEditHelper">
+            <param name="semanticHint" value="3007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://metawebdesign/1.0">
+         <metamodelType
+               id="Editor_MWD.diagram.RelationView_4001"
+               name="%metatype.name.RelationView_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="RelationView"
+               edithelper="Metawebdesign.metawebdesign.diagram.edit.helpers.RelationViewEditHelper">
+            <param name="semanticHint" value="4001"/>
+         </metamodelType>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
       </metamodel>
       <metamodel nsURI="http://metawebdesign/1.0">
          <metamodelType
@@ -539,6 +776,7 @@
       </clientContext> 
       <binding context="Editor_MWD.diagram.TypeContext">
          <elementType ref="Editor_MWD.diagram.Root_1000"/>
+<<<<<<< HEAD
          <elementType ref="Editor_MWD.diagram.Derived_2006"/>
          <elementType ref="Editor_MWD.diagram.ViewAttribute_2002"/>
          <elementType ref="Editor_MWD.diagram.NotDerived_2009"/>
@@ -555,6 +793,26 @@
          <elementType ref="Editor_MWD.diagram.NotDerived_3006"/>
          <elementType ref="Editor_MWD.diagram.NavegationMenu_3001"/>
          <elementType ref="Editor_MWD.diagram.ViewAttribute_3004"/>
+=======
+         <elementType ref="Editor_MWD.diagram.Page_2001"/>
+         <elementType ref="Editor_MWD.diagram.ViewAttribute_2002"/>
+         <elementType ref="Editor_MWD.diagram.LinkView_2003"/>
+         <elementType ref="Editor_MWD.diagram.Class_2004"/>
+         <elementType ref="Editor_MWD.diagram.Constraint_2005"/>
+         <elementType ref="Editor_MWD.diagram.Derived_2006"/>
+         <elementType ref="Editor_MWD.diagram.NavegationMenu_2007"/>
+         <elementType ref="Editor_MWD.diagram.Form_2008"/>
+         <elementType ref="Editor_MWD.diagram.NotDerived_2009"/>
+         <elementType ref="Editor_MWD.diagram.LinkViewCRUD_2010"/>
+         <elementType ref="Editor_MWD.diagram.NavegationMenu_3001"/>
+         <elementType ref="Editor_MWD.diagram.LinkView_3002"/>
+         <elementType ref="Editor_MWD.diagram.LinkViewCRUD_3003"/>
+         <elementType ref="Editor_MWD.diagram.ViewAttribute_3004"/>
+         <elementType ref="Editor_MWD.diagram.Derived_3005"/>
+         <elementType ref="Editor_MWD.diagram.NotDerived_3006"/>
+         <elementType ref="Editor_MWD.diagram.Constraint_3007"/>
+         <elementType ref="Editor_MWD.diagram.RelationView_4001"/>
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98
          <elementType ref="Editor_MWD.diagram.RelationClass_4002"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>

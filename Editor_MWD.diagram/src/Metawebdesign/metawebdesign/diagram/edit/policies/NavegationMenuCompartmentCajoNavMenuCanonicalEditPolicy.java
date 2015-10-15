@@ -55,7 +55,11 @@ public class NavegationMenuCompartmentCajoNavMenuCanonicalEditPolicy extends
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/NavegationMenuCompartmentCajoNavMenuCanonicalEditPolicy.java
 				.getNavegationMenuCompartmentCajoNavMenu_7004SemanticChildren(viewObject);
+=======
+				.getNavegationMenuCompartmentCajoNavMenu_7002SemanticChildren(viewObject);
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/NavegationMenuCompartmentCajoNavMenuCanonicalEditPolicy.java
 		for (Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor d : childDescriptors) {
 			result.add(d.getModelElement());
 		}
@@ -90,7 +94,11 @@ public class NavegationMenuCompartmentCajoNavMenuCanonicalEditPolicy extends
 		}
 		LinkedList<IAdaptable> createdViews = new LinkedList<IAdaptable>();
 		List<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> childDescriptors = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignDiagramUpdater
+<<<<<<< HEAD:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/NavegationMenuCompartmentCajoNavMenuCanonicalEditPolicy.java
 				.getNavegationMenuCompartmentCajoNavMenu_7004SemanticChildren((View) getHost()
+=======
+				.getNavegationMenuCompartmentCajoNavMenu_7002SemanticChildren((View) getHost()
+>>>>>>> 695e9e7e90f5aebcde04a16e3acfc70b4e09bc98:Editor_MWD.diagram/src/Metawebdesign/metawebdesign/diagram/edit/policies/NavegationMenuCompartmentCajoNavMenuCanonicalEditPolicy.java
 						.getModel());
 		LinkedList<View> orphaned = new LinkedList<View>();
 		// we care to check only views we recognize as ours
