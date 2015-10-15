@@ -21,10 +21,7 @@ El sitio web generado esta pensado para ser puesto en producción sin intervenci
 
 * [Testing o de Pruebas / Desarrollador ](https://github.com/MetaWebDesign/Editor/tree/testing)
 
-##Descarga Versión 1.0
+##Instalación Versión 0.2.7 (Beta)
 
-### MWD V2.0 GNU Linux 32-bit
-[Eclipse - MetaWebDesign i686 ](http://www.piratevalpo.cl/desarrollo/MetaWebDesign_32bits.7z)
+* [Install](https://github.com/MetaWebDesign/Install)
 
-### MWD V2.0 GNU Linux 64-bit
-[Eclipse - MetaWebDesign X64 ](http://www.piratevalpo.cl/desarrollo/MetaWebDesign64bits.tar.gz)
