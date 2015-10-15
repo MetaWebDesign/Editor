@@ -1,4 +1,4 @@
-# MDD_Editor - Stable (Modelo V2.5)
+# MDD_Editor - Estable (Modelo V0.2.7)
 
 ##Modelo
 ![Alt text](https://github.com/MetaWebDesign/Editor/blob/master/Editor_MWD/text/model.png "Metamodelo")
