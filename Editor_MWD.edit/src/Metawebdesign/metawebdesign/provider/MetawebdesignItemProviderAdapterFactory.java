@@ -233,29 +233,6 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.Form} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected FormItemProvider formItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.Form}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createFormAdapter() {
-		if (formItemProvider == null) {
-			formItemProvider = new FormItemProvider(this);
-		}
-
-		return formItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.Page} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -276,29 +253,6 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 		}
 
 		return pageItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link Metawebdesign.metawebdesign.RelationView} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RelationViewItemProvider relationViewItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Metawebdesign.metawebdesign.RelationView}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createRelationViewAdapter() {
-		if (relationViewItemProvider == null) {
-			relationViewItemProvider = new RelationViewItemProvider(this);
-		}
-
-		return relationViewItemProvider;
 	}
 
 	/**
@@ -568,9 +522,7 @@ public class MetawebdesignItemProviderAdapterFactory extends MetawebdesignAdapte
 		if (notDerivedItemProvider != null) notDerivedItemProvider.dispose();
 		if (relationClassItemProvider != null) relationClassItemProvider.dispose();
 		if (viewsItemProvider != null) viewsItemProvider.dispose();
-		if (formItemProvider != null) formItemProvider.dispose();
 		if (pageItemProvider != null) pageItemProvider.dispose();
-		if (relationViewItemProvider != null) relationViewItemProvider.dispose();
 		if (viewComponentItemProvider != null) viewComponentItemProvider.dispose();
 		if (viewAttributeItemProvider != null) viewAttributeItemProvider.dispose();
 		if (navegationMenuItemProvider != null) navegationMenuItemProvider.dispose();

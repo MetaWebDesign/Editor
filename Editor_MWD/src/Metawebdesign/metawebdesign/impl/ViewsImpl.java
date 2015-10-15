@@ -3,7 +3,6 @@
 package Metawebdesign.metawebdesign.impl;
 
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
-import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.TypeRol;
 import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
@@ -22,7 +21,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -34,8 +32,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getTitle <em>Title</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getRolView <em>Rol View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getHasRelationView <em>Has Relation View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getFromRelation <em>From Relation</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewsImpl#getHasViewComponent <em>Has View Component</em>}</li>
  * </ul>
  * </p>
@@ -82,26 +78,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * @ordered
 	 */
 	protected TypeRol rolView = ROL_VIEW_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getHasRelationView() <em>Has Relation View</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHasRelationView()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<RelationView> hasRelationView;
-
-	/**
-	 * The cached value of the '{@link #getFromRelation() <em>From Relation</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFromRelation()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<RelationView> fromRelation;
 
 	/**
 	 * The cached value of the '{@link #getHasViewComponent() <em>Has View Component</em>}' containment reference list.
@@ -179,30 +155,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RelationView> getHasRelationView() {
-		if (hasRelationView == null) {
-			hasRelationView = new EObjectContainmentEList<RelationView>(RelationView.class, this, MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW);
-		}
-		return hasRelationView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<RelationView> getFromRelation() {
-		if (fromRelation == null) {
-			fromRelation = new EObjectResolvingEList<RelationView>(RelationView.class, this, MetawebdesignPackage.VIEWS__FROM_RELATION);
-		}
-		return fromRelation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<ViewComponent> getHasViewComponent() {
 		if (hasViewComponent == null) {
 			hasViewComponent = new EObjectContainmentEList<ViewComponent>(ViewComponent.class, this, MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT);
@@ -218,8 +170,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				return ((InternalEList<?>)getHasRelationView()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				return ((InternalEList<?>)getHasViewComponent()).basicRemove(otherEnd, msgs);
 		}
@@ -238,10 +188,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return getTitle();
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				return getRolView();
-			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				return getHasRelationView();
-			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				return getFromRelation();
 			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				return getHasViewComponent();
 		}
@@ -262,14 +208,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return;
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				setRolView((TypeRol)newValue);
-				return;
-			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				getHasRelationView().clear();
-				getHasRelationView().addAll((Collection<? extends RelationView>)newValue);
-				return;
-			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				getFromRelation().clear();
-				getFromRelation().addAll((Collection<? extends RelationView>)newValue);
 				return;
 			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				getHasViewComponent().clear();
@@ -293,12 +231,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				setRolView(ROL_VIEW_EDEFAULT);
 				return;
-			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				getHasRelationView().clear();
-				return;
-			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				getFromRelation().clear();
-				return;
 			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				getHasViewComponent().clear();
 				return;
@@ -318,10 +250,6 @@ public class ViewsImpl extends MinimalEObjectImpl.Container implements Views {
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				return rolView != ROL_VIEW_EDEFAULT;
-			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
-				return hasRelationView != null && !hasRelationView.isEmpty();
-			case MetawebdesignPackage.VIEWS__FROM_RELATION:
-				return fromRelation != null && !fromRelation.isEmpty();
 			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				return hasViewComponent != null && !hasViewComponent.isEmpty();
 		}

@@ -65,7 +65,6 @@ public class ViewsItemProvider
 
 			addTitlePropertyDescriptor(object);
 			addRolViewPropertyDescriptor(object);
-			addFromRelationPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -115,28 +114,6 @@ public class ViewsItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the From Relation feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addFromRelationPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Views_fromRelation_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Views_fromRelation_feature", "_UI_Views_type"),
-				 MetawebdesignPackage.Literals.VIEWS__FROM_RELATION,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -148,7 +125,6 @@ public class ViewsItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(MetawebdesignPackage.Literals.VIEWS__HAS_RELATION_VIEW);
 			childrenFeatures.add(MetawebdesignPackage.Literals.VIEWS__HAS_VIEW_COMPONENT);
 		}
 		return childrenFeatures;
@@ -209,7 +185,6 @@ public class ViewsItemProvider
 			case MetawebdesignPackage.VIEWS__ROL_VIEW:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case MetawebdesignPackage.VIEWS__HAS_RELATION_VIEW:
 			case MetawebdesignPackage.VIEWS__HAS_VIEW_COMPONENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -227,11 +202,6 @@ public class ViewsItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.VIEWS__HAS_RELATION_VIEW,
-				 MetawebdesignFactory.eINSTANCE.createRelationView()));
 
 		newChildDescriptors.add
 			(createChildParameter

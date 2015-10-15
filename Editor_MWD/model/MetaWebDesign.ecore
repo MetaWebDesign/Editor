@@ -36,8 +36,6 @@
         eType="#//RelationClass" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goRelationClass" upperBound="-1"
         eType="#//RelationClass"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasView" eType="#//Views"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraint" eType="#//Constraint"
         containment="true"/>
   </eClassifiers>
@@ -116,15 +114,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Views">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rolView" eType="#//TypeRol"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRelationView" upperBound="-1"
-        eType="#//RelationView" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fromRelation" upperBound="-1"
-        eType="#//RelationView"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasViewComponent" upperBound="-1"
         eType="#//ViewComponent" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Form" eSuperTypes="#//Views">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeService">
     <eLiterals name="create"/>
@@ -138,13 +129,6 @@
     <eLiterals name="bottomHorizontal" value="1"/>
     <eLiterals name="leftVertical" value="2"/>
     <eLiterals name="rightVertical" value="3"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationView">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="RViewsHasClass" upperBound="-1"
-        eType="#//Class" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fromClass" upperBound="-1"
-        eType="#//Class"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViewComponent"/>
   <eClassifiers xsi:type="ecore:EClass" name="ViewAttribute" eSuperTypes="#//ViewComponent">

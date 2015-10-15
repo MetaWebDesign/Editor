@@ -320,29 +320,10 @@ public class MetaWebDesignBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateRelationView_4001(
-				Metawebdesign.metawebdesign.Views source,
-				Metawebdesign.metawebdesign.Class target) {
-			return canExistRelationView_4001(null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
 		public boolean canCreateRelationClass_4002(
 				Metawebdesign.metawebdesign.Class source,
 				Metawebdesign.metawebdesign.Class target) {
 			return canExistRelationClass_4002(null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canExistRelationView_4001(
-				Metawebdesign.metawebdesign.RelationView linkInstance,
-				Metawebdesign.metawebdesign.Views source,
-				Metawebdesign.metawebdesign.Class target) {
-			return true;
 		}
 
 		/**

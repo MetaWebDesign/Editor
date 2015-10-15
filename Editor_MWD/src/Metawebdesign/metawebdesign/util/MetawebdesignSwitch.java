@@ -5,7 +5,6 @@ package Metawebdesign.metawebdesign.util;
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Derived;
-import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.LinkView;
 import Metawebdesign.metawebdesign.LinkViewCRUD;
@@ -14,7 +13,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.ViewAttribute;
 import Metawebdesign.metawebdesign.ViewComponent;
@@ -126,23 +124,10 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MetawebdesignPackage.FORM: {
-				Form form = (Form)theEObject;
-				T result = caseForm(form);
-				if (result == null) result = caseViews(form);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case MetawebdesignPackage.PAGE: {
 				Page page = (Page)theEObject;
 				T result = casePage(page);
 				if (result == null) result = caseViews(page);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case MetawebdesignPackage.RELATION_VIEW: {
-				RelationView relationView = (RelationView)theEObject;
-				T result = caseRelationView(relationView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -302,21 +287,6 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Form</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Form</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseForm(Form object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Page</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -328,21 +298,6 @@ public class MetawebdesignSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePage(Page object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Relation View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Relation View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRelationView(RelationView object) {
 		return null;
 	}
 

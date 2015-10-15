@@ -54,10 +54,10 @@ public class ClassCompartmentCajonClassCanonicalEditPolicy extends
 			myFeaturesToSynchronize = new HashSet<EStructuralFeature>();
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getClass_HasAttributes());
+							.getClass_HasConstraint());
 			myFeaturesToSynchronize
 					.add(Metawebdesign.metawebdesign.MetawebdesignPackage.eINSTANCE
-							.getClass_HasConstraint());
+							.getClass_HasAttributes());
 		}
 		return myFeaturesToSynchronize;
 	}
@@ -92,9 +92,9 @@ public class ClassCompartmentCajonClassCanonicalEditPolicy extends
 	private boolean isMyDiagramElement(View view) {
 		int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 				.getVisualID(view);
-		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID
-				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID
-				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID;
+		return visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID
+				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Derived2EditPart.VISUAL_ID
+				|| visualID == Metawebdesign.metawebdesign.diagram.edit.parts.NotDerived2EditPart.VISUAL_ID;
 	}
 
 	/**

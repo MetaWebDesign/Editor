@@ -5,7 +5,6 @@ package Metawebdesign.metawebdesign.impl;
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Derived;
-import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.LinkView;
 import Metawebdesign.metawebdesign.LinkViewCRUD;
@@ -15,7 +14,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.TypeAttributeForm;
 import Metawebdesign.metawebdesign.TypeData;
@@ -92,9 +90,7 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 			case MetawebdesignPackage.NOT_DERIVED: return createNotDerived();
 			case MetawebdesignPackage.RELATION_CLASS: return createRelationClass();
 			case MetawebdesignPackage.VIEWS: return createViews();
-			case MetawebdesignPackage.FORM: return createForm();
 			case MetawebdesignPackage.PAGE: return createPage();
-			case MetawebdesignPackage.RELATION_VIEW: return createRelationView();
 			case MetawebdesignPackage.VIEW_COMPONENT: return createViewComponent();
 			case MetawebdesignPackage.VIEW_ATTRIBUTE: return createViewAttribute();
 			case MetawebdesignPackage.NAVEGATION_MENU: return createNavegationMenu();
@@ -252,29 +248,9 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Form createForm() {
-		FormImpl form = new FormImpl();
-		return form;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Page createPage() {
 		PageImpl page = new PageImpl();
 		return page;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RelationView createRelationView() {
-		RelationViewImpl relationView = new RelationViewImpl();
-		return relationView;
 	}
 
 	/**

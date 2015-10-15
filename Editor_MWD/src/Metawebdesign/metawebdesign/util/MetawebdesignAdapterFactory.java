@@ -5,7 +5,6 @@ package Metawebdesign.metawebdesign.util;
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.Derived;
-import Metawebdesign.metawebdesign.Form;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.LinkView;
 import Metawebdesign.metawebdesign.LinkViewCRUD;
@@ -14,7 +13,6 @@ import Metawebdesign.metawebdesign.NavegationMenu;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.Page;
 import Metawebdesign.metawebdesign.RelationClass;
-import Metawebdesign.metawebdesign.RelationView;
 import Metawebdesign.metawebdesign.Root;
 import Metawebdesign.metawebdesign.ViewAttribute;
 import Metawebdesign.metawebdesign.ViewComponent;
@@ -112,16 +110,8 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 				return createViewsAdapter();
 			}
 			@Override
-			public Adapter caseForm(Form object) {
-				return createFormAdapter();
-			}
-			@Override
 			public Adapter casePage(Page object) {
 				return createPageAdapter();
-			}
-			@Override
-			public Adapter caseRelationView(RelationView object) {
-				return createRelationViewAdapter();
 			}
 			@Override
 			public Adapter caseViewComponent(ViewComponent object) {
@@ -270,20 +260,6 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.Form <em>Form</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metawebdesign.metawebdesign.Form
-	 * @generated
-	 */
-	public Adapter createFormAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.Page <em>Page</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -294,20 +270,6 @@ public class MetawebdesignAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPageAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Metawebdesign.metawebdesign.RelationView <em>Relation View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Metawebdesign.metawebdesign.RelationView
-	 * @generated
-	 */
-	public Adapter createRelationViewAdapter() {
 		return null;
 	}
 

@@ -7,7 +7,6 @@ import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.RelationClass;
 import Metawebdesign.metawebdesign.TypeRol;
-import Metawebdesign.metawebdesign.Views;
 
 import java.util.Collection;
 
@@ -44,7 +43,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Metawebdesign.metawebdesign.impl.ClassImpl#getFunctionAdmin <em>Function Admin</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ClassImpl#getHasRelationClass <em>Has Relation Class</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ClassImpl#getGoRelationClass <em>Go Relation Class</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.ClassImpl#getHasView <em>Has View</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ClassImpl#getHasConstraint <em>Has Constraint</em>}</li>
  * </ul>
  * </p>
@@ -241,16 +239,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 	 * @ordered
 	 */
 	protected EList<RelationClass> goRelationClass;
-
-	/**
-	 * The cached value of the '{@link #getHasView() <em>Has View</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHasView()
-	 * @generated
-	 * @ordered
-	 */
-	protected Views hasView;
 
 	/**
 	 * The cached value of the '{@link #getHasConstraint() <em>Has Constraint</em>}' containment reference.
@@ -490,49 +478,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Views getHasView() {
-		return hasView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetHasView(Views newHasView, NotificationChain msgs) {
-		Views oldHasView = hasView;
-		hasView = newHasView;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.CLASS__HAS_VIEW, oldHasView, newHasView);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setHasView(Views newHasView) {
-		if (newHasView != hasView) {
-			NotificationChain msgs = null;
-			if (hasView != null)
-				msgs = ((InternalEObject)hasView).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.CLASS__HAS_VIEW, null, msgs);
-			if (newHasView != null)
-				msgs = ((InternalEObject)newHasView).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.CLASS__HAS_VIEW, null, msgs);
-			msgs = basicSetHasView(newHasView, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.CLASS__HAS_VIEW, newHasView, newHasView));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Constraint getHasConstraint() {
 		return hasConstraint;
 	}
@@ -583,8 +528,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 				return ((InternalEList<?>)getHasAttributes()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.CLASS__HAS_RELATION_CLASS:
 				return ((InternalEList<?>)getHasRelationClass()).basicRemove(otherEnd, msgs);
-			case MetawebdesignPackage.CLASS__HAS_VIEW:
-				return basicSetHasView(null, msgs);
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				return basicSetHasConstraint(null, msgs);
 		}
@@ -621,8 +564,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 				return getHasRelationClass();
 			case MetawebdesignPackage.CLASS__GO_RELATION_CLASS:
 				return getGoRelationClass();
-			case MetawebdesignPackage.CLASS__HAS_VIEW:
-				return getHasView();
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				return getHasConstraint();
 		}
@@ -674,9 +615,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 				getGoRelationClass().clear();
 				getGoRelationClass().addAll((Collection<? extends RelationClass>)newValue);
 				return;
-			case MetawebdesignPackage.CLASS__HAS_VIEW:
-				setHasView((Views)newValue);
-				return;
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				setHasConstraint((Constraint)newValue);
 				return;
@@ -725,9 +663,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 			case MetawebdesignPackage.CLASS__GO_RELATION_CLASS:
 				getGoRelationClass().clear();
 				return;
-			case MetawebdesignPackage.CLASS__HAS_VIEW:
-				setHasView((Views)null);
-				return;
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				setHasConstraint((Constraint)null);
 				return;
@@ -765,8 +700,6 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 				return hasRelationClass != null && !hasRelationClass.isEmpty();
 			case MetawebdesignPackage.CLASS__GO_RELATION_CLASS:
 				return goRelationClass != null && !goRelationClass.isEmpty();
-			case MetawebdesignPackage.CLASS__HAS_VIEW:
-				return hasView != null;
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				return hasConstraint != null;
 		}

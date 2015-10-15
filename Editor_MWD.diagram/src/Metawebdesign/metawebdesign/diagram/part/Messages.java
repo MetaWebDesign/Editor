@@ -388,17 +388,17 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String PageCompartmentCajonPageEditPart_title;
-
-	/**
-	 * @generated
-	 */
 	public static String NavegationMenuCompartmentCajoNavMenuEditPart_title;
 
 	/**
 	 * @generated
 	 */
 	public static String ClassCompartmentCajonClassEditPart_title;
+
+	/**
+	 * @generated
+	 */
+	public static String PageCompartmentCajonPageEditPart_title;
 
 	/**
 	 * @generated
@@ -418,32 +418,12 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String NavigatorGroupName_Page_2001_outgoinglinks;
-
-	/**
-	 * @generated
-	 */
 	public static String NavigatorGroupName_Class_2004_incominglinks;
 
 	/**
 	 * @generated
 	 */
 	public static String NavigatorGroupName_Class_2004_outgoinglinks;
-
-	/**
-	 * @generated
-	 */
-	public static String NavigatorGroupName_Form_2008_outgoinglinks;
-
-	/**
-	 * @generated
-	 */
-	public static String NavigatorGroupName_RelationView_4001_target;
-
-	/**
-	 * @generated
-	 */
-	public static String NavigatorGroupName_RelationView_4001_source;
 
 	/**
 	 * @generated

@@ -186,11 +186,6 @@ public class RootItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(MetawebdesignPackage.Literals.ROOT__VIEWS,
-				 MetawebdesignFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.ROOT__VIEWS,
 				 MetawebdesignFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add

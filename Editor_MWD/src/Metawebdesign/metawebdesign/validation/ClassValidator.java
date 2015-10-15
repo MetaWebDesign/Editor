@@ -8,7 +8,6 @@ import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.Constraint;
 import Metawebdesign.metawebdesign.RelationClass;
 import Metawebdesign.metawebdesign.TypeRol;
-import Metawebdesign.metawebdesign.Views;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -32,6 +31,5 @@ public interface ClassValidator {
 	boolean validateFunctionAdmin(TypeRol value);
 	boolean validateHasRelationClass(EList<RelationClass> value);
 	boolean validateGoRelationClass(EList<RelationClass> value);
-	boolean validateHasView(Views value);
 	boolean validateHasConstraint(Constraint value);
 }

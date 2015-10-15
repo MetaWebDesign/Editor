@@ -27,7 +27,6 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute functionAdmin : TypeRol
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference goRelationClass : RelationClass<<0..*>>
-    Reference hasView : Views
     Reference hasConstraint : Constraint
 
   Class Attributes
@@ -54,20 +53,10 @@ Package metawebdesign <http://metawebdesign/1.0>
   Class Views
     Attribute title : EString
     Attribute rolView : TypeRol
-    Reference hasRelationView : RelationView<<0..*>>
-    Reference fromRelation : RelationView<<0..*>>
     Reference hasViewComponent : ViewComponent<<0..*>>
-
-  Class Form -> Views
-    Attribute service : TypeService
 
   Class Page -> Views
     Attribute Content_HTML : EString
-
-  Class RelationView
-    Attribute name : EString
-    Reference RViewsHasClass : Class<<0..*>>
-    Reference fromClass : Class<<0..*>>
 
   Class ViewComponent
 

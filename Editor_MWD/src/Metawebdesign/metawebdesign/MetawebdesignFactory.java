@@ -85,15 +85,6 @@ public interface MetawebdesignFactory extends EFactory {
 	Views createViews();
 
 	/**
-	 * Returns a new object of class '<em>Form</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Form</em>'.
-	 * @generated
-	 */
-	Form createForm();
-
-	/**
 	 * Returns a new object of class '<em>Page</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -101,15 +92,6 @@ public interface MetawebdesignFactory extends EFactory {
 	 * @generated
 	 */
 	Page createPage();
-
-	/**
-	 * Returns a new object of class '<em>Relation View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Relation View</em>'.
-	 * @generated
-	 */
-	RelationView createRelationView();
 
 	/**
 	 * Returns a new object of class '<em>View Component</em>'.

@@ -287,7 +287,6 @@ public class ClassItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_ATTRIBUTES);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CLASS);
-			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_VIEW);
 			childrenFeatures.add(MetawebdesignPackage.Literals.CLASS__HAS_CONSTRAINT);
 		}
 		return childrenFeatures;
@@ -356,7 +355,6 @@ public class ClassItemProvider
 				return;
 			case MetawebdesignPackage.CLASS__HAS_ATTRIBUTES:
 			case MetawebdesignPackage.CLASS__HAS_RELATION_CLASS:
-			case MetawebdesignPackage.CLASS__HAS_VIEW:
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -394,21 +392,6 @@ public class ClassItemProvider
 			(createChildParameter
 				(MetawebdesignPackage.Literals.CLASS__HAS_RELATION_CLASS,
 				 MetawebdesignFactory.eINSTANCE.createRelationClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
-				 MetawebdesignFactory.eINSTANCE.createViews()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
-				 MetawebdesignFactory.eINSTANCE.createForm()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(MetawebdesignPackage.Literals.CLASS__HAS_VIEW,
-				 MetawebdesignFactory.eINSTANCE.createPage()));
 
 		newChildDescriptors.add
 			(createChildParameter

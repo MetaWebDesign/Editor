@@ -99,13 +99,13 @@ public class ClassCompartmentCajonClassEditPart extends ListCompartmentEditPart 
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter
 					.getAdapter(IElementType.class);
+			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007) {
+				return this;
+			}
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Derived_3005) {
 				return this;
 			}
 			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.NotDerived_3006) {
-				return this;
-			}
-			if (type == Metawebdesign.metawebdesign.diagram.providers.MetaWebDesignElementTypes.Constraint_3007) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

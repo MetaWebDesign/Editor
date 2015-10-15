@@ -16,8 +16,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getTitle <em>Title</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getRolView <em>Rol View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Views#getHasRelationView <em>Has Relation View</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Views#getFromRelation <em>From Relation</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Views#getHasViewComponent <em>Has View Component</em>}</li>
  * </ul>
  * </p>
@@ -81,38 +79,6 @@ public interface Views extends EObject {
 	 * @generated
 	 */
 	void setRolView(TypeRol value);
-
-	/**
-	 * Returns the value of the '<em><b>Has Relation View</b></em>' containment reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationView}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Relation View</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Relation View</em>' containment reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViews_HasRelationView()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<RelationView> getHasRelationView();
-
-	/**
-	 * Returns the value of the '<em><b>From Relation</b></em>' reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.RelationView}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From Relation</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Relation</em>' reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViews_FromRelation()
-	 * @model
-	 * @generated
-	 */
-	EList<RelationView> getFromRelation();
 
 	/**
 	 * Returns the value of the '<em><b>Has View Component</b></em>' containment reference list.
