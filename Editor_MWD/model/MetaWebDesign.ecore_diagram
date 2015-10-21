@@ -496,14 +496,14 @@
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sGtNkEzXEeWpr_mMwPz2pw" type="4003" source="_M5SFEEzTEeWRO_baYdW6NQ" target="_M5b2FkzTEeWRO_baYdW6NQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_sGt0oEzXEeWpr_mMwPz2pw" type="6002">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_sGt0oUzXEeWpr_mMwPz2pw" y="40"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sGt0oUzXEeWpr_mMwPz2pw" x="3" y="14"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_sGt0okzXEeWpr_mMwPz2pw" type="6004">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_sGt0o0zXEeWpr_mMwPz2pw" x="55" y="-22"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_sGtNkUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Root/views"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sGtNkkzXEeWpr_mMwPz2pw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sGtNkkzXEeWpr_mMwPz2pw" points="[23, 22, -660, -304]$[264, 254, -419, -72]$[621, 315, -62, -11]"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sGzUMEzXEeWpr_mMwPz2pw" type="4003" source="_M5SFEEzTEeWRO_baYdW6NQ" target="_M5hVpEzTEeWRO_baYdW6NQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_sGzUM0zXEeWpr_mMwPz2pw" type="6002">
