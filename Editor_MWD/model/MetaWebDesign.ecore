@@ -114,8 +114,11 @@
         eType="#//ViewComponent" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeService">
-    <eLiterals name="create"/>
-    <eLiterals name="update" value="1"/>
+    <eLiterals name="null" literal="null"/>
+    <eLiterals name="create" value="1" literal="create"/>
+    <eLiterals name="update" value="2"/>
+    <eLiterals name="index" value="3"/>
+    <eLiterals name="view" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Page" eSuperTypes="#//Views">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Content_HTML" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

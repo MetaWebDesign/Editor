@@ -1312,8 +1312,11 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typeHorizontalPositionEEnum, typeHorizontalPosition.EENUM_LITERAL0);
 
 		initEEnum(typeServiceEEnum, TypeService.class, "TypeService");
+		addEEnumLiteral(typeServiceEEnum, TypeService.NULL);
 		addEEnumLiteral(typeServiceEEnum, TypeService.CREATE);
 		addEEnumLiteral(typeServiceEEnum, TypeService.UPDATE);
+		addEEnumLiteral(typeServiceEEnum, TypeService.INDEX);
+		addEEnumLiteral(typeServiceEEnum, TypeService.VIEW);
 
 		initEEnum(typeOrientationEEnum, TypeOrientation.class, "TypeOrientation");
 		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.NAVEGACIÓN);

@@ -51,8 +51,11 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/EEnumLiteral0"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeService">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/null"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/create"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/update"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/index"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/view"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOrientation">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/navegación"/>

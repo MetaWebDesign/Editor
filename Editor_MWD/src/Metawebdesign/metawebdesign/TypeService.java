@@ -19,6 +19,16 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TypeService implements Enumerator {
 	/**
+	 * The '<em><b>Null</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #NULL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	NULL(0, "null", "null"),
+
+	/**
 	 * The '<em><b>Create</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26,7 +36,7 @@ public enum TypeService implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CREATE(0, "create", "create"),
+	CREATE(1, "create", "create"),
 
 	/**
 	 * The '<em><b>Update</b></em>' literal object.
@@ -36,7 +46,42 @@ public enum TypeService implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	UPDATE(1, "update", "update");
+	UPDATE(2, "update", "update"),
+
+	/**
+	 * The '<em><b>Index</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #INDEX_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	INDEX(3, "index", "index"),
+
+	/**
+	 * The '<em><b>View</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #VIEW_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	VIEW(4, "view", "view");
+
+	/**
+	 * The '<em><b>Null</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Null</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #NULL
+	 * @model name="null"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int NULL_VALUE = 0;
 
 	/**
 	 * The '<em><b>Create</b></em>' literal value.
@@ -51,7 +96,7 @@ public enum TypeService implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CREATE_VALUE = 0;
+	public static final int CREATE_VALUE = 1;
 
 	/**
 	 * The '<em><b>Update</b></em>' literal value.
@@ -66,7 +111,37 @@ public enum TypeService implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int UPDATE_VALUE = 1;
+	public static final int UPDATE_VALUE = 2;
+
+	/**
+	 * The '<em><b>Index</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Index</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #INDEX
+	 * @model name="index"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int INDEX_VALUE = 3;
+
+	/**
+	 * The '<em><b>View</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>View</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #VIEW
+	 * @model name="view"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int VIEW_VALUE = 4;
 
 	/**
 	 * An array of all the '<em><b>Type Service</b></em>' enumerators.
@@ -76,8 +151,11 @@ public enum TypeService implements Enumerator {
 	 */
 	private static final TypeService[] VALUES_ARRAY =
 		new TypeService[] {
+			NULL,
 			CREATE,
 			UPDATE,
+			INDEX,
+			VIEW,
 		};
 
 	/**
@@ -128,8 +206,11 @@ public enum TypeService implements Enumerator {
 	 */
 	public static TypeService get(int value) {
 		switch (value) {
+			case NULL_VALUE: return NULL;
 			case CREATE_VALUE: return CREATE;
 			case UPDATE_VALUE: return UPDATE;
+			case INDEX_VALUE: return INDEX;
+			case VIEW_VALUE: return VIEW;
 		}
 		return null;
 	}

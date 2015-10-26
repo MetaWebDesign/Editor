@@ -74,7 +74,7 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TypeService SERVICE_EDEFAULT = TypeService.CREATE;
+	protected static final TypeService SERVICE_EDEFAULT = TypeService.NULL;
 
 	/**
 	 * The cached value of the '{@link #getService() <em>Service</em>}' attribute.

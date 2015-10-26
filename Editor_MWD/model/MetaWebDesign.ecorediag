@@ -308,10 +308,6 @@
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/checkbox"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U4xTZXKfEeWp_tTZVb4leA"/>
       </children>
-      <children xmi:type="notation:Node" xmi:id="_U4xTZnKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/itemList"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4x6cHKfEeWp_tTZVb4leA"/>
-      </children>
       <children xmi:type="notation:Node" xmi:id="_U4x6cXKfEeWp_tTZVb4leA" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/form_email"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U4x6cnKfEeWp_tTZVb4leA"/>
@@ -327,18 +323,6 @@
       <children xmi:type="notation:Node" xmi:id="_U4yhgnKfEeWp_tTZVb4leA" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/form_text"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U4yhg3KfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4yhhHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/table_striped"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4yhhXKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4yhhnKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/table_bordered"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4yhh3KfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4zIkHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/table_hover"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4zIkXKfEeWp_tTZVb4leA"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_U4zIknKfEeWp_tTZVb4leA" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/img"/>
@@ -410,9 +394,21 @@
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/create"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U42L5nKfEeWp_tTZVb4leA"/>
       </children>
-      <children xmi:type="notation:Node" xmi:id="_U42L53KfEeWp_tTZVb4leA" type="2006">
+      <children xmi:type="notation:Node" xmi:id="_j4wj0Ht-EeWyV4hoio5-Zg" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/null"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_j4wj0Xt-EeWyV4hoio5-Zg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_lMQMAHt-EeWyV4hoio5-Zg" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/update"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U42L6HKfEeWp_tTZVb4leA"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lMQMAXt-EeWyV4hoio5-Zg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_nC2hQHt-EeWyV4hoio5-Zg" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/index"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nC2hQXt-EeWyV4hoio5-Zg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_o2x9AHt-EeWyV4hoio5-Zg" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/view"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_o2x9AXt-EeWyV4hoio5-Zg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_U42L4nKfEeWp_tTZVb4leA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_U42L43KfEeWp_tTZVb4leA"/>
@@ -445,22 +441,6 @@
   <children xmi:type="notation:Node" xmi:id="_U43aAHKfEeWp_tTZVb4leA" type="1005">
     <children xmi:type="notation:Node" xmi:id="_U43aA3KfEeWp_tTZVb4leA" type="4010"/>
     <children xmi:type="notation:Node" xmi:id="_U43aBHKfEeWp_tTZVb4leA" type="5008">
-      <children xmi:type="notation:Node" xmi:id="_U43aCHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeOrientation/topHorizontal"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U43aCXKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U43aCnKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeOrientation/bottomHorizontal"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U43aC3KfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U44BEHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeOrientation/leftVertical"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U44BEXKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U44BEnKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeOrientation/rightVertical"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U44BE3KfEeWp_tTZVb4leA"/>
-      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_U43aBXKfEeWp_tTZVb4leA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_U43aBnKfEeWp_tTZVb4leA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_U43aB3KfEeWp_tTZVb4leA"/>
