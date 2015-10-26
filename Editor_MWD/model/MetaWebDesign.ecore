@@ -95,14 +95,10 @@
     <eLiterals name="combobox" value="2"/>
     <eLiterals name="radiobuttom" value="3"/>
     <eLiterals name="checkbox" value="4"/>
-    <eLiterals name="itemList" value="5"/>
     <eLiterals name="form_email" value="6" literal="form_email"/>
     <eLiterals name="form_password" value="7" literal="form_password"/>
     <eLiterals name="form_file" value="8"/>
     <eLiterals name="form_text" value="9"/>
-    <eLiterals name="table_striped" value="10" literal="table_striped"/>
-    <eLiterals name="table_bordered" value="11" literal="table_bordered"/>
-    <eLiterals name="table_hover" value="12" literal="table_hover"/>
     <eLiterals name="img" value="13"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typeHorizontalPosition">
@@ -125,10 +121,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Content_HTML" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeOrientation">
-    <eLiterals name="topHorizontal"/>
-    <eLiterals name="bottomHorizontal" value="1"/>
-    <eLiterals name="leftVertical" value="2"/>
-    <eLiterals name="rightVertical" value="3"/>
+    <eLiterals name="navegación" literal="navegación"/>
+    <eLiterals name="principal" value="1" literal="principal"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViewComponent"/>
   <eClassifiers xsi:type="ecore:EClass" name="ViewAttribute" eSuperTypes="#//ViewComponent">

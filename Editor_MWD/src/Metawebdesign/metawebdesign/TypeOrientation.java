@@ -19,104 +19,54 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TypeOrientation implements Enumerator {
 	/**
-	 * The '<em><b>Top Horizontal</b></em>' literal object.
+	 * The '<em><b>Navegación</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #TOP_HORIZONTAL_VALUE
+	 * @see #NAVEGACIÓN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	TOP_HORIZONTAL(0, "topHorizontal", "topHorizontal"),
+	NAVEGACIÓN(0, "navegación", "navegaci\u00f3n"),
 
 	/**
-	 * The '<em><b>Bottom Horizontal</b></em>' literal object.
+	 * The '<em><b>Principal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #BOTTOM_HORIZONTAL_VALUE
+	 * @see #PRINCIPAL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	BOTTOM_HORIZONTAL(1, "bottomHorizontal", "bottomHorizontal"),
+	PRINCIPAL(1, "principal", "principal");
 
 	/**
-	 * The '<em><b>Left Vertical</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #LEFT_VERTICAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	LEFT_VERTICAL(2, "leftVertical", "leftVertical"),
-
-	/**
-	 * The '<em><b>Right Vertical</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #RIGHT_VERTICAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	RIGHT_VERTICAL(3, "rightVertical", "rightVertical");
-
-	/**
-	 * The '<em><b>Top Horizontal</b></em>' literal value.
+	 * The '<em><b>Navegación</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Top Horizontal</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Navegación</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #TOP_HORIZONTAL
-	 * @model name="topHorizontal"
+	 * @see #NAVEGACIÓN
+	 * @model name="navegación"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int TOP_HORIZONTAL_VALUE = 0;
+	public static final int NAVEGACIÓN_VALUE = 0;
 
 	/**
-	 * The '<em><b>Bottom Horizontal</b></em>' literal value.
+	 * The '<em><b>Principal</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Bottom Horizontal</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Principal</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #BOTTOM_HORIZONTAL
-	 * @model name="bottomHorizontal"
+	 * @see #PRINCIPAL
+	 * @model name="principal"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int BOTTOM_HORIZONTAL_VALUE = 1;
-
-	/**
-	 * The '<em><b>Left Vertical</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Left Vertical</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #LEFT_VERTICAL
-	 * @model name="leftVertical"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int LEFT_VERTICAL_VALUE = 2;
-
-	/**
-	 * The '<em><b>Right Vertical</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Right Vertical</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #RIGHT_VERTICAL
-	 * @model name="rightVertical"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int RIGHT_VERTICAL_VALUE = 3;
+	public static final int PRINCIPAL_VALUE = 1;
 
 	/**
 	 * An array of all the '<em><b>Type Orientation</b></em>' enumerators.
@@ -126,10 +76,8 @@ public enum TypeOrientation implements Enumerator {
 	 */
 	private static final TypeOrientation[] VALUES_ARRAY =
 		new TypeOrientation[] {
-			TOP_HORIZONTAL,
-			BOTTOM_HORIZONTAL,
-			LEFT_VERTICAL,
-			RIGHT_VERTICAL,
+			NAVEGACIÓN,
+			PRINCIPAL,
 		};
 
 	/**
@@ -180,10 +128,8 @@ public enum TypeOrientation implements Enumerator {
 	 */
 	public static TypeOrientation get(int value) {
 		switch (value) {
-			case TOP_HORIZONTAL_VALUE: return TOP_HORIZONTAL;
-			case BOTTOM_HORIZONTAL_VALUE: return BOTTOM_HORIZONTAL;
-			case LEFT_VERTICAL_VALUE: return LEFT_VERTICAL;
-			case RIGHT_VERTICAL_VALUE: return RIGHT_VERTICAL;
+			case NAVEGACIÓN_VALUE: return NAVEGACIÓN;
+			case PRINCIPAL_VALUE: return PRINCIPAL;
 		}
 		return null;
 	}

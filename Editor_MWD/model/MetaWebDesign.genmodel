@@ -38,14 +38,10 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/combobox"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/radiobuttom"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/checkbox"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/itemList"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_email"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_password"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_file"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_text"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/table_striped"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/table_bordered"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/table_hover"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/img"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeHorizontalPosition">
@@ -59,10 +55,8 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/update"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOrientation">
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/topHorizontal"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/bottomHorizontal"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/leftVertical"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/rightVertical"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/navegación"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/principal"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOperator">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/igual"/>

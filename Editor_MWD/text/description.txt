@@ -124,14 +124,10 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal combobox = 2
     Literal radiobuttom = 3
     Literal checkbox = 4
-    Literal itemList = 5
     Literal form_email = 6
     Literal form_password = 7
     Literal form_file = 8
     Literal form_text = 9
-    Literal table_striped = 10
-    Literal table_bordered = 11
-    Literal table_hover = 12
     Literal img = 13
 
   Enum typeHorizontalPosition
@@ -145,10 +141,8 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal update = 1
 
   Enum TypeOrientation
-    Literal topHorizontal = 0
-    Literal bottomHorizontal = 1
-    Literal leftVertical = 2
-    Literal rightVertical = 3
+    Literal navegación = 0
+    Literal principal = 1
 
   Enum TypeOperator
     Literal igual = 0

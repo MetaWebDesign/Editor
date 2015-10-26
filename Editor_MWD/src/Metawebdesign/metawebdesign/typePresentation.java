@@ -69,16 +69,6 @@ public enum typePresentation implements Enumerator {
 	CHECKBOX(4, "checkbox", "checkbox"),
 
 	/**
-	 * The '<em><b>Item List</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ITEM_LIST_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ITEM_LIST(5, "itemList", "itemList"),
-
-	/**
 	 * The '<em><b>Form email</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -117,36 +107,6 @@ public enum typePresentation implements Enumerator {
 	 * @ordered
 	 */
 	FORM_TEXT(9, "form_text", "form_text"),
-
-	/**
-	 * The '<em><b>Table striped</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #TABLE_STRIPED_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	TABLE_STRIPED(10, "table_striped", "table_striped"),
-
-	/**
-	 * The '<em><b>Table bordered</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #TABLE_BORDERED_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	TABLE_BORDERED(11, "table_bordered", "table_bordered"),
-
-	/**
-	 * The '<em><b>Table hover</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #TABLE_HOVER_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	TABLE_HOVER(12, "table_hover", "table_hover"),
 
 	/**
 	 * The '<em><b>Img</b></em>' literal object.
@@ -234,21 +194,6 @@ public enum typePresentation implements Enumerator {
 	public static final int CHECKBOX_VALUE = 4;
 
 	/**
-	 * The '<em><b>Item List</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Item List</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #ITEM_LIST
-	 * @model name="itemList"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ITEM_LIST_VALUE = 5;
-
-	/**
 	 * The '<em><b>Form email</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -309,51 +254,6 @@ public enum typePresentation implements Enumerator {
 	public static final int FORM_TEXT_VALUE = 9;
 
 	/**
-	 * The '<em><b>Table striped</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Table striped</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #TABLE_STRIPED
-	 * @model name="table_striped"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int TABLE_STRIPED_VALUE = 10;
-
-	/**
-	 * The '<em><b>Table bordered</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Table bordered</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #TABLE_BORDERED
-	 * @model name="table_bordered"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int TABLE_BORDERED_VALUE = 11;
-
-	/**
-	 * The '<em><b>Table hover</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Table hover</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #TABLE_HOVER
-	 * @model name="table_hover"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int TABLE_HOVER_VALUE = 12;
-
-	/**
 	 * The '<em><b>Img</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -381,14 +281,10 @@ public enum typePresentation implements Enumerator {
 			COMBOBOX,
 			RADIOBUTTOM,
 			CHECKBOX,
-			ITEM_LIST,
 			FORM_EMAIL,
 			FORM_PASSWORD,
 			FORM_FILE,
 			FORM_TEXT,
-			TABLE_STRIPED,
-			TABLE_BORDERED,
-			TABLE_HOVER,
 			IMG,
 		};
 
@@ -445,14 +341,10 @@ public enum typePresentation implements Enumerator {
 			case COMBOBOX_VALUE: return COMBOBOX;
 			case RADIOBUTTOM_VALUE: return RADIOBUTTOM;
 			case CHECKBOX_VALUE: return CHECKBOX;
-			case ITEM_LIST_VALUE: return ITEM_LIST;
 			case FORM_EMAIL_VALUE: return FORM_EMAIL;
 			case FORM_PASSWORD_VALUE: return FORM_PASSWORD;
 			case FORM_FILE_VALUE: return FORM_FILE;
 			case FORM_TEXT_VALUE: return FORM_TEXT;
-			case TABLE_STRIPED_VALUE: return TABLE_STRIPED;
-			case TABLE_BORDERED_VALUE: return TABLE_BORDERED;
-			case TABLE_HOVER_VALUE: return TABLE_HOVER;
 			case IMG_VALUE: return IMG;
 		}
 		return null;

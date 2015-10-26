@@ -1299,14 +1299,10 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typePresentationEEnum, typePresentation.COMBOBOX);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.RADIOBUTTOM);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.CHECKBOX);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.ITEM_LIST);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_EMAIL);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_PASSWORD);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_FILE);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_TEXT);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE_STRIPED);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE_BORDERED);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE_HOVER);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.IMG);
 
 		initEEnum(typeHorizontalPositionEEnum, typeHorizontalPosition.class, "typeHorizontalPosition");
@@ -1320,10 +1316,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typeServiceEEnum, TypeService.UPDATE);
 
 		initEEnum(typeOrientationEEnum, TypeOrientation.class, "TypeOrientation");
-		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.TOP_HORIZONTAL);
-		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.BOTTOM_HORIZONTAL);
-		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.LEFT_VERTICAL);
-		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.RIGHT_VERTICAL);
+		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.NAVEGACIÓN);
+		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.PRINCIPAL);
 
 		initEEnum(typeOperatorEEnum, TypeOperator.class, "TypeOperator");
 		addEEnumLiteral(typeOperatorEEnum, TypeOperator.IGUAL);
