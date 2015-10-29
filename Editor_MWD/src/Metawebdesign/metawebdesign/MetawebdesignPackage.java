@@ -953,22 +953,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int LINK_VIEW_CRUD__FROM_CLASS = LINK_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>From Relation</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LINK_VIEW_CRUD__FROM_RELATION = LINK_FEATURE_COUNT + 2;
-
-	/**
 	 * The number of structural features of the '<em>Link View CRUD</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LINK_VIEW_CRUD_FEATURE_COUNT = LINK_FEATURE_COUNT + 3;
+	int LINK_VIEW_CRUD_FEATURE_COUNT = LINK_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Link View CRUD</em>' class.
@@ -1866,17 +1857,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getLinkViewCRUD_FromClass();
 
 	/**
-	 * Returns the meta object for the reference list '{@link Metawebdesign.metawebdesign.LinkViewCRUD#getFromRelation <em>From Relation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>From Relation</em>'.
-	 * @see Metawebdesign.metawebdesign.LinkViewCRUD#getFromRelation()
-	 * @see #getLinkViewCRUD()
-	 * @generated
-	 */
-	EReference getLinkViewCRUD_FromRelation();
-
-	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.LinkView <em>Link View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2611,14 +2591,6 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EReference LINK_VIEW_CRUD__FROM_CLASS = eINSTANCE.getLinkViewCRUD_FromClass();
-
-		/**
-		 * The meta object literal for the '<em><b>From Relation</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference LINK_VIEW_CRUD__FROM_RELATION = eINSTANCE.getLinkViewCRUD_FromRelation();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.LinkViewImpl <em>Link View</em>}' class.

@@ -14,7 +14,6 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link Metawebdesign.metawebdesign.LinkViewCRUD#getService <em>Service</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.LinkViewCRUD#getFromClass <em>From Class</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.LinkViewCRUD#getFromRelation <em>From Relation</em>}</li>
  * </ul>
  * </p>
  *
@@ -67,21 +66,5 @@ public interface LinkViewCRUD extends Link {
 	 * @generated
 	 */
 	EList<Metawebdesign.metawebdesign.Class> getFromClass();
-
-	/**
-	 * Returns the value of the '<em><b>From Relation</b></em>' reference list.
-	 * The list contents are of type {@link Metawebdesign.metawebdesign.Class}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From Relation</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Relation</em>' reference list.
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getLinkViewCRUD_FromRelation()
-	 * @model
-	 * @generated
-	 */
-	EList<Metawebdesign.metawebdesign.Class> getFromRelation();
 
 } // LinkViewCRUD

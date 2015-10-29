@@ -833,15 +833,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getLinkViewCRUD_FromRelation() {
-		return (EReference)linkViewCRUDEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getLinkView() {
 		return linkViewEClass;
 	}
@@ -1117,7 +1108,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		linkViewCRUDEClass = createEClass(LINK_VIEW_CRUD);
 		createEAttribute(linkViewCRUDEClass, LINK_VIEW_CRUD__SERVICE);
 		createEReference(linkViewCRUDEClass, LINK_VIEW_CRUD__FROM_CLASS);
-		createEReference(linkViewCRUDEClass, LINK_VIEW_CRUD__FROM_RELATION);
 
 		linkViewEClass = createEClass(LINK_VIEW);
 		createEReference(linkViewEClass, LINK_VIEW__LINK_VIEW);
@@ -1253,7 +1243,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEClass(linkViewCRUDEClass, LinkViewCRUD.class, "LinkViewCRUD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLinkViewCRUD_Service(), this.getTypeService(), "service", null, 0, 1, LinkViewCRUD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getLinkViewCRUD_FromClass(), this.getClass_(), null, "fromClass", null, 0, -1, LinkViewCRUD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLinkViewCRUD_FromRelation(), this.getClass_(), null, "FromRelation", null, 0, -1, LinkViewCRUD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(linkViewEClass, LinkView.class, "LinkView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLinkView_LinkView(), this.getViews(), null, "linkView", null, 0, 1, LinkView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1296,13 +1285,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEEnum(typePresentationEEnum, typePresentation.class, "typePresentation");
 		addEEnumLiteral(typePresentationEEnum, typePresentation.STRING);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.COMBOBOX);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.RADIOBUTTOM);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.CHECKBOX);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_EMAIL);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_PASSWORD);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_FILE);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.FORM_TEXT);
 		addEEnumLiteral(typePresentationEEnum, typePresentation.IMG);
 
 		initEEnum(typeHorizontalPositionEEnum, typeHorizontalPosition.class, "typeHorizontalPosition");
@@ -1314,9 +1296,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEEnum(typeServiceEEnum, TypeService.class, "TypeService");
 		addEEnumLiteral(typeServiceEEnum, TypeService.NULL);
 		addEEnumLiteral(typeServiceEEnum, TypeService.CREATE);
-		addEEnumLiteral(typeServiceEEnum, TypeService.UPDATE);
 		addEEnumLiteral(typeServiceEEnum, TypeService.INDEX);
-		addEEnumLiteral(typeServiceEEnum, TypeService.VIEW);
 
 		initEEnum(typeOrientationEEnum, TypeOrientation.class, "TypeOrientation");
 		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.NAVEGACIÓN);

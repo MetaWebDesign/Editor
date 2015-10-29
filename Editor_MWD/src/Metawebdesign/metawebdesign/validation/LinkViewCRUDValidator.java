@@ -19,5 +19,4 @@ public interface LinkViewCRUDValidator {
 
 	boolean validateService(TypeService value);
 	boolean validateFromClass(EList<Metawebdesign.metawebdesign.Class> value);
-	boolean validateFromRelation(EList<Metawebdesign.metawebdesign.Class> value);
 }

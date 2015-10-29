@@ -35,13 +35,6 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typePresentation">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/string"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/table"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/combobox"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/radiobuttom"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/checkbox"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_email"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_password"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_file"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/form_text"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/img"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeHorizontalPosition">
@@ -53,9 +46,7 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeService">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/null"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/create"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/update"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/index"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/view"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOrientation">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/navegación"/>
@@ -152,7 +143,6 @@
     <genClasses ecoreClass="MetaWebDesign.ecore#//LinkViewCRUD">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//LinkViewCRUD/service"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//LinkViewCRUD/fromClass"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//LinkViewCRUD/FromRelation"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//LinkView">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//LinkView/linkView"/>

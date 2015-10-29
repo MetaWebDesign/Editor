@@ -39,76 +39,6 @@ public enum typePresentation implements Enumerator {
 	TABLE(1, "table", "table"),
 
 	/**
-	 * The '<em><b>Combobox</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #COMBOBOX_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	COMBOBOX(2, "combobox", "combobox"),
-
-	/**
-	 * The '<em><b>Radiobuttom</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #RADIOBUTTOM_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	RADIOBUTTOM(3, "radiobuttom", "radiobuttom"),
-
-	/**
-	 * The '<em><b>Checkbox</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #CHECKBOX_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	CHECKBOX(4, "checkbox", "checkbox"),
-
-	/**
-	 * The '<em><b>Form email</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FORM_EMAIL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FORM_EMAIL(6, "form_email", "form_email"),
-
-	/**
-	 * The '<em><b>Form password</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FORM_PASSWORD_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FORM_PASSWORD(7, "form_password", "form_password"),
-
-	/**
-	 * The '<em><b>Form file</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FORM_FILE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FORM_FILE(8, "form_file", "form_file"),
-
-	/**
-	 * The '<em><b>Form text</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #FORM_TEXT_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	FORM_TEXT(9, "form_text", "form_text"),
-
-	/**
 	 * The '<em><b>Img</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -149,111 +79,6 @@ public enum typePresentation implements Enumerator {
 	public static final int TABLE_VALUE = 1;
 
 	/**
-	 * The '<em><b>Combobox</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Combobox</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #COMBOBOX
-	 * @model name="combobox"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int COMBOBOX_VALUE = 2;
-
-	/**
-	 * The '<em><b>Radiobuttom</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Radiobuttom</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #RADIOBUTTOM
-	 * @model name="radiobuttom"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int RADIOBUTTOM_VALUE = 3;
-
-	/**
-	 * The '<em><b>Checkbox</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Checkbox</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #CHECKBOX
-	 * @model name="checkbox"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int CHECKBOX_VALUE = 4;
-
-	/**
-	 * The '<em><b>Form email</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Form email</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #FORM_EMAIL
-	 * @model name="form_email"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FORM_EMAIL_VALUE = 6;
-
-	/**
-	 * The '<em><b>Form password</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Form password</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #FORM_PASSWORD
-	 * @model name="form_password"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FORM_PASSWORD_VALUE = 7;
-
-	/**
-	 * The '<em><b>Form file</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Form file</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #FORM_FILE
-	 * @model name="form_file"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FORM_FILE_VALUE = 8;
-
-	/**
-	 * The '<em><b>Form text</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Form text</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #FORM_TEXT
-	 * @model name="form_text"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int FORM_TEXT_VALUE = 9;
-
-	/**
 	 * The '<em><b>Img</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -278,13 +103,6 @@ public enum typePresentation implements Enumerator {
 		new typePresentation[] {
 			STRING,
 			TABLE,
-			COMBOBOX,
-			RADIOBUTTOM,
-			CHECKBOX,
-			FORM_EMAIL,
-			FORM_PASSWORD,
-			FORM_FILE,
-			FORM_TEXT,
 			IMG,
 		};
 
@@ -338,13 +156,6 @@ public enum typePresentation implements Enumerator {
 		switch (value) {
 			case STRING_VALUE: return STRING;
 			case TABLE_VALUE: return TABLE;
-			case COMBOBOX_VALUE: return COMBOBOX;
-			case RADIOBUTTOM_VALUE: return RADIOBUTTOM;
-			case CHECKBOX_VALUE: return CHECKBOX;
-			case FORM_EMAIL_VALUE: return FORM_EMAIL;
-			case FORM_PASSWORD_VALUE: return FORM_PASSWORD;
-			case FORM_FILE_VALUE: return FORM_FILE;
-			case FORM_TEXT_VALUE: return FORM_TEXT;
 			case IMG_VALUE: return IMG;
 		}
 		return null;

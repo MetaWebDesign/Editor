@@ -547,7 +547,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_sHFoEUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Class/goRelationClass"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sHFoEkzXEeWpr_mMwPz2pw" points="[-85, 74, 129, -117]$[-130, 113, 84, -78]$[-166, 146, 48, -45]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sHFoEkzXEeWpr_mMwPz2pw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sHkJMEzXEeWpr_mMwPz2pw" type="4003" source="_M5TTMEzTEeWRO_baYdW6NQ" target="_M5T6REzTEeWRO_baYdW6NQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_sHkwQEzXEeWpr_mMwPz2pw" type="6002">
@@ -569,7 +569,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_sHq24UzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Class/hasRelationClass"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sHq24kzXEeWpr_mMwPz2pw" points="[-85, 51, 129, -140]$[-170, 103, 44, -88]$[-192, 146, 22, -45]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sHq24kzXEeWpr_mMwPz2pw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sH-Y4EzXEeWpr_mMwPz2pw" type="4004" source="_M5Xko0zTEeWRO_baYdW6NQ" target="_M5T6REzTEeWRO_baYdW6NQ">
     <styles xmi:type="notation:FontStyle" xmi:id="_sH-_8EzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
@@ -590,7 +590,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_sIIw8UzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//RelationClass/fromClass"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sIIw8kzXEeWpr_mMwPz2pw" points="[85, -45, -129, 146]$[119, -63, -95, 128]$[150, -105, -64, 86]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sIIw8kzXEeWpr_mMwPz2pw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sIPeoEzXEeWpr_mMwPz2pw" type="4002" source="_M5ZZ00zTEeWRO_baYdW6NQ" target="_M5T6REzTEeWRO_baYdW6NQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_sIPeo0zXEeWpr_mMwPz2pw" type="6001">
@@ -661,6 +661,17 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_sJRZYEzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
     <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//LinkViewCRUD/fromClass"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJRZYUzXEeWpr_mMwPz2pw" points="[-4, 30, -4, -328]$[-15, 131, -15, -227]$[-6, 273, -6, -85]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_sJXgAEzXEeWpr_mMwPz2pw" type="4002" source="_M5lnE0zTEeWRO_baYdW6NQ" target="_M5TTMEzTEeWRO_baYdW6NQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sJYHEEzXEeWpr_mMwPz2pw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sJYHEUzXEeWpr_mMwPz2pw" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_sJYHEkzXEeWpr_mMwPz2pw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sJYHE0zXEeWpr_mMwPz2pw" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sJXgAUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
+    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//LinkViewCRUD/FromRelation"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJXgAkzXEeWpr_mMwPz2pw" points="[21, 30, 21, -328]$[70, 96, 70, -262]$[22, 273, 22, -85]"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sJdmoEzXEeWpr_mMwPz2pw" type="4004" source="_M5lnE0zTEeWRO_baYdW6NQ" target="_M5kY9kzTEeWRO_baYdW6NQ">
     <styles xmi:type="notation:FontStyle" xmi:id="_sJdmoUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
