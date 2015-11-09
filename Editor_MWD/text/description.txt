@@ -84,12 +84,12 @@ Package metawebdesign <http://metawebdesign/1.0>
     Reference linkView : Views
 
   Class Constraint
-    Reference Attribute : Derived
     Attribute operator : TypeOperator
     Attribute service : TypeService
     Attribute name : EString
-    Reference Value : NotDerived
+    Reference Attribute : NotDerived
     Attribute mansajeError : EString
+    Attribute value : EString
 
   Enum TypeRol
     Literal anonymous = 0

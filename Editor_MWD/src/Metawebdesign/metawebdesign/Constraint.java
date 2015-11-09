@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getOperator <em>Operator</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getService <em>Service</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getName <em>Name</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.Constraint#getMansajeError <em>Mansaje Error</em>}</li>
+ *   <li>{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,32 +26,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Constraint extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Attribute</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Attribute</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Attribute</em>' reference.
-	 * @see #setAttribute(Derived)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Attribute()
-	 * @model
-	 * @generated
-	 */
-	Derived getAttribute();
-
-	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Attribute</em>' reference.
-	 * @see #getAttribute()
-	 * @generated
-	 */
-	void setAttribute(Derived value);
-
 	/**
 	 * Returns the value of the '<em><b>Operator</b></em>' attribute.
 	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.TypeOperator}.
@@ -137,30 +111,30 @@ public interface Constraint extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' reference.
+	 * Returns the value of the '<em><b>Attribute</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Value</em>' reference isn't clear,
+	 * If the meaning of the '<em>Attribute</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Value</em>' reference.
-	 * @see #setValue(NotDerived)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Value()
+	 * @return the value of the '<em>Attribute</em>' reference.
+	 * @see #setAttribute(NotDerived)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Attribute()
 	 * @model
 	 * @generated
 	 */
-	NotDerived getValue();
+	NotDerived getAttribute();
 
 	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}' reference.
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Value</em>' reference.
-	 * @see #getValue()
+	 * @param value the new value of the '<em>Attribute</em>' reference.
+	 * @see #getAttribute()
 	 * @generated
 	 */
-	void setValue(NotDerived value);
+	void setAttribute(NotDerived value);
 
 	/**
 	 * Returns the value of the '<em><b>Mansaje Error</b></em>' attribute.
@@ -187,5 +161,31 @@ public interface Constraint extends EObject {
 	 * @generated
 	 */
 	void setMansajeError(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Value</em>' attribute.
+	 * @see #setValue(String)
+	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getConstraint_Value()
+	 * @model
+	 * @generated
+	 */
+	String getValue();
+
+	/**
+	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Value</em>' attribute.
+	 * @see #getValue()
+	 * @generated
+	 */
+	void setValue(String value);
 
 } // Constraint

@@ -860,17 +860,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getConstraint_Attribute() {
-		return (EReference)constraintEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getConstraint_Operator() {
-		return (EAttribute)constraintEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)constraintEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -879,7 +870,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * @generated
 	 */
 	public EAttribute getConstraint_Service() {
-		return (EAttribute)constraintEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)constraintEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -888,7 +879,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * @generated
 	 */
 	public EAttribute getConstraint_Name() {
-		return (EAttribute)constraintEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)constraintEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -896,8 +887,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getConstraint_Value() {
-		return (EReference)constraintEClass.getEStructuralFeatures().get(4);
+	public EReference getConstraint_Attribute() {
+		return (EReference)constraintEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -906,6 +897,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * @generated
 	 */
 	public EAttribute getConstraint_MansajeError() {
+		return (EAttribute)constraintEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getConstraint_Value() {
 		return (EAttribute)constraintEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1113,12 +1113,12 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEReference(linkViewEClass, LINK_VIEW__LINK_VIEW);
 
 		constraintEClass = createEClass(CONSTRAINT);
-		createEReference(constraintEClass, CONSTRAINT__ATTRIBUTE);
 		createEAttribute(constraintEClass, CONSTRAINT__OPERATOR);
 		createEAttribute(constraintEClass, CONSTRAINT__SERVICE);
 		createEAttribute(constraintEClass, CONSTRAINT__NAME);
-		createEReference(constraintEClass, CONSTRAINT__VALUE);
+		createEReference(constraintEClass, CONSTRAINT__ATTRIBUTE);
 		createEAttribute(constraintEClass, CONSTRAINT__MANSAJE_ERROR);
+		createEAttribute(constraintEClass, CONSTRAINT__VALUE);
 
 		// Create enums
 		typeRolEEnum = createEEnum(TYPE_ROL);
@@ -1248,12 +1248,12 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEReference(getLinkView_LinkView(), this.getViews(), null, "linkView", null, 0, 1, LinkView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(constraintEClass, Constraint.class, "Constraint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getConstraint_Attribute(), this.getDerived(), null, "Attribute", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_Operator(), this.getTypeOperator(), "operator", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_Service(), this.getTypeService(), "service", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_Name(), ecorePackage.getEString(), "name", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getConstraint_Value(), this.getNotDerived(), null, "Value", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getConstraint_Attribute(), this.getNotDerived(), null, "Attribute", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getConstraint_MansajeError(), ecorePackage.getEString(), "mansajeError", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getConstraint_Value(), ecorePackage.getEString(), "value", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(typeRolEEnum, TypeRol.class, "TypeRol");

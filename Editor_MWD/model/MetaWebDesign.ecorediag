@@ -296,34 +296,6 @@
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/table"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U4wsWnKfEeWp_tTZVb4leA"/>
       </children>
-      <children xmi:type="notation:Node" xmi:id="_U4xTYHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/combobox"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4xTYXKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4xTYnKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/radiobuttom"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4xTY3KfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4xTZHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/checkbox"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4xTZXKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4x6cXKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/form_email"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4x6cnKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4x6c3KfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/form_password"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4x6dHKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4yhgHKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/form_file"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4yhgXKfEeWp_tTZVb4leA"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_U4yhgnKfEeWp_tTZVb4leA" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/form_text"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_U4yhg3KfEeWp_tTZVb4leA"/>
-      </children>
       <children xmi:type="notation:Node" xmi:id="_U4zIknKfEeWp_tTZVb4leA" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typePresentation/img"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U4zIk3KfEeWp_tTZVb4leA"/>
@@ -398,17 +370,9 @@
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/null"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_j4wj0Xt-EeWyV4hoio5-Zg"/>
       </children>
-      <children xmi:type="notation:Node" xmi:id="_lMQMAHt-EeWyV4hoio5-Zg" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/update"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_lMQMAXt-EeWyV4hoio5-Zg"/>
-      </children>
       <children xmi:type="notation:Node" xmi:id="_nC2hQHt-EeWyV4hoio5-Zg" type="2006">
         <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/index"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_nC2hQXt-EeWyV4hoio5-Zg"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_o2x9AHt-EeWyV4hoio5-Zg" type="2006">
-        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//TypeService/view"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_o2x9AXt-EeWyV4hoio5-Zg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_U42L4nKfEeWp_tTZVb4leA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_U42L43KfEeWp_tTZVb4leA"/>
@@ -599,6 +563,10 @@
       <children xmi:type="notation:Node" xmi:id="_U4-uxnKfEeWp_tTZVb4leA" type="2001">
         <element xmi:type="ecore:EAttribute" href="MetaWebDesign.ecore#//Constraint/mansajeError"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_U4-ux3KfEeWp_tTZVb4leA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_i7uj0IcDEeWUb7CxozMLaA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="MetaWebDesign.ecore#//Constraint/value"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_i7uj0YcDEeWUb7CxozMLaA"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_U4-HtXKfEeWp_tTZVb4leA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_U4-HtnKfEeWp_tTZVb4leA"/>
@@ -971,20 +939,6 @@
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9whEHKfEeWp_tTZVb4leA" id="(0.7189542483660131,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9whEXKfEeWp_tTZVb4leA" id="(0.8702702702702703,1.0)"/>
   </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_U5RCqHKfEeWp_tTZVb4leA" type="3002" source="_U47re3KfEeWp_tTZVb4leA" target="_U4ip4HKfEeWp_tTZVb4leA">
-    <children xmi:type="notation:Node" xmi:id="_U5RpsHKfEeWp_tTZVb4leA" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_U5RpsXKfEeWp_tTZVb4leA" x="-10" y="-10"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_U5RpsnKfEeWp_tTZVb4leA" type="4012">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_U5Rps3KfEeWp_tTZVb4leA" x="10" y="10"/>
-    </children>
-    <styles xmi:type="notation:ConnectorStyle" xmi:id="_U5RCqXKfEeWp_tTZVb4leA" lineColor="4210752"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_U5RCqnKfEeWp_tTZVb4leA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//LinkViewCRUD/FromRelation"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U5RCq3KfEeWp_tTZVb4leA" points="[0, 0, 283, 169]$[0, -109, 283, 60]$[-283, -169, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9v6AnKfEeWp_tTZVb4leA" id="(0.4444444444444444,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9v6A3KfEeWp_tTZVb4leA" id="(0.745945945945946,1.0)"/>
-  </edges>
   <edges xmi:type="notation:Edge" xmi:id="_U5RptHKfEeWp_tTZVb4leA" type="3003" source="_U47re3KfEeWp_tTZVb4leA" target="_U47EaHKfEeWp_tTZVb4leA">
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_U5RptXKfEeWp_tTZVb4leA" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_U5RptnKfEeWp_tTZVb4leA" fontName="Ubuntu"/>
@@ -1014,33 +968,5 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U5SQx3KfEeWp_tTZVb4leA" points="[10, 0, -50, 73]$[10, -73, -50, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U90LcnKfEeWp_tTZVb4leA" id="(0.5,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U90ygHKfEeWp_tTZVb4leA" id="(0.7435897435897436,1.0)"/>
-  </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_U5SQyHKfEeWp_tTZVb4leA" type="3002" source="_U4-HsHKfEeWp_tTZVb4leA" target="_U4tB-HKfEeWp_tTZVb4leA">
-    <children xmi:type="notation:Node" xmi:id="_U5SQzHKfEeWp_tTZVb4leA" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_U5SQzXKfEeWp_tTZVb4leA" x="-10" y="-10"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_U5S30HKfEeWp_tTZVb4leA" type="4012">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_U5S30XKfEeWp_tTZVb4leA" x="10" y="10"/>
-    </children>
-    <styles xmi:type="notation:ConnectorStyle" xmi:id="_U5SQyXKfEeWp_tTZVb4leA" lineColor="4210752"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_U5SQynKfEeWp_tTZVb4leA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Constraint/Attribute"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U5SQy3KfEeWp_tTZVb4leA" points="[0, 0, 163, 60]$[-163, -60, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9n-MXKfEeWp_tTZVb4leA" id="(0.2696629213483146,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9n-MnKfEeWp_tTZVb4leA" id="(0.5,1.0)"/>
-  </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_U5S30nKfEeWp_tTZVb4leA" type="3002" source="_U4-HsHKfEeWp_tTZVb4leA" target="_U4uQFHKfEeWp_tTZVb4leA">
-    <children xmi:type="notation:Node" xmi:id="_U5S31nKfEeWp_tTZVb4leA" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_U5S313KfEeWp_tTZVb4leA" x="-10" y="-10"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_U5S32HKfEeWp_tTZVb4leA" type="4012">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_U5S32XKfEeWp_tTZVb4leA" x="10" y="10"/>
-    </children>
-    <styles xmi:type="notation:ConnectorStyle" xmi:id="_U5S303KfEeWp_tTZVb4leA" lineColor="4210752"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_U5S31HKfEeWp_tTZVb4leA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Constraint/Value"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U5S31XKfEeWp_tTZVb4leA" points="[0, 0, 0, 76]$[0, -76, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9olQHKfEeWp_tTZVb4leA" id="(0.5393258426966292,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U9olQXKfEeWp_tTZVb4leA" id="(0.49693251533742333,1.0)"/>
   </edges>
 </notation:Diagram>

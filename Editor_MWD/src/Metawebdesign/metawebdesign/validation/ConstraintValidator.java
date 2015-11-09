@@ -4,7 +4,6 @@
  */
 package Metawebdesign.metawebdesign.validation;
 
-import Metawebdesign.metawebdesign.Derived;
 import Metawebdesign.metawebdesign.NotDerived;
 import Metawebdesign.metawebdesign.TypeOperator;
 import Metawebdesign.metawebdesign.TypeService;
@@ -18,10 +17,10 @@ import Metawebdesign.metawebdesign.TypeService;
 public interface ConstraintValidator {
 	boolean validate();
 
-	boolean validateAttribute(Derived value);
 	boolean validateOperator(TypeOperator value);
 	boolean validateService(TypeService value);
 	boolean validateName(String value);
-	boolean validateValue(NotDerived value);
+	boolean validateAttribute(NotDerived value);
 	boolean validateMansajeError(String value);
+	boolean validateValue(String value);
 }

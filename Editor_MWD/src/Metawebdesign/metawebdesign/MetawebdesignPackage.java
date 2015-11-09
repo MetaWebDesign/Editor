@@ -1027,22 +1027,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int CONSTRAINT = 14;
 
 	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT__ATTRIBUTE = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operator</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__OPERATOR = 1;
+	int CONSTRAINT__OPERATOR = 0;
 
 	/**
 	 * The feature id for the '<em><b>Service</b></em>' attribute.
@@ -1051,7 +1042,7 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__SERVICE = 2;
+	int CONSTRAINT__SERVICE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1060,16 +1051,16 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__NAME = 3;
+	int CONSTRAINT__NAME = 2;
 
 	/**
-	 * The feature id for the '<em><b>Value</b></em>' reference.
+	 * The feature id for the '<em><b>Attribute</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__VALUE = 4;
+	int CONSTRAINT__ATTRIBUTE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Mansaje Error</b></em>' attribute.
@@ -1078,7 +1069,16 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT__MANSAJE_ERROR = 5;
+	int CONSTRAINT__MANSAJE_ERROR = 4;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__VALUE = 5;
 
 	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
@@ -1888,17 +1888,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EClass getConstraint();
 
 	/**
-	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Attribute</em>'.
-	 * @see Metawebdesign.metawebdesign.Constraint#getAttribute()
-	 * @see #getConstraint()
-	 * @generated
-	 */
-	EReference getConstraint_Attribute();
-
-	/**
 	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Constraint#getOperator <em>Operator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1932,15 +1921,15 @@ public interface MetawebdesignPackage extends EPackage {
 	EAttribute getConstraint_Name();
 
 	/**
-	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}'.
+	 * Returns the meta object for the reference '{@link Metawebdesign.metawebdesign.Constraint#getAttribute <em>Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Value</em>'.
-	 * @see Metawebdesign.metawebdesign.Constraint#getValue()
+	 * @return the meta object for the reference '<em>Attribute</em>'.
+	 * @see Metawebdesign.metawebdesign.Constraint#getAttribute()
 	 * @see #getConstraint()
 	 * @generated
 	 */
-	EReference getConstraint_Value();
+	EReference getConstraint_Attribute();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Constraint#getMansajeError <em>Mansaje Error</em>}'.
@@ -1952,6 +1941,17 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConstraint_MansajeError();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.Constraint#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see Metawebdesign.metawebdesign.Constraint#getValue()
+	 * @see #getConstraint()
+	 * @generated
+	 */
+	EAttribute getConstraint_Value();
 
 	/**
 	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.TypeRol <em>Type Rol</em>}'.
@@ -2621,14 +2621,6 @@ public interface MetawebdesignPackage extends EPackage {
 		EClass CONSTRAINT = eINSTANCE.getConstraint();
 
 		/**
-		 * The meta object literal for the '<em><b>Attribute</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CONSTRAINT__ATTRIBUTE = eINSTANCE.getConstraint_Attribute();
-
-		/**
 		 * The meta object literal for the '<em><b>Operator</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2653,12 +2645,12 @@ public interface MetawebdesignPackage extends EPackage {
 		EAttribute CONSTRAINT__NAME = eINSTANCE.getConstraint_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Attribute</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONSTRAINT__VALUE = eINSTANCE.getConstraint_Value();
+		EReference CONSTRAINT__ATTRIBUTE = eINSTANCE.getConstraint_Attribute();
 
 		/**
 		 * The meta object literal for the '<em><b>Mansaje Error</b></em>' attribute feature.
@@ -2667,6 +2659,14 @@ public interface MetawebdesignPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONSTRAINT__MANSAJE_ERROR = eINSTANCE.getConstraint_MansajeError();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONSTRAINT__VALUE = eINSTANCE.getConstraint_Value();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.TypeRol <em>Type Rol</em>}' enum.

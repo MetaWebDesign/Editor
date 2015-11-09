@@ -60,36 +60,14 @@ public class ConstraintItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addAttributePropertyDescriptor(object);
 			addOperatorPropertyDescriptor(object);
 			addServicePropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
-			addValuePropertyDescriptor(object);
+			addAttributePropertyDescriptor(object);
 			addMansajeErrorPropertyDescriptor(object);
+			addValuePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Attribute feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addAttributePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Constraint_Attribute_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Constraint_Attribute_feature", "_UI_Constraint_type"),
-				 MetawebdesignPackage.Literals.CONSTRAINT__ATTRIBUTE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
 	}
 
 	/**
@@ -159,19 +137,19 @@ public class ConstraintItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Value feature.
+	 * This adds a property descriptor for the Attribute feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addValuePropertyDescriptor(Object object) {
+	protected void addAttributePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Constraint_Value_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Constraint_Value_feature", "_UI_Constraint_type"),
-				 MetawebdesignPackage.Literals.CONSTRAINT__VALUE,
+				 getString("_UI_Constraint_Attribute_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Constraint_Attribute_feature", "_UI_Constraint_type"),
+				 MetawebdesignPackage.Literals.CONSTRAINT__ATTRIBUTE,
 				 true,
 				 false,
 				 true,
@@ -194,6 +172,28 @@ public class ConstraintItemProvider
 				 getString("_UI_Constraint_mansajeError_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Constraint_mansajeError_feature", "_UI_Constraint_type"),
 				 MetawebdesignPackage.Literals.CONSTRAINT__MANSAJE_ERROR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Value feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addValuePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Constraint_value_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Constraint_value_feature", "_UI_Constraint_type"),
+				 MetawebdesignPackage.Literals.CONSTRAINT__VALUE,
 				 true,
 				 false,
 				 false,
@@ -244,6 +244,7 @@ public class ConstraintItemProvider
 			case MetawebdesignPackage.CONSTRAINT__SERVICE:
 			case MetawebdesignPackage.CONSTRAINT__NAME:
 			case MetawebdesignPackage.CONSTRAINT__MANSAJE_ERROR:
+			case MetawebdesignPackage.CONSTRAINT__VALUE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

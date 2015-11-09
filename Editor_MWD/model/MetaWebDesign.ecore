@@ -147,12 +147,12 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="linkView" eType="#//Views"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Constraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute" eType="#//Derived"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="#//TypeOperator"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" eType="#//TypeService"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Value" eType="#//NotDerived"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Attribute" eType="#//NotDerived"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mansajeError" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeOperator">
     <eLiterals name="igual"/>

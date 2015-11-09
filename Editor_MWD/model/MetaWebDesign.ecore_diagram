@@ -683,17 +683,6 @@
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJnXoUzXEeWpr_mMwPz2pw" points="[-31, 26, 783, -475]$[-553, 469, 261, -32]$[-760, 494, 54, -7]"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_sJrCAEzXEeWpr_mMwPz2pw" type="4002" source="_M5oDUEzTEeWRO_baYdW6NQ" target="_M5Xko0zTEeWRO_baYdW6NQ">
-    <children xmi:type="notation:DecorationNode" xmi:id="_sJrCA0zXEeWpr_mMwPz2pw" type="6001">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_sJrCBEzXEeWpr_mMwPz2pw" y="40"/>
-    </children>
-    <children xmi:type="notation:DecorationNode" xmi:id="_sJrCBUzXEeWpr_mMwPz2pw" type="6003">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_sJrCBkzXEeWpr_mMwPz2pw" y="60"/>
-    </children>
-    <styles xmi:type="notation:FontStyle" xmi:id="_sJrCAUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
-    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Constraint/Attribute"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJrCAkzXEeWpr_mMwPz2pw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-  </edges>
   <edges xmi:type="notation:Connector" xmi:id="_sJwhkEzXEeWpr_mMwPz2pw" type="4002" source="_M5oDUEzTEeWRO_baYdW6NQ" target="_M5YywEzTEeWRO_baYdW6NQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_sJxIoEzXEeWpr_mMwPz2pw" type="6001">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_sJxIoUzXEeWpr_mMwPz2pw" y="40"/>
@@ -702,8 +691,8 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_sJxIo0zXEeWpr_mMwPz2pw" y="60"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_sJwhkUzXEeWpr_mMwPz2pw" fontName="Ubuntu"/>
-    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Constraint/Value"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJwhkkzXEeWpr_mMwPz2pw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <element xmi:type="ecore:EReference" href="MetaWebDesign.ecore#//Constraint/Attribute"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJwhkkzXEeWpr_mMwPz2pw" points="[83, 8, -54, -135]$[143, 8, 6, -135]$[143, 114, 6, -29]"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_bDXy8EzYEeWpr_mMwPz2pw" type="4003" source="_M5TTMEzTEeWRO_baYdW6NQ" target="_M5oDUEzTEeWRO_baYdW6NQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_bDYaAEzYEeWpr_mMwPz2pw" type="6002">
