@@ -43,7 +43,7 @@ public class ConstraintImpl extends MinimalEObjectImpl.Container implements Cons
 	 * @generated
 	 * @ordered
 	 */
-	protected static final TypeOperator OPERATOR_EDEFAULT = TypeOperator.IGUAL;
+	protected static final TypeOperator OPERATOR_EDEFAULT = TypeOperator.MENOR;
 
 	/**
 	 * The cached value of the '{@link #getOperator() <em>Operator</em>}' attribute.

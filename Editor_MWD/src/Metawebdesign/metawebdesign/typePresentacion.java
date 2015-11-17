@@ -10,93 +10,119 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>type Menu</b></em>',
+ * A representation of the literals of the enumeration '<em><b>type Presentacion</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see Metawebdesign.metawebdesign.MetawebdesignPackage#gettypeMenu()
+ * @see Metawebdesign.metawebdesign.MetawebdesignPackage#gettypePresentacion()
  * @model
  * @generated
  */
-public enum typeMenu implements Enumerator {
+public enum typePresentacion implements Enumerator {
 	/**
-	 * The '<em><b>Principal</b></em>' literal object.
+	 * The '<em><b>String</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PRINCIPAL_VALUE
+	 * @see #STRING_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PRINCIPAL(0, "principal", "principal"),
+	STRING(0, "string", "string"),
 
 	/**
-	 * The '<em><b>Navegation</b></em>' literal object.
+	 * The '<em><b>Table</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #NAVEGATION_VALUE
+	 * @see #TABLE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	NAVEGATION(0, "navegation", "navegation");
+	TABLE(1, "table", "table"),
 
 	/**
-	 * The '<em><b>Principal</b></em>' literal value.
+	 * The '<em><b>Img</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #IMG_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	IMG(13, "img", "img");
+
+	/**
+	 * The '<em><b>String</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Principal</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>String</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #PRINCIPAL
-	 * @model name="principal"
+	 * @see #STRING
+	 * @model name="string"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PRINCIPAL_VALUE = 0;
+	public static final int STRING_VALUE = 0;
 
 	/**
-	 * The '<em><b>Navegation</b></em>' literal value.
+	 * The '<em><b>Table</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Navegation</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Table</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #NAVEGATION
-	 * @model name="navegation"
+	 * @see #TABLE
+	 * @model name="table"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int NAVEGATION_VALUE = 0;
+	public static final int TABLE_VALUE = 1;
 
 	/**
-	 * An array of all the '<em><b>type Menu</b></em>' enumerators.
+	 * The '<em><b>Img</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Img</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #IMG
+	 * @model name="img"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int IMG_VALUE = 13;
+
+	/**
+	 * An array of all the '<em><b>type Presentacion</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final typeMenu[] VALUES_ARRAY =
-		new typeMenu[] {
-			PRINCIPAL,
-			NAVEGATION,
+	private static final typePresentacion[] VALUES_ARRAY =
+		new typePresentacion[] {
+			STRING,
+			TABLE,
+			IMG,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>type Menu</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>type Presentacion</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<typeMenu> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<typePresentacion> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>type Menu</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>type Presentacion</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static typeMenu get(String literal) {
+	public static typePresentacion get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			typeMenu result = VALUES_ARRAY[i];
+			typePresentacion result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -105,14 +131,14 @@ public enum typeMenu implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>type Menu</b></em>' literal with the specified name.
+	 * Returns the '<em><b>type Presentacion</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static typeMenu getByName(String name) {
+	public static typePresentacion getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			typeMenu result = VALUES_ARRAY[i];
+			typePresentacion result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -121,14 +147,16 @@ public enum typeMenu implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>type Menu</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>type Presentacion</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static typeMenu get(int value) {
+	public static typePresentacion get(int value) {
 		switch (value) {
-			case PRINCIPAL_VALUE: return PRINCIPAL;
+			case STRING_VALUE: return STRING;
+			case TABLE_VALUE: return TABLE;
+			case IMG_VALUE: return IMG;
 		}
 		return null;
 	}
@@ -160,7 +188,7 @@ public enum typeMenu implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private typeMenu(int value, String name, String literal) {
+	private typePresentacion(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -204,4 +232,4 @@ public enum typeMenu implements Enumerator {
 		return literal;
 	}
 	
-} //typeMenu
+} //typePresentacion

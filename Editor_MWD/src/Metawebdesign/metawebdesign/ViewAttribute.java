@@ -16,7 +16,6 @@ package Metawebdesign.metawebdesign;
  *   <li>{@link Metawebdesign.metawebdesign.ViewAttribute#getName <em>Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.ViewAttribute#getPositionHorizontal <em>Position Horizontal</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.ViewAttribute#getPostionVertical <em>Postion Vertical</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.ViewAttribute#getFrom <em>From</em>}</li>
  * </ul>
  * </p>
  *
@@ -54,7 +53,7 @@ public interface ViewAttribute extends ViewComponent {
 	/**
 	 * Returns the value of the '<em><b>Type Presentation</b></em>' attribute.
 	 * The default value is <code>"string"</code>.
-	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typePresentation}.
+	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typePresentacion}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type Presentation</em>' attribute isn't clear,
@@ -62,24 +61,24 @@ public interface ViewAttribute extends ViewComponent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Presentation</em>' attribute.
-	 * @see Metawebdesign.metawebdesign.typePresentation
-	 * @see #setTypePresentation(typePresentation)
+	 * @see Metawebdesign.metawebdesign.typePresentacion
+	 * @see #setTypePresentation(typePresentacion)
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViewAttribute_TypePresentation()
 	 * @model default="string"
 	 * @generated
 	 */
-	typePresentation getTypePresentation();
+	typePresentacion getTypePresentation();
 
 	/**
 	 * Sets the value of the '{@link Metawebdesign.metawebdesign.ViewAttribute#getTypePresentation <em>Type Presentation</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Presentation</em>' attribute.
-	 * @see Metawebdesign.metawebdesign.typePresentation
+	 * @see Metawebdesign.metawebdesign.typePresentacion
 	 * @see #getTypePresentation()
 	 * @generated
 	 */
-	void setTypePresentation(typePresentation value);
+	void setTypePresentation(typePresentacion value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -161,35 +160,5 @@ public interface ViewAttribute extends ViewComponent {
 	 * @generated
 	 */
 	void setPostionVertical(int value);
-
-	/**
-	 * Returns the value of the '<em><b>From</b></em>' attribute.
-	 * The default value is <code>"DataBase"</code>.
-	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typeViewAttribute}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From</em>' attribute.
-	 * @see Metawebdesign.metawebdesign.typeViewAttribute
-	 * @see #setFrom(typeViewAttribute)
-	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getViewAttribute_From()
-	 * @model default="DataBase"
-	 * @generated
-	 */
-	typeViewAttribute getFrom();
-
-	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.ViewAttribute#getFrom <em>From</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>From</em>' attribute.
-	 * @see Metawebdesign.metawebdesign.typeViewAttribute
-	 * @see #getFrom()
-	 * @generated
-	 */
-	void setFrom(typeViewAttribute value);
 
 } // ViewAttribute

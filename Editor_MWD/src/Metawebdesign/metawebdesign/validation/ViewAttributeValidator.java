@@ -6,8 +6,7 @@ package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
-import Metawebdesign.metawebdesign.typePresentation;
-import Metawebdesign.metawebdesign.typeViewAttribute;
+import Metawebdesign.metawebdesign.typePresentacion;
 
 /**
  * A sample validator interface for {@link Metawebdesign.metawebdesign.ViewAttribute}.
@@ -19,9 +18,8 @@ public interface ViewAttributeValidator {
 	boolean validate();
 
 	boolean validateGetAttribute(Attributes value);
-	boolean validateTypePresentation(typePresentation value);
+	boolean validateTypePresentation(typePresentacion value);
 	boolean validateName(String value);
 	boolean validatePositionHorizontal(typeHorizontalPosition value);
 	boolean validatePostionVertical(int value);
-	boolean validateFrom(typeViewAttribute value);
 }

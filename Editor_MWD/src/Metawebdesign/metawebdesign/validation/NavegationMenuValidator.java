@@ -5,7 +5,7 @@
 package Metawebdesign.metawebdesign.validation;
 
 import Metawebdesign.metawebdesign.Link;
-import Metawebdesign.metawebdesign.typeMenu;
+import Metawebdesign.metawebdesign.typeMenus;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -20,5 +20,5 @@ public interface NavegationMenuValidator {
 
 	boolean validateHasLink(EList<Link> value);
 	boolean validateName(String value);
-	boolean validateTypeMenu(typeMenu value);
+	boolean validateTypeMenu(typeMenus value);
 }

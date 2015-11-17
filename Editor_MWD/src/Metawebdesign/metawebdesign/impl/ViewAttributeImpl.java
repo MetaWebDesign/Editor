@@ -6,8 +6,7 @@ import Metawebdesign.metawebdesign.Attributes;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.ViewAttribute;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
-import Metawebdesign.metawebdesign.typePresentation;
-import Metawebdesign.metawebdesign.typeViewAttribute;
+import Metawebdesign.metawebdesign.typePresentacion;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -28,7 +27,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewAttributeImpl#getName <em>Name</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewAttributeImpl#getPositionHorizontal <em>Position Horizontal</em>}</li>
  *   <li>{@link Metawebdesign.metawebdesign.impl.ViewAttributeImpl#getPostionVertical <em>Postion Vertical</em>}</li>
- *   <li>{@link Metawebdesign.metawebdesign.impl.ViewAttributeImpl#getFrom <em>From</em>}</li>
  * </ul>
  * </p>
  *
@@ -53,7 +51,7 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 	 * @generated
 	 * @ordered
 	 */
-	protected static final typePresentation TYPE_PRESENTATION_EDEFAULT = null;
+	protected static final typePresentacion TYPE_PRESENTATION_EDEFAULT = typePresentacion.STRING;
 
 	/**
 	 * The cached value of the '{@link #getTypePresentation() <em>Type Presentation</em>}' attribute.
@@ -63,7 +61,7 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 	 * @generated
 	 * @ordered
 	 */
-	protected typePresentation typePresentation = TYPE_PRESENTATION_EDEFAULT;
+	protected typePresentacion typePresentation = TYPE_PRESENTATION_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -124,26 +122,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 	 * @ordered
 	 */
 	protected int postionVertical = POSTION_VERTICAL_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getFrom() <em>From</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFrom()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final typeViewAttribute FROM_EDEFAULT = typeViewAttribute.DATA_BASE;
-
-	/**
-	 * The cached value of the '{@link #getFrom() <em>From</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFrom()
-	 * @generated
-	 * @ordered
-	 */
-	protected typeViewAttribute from = FROM_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,7 +185,7 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typePresentation getTypePresentation() {
+	public typePresentacion getTypePresentation() {
 		return typePresentation;
 	}
 
@@ -216,8 +194,8 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTypePresentation(typePresentation newTypePresentation) {
-		typePresentation oldTypePresentation = typePresentation;
+	public void setTypePresentation(typePresentacion newTypePresentation) {
+		typePresentacion oldTypePresentation = typePresentation;
 		typePresentation = newTypePresentation == null ? TYPE_PRESENTATION_EDEFAULT : newTypePresentation;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.VIEW_ATTRIBUTE__TYPE_PRESENTATION, oldTypePresentation, typePresentation));
@@ -291,27 +269,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typeViewAttribute getFrom() {
-		return from;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFrom(typeViewAttribute newFrom) {
-		typeViewAttribute oldFrom = from;
-		from = newFrom == null ? FROM_EDEFAULT : newFrom;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.VIEW_ATTRIBUTE__FROM, oldFrom, from));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -326,8 +283,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 				return getPositionHorizontal();
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__POSTION_VERTICAL:
 				return getPostionVertical();
-			case MetawebdesignPackage.VIEW_ATTRIBUTE__FROM:
-				return getFrom();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -344,7 +299,7 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 				setGetAttribute((Attributes)newValue);
 				return;
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__TYPE_PRESENTATION:
-				setTypePresentation((typePresentation)newValue);
+				setTypePresentation((typePresentacion)newValue);
 				return;
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__NAME:
 				setName((String)newValue);
@@ -354,9 +309,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 				return;
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__POSTION_VERTICAL:
 				setPostionVertical((Integer)newValue);
-				return;
-			case MetawebdesignPackage.VIEW_ATTRIBUTE__FROM:
-				setFrom((typeViewAttribute)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -385,9 +337,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__POSTION_VERTICAL:
 				setPostionVertical(POSTION_VERTICAL_EDEFAULT);
 				return;
-			case MetawebdesignPackage.VIEW_ATTRIBUTE__FROM:
-				setFrom(FROM_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -410,8 +359,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 				return positionHorizontal != POSITION_HORIZONTAL_EDEFAULT;
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__POSTION_VERTICAL:
 				return postionVertical != POSTION_VERTICAL_EDEFAULT;
-			case MetawebdesignPackage.VIEW_ATTRIBUTE__FROM:
-				return from != FROM_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -434,8 +381,6 @@ public class ViewAttributeImpl extends ViewComponentImpl implements ViewAttribut
 		result.append(positionHorizontal);
 		result.append(", postionVertical: ");
 		result.append(postionVertical);
-		result.append(", From: ");
-		result.append(from);
 		result.append(')');
 		return result.toString();
 	}

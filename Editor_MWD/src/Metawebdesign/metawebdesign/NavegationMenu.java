@@ -67,7 +67,7 @@ public interface NavegationMenu extends ViewComponent {
 
 	/**
 	 * Returns the value of the '<em><b>Type Menu</b></em>' attribute.
-	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typeMenu}.
+	 * The literals are from the enumeration {@link Metawebdesign.metawebdesign.typeMenus}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type Menu</em>' attribute isn't clear,
@@ -75,23 +75,23 @@ public interface NavegationMenu extends ViewComponent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Menu</em>' attribute.
-	 * @see Metawebdesign.metawebdesign.typeMenu
-	 * @see #setTypeMenu(typeMenu)
+	 * @see Metawebdesign.metawebdesign.typeMenus
+	 * @see #setTypeMenu(typeMenus)
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getNavegationMenu_TypeMenu()
 	 * @model
 	 * @generated
 	 */
-	typeMenu getTypeMenu();
+	typeMenus getTypeMenu();
 
 	/**
 	 * Sets the value of the '{@link Metawebdesign.metawebdesign.NavegationMenu#getTypeMenu <em>Type Menu</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Menu</em>' attribute.
-	 * @see Metawebdesign.metawebdesign.typeMenu
+	 * @see Metawebdesign.metawebdesign.typeMenus
 	 * @see #getTypeMenu()
 	 * @generated
 	 */
-	void setTypeMenu(typeMenu value);
+	void setTypeMenu(typeMenus value);
 
 } // NavegationMenu

@@ -26,9 +26,8 @@ import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 import Metawebdesign.metawebdesign.typeCardinality;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
-import Metawebdesign.metawebdesign.typeMenu;
-import Metawebdesign.metawebdesign.typePresentation;
-import Metawebdesign.metawebdesign.typeViewAttribute;
+import Metawebdesign.metawebdesign.typeMenus;
+import Metawebdesign.metawebdesign.typePresentacion;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -176,7 +175,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum typePresentationEEnum = null;
+	private EEnum typePresentacionEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,13 +210,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum typeViewAttributeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum typeCardinalityEEnum = null;
 
 	/**
@@ -225,7 +217,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum typeMenuEEnum = null;
+	private EEnum typeMenusEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -743,15 +735,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getViewAttribute_From() {
-		return (EAttribute)viewAttributeEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getNavegationMenu() {
 		return navegationMenuEClass;
 	}
@@ -941,8 +924,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum gettypePresentation() {
-		return typePresentationEEnum;
+	public EEnum gettypePresentacion() {
+		return typePresentacionEEnum;
 	}
 
 	/**
@@ -986,15 +969,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum gettypeViewAttribute() {
-		return typeViewAttributeEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EEnum gettypeCardinality() {
 		return typeCardinalityEEnum;
 	}
@@ -1004,8 +978,8 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum gettypeMenu() {
-		return typeMenuEEnum;
+	public EEnum gettypeMenus() {
+		return typeMenusEEnum;
 	}
 
 	/**
@@ -1095,7 +1069,6 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		createEAttribute(viewAttributeEClass, VIEW_ATTRIBUTE__NAME);
 		createEAttribute(viewAttributeEClass, VIEW_ATTRIBUTE__POSITION_HORIZONTAL);
 		createEAttribute(viewAttributeEClass, VIEW_ATTRIBUTE__POSTION_VERTICAL);
-		createEAttribute(viewAttributeEClass, VIEW_ATTRIBUTE__FROM);
 
 		navegationMenuEClass = createEClass(NAVEGATION_MENU);
 		createEReference(navegationMenuEClass, NAVEGATION_MENU__HAS_LINK);
@@ -1124,14 +1097,13 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		typeRolEEnum = createEEnum(TYPE_ROL);
 		typeAttributeFormEEnum = createEEnum(TYPE_ATTRIBUTE_FORM);
 		typeDataEEnum = createEEnum(TYPE_DATA);
-		typePresentationEEnum = createEEnum(TYPE_PRESENTATION);
+		typePresentacionEEnum = createEEnum(TYPE_PRESENTACION);
 		typeHorizontalPositionEEnum = createEEnum(TYPE_HORIZONTAL_POSITION);
 		typeServiceEEnum = createEEnum(TYPE_SERVICE);
 		typeOrientationEEnum = createEEnum(TYPE_ORIENTATION);
 		typeOperatorEEnum = createEEnum(TYPE_OPERATOR);
-		typeViewAttributeEEnum = createEEnum(TYPE_VIEW_ATTRIBUTE);
 		typeCardinalityEEnum = createEEnum(TYPE_CARDINALITY);
-		typeMenuEEnum = createEEnum(TYPE_MENU);
+		typeMenusEEnum = createEEnum(TYPE_MENUS);
 	}
 
 	/**
@@ -1191,7 +1163,7 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		initEAttribute(getClass_FunctionAdmin(), this.getTypeRol(), "functionAdmin", "admin", 0, 1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_HasRelationClass(), this.getRelationClass(), null, "hasRelationClass", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_GoRelationClass(), this.getRelationClass(), null, "goRelationClass", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClass_HasConstraint(), this.getConstraint(), null, "hasConstraint", null, 0, 1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClass_HasConstraint(), this.getConstraint(), null, "hasConstraint", null, 0, -1, Metawebdesign.metawebdesign.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributesEClass, Attributes.class, "Attributes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAttributes_Name(), ecorePackage.getEString(), "name", null, 0, 1, Attributes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1226,16 +1198,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 
 		initEClass(viewAttributeEClass, ViewAttribute.class, "ViewAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getViewAttribute_GetAttribute(), this.getAttributes(), null, "getAttribute", null, 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getViewAttribute_TypePresentation(), this.gettypePresentation(), "typePresentation", "string", 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getViewAttribute_TypePresentation(), this.gettypePresentacion(), "typePresentation", "string", 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getViewAttribute_Name(), ecorePackage.getEString(), "name", null, 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getViewAttribute_PositionHorizontal(), this.gettypeHorizontalPosition(), "positionHorizontal", null, 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getViewAttribute_PostionVertical(), ecorePackage.getEInt(), "postionVertical", null, 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getViewAttribute_From(), this.gettypeViewAttribute(), "From", "DataBase", 0, 1, ViewAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(navegationMenuEClass, NavegationMenu.class, "NavegationMenu", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getNavegationMenu_HasLink(), this.getLink(), null, "hasLink", null, 0, -1, NavegationMenu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getNavegationMenu_Name(), ecorePackage.getEString(), "name", null, 0, 1, NavegationMenu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getNavegationMenu_TypeMenu(), this.gettypeMenu(), "typeMenu", null, 0, 1, NavegationMenu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNavegationMenu_TypeMenu(), this.gettypeMenus(), "typeMenu", null, 0, 1, NavegationMenu.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(linkEClass, Link.class, "Link", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLink_Name(), ecorePackage.getEString(), "name", null, 0, 1, Link.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1282,16 +1253,15 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typeDataEEnum, TypeData.FILE);
 		addEEnumLiteral(typeDataEEnum, TypeData.PASSWD);
 
-		initEEnum(typePresentationEEnum, typePresentation.class, "typePresentation");
-		addEEnumLiteral(typePresentationEEnum, typePresentation.STRING);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.TABLE);
-		addEEnumLiteral(typePresentationEEnum, typePresentation.IMG);
+		initEEnum(typePresentacionEEnum, typePresentacion.class, "typePresentacion");
+		addEEnumLiteral(typePresentacionEEnum, typePresentacion.STRING);
+		addEEnumLiteral(typePresentacionEEnum, typePresentacion.TABLE);
+		addEEnumLiteral(typePresentacionEEnum, typePresentacion.IMG);
 
 		initEEnum(typeHorizontalPositionEEnum, typeHorizontalPosition.class, "typeHorizontalPosition");
 		addEEnumLiteral(typeHorizontalPositionEEnum, typeHorizontalPosition.LEFT);
 		addEEnumLiteral(typeHorizontalPositionEEnum, typeHorizontalPosition.CENTER);
 		addEEnumLiteral(typeHorizontalPositionEEnum, typeHorizontalPosition.RIGHT);
-		addEEnumLiteral(typeHorizontalPositionEEnum, typeHorizontalPosition.EENUM_LITERAL0);
 
 		initEEnum(typeServiceEEnum, TypeService.class, "TypeService");
 		addEEnumLiteral(typeServiceEEnum, TypeService.NULL);
@@ -1303,24 +1273,18 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typeOrientationEEnum, TypeOrientation.PRINCIPAL);
 
 		initEEnum(typeOperatorEEnum, TypeOperator.class, "TypeOperator");
-		addEEnumLiteral(typeOperatorEEnum, TypeOperator.IGUAL);
 		addEEnumLiteral(typeOperatorEEnum, TypeOperator.MENOR);
 		addEEnumLiteral(typeOperatorEEnum, TypeOperator.MAYOR);
 		addEEnumLiteral(typeOperatorEEnum, TypeOperator.MENOR_IGUAL);
 		addEEnumLiteral(typeOperatorEEnum, TypeOperator.MAYOR_IGUAL);
-		addEEnumLiteral(typeOperatorEEnum, TypeOperator.DIFERENTE);
-
-		initEEnum(typeViewAttributeEEnum, typeViewAttribute.class, "typeViewAttribute");
-		addEEnumLiteral(typeViewAttributeEEnum, typeViewAttribute.DATA_BASE);
-		addEEnumLiteral(typeViewAttributeEEnum, typeViewAttribute.SESSION_USER);
 
 		initEEnum(typeCardinalityEEnum, typeCardinality.class, "typeCardinality");
 		addEEnumLiteral(typeCardinalityEEnum, typeCardinality.ONE);
 		addEEnumLiteral(typeCardinalityEEnum, typeCardinality.MANY);
 
-		initEEnum(typeMenuEEnum, typeMenu.class, "typeMenu");
-		addEEnumLiteral(typeMenuEEnum, typeMenu.PRINCIPAL);
-		addEEnumLiteral(typeMenuEEnum, typeMenu.NAVEGATION);
+		initEEnum(typeMenusEEnum, typeMenus.class, "typeMenus");
+		addEEnumLiteral(typeMenusEEnum, typeMenus.PRINCIPAL);
+		addEEnumLiteral(typeMenusEEnum, typeMenus.NAVEGATION);
 
 		// Create resource
 		createResource(eNS_URI);

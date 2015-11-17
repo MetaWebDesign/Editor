@@ -26,9 +26,8 @@ import Metawebdesign.metawebdesign.ViewComponent;
 import Metawebdesign.metawebdesign.Views;
 import Metawebdesign.metawebdesign.typeCardinality;
 import Metawebdesign.metawebdesign.typeHorizontalPosition;
-import Metawebdesign.metawebdesign.typeMenu;
-import Metawebdesign.metawebdesign.typePresentation;
-import Metawebdesign.metawebdesign.typeViewAttribute;
+import Metawebdesign.metawebdesign.typeMenus;
+import Metawebdesign.metawebdesign.typePresentacion;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -117,8 +116,8 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 				return createTypeAttributeFormFromString(eDataType, initialValue);
 			case MetawebdesignPackage.TYPE_DATA:
 				return createTypeDataFromString(eDataType, initialValue);
-			case MetawebdesignPackage.TYPE_PRESENTATION:
-				return createtypePresentationFromString(eDataType, initialValue);
+			case MetawebdesignPackage.TYPE_PRESENTACION:
+				return createtypePresentacionFromString(eDataType, initialValue);
 			case MetawebdesignPackage.TYPE_HORIZONTAL_POSITION:
 				return createtypeHorizontalPositionFromString(eDataType, initialValue);
 			case MetawebdesignPackage.TYPE_SERVICE:
@@ -127,12 +126,10 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 				return createTypeOrientationFromString(eDataType, initialValue);
 			case MetawebdesignPackage.TYPE_OPERATOR:
 				return createTypeOperatorFromString(eDataType, initialValue);
-			case MetawebdesignPackage.TYPE_VIEW_ATTRIBUTE:
-				return createtypeViewAttributeFromString(eDataType, initialValue);
 			case MetawebdesignPackage.TYPE_CARDINALITY:
 				return createtypeCardinalityFromString(eDataType, initialValue);
-			case MetawebdesignPackage.TYPE_MENU:
-				return createtypeMenuFromString(eDataType, initialValue);
+			case MetawebdesignPackage.TYPE_MENUS:
+				return createtypeMenusFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -152,8 +149,8 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 				return convertTypeAttributeFormToString(eDataType, instanceValue);
 			case MetawebdesignPackage.TYPE_DATA:
 				return convertTypeDataToString(eDataType, instanceValue);
-			case MetawebdesignPackage.TYPE_PRESENTATION:
-				return converttypePresentationToString(eDataType, instanceValue);
+			case MetawebdesignPackage.TYPE_PRESENTACION:
+				return converttypePresentacionToString(eDataType, instanceValue);
 			case MetawebdesignPackage.TYPE_HORIZONTAL_POSITION:
 				return converttypeHorizontalPositionToString(eDataType, instanceValue);
 			case MetawebdesignPackage.TYPE_SERVICE:
@@ -162,12 +159,10 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 				return convertTypeOrientationToString(eDataType, instanceValue);
 			case MetawebdesignPackage.TYPE_OPERATOR:
 				return convertTypeOperatorToString(eDataType, instanceValue);
-			case MetawebdesignPackage.TYPE_VIEW_ATTRIBUTE:
-				return converttypeViewAttributeToString(eDataType, instanceValue);
 			case MetawebdesignPackage.TYPE_CARDINALITY:
 				return converttypeCardinalityToString(eDataType, instanceValue);
-			case MetawebdesignPackage.TYPE_MENU:
-				return converttypeMenuToString(eDataType, instanceValue);
+			case MetawebdesignPackage.TYPE_MENUS:
+				return converttypeMenusToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -388,8 +383,8 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typePresentation createtypePresentationFromString(EDataType eDataType, String initialValue) {
-		typePresentation result = typePresentation.get(initialValue);
+	public typePresentacion createtypePresentacionFromString(EDataType eDataType, String initialValue) {
+		typePresentacion result = typePresentacion.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -399,7 +394,7 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String converttypePresentationToString(EDataType eDataType, Object instanceValue) {
+	public String converttypePresentacionToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -488,26 +483,6 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typeViewAttribute createtypeViewAttributeFromString(EDataType eDataType, String initialValue) {
-		typeViewAttribute result = typeViewAttribute.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String converttypeViewAttributeToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public typeCardinality createtypeCardinalityFromString(EDataType eDataType, String initialValue) {
 		typeCardinality result = typeCardinality.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -528,8 +503,8 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typeMenu createtypeMenuFromString(EDataType eDataType, String initialValue) {
-		typeMenu result = typeMenu.get(initialValue);
+	public typeMenus createtypeMenusFromString(EDataType eDataType, String initialValue) {
+		typeMenus result = typeMenus.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -539,7 +514,7 @@ public class MetawebdesignFactoryImpl extends EFactoryImpl implements Metawebdes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String converttypeMenuToString(EDataType eDataType, Object instanceValue) {
+	public String converttypeMenusToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

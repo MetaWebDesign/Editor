@@ -32,16 +32,15 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/file"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/passwd"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typePresentation">
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/string"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/table"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentation/img"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typePresentacion">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentacion/string"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentacion/table"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentacion/img"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeHorizontalPosition">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/left"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/center"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/right"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/EEnumLiteral0"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeService">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/null"/>
@@ -53,24 +52,18 @@
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/principal"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOperator">
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/igual"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/menor"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/mayor"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/menor_igual"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/mayor_igual"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/diferente"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeViewAttribute">
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeViewAttribute/DataBase"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeViewAttribute/SessionUser"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeCardinality">
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeCardinality/one"/>
       <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeCardinality/many"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeMenu">
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/principal"/>
-      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenu/navegation"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeMenus">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenus/principal"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenus/navegation"/>
     </genEnums>
     <genClasses ecoreClass="MetaWebDesign.ecore#//Root">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/class"/>
@@ -130,7 +123,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/positionHorizontal"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/postionVertical"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/From"/>
     </genClasses>
     <genClasses ecoreClass="MetaWebDesign.ecore#//NavegationMenu">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//NavegationMenu/hasLink"/>

@@ -36,8 +36,8 @@
         eType="#//RelationClass" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="goRelationClass" upperBound="-1"
         eType="#//RelationClass"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraint" eType="#//Constraint"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasConstraint" upperBound="-1"
+        eType="#//Constraint" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Attributes">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -89,7 +89,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Cardinality_Destination"
         eType="#//typeCardinality"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="typePresentation">
+  <eClassifiers xsi:type="ecore:EEnum" name="typePresentacion">
     <eLiterals name="string"/>
     <eLiterals name="table" value="1"/>
     <eLiterals name="img" value="13"/>
@@ -98,7 +98,6 @@
     <eLiterals name="left"/>
     <eLiterals name="center" value="1"/>
     <eLiterals name="right" value="2" literal="right"/>
-    <eLiterals name="EEnumLiteral0" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Views">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -121,19 +120,17 @@
   <eClassifiers xsi:type="ecore:EClass" name="ViewComponent"/>
   <eClassifiers xsi:type="ecore:EClass" name="ViewAttribute" eSuperTypes="#//ViewComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="getAttribute" eType="#//Attributes"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentation"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typePresentation" eType="#//typePresentacion"
         defaultValueLiteral="string"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionHorizontal" eType="#//typeHorizontalPosition"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="postionVertical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="From" eType="#//typeViewAttribute"
-        defaultValueLiteral="DataBase"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NavegationMenu" eSuperTypes="#//ViewComponent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasLink" upperBound="-1"
         eType="#//Link" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeMenu" eType="#//typeMenu"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeMenu" eType="#//typeMenus"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -155,22 +152,16 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TypeOperator">
-    <eLiterals name="igual"/>
     <eLiterals name="menor" value="1"/>
     <eLiterals name="mayor" value="2"/>
     <eLiterals name="menor_igual" value="3"/>
-    <eLiterals name="mayor_igual" value="4"/>
-    <eLiterals name="diferente" value="5"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="typeViewAttribute">
-    <eLiterals name="DataBase"/>
-    <eLiterals name="SessionUser"/>
+    <eLiterals name="mayor_igual"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typeCardinality">
     <eLiterals name="one"/>
     <eLiterals name="many"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="typeMenu">
+  <eClassifiers xsi:type="ecore:EEnum" name="typeMenus">
     <eLiterals name="principal" literal="principal"/>
     <eLiterals name="navegation" literal="navegation"/>
   </eClassifiers>

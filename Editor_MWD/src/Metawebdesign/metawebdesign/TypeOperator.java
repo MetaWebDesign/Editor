@@ -19,16 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TypeOperator implements Enumerator {
 	/**
-	 * The '<em><b>Igual</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #IGUAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	IGUAL(0, "igual", "igual"),
-
-	/**
 	 * The '<em><b>Menor</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,32 +56,7 @@ public enum TypeOperator implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MAYOR_IGUAL(4, "mayor_igual", "mayor_igual"),
-
-	/**
-	 * The '<em><b>Diferente</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #DIFERENTE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	DIFERENTE(5, "diferente", "diferente");
-
-	/**
-	 * The '<em><b>Igual</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Igual</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #IGUAL
-	 * @model name="igual"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int IGUAL_VALUE = 0;
+	MAYOR_IGUAL(0, "mayor_igual", "mayor_igual");
 
 	/**
 	 * The '<em><b>Menor</b></em>' literal value.
@@ -151,22 +116,7 @@ public enum TypeOperator implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int MAYOR_IGUAL_VALUE = 4;
-
-	/**
-	 * The '<em><b>Diferente</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Diferente</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #DIFERENTE
-	 * @model name="diferente"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int DIFERENTE_VALUE = 5;
+	public static final int MAYOR_IGUAL_VALUE = 0;
 
 	/**
 	 * An array of all the '<em><b>Type Operator</b></em>' enumerators.
@@ -176,12 +126,10 @@ public enum TypeOperator implements Enumerator {
 	 */
 	private static final TypeOperator[] VALUES_ARRAY =
 		new TypeOperator[] {
-			IGUAL,
 			MENOR,
 			MAYOR,
 			MENOR_IGUAL,
 			MAYOR_IGUAL,
-			DIFERENTE,
 		};
 
 	/**
@@ -232,12 +180,10 @@ public enum TypeOperator implements Enumerator {
 	 */
 	public static TypeOperator get(int value) {
 		switch (value) {
-			case IGUAL_VALUE: return IGUAL;
 			case MENOR_VALUE: return MENOR;
 			case MAYOR_VALUE: return MAYOR;
 			case MENOR_IGUAL_VALUE: return MENOR_IGUAL;
 			case MAYOR_IGUAL_VALUE: return MAYOR_IGUAL;
-			case DIFERENTE_VALUE: return DIFERENTE;
 		}
 		return null;
 	}

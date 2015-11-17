@@ -249,7 +249,7 @@ public interface MetawebdesignPackage extends EPackage {
 	int CLASS__GO_RELATION_CLASS = 10;
 
 	/**
-	 * The feature id for the '<em><b>Has Constraint</b></em>' containment reference.
+	 * The feature id for the '<em><b>Has Constraint</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -797,22 +797,13 @@ public interface MetawebdesignPackage extends EPackage {
 	int VIEW_ATTRIBUTE__POSTION_VERTICAL = VIEW_COMPONENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>From</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VIEW_ATTRIBUTE__FROM = VIEW_COMPONENT_FEATURE_COUNT + 5;
-
-	/**
 	 * The number of structural features of the '<em>View Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VIEW_ATTRIBUTE_FEATURE_COUNT = VIEW_COMPONENT_FEATURE_COUNT + 6;
+	int VIEW_ATTRIBUTE_FEATURE_COUNT = VIEW_COMPONENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>View Attribute</em>' class.
@@ -1129,14 +1120,14 @@ public interface MetawebdesignPackage extends EPackage {
 	int TYPE_DATA = 17;
 
 	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typePresentation <em>type Presentation</em>}' enum.
+	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typePresentacion <em>type Presentacion</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.typePresentation
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypePresentation()
+	 * @see Metawebdesign.metawebdesign.typePresentacion
+	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypePresentacion()
 	 * @generated
 	 */
-	int TYPE_PRESENTATION = 18;
+	int TYPE_PRESENTACION = 18;
 
 	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeHorizontalPosition <em>type Horizontal Position</em>}' enum.
@@ -1179,16 +1170,6 @@ public interface MetawebdesignPackage extends EPackage {
 	int TYPE_OPERATOR = 22;
 
 	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.typeViewAttribute
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeViewAttribute()
-	 * @generated
-	 */
-	int TYPE_VIEW_ATTRIBUTE = 23;
-
-	/**
 	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1196,17 +1177,17 @@ public interface MetawebdesignPackage extends EPackage {
 	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeCardinality()
 	 * @generated
 	 */
-	int TYPE_CARDINALITY = 24;
+	int TYPE_CARDINALITY = 23;
 
 	/**
-	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeMenu <em>type Menu</em>}' enum.
+	 * The meta object id for the '{@link Metawebdesign.metawebdesign.typeMenus <em>type Menus</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Metawebdesign.metawebdesign.typeMenu
-	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeMenu()
+	 * @see Metawebdesign.metawebdesign.typeMenus
+	 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeMenus()
 	 * @generated
 	 */
-	int TYPE_MENU = 25;
+	int TYPE_MENUS = 24;
 
 
 	/**
@@ -1417,10 +1398,10 @@ public interface MetawebdesignPackage extends EPackage {
 	EReference getClass_GoRelationClass();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Has Constraint</em>'.
+	 * @return the meta object for the containment reference list '<em>Has Constraint</em>'.
 	 * @see Metawebdesign.metawebdesign.Class#getHasConstraint()
 	 * @see #getClass_()
 	 * @generated
@@ -1750,17 +1731,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EAttribute getViewAttribute_PostionVertical();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Metawebdesign.metawebdesign.ViewAttribute#getFrom <em>From</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>From</em>'.
-	 * @see Metawebdesign.metawebdesign.ViewAttribute#getFrom()
-	 * @see #getViewAttribute()
-	 * @generated
-	 */
-	EAttribute getViewAttribute_From();
-
-	/**
 	 * Returns the meta object for class '{@link Metawebdesign.metawebdesign.NavegationMenu <em>Navegation Menu</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1984,14 +1954,14 @@ public interface MetawebdesignPackage extends EPackage {
 	EEnum getTypeData();
 
 	/**
-	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typePresentation <em>type Presentation</em>}'.
+	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typePresentacion <em>type Presentacion</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>type Presentation</em>'.
-	 * @see Metawebdesign.metawebdesign.typePresentation
+	 * @return the meta object for enum '<em>type Presentacion</em>'.
+	 * @see Metawebdesign.metawebdesign.typePresentacion
 	 * @generated
 	 */
-	EEnum gettypePresentation();
+	EEnum gettypePresentacion();
 
 	/**
 	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeHorizontalPosition <em>type Horizontal Position</em>}'.
@@ -2034,16 +2004,6 @@ public interface MetawebdesignPackage extends EPackage {
 	EEnum getTypeOperator();
 
 	/**
-	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>type View Attribute</em>'.
-	 * @see Metawebdesign.metawebdesign.typeViewAttribute
-	 * @generated
-	 */
-	EEnum gettypeViewAttribute();
-
-	/**
 	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2054,14 +2014,14 @@ public interface MetawebdesignPackage extends EPackage {
 	EEnum gettypeCardinality();
 
 	/**
-	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeMenu <em>type Menu</em>}'.
+	 * Returns the meta object for enum '{@link Metawebdesign.metawebdesign.typeMenus <em>type Menus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>type Menu</em>'.
-	 * @see Metawebdesign.metawebdesign.typeMenu
+	 * @return the meta object for enum '<em>type Menus</em>'.
+	 * @see Metawebdesign.metawebdesign.typeMenus
 	 * @generated
 	 */
-	EEnum gettypeMenu();
+	EEnum gettypeMenus();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2243,7 +2203,7 @@ public interface MetawebdesignPackage extends EPackage {
 		EReference CLASS__GO_RELATION_CLASS = eINSTANCE.getClass_GoRelationClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Has Constraint</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Has Constraint</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2507,14 +2467,6 @@ public interface MetawebdesignPackage extends EPackage {
 		EAttribute VIEW_ATTRIBUTE__POSTION_VERTICAL = eINSTANCE.getViewAttribute_PostionVertical();
 
 		/**
-		 * The meta object literal for the '<em><b>From</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute VIEW_ATTRIBUTE__FROM = eINSTANCE.getViewAttribute_From();
-
-		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.impl.NavegationMenuImpl <em>Navegation Menu</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2699,14 +2651,14 @@ public interface MetawebdesignPackage extends EPackage {
 		EEnum TYPE_DATA = eINSTANCE.getTypeData();
 
 		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typePresentation <em>type Presentation</em>}' enum.
+		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typePresentacion <em>type Presentacion</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.typePresentation
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypePresentation()
+		 * @see Metawebdesign.metawebdesign.typePresentacion
+		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypePresentacion()
 		 * @generated
 		 */
-		EEnum TYPE_PRESENTATION = eINSTANCE.gettypePresentation();
+		EEnum TYPE_PRESENTACION = eINSTANCE.gettypePresentacion();
 
 		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeHorizontalPosition <em>type Horizontal Position</em>}' enum.
@@ -2749,16 +2701,6 @@ public interface MetawebdesignPackage extends EPackage {
 		EEnum TYPE_OPERATOR = eINSTANCE.getTypeOperator();
 
 		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeViewAttribute <em>type View Attribute</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.typeViewAttribute
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeViewAttribute()
-		 * @generated
-		 */
-		EEnum TYPE_VIEW_ATTRIBUTE = eINSTANCE.gettypeViewAttribute();
-
-		/**
 		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeCardinality <em>type Cardinality</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2769,14 +2711,14 @@ public interface MetawebdesignPackage extends EPackage {
 		EEnum TYPE_CARDINALITY = eINSTANCE.gettypeCardinality();
 
 		/**
-		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeMenu <em>type Menu</em>}' enum.
+		 * The meta object literal for the '{@link Metawebdesign.metawebdesign.typeMenus <em>type Menus</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Metawebdesign.metawebdesign.typeMenu
-		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeMenu()
+		 * @see Metawebdesign.metawebdesign.typeMenus
+		 * @see Metawebdesign.metawebdesign.impl.MetawebdesignPackageImpl#gettypeMenus()
 		 * @generated
 		 */
-		EEnum TYPE_MENU = eINSTANCE.gettypeMenu();
+		EEnum TYPE_MENUS = eINSTANCE.gettypeMenus();
 
 	}
 

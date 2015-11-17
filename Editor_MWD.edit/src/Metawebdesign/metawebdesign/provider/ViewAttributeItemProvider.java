@@ -50,7 +50,6 @@ public class ViewAttributeItemProvider extends ViewComponentItemProvider {
 			addNamePropertyDescriptor(object);
 			addPositionHorizontalPropertyDescriptor(object);
 			addPostionVerticalPropertyDescriptor(object);
-			addFromPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -166,28 +165,6 @@ public class ViewAttributeItemProvider extends ViewComponentItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the From feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addFromPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_ViewAttribute_From_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ViewAttribute_From_feature", "_UI_ViewAttribute_type"),
-				 MetawebdesignPackage.Literals.VIEW_ATTRIBUTE__FROM,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This returns ViewAttribute.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -229,7 +206,6 @@ public class ViewAttributeItemProvider extends ViewComponentItemProvider {
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__NAME:
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__POSITION_HORIZONTAL:
 			case MetawebdesignPackage.VIEW_ATTRIBUTE__POSTION_VERTICAL:
-			case MetawebdesignPackage.VIEW_ATTRIBUTE__FROM:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

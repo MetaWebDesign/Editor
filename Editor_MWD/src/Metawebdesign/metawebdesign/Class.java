@@ -315,29 +315,19 @@ public interface Class extends EObject {
 	EList<RelationClass> getGoRelationClass();
 
 	/**
-	 * Returns the value of the '<em><b>Has Constraint</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Has Constraint</b></em>' containment reference list.
+	 * The list contents are of type {@link Metawebdesign.metawebdesign.Constraint}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Has Constraint</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Has Constraint</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Has Constraint</em>' containment reference.
-	 * @see #setHasConstraint(Constraint)
+	 * @return the value of the '<em>Has Constraint</em>' containment reference list.
 	 * @see Metawebdesign.metawebdesign.MetawebdesignPackage#getClass_HasConstraint()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Constraint getHasConstraint();
-
-	/**
-	 * Sets the value of the '{@link Metawebdesign.metawebdesign.Class#getHasConstraint <em>Has Constraint</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Has Constraint</em>' containment reference.
-	 * @see #getHasConstraint()
-	 * @generated
-	 */
-	void setHasConstraint(Constraint value);
+	EList<Constraint> getHasConstraint();
 
 } // Class

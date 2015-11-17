@@ -187,14 +187,16 @@ public class MetaWebDesignDiagramUpdater {
 		Metawebdesign.metawebdesign.Class modelElement = (Metawebdesign.metawebdesign.Class) containerView
 				.getElement();
 		LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor> result = new LinkedList<Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor>();
-		{
-			Metawebdesign.metawebdesign.Constraint childElement = modelElement
-					.getHasConstraint();
+		for (Iterator<?> it = modelElement.getHasConstraint().iterator(); it
+				.hasNext();) {
+			Metawebdesign.metawebdesign.Constraint childElement = (Metawebdesign.metawebdesign.Constraint) it
+					.next();
 			int visualID = Metawebdesign.metawebdesign.diagram.part.MetaWebDesignVisualIDRegistry
 					.getNodeVisualID(view, childElement);
 			if (visualID == Metawebdesign.metawebdesign.diagram.edit.parts.Constraint2EditPart.VISUAL_ID) {
 				result.add(new Metawebdesign.metawebdesign.diagram.part.MetaWebDesignNodeDescriptor(
 						childElement, visualID));
+				continue;
 			}
 		}
 		for (Iterator<?> it = modelElement.getHasAttributes().iterator(); it

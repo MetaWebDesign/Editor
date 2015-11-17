@@ -5,7 +5,7 @@ package Metawebdesign.metawebdesign.impl;
 import Metawebdesign.metawebdesign.Link;
 import Metawebdesign.metawebdesign.MetawebdesignPackage;
 import Metawebdesign.metawebdesign.NavegationMenu;
-import Metawebdesign.metawebdesign.typeMenu;
+import Metawebdesign.metawebdesign.typeMenus;
 
 import java.util.Collection;
 
@@ -76,7 +76,7 @@ public class NavegationMenuImpl extends ViewComponentImpl implements NavegationM
 	 * @generated
 	 * @ordered
 	 */
-	protected static final typeMenu TYPE_MENU_EDEFAULT = null;
+	protected static final typeMenus TYPE_MENU_EDEFAULT = typeMenus.PRINCIPAL;
 
 	/**
 	 * The cached value of the '{@link #getTypeMenu() <em>Type Menu</em>}' attribute.
@@ -86,7 +86,7 @@ public class NavegationMenuImpl extends ViewComponentImpl implements NavegationM
 	 * @generated
 	 * @ordered
 	 */
-	protected typeMenu typeMenu = TYPE_MENU_EDEFAULT;
+	protected typeMenus typeMenu = TYPE_MENU_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,7 +145,7 @@ public class NavegationMenuImpl extends ViewComponentImpl implements NavegationM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public typeMenu getTypeMenu() {
+	public typeMenus getTypeMenu() {
 		return typeMenu;
 	}
 
@@ -154,8 +154,8 @@ public class NavegationMenuImpl extends ViewComponentImpl implements NavegationM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTypeMenu(typeMenu newTypeMenu) {
-		typeMenu oldTypeMenu = typeMenu;
+	public void setTypeMenu(typeMenus newTypeMenu) {
+		typeMenus oldTypeMenu = typeMenu;
 		typeMenu = newTypeMenu == null ? TYPE_MENU_EDEFAULT : newTypeMenu;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.NAVEGATION_MENU__TYPE_MENU, oldTypeMenu, typeMenu));
@@ -210,7 +210,7 @@ public class NavegationMenuImpl extends ViewComponentImpl implements NavegationM
 				setName((String)newValue);
 				return;
 			case MetawebdesignPackage.NAVEGATION_MENU__TYPE_MENU:
-				setTypeMenu((typeMenu)newValue);
+				setTypeMenu((typeMenus)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

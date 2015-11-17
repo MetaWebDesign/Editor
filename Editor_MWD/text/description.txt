@@ -27,7 +27,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Attribute functionAdmin : TypeRol
     Reference hasRelationClass : RelationClass<<0..*>>
     Reference goRelationClass : RelationClass<<0..*>>
-    Reference hasConstraint : Constraint
+    Reference hasConstraint : Constraint<<0..*>>
 
   Class Attributes
     Attribute name : EString
@@ -62,16 +62,15 @@ Package metawebdesign <http://metawebdesign/1.0>
 
   Class ViewAttribute -> ViewComponent
     Reference getAttribute : Attributes
-    Attribute typePresentation : typePresentation
+    Attribute typePresentation : typePresentacion
     Attribute name : EString
     Attribute positionHorizontal : typeHorizontalPosition
     Attribute postionVertical : EInt
-    Attribute From : typeViewAttribute
 
   Class NavegationMenu -> ViewComponent
     Reference hasLink : Link<<0..*>>
     Attribute name : EString
-    Attribute typeMenu : typeMenu
+    Attribute typeMenu : typeMenus
 
   Class Link
     Attribute name : EString
@@ -117,7 +116,7 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal file = 0
     Literal passwd = 0
 
-  Enum typePresentation
+  Enum typePresentacion
     Literal string = 0
     Literal table = 1
     Literal img = 13
@@ -126,7 +125,6 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal left = 0
     Literal center = 1
     Literal right = 2
-    Literal EEnumLiteral0 = 3
 
   Enum TypeService
     Literal null = 0
@@ -138,21 +136,15 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal principal = 1
 
   Enum TypeOperator
-    Literal igual = 0
     Literal menor = 1
     Literal mayor = 2
     Literal menor_igual = 3
-    Literal mayor_igual = 4
-    Literal diferente = 5
-
-  Enum typeViewAttribute
-    Literal DataBase = 0
-    Literal SessionUser = 0
+    Literal mayor_igual = 0
 
   Enum typeCardinality
     Literal one = 0
     Literal many = 0
 
-  Enum typeMenu
+  Enum typeMenus
     Literal principal = 0
     Literal navegation = 0

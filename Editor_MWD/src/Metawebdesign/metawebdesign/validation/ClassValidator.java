@@ -31,5 +31,5 @@ public interface ClassValidator {
 	boolean validateFunctionAdmin(TypeRol value);
 	boolean validateHasRelationClass(EList<RelationClass> value);
 	boolean validateGoRelationClass(EList<RelationClass> value);
-	boolean validateHasConstraint(Constraint value);
+	boolean validateHasConstraint(EList<Constraint> value);
 }

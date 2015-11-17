@@ -241,14 +241,14 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 	protected EList<RelationClass> goRelationClass;
 
 	/**
-	 * The cached value of the '{@link #getHasConstraint() <em>Has Constraint</em>}' containment reference.
+	 * The cached value of the '{@link #getHasConstraint() <em>Has Constraint</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getHasConstraint()
 	 * @generated
 	 * @ordered
 	 */
-	protected Constraint hasConstraint;
+	protected EList<Constraint> hasConstraint;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -478,42 +478,11 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Constraint getHasConstraint() {
+	public EList<Constraint> getHasConstraint() {
+		if (hasConstraint == null) {
+			hasConstraint = new EObjectContainmentEList<Constraint>(Constraint.class, this, MetawebdesignPackage.CLASS__HAS_CONSTRAINT);
+		}
 		return hasConstraint;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetHasConstraint(Constraint newHasConstraint, NotificationChain msgs) {
-		Constraint oldHasConstraint = hasConstraint;
-		hasConstraint = newHasConstraint;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.CLASS__HAS_CONSTRAINT, oldHasConstraint, newHasConstraint);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setHasConstraint(Constraint newHasConstraint) {
-		if (newHasConstraint != hasConstraint) {
-			NotificationChain msgs = null;
-			if (hasConstraint != null)
-				msgs = ((InternalEObject)hasConstraint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.CLASS__HAS_CONSTRAINT, null, msgs);
-			if (newHasConstraint != null)
-				msgs = ((InternalEObject)newHasConstraint).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MetawebdesignPackage.CLASS__HAS_CONSTRAINT, null, msgs);
-			msgs = basicSetHasConstraint(newHasConstraint, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MetawebdesignPackage.CLASS__HAS_CONSTRAINT, newHasConstraint, newHasConstraint));
 	}
 
 	/**
@@ -529,7 +498,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 			case MetawebdesignPackage.CLASS__HAS_RELATION_CLASS:
 				return ((InternalEList<?>)getHasRelationClass()).basicRemove(otherEnd, msgs);
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
-				return basicSetHasConstraint(null, msgs);
+				return ((InternalEList<?>)getHasConstraint()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -616,7 +585,8 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 				getGoRelationClass().addAll((Collection<? extends RelationClass>)newValue);
 				return;
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
-				setHasConstraint((Constraint)newValue);
+				getHasConstraint().clear();
+				getHasConstraint().addAll((Collection<? extends Constraint>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -664,7 +634,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 				getGoRelationClass().clear();
 				return;
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
-				setHasConstraint((Constraint)null);
+				getHasConstraint().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -701,7 +671,7 @@ public class ClassImpl extends MinimalEObjectImpl.Container implements Metawebde
 			case MetawebdesignPackage.CLASS__GO_RELATION_CLASS:
 				return goRelationClass != null && !goRelationClass.isEmpty();
 			case MetawebdesignPackage.CLASS__HAS_CONSTRAINT:
-				return hasConstraint != null;
+				return hasConstraint != null && !hasConstraint.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
