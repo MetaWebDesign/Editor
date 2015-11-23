@@ -1283,8 +1283,9 @@ public class MetawebdesignPackageImpl extends EPackageImpl implements Metawebdes
 		addEEnumLiteral(typeCardinalityEEnum, typeCardinality.MANY);
 
 		initEEnum(typeMenusEEnum, typeMenus.class, "typeMenus");
-		addEEnumLiteral(typeMenusEEnum, typeMenus.PRINCIPAL);
+		addEEnumLiteral(typeMenusEEnum, typeMenus.NULL);
 		addEEnumLiteral(typeMenusEEnum, typeMenus.NAVEGATION);
+		addEEnumLiteral(typeMenusEEnum, typeMenus.PRINCIPAL);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -76,7 +76,7 @@ public class NavegationMenuImpl extends ViewComponentImpl implements NavegationM
 	 * @generated
 	 * @ordered
 	 */
-	protected static final typeMenus TYPE_MENU_EDEFAULT = typeMenus.PRINCIPAL;
+	protected static final typeMenus TYPE_MENU_EDEFAULT = typeMenus.NULL;
 
 	/**
 	 * The cached value of the '{@link #getTypeMenu() <em>Type Menu</em>}' attribute.

@@ -162,7 +162,8 @@
     <eLiterals name="many"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="typeMenus">
-    <eLiterals name="principal" literal="principal"/>
+    <eLiterals name="null" literal="null"/>
     <eLiterals name="navegation" literal="navegation"/>
+    <eLiterals name="principal" literal="principal"/>
   </eClassifiers>
 </ecore:EPackage>

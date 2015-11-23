@@ -146,5 +146,6 @@ Package metawebdesign <http://metawebdesign/1.0>
     Literal many = 0
 
   Enum typeMenus
-    Literal principal = 0
+    Literal null = 0
     Literal navegation = 0
+    Literal principal = 0

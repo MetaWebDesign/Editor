@@ -19,14 +19,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum typeMenus implements Enumerator {
 	/**
-	 * The '<em><b>Principal</b></em>' literal object.
+	 * The '<em><b>Null</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PRINCIPAL_VALUE
+	 * @see #NULL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PRINCIPAL(0, "principal", "principal"),
+	NULL(0, "null", "null"),
 
 	/**
 	 * The '<em><b>Navegation</b></em>' literal object.
@@ -36,22 +36,32 @@ public enum typeMenus implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	NAVEGATION(0, "navegation", "navegation");
+	NAVEGATION(0, "navegation", "navegation"),
 
 	/**
-	 * The '<em><b>Principal</b></em>' literal value.
+	 * The '<em><b>Principal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Principal</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #PRINCIPAL
-	 * @model name="principal"
+	 * @see #PRINCIPAL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PRINCIPAL_VALUE = 0;
+	PRINCIPAL(0, "principal", "principal");
+
+	/**
+	 * The '<em><b>Null</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Null</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #NULL
+	 * @model name="null"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int NULL_VALUE = 0;
 
 	/**
 	 * The '<em><b>Navegation</b></em>' literal value.
@@ -69,6 +79,21 @@ public enum typeMenus implements Enumerator {
 	public static final int NAVEGATION_VALUE = 0;
 
 	/**
+	 * The '<em><b>Principal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Principal</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #PRINCIPAL
+	 * @model name="principal"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int PRINCIPAL_VALUE = 0;
+
+	/**
 	 * An array of all the '<em><b>type Menus</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,8 +101,9 @@ public enum typeMenus implements Enumerator {
 	 */
 	private static final typeMenus[] VALUES_ARRAY =
 		new typeMenus[] {
-			PRINCIPAL,
+			NULL,
 			NAVEGATION,
+			PRINCIPAL,
 		};
 
 	/**
@@ -128,7 +154,7 @@ public enum typeMenus implements Enumerator {
 	 */
 	public static typeMenus get(int value) {
 		switch (value) {
-			case PRINCIPAL_VALUE: return PRINCIPAL;
+			case NULL_VALUE: return NULL;
 		}
 		return null;
 	}

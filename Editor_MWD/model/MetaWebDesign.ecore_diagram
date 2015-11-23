@@ -375,6 +375,18 @@
   <children xmi:type="notation:Shape" xmi:id="_4G35go1yEeWcbZpi6tuo6w" type="2005" fontName="Ubuntu">
     <children xmi:type="notation:DecorationNode" xmi:id="_4G35hI1yEeWcbZpi6tuo6w" type="5005"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_4G35hY1yEeWcbZpi6tuo6w" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_elng4JIUEeWpkbluObgKAw" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenus/null"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_elng4ZIUEeWpkbluObgKAw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_elng4pIUEeWpkbluObgKAw" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenus/navegation"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_elng45IUEeWpkbluObgKAw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_o9DOwJIUEeWpkbluObgKAw" type="3009">
+        <element xmi:type="ecore:EEnumLiteral" href="MetaWebDesign.ecore#//typeMenus/principal"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_o9DOwZIUEeWpkbluObgKAw"/>
+      </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_4G35ho1yEeWcbZpi6tuo6w"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_4G35h41yEeWcbZpi6tuo6w"/>
     </children>
