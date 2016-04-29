@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Editor_MWD/src" modelPluginID="Editor_MWD" modelName="MetaWebDesign"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>MetaWebDesign.ecore</foreignModel>
+  <genPackages prefix="Metawebdesign" basePackage="Metawebdesign" disposableProviderFactory="true"
+      ecorePackage="MetaWebDesign.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeRol">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeRol/anonymous"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeRol/authenticated"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeRol/admin"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeRol/any"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeAttributeForm">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeAttributeForm/required"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeAttributeForm/not_required"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeData">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/none"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/numeric"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/text"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/autoincremental"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/img"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/time"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/date"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/date_time"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/varchar10"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/varchar30"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/varchar50"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/integer"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/file"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeData/passwd"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typePresentacion">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentacion/string"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentacion/table"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typePresentacion/img"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeHorizontalPosition">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/left"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/center"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeHorizontalPosition/right"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeService">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/null"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/create"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeService/index"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOrientation">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/navegación"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOrientation/principal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//TypeOperator">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/menor"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/mayor"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/menor_igual"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//TypeOperator/mayor_igual"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeCardinality">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeCardinality/one"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeCardinality/many"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MetaWebDesign.ecore#//typeMenus">
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenus/null"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenus/navegation"/>
+      <genEnumLiterals ecoreEnumLiteral="MetaWebDesign.ecore#//typeMenus/principal"/>
+    </genEnums>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Root">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/views"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/view_component"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/link"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Root/constraint"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasAttributes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionCreate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionUpdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionView"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Class/functionAdmin"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasRelationClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/goRelationClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Class/hasConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Attributes">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Attributes/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Attributes/rol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Attributes/PrimaryKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Attributes/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Attributes/inTheForm"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Derived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Derived/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Derived/formula"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//NotDerived">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//NotDerived/valueDefault"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//RelationClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationClass/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationClass/fromClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//RelationClass/Attribute_Destination"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationClass/Cardinality_origin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//RelationClass/Cardinality_Destination"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Views">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Views/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Views/rolView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Views/hasViewComponent"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Page">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Page/Content_HTML"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//ViewComponent"/>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//ViewAttribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//ViewAttribute/getAttribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/typePresentation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/positionHorizontal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//ViewAttribute/postionVertical"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//NavegationMenu">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//NavegationMenu/hasLink"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//NavegationMenu/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//NavegationMenu/typeMenu"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Link">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Link/name"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//LinkViewCRUD">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//LinkViewCRUD/service"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//LinkViewCRUD/fromClass"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//LinkView">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//LinkView/linkView"/>
+    </genClasses>
+    <genClasses ecoreClass="MetaWebDesign.ecore#//Constraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/operator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MetaWebDesign.ecore#//Constraint/Attribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/mansajeError"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MetaWebDesign.ecore#//Constraint/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
